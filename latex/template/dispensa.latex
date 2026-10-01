@@ -240,8 +240,11 @@ $endif$
 %% flush left.
 \newcommand{\cvfirstnoindent}{\everypar{{\setbox\z@\lastbox}\everypar{}}}
 
-\newcommand{\cvhead}[1]{{\color{bluepoli}\normalfont\bfseries #1.}\enspace}
-\newcommand{\cvproofhead}[1]{{\normalfont\itshape #1.}\enspace}
+%% \leavevmode starts the paragraph outside the head's group: otherwise the
+%% \everypar{} that \cvfirstnoindent runs stays local to that group, and the
+%% block's second paragraph loses its indent as well.
+\newcommand{\cvhead}[1]{\leavevmode{\color{bluepoli}\normalfont\bfseries #1.}\enspace}
+\newcommand{\cvproofhead}[1]{\leavevmode{\normalfont\itshape #1.}\enspace}
 
 \newcommand{\cvblock}[1]{%
   \newcounter{#1}[chapter]%
@@ -257,7 +260,8 @@ $endif$
   {\par\addvspace{\cvvspace}}
 %% Unnumbered blocks: the proof's companions in the notes, and the parts of
 %% a worked exam answer (exam text, data, recalled theory, working, answer,
-%% remark), whose heads the exam solutions' own filter injects.
+%% remark) and of an oral-exam track (question, answer to give, explanation),
+%% whose heads the exam filter injects.
 \newcommand{\cvplainblock}[1]{%
   \newenvironment{#1}
     {\par\addvspace{\cvvspace}\cvfirstnoindent}
@@ -268,6 +272,7 @@ $endif$
 \cvplainblock{cvteoria}
 \cvplainblock{cvcalcolo}
 \cvplainblock{cvrisposta}
+\cvplainblock{cvspiegazione}
 \cvplainblock{cvosservazione}
 
 %% Puts #1 flush right on the last line of the current paragraph when it

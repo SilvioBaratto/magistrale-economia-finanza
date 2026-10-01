@@ -83,6 +83,8 @@ Da un punto di vista finanziario si tratta di mutua assistenza in caso di diffic
 
 **Questioni aperte.** Esistono comunque tutta una serie di questioni aperte, fra cui: cosa succede se un gruppo esclude una BCC e questa si unisce a un altro gruppo? Si può cambiare gruppo? E se sì, la scelta è reversibile o irreversibile?
 
+> **Approfondimento (ricerca ottobre 2026):** allo stato la risposta è in gran parte negativa o non disciplinata. Il cambio di gruppo non è vietato ma è strutturalmente quasi impossibile: ogni adesione, recesso o esclusione richiede l'autorizzazione della Banca d'Italia (art. 37-bis, comma 5) e il recesso dal contratto di coesione è ammesso solo per "giustificato motivo" tassativo; non esiste un meccanismo di "portabilità" e non risultano casi dopo la costituzione dei due gruppi (2019). L'art. 36, comma 1-bis, prevede testualmente **solo due esiti** (trasformazione in SpA o liquidazione), senza contemplare l'adesione a un altro gruppo come terza via: restare BCC richiederebbe una nuova ammissione presso un diverso gruppo, ma il coordinamento uscita-rientro **non è disciplinato** (lacuna confermata, anche in dottrina). La scelta è quindi di fatto **irreversibile**.
+
 *(pagina 3)*
 
 ## Titolo V TUB — Soggetti operanti nel settore finanziario: introduzione

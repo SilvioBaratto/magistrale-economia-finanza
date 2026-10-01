@@ -146,4 +146,6 @@ Un'ulteriore deroga al diritto comune riguarda il termine per l'impugnazione: **
 - se l'obbligo di alienazione sia riferito a **tutte** le partecipazioni o soltanto a quelle **oltre la soglia** (si propende per quest'ultima opzione);
 - se ci fosse una forma di controllo derivante, ad esempio, da un obbligo contrattuale, cosa succederebbe? In tal caso l'alienazione non sussisterebbe, perché non ci sarebbe nulla da alienare; si potrebbe impugnare la delibera, ma resta una lacuna normativa (al massimo si potrebbe optare per atti di **moral suasion**).
 
+> **Approfondimento (ricerca ottobre 2026):** sul primo punto, la prassi e le Disposizioni della Banca d'Italia (2022) propendono per l'alienazione della **sola quota eccedente** la soglia autorizzata (principio di proporzionalità), anche se il testo del comma 3 resta ambiguo nel caso di totale mancanza dell'autorizzazione. Sul secondo, la lacuna è confermata: per il controllo fondato su contratti o clausole (art. 23) l'art. 24, comma 3-bis, prevede solo la **sospensione dei diritti**, non un obbligo di alienazione (un contratto non si "aliena"); i rimedi residui sono le misure di vigilanza (artt. 53-bis, 70 ss.), la revoca dell'autorizzazione e la moral suasion. Il punto resta privo di soluzione normativa specifica.
+
 *(pagina 4–5)*

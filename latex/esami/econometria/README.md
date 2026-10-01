@@ -40,7 +40,7 @@ composizione (i sette sorgenti nascono indipendenti e riusano gli stessi nomi,
 all'appello sbagliato.
 
 ```bash
-python3 build_esami.py --volume         # ECON_Soluzioni_Raccolta.pdf
+python3 build_esami.py --corso econometria --volume   # ECON_Soluzioni_Raccolta.pdf
 ```
 
 ## Ricompilare
@@ -48,13 +48,13 @@ python3 build_esami.py --volume         # ECON_Soluzioni_Raccolta.pdf
 Dalla cartella `latex/`:
 
 ```bash
-python3 build_esami.py --list                     # cosa c'è e cosa è già compilato
-python3 build_esami.py --all                      # ricompila tutti gli appelli
-python3 build_esami.py --exam 2025-01-21          # ricompila un PDF
-python3 build_esami.py --volume                   # il volume unico
-python3 build_esami.py --exam 2025-01-21 --keep   # conserva il .tex per il debug
+python3 build_esami.py --corso econometria --list               # cosa c'è e cosa è già compilato
+python3 build_esami.py --corso econometria --all                # ricompila tutti gli appelli
+python3 build_esami.py --corso econometria --exam 2025-01-21    # ricompila un PDF
+python3 build_esami.py --corso econometria --volume             # il volume unico
+python3 build_esami.py --corso econometria --exam 2025-01-21 --keep   # conserva il .tex
 python3 esami/econometria/figure/2025-01-21/plots.py   # rigenera le figure di un appello
-make esami esami-volume                           # gli stessi, via make
+make esami esami-volume                           # tutti i corsi, via make
 ```
 
 Requisiti: `pandoc`, `xelatex` + `latexmk` (TeX Live), Python con

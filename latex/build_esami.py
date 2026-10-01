@@ -1,27 +1,29 @@
 #!/usr/bin/env python3
-"""Render the worked Econometria exam solutions to PDF.
+"""Render the exam material of every course to PDF.
 
-    python3 build_esami.py --list
-    python3 build_esami.py --all
-    python3 build_esami.py --exam 2023-12-21
-    python3 build_esami.py --volume            # all exams in one PDF
-    python3 build_esami.py --all --keep        # keep LaTeX intermediates
+    python3 build_esami.py --list                                   # courses and sources
+    python3 build_esami.py --all                                    # every PDF, every course
+    python3 build_esami.py --volume                                 # each course's single volume
+    python3 build_esami.py --corso econometria --exam 2023-12-21    # one PDF
+    python3 build_esami.py --corso legislazione-bancaria-1 --exam 04
+    python3 build_esami.py --all --keep                             # keep LaTeX intermediates
 
-Same template and general filter as the dispense (build.py), so both look the
-same:
+Two kinds of material, one pipeline, the template of the dispense:
 
-    esami/econometria/src/ECON_Sol_<data>.md
+- econometria: worked solutions of past written exams, one PDF per sitting;
+- legislazione-bancaria-1/-2: question-and-answer tracks for the oral exam,
+  one PDF per point of the syllabus.
+
+    esami/<corso>/src/*.md
       -> normalisation (front matter, Obsidian callouts, glyphs)
-        -> build/esami-econometria/<slug>.md
-          -> pandoc + filters/esami.lua (exam blocks)
-                    + filters/callouts.lua (tables, displays, figures)
-                    + template/dispensa.latex + esami/econometria/macros.tex
-            -> build/esami-econometria/<slug>/<slug>.tex
-              -> latexmk -xelatex
-                -> ../esami/econometria/ECON_Sol_<data>.pdf
+        -> build/esami-<corso>/<slug>.md
+          -> pandoc + filters/esami.lua (exam blocks) + filters/callouts.lua
+                    + template/dispensa.latex (+ esami/<corso>/macros.tex)
+            -> build/esami-<corso>/<slug>/<slug>.tex -> latexmk -xelatex
+              -> ../esami/<corso>/<slug>.pdf
 
-Figures are NOT built here: each exam owns esami/econometria/figure/<data>/
-plots.py, which regenerates its PDFs (this script only checks they exist).
+Figures are NOT built here: a course with figures owns
+esami/<corso>/figure/<data>/plots.py (this script only checks they exist).
 """
 from __future__ import annotations
 
@@ -30,26 +32,103 @@ import re
 import shutil
 import subprocess
 import sys
+from dataclasses import dataclass
 from pathlib import Path
 
 LATEX = Path(__file__).resolve().parent
 REPO = LATEX.parent
-COURSE = LATEX / "esami" / "econometria"       # sources, figures, macros
-SRC = COURSE / "src"
-OUTDIR = REPO / "esami" / "econometria"        # the PDFs only
-BUILD = LATEX / "build" / "esami-econometria"
 TEMPLATE = LATEX / "template" / "dispensa.latex"
 # Exam blocks first: their callout kinds mean something else in the dispense.
 FILTERS = [LATEX / "filters" / "esami.lua", LATEX / "filters" / "callouts.lua"]
-MACROS = COURSE / "macros.tex"
 
 UNIVERSITY = "Università Ca' Foscari Venezia"
 DEPARTMENT = "Dipartimento di Economia"
 DEGREE = "Economia e Finanza"
 AUTHOR = "Silvio Angelo Baratto Roldan"
 ACCADEMICO = "2026/2027"
-DISCLAIMER = ("Svolgimento personale a fini di studio, basato sulla teoria del corso "
-              "(Econometria EM0004, prof. Davide Raggi). Non è una soluzione ufficiale.")
+
+
+@dataclass(frozen=True)
+class Course:
+    """What differs between the exam material of two courses.
+
+    Attributes:
+        slug: Folder name under esami/ (sources in latex/, PDFs at the root).
+        pattern: Glob of the sources in src/.
+        coursecode: Code printed on the title page.
+        disclaimer: Last line of the title page.
+        subtitle: Subtitle of a single PDF whose front matter has none.
+        volume: File stem of the single volume.
+        volume_title: Title of the single volume.
+        volume_subtitle: Subtitle of the single volume.
+        parts: Whether the volume gives each source a \\part (exam sittings) or
+            just runs their chapters on (syllabus points).
+        question_re: Counts the questions of a source, for the title page.
+        unit: Name of a source in the volume statistics.
+    """
+
+    slug: str
+    pattern: str
+    coursecode: str
+    disclaimer: str
+    subtitle: str
+    volume: str
+    volume_title: str
+    volume_subtitle: str
+    parts: bool
+    question_re: str
+    unit: str
+
+    @property
+    def sources_dir(self) -> Path:
+        return LATEX / "esami" / self.slug
+
+    @property
+    def outdir(self) -> Path:
+        return REPO / "esami" / self.slug
+
+    @property
+    def build_dir(self) -> Path:
+        return LATEX / "build" / f"esami-{self.slug}"
+
+
+def _orale(n: int, points: str) -> Course:
+    module = f"mod. {n}"
+    return Course(
+        slug=f"legislazione-bancaria-{n}",
+        pattern=f"LEGB{n}_Orale_*.md",
+        coursecode="EM2101",
+        disclaimer=("Preparazione personale alla prova orale di Legislazione Bancaria "
+                    f"(EM2101, {module}, prof. Alberto Urbani), costruita sul materiale del "
+                    "corso e sulle fonti normative. Non è materiale ufficiale del docente."),
+        subtitle=points,
+        volume=f"LEGB{n}_Orale_Completo",
+        volume_title=f"Legislazione Bancaria {n} \u2014 tracce per la prova orale",
+        volume_subtitle=points,
+        parts=False,
+        question_re=r"^##\s+D\d+",
+        unit="sezioni",
+    )
+
+
+COURSES = {c.slug: c for c in (
+    Course(
+        slug="econometria",
+        pattern="ECON_Sol_*.md",
+        coursecode="EM0004",
+        disclaimer=("Svolgimento personale a fini di studio, basato sulla teoria del corso "
+                    "(Econometria EM0004, prof. Davide Raggi). Non è una soluzione ufficiale."),
+        subtitle="Soluzione svolta e commentata",
+        volume="ECON_Soluzioni_Raccolta",
+        volume_title="Econometria \u2014 soluzioni dei temi d\u2019esame",
+        volume_subtitle="Sette appelli svolti, con derivazioni e grafici",
+        parts=True,
+        question_re=r"^## ",
+        unit="appelli",
+    ),
+    _orale(1, "Punti 1\u20137 del programma (prova intermedia)"),
+    _orale(2, "Punti 8\u201311 del programma (seconda prova)"),
+)}
 
 FENCE = ":" * 5
 CALLOUT_RE = re.compile(r"^>\s*\[!(?P<kind>\w+)\][-+]?\s*(?P<heading>.*)$")
@@ -93,6 +172,7 @@ TEXT_GLYPHS = {
     "ε": r"\ensuremath{\varepsilon}", "λ": r"\ensuremath{\lambda}", "μ": r"\ensuremath{\mu}",
     "ρ": r"\ensuremath{\rho}", "σ": r"\ensuremath{\sigma}", "χ": r"\ensuremath{\chi}", "ω": r"\ensuremath{\omega}",
     "Δ": r"\ensuremath{\Delta}", "Σ": r"\ensuremath{\Sigma}", "Π": r"\ensuremath{\Pi}",
+    "≡": r"\ensuremath{\equiv}", "▪": r"\ensuremath{\bullet}",
 }
 MATH_SPAN_RE = re.compile(r"(?<!\\)(\$\$(?:\\.|[^\\])*?\$\$|\$(?:\\.|[^$\\\n])+?\$)", re.DOTALL)
 
@@ -173,40 +253,48 @@ def figure_refs(body: str) -> list[str]:
     return IMG_RE.findall(body)
 
 
-def missing_figures(body: str) -> list[str]:
-    return [r for r in figure_refs(body) if not (COURSE / r).exists()]
+def count_questions(course: Course, body: str) -> int:
+    return len(re.findall(course.question_re, body, re.M))
 
 
-def render(md_path: Path, toc_depth: int, keep: bool,
-           corpo: str | None = None, meta_extra: dict | None = None) -> Path:
-    if corpo is None:
-        meta, body = split_frontmatter(md_path.read_text(encoding="utf-8"))
-    else:
-        meta, body = dict(meta_extra or {}), corpo
-    slug = md_path.stem
+def render(course: Course, slug: str, body: str, meta: dict[str, str],
+           toc_depth: int, keep: bool) -> Path:
+    """Compile one Markdown body to ``esami/<corso>/<slug>.pdf``.
 
-    gaps = missing_figures(body)
+    Args:
+        course: The course the material belongs to.
+        slug: Output file stem.
+        body: Markdown without front matter.
+        meta: Title-page fields; missing ones fall back to the course's.
+        toc_depth: Depth of the table of contents.
+        keep: Keep the LaTeX intermediates.
+
+    Returns:
+        The written PDF.
+    """
+    gaps = [r for r in figure_refs(body) if not (course.sources_dir / r).exists()]
     if gaps:
         print(f"    ! figure mancanti: {', '.join(gaps)}", file=sys.stderr)
 
-    aux = BUILD / slug
+    aux = course.build_dir / slug
     aux.mkdir(parents=True, exist_ok=True)
-    flat = BUILD / f"{slug}.md"
+    flat = course.build_dir / f"{slug}.md"
     flat.write_text(normalise(body), encoding="utf-8")
     tex = aux / f"{slug}.tex"
 
+    n = count_questions(course, body)
     doc_meta = {
         "title": meta.get("title", slug),
-        "subtitle": meta.get("subtitle", "Soluzione svolta e commentata"),
+        "subtitle": meta.get("subtitle", course.subtitle),
         "author": AUTHOR,
         "date": meta.get("date", ACCADEMICO),
         "university": UNIVERSITY,
         "department": DEPARTMENT,
         "degree": DEGREE,
-        "coursecode": meta.get("coursecode", "EM0004"),
-        "stats": meta.get("stats", ""),
-        "disclaimer": DISCLAIMER,
-        "graphicspath": f"{COURSE}/",
+        "coursecode": meta.get("coursecode", course.coursecode),
+        "stats": meta.get("stats", f"{n} domande d\u2019esame" if n else ""),
+        "disclaimer": course.disclaimer,
+        "graphicspath": f"{course.sources_dir}/",
     }
 
     cmd = [
@@ -218,14 +306,16 @@ def render(md_path: Path, toc_depth: int, keep: bool,
         "--standalone",
         "--template", str(TEMPLATE),
         *[arg for f in FILTERS for arg in ("--lua-filter", str(f))],
-        "--include-in-header", str(MACROS),
         "--top-level-division=chapter",
         "--toc", f"--toc-depth={toc_depth}",
         "--wrap=preserve",
-        f"--resource-path={COURSE}",
+        f"--resource-path={course.sources_dir}",
         "-V", f"toc-depth={max(toc_depth - 1, 0)}",
         "-o", str(tex),
     ]
+    macros = course.sources_dir / "macros.tex"
+    if macros.is_file():
+        cmd += ["--include-in-header", str(macros)]
     for key, value in doc_meta.items():
         if value:
             cmd += ["-M", f"{key}={value}"]
@@ -234,8 +324,8 @@ def render(md_path: Path, toc_depth: int, keep: bool,
     run(["latexmk", "-xelatex", "-interaction=nonstopmode", "-file-line-error",
          "-halt-on-error", f"-outdir={aux}", tex.name], cwd=aux)
 
-    OUTDIR.mkdir(parents=True, exist_ok=True)
-    dst = OUTDIR / f"{slug}.pdf"
+    course.outdir.mkdir(parents=True, exist_ok=True)
+    dst = course.outdir / f"{slug}.pdf"
     shutil.copy2(aux / f"{slug}.pdf", dst)
     if not keep:
         flat.unlink(missing_ok=True)
@@ -245,96 +335,107 @@ def render(md_path: Path, toc_depth: int, keep: bool,
     return dst
 
 
-
-# --------------------------------------------------------------- volume unico
+# --------------------------------------------------------------- single volume
 LABEL_RE = re.compile(r"\\(label|eqref|ref|autoref)\{([^}]+)\}")
-# Le note a pie' di pagina sono locali al file: due appelli che usano [^1]
-# collidono, e pandoc ne scarta una con "Duplicate note reference".
+# Footnotes are local to a file: two sources that both use [^1] collide, and
+# pandoc drops one with "Duplicate note reference".
 FOOTNOTE_RE = re.compile(r"\[\^([^\]\s]+)\]")
 IMGID_RE = re.compile(r"\{#([A-Za-z][\w:.-]*)([^}]*)\}")
 
 
-def namespace_riferimenti(body: str, slug: str) -> str:
-    """Prefissa etichette e rimandi con lo slug dell'appello.
+def namespace_references(body: str, key: str) -> str:
+    """Prefix labels, references, figure ids and footnotes with a source key.
 
-    I sette svolgimenti nascono indipendenti e riusano gli stessi nomi
-    (`eq:d01-derivata`, `fig:d03`): concatenandoli senza prefisso LaTeX
-    emette "multiply defined" e i rimandi puntano all'appello sbagliato.
+    The sources are written independently and reuse the same names
+    (``eq:d01-derivata``, ``fig:d03``, ``[^1]``): concatenated without a
+    prefix, LaTeX reports "multiply defined" and references land in the wrong
+    source.
     """
-    pre = slug.replace("-", "")
+    pre = re.sub(r"[^A-Za-z0-9]", "", key)
     body = LABEL_RE.sub(lambda m: f"\\{m.group(1)}{{{pre}:{m.group(2)}}}", body)
     body = IMGID_RE.sub(lambda m: f"{{#{pre}:{m.group(1)}{m.group(2)}}}", body)
-    body = FOOTNOTE_RE.sub(rf"[^{pre}-\1]", body)
-    return body
+    return FOOTNOTE_RE.sub(rf"[^{pre}-\1]", body)
 
 
-def volume_markdown() -> tuple[str, dict]:
-    """Un solo documento: una parte per appello, sezioni e numerazione continue."""
-    pezzi, n_dom, n_fig = [], 0, 0
-    for md in sources():
+def volume_markdown(course: Course) -> tuple[str, dict[str, str]]:
+    """Join every source of a course into one document.
+
+    Returns:
+        The Markdown body and its title-page fields.
+    """
+    pieces, questions, figures = [], 0, 0
+    paths = sources(course)
+    for md in paths:
         meta, body = split_frontmatter(md.read_text(encoding="utf-8"))
-        slug = md.stem.replace("ECON_Sol_", "")
-        n_dom += len(re.findall(r"^## ", body, re.M))
-        n_fig += len(figure_refs(body))
-        titolo = meta.get("title", slug).replace("Econometria — esame del ", "Esame del ")
-        pezzi.append(f"\\part{{{titolo}}}\n\n" + namespace_riferimenti(body, slug))
-    meta = {
-        "title": "Econometria \u2014 soluzioni dei temi d\u2019esame",
-        "subtitle": "Sette appelli svolti, con derivazioni e grafici",
-        "stats": f"{len(sources())} appelli \u00b7 {n_dom} domande \u00b7 {n_fig} figure",
-    }
-    return "\n\n".join(pezzi), meta
+        questions += count_questions(course, body)
+        figures += len(figure_refs(body))
+        body = namespace_references(body, md.stem)
+        if course.parts:
+            title = meta.get("title", md.stem).replace("Econometria \u2014 esame del ", "Esame del ")
+            body = f"\\part{{{title}}}\n\n" + body
+        pieces.append(body)
+    stats = f"{len(paths)} {course.unit} \u00b7 {questions} domande"
+    if figures:
+        stats += f" \u00b7 {figures} figure"
+    meta = {"title": course.volume_title, "subtitle": course.volume_subtitle, "stats": stats}
+    return "\n\n".join(pieces), meta
 
 
 # ------------------------------------------------------------------------ cli
-def sources() -> list[Path]:
-    return sorted(SRC.glob("ECON_Sol_*.md"))
+def sources(course: Course) -> list[Path]:
+    return sorted((course.sources_dir / "src").glob(course.pattern))
+
+
+def list_course(course: Course) -> None:
+    print(f"{course.slug}:")
+    for p in sources(course):
+        _meta, body = split_frontmatter(p.read_text(encoding="utf-8"))
+        pdf = course.outdir / f"{p.stem}.pdf"
+        print(f"  {p.stem:52s} {len(body.splitlines()):5d} righe  "
+              f"{count_questions(course, body):3d} domande  {len(figure_refs(body)):2d} figure  "
+              f"pdf:{'si' if pdf.exists() else 'no'}")
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--list", action="store_true", help="elenca le soluzioni disponibili")
-    ap.add_argument("--all", action="store_true", help="compila ogni soluzione")
-    ap.add_argument("--exam", metavar="DATA", help="compila una sola soluzione (es. 2023-12-21)")
+    ap.add_argument("--corso", action="append", choices=sorted(COURSES),
+                    help="limita a un corso (ripetibile); di default tutti")
+    ap.add_argument("--list", action="store_true", help="elenca i sorgenti e i PDF")
+    ap.add_argument("--all", action="store_true", help="compila ogni sorgente")
+    ap.add_argument("--exam", metavar="CHIAVE",
+                    help="compila i sorgenti il cui nome contiene CHIAVE (es. 2023-12-21, 04)")
+    ap.add_argument("--volume", action="store_true", help="compila anche il volume unico")
     ap.add_argument("--toc-depth", type=int, default=2)
     ap.add_argument("--keep", action="store_true", help="conserva i file .tex intermedi")
-    ap.add_argument("--volume", action="store_true",
-                    help="compone i sette appelli in un solo PDF")
     args = ap.parse_args()
 
-    found = sources()
+    courses = [COURSES[c] for c in args.corso] if args.corso else list(COURSES.values())
     if args.list or not (args.all or args.exam or args.volume):
-        if not found:
-            print("nessuna soluzione in src/")
-            return 0
-        for p in found:
+        for course in courses:
+            list_course(course)
+        return 0
+
+    built = 0
+    for course in courses:
+        todo = sources(course) if args.all else (
+            [p for p in sources(course) if args.exam in p.stem] if args.exam else [])
+        for p in todo:
+            print(f"==> {p.stem}")
             meta, body = split_frontmatter(p.read_text(encoding="utf-8"))
-            n_fig = len(figure_refs(body))
-            pdf = OUTDIR / f"{p.stem}.pdf"
-            print(f"  {p.stem:26s} {len(body.splitlines()):5d} righe  "
-                  f"{n_fig:2d} figure  pdf:{'si' if pdf.exists() else 'no'}")
-        return 0
-
-    if args.volume:
-        BUILD.mkdir(parents=True, exist_ok=True)
-        corpo, meta = volume_markdown()
-        print("==> ECON_Soluzioni_Raccolta")
-        out = render(SRC / "ECON_Soluzioni_Raccolta.md", max(args.toc_depth, 3),
-                     args.keep, corpo=corpo, meta_extra=meta)
-        print(f"    {out.name}")
-        return 0
-
-    todo = found if args.all else [p for p in found if args.exam in p.stem]
-    if not todo:
-        print(f"nessuna soluzione corrisponde a {args.exam!r}", file=sys.stderr)
+            out = render(course, p.stem, body, meta, args.toc_depth, args.keep)
+            print(f"    {out.relative_to(REPO)}")
+            built += 1
+        if args.volume and sources(course):
+            print(f"==> {course.volume}")
+            body, meta = volume_markdown(course)
+            depth = max(args.toc_depth, 3) if course.parts else args.toc_depth
+            out = render(course, course.volume, body, meta, depth, args.keep)
+            print(f"    {out.relative_to(REPO)}")
+            built += 1
+    if not built:
+        print(f"nessun sorgente corrisponde a {args.exam!r}", file=sys.stderr)
         return 1
-
-    BUILD.mkdir(parents=True, exist_ok=True)
-    for p in todo:
-        print(f"==> {p.stem}")
-        out = render(p, args.toc_depth, args.keep)
-        print(f"    {out.relative_to(REPO)}")
     return 0
 
 

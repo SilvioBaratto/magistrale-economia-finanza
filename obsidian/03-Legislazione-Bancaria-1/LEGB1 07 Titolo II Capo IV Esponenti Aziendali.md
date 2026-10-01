@@ -41,6 +41,8 @@ I soggetti tenuti a possedere i requisiti sono quelli definiti ai sensi dell'art
 
 Anche questo comma è un esempio di **delegificazione**. I criteri di onorabilità (un tempo completamente discrezionali) sono stati inizialmente stabiliti dal DPR 350/1985 in attuazione della direttiva del 1977; successivamente sono stati abrogati con l'entrata in vigore del TUB. Si è trattato, tuttavia, di una forma di **abrogazione differita** (art. 181 TUB), in quanto il decreto ministeriale contenente i requisiti di onorabilità è stato emanato solo nel 1998. Nel 2015 sono stati aggiunti i requisiti di correttezza e competenza, ma il MEF deve ancora emanare un decreto ministeriale a tal proposito.
 
+> **Approfondimento (ricerca ottobre 2026):** l'affermazione è tuttora valida — il decreto attuativo dell'art. 25 per i criteri di competenza e correttezza dei **partecipanti al capitale** non è stato emanato (solo uno schema MEF posto in consultazione nel 2022). In via transitoria si applica ancora il D.M. 144/1998, che disciplina la **sola onorabilità**. Il D.M. 169/2020 riguarda invece esclusivamente gli **esponenti aziendali** (art. 26), non i soci rilevanti: sono due discipline distinte.
+
 ### Comma 3
 
 *"Qualora non siano soddisfatti i requisiti e i criteri non possono essere esercitati i diritti di voto e gli altri diritti, che consentono di influire sulla società, inerenti alle partecipazioni eccedenti le soglie indicate all'articolo 19, comma 1. In caso di inosservanza, si applica l'articolo 24, comma 2. Le partecipazioni eccedenti devono essere alienate entro i termini stabiliti dalla Banca d'Italia."*

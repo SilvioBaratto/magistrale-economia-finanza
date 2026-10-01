@@ -6,10 +6,17 @@ filtro condivisi:
 | Script | Da | A |
 |---|---|---|
 | `build.py` | vault Obsidian (`../obsidian/`) | una dispensa per insegnamento in `../dispense/`, più un volume unico |
-| `build_esami.py` | soluzioni d'esame (`esami/econometria/src/`) | un PDF per appello in `../esami/econometria/`, più la raccolta |
+| `build_esami.py` | materiale d'esame (`esami/<corso>/src/`) | un PDF per sorgente in `../esami/<corso>/`, più il volume unico di ogni corso |
 
-Nulla viene scritto dentro `../obsidian/`. Le soluzioni d'esame sono descritte in
-[`esami/econometria/README.md`](esami/econometria/README.md).
+Nulla viene scritto dentro `../obsidian/`. Il materiale d'esame di ogni corso ha il suo README:
+
+| Corso | Che cosa | README |
+|---|---|---|
+| `econometria` | soluzioni svolte dei temi d'esame, con figure | [`esami/econometria/README.md`](esami/econometria/README.md) |
+| `legislazione-bancaria-1` | tracce per la prova orale, punti 1-7 | [`esami/legislazione-bancaria-1/README.md`](esami/legislazione-bancaria-1/README.md) |
+| `legislazione-bancaria-2` | tracce per la prova orale, punti 8-11 | [`esami/legislazione-bancaria-2/README.md`](esami/legislazione-bancaria-2/README.md) |
+
+`verifica_orale.py` controlla formato e completezza delle tracce d'orale prima di compilarle.
 
 ## Uso
 
@@ -23,7 +30,7 @@ python3 build.py --all --keep              # conserva .md intermedi e file ausil
 ```
 
 Oppure `make`, `make list`, `make combined`, `make sections`, `make clean`.
-Per le soluzioni d'esame `make esami` e `make esami-volume`; `make everything`
+Per il materiale d'esame `make esami` e `make esami-volume` (`make verifica` per le tracce d'orale); `make everything`
 ricompila ogni PDF del repository, `make figure` e `make figure-esami`
 rigenerano le figure.
 
@@ -153,13 +160,15 @@ Lo stesso template e lo stesso filtro generale compongono le soluzioni d'esame
   `template/dispensa.latex`.
 - **Mappatura callout → ambiente, larghezze delle tabelle, formule larghe**:
   `filters/callouts.lua` (le costanti delle tabelle dipendono da corpo e
-  `\tabcolsep` del template); blocchi delle soluzioni d'esame in
-  `filters/esami.lua`.
+  `\tabcolsep` del template); blocchi del materiale d'esame (domanda, dati,
+  richiamo, svolgimento, risposta) in `filters/esami.lua`.
+- **Un nuovo corso d'esame**: una voce in `COURSES` di `build_esami.py` e i
+  sorgenti in `esami/<corso>/src/`.
 - **Autore, ateneo, anno accademico, disclaimer**: costanti in cima a `build.py`.
 
 ## Note
 
 - `tex/` e `build/` sono intermedi (ignorati da git). I PDF non stanno qui: le
-  dispense escono in `../dispense/`, le soluzioni d'esame in `../esami/econometria/`.
+  dispense escono in `../dispense/`, il materiale d'esame in `../esami/<corso>/`.
 - Un errore LaTeX interrompe il build e stampa le ultime righe del log; i file
   ausiliari restano in `tex/.aux-<slug>/` se si usa `--keep`.

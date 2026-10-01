@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: all list combined sections esami esami-volume figure figure-esami everything clean distclean
+.PHONY: all list combined sections esami esami-volume verifica figure figure-esami everything clean distclean
 all:            ## build one PDF per subject
 	$(PY) build.py --all
 
@@ -13,10 +13,13 @@ combined:       ## build every subject + the single-volume edition
 sections:       ## build with a two-level table of contents
 	$(PY) build.py --all --toc-depth 2
 
-esami:          ## build every Econometria exam solution into ../esami/econometria/
+esami:          ## build the exam material of every course into ../esami/<corso>/
 	$(PY) build_esami.py --all
 
-esami-volume:   ## build all exam solutions as one PDF
+verifica:       ## check format and completeness of the oral-exam tracks
+	$(PY) verifica_orale.py --quiet
+
+esami-volume:   ## build the single volume of every course
 	$(PY) build_esami.py --volume
 
 figure:         ## regenerate the figures of the dispense
@@ -31,4 +34,4 @@ clean:          ## remove LaTeX intermediates
 	rm -rf tex/.aux-* build/*.md build/esami-*
 
 distclean: clean
-	rm -f tex/*.tex ../dispense/*.pdf ../esami/econometria/*.pdf
+	rm -f tex/*.tex ../dispense/*.pdf ../esami/*/*.pdf

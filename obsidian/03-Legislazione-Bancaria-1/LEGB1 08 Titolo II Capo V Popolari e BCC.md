@@ -20,6 +20,8 @@ Il Capo V del Titolo II TUB si occupa delle **banche cooperative**. Si articola 
 
 Da tempo esiste un dibattito acceso sulle Banche Popolari: ci si chiede se possano ancora essere considerate cooperative o meno. Nonostante sia vero che, rispetto al passato, il principio di mutualità si sia fortemente attenuato (un cliente di una banca costituita in forma di SPA non riceve un trattamento molto diverso da un cliente di una BP), le BP mantengono un elemento che le distingue inequivocabilmente come cooperative: il **voto capitario** (una testa, un voto).
 
+> **Approfondimento (ricerca ottobre 2026):** la riforma del 2015 (d.l. 3/2015, l. 33/2015) ha imposto la trasformazione in SpA alle BP con attivo oltre soglia (8 mld, poi portata a **16 mld** dalla l. 21/2024); la legittimità è stata confermata dalla Corte costituzionale (sent. **99/2018**, che però ha censurato l'esclusione totale e indefinita del rimborso ai soci recedenti) e dalla Corte di giustizia UE (causa **C-686/18**, 2020). Per le BP rimaste sotto soglia il dibattito sulla reale natura cooperativa (c.d. "mutualità attenuata") **resta dottrinalmente aperto**.
+
 **Questioni irrisolte dopo la riforma del 2003.** A cavallo della riforma del diritto societario del 2003 sono rimaste alcune questioni irrisolte:
 
 - l'art. 223-*terdecies* c.c. prevedeva che le BCC fossero cooperative a mutualità prevalente (categoria aggiunta proprio dalla riforma del 2003), ma si prevedeva anche che la riforma non fosse applicabile alle banche;
@@ -129,6 +131,8 @@ Le BCC sono caratterizzate necessariamente da due elementi coessenziali:
 
 - **Mutualità**: sono società cooperative a mutualità prevalente (hanno quindi un livello di "mutualità" più accentuato rispetto alle BP);
 - **Localismo**: hanno un carattere prettamente locale (in realtà una banca autorizzata può operare liberamente in tutto il territorio dell'UE per i principi già visti; bisogna ancora trovare un modo per conciliare l'autorizzazione unica con il carattere locale delle BCC).
+
+> **Approfondimento (ricerca ottobre 2026):** la soluzione è stata data dalla riforma del 2016 (gruppo bancario cooperativo): la **capogruppo SpA** — svincolata dal localismo e dal voto capitario — può raccogliere capitale sul mercato e fruire del passaporto europeo, mentre le singole BCC restano legate alla zona di competenza e all'operatività prevalente con i soci (art. 35 TUB). Parte della dottrina osserva però che la tensione concettuale permane, poiché il passaporto è di fatto fruibile solo dalla capogruppo e non dalle singole BCC.
 
 **Cenni storici.** Sono nate nel XIX secolo (la più antica è quella Veneta, di Loreggia) con lo scopo di sostenere agricoltori e artigiani, i soggetti potenzialmente più esposti al fenomeno dell'usura. Inizialmente assunsero la denominazione di "Casse rurali e artigiane" (CRA). Con la seconda direttiva banche e l'apertura delle frontiere è stato necessario un processo di riforma: con una prima riforma (1992) le CRA sono diventate Casse di credito cooperativo (CCC); l'anno dopo il TUB ha cambiato ancora la loro denominazione da CCC a BCC.
 

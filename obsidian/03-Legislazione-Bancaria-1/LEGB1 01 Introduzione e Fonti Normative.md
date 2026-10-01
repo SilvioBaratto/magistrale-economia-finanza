@@ -166,6 +166,8 @@ Infine, su decisione del Consiglio Europeo, si è giunti alla costituzione dell'
 
 Esistono tuttavia ancora numerosi problemi aperti: con l'attribuzione dei poteri di vigilanza alla BCE, l'EBA non è stata soppressa. Resta quindi aperta la questione di quali rapporti debbano intercorrere tra EBA, BCE e le autorità nazionali.
 
+> **Approfondimento (ricerca ottobre 2026):** il riparto EBA–BCE si è assestato in senso *funzionale* e non gerarchico: l'EBA fa regolazione (Single Rulebook, orientamenti, stress test EU-wide), la BCE-SSM vigila direttamente sulle banche significative applicando le metodologie EBA, le autorità nazionali sulle meno significative; la BCE segue gli orientamenti EBA ma non ne è gerarchicamente subordinata. Il terzo pilastro (EDIS, schema europeo unico di garanzia dei depositi) **non è stato realizzato**: la riforma CMDI (proposta 2023, accordo politico 2025, DGSD II e BRRD III in vigore dal 2026) rafforza la gestione delle crisi delle banche medio-piccole ma è meno ambiziosa del disegno originario; il full EDIS resta rinviato.
+
 *(pagina 8–9)*
 
 ## Cenni di norme secondarie: le circolari di Banca d'Italia

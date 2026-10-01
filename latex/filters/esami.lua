@@ -16,6 +16,7 @@ local ENV = {
   tip      = "cvteoria",         -- recalled theory
   example  = "cvcalcolo",        -- the working
   success  = "cvrisposta",       -- the answer
+  info     = "cvspiegazione",    -- oral tracks: the reasoning behind the answer to give
   warning  = "cvosservazione",   -- side remark
   note     = "cvnota",
 }
@@ -29,6 +30,7 @@ local DEFAULT_HEADING = {
   tip      = "Richiamo",
   example  = "Svolgimento",
   success  = "Risposta",
+  info     = "Spiegazione",
   warning  = "Osservazione",
   note     = "Nota",
 }
