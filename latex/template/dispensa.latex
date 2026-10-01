@@ -1,0 +1,349 @@
+%%% Dispensa template — Universita Ca' Foscari Venezia
+%%% Pandoc LaTeX template, XeLaTeX engine.
+%%%
+%%% Page design reproduced from "Polimi Thesis in Computer Science and
+%%% Engineering" (D. Baroffio, F. Reghenzani, Overleaf gallery), itself
+%%% derived from the PoliMi3i thesis class by P. F. Antonietti, S. Bonetti,
+%%% A. Gruttadauria, G. Mescolini, A. Zingaro (Politecnico di Milano, 2021).
+%%% Layout, type and heading styles follow PoliMi3i_thesis.cls and
+%%% config.tex; the Politecnico logo, halo and wording are left out because
+%%% these notes are not Politecnico documents. No file of that template is
+%%% copied here.
+%%%
+%%% A thesis is bound, printed and regulated; these are study notes read on
+%%% screen, so the frame is adapted while the look is kept:
+%%%   - one-sided, symmetric margins, chapters on a new page but never after
+%%%     a blank one;
+%%%   - 11 pt with 1.15 leading instead of the 12 pt / one-and-a-half
+%%%     spacing that thesis rules impose;
+%%%   - block bodies upright: the italic of a theorem style suits statements
+%%%     of a few lines, and these definitions and examples run to dozens;
+%%%   - a title page for notes, and a contents page that does not list itself.
+%%% Also functional: XeLaTeX with the OpenType Latin Modern (the same design
+%%% as pdfLaTeX's Computer Modern) so the notes' Unicode passes through, and
+%%% the content-driven sizing of tables and wide displays done by
+%%% filters/callouts.lua.
+\documentclass[11pt,oneside,a4paper]{book}
+
+%% ---------------------------------------------------------------- page
+\usepackage[a4paper, includehead, headheight=0.6cm,
+            left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{parskip}
+\setlength{\parindent}{10pt}
+\usepackage{setspace}
+\setstretch{1.15}
+\raggedbottom
+
+%% ---------------------------------------------------------------- fonts
+%% Order is mandatory: babel -> fontspec -> amsmath/amssymb/mathtools ->
+%% unicode-math -> decimalcomma. babel loaded after decimalcomma resets the math comma to
+%% the legacy font, so every "," in a formula came from Computer Modern. Without
+%% \setmainfont fontspec loads Latin Modern with its optical sizes (10, 12,
+%% 17 pt cuts), as pdfLaTeX does with Computer Modern.
+\usepackage[italian]{babel}
+\usepackage{fontspec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%% mathtools before unicode-math: loaded after, it redefines \underbrace and
+%% \overbrace with the legacy cmex brace pieces, which the OpenType math font
+%% does not hold at those slots, and the brace prints as black bars.
+%% showonlyrefs numbers an equation only if the text cites it.
+\usepackage{mathtools}
+\mathtoolsset{showonlyrefs,showmanualtags}
+%% mathbf=sym: the vault writes \mathbf for vectors; route it through \symbf
+%% so it follows bold-style=TeX (upright Latin, italic Greek).
+\usepackage[math-style=TeX,bold-style=TeX,mathbf=sym]{unicode-math}
+%% icomma fails silently under unicode-math; decimalcomma does not. A comma
+%% followed by a digit is decimal, followed by a space it is punctuation.
+\usepackage{decimalcomma}
+\setmathfont{latinmodern-math.otf}
+%% Latin Modern Math has no bold companion. Without a declared bold version,
+%% math inside bold headings falls back to the text font and loses glyphs.
+\setmathfont{latinmodern-math.otf}[version=bold,FakeBold=1.6]
+\let\boldsymbol\symbf
+
+%% The OpenType Latin Modern has no bold small caps, which the title page
+%% uses (pdfLaTeX's T1 Computer Modern does): the caps cut, emboldened.
+\newfontface\cvboldsc{lmromancaps10-regular.otf}[FakeBold=1.5]
+
+\usepackage[protrusion=true,expansion=false]{microtype}
+
+%% --------------------------------------------------------------- colour
+\usepackage{xcolor}
+\definecolor{bluepoli}{cmyk}{0.4,0.1,0,0.4}
+
+%% ------------------------------------------------------------------ math
+\numberwithin{equation}{chapter}
+\usepackage{mleftright}\mleftright   % \left...\right is an inner atom: spurious space
+\allowdisplaybreaks[1]
+%% Default tolerance leaves a line overfull when a long formula or address
+%% has no good break; a slightly looser line is the lesser evil.
+\tolerance=3000
+\emergencystretch=3em
+\hbadness=4000
+%% A long inline formula has no breakpoints; these let it break after a
+%% relation or a binary operator instead of overrunning the margin.
+\relpenalty=200
+\binoppenalty=500
+%% A display wider than the line moves into the margins, centred, up to 10 mm
+%% per side, and is scaled down only beyond that. #1 is an optional \tag,
+%% kept out of the measuring box because inline math rejects it.
+\makeatletter
+\newsavebox\cv@display
+\newcommand{\cvdisplay}[2][]{%
+  \sbox\cv@display{\(\displaystyle #2\)}%
+  \ifdim\wd\cv@display>\linewidth
+    \ifdim\wd\cv@display>\dimexpr\linewidth+20mm\relax
+      \sbox\cv@display{\resizebox{\dimexpr\linewidth+20mm\relax}{!}{\usebox\cv@display}}%
+    \fi
+    \[\makebox[\displaywidth]{\usebox\cv@display}#1\]%
+  \else
+    \[#2#1\]%
+  \fi}
+\makeatother
+
+%% -------------------------------------------------------------- graphics
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,keepaspectratio}
+$if(graphicspath)$\graphicspath{{$graphicspath$}}$endif$
+%% Captioned figures float, but never ahead of their first mention and never
+%% out of their section.
+\usepackage{float}
+\usepackage{flafter}
+\usepackage[section]{placeins}
+\floatplacement{figure}{htbp}
+\renewcommand{\textfraction}{0.06}
+\renewcommand{\topfraction}{0.92}
+\renewcommand{\bottomfraction}{0.92}
+\renewcommand{\floatpagefraction}{0.72}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{%
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi%
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+\makeatother
+\usepackage[bf]{caption}
+%% Centred in the flow, at most 80% of the line and 40% of the page; #2 is an
+%% optional note set small under it.
+\newcommand{\cvfigure}[2]{%
+  \par\addvspace{\cvvspace}%
+  {\centering\includegraphics[width=0.8\linewidth,height=0.4\textheight,keepaspectratio]{#1}\par}%
+  \if\relax\detokenize{#2}\relax\else{\centering\footnotesize\itshape #2\par}\fi
+  \addvspace{\cvvspace}}
+
+%% ---------------------------------------------------------------- tables
+%% Column widths are computed from the cell contents by filters/callouts.lua,
+%% which assumes this body size, the default \tabcolsep and the margin
+%% allowance below: keep them in step.
+\usepackage{longtable,booktabs,array,calc,multirow}
+\usepackage{etoolbox}
+\newcommand{\cvtablesize}{\small}
+%% The 1.15 leading would also stretch every table row.
+\AtBeginEnvironment{longtable}{\cvtablesize\singlespacing\setlength{\parskip}{0pt}}
+\AtBeginEnvironment{tabular}{\cvtablesize\singlespacing\setlength{\parskip}{0pt}}
+\setlength{\LTpre}{10pt}\setlength{\LTpost}{10pt}
+%% Centred, and free to move into each margin by up to 10 mm when wider than
+%% the measure, like the wide displays.
+\setlength{\LTleft}{0pt plus 1fill minus 10mm}
+\setlength{\LTright}{0pt plus 1fill minus 10mm}
+%% longtable v4.22 steps its table counter only when \LTcaptype is non-empty,
+%% and pandoc empties it for every uncaptioned table: all of them would share
+%% slot 0 in the .aux, read each other's column widths and never converge.
+\makeatletter
+\AtBeginEnvironment{longtable}{\stepcounter{LT@tables}}
+\makeatother
+
+%% ----------------------------------------------------------------- lists
+\usepackage{enumitem}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{seqsplit}
+\providecommand{\passthrough}[1]{#1}
+
+%% Program output (gretl, R) runs past the measure: break long lines with a
+%% continuation mark rather than overrun the margin.
+\usepackage{fvextra}
+\fvset{fontsize=\footnotesize,breaklines=true}
+\RecustomVerbatimEnvironment{verbatim}{Verbatim}{}
+\usepackage{csquotes}   % fvextra must come first, or it warns
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+%% -------------------------------------------------------------- headings
+\usepackage{titlesec}
+\titleformat{\part}[display]
+  {\normalfont\bfseries\centering}
+  {\Large\textcolor{bluepoli}{\partname~\thepart}}
+  {1em}
+  {\Huge\textcolor{bluepoli}}
+\titleformat{\chapter}[hang]
+  {\fontsize{50}{20}\selectfont\bfseries\filright}
+  {\textcolor{bluepoli}{\thechapter}\hspace{2mm}\textcolor{bluepoli}{| }}
+  {0pt}
+  {\huge\bfseries\textcolor{bluepoli}}
+\titlespacing*{\chapter}{0pt}{30pt}{20pt}
+%% Ragged right: a justified \Large heading has too few spaces to stretch and
+%% runs into the margin on long names (Treynor--Mazuy, Henriksson--Merton).
+\titleformat{\section}{\normalfont\Large\bfseries\raggedright}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\raggedright}{\thesubsection.}{1em}{}
+\titleformat{\subsubsection}{\normalfont\bfseries\raggedright}{\thesubsubsection.}{1em}{}
+\titlespacing{\section}{0pt}{3.3ex}{2ex}
+\titlespacing{\subsection}{0pt}{3.3ex}{1.65ex}
+\titlespacing{\subsubsection}{0pt}{3.3ex}{1ex}
+\setcounter{tocdepth}{$if(toc-depth)$$toc-depth$$else$0$endif$}
+%% The combined volume reaches chapter 100 and page 1000: book sizes the
+%% contents boxes for two-digit chapter numbers and three-digit pages.
+\makeatletter
+\renewcommand{\@pnumwidth}{2.2em}
+\renewcommand{\@tocrmarg}{3em}
+\patchcmd{\l@chapter}{1.5em}{2.1em}{}{}
+\makeatother
+
+%% ---------------------------------------------------------- running heads
+%% "N| Chapter" on the left, page on the right; chapter pages carry only the
+%% page number. Front matter shows no chapter number, which would read 0.
+%% Chapter titles here run to two lines; the head is cut to one with an
+%% ellipsis rather than growing \headheight and wrapping.
+\usepackage{fancyhdr}
+\usepackage[fit]{truncate}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\makeatletter
+\fancyhead[L]{\if@mainmatter\truncate{0.85\headwidth}{\textbf{\thechapter| \leftmark}}\fi}
+\makeatother
+\fancyhead[R]{\thepage}
+\fancypagestyle{plain}{%
+  \fancyhf{}\fancyhead[R]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
+
+%% ----------------------------------------------------------- environments
+%% The head of the original "colored" thmtools style, blue bold and numbered
+%% within the chapter, over an upright body. No \newtheorem, because the head
+%% is injected by the Lua filter as the first inline of the first paragraph
+%% (run-in). Dimostrazione is amsthm's proof: italic head, open box at the
+%% end.
+\newskip\cvvspace
+\AtBeginDocument{\cvvspace=.5\baselineskip plus .2\baselineskip minus .2\baselineskip}
+
+\makeatletter
+%% Drops the indent of the block's FIRST paragraph so the run-in head starts
+%% flush left.
+\newcommand{\cvfirstnoindent}{\everypar{{\setbox\z@\lastbox}\everypar{}}}
+
+\newcommand{\cvhead}[1]{{\color{bluepoli}\normalfont\bfseries #1.}\enspace}
+\newcommand{\cvproofhead}[1]{{\normalfont\itshape #1.}\enspace}
+
+\newcommand{\cvblock}[1]{%
+  \newcounter{#1}[chapter]%
+  \expandafter\renewcommand\csname the#1\endcsname{\thechapter.\arabic{#1}}%
+  \newenvironment{#1}
+    {\par\addvspace{\cvvspace}\refstepcounter{#1}\cvfirstnoindent}
+    {\par\addvspace{\cvvspace}}}
+\cvblock{cvdefinizione}
+\cvblock{cvteorema}
+\cvblock{cvesempio}
+\newenvironment{cvdimostrazione}
+  {\par\addvspace{\cvvspace}\cvfirstnoindent}
+  {\par\addvspace{\cvvspace}}
+%% Unnumbered blocks: the proof's companions in the notes, and the parts of
+%% a worked exam answer (exam text, data, recalled theory, working, answer,
+%% remark), whose heads the exam solutions' own filter injects.
+\newcommand{\cvplainblock}[1]{%
+  \newenvironment{#1}
+    {\par\addvspace{\cvvspace}\cvfirstnoindent}
+    {\par\addvspace{\cvvspace}}}
+\cvplainblock{cvnota}
+\cvplainblock{cvtesto}
+\cvplainblock{cvdati}
+\cvplainblock{cvteoria}
+\cvplainblock{cvcalcolo}
+\cvplainblock{cvrisposta}
+\cvplainblock{cvosservazione}
+
+%% Puts #1 flush right on the last line of the current paragraph when it
+%% fits, otherwise flush right on a line of its own (TeXbook, p. 106). In
+%% vertical mode it opens that line directly.
+\newcommand{\cvendmark}[1]{%
+  \ifhmode\unskip\nobreak\else\nopagebreak\noindent\fi
+  \hfil\penalty50\hskip1.5em\null\nobreak\hfil#1%
+  {\parfillskip=\z@\finalhyphendemerits=\z@\par}}
+%% amsthm's \openbox, drawn with rules so it needs no font glyph.
+\newcommand{\cvqedsymbol}{\hbox to.77778em{\hfil\vrule\vbox to.675em{\hrule width.6em\vfil\hrule}\vrule\hfil}}
+\newcommand{\cvqed}{\cvendmark{\cvqedsymbol}}
+\newcommand{\slideref}[1]{\cvendmark{{\footnotesize\itshape #1}}}
+
+\newcommand{\chapsource}[1]{%
+  {\footnotesize\itshape #1\par}\addvspace{\cvvspace}%
+  \@afterindentfalse\@afterheading}
+\makeatother
+
+%% ------------------------------------------------------------- hyperlinks
+%% Bookmarks down to subsections: the PDF sidebar is how notes are navigated.
+\usepackage[unicode,colorlinks=true,linkcolor=black,anchorcolor=black,
+  citecolor=black,filecolor=black,menucolor=black,runcolor=black,
+  urlcolor=black,linktoc=all,bookmarksdepth=2,
+  pdftitle={$title$},pdfauthor={$author$},pdfsubject={$subtitle$}]{hyperref}
+\usepackage{bookmark}
+%% Bare URLs are autolinked by pandoc; xurl lets them break anywhere, so a long
+%% address no longer stretches the interword spaces of its whole paragraph.
+\usepackage{xurl}
+\urlstyle{same}
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\begin{document}
+
+%% ------------------------------------------------------------ title page
+%% The original title page re-laid for notes: university and department stand
+%% where the Politecnico logo was, the blue small-caps line names the degree,
+%% and the thesis fields (student ID, advisor) give way to what the notes
+%% cover. Without anchors here the title page and the first contents page
+%% would share the PDF destination page.i.
+\hypersetup{pageanchor=false}
+\frontmatter
+\begin{titlepage}
+  \singlespacing
+  \setlength{\parindent}{0pt}
+  {\Large\bfseries $if(university)$$university$$else$Universit\`a Ca' Foscari Venezia$endif$\par}
+  $if(department)${\normalsize $department$\par}$endif$
+  \vspace{3cm}
+  \begin{center}
+    $if(degree)${\color{bluepoli}\large\cvboldsc Laurea Magistrale in\\ $degree$\par}
+    \vspace{1cm}$endif$
+    {\huge\bfseries $title$\par}
+    $if(subtitle)$\vspace{0.4cm}{\large $subtitle$\par}$endif$
+  \end{center}
+  \vfill
+  Appunti di:\\ {\large\bfseries $author$}\par
+  \vspace{0.5cm}
+  $if(coursecode)$Codice insegnamento:\\ {\bfseries $coursecode$}\par
+  \vspace{0.5cm}$endif$
+  $if(stats)$Contenuto:\\ {\bfseries $stats$}\par
+  \vspace{0.5cm}$endif$
+  Anno Accademico:\\ {\bfseries $date$}\par
+  $if(disclaimer)$\vspace{1cm}{\footnotesize\itshape $disclaimer$\par}$endif$
+\end{titlepage}
+\hypersetup{pageanchor=true}
+
+%% ----------------------------------------------------------- front matter
+$if(toc)$
+{\setcounter{tocdepth}{$if(toc-depth)$$toc-depth$$else$0$endif$}
+\tableofcontents}
+$endif$
+\mainmatter
+
+$body$
+
+\end{document}

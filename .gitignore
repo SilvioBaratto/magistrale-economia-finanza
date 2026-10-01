@@ -1,0 +1,11 @@
+# LaTeX intermediates
+latex/build/
+latex/tex/
+
+# Python and OS noise
+__pycache__/
+*.pyc
+.DS_Store
+
+# Obsidian's per-user window state
+obsidian/.obsidian/workspace*.json
