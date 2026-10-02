@@ -3,8 +3,8 @@
 Appunti di studio per la Laurea Magistrale in **Economia e Finanza**
 dell'Università Ca' Foscari Venezia, A.A. 2026/2027: le note di ogni
 insegnamento in formato Obsidian, le dispense PDF composte da quelle note e gli
-esami di Econometria svolti passo per passo, con tutte le figure, e le tracce
-per l'orale di Legislazione Bancaria.
+esami di Econometria svolti passo per passo, con tutte le figure, le tracce
+per l'orale di Legislazione Bancaria e la banca di domande del test di ingresso.
 
 > Appunti personali, non ufficiali e non rivisti dai docenti. Possono contenere
 > errori: verificare sempre sul materiale del corso.
@@ -84,6 +84,18 @@ gli articoli di riferimento).
 | 13 | La risoluzione: BRRD, d.lgs. 180/2015 e il Meccanismo di Risoluzione Unico | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_13_Risoluzione-e-BRRD.pdf) | 12 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_13_Risoluzione-e-BRRD.md) |
 | | **Tutte le tracce** | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_Completo.pdf) | 134 | |
 
+## Test di ingresso — prova di verifica EMR20
+
+647 domande a risposta multipla sul programma della prova di verifica della
+personale preparazione (matematica finanziaria, finanza aziendale e analisi di
+bilancio, diritto commerciale e bancario, tecnica bancaria e inferenza
+statistica), organizzate per materia e argomento.
+
+| PDF | Che cosa | Link | Pagine |
+|---|---|---|---|
+| Esame | le 647 domande, quattro alternative ciascuna | [PDF](esami/test-ingresso/EMR20_Prereq_Test-Completo_Esame.pdf) | 141 |
+| Soluzioni | risposta corretta, spiegazione, chiave per materia | [PDF](esami/test-ingresso/EMR20_Prereq_Test-Completo_Soluzioni.pdf) | 215 |
+
 ## Contenuto
 
 ```
@@ -92,7 +104,8 @@ gli articoli di riferimento).
 ├── esami/                  materiale d'esame (solo PDF)
 │   ├── econometria/              soluzioni svolte
 │   ├── legislazione-bancaria-1/  tracce d'orale, modulo 1
-│   └── legislazione-bancaria-2/  tracce d'orale, modulo 2
+│   ├── legislazione-bancaria-2/  tracce d'orale, modulo 2
+│   └── test-ingresso/            test di ingresso EMR20, domande e soluzioni
 ├── obsidian/              note Obsidian, una cartella per insegnamento (+ immagini in assets/)
 └── latex/                 l'unica soluzione LaTeX: template, filtri, script, figure
     ├── build.py           dispense  (obsidian/ -> dispense/)
@@ -126,8 +139,9 @@ make figure            # rigenera le figure delle dispense
 
 Dettagli in [`latex/README.md`](latex/README.md) e nei README di
 [`latex/esami/econometria/`](latex/esami/econometria/README.md),
-[`latex/esami/legislazione-bancaria-1/`](latex/esami/legislazione-bancaria-1/README.md) e
-[`latex/esami/legislazione-bancaria-2/`](latex/esami/legislazione-bancaria-2/README.md).
+[`latex/esami/legislazione-bancaria-1/`](latex/esami/legislazione-bancaria-1/README.md),
+[`latex/esami/legislazione-bancaria-2/`](latex/esami/legislazione-bancaria-2/README.md) e
+[`latex/esami/test-ingresso/`](latex/esami/test-ingresso/README.md).
 
 ## Crediti
 

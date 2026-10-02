@@ -1,0 +1,10 @@
+%% Header additions for the test-ingresso PDFs only (build_esami.py includes
+%% esami/<corso>/macros.tex after the template's environments).
+%%
+%% A question is read together with its four options, so the block never
+%% breaks across pages: the minipage is one unbreakable line. The minipage
+%% zeroes \parskip, which is restored for the gap before the options.
+\renewenvironment{cvtesto}
+  {\par\addvspace{\baselineskip}\noindent
+   \begin{minipage}[t]{\linewidth}\setlength{\parskip}{.5\baselineskip plus 2pt}}
+  {\end{minipage}\par\addvspace{\cvvspace}}

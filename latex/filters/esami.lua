@@ -46,6 +46,18 @@ local function blocks_latex(blocks)
   return (tex:gsub("%s+$", ""))
 end
 
+-- The right option of a multiple-choice question (test-ingresso): a raw
+-- \cvcorretta{...} around the inlines, so math and markup inside still go
+-- through pandoc.
+function Span(el)
+  if el.classes:includes("corretta") then
+    local out = pandoc.List({ pandoc.RawInline("latex", "\\cvcorretta{") })
+    out:extend(el.content)
+    out:insert(pandoc.RawInline("latex", "}"))
+    return out
+  end
+end
+
 function Div(el)
   if el.classes:includes("callout") then
     local kind = el.attributes["kind"] or "note"

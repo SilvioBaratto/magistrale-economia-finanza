@@ -15,6 +15,7 @@ Nulla viene scritto dentro `../obsidian/`. Il materiale d'esame di ogni corso ha
 | `econometria` | soluzioni svolte dei temi d'esame, con figure | [`esami/econometria/README.md`](esami/econometria/README.md) |
 | `legislazione-bancaria-1` | tracce per la prova orale, punti 1-7 | [`esami/legislazione-bancaria-1/README.md`](esami/legislazione-bancaria-1/README.md) |
 | `legislazione-bancaria-2` | tracce per la prova orale, punti 8-11 | [`esami/legislazione-bancaria-2/README.md`](esami/legislazione-bancaria-2/README.md) |
+| `test-ingresso` | 647 domande a risposta multipla del test EMR20, domande e soluzioni (solo PDF: i sorgenti non sono nell'export) | [`esami/test-ingresso/README.md`](esami/test-ingresso/README.md) |
 
 `verifica_orale.py` controlla formato e completezza delle tracce d'orale prima di compilarle.
 
@@ -163,7 +164,8 @@ Lo stesso template e lo stesso filtro generale compongono le soluzioni d'esame
   `\tabcolsep` del template); blocchi del materiale d'esame (domanda, dati,
   richiamo, svolgimento, risposta) in `filters/esami.lua`.
 - **Un nuovo corso d'esame**: una voce in `COURSES` di `build_esami.py` e i
-  sorgenti in `esami/<corso>/src/`.
+  sorgenti in `esami/<corso>/src/` (oppure `src=` verso un'altra cartella e
+  `prepare=` per un formato diverso, come `test-ingresso`).
 - **Autore, ateneo, anno accademico, disclaimer**: costanti in cima a `build.py`.
 
 ## Note

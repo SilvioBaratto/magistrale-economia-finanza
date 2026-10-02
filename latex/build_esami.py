@@ -8,11 +8,14 @@
     python3 build_esami.py --corso legislazione-bancaria-1 --exam 04
     python3 build_esami.py --all --keep                             # keep LaTeX intermediates
 
-Two kinds of material, one pipeline, the template of the dispense:
+Three kinds of material, one pipeline, the template of the dispense:
 
 - econometria: worked solutions of past written exams, one PDF per sitting;
 - legislazione-bancaria-1/-2: question-and-answer tracks for the oral exam,
-  one PDF per point of the syllabus.
+  one PDF per point of the syllabus;
+- test-ingresso: the multiple-choice bank of the EMR20 entry test, questions
+  and solutions, read straight from Moodle/00-Test-di-Ingresso/ and reshaped
+  by quiz_markdown().
 
     esami/<corso>/src/*.md
       -> normalisation (front matter, Obsidian callouts, glyphs)
@@ -32,6 +35,7 @@ import re
 import shutil
 import subprocess
 import sys
+from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -58,13 +62,17 @@ class Course:
         coursecode: Code printed on the title page.
         disclaimer: Last line of the title page.
         subtitle: Subtitle of a single PDF whose front matter has none.
-        volume: File stem of the single volume.
+        volume: File stem of the single volume, or None when the sources do
+            not add up to one (a question bank and its own solutions).
         volume_title: Title of the single volume.
         volume_subtitle: Subtitle of the single volume.
         parts: Whether the volume gives each source a \\part (exam sittings) or
             just runs their chapters on (syllabus points).
         question_re: Counts the questions of a source, for the title page.
         unit: Name of a source in the volume statistics.
+        src: Folder of the sources when they live outside esami/<corso>/src/.
+        prepare: Turns a whole source file into title-page fields and body,
+            for sources not written in the exam format; front matter by default.
     """
 
     slug: str
@@ -72,16 +80,26 @@ class Course:
     coursecode: str
     disclaimer: str
     subtitle: str
-    volume: str
+    volume: str | None
     volume_title: str
     volume_subtitle: str
     parts: bool
     question_re: str
     unit: str
+    src: Path | None = None
+    prepare: Callable[[str], tuple[dict[str, str], str]] | None = None
 
     @property
     def sources_dir(self) -> Path:
         return LATEX / "esami" / self.slug
+
+    @property
+    def src_dir(self) -> Path:
+        return self.src or self.sources_dir / "src"
+
+    def load(self, path: Path) -> tuple[dict[str, str], str]:
+        """Return the title-page fields and the Markdown body of one source."""
+        return (self.prepare or split_frontmatter)(path.read_text(encoding="utf-8"))
 
     @property
     def outdir(self) -> Path:
@@ -111,6 +129,116 @@ def _orale(n: int, points: str) -> Course:
     )
 
 
+# ------------------------------------------------------------------ quiz bank
+QUIZ_SUBJECT_RE = re.compile(r"^##\s+Materia\s+\d+:\s*(?P<title>.+)$")
+QUIZ_QUESTION_RE = re.compile(r"^\*\*(?P<n>\d+)\.\*\*\s*(?P<text>.+)$")
+QUIZ_OPTION_RE = re.compile(r"^- (?P<letter>[a-d])\)\s+(?P<text>.+?)\s*(?P<ok>✅)?$")
+QUIZ_ANSWER_RE = re.compile(r"^>\s*\*\*(?P<head>Risposta:\s*[A-D])\.?\*\*\s*(?P<text>.*)$")
+QUIZ_KEY_RE = re.compile(r"(\d+)=([A-D])")
+# Some options repeat their own letter in the text: "a) A) ...", "c) C. ...".
+QUIZ_DUP_LABEL_RE = re.compile(r"^(?P<letter>[A-D])[.)]\s+")
+# Subscripts written TeX-style in running text ("t_{n−1}", "z_{α/2}") would
+# print their underscore and braces; pandoc's ~sub~ sets them as subscripts.
+TEXT_SUBSCRIPT_RE = re.compile(r"(?<=\w)_\{([^{}\s]+)\}")
+KEY_COLUMNS = 10
+
+
+def text_subscripts(text: str) -> str:
+    return "".join(part if i % 2 else TEXT_SUBSCRIPT_RE.sub(r"~\1~", part)
+                   for i, part in enumerate(MATH_SPAN_RE.split(text)))
+
+
+def answer_key(line: str) -> list[str]:
+    """Typeset a "Chiave rapida: 1=B · 2=B · ..." line as a grid, row by row."""
+    pairs = [f"{n} & \\textbf{{{a}}}" for n, a in QUIZ_KEY_RE.findall(line)]
+    rows = [" & ".join(pairs[i:i + KEY_COLUMNS]) + r" \\"
+            for i in range(0, len(pairs), KEY_COLUMNS)]
+    return ["## Chiave delle risposte {.unnumbered}", "",
+            r"\begin{center}", rf"\begin{{tabular}}{{*{{{KEY_COLUMNS}}}{{r@{{\ }}l}}}}",
+            *rows, r"\end{tabular}", r"\end{center}", ""]
+
+
+def quiz_markdown(raw: str) -> tuple[dict[str, str], str]:
+    """Reshape a multiple-choice bank of Moodle/00-Test-di-Ingresso for this pipeline.
+
+    The bank has a "## Materia N: ..." heading per subject, "###" topics and
+    "**N.**" questions with options "- a) ..." to "- d) ...". The solutions
+    file also marks the right option with ✅, follows each question with a
+    one-line "> **Risposta: X.** ..." explanation and opens each subject with
+    a "Chiave rapida" line. What precedes the first subject (title, index,
+    total) is dropped: the title page and the contents stand in for it.
+
+    Args:
+        raw: The whole source file.
+
+    Returns:
+        Title-page fields and the body: subjects as chapters, topics as
+        sections, each question a "question" block whose right option, when
+        marked, is a ``corretta`` span, each explanation a "success" block,
+        each answer key an unnumbered section with a grid.
+
+    Raises:
+        SystemExit: A line inside a subject matches none of the forms above,
+            so the PDF would silently lose or garble it.
+    """
+    lines = raw.splitlines()
+    solutions = "SOLUZIONI" in lines[0]
+    out: list[str] = []
+    question: list[str] = []
+    questions = subjects = 0
+
+    def flush() -> None:
+        if question:
+            out.extend([*question, FENCE, ""])
+            question.clear()
+
+    for no, line in enumerate(lines, 1):
+        if m := QUIZ_SUBJECT_RE.match(line):
+            flush()
+            subjects += 1
+            out += [f"# {m['title']}", ""]
+            continue
+        if not subjects or not line.strip():
+            continue
+        line = text_subscripts(line)
+        if line.startswith("### "):
+            flush()
+            out += [line[1:], ""]
+        elif m := QUIZ_QUESTION_RE.match(line):
+            flush()
+            questions += 1
+            question += [f'{FENCE} {{.callout kind="question" heading="{m["n"]}"}}', m["text"], ""]
+        elif (m := QUIZ_OPTION_RE.match(line)) and question:
+            text = m["text"]
+            dup = QUIZ_DUP_LABEL_RE.match(text)
+            if dup and dup["letter"].lower() == m["letter"]:
+                text = text[dup.end():]
+            if m["ok"]:
+                text = f'<span class="corretta">{text}</span>'
+            question.append(f"{m['letter']}) {text}")
+        elif m := QUIZ_ANSWER_RE.match(line):
+            flush()
+            out += [f'{FENCE} {{.callout kind="success" heading="{m["head"]}"}}',
+                    m["text"], FENCE, ""]
+        elif line.startswith("Chiave rapida"):
+            flush()
+            out += answer_key(line)
+        else:
+            raise SystemExit(f"riga {no} non riconosciuta: {line[:70]!r}")
+    flush()
+
+    meta = {
+        "title": lines[0].lstrip("# ").split(" — ")[0],
+        "subtitle": ("Risposte corrette e spiegazioni, con la chiave per materia" if solutions
+                     else "Domande a risposta multipla: quattro alternative, una sola corretta"),
+        "stats": f"{questions} domande · {subjects} materie",
+    }
+    if not solutions:
+        meta["disclaimer"] = (f"{COURSES['test-ingresso'].disclaimer} "
+                              "Le risposte, con le spiegazioni, sono nel PDF delle soluzioni.")
+    return meta, "\n".join(out)
+
+
 COURSES = {c.slug: c for c in (
     Course(
         slug="econometria",
@@ -128,6 +256,23 @@ COURSES = {c.slug: c for c in (
     ),
     _orale(1, "Punti 1\u20137 del programma (prova intermedia)"),
     _orale(2, "Punti 8\u201311 del programma (seconda prova)"),
+    Course(
+        slug="test-ingresso",
+        pattern="EMR20_Prereq_Test-Completo_*.md",
+        coursecode="",
+        disclaimer=("Banca di domande costruita a fini di studio sul programma della prova di "
+                    "verifica della personale preparazione (EMR20) e sugli appunti di "
+                    "preparazione. Non \u00e8 materiale ufficiale dell\u2019Ateneo."),
+        subtitle="",
+        volume=None,
+        volume_title="",
+        volume_subtitle="",
+        parts=False,
+        question_re=r'kind="question"',
+        unit="file",
+        src=REPO / "Moodle" / "00-Test-di-Ingresso",
+        prepare=quiz_markdown,
+    ),
 )}
 
 FENCE = ":" * 5
@@ -173,12 +318,30 @@ TEXT_GLYPHS = {
     "ρ": r"\ensuremath{\rho}", "σ": r"\ensuremath{\sigma}", "χ": r"\ensuremath{\chi}", "ω": r"\ensuremath{\omega}",
     "Δ": r"\ensuremath{\Delta}", "Σ": r"\ensuremath{\Sigma}", "Π": r"\ensuremath{\Pi}",
     "≡": r"\ensuremath{\equiv}", "▪": r"\ensuremath{\bullet}",
+    "θ": r"\ensuremath{\theta}", "π": r"\ensuremath{\pi}", "∞": r"\ensuremath{\infty}",
+    "∪": r"\ensuremath{\cup}", "∩": r"\ensuremath{\cap}", "∅": r"\ensuremath{\emptyset}",
+    "⊃": r"\ensuremath{\supset}", "⊆": r"\ensuremath{\subseteq}", "≻": r"\ensuremath{\succ}",
+    "ᵢ": r"\textsubscript{i}", "ₖ": r"\textsubscript{k}", "ₙ": r"\textsubscript{n}",
+    "ⁿ": r"\textsuperscript{n}", "ᶜ": r"\textsuperscript{c}",
 }
 MATH_SPAN_RE = re.compile(r"(?<!\\)(\$\$(?:\\.|[^\\])*?\$\$|\$(?:\\.|[^$\\\n])+?\$)", re.DOTALL)
 
 
+# Latin Modern sets a combining accent at x-height, so over a capital (X̄, S̃)
+# it strikes through the letter; a math accent sits on the actual base. Latin
+# bases stay upright to match the running text around them.
+COMBINING_ACCENTS = {"̂": "hat", "̃": "tilde", "̄": "bar"}
+COMBINING_RE = re.compile(r"(\w)([̂̃̄])")
+
+
+def math_accent(m: re.Match) -> str:
+    base = rf"\mathrm{{{m[1]}}}" if m[1].isascii() else m[1]
+    return rf"\ensuremath{{\{COMBINING_ACCENTS[m[2]]}{{{base}}}}}"
+
+
 def fix_glyphs(text: str) -> str:
     def convert(chunk: str) -> str:
+        chunk = COMBINING_RE.sub(math_accent, chunk)
         for src, dst in TEXT_GLYPHS.items():
             chunk = chunk.replace(src, dst)
         return chunk
@@ -293,7 +456,7 @@ def render(course: Course, slug: str, body: str, meta: dict[str, str],
         "degree": DEGREE,
         "coursecode": meta.get("coursecode", course.coursecode),
         "stats": meta.get("stats", f"{n} domande d\u2019esame" if n else ""),
-        "disclaimer": course.disclaimer,
+        "disclaimer": meta.get("disclaimer", course.disclaimer),
         "graphicspath": f"{course.sources_dir}/",
     }
 
@@ -366,7 +529,7 @@ def volume_markdown(course: Course) -> tuple[str, dict[str, str]]:
     pieces, questions, figures = [], 0, 0
     paths = sources(course)
     for md in paths:
-        meta, body = split_frontmatter(md.read_text(encoding="utf-8"))
+        meta, body = course.load(md)
         questions += count_questions(course, body)
         figures += len(figure_refs(body))
         body = namespace_references(body, md.stem)
@@ -383,13 +546,13 @@ def volume_markdown(course: Course) -> tuple[str, dict[str, str]]:
 
 # ------------------------------------------------------------------------ cli
 def sources(course: Course) -> list[Path]:
-    return sorted((course.sources_dir / "src").glob(course.pattern))
+    return sorted(course.src_dir.glob(course.pattern))
 
 
 def list_course(course: Course) -> None:
     print(f"{course.slug}:")
     for p in sources(course):
-        _meta, body = split_frontmatter(p.read_text(encoding="utf-8"))
+        _meta, body = course.load(p)
         pdf = course.outdir / f"{p.stem}.pdf"
         print(f"  {p.stem:52s} {len(body.splitlines()):5d} righe  "
               f"{count_questions(course, body):3d} domande  {len(figure_refs(body)):2d} figure  "
@@ -422,15 +585,16 @@ def main() -> int:
             [p for p in sources(course) if args.exam in p.stem] if args.exam else [])
         for p in todo:
             print(f"==> {p.stem}")
-            meta, body = split_frontmatter(p.read_text(encoding="utf-8"))
+            meta, body = course.load(p)
             out = render(course, p.stem, body, meta, args.toc_depth, args.keep)
             print(f"    {out.relative_to(REPO)}")
             built += 1
-        if args.volume and sources(course):
-            print(f"==> {course.volume}")
+        volume = course.volume
+        if args.volume and volume and sources(course):
+            print(f"==> {volume}")
             body, meta = volume_markdown(course)
             depth = max(args.toc_depth, 3) if course.parts else args.toc_depth
-            out = render(course, course.volume, body, meta, depth, args.keep)
+            out = render(course, volume, body, meta, depth, args.keep)
             print(f"    {out.relative_to(REPO)}")
             built += 1
     if not built:
