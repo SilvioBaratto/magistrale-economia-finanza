@@ -437,7 +437,8 @@ def run(cmd: list[str], cwd: Path | None = None) -> None:
                 print(f"    ! {line}", file=sys.stderr)
 
 
-def render(slug: str, markdown: str, meta: dict[str, str], toc_depth: int, keep: bool) -> Path:
+def render(slug: str, markdown: str, meta: dict[str, str], toc_depth: int, keep: bool,
+           extra_pandoc: tuple[str, ...] = (), pdf_dir: Path | None = None) -> Path:
     md_path = BUILD / f"{slug}.md"
     tex_path = TEXDIR / f"{slug}.tex"
     md_path.write_text(markdown, encoding="utf-8")
@@ -456,6 +457,7 @@ def render(slug: str, markdown: str, meta: dict[str, str], toc_depth: int, keep:
         # report class: chapter=0, section=1 -> shift the user-facing depth
         "-V", f"toc-depth={max(toc_depth - 1, 0)}",
         "-o", str(tex_path),
+        *extra_pandoc,
     ]
     for key, value in meta.items():
         cmd += ["-M", f"{key}={value}"]
@@ -467,7 +469,8 @@ def render(slug: str, markdown: str, meta: dict[str, str], toc_depth: int, keep:
          "-halt-on-error", f"-outdir={aux}", tex_path.name], cwd=TEXDIR)
 
     pdf_src = aux / f"{slug}.pdf"
-    pdf_dst = PDFDIR / f"{slug}.pdf"
+    pdf_dst = (pdf_dir or PDFDIR) / f"{slug}.pdf"
+    pdf_dst.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(pdf_src, pdf_dst)
     if not keep:
         shutil.rmtree(aux, ignore_errors=True)

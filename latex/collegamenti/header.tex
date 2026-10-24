@@ -1,0 +1,31 @@
+%% Preamble additions for the "Collegamenti" part; passed to pandoc with -H.
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+%% One colour per level of the hierarchy of sources. The same colour marks the
+%% band, the node border and the tappable "art. N" in the running text.
+\definecolor{fCost}{HTML}{A6262B}
+\definecolor{fUE}{HTML}{1F5FA8}
+\definecolor{fTub}{HTML}{3A3A3A}
+\definecolor{fSec}{HTML}{2E7D4F}
+\definecolor{fAlt}{HTML}{7A4E9A}
+
+%% hyperref is configured with black links (the table of contents must stay
+%% black), so a tappable reference has to carry its own colour. Targets are
+%% \label names: pandoc writes no \hypertarget, so \hyperlink would point nowhere.
+\newcommand{\artref}[2]{\hyperref[#1]{\textcolor{fUE}{#2}}}
+
+\newcommand{\collitem}[2]{%
+  {\small\par\noindent\hangindent=1.6em\hangafter=1
+  \makebox[1.6em][l]{\textbf{#1}}#2\par}\vspace{0.3em}}
+
+%% Entry from a lecture heading to the hub page of the same article.
+\newcommand{\snodolink}[2]{{\small\itshape\textcolor{fUE}{\ensuremath{\nearrow}}\ \hyperref[#1]{\textcolor{fUE}{Collegamenti di #2}}}}
+
+%% One paragraph of an article text: #1 indent, #2 label (comma, letter), #3 text.
+%% A label too wide for its box ("2-bis.", "c-bis)") stays inline instead of overprinting the text.
+\newcommand{\testoitem}[3]{%
+  {\footnotesize\par\noindent\hangindent=\dimexpr#1+1.8em\relax\hangafter=1
+  \hspace*{#1}\setbox0=\hbox{#2}%
+  \ifdim\wd0<1.8em \hbox to 1.8em{#2\hfil}\else\box0\kern0.5em\fi
+  #3\par}\vspace{0.15em}}

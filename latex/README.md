@@ -122,6 +122,78 @@ e il `.pdf` accanto (per la dispensa). Stile condiviso in `figure-src/style.py`:
 Latin Modern, blu Polimi, palette gretl `GP_RED`/`GP_GREEN`/`GP_BLUE` per i grafici
 che nelle slide vengono da gretl.
 
+## Collegamenti fra le fonti
+
+`collegamenti.py` aggiunge alla dispensa di un corso una parte **Collegamenti tra le fonti**: una pagina per ogni
+articolo-snodo, con l'articolo al centro e le norme che si intrecciano con lui disposte in fasce per livello di
+fonte (Costituzione, diritto UE, TUB e leggi, fonti secondarie). Ogni freccia porta la parola del rapporto
+(`fonda`, `impone`, `attribuisce`, `delega`, `recepisce`, `condiziona`...) e un numero che rimanda alla riga che la
+spiega. Nel testo delle lezioni gli «art. N» degli snodi diventano link blu.
+
+```bash
+python3 collegamenti.py --subject 03-Legislazione-Bancaria-1   # -> ../dispense/prova-collegamenti/
+python3 collegamenti.py --edges altro.yaml --out /tmp/prova --keep
+```
+
+Il PDF esce a parte (`03-legislazione-bancaria-1-collegamenti.pdf`): la dispensa normale e `../obsidian/` non
+cambiano. Tutto sta in un solo PDF perché i link interni non funzionano fra file diversi.
+
+La fonte unica è `collegamenti/edges.yaml`: i nodi (`hub: true` = ha una pagina), gli archi (`src`, `dst`, `rel`,
+`label`, `why`, `src_loc`, `dst_loc`, `status`, `weight`, `check`, `sources`, `evidence`) e le domande d'orale per nodo. Si
+disegnano solo gli archi `status: accepted`; con `--review` i meglio attestati fra gli altri finiscono in un capitolo
+finale "Collegamenti da verificare" (di controllo, non per lo studio: di default non c'è). Una pagina snodo disegna al massimo 8 archi dell'articolo (almeno 2 per livello di fonte, poi per
+`weight`) più 2 fra i suoi vicini: gli altri restano nel grafo.
+
+Il grafo è stato ricavato in automatico, in due passate, dalle lezioni, dalle tracce d'orale e dalla nota Collegamenti.
+Il campo `check` dice quanto è affidabile ogni arco: `doppio controllo` = due agenti indipendenti (fedeltà al
+materiale, esattezza giuridica) concordano; `citazione + campione` = in più un agente ha riletto la fonte (i 40 archi
+nuovi meglio attestati: 7 su 40 avevano un problema, per lo più comma o descrizione sbagliati); `citazione` = è
+verificato solo che la citazione esista alla lettera nel file e che i due articoli siano nominati entro tre righe, quindi
+**comma e descrizione possono contenere errori**. Nelle pagine gli archi riletti da un agente hanno il segno ✓.
+`sources` dice dove l'arco è affermato (`L05` = lezione 5, `O05` = traccia d'orale 5, `COLL` = nota Collegamenti);
+`evidence` riporta citazioni verificabili. `weight` è il numero di fonti distinte, più uno se l'arco passa fra livelli.
+Correggere a mano un arco qui è il modo di migliorare tutte le pagine.
+
+Nelle lezioni, sotto ogni titolo "Art. N" di uno snodo compare il link «Collegamenti di art. N»; anche gli
+«art. N» citati nel testo diventano link. `collegamenti/header.tex` porta TikZ, i colori dei livelli e i comandi
+`\artref` e `\snodolink` (i link di `hyperref` sono neri, quelli tappabili no).
+
+Quale articolo è citato è deciso da `classify()`: il TUB è il default (tranne 41, 47, 117 senza altra indicazione, che
+nelle note sono la Costituzione); un marcatore di altro strumento nella stessa frase (`Reg.`, `d.m.`, `c.c.`...) o
+subito prima del numero (`Reg. UE 1024/2013, art. 14`) lo declassa a «altro» e non viene linkato. Si preferisce un
+link mancato a uno sbagliato.
+
+### Solo collegamenti, con il testo degli articoli
+
+```bash
+python3 collegamenti.py --solo      # -> ../dispense/prova-collegamenti/03-legislazione-bancaria-1-solo-collegamenti.pdf
+```
+
+Lo stesso materiale senza le lezioni: copertina, indice navigabile (un capitolo per snodo, col titolo ufficiale
+dell'articolo), pagina guida e, per ogni snodo, diagramma, spiegazione delle frecce, **testo dell'articolo** e domande
+d'orale. I commi abrogati ma ancora stampati nel consolidato restano nel testo, in grigio e con la dicitura
+«abrogato». Il d.m. 169/2020 non ha testo (decreto di 24 pagine, non un articolo).
+
+I testi stanno in `collegamenti/testi.yaml`, prodotto da `collegamenti/estrai_testi.py` e da non modificare a mano.
+Le fonti sono i testi ufficiali che erano in `Moodle/03-Legislazione-Bancaria-1/Normativa/` e poi sono stati tolti dal
+repository (sono nella storia di git: `git log --all --diff-filter=D -- <file>` dà il commit che li ha eliminati, il
+file sta nel suo genitore):
+
+| Fonte | File | Nota |
+|---|---|---|
+| TUB | `LEGB1_Normativa_TUB-2026-01-22.pdf` | consolidato al 22/01/2026, con le modifiche del d.lgs. 208/2025 |
+| Reg. UE 1024/2013 | `LEGB1_Normativa_RegUE1024-2013.pdf` | **testo originale della GU, non consolidato**: la versione aggiornata al 2025 è una scansione senza testo |
+| Costituzione | `notebooklm/fonti-estratte/LEGB1_Normativa_Costituzione-Artt-41-47-117.md` | già nel repository |
+
+```bash
+python3 collegamenti/estrai_testi.py --tub tub.pdf --reg reg.pdf --cost notebooklm/fonti-estratte/LEGB1_Normativa_Costituzione-Artt-41-47-117.md
+```
+
+Il testo non viene riscritto: si tolgono solo intestazioni, note a piè di pagina, sillabazione e spaziature della
+giustificazione. Ogni paragrafo estratto del TUB è stato ritrovato, a meno degli spazi, nel testo originale del PDF.
+
+Richiede PyYAML (`pip install pyyaml`), oltre a quanto serve a `build.py`.
+
 ## Impianto tipografico
 
 Stile del template Overleaf *Polimi Thesis in Computer Science and Engineering*

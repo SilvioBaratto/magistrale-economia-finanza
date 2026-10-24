@@ -1,0 +1,2768 @@
+# Text of the hub articles, extracted by estrai_testi.py. Not to be edited by hand.
+COST:117:
+  fonte: Costituzione della Repubblica italiana
+  rubrica: ''
+  vigore: ''
+  par:
+  - label: '1.'
+    text: La potestà legislativa è esercitata dallo Stato e dalle Regioni nel rispetto della Costituzione, nonché dei vincoli
+      derivanti dall'ordinamento comunitario e dagli obblighi internazionali.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: 'Lo Stato ha legislazione esclusiva nelle seguenti materie:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: politica estera e rapporti internazionali dello Stato; rapporti dello Stato con l'Unione europea; diritto di asilo
+      e condizione giuridica dei cittadini di Stati non appartenenti all'Unione europea;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: immigrazione;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: rapporti tra la Repubblica e le confessioni religiose;
+    level: 1
+    abrogato: false
+  - label: d)
+    text: difesa e Forze armate; sicurezza dello Stato; armi, munizioni ed esplosivi;
+    level: 1
+    abrogato: false
+  - label: e)
+    text: moneta, tutela del risparmio e mercati finanziari; tutela della concorrenza; sistema valutario; sistema tributario
+      e contabile dello Stato; armonizzazione dei bilanci pubblici; perequazione delle risorse finanziarie;
+    level: 1
+    abrogato: false
+  - label: f)
+    text: organi dello Stato e relative leggi elettorali; referendum statali; elezione del Parlamento europeo;
+    level: 1
+    abrogato: false
+  - label: g)
+    text: ordinamento e organizzazione amministrativa dello Stato e degli enti pubblici nazionali;
+    level: 1
+    abrogato: false
+  - label: h)
+    text: ordine pubblico e sicurezza, ad esclusione della polizia amministrativa locale;
+    level: 1
+    abrogato: false
+  - label: i)
+    text: cittadinanza, stato civile e anagrafi;
+    level: 1
+    abrogato: false
+  - label: l)
+    text: giurisdizione e norme processuali; ordinamento civile e penale; giustizia amministrativa;
+    level: 1
+    abrogato: false
+  - label: m)
+    text: determinazione dei livelli essenziali delle prestazioni concernenti i diritti civili e sociali che devono essere
+      garantiti su tutto il territorio nazionale;
+    level: 1
+    abrogato: false
+  - label: n)
+    text: norme generali sull'istruzione;
+    level: 1
+    abrogato: false
+  - label: o)
+    text: previdenza sociale;
+    level: 1
+    abrogato: false
+  - label: p)
+    text: legislazione elettorale, organi di governo e funzioni fondamentali di Comuni, Province e Città metropolitane;
+    level: 1
+    abrogato: false
+  - label: q)
+    text: dogane, protezione dei confini nazionali e profilassi internazionale;
+    level: 1
+    abrogato: false
+  - label: r)
+    text: pesi, misure e determinazione del tempo; coordinamento informativo statistico e informatico dei dati dell'amministrazione
+      statale, regionale e locale; opere dell'ingegno;
+    level: 1
+    abrogato: false
+  - label: s)
+    text: tutela dell'ambiente, dell'ecosistema e dei beni culturali.
+    level: 1
+    abrogato: false
+  - label: '3.'
+    text: 'Sono materie di legislazione concorrente quelle relative a: rapporti internazionali e con l''Unione europea delle
+      Regioni; commercio con l''estero; tutela e sicurezza del lavoro; istruzione, salva l''autonomia delle istituzioni scolastiche
+      e con esclusione della istruzione e della formazione professionale; professioni; ricerca scientifica e tecnologica e
+      sostegno all''innovazione per i settori produttivi; tutela della salute; alimentazione; ordinamento sportivo; protezione
+      civile; governo del territorio; porti e aeroporti civili; grandi reti di trasporto e di navigazione; ordinamento della
+      comunicazione; produzione, trasporto e distribuzione nazionale dell''energia; previdenza complementare e integrativa;
+      coordinamento della finanza pubblica e del sistema tributario; valorizzazione dei beni culturali e ambientali e promozione
+      e organizzazione di attività culturali; casse di risparmio, casse rurali, aziende di credito a carattere regionale;
+      enti di credito fondiario e agrario a carattere regionale. Nelle materie di legislazione concorrente spetta alle Regioni
+      la potestà legislativa, salvo che per la determinazione dei princìpi fondamentali, riservata alla legislazione dello
+      Stato.'
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Spetta alle Regioni la potestà legislativa in riferimento ad ogni materia non espressamente riservata alla legislazione
+      dello Stato.
+    level: 0
+    abrogato: false
+  - label: '5.'
+    text: Le Regioni e le Province autonome di Trento e di Bolzano, nelle materie di loro competenza, partecipano alle decisioni
+      dirette alla formazione degli atti normativi comunitari e provvedono all'attuazione e all'esecuzione degli accordi internazionali
+      e degli atti dell'Unione europea, nel rispetto delle norme di procedura stabilite da legge dello Stato, che disciplina
+      le modalità di esercizio del potere sostitutivo in caso di inadempienza.
+    level: 0
+    abrogato: false
+  - label: '6.'
+    text: La potestà regolamentare spetta allo Stato nelle materie di legislazione esclusiva, salva delega alle Regioni. La
+      potestà regolamentare spetta alle Regioni in ogni altra materia. I Comuni, le Province e le Città metropolitane hanno
+      potestà regolamentare in ordine alla disciplina dell'organizzazione e dello svolgimento delle funzioni loro attribuite.
+    level: 0
+    abrogato: false
+  - label: '7.'
+    text: Le leggi regionali rimuovono ogni ostacolo che impedisce la piena parità degli uomini e delle donne nella vita sociale,
+      culturale ed economica e promuovono la parità di accesso tra donne e uomini alle cariche elettive.
+    level: 0
+    abrogato: false
+  - label: '8.'
+    text: La legge regionale ratifica le intese della Regione con altre Regioni per il migliore esercizio delle proprie funzioni,
+      anche con individuazione di organi comuni .
+    level: 0
+    abrogato: false
+  - label: '9.'
+    text: Nelle materie di sua competenza la Regione può concludere accordi con Stati e intese con enti territoriali interni
+      ad altro Stato, nei casi e con le forme disciplinati da leggi dello Stato.
+    level: 0
+    abrogato: false
+COST:41:
+  fonte: Costituzione della Repubblica italiana
+  rubrica: ''
+  vigore: ''
+  par:
+  - label: '1.'
+    text: L'iniziativa economica privata è libera.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Non può svolgersi in contrasto con la utilità sociale o in modo da recare danno alla salute, all'ambiente, alla
+      sicurezza, alla libertà, alla dignità umana.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: La legge determina i programmi e i controlli opportuni perché l'attività economica pubblica e privata possa essere
+      indirizzata e coordinata a fini sociali e ambientali.
+    level: 0
+    abrogato: false
+COST:47:
+  fonte: Costituzione della Repubblica italiana
+  rubrica: ''
+  vigore: ''
+  par:
+  - label: '1.'
+    text: La Repubblica incoraggia e tutela il risparmio in tutte le sue forme; disciplina, coordina e controlla l'esercizio
+      del credito.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Favorisce l'accesso del risparmio popolare alla proprietà dell'abitazione, alla proprietà diretta coltivatrice e
+      al diretto e indiretto investimento azionario nei grandi complessi produttivi del Paese.
+    level: 0
+    abrogato: false
+TUB:1:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Definizioni
+  vigore: 9 gennaio 2026
+  par:
+  - label: '1.'
+    text: 'Nel presente decreto legislativo l''espressione:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: '"autorità creditizie" indica il Comitato interministeriale per il credito e il risparmio, il Ministro dell''economia
+      e delle finanze e la Banca d''Italia;'
+    level: 1
+    abrogato: false
+  - label: a-bis)
+    text: “autorità di risoluzione” indica la Banca d'Italia o il Comitato di Risoluzione Unico stabilito dal regolamento
+      (UE) n. 806/2014 del Parlamento europeo e del Consiglio, nell'ambito del riparto di competenze definite dal medesimo
+      regolamento, nonché un'autorità non italiana deputata allo svolgimento delle funzioni di risoluzione;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: '"banca" indica l''impresa autorizzata all''esercizio dell''attività bancaria;'
+    level: 1
+    abrogato: false
+  - label: b-bis)
+    text: «BCE» indica la Banca centrale europea;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: '"CICR" indica il Comitato interministeriale per il credito e il risparmio;'
+    level: 1
+    abrogato: false
+  - label: d)
+    text: '"CONSOB" indica la Commissione nazionale per le società e la borsa;'
+    level: 1
+    abrogato: false
+  - label: d-bis)
+    text: '"COVIP" indica la commissione di vigilanza sui fondi pensione;'
+    level: 1
+    abrogato: false
+  - label: e)
+    text: “IVASS” indica l'Istituto per la vigilanza sulle assicurazioni;
+    level: 1
+    abrogato: false
+  - label: e-bis)
+    text: “MVU” indica il Meccanismo di vigilanza unica, ossia il sistema di vigilanza finanziaria composto dalla BCE e dalle
+      autorità nazionali competenti degli Stati membri che vi partecipano;
+    level: 1
+    abrogato: false
+  - label: e-ter)
+    text: “Disposizioni del MVU” indica il regolamento (UE) n. 1024/2013 e le relative misure di esecuzione;
+    level: 1
+    abrogato: false
+  - label: e-quater)
+    text: «UIF» indica l'Unità di informazione finanziaria per l'Italia di cui all'articolo 6 del decreto legislativo 21 novembre
+      2007, n. 231;
+    level: 1
+    abrogato: false
+  - label: e-quinquies)
+    text: '«MRU»: indica il Meccanismo di risoluzione unico, ossia il sistema di risoluzione istituito ai sensi del regolamento
+      (UE) n. 806/2014, del Parlamento europeo e del Consiglio, composto dal Comitato di Risoluzione Unico e dalle autorità
+      nazionali di risoluzione degli Stati membri che vi partecipano;'
+    level: 1
+    abrogato: false
+  - label: f)
+    text: '"UIC" indica l''Ufficio italiano dei cambi;'
+    level: 1
+    abrogato: true
+  - label: g)
+    text: '"Stato dell''Unione europea" indica lo Stato membro dell''Unione europea;'
+    level: 1
+    abrogato: false
+  - label: g-bis)
+    text: “Stato di origine” indica lo Stato dell'Unione europea in cui la banca, l'IMEL o l'IP è stato autorizzato all'esercizio
+      dell'attività;
+    level: 1
+    abrogato: false
+  - label: g-ter)
+    text: “Stato ospitante” indica lo Stato dell'Unione europea nel quale la banca, l'IMEL o l'IP ha una succursale o presta
+      servizi;
+    level: 1
+    abrogato: false
+  - label: h)
+    text: “Stato terzo” indica lo Stato non membro dell'Unione europea;
+    level: 1
+    abrogato: false
+  - label: h-bis)
+    text: '"SEVIF": il Sistema europeo di vigilanza finanziaria composto dalle seguenti parti:'
+    level: 1
+    abrogato: false
+  - label: 1)
+    text: '"ABE": Autorità bancaria europea, istituita con regolamento (UE) n. 1093/2010;'
+    level: 2
+    abrogato: false
+  - label: 2)
+    text: '"AEAP": Autorità europea delle assicurazioni e delle pensioni aziendali e professionali, istituita con regolamento
+      (UE) n. 1094/2010;'
+    level: 2
+    abrogato: false
+  - label: 3)
+    text: '"AESFEM": Autorità europea degli strumenti finanziari e dei mercati, istituita con regolamento (UE) n. 1095/2010;'
+    level: 2
+    abrogato: false
+  - label: 4)
+    text: '"Comitato congiunto": il Comitato congiunto delle Autorità europee di vigilanza, previsto dall''articolo 54 del
+      regolamento (UE) n. 1093/2010, del regolamento (UE) n. 1094/2010, del regolamento (UE) n. 1095/2010;'
+    level: 2
+    abrogato: false
+  - label: 5)
+    text: '"CERS": Comitato europeo per il rischio sistemico, istituito dal regolamento (UE) n. 1092/2010;'
+    level: 2
+    abrogato: false
+  - label: 6)
+    text: '"Autorità di vigilanza degli Stati membri": le autorità competenti o di vigilanza degli Stati membri specificate
+      negli atti dell''Unione di cui all''articolo 1, paragrafo 2, del regolamento (UE) n. 1093/2010, del regolamento (UE)
+      n. 1094/2010 e del regolamento (UE) n. 1095/2010;'
+    level: 2
+    abrogato: false
+  - label: h-ter)
+    text: “Stato partecipante al MVU” indica uno Stato dell'Unione europea la cui moneta è l'euro o che abbia instaurato una
+      cooperazione stretta con la BCE a norma delle disposizioni del MVU;
+    level: 1
+    abrogato: false
+  - label: i)
+    text: '"legge fallimentare" indica il regio decreto 16 marzo 1942, n. 267.'
+    level: 1
+    abrogato: false
+  - label: l)
+    text: '"autorità competenti" indica, a seconda dei casi, uno o più fra le autorità di vigilanza sulle banche, sulle imprese
+      di investimento, sugli organismi di investimento collettivo del risparmio, sulle imprese di assicurazione e sui mercati
+      finanziari;'
+    level: 1
+    abrogato: false
+  - label: l-bis)
+    text: «autorità antiriciclaggio» indica le autorità responsabili della vigilanza sui soggetti obbligati di cui all'articolo
+      2, paragrafo 1, punti 1 e 2, della direttiva (UE) 2015/849, ai fini del rispetto degli obblighi previsti dalla medesima
+      direttiva;
+    level: 1
+    abrogato: false
+  - label: l-ter)
+    text: «autorità di vigilanza su base consolidata» indica l'autorità di vigilanza su base consolidata come definita all'articolo
+      4, paragrafo 1, punto 41, del regolamento (UE) n. 575/2013;
+    level: 1
+    abrogato: false
+  - label: m)
+    text: '"Ministero dell''economia e delle finanze" indica il Ministero dell''economia e delle finanze.'
+    level: 1
+    abrogato: true
+  - label: '2.'
+    text: 'Nel presente decreto legislativo si intendono per:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: '"banca italiana": la banca avente sede legale in Italia;'
+    level: 1
+    abrogato: false
+  - label: b)
+    text: '"banca dell''Unione europea": la banca avente sede legale e amministrazione centrale in un medesimo Stato dell''Unione
+      europea diverso dall''Italia;'
+    level: 1
+    abrogato: false
+  - label: c)
+    text: '“banca di Stato terzo”: ogni impresa avente sede legale in uno Stato terzo in cui è autorizzata a prestare una
+      o più attività per le quali, se fosse stabilita in Italia, dovrebbe essere autorizzata ai sensi dell''articolo 14 o
+      dell''articolo 20- bis.1 del decreto legislativo 24 febbraio 1998, n. 58;'
+    level: 1
+    abrogato: false
+  - label: d)
+    text: '“soggetto significativo”: i soggetti definiti dall''articolo 2, n. 16, del regolamento (UE) n. 468/2014, sui quali
+      la BCE esercita la vigilanza diretta in conformità delle disposizioni del MVU;'
+    level: 1
+    abrogato: false
+  - label: d-bis)
+    text: '“soggetto meno significativo”: i soggetti, sottoposti a vigilanza nell''ambito del MVU, diversi da quelli di cui
+      alla lettera d);'
+    level: 1
+    abrogato: false
+  - label: e)
+    text: '“succursale”: una sede che costituisce una parte, sprovvista di personalità giuridica, di una banca, un istituto
+      di moneta elettronica o un istituto di pagamento, e che effettua direttamente, in tutto o in parte, l''attività a cui
+      la banca o l''istituto è stato autorizzato;'
+    level: 1
+    abrogato: false
+  - label: f)
+    text: '"attività ammesse al mutuo riconoscimento": le attività di:'
+    level: 1
+    abrogato: false
+  - label: 1)
+    text: raccolta di depositi o di altri fondi con obbligo di restituzione;
+    level: 2
+    abrogato: false
+  - label: 2)
+    text: operazioni di prestito (compreso in particolare il credito al consumo, il credito con garanzia ipotecaria, il factoring,
+      le cessioni di credito pro soluto e pro solvendo, il credito commerciale incluso il "forfaiting");
+    level: 2
+    abrogato: false
+  - label: 3)
+    text: leasing finanziario;
+    level: 2
+    abrogato: false
+  - label: 4)
+    text: prestazione di servizi di pagamento;
+    level: 2
+    abrogato: false
+  - label: 5)
+    text: emissione e gestione di mezzi di pagamento («travellers cheques», lettere di credito), nella misura in cui quest’attività
+      non rientra nel punto 4;
+    level: 2
+    abrogato: false
+  - label: 6)
+    text: rilascio di garanzie e di impegni di firma;
+    level: 2
+    abrogato: false
+  - label: 7)
+    text: 'operazioni per proprio conto o per conto della clientela in:'
+    level: 2
+    abrogato: false
+  - label: –
+    text: strumenti di mercato monetario (assegni, cambiali, certificati di deposito, ecc.);
+    level: 2
+    abrogato: false
+  - label: –
+    text: cambi;
+    level: 2
+    abrogato: false
+  - label: –
+    text: strumenti finanziari a termine e opzioni;
+    level: 2
+    abrogato: false
+  - label: –
+    text: contratti su tassi di cambio e tassi d'interesse;
+    level: 2
+    abrogato: false
+  - label: –
+    text: valori mobiliari;
+    level: 2
+    abrogato: false
+  - label: 8)
+    text: partecipazione alle emissioni di titoli e prestazioni di servizi connessi;
+    level: 2
+    abrogato: false
+  - label: 9)
+    text: consulenza alle imprese in materia di struttura finanziaria, di strategia industriale e di questioni connesse, nonché
+      consulenza e servizi nel campo delle concentrazioni e del rilievo di imprese;
+    level: 2
+    abrogato: false
+  - label: 10)
+    text: servizi di intermediazione finanziaria del tipo "money broking";
+    level: 2
+    abrogato: false
+  - label: 11)
+    text: gestione o consulenza nella gestione di patrimoni;
+    level: 2
+    abrogato: false
+  - label: 12)
+    text: custodia e amministrazione di valori mobiliari;
+    level: 2
+    abrogato: false
+  - label: 13)
+    text: servizi di informazione commerciale;
+    level: 2
+    abrogato: false
+  - label: 14)
+    text: locazione di cassette di sicurezza;
+    level: 2
+    abrogato: false
+  - label: 15)
+    text: altre attività che, in virtù delle misure di adattamento assunte dalle autorità dell'Unione europea, sono aggiunte
+      all'elenco allegato alla seconda direttiva in materia creditizia del Consiglio delle Comunità europee n. 89/646/CEE
+      del 15 dicembre 1989;
+    level: 2
+    abrogato: false
+  - label: g)
+    text: '"intermediari finanziari": i soggetti iscritti nell''elenco previsto dall''art. 106.'
+    level: 1
+    abrogato: false
+  - label: h)
+    text: '"stretti legami": i rapporti tra una banca e un soggetto italiano o estero che:'
+    level: 1
+    abrogato: false
+  - label: 1)
+    text: controlla la banca;
+    level: 2
+    abrogato: false
+  - label: 2)
+    text: è controllato dalla banca;
+    level: 2
+    abrogato: false
+  - label: 3)
+    text: è controllato dallo stesso soggetto che controlla la banca;
+    level: 2
+    abrogato: false
+  - label: 4)
+    text: partecipa al capitale della banca in misura pari almeno al 20% del capitale con diritto di voto;
+    level: 2
+    abrogato: false
+  - label: 5)
+    text: è partecipato dalla banca in misura pari almeno al 20% del capitale con diritto di voto;
+    level: 2
+    abrogato: false
+  - label: h-bis)
+    text: '"istituti di moneta elettronica": le imprese, diverse dalle banche, che emettono moneta elettronica;'
+    level: 1
+    abrogato: false
+  - label: h-bis.1)
+    text: '“ istituti di moneta elettronica dell''Unione europea”: gli istituti di moneta elettronica aventi sede legale e
+      amministrazione centrale in uno stesso Stato dell''Unione europea diverso dall''Italia;'
+    level: 2
+    abrogato: false
+  - label: h-ter)
+    text: '''''moneta elettronica'''': il valore monetario memorizzato elettronicamente, ivi inclusa la memorizzazione magnetica,
+      rappresentato da un credito nei confronti dell''emittente che sia emesso per effettuare operazioni di pagamento come
+      definite all''articolo 1, comma 1, lettera c), del decreto legislativo 27 gennaio 2010, n. 11, e che sia accettato da
+      persone fisiche e giuridiche diverse dall''emittente. Non costituisce moneta elettronica:'
+    level: 1
+    abrogato: false
+  - label: 1)
+    text: il valore monetario memorizzato sugli strumenti previsti dall'articolo 2, comma 2, lettera m), del decreto legislativo
+      27 gennaio 2010, n. 11;
+    level: 2
+    abrogato: false
+  - label: 2)
+    text: il valore monetario utilizzato per le operazioni di pagamento previste dall'articolo 2, comma 2, lettera n), del
+      decreto legislativo 27 gennaio 2010, n. 11;
+    level: 2
+    abrogato: false
+  - label: h-quater)
+    text: '“partecipazioni”: le azioni, le quote e gli altri strumenti finanziari che attribuiscono diritti amministrativi
+      o comunque i diritti previsti dall''articolo 2351, ultimo comma, del codice civile;'
+    level: 1
+    abrogato: false
+  - label: h-quinquies)
+    text: '“partecipazioni rilevanti”: le partecipazioni che comportano il controllo della società e le partecipazioni individuate
+      dalla Banca d''Italia in conformità alle deliberazioni del CICR, con riguardo alle diverse fattispecie disciplinate,
+      tenendo conto dei diritti di voto e degli altri diritti che consentono di influire sulla società;'
+    level: 1
+    abrogato: true
+  - label: h-sexies)
+    text: '“ istituti di pagamento”: le imprese, diverse dalle banche e dagli istituti di moneta elettronica, autorizzate
+      a prestare i servizi di pagamento;'
+    level: 1
+    abrogato: false
+  - label: h-septies)
+    text: '“ istituti di pagamento dell''Unione europea”: gli istituti di pagamento aventi sede legale e amministrazione centrale
+      in uno stesso Stato dell''Unione europea diverso dall’Italia;'
+    level: 1
+    abrogato: false
+  - label: h-septies.1)
+    text: '“servizi di pagamento”: le seguenti attività:'
+    level: 2
+    abrogato: false
+  - label: 1)
+    text: servizi che permettono di depositare il contante su un conto di pagamento nonché tutte le operazioni richieste per
+      la gestione di un conto di pagamento;
+    level: 2
+    abrogato: false
+  - label: 2)
+    text: servizi che permettono prelievi in contante da un conto di pagamento nonché tutte le operazioni richieste per la
+      gestione di un conto di pagamento;
+    level: 2
+    abrogato: false
+  - label: 3)
+    text: 'esecuzione di operazioni di pagamento, incluso il trasferimento di fondi su un conto di pagamento presso il prestatore
+      di servizi di pagamento dell''utilizzatore o presso un altro prestatore di servizi di pagamento:'
+    level: 2
+    abrogato: false
+  - label: 3.1)
+    text: esecuzione di addebiti diretti, inclusi gli addebiti diretti una tantum;
+    level: 2
+    abrogato: false
+  - label: 3.2)
+    text: esecuzione di operazioni di pagamento mediante carte di pagamento o dispositivi analoghi;
+    level: 2
+    abrogato: false
+  - label: 3.3)
+    text: esecuzione di bonifici, inclusi gli ordini permanenti;
+    level: 2
+    abrogato: false
+  - label: 4)
+    text: 'esecuzione di operazioni di pagamento quando i fondi rientrano in una linea di credito accordata ad un utilizzatore
+      di servizi di pagamento:'
+    level: 2
+    abrogato: false
+  - label: 4.1)
+    text: esecuzione di addebiti diretti, inclusi gli addebiti diretti una tantum;
+    level: 2
+    abrogato: false
+  - label: 4.2)
+    text: esecuzione di operazioni di pagamento mediante carte di pagamento o dispositivi analoghi;
+    level: 2
+    abrogato: false
+  - label: 4.3)
+    text: esecuzione di bonifici, inclusi gli ordini permanenti;
+    level: 2
+    abrogato: false
+  - label: 5)
+    text: emissione di strumenti di pagamento e/o convenzionamento di operazioni di pagamento;
+    level: 2
+    abrogato: false
+  - label: 6)
+    text: rimessa di denaro;
+    level: 2
+    abrogato: false
+  - label: 7)
+    text: servizi di disposizione di ordini di pagamento;
+    level: 2
+    abrogato: false
+  - label: 8)
+    text: servizi di informazione sui conti;
+    level: 2
+    abrogato: false
+  - label: h-octies)
+    text: '“succursale di un istituto di pagamento”: una sede che costituisce parte, sprovvista di personalità giuridica,
+      di un istituto di pagamento e che effettua direttamente, in tutto o in parte, l''attività dell’istituto di pagamento;'
+    level: 1
+    abrogato: true
+  - label: h-novies)
+    text: '“personale”: i dipendenti e coloro che comunque operano sulla base di rapporti che ne determinano l''inserimento
+      nell''organizzazione aziendale, anche in forma diversa dal rapporto di lavoro subordinato;'
+    level: 1
+    abrogato: false
+  - label: i)
+    text: '“punto di contatto centrale”: il soggetto o la struttura designato dalle banche, dagli istituti di moneta elettronica
+      o dagli istituti di pagamento dell''Unione europea che operano sul territorio della Repubblica in regime di diritto
+      di stabilimento, senza succursale, tramite gli agenti di cui all''articolo 128-quater.'
+    level: 1
+    abrogato: false
+  - label: '3.'
+    text: La Banca d'Italia, può ulteriormente qualificare la definizione di stretti legami prevista dal comma 2, lettera
+      h), al fine di evitare situazioni di ostacolo all'effettivo esercizio delle funzioni di vigilanza.
+    level: 0
+    abrogato: false
+  - label: 3-bis.
+    text: Se non diversamente disposto, le norme del presente decreto legislativo che fanno riferimento al consiglio di amministrazione,
+      all'organo amministrativo e agli amministratori si applicano anche al consiglio di gestione ed ai suoi componenti.
+    level: 0
+    abrogato: false
+  - label: 3-ter.
+    text: Se non diversamente disposto, le norme del presente decreto legislativo che fanno riferimento al collegio sindacale,
+      ai sindaci ed all'organo che svolge la funzione di controllo si applicano anche al consiglio di sorveglianza ed al comitato
+      per il controllo sulla gestione e ai loro componenti.
+    level: 0
+    abrogato: false
+  - label: 3-quater.
+    text: Se non diversamente disposto, ai fini della disciplina dei servizi di pagamento, nel presente decreto si applicano
+      le definizioni del decreto legislativo 27 gennaio 2010, n. 11.
+    level: 0
+    abrogato: false
+TUB:10:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Attività bancaria
+  vigore: 1 gennaio 1994
+  par:
+  - label: '1.'
+    text: La raccolta di risparmio tra il pubblico e l'esercizio del credito costituiscono l'attività bancaria. Essa ha carattere
+      d'impresa.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: L'esercizio dell'attività bancaria è riservato alle banche.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Le banche esercitano, oltre all'attività bancaria, ogni altra attività finanziaria, secondo la disciplina propria
+      di ciascuna, nonché attività connesse o strumentali. Sono salve le riserve di attività previste dalla legge.
+    level: 0
+    abrogato: false
+TUB:11:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Raccolta del risparmio
+  vigore: 16 novembre 2015
+  par:
+  - label: '1.'
+    text: Ai fini del presente decreto legislativo è raccolta del risparmio l'acquisizione di fondi con obbligo di rimborso,
+      sia sotto forma di depositi sia sotto altra forma.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: La raccolta del risparmio tra il pubblico è vietata ai soggetti diversi dalle banche.
+    level: 0
+    abrogato: false
+  - label: 2-bis.
+    text: Non costituisce raccolta del risparmio tra il pubblico la ricezione di fondi connessa all'emissione di moneta elettronica.
+    level: 0
+    abrogato: false
+  - label: 2-ter.
+    text: Non costituisce raccolta del risparmio tra il pubblico la ricezione di fondi da inserire in conti di pagamento utilizzati
+      esclusivamente per la prestazione di servizi di pagamento.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Il CICR stabilisce limiti e criteri, anche con riguardo all'attività ed alla forma giuridica del soggetto che acquisisce
+      fondi, in base ai quali non costituisce raccolta del risparmio tra il pubblico quella effettuata presso specifiche categorie
+      individuate in ragione di rapporti societari o di lavoro.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: 'Il divieto di raccolta del risparmio tra il pubblico non si applica:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: agli Stati comunitari, agli organismi internazionali ai quali aderiscono uno o più Stati comunitari, agli enti pubblici
+      territoriali ai quali la raccolta del risparmio è consentita in base agli ordinamenti nazionali degli Stati comunitari;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: agli Stati terzi ed ai soggetti esteri abilitati da speciali disposizioni del diritto italiano;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: alle società, per la raccolta effettuata ai sensi del codice civile mediante obbligazioni, titoli di debito od altri
+      strumenti finanziari;
+    level: 1
+    abrogato: false
+  - label: d)
+    text: alle altre ipotesi di raccolta espressamente consentite dalla legge, nel rispetto del principio di tutela del risparmio.
+    level: 1
+    abrogato: false
+  - label: 4-bis.
+    text: Il CICR determina i criteri per l'individuazione degli strumenti finanziari, comunque denominati, la cui emissione
+      costituisce raccolta del risparmio.
+    level: 0
+    abrogato: false
+  - label: 4-ter.
+    text: Se non disciplinati dalla legge, il CICR fissa limiti all'emissione e, su proposta formulata dalla Banca d'Italia
+      sentita la CONSOB, può determinare durata e taglio degli strumenti finanziari, diversi dalle obbligazioni, utilizzati
+      per la raccolta tra il pubblico.
+    level: 0
+    abrogato: false
+  - label: 4-quater.
+    text: Il CICR, a fini di tutela della riserva dell'attività bancaria, stabilisce criteri e limiti, anche in deroga a quanto
+      previsto dal codice civile, per la raccolta effettuata dai soggetti che esercitano nei confronti del pubblico attività
+      di concessione di finanziamenti sotto qualsiasi forma.
+    level: 0
+    abrogato: false
+  - label: 4-quinquies.
+    text: A fini di tutela del risparmio, gli investitori professionali, che ai sensi del codice civile rispondono della solvenza
+      della società per le obbligazioni, i titoli di debito e gli altri strumenti finanziari emessi dalla stessa, devono rispettare
+      idonei requisiti patrimoniali stabiliti dalle competenti autorità di vigilanza.
+    level: 0
+    abrogato: false
+  - label: '5.'
+    text: Nei casi previsti dal comma 4, lettere c) e d), sono comunque precluse la raccolta di fondi a vista ed ogni forma
+      di raccolta collegata all'emissione od alla gestione di mezzi di pagamento a spendibilità generalizzata.
+    level: 0
+    abrogato: false
+TUB:12:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Obbligazioni e titoli di deposito emessi dalle banche
+  vigore: 1 gennaio 2018
+  par:
+  - label: '1.'
+    text: Le banche, in qualunque forma costituite, possono emettere obbligazioni, anche convertibili, nominative o al portatore.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Sono ammesse di diritto alle quotazioni di borsa le obbligazioni emesse dalle banche con azioni quotate in borsa.
+      La disposizione si applica anche alle obbligazioni convertibili in titoli di altre società quando questi ultimi sono
+      quotati.
+    level: 0
+    abrogato: true
+  - label: '3.'
+    text: L'emissione delle obbligazioni non convertibili o convertibili in titoli di altre società è deliberata dall'organo
+      amministrativo; non si applicano gli articoli 2410, 2412, 2413, 2414, primo comma, n. 3, 2414–bis, 2415, 2416, 2417,
+      2418 e 2419 del codice civile.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Alle obbligazioni convertibili in azioni proprie si applicano le norme del codice civile, eccetto l'articolo 2412.
+    level: 0
+    abrogato: false
+  - label: 4-bis.
+    text: I commi 3 e 4 si applicano anche agli strumenti finanziari assoggettati alla disciplina delle obbligazioni prevista
+      dal codice civile, inclusi gli strumenti di debito chirografario di secondo livello di cui all'articolo 12-bis.
+    level: 0
+    abrogato: false
+  - label: '5.'
+    text: La Banca d'Italia disciplina l'emissione da parte delle banche delle obbligazioni non convertibili o convertibili
+      in titoli di altre società nonché degli strumenti finanziari diversi dalle partecipazioni.
+    level: 0
+    abrogato: false
+  - label: '6.'
+    text: Le banche possono emettere titoli di deposito nominativi o al portatore. La Banca d'Italia può disciplinarne le
+      modalità di emissione.
+    level: 0
+    abrogato: false
+  - label: '7.'
+    text: La Banca d'Italia disciplina le emissioni da parte delle banche di prestiti subordinati, irredimibili ovvero rimborsabili
+      previa autorizzazione della medesima Banca d'Italia. Tali emissioni possono avvenire anche sotto forma di obbligazioni
+      o di titoli di deposito.
+    level: 0
+    abrogato: false
+TUB:13:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Albo
+  vigore: 9 gennaio 2026
+  par:
+  - label: '1.'
+    text: Fermo restando quanto previsto dalle disposizioni del MVU in tema di pubblicazione dell'elenco dei soggetti vigilati,
+      la Banca d'Italia iscrive in un apposito albo le banche italiane e le succursali in Italia di banche di Stato terzo,
+      nonché le succursali delle banche comunitarie stabilite nel territorio della Repubblica.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Le banche indicano negli atti e nella corrispondenza l'iscrizione nell'albo.
+    level: 0
+    abrogato: false
+TUB:131:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Abusiva attività bancaria
+  vigore: 1 gennaio 1994
+  par:
+  - label: '1.'
+    text: Chiunque svolge l'attività di raccolta del risparmio tra il pubblico in violazione dell'art. 11 ed esercita il credito
+      è punito con la reclusione da uno a otto anni e con la multa da euro 4.130 a euro 10.329.
+    level: 0
+    abrogato: false
+TUB:131-bis:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Abusiva emissione di moneta elettronica
+  vigore: 13 maggio 2012
+  par:
+  - label: '1.'
+    text: Chiunque emette moneta elettronica in violazione della riserva prevista dall'articolo 114-bis senza essere iscritto
+      nell'albo previsto dall'articolo 13 o in quello previsto dall'articolo 114-bis, comma 2, è punito con la reclusione
+      da uno a otto anni e con la multa da 4.132 a euro a 10.329 euro.
+    level: 0
+    abrogato: false
+TUB:14:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Autorizzazione all'attività bancaria
+  vigore: 9 gennaio 2026
+  par:
+  - label: '1.'
+    text: 'L''autorizzazione all''attività bancaria è rilasciata quando ricorrano le seguenti condizioni:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: sia adottata la forma di società per azioni o di società cooperativa per azioni a responsabilità limitata;
+    level: 1
+    abrogato: false
+  - label: a-bis)
+    text: la sede legale e la direzione generale siano situate nel territorio della Repubblica;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: il capitale versato sia di ammontare non inferiore a quello determinato dalla Banca d'Italia;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: venga presentato un programma concernente l'attività iniziale, unitamente all'atto costitutivo, allo statuto, all'indicazione,
+      se del caso, della capogruppo, delle società di partecipazione finanziaria e delle società di partecipazione finanziaria
+      mista appartenenti al gruppo, nonché alla descrizione dei dispositivi, dei processi e dei meccanismi relativi al governo
+      societario, all'organizzazione amministrativa e contabile, ai controlli interni e ai sistemi di remunerazione e di incentivazione;
+    level: 1
+    abrogato: false
+  - label: d)
+    text: sussistano i presupposti per il rilascio dell'autorizzazione prevista dall'articolo 19 per i titolari delle partecipazioni
+      ivi indicate ovvero, in assenza di questi ultimi, siano comunicati i nomi dei primi venti azionisti e le relative quote
+      di capitale e di diritti di voto;
+    level: 1
+    abrogato: false
+  - label: e)
+    text: i soggetti che svolgono funzioni di amministrazione, direzione e controllo siano idonei, ai sensi dell'articolo
+      26;
+    level: 1
+    abrogato: false
+  - label: f)
+    text: non sussistano, tra la banca o i soggetti del gruppo di appartenenza e altri soggetti, stretti legami che ostacolino
+      l'effettivo esercizio delle funzioni di vigilanza.
+    level: 1
+    abrogato: false
+  - label: '2.'
+    text: L'autorizzazione è rilasciata dalla BCE, su proposta della Banca d'Italia; è negata, dalla Banca d'Italia o dalla
+      BCE, quando dalla verifica delle condizioni indicate nel comma 1 non risulti garantita la sana e prudente gestione.
+    level: 0
+    abrogato: false
+  - label: 2-bis.
+    text: La Banca d'Italia disciplina la procedura di autorizzazione e le ipotesi di decadenza dalla stessa quando la banca
+      autorizzata non abbia iniziato l'esercizio dell'attività.
+    level: 0
+    abrogato: true
+  - label: '3.'
+    text: Non si può dare corso al procedimento per l'iscrizione nel registro delle imprese se non consti l'autorizzazione
+      del comma 1.
+    level: 0
+    abrogato: false
+  - label: 3-bis.
+    text: 'La revoca dell''autorizzazione è disposta dalla BCE, sentita la Banca d''Italia o su proposta di questa, quando
+      sussiste una o più delle seguenti condizioni:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: sono venute meno le condizioni in base alle quali l'autorizzazione è stata rilasciata;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: l'autorizzazione è stata ottenuta presentando false dichiarazioni;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: è accertata l'interruzione dell'attività bancaria per un periodo continuativo superiore a sei mesi;
+    level: 1
+    abrogato: false
+  - label: c-bis)
+    text: è disposta la liquidazione coatta amministrativa ai sensi dell'articolo 80.
+    level: 1
+    abrogato: false
+  - label: 3-ter.
+    text: La revoca dell'autorizzazione è inoltre disposta dalla BCE, su proposta della Banca d'Italia, nei casi di liquidazione
+      coatta amministrativa ai sensi dell'articolo 80.
+    level: 0
+    abrogato: true
+  - label: '4.'
+    text: Lo stabilimento in Italia della prima succursale di una banca di Stato terzo è autorizzato dalla Banca d'Italia,
+      sentito il Ministero degli affari esteri, subordinatamente al rispetto di condizioni corrispondenti a quelle del comma
+      1, lettere b), c) ed e). L'autorizzazione è rilasciata tenendo anche conto della condizione di reciprocità.
+    level: 0
+    abrogato: true
+  - label: 4-bis.
+    text: La Banca d'Italia emana disposizioni attuative del presente articolo.
+    level: 0
+    abrogato: false
+TUB:14-bis:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Autorizzazione allo stabilimento di succursali di banche di Stato terzo
+  vigore: 9 gennaio 2026
+  par:
+  - label: '1.'
+    text: Una banca di Stato terzo che intenda stabilire una succursale nel territorio della Repubblica presenta domanda di
+      autorizzazione ai sensi del presente articolo.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Fermo restando quanto previsto dall'articolo 29-ter, comma 6, del decreto legislativo n. 58 del 1998, l'esercizio
+      nel territorio della Repubblica di una o più delle attività di cui all'articolo 1, comma 2, lettera f ), numeri 1),
+      2) e 6), da parte di una banca di Stato terzo è soggetto all'obbligo di stabilire una succursale ai sensi del presente
+      articolo.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: 'In deroga al comma 2, le banche di Stato terzo possono esercitare le attività indicate al medesimo comma senza
+      stabilimento di una succursale nei confronti di:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: banche;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: altre imprese appartenenti al gruppo cui appartengono le stesse banche di Stato terzo;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: clienti al dettaglio, clienti professionali o controparti qualificate, come rispettivamente definiti dall'articolo
+      1, comma 1, lettere m-duodecies) e m-undecies), e dall'articolo 6, comma 2- quater, lettera d), del decreto legislativo
+      n. 58 del 1998, che si rivolgano di propria iniziativa esclusiva alle stesse banche di Stato terzo.
+    level: 1
+    abrogato: false
+  - label: '4.'
+    text: Nei casi di cui alle lettere a) e b) del comma 3, si applica l'articolo 16, comma 4.
+    level: 0
+    abrogato: false
+  - label: '5.'
+    text: 'Lo stabilimento in Italia di una succursale di banca di Stato terzo è autorizzato dalla Banca d''Italia quando
+      ricorrano le seguenti condizioni:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: la banca dello Stato terzo è autorizzata nello Stato terzo in cui è stabilita a esercitare le attività per le quali
+      ha chiesto di essere autorizzata ai sensi del presente articolo e le stesse attività sono ivi sottoposte a vigilanza;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: è presentato un programma contenente l'indicazione delle operazioni che si intendono effettuare, le attività da
+      esercitare e la struttura dell'organizzazione e la gestione del rischio della succursale;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: la competente autorità di vigilanza nello Stato terzo ha ricevuto la notifica dell'istanza corredata dal programma
+      di attività di cui alla lettera b);
+    level: 1
+    abrogato: false
+  - label: d)
+    text: la competente autorità di vigilanza nello Stato terzo ha attestato che la banca dello Stato terzo e il suo gruppo
+      soddisfano i requisiti applicabili a norma del diritto dello Stato terzo in ordine alla solidità patrimoniale, all'adeguatezza
+      delle strutture organizzative, amministrative e contabili;
+    level: 1
+    abrogato: false
+  - label: e)
+    text: sono soddisfatti i requisiti di cui al titolo III, capo I-bis;
+    level: 1
+    abrogato: false
+  - label: f)
+    text: ai fini dell'esercizio delle funzioni di vigilanza, non sussistono ostacoli allo scambio di informazioni tra la
+      Banca d'Italia e la competente autorità di vigilanza nello Stato terzo sulla banca dello Stato terzo e, se applicabile,
+      sulle imprese madri intermedie o capogruppo;
+    level: 1
+    abrogato: false
+  - label: g)
+    text: non vi sono fondati motivi per sospettare che la succursale sia utilizzata per commettere o facilitare il riciclaggio
+      o il finanziamento del terrorismo.
+    level: 1
+    abrogato: false
+  - label: '6.'
+    text: L'autorizzazione è rilasciata sentito il Ministero degli affari esteri e della cooperazione internazionale e tenuto
+      anche conto della condizione di reciprocità.
+    level: 0
+    abrogato: false
+  - label: '7.'
+    text: Le succursali di banche di Stato terzo autorizzate in Italia non possono operare al di fuori del territorio della
+      Repubblica, eccetto per operazioni infragruppo di provvista concluse con succursali della stessa banca di Stato terzo
+      stabilite in altri Stati membri dell'Unione europea e per operazioni effettuate nei confronti di clienti che si rivolgano
+      di propria iniziativa esclusiva alle medesime succursali.
+    level: 0
+    abrogato: false
+  - label: '8.'
+    text: Prima che la succursale inizi le proprie attività nel territorio della Repubblica, la Banca d'Italia si adopera
+      per concludere accordi di cooperazione con la competente autorità di vigilanza nello Stato terzo. Il presente comma
+      non si applica in caso di succursali non qualificate ai sensi dell'articolo 58-ter, comma 1.
+    level: 0
+    abrogato: false
+  - label: '9.'
+    text: 'La decadenza dall''autorizzazione è pronunciata dalla Banca d''Italia qualora:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: non si faccia uso dell'autorizzazione entro dodici mesi dal rilascio della stessa;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: l'autorizzazione sia oggetto di espressa rinuncia;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: la succursale abbia cessato le attività per un periodo superiore a sei mesi.
+    level: 1
+    abrogato: false
+  - label: '10.'
+    text: 'La revoca dell''autorizzazione è disposta dalla Banca d''Italia quando sussistono una o più delle seguenti condizioni:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: sono venute meno le condizioni in base alle quali l'autorizzazione è stata rilasciata;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: l'autorizzazione è stata ottenuta presentando false dichiarazioni o con qualsiasi altro mezzo irregolare;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: la banca dello Stato terzo o il suo gruppo non soddisfa i requisiti prudenziali applicabili in base al diritto dello
+      Stato terzo o vi sono motivi ragionevoli per sospettare che non soddisfi tali requisiti o che li violerà entro i dodici
+      mesi successivi;
+    level: 1
+    abrogato: false
+  - label: d)
+    text: la succursale non offre più la garanzia di poter soddisfare le obbligazioni nei confronti dei creditori e, in particolare,
+      non garantisce più la sicurezza delle attività a essa affidate dai depositanti;
+    level: 1
+    abrogato: false
+  - label: e)
+    text: vi sono fondati motivi per sospettare che sia in corso o abbia avuto luogo un'operazione o un tentativo di riciclaggio
+      o di finanziamento del terrorismo in relazione alla succursale, alla banca dello Stato terzo o al suo gruppo, o che
+      sia aumentato il rischio che abbia luogo un'operazione o un tentativo di riciclaggio o di finanziamento del terrorismo
+      in relazione alla succursale, alla banca dello Stato terzo o al suo gruppo;
+    level: 1
+    abrogato: false
+  - label: f)
+    text: sia commessa una delle violazioni richiamate all'articolo 144, comma 1, lettera a);
+    level: 1
+    abrogato: false
+  - label: g)
+    text: nei casi di cui all'articolo 58-septies, comma 4, non sia presentata domanda di autorizzazione ai sensi dell'articolo
+      14 entro il termine indicato dalla Banca d'Italia ovvero l'autorizzazione sia negata.
+    level: 1
+    abrogato: false
+  - label: '11.'
+    text: Pronunciata la decadenza o disposta la revoca ai sensi dei commi 9 e 10, nei confronti della succursale restano
+      fermi i poteri delle autorità creditizie previsti dal presente decreto.
+    level: 0
+    abrogato: false
+  - label: '12.'
+    text: La revoca dell'autorizzazione è inoltre disposta nei casi di liquidazione coatta amministrativa ai sensi dell'articolo
+      95.
+    level: 0
+    abrogato: false
+  - label: '13.'
+    text: La Banca d'Italia emana disposizioni attuative del presente articolo.
+    level: 0
+    abrogato: false
+TUB:15:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Succursali
+  vigore: 9 gennaio 2026
+  par:
+  - label: '01.'
+    text: Le banche italiane possono stabilire succursali nel territorio della Repubblica e degli altri Stati comunitari in
+      conformità delle procedure previste dalle disposizioni del MVU. Le banche degli altri Stati comunitari possono stabilire
+      succursali nel territorio della Repubblica in conformità delle procedure previste dalle disposizioni del MVU e, per
+      le banche degli Stati comunitari non partecipanti al MVU, del comma 3.
+    level: 0
+    abrogato: false
+  - label: '1.'
+    text: Fermo restando quanto previsto dal comma 01, la Banca d'Italia può vietare lo stabilimento di una nuova succursale
+      di un soggetto italiano meno significativo per motivi attinenti all'adeguatezza delle strutture organizzative o della
+      situazione finanziaria, economica e patrimoniale del soggetto.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Le banche italiane possono stabilire succursali in uno Stato terzo previa autorizzazione della Banca d'Italia.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Per le banche degli Stati comunitari non partecipanti al MVU che intendono stabilire succursali nel territorio della
+      Repubblica, il primo insediamento è preceduto da una comunicazione alla Banca d'Italia da parte dell'autorità competente
+      dello Stato di appartenenza; la succursale inizia l'attività decorsi due mesi dalla comunicazione. Il primo insediamento
+      è preceduto da una comunicazione alla Banca d'Italia da parte dell'autorità competente dello Stato di appartenenza;
+      la succursale inizia l'attività decorsi due mesi dalla comunicazione. La Banca d'Italia e la CONSOB, nell'ambito delle
+      rispettive competenze, indicano, se del caso, all'autorità competente dello Stato comunitario non partecipante al MVU
+      e alla banca le condizioni alle quali, per motivi di interesse generale, è subordinato l'esercizio dell'attività della
+      succursale.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Le banche extracomunitarie già operanti nel territorio della Repubblica con una succursale possono stabilire altre
+      succursali previa autorizzazione della Banca d'Italia.
+    level: 0
+    abrogato: true
+  - label: '5.'
+    text: La Banca d'Italia, nei casi in cui sia previsto l'esercizio di attività di intermediazione mobiliare, dà notizia
+      alla CONSOB delle comunicazioni ricevute ai sensi dei commi 01 e 3 e dell'apertura di succursali all'estero da parte
+      di banche italiane.
+    level: 0
+    abrogato: false
+TUB:16:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Libera prestazione di servizi
+  vigore: 9 gennaio 2026
+  par:
+  - label: '1.'
+    text: Le banche italiane possono esercitare le attività ammesse al mutuo riconoscimento in uno Stato comunitario senza
+      stabilirvi succursali, secondo quanto stabilito dalle disposizioni del MVU e nel rispetto delle procedure fissate dalla
+      Banca d'Italia.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Le banche italiane possono operare in uno Stato terzo senza stabilirvi succursali previa autorizzazione della Banca
+      d'Italia.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Le banche comunitarie possono esercitare le attività previste dal comma 1 nel territorio della Repubblica senza
+      stabilirvi succursali dopo che la Banca d'Italia sia stata informata dall'autorità competente dello Stato di appartenenza.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Fermo restando quanto previsto dall'articolo 14-bis, commi 2 e 3, e dall'articolo 29-ter del decreto legislativo
+      n. 58 del 1998, le banche di Stato terzo possono operare in Italia senza stabilirvi succursali previa comunicazione
+      alla Banca d'Italia e al ricorrere delle condizioni da essa stabilite. La Banca d'Italia può vietare l'avvio o la prosecuzione
+      dell'operatività qualora tali condizioni non siano soddisfatte.
+    level: 0
+    abrogato: false
+  - label: '5.'
+    text: La Banca d'Italia, nei casi in cui sia previsto l'esercizio di attività di intermediazione mobiliare, dà notizia
+      alla CONSOB delle comunicazioni ricevute ai sensi del comma 3 e della prestazione all'estero di servizi da parte di
+      banche italiane.
+    level: 0
+    abrogato: false
+  - label: 5-bis.
+    text: La Banca d'Italia può emanare disposizioni attuative del presente articolo.
+    level: 0
+    abrogato: false
+TUB:17:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Attività non ammesse al mutuo riconoscimento
+  vigore: 27 giugno 2015
+  par:
+  - label: '1.'
+    text: La Banca d'Italia disciplina l'esercizio di attività non ammesse al mutuo riconoscimento comunque effettuato da
+      parte di banche comunitarie nel territorio della Repubblica.
+    level: 0
+    abrogato: false
+TUB:18:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Società finanziarie ammesse al mutuo riconoscimento
+  vigore: 13 dicembre 2016
+  par:
+  - label: '1.'
+    text: Le disposizioni dell'art. 15, commi 01 e 1, e dell'art. 16, comma 1, si applicano anche alle società finanziarie
+      con sede legale in Italia sottoposte a forme di vigilanza prudenziale, quando la partecipazione di controllo è detenuta
+      da una o più banche italiane e ricorrono le condizioni stabilite dalla Banca d'Italia.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Le disposizioni dell'art. 15, comma 3, e dell'art. 16, comma 3, si applicano, in armonia con la normativa comunitaria,
+      anche alle società finanziarie aventi sede legale in uno Stato comunitario quando la partecipazione di controllo è detenuta
+      da una o più banche aventi sede legale nel medesimo Stato.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: La Banca d'Italia, nei casi in cui sia previsto l'esercizio di attività di intermediazione mobiliare, comunica alla
+      CONSOB le società finanziarie ammesse al mutuo riconoscimento ai sensi dei commi 1 e 2.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Alle società finanziarie ammesse al mutuo riconoscimento ai sensi dei commi 1 e 2 si applicano le disposizioni previste
+      dall'art. 54, commi 1, 2 e 3.
+    level: 0
+    abrogato: false
+  - label: '5.'
+    text: Alle società finanziarie ammesse al mutuo riconoscimento ai sensi del comma 2 si applicano altresì le disposizioni
+      previste dall'art. 79, commi 1, 3 e 4.
+    level: 0
+    abrogato: false
+TUB:19:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Autorizzazioni
+  vigore: 9 gennaio 2026
+  par:
+  - label: '1.'
+    text: 'Sono soggette ad autorizzazione preventiva:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: l'acquisizione a qualsiasi titolo in una banca di partecipazioni che comportano la possibilità di esercitare il
+      controllo o un'influenza notevole sulla banca stessa o che attribuiscono una quota dei diritti di voto o del capitale
+      almeno pari al 10 per cento, tenuto conto delle azioni o quote già possedute;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: le variazioni delle partecipazioni quando la quota dei diritti di voto o del capitale raggiunge o supera il 20 per
+      cento, 30 per cento o 50 per cento e, in ogni caso, quando le variazioni comportano il controllo della banca stessa;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: 'l''acquisizione in una società che detiene le partecipazioni indicate alla lettera a):'
+    level: 1
+    abrogato: false
+  - label: 1)
+    text: del controllo;
+    level: 2
+    abrogato: false
+  - label: 2)
+    text: di una quota dei diritti di voto o del capitale, quando, per effetto dell'acquisizione, è integrato uno dei casi
+      indicati nell'articolo 22, comma 1, lettera b);
+    level: 2
+    abrogato: false
+  - label: d)
+    text: l'acquisizione a qualsiasi titolo, in assenza di acquisti di partecipazioni, anche per il tramite di un contratto
+      con la banca o di una clausola del suo statuto, del controllo o dell'influenza notevole sulla banca, o di una quota
+      dei diritti di voto o del capitale almeno pari al 10 per cento, 20 per cento, 30 per cento o 50 per cento, tenuto conto
+      delle azioni o quote già possedute.
+    level: 1
+    abrogato: false
+  - label: '2.'
+    text: Sono soggette ad autorizzazione preventiva le variazioni delle partecipazioni quando la quota dei diritti di voto
+      o del capitale raggiunge o supera il 20 per cento, 30 per cento o 50 per cento e, in ogni caso, quando le variazioni
+      comportano il controllo sulla banca stessa.
+    level: 0
+    abrogato: true
+  - label: '3.'
+    text: L'autorizzazione è necessaria anche per l'acquisizione del controllo di una società che detiene le partecipazioni
+      indicate al comma 1.
+    level: 0
+    abrogato: true
+  - label: '4.'
+    text: La Banca d'Italia individua i soggetti tenuti a richiedere l'autorizzazione quando i diritti derivanti dalle partecipazioni
+      indicate ai commi 1 e 2 spettano o sono attribuiti ad un soggetto diverso dal titolare delle partecipazioni stesse.
+    level: 0
+    abrogato: true
+  - label: '5.'
+    text: 'L''autorizzazione è rilasciata dalla BCE, su proposta della Banca d''Italia. La proposta è formulata quando ricorrono
+      condizioni atte a garantire una gestione sana e prudente della banca, valutando la qualità del potenziale acquirente
+      e la solidità finanziaria del progetto di acquisizione in base ai seguenti criteri: la reputazione del potenziale acquirente
+      ai sensi dell''articolo 25; l''onorabilità, la correttezza, la professionalità e competenza, ai sensi dell''articolo
+      26, comma 3, di coloro che, in esito all''acquisizione, svolgeranno funzioni di amministrazione e direzione nella banca;
+      la solidità finanziaria del potenziale acquirente; la capacità della banca di rispettare a seguito dell''acquisizione
+      le disposizioni che ne regolano l''attività; l''idoneità della struttura del gruppo del potenziale acquirente a consentire
+      l''esercizio efficace della vigilanza; la mancanza di motivi ragionevoli per sospettare che, in relazione all''operazione
+      proposta, sia in corso o abbia avuto luogo un''operazione o un tentativo di riciclaggio o di finanziamento del terrorismo
+      o che l''operazione proposta possa aumentarne il rischio. L''autorizzazione può essere sospesa o revocata se vengono
+      meno o si modificano i presupposti e le condizioni per il suo rilascio.'
+    level: 0
+    abrogato: false
+  - label: 5-bis.
+    text: La Banca d'Italia propone alla BCE di negare l'autorizzazione all'acquisizione della partecipazione quando dalla
+      verifica delle condizioni indicate nel comma 5 non risulti garantita la sana e prudente gestione della banca.
+    level: 0
+    abrogato: false
+  - label: 5-ter.
+    text: Quando l'acquisizione viene effettuata nell'ambito di una risoluzione ai sensi del decreto legislativo 16 novembre
+      2015, n. 180, i provvedimenti previsti dai commi 1, 2, 3 e 5 sono adottati dalla Banca d'Italia.
+    level: 0
+    abrogato: false
+  - label: '6.'
+    text: I soggetti che, anche attraverso società controllate, svolgono in misura rilevante attività d'impresa in settori
+      non bancari né finanziari non possono essere autorizzati ad acquisire partecipazioni quando la quota dei diritti di
+      voto complessivamente detenuta sia superiore al 15 per cento o quando ne consegua, comunque, il controllo della banca.
+      A tali fini, la Banca d'Italia individua i diritti di voto e gli altri diritti rilevanti.
+    level: 0
+    abrogato: true
+  - label: '7.'
+    text: La Banca d'Italia nega o revoca l'autorizzazione in presenza di accordi, in qualsiasi forma conclusi, da cui derivi
+      durevolmente, in capo ai soggetti indicati nel comma 6, una rilevante concentrazione di potere per la nomina o la revoca
+      della maggioranza degli amministratori o dei componenti del consiglio di sorveglianza della banca, tale da pregiudicare
+      la gestione sana e prudente della banca stessa.
+    level: 0
+    abrogato: true
+  - label: '8.'
+    text: La Banca d'Italia dà notizia al Ministro dell'economia e delle finanze, Presidente del CICR, delle domande di autorizzazione
+      di cui al comma 1.
+    level: 0
+    abrogato: false
+  - label: 8-bis.
+    text: Le autorizzazioni previste dal presente articolo si applicano anche all'acquisizione, in via diretta o indiretta,
+      del controllo derivante da un contratto con la banca o da una clausola del suo statuto.
+    level: 0
+    abrogato: true
+  - label: '9.'
+    text: 'La Banca d''Italia adotta disposizioni attuative del presente Capo, individuando, tra l''altro: i soggetti tenuti
+      a richiedere l''autorizzazione quando i diritti derivanti dalle partecipazioni indicate nel presente articolo spettano
+      o sono attribuiti ad un soggetto diverso dal titolare delle partecipazioni stesse; i criteri di calcolo dei diritti
+      di voto rilevanti ai fini dell''applicazione delle soglie previste nel presente articolo, ivi inclusi i casi in cui
+      i diritti di voto non sono computati; i casi di cui all''articolo 22, comma 1, lettera b); i criteri per l''individuazione
+      dei casi di influenza notevole e di acquisizione involontaria; le modalità e i termini del procedimento di valutazione
+      dell''acquisizione ai sensi dei commi 5, 5-bis e 5-ter.'
+    level: 0
+    abrogato: false
+TUB:2:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Comitato interministeriale per il credito e il risparmio
+  vigore: 25 gennaio 2007
+  par:
+  - label: '1.'
+    text: Il Comitato interministeriale per il credito e il risparmio ha l'alta vigilanza in materia di credito e di tutela
+      del risparmio. Esso delibera nelle materie attribuite alla sua competenza dal presente decreto legislativo o da altre
+      leggi. Il CICR è composto dal Ministro dell'economia e delle finanze, che lo presiede, dal Ministro del commercio internazionale,
+      dal Ministro delle politiche agricole alimentari e forestali, dal Ministro dello sviluppo economico, dal Ministro delle
+      infrastrutture, dal Ministro dei trasporti e dal Ministro per le politiche comunitarie. Alle sedute partecipa il Governatore
+      della Banca d'Italia.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Il Presidente può invitare altri Ministri a intervenire a singole riunioni a fini consultivi. Agli stessi fini il
+      Presidente può invitare i Presidenti delle altre Autorità competenti a prendere parte a singole riunioni in cui vengano
+      trattati argomenti, attinenti a materie loro attribuite dalla legge, connessi a profili di stabilità complessiva, trasparenza
+      ed efficienza del sistema finanziario.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Il CICR è validamente costituito con la presenza della maggioranza dei suoi membri e delibera con il voto favorevole
+      della maggioranza dei presenti.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Il direttore generale del tesoro svolge funzioni di segretario. Il CICR determina le norme concernenti la propria
+      organizzazione e il proprio funzionamento. Per l'esercizio delle proprie funzioni il CICR si avvale della Banca d'Italia.
+    level: 0
+    abrogato: false
+TUB:20:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Obblighi di comunicazione
+  vigore: 30 novembre 2021
+  par:
+  - label: '1.'
+    text: La Banca d'Italia stabilisce, a fini informativi, obblighi di comunicazione in ordine a operazioni di acquisto o
+      cessione di partecipazioni in banche.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Ogni accordo, in qualsiasi forma concluso, compresi quelli aventi forma di associazione, che regola o da cui comunque
+      possa derivare l'esercizio concertato del voto in una banca, anche cooperativa, o in una società che la controlla deve
+      essere comunicato alla Banca d'Italia dai partecipanti ovvero dai legali rappresentanti della banca o della società
+      cui l'accordo si riferisce. Quando dall'accordo derivi una concertazione del voto tale da pregiudicare la gestione sana
+      e prudente della banca, la Banca d'Italia può sospendere il diritto di voto dei partecipanti all'accordo stesso.
+    level: 0
+    abrogato: false
+  - label: 2-bis.
+    text: I soggetti autorizzati ai sensi dell'articolo 19 comunicano alla Banca d'Italia gli atti e i fatti idonei a far
+      venire meno o modificare i presupposti e le condizioni sulla base dei quali l'autorizzazione è stata rilasciata.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: La Banca d'Italia determina presupposti, modalità e termini delle comunicazioni previste dai commi 1 e 2-bis anche
+      con riguardo alle ipotesi in cui il diritto di voto spetta o è attribuito a soggetto diverso dal titolare della partecipazione.
+      La Banca d'Italia determina altresì le modalità e i termini delle comunicazioni previste dal comma 2.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: La Banca d'Italia, al fine di verificare l'osservanza degli obblighi indicati nei commi 1, 2 e 2-bis, può chiedere
+      informazioni ai soggetti comunque interessati.
+    level: 0
+    abrogato: false
+TUB:21:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Richiesta di informazioni
+  vigore: 29 febbraio 2004
+  par:
+  - label: '1.'
+    text: La Banca d'Italia può richiedere alle banche ed alle società ed agli enti di qualsiasi natura che possiedono partecipazioni
+      nelle banche medesime l'indicazione nominativa dei titolari delle partecipazioni secondo quanto risulta dal libro dei
+      soci, dalle comunicazioni ricevute o da altri dati a loro disposizione.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: La Banca d'Italia può altresì richiedere agli amministratori delle società e degli enti titolari di partecipazioni
+      in banche l'indicazione dei soggetti controllanti.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Le società fiduciarie che abbiano intestato a proprio nome partecipazioni in società appartenenti a terzi comunicano
+      alla Banca d'Italia, se questa lo richieda, le generalità dei fiducianti.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Le notizie previste dal presente articolo possono essere richieste anche a soggetti stranieri.
+    level: 0
+    abrogato: false
+  - label: '5.'
+    text: La Banca d'Italia informa la CONSOB delle richieste che interessano società ed enti con titoli negoziati in un mercato
+      regolamentato.
+    level: 0
+    abrogato: false
+TUB:22:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Partecipazioni indirette
+  vigore: 30 novembre 2021
+  par:
+  - label: '1.'
+    text: 'Ai fini dell''applicazione dei capi III e IV del presente Titolo si considerano anche:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: le partecipazioni acquisite o comunque possedute per il tramite di società controllate, di società fiduciarie o
+      per interposta persona;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: i casi, individuati dalla Banca d'Italia, che conducono ad una delle situazioni indicate dall'articolo 19, comma
+      1, per effetto dei diritti di voto o delle quote di capitale posseduti attraverso società, anche non controllate, che
+      a loro volta hanno diritti di voto o quote di capitale nella banca, tenendo conto della demoltiplicazione prodotta dalla
+      catena partecipativa.
+    level: 1
+    abrogato: false
+TUB:22-bis:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Persone che agiscono di concerto
+  vigore: 30 novembre 2021
+  par:
+  - label: '1.'
+    text: Ai fini dell'applicazione dei capi III e IV del presente Titolo, è soggetta ad autorizzazione preventiva ai sensi
+      dell'articolo 19 anche l'acquisizione o la detenzione di partecipazioni da parte di più soggetti che, in base ad accordi
+      in qualsiasi forma conclusi, ancorché invalidi o inefficaci, intendono esercitare in modo concertato i relativi diritti,
+      quando tali partecipazioni, cumulativamente considerate, raggiungono o superano le soglie indicate nell'articolo 19
+      oppure comportano la possibilità di esercitare il controllo o un'influenza notevole.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Per le finalità di cui al comma 1, la Banca d'Italia individua i casi per i quali si presume che due o più persone
+      agiscano di concerto, i casi in cui la cooperazione tra più persone non configura un'azione di concerto, nonché i casi
+      in cui le modifiche agli accordi tra persone che agiscono di concerto, ivi comprese quelle relative alla composizione
+      degli aderenti, sono soggette agli obblighi di autorizzazione o comunicazione ai sensi del presente Capo.
+    level: 0
+    abrogato: false
+TUB:23:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Nozione di controllo
+  vigore: 14 gennaio 2005
+  par:
+  - label: '1.'
+    text: Ai fini del presente capo il controllo sussiste, anche con riferimento a soggetti diversi dalle società, nei casi
+      previsti dall'articolo 2359, commi primo e secondo, del codice civile e in presenza di contratti o di clausole statutarie
+      che abbiano per oggetto o per effetto il potere di esercitare l'attività di direzione e coordinamento.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: 'Il controllo si considera esistente nella forma dell''influenza dominante, salvo prova contraria, allorché ricorra
+      una delle seguenti situazioni:'
+    level: 0
+    abrogato: false
+  - label: 1)
+    text: esistenza di un soggetto che, sulla base di accordi, ha il diritto di nominare o revocare la maggioranza degli amministratori
+      o del consiglio di sorveglianza ovvero dispone da solo della maggioranza dei voti ai fini delle deliberazioni relative
+      alle materie di cui agli articoli 2364 e 2364-bis del codice civile;
+    level: 2
+    abrogato: false
+  - label: 2)
+    text: possesso di partecipazioni idonee a consentire la nomina o la revoca della maggioranza dei membri del consiglio
+      di amministrazione o del consiglio di sorveglianza;
+    level: 2
+    abrogato: false
+  - label: 3)
+    text: 'sussistenza di rapporti, anche tra soci, di carattere finanziario ed organizzativo idonei a conseguire uno dei
+      seguenti effetti:'
+    level: 2
+    abrogato: false
+  - label: a)
+    text: la trasmissione degli utili o delle perdite;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: il coordinamento della gestione dell'impresa con quella di altre imprese ai fini del perseguimento di uno scopo
+      comune;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: l'attribuzione di poteri maggiori rispetto a quelli derivanti dalle partecipazioni possedute;
+    level: 1
+    abrogato: false
+  - label: d)
+    text: l'attribuzione, a soggetti diversi da quelli legittimati in base alla titolarità delle partecipazioni, di poteri
+      nella scelta degli amministratori o dei componenti del consiglio di sorveglianza o dei dirigenti delle imprese;
+    level: 1
+    abrogato: false
+  - label: 4)
+    text: assoggettamento a direzione comune, in base alla composizione degli organi amministrativi o per altri concordanti
+      elementi.
+    level: 2
+    abrogato: false
+TUB:24:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Sospensione del diritto di voto e degli altri diritti, obbligo di alienazione
+  vigore: 30 novembre 2021
+  par:
+  - label: '1.'
+    text: Non possono essere esercitati i diritti di voto e gli altri diritti che consentono di influire sulla società inerenti
+      alle partecipazioni per le quali le autorizzazioni previste dall'articolo 19 non siano state ottenute ovvero siano state
+      sospese o revocate. I diritti di voto e gli altri diritti, che consentono di influire sulla società, non possono essere
+      altresì esercitati per le partecipazioni per le quali siano state omesse le comunicazioni previste dall'articolo 20,
+      commi 1, 2 e 4.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: In caso di inosservanza del divieto, la deliberazione o il diverso atto, adottati con il voto o il contributo determinanti
+      delle partecipazioni previste dal comma 1, sono impugnabili secondo le previsioni del codice civile. L'impugnazione
+      può essere proposta anche dalla Banca d'Italia entro centottanta giorni dalla data della deliberazione ovvero, se questa
+      è soggetta a iscrizione nel registro delle imprese, entro centottanta giorni dall'iscrizione o, se è soggetta solo a
+      deposito presso l'ufficio del registro delle imprese, entro centottanta giorni dalla data di questo. Le partecipazioni
+      per le quali non può essere esercitato il diritto di voto sono computate ai fini della regolare costituzione della relativa
+      assemblea.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Le partecipazioni per le quali le autorizzazioni previste dall'articolo 19 non sono state ottenute o sono state
+      revocate devono essere alienate entro i termini stabiliti dalla Banca d'Italia.
+    level: 0
+    abrogato: false
+  - label: 3-bis.
+    text: Non possono essere esercitati i diritti derivanti dai contratti o dalle clausole statutarie per i quali le autorizzazioni
+      previste dall'articolo 19 non siano state ottenute ovvero siano state sospese o revocate.
+    level: 0
+    abrogato: false
+TUB:25:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Partecipanti al capitale
+  vigore: 30 novembre 2021
+  par:
+  - label: '1.'
+    text: I titolari delle partecipazioni indicate all'articolo 19 devono possedere requisiti di onorabilità e soddisfare
+      criteri di competenza e correttezza in modo da garantire la sana e prudente gestione della banca.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: 'Il Ministro dell''economia e delle finanze, con decreto adottato sentita la Banca d''Italia, individua:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: i requisiti di onorabilità;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: i criteri di competenza, graduati in relazione all'influenza sulla gestione della banca che il titolare della partecipazione
+      può esercitare;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: i criteri di correttezza, con riguardo, tra l'altro, alle relazioni d'affari del titolare della partecipazione,
+      alle condotte tenute nei confronti delle autorità di vigilanza e alle sanzioni o misure correttive da queste irrogate,
+      a provvedimenti restrittivi inerenti ad attività professionali svolte, nonché a ogni altro elemento suscettibile di
+      incidere sulla correttezza del titolare della partecipazione.
+    level: 1
+    abrogato: false
+  - label: '3.'
+    text: Qualora non siano soddisfatti i requisiti e i criteri non possono essere esercitati i diritti di voto e gli altri
+      diritti, che consentono di influire sulla società, inerenti alle partecipazioni eccedenti le soglie indicate all'articolo
+      19, comma 1, lettera a). In caso di inosservanza, si applica l'articolo 24, comma 2. Le partecipazioni eccedenti devono
+      essere alienate entro i termini stabiliti dalla Banca d'Italia.
+    level: 0
+    abrogato: false
+TUB:26:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Esponenti aziendali e responsabili delle principali funzioni aziendali
+  vigore: 9 gennaio 2026
+  par:
+  - label: '1.'
+    text: I soggetti che svolgono funzioni di amministrazione, direzione e controllo presso banche devono essere idonei allo
+      svolgimento dell'incarico.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Ai fini del comma 1, gli esponenti devono possedere requisiti di professionalità, onorabilità e indipendenza, soddisfare
+      criteri di competenza, correttezza e indipendenza di giudizio, dedicare il tempo necessario all'efficace espletamento
+      dell'incarico, in modo da garantire la sana e prudente gestione della banca.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: 'Il Ministro dell''economia e delle finanze, con decreto adottato sentita la Banca d''Italia, individua:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: i requisiti di onorabilità omogenei per tutti gli esponenti;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: i requisiti di professionalità e indipendenza, graduati secondo principi di proporzionalità;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: i criteri di competenza, coerenti con la carica da ricoprire e con le caratteristiche della banca, e di adeguata
+      composizione dell'organo;
+    level: 1
+    abrogato: false
+  - label: d)
+    text: i criteri di correttezza, con riguardo, tra l'altro, alle relazioni d'affari dell'esponente, alle condotte tenute
+      nei confronti delle autorità di vigilanza e alle sanzioni o misure correttive da queste irrogate, a provvedimenti restrittivi
+      inerenti ad attività professionali svolte, nonché a ogni altro elemento suscettibile di incidere sulla correttezza dell'esponente;
+    level: 1
+    abrogato: false
+  - label: d-bis)
+    text: i criteri di indipendenza di giudizio degli esponenti;
+    level: 1
+    abrogato: false
+  - label: e)
+    text: i limiti al cumulo di incarichi per gli esponenti delle banche, graduati secondo principi di proporzionalità e tenendo
+      conto delle dimensioni dell'intermediario, e i criteri di disponibilità di tempo allo svolgimento degli incarichi;
+    level: 1
+    abrogato: false
+  - label: f)
+    text: le cause che comportano la sospensione temporanea dalla carica e la sua durata.
+    level: 1
+    abrogato: false
+  - label: '4.'
+    text: Ai responsabili delle principali funzioni aziendali delle banche, come individuati dal decreto di cui al comma 3,
+      si applicano i commi 1, 2 e 3, limitatamente ai requisiti di onorabilità e ai criteri di competenza e correttezza.
+    level: 0
+    abrogato: false
+  - label: '5.'
+    text: Le banche valutano l'idoneità dei propri esponenti e responsabili delle principali funzioni aziendali e l'adeguatezza
+      complessiva degli organi di amministrazione e controllo, documentando il processo di analisi e motivando opportunamente
+      l'esito della valutazione. La valutazione è condotta dall'organo di appartenenza di ciascun esponente e, per i soggetti
+      che non sono componenti di un organo, dall'organo che li ha nominati. In caso di specifiche e limitate carenze, i medesimi
+      organi possono adottare misure necessarie a colmarle. In ogni altro caso il difetto di idoneità o la violazione dei
+      limiti al cumulo degli incarichi determina la decadenza dall'ufficio; questa è pronunciata dall'organo di cui sopra
+      entro trenta giorni dalla nomina o dalla conoscenza del difetto o della violazione sopravvenuti.
+    level: 0
+    abrogato: false
+  - label: 5-bis.
+    text: 'La valutazione di cui al comma 5 è condotta:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: 'con riferimento ai componenti degli organi di amministrazione e controllo:'
+    level: 1
+    abrogato: false
+  - label: 1)
+    text: prima che essi assumano le funzioni, nel caso in cui non sia rinnovata la maggioranza dei componenti dell'organo.
+      A questo fine, l'efficacia della nomina dei nuovi componenti è sospesa fino alla conclusione della valutazione dell'idoneità.
+      Resta fermo quanto previsto dall'articolo 2383, secondo comma, del codice civile;
+    level: 2
+    abrogato: false
+  - label: 2)
+    text: dopo che essi abbiano assunto le funzioni, nel caso di rinnovo della maggioranza dei componenti dell'organo. Fermo
+      restando quanto previsto dal comma 5, in questo caso la nomina è immediatamente efficace;
+    level: 2
+    abrogato: false
+  - label: b)
+    text: con riferimento ai responsabili delle principali funzioni aziendali e ai soggetti che svolgono funzioni di direzione,
+      prima che tali soggetti siano nominati.
+    level: 1
+    abrogato: false
+  - label: '6.'
+    text: La Banca d'Italia, secondo modalità e tempi da essa stabiliti, anche al fine di ridurre al minimo gli oneri gravanti
+      sulle banche, valuta l'idoneità degli esponenti e dei responsabili delle principali funzioni aziendali delle banche
+      di maggiore rilevanza, come individuati dal decreto di cui al comma 3, e il rispetto dei limiti al cumulo degli incarichi,
+      anche sulla base dell'analisi compiuta e delle eventuali misure adottate ai sensi del comma 5. A questo fine, la Banca
+      d'Italia tiene conto anche delle informazioni acquisite sulla base della disciplina in materia di collaborazione tra
+      autorità o tramite accesso alla banca dati centrale AML/CFT di cui al regolamento (UE) 2024/1620, del Parlamento europeo
+      e del Consiglio, del 31 maggio 2024. In caso di difetto o violazione pronuncia la decadenza dalla carica.
+    level: 0
+    abrogato: false
+  - label: 6-bis.
+    text: La Banca d'Italia valuta se i requisiti e i criteri di cui ai commi 2, 3 e 4 continuino a essere soddisfatti qualora
+      sussistano motivi ragionevoli per sospettare che sia in corso o abbia avuto luogo un'operazione o un tentativo di riciclaggio
+      o di finanziamento del terrorismo o che sussista un rischio maggiore di riciclaggio o di finanziamento del terrorismo
+      collegato alla banca.
+    level: 0
+    abrogato: false
+TUB:28:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Norme applicabili
+  vigore: 27 giugno 2015
+  par:
+  - label: '1.'
+    text: L'esercizio dell'attività bancaria da parte di società cooperative è riservato alle banche popolari e alle banche
+      di credito cooperativo disciplinate dalle sezioni I e II del presente capo.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Alle banche popolari e alle banche di credito cooperativo non si applicano i controlli sulle società cooperative
+      attribuiti all'autorità governativa dal codice civile.
+    level: 0
+    abrogato: false
+  - label: 2-bis.
+    text: Ai fini delle disposizioni fiscali di carattere agevolativo, sono considerate cooperative a mutualità prevalente
+      le banche di credito cooperativo che rispettano i requisiti di mutualità previsti dall'articolo 2514 del codice civile
+      ed i requisiti di operatività prevalente con soci previsti ai sensi dell'articolo 35 del presente decreto.
+    level: 0
+    abrogato: false
+  - label: 2-ter.
+    text: Nelle banche popolari e nelle banche di credito cooperativo il diritto al rimborso delle azioni nel caso di recesso,
+      anche a seguito di trasformazione, morte o esclusione del socio, è limitato secondo quanto previsto dalla Banca d'Italia,
+      anche in deroga a norme di legge, laddove ciò sia necessario ad assicurare la computabilità delle azioni nel patrimonio
+      di vigilanza di qualità primaria della banca. Agli stessi fini, la Banca d'Italia può limitare il diritto al rimborso
+      degli altri strumenti di capitale emessi.
+    level: 0
+    abrogato: false
+TUB:29:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Norme generali
+  vigore: 27 marzo 2024
+  par:
+  - label: '1.'
+    text: Le banche popolari sono costituite in forma di società cooperativa per azioni a responsabilità limitata.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Il valore nominale delle azioni non può essere inferiore a due euro.
+    level: 0
+    abrogato: false
+  - label: 2-bis.
+    text: L'attivo della banca popolare non può superare 16 miliardi di euro. Se la banca è capogruppo di un gruppo bancario,
+      il limite è determinato a livello consolidato.
+    level: 0
+    abrogato: false
+  - label: 2-ter.
+    text: In caso di superamento del limite di cui al comma 2-bis, l'organo di amministrazione convoca l'assemblea per le
+      determinazioni del caso. Se entro un anno dal superamento del limite l'attivo non è stato ridotto al di sotto della
+      soglia né è stata deliberata la trasformazione in società per azioni ai sensi dell'articolo 31 o la liquidazione, la
+      Banca d'Italia, tenuto conto delle circostanze e dell'entità del superamento, può adottare il divieto di intraprendere
+      nuove operazioni ai sensi dell'articolo 78, o i provvedimenti previsti nel titolo IV, capo I, sezione I, o proporre
+      alla Banca centrale europea la revoca dell'autorizzazione all'attività bancaria e al Ministro dell'economia e delle
+      finanze la liquidazione coatta amministrativa. Restano fermi i poteri di intervento e sanzionatori attribuiti alla Banca
+      d'Italia dal presente decreto legislativo.
+    level: 0
+    abrogato: false
+  - label: 2-quater.
+    text: La Banca d'Italia detta disposizioni di attuazione del presente articolo.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: La nomina dei membri degli organi di amministrazione e controllo spetta esclusivamente ai competenti organi sociali.
+    level: 0
+    abrogato: true
+  - label: '4.'
+    text: Alle banche popolari non si applicano le disposizioni del decreto legislativo 14 dicembre 1947, n. 1577 e successive
+      modificazioni.
+    level: 0
+    abrogato: false
+TUB:3:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Ministro dell'economia e delle finanze
+  vigore: 29 febbraio 2004
+  par:
+  - label: '1.'
+    text: Il Ministro dell'economia e delle finanze adotta con decreto i provvedimenti di sua competenza previsti dal presente
+      decreto legislativo e ha facoltà di sottoporli preventivamente al CICR.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: In caso di urgenza il Ministro dell'economia e delle finanze sostituisce il CICR. Dei provvedimenti assunti è data
+      notizia al CICR nella prima riunione successiva, che deve essere convocata entro trenta giorni.
+    level: 0
+    abrogato: false
+TUB:30:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Soci
+  vigore: 19 dicembre 2012
+  par:
+  - label: '1.'
+    text: Ogni socio ha un voto, qualunque sia il numero delle azioni possedute.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Nessuno, direttamente o indirettamente, può detenere azioni in misura eccedente l'1 per cento del capitale sociale,
+      salva la facoltà statutaria di prevedere limiti più contenuti, comunque non inferiori allo 0,5 per cento. La banca,
+      appena rileva il superamento di tale limite, contesta al detentore la violazione del divieto. Le azioni eccedenti devono
+      essere alienate entro un anno dalla contestazione; trascorso tale termine, i relativi diritti patrimoniali maturati
+      fino all'alienazione delle azioni eccedenti vengono acquisiti dalla banca.
+    level: 0
+    abrogato: false
+  - label: 2-bis.
+    text: In deroga al comma 2, gli statuti possono fissare al 3 per cento la partecipazione delle fondazioni di origine bancaria
+      di cui al decreto legislativo 17 maggio 1999, n. 153, che, alla data di entrata in vigore della presente disposizione,
+      detengano una partecipazione al capitale sociale superiore ai limiti fissati dal citato comma 2, qualora il superamento
+      del limite derivi da operazioni di aggregazione e fermo restando che tale partecipazione non può essere incrementata.
+      Sono fatti salvi i limiti più stringenti previsti dalla disciplina propria dei soggetti di cui al presente comma e le
+      autorizzazioni richieste ai sensi di norme di legge.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Il divieto previsto dal comma 2 non si applica agli organismi di investimento collettivo in valori mobiliari, per
+      i quali valgono i limiti previsti dalla disciplina propria di ciascuno di essi.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Il numero minimo dei soci non può essere inferiore a duecento. Qualora tale numero diminuisca, la compagine sociale
+      deve essere reintegrata entro un anno; in caso contrario, la banca è posta in liquidazione.
+    level: 0
+    abrogato: false
+  - label: '5.'
+    text: Le delibere del Consiglio di amministrazione o di rigetto delle domande di ammissione a socio debbono essere motivate
+      avuto riguardo all'interesse della società, alle prescrizioni statutarie e allo spirito della forma cooperativa. Il
+      Consiglio di amministrazione è tenuto a riesaminare la domanda di ammissione su richiesta del collegio dei probiviri,
+      costituito ai sensi dello statuto e integrato con un rappresentante dell'aspirante socio. L'istanza di revisione deve
+      essere presentata entro trenta giorni dal ricevimento della comunicazione della deliberazione e il collegio dei probiviri
+      si pronuncia entro trenta giorni dalla richiesta.
+    level: 0
+    abrogato: false
+  - label: 5-bis.
+    text: Per favorire la patrimonializzazione della società, lo statuto può subordinare l'ammissione a socio, oltre che a
+      requisiti soggettivi, al possesso di un numero minimo di azioni, il cui venir meno comporta la decadenza dalla qualità
+      così assunta.
+    level: 0
+    abrogato: false
+  - label: '6.'
+    text: Coloro ai quali il Consiglio di amministrazione abbia rifiutato l'ammissione a socio possono esercitare i diritti
+      aventi contenuto patrimoniale relativi alle azioni possedute, fermo restando quanto disposto dal comma 2.
+    level: 0
+    abrogato: false
+TUB:31:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Trasformazioni e fusioni
+  vigore: 26 marzo 2015
+  par:
+  - label: '1.'
+    text: 'Le trasformazioni di banche popolari in società per azioni o le fusioni a cui prendano parte banche popolari e
+      da cui risultino società per azioni, le relative modifiche statutarie nonché le diverse determinazioni di cui all''articolo
+      29, comma 2-ter, sono deliberate:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: in prima convocazione, con la maggioranza dei due terzi dei voti espressi, purché all'assemblea sia rappresentato
+      almeno un decimo dei soci della banca;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: in seconda convocazione, con la maggioranza di due terzi dei voti espressi, qualunque sia il numero dei soci intervenuti
+      all'assemblea.
+    level: 1
+    abrogato: false
+  - label: '2.'
+    text: In caso di recesso resta fermo quanto previsto dall'articolo 28, comma 2-ter.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Si applicano gli articoli 56 e 57.
+    level: 0
+    abrogato: false
+TUB:33:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Norme generali
+  vigore: 19 dicembre 2018
+  par:
+  - label: '1.'
+    text: Le banche di credito cooperativo sono costituite in forma di società cooperativa per azioni a responsabilità limitata.
+    level: 0
+    abrogato: false
+  - label: 1-bis.
+    text: L'adesione a un gruppo bancario cooperativo è condizione per il rilascio dell'autorizzazione all'esercizio dell'attività
+      bancaria in forma di banca di credito cooperativo, fatto salvo quanto previsto dall'articolo 37-bis, comma 1-bis.
+    level: 0
+    abrogato: false
+  - label: 1-ter.
+    text: Non si può dare corso al procedimento per l'iscrizione nell'albo delle società cooperative di cui all'articolo 2512,
+      secondo comma, del codice civile se non consti l'autorizzazione prevista dal comma 1-bis.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: La denominazione deve contenere l'espressione "credito cooperativo".
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: La nomina dei membri degli organi di amministrazione e controllo spetta ai competenti organi sociali fatte salve
+      le previsioni degli articoli 150-ter e 37-bis, comma 3.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Il valore nominale di ciascuna azione non può essere inferiore a venticinque euro nè superiore a cinquecento euro.
+    level: 0
+    abrogato: false
+TUB:34:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Soci
+  vigore: 16 febbraio 2016
+  par:
+  - label: '1.'
+    text: Il numero minimo dei soci delle banche di credito cooperativo non può essere inferiore a cinquecento. Qualora tale
+      numero diminuisca, la compagine sociale deve essere reintegrata entro un anno; in caso contrario, la banca è posta in
+      liquidazione.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Per essere soci di una banca di credito cooperativo è necessario risiedere, aver sede ovvero operare con carattere
+      di continuità nel territorio di competenza della banca stessa.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Ogni socio ha un voto, qualunque sia il numero delle azioni possedute.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Nessun socio può possedere azioni il cui valore nominale complessivo superi centomila euro.
+    level: 0
+    abrogato: false
+  - label: 4-bis.
+    text: Lo statuto può prevedere, tra i requisiti per l'ammissione a socio, la sottoscrizione o l'acquisto di un numero
+      minimo di azioni.
+    level: 0
+    abrogato: false
+  - label: '5.'
+    text: Le banche di credito cooperativo non possono acquistare le proprie azioni, né fare anticipazioni su di esse, né
+      compensarle con le obbligazioni dei soci.
+    level: 0
+    abrogato: true
+  - label: '6.'
+    text: Si applica l'articolo 30, comma 5.
+    level: 0
+    abrogato: false
+TUB:35:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Operatività
+  vigore: 16 febbraio 2016
+  par:
+  - label: '1.'
+    text: Le banche di credito cooperativo esercitano il credito prevalentemente a favore dei soci. La Banca d'Italia può
+      autorizzare, per periodi determinati, le singole banche di credito cooperativo a una operatività prevalente a favore
+      di soggetti diversi dai soci, unicamente qualora sussistano ragioni di stabilità.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Gli statuti contengono le norme relative alle attività, alle operazioni di impiego e di raccolta e alla competenza
+      territoriale, nonché ai poteri attribuiti alla capogruppo ai sensi dell'articolo 37-bis, determinate sulla base dei
+      criteri fissati dalla Banca d'Italia.
+    level: 0
+    abrogato: false
+TUB:36:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Fusioni e trasformazioni
+  vigore: 9 gennaio 2026
+  par:
+  - label: '1.'
+    text: La Banca d'Italia autorizza fusioni tra banche di credito cooperativo e banche di diversa natura da cui risultino
+      banche costituite in forma di società per azioni.
+    level: 0
+    abrogato: false
+  - label: 1-bis.
+    text: In caso di recesso o esclusione da un gruppo bancario cooperativo, la banca di credito cooperativo, entro il termine
+      stabilito con le disposizioni di cui all'articolo 37-bis, comma 7, previa autorizzazione rilasciata dalla Banca d'Italia
+      avendo riguardo alla sana e prudente gestione della banca, può deliberare la propria trasformazione in società per azioni.
+      In mancanza, la società delibera la propria liquidazione.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Le deliberazioni assembleari sono assunte con le maggioranze previste dagli statuti per le modificazioni statutarie;
+      quando, in relazione all'oggetto delle modificazioni, gli statuti prevedano maggioranze differenziate, si applica quella
+      meno elevata. È fatto salvo il diritto di recesso dei soci.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Si applicano gli articoli 56, comma 2, e 57.
+    level: 0
+    abrogato: false
+TUB:37:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Utili
+  vigore: 1 gennaio 1994
+  par:
+  - label: '1.'
+    text: Le banche di credito cooperativo devono destinare almeno il settanta per cento degli utili netti annuali a riserva
+      legale.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Una quota degli utili netti annuali deve essere corrisposta ai fondi mutualistici per la promozione e lo sviluppo
+      della cooperazione nella misura e con le modalità previste dalla legge.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: La quota di utili che non è assegnata ai sensi dei commi precedenti e che non è utilizzata per la rivalutazione
+      delle azioni o assegnata ad altre riserve o distribuita ai soci deve essere destinata a fini di beneficenza o mutualità.
+    level: 0
+    abrogato: false
+TUB:37-bis:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Gruppo Bancario Cooperativo
+  vigore: 9 gennaio 2026
+  par:
+  - label: '1.'
+    text: 'Il gruppo bancario cooperativo è composto da:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: una società capogruppo costituita in forma di società per azioni e autorizzata all'esercizio dell'attività bancaria
+      il cui capitale è detenuto in misura pari ad almeno il sessanta per cento dalle banche di credito cooperativo appartenenti
+      al gruppo, che esercita attività di direzione e coordinamento sulle società del gruppo sulla base di un contratto conforme
+      a quanto previsto dal comma 3 del presente articolo. Il medesimo contratto assicura l'esistenza di una situazione di
+      controllo come definito dai principi contabili internazionali adottati dall'Unione europea; il requisito minimo di patrimonio
+      netto della società capogruppo è di un miliardo di euro;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: le banche di credito cooperativo che aderiscono al contratto e hanno adottato le connesse clausole statutarie;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: le società bancarie e finanziarie controllate dalla capogruppo, come definite dall'articolo 59;
+    level: 1
+    abrogato: false
+  - label: c-bis)
+    text: eventuali sottogruppi territoriali facenti capo a una banca costituita in forma di società per azioni sottoposta
+      a direzione e coordinamento della capogruppo di cui alla lettera a) e composti dalle altre società di cui alle lettere
+      b) e c).
+    level: 1
+    abrogato: false
+  - label: 1-bis.
+    text: Le banche di credito cooperativo aventi sede legale nelle province autonome di Trento e di Bolzano possono rispettivamente
+      costituire autonomi gruppi bancari cooperativi composti solo da banche aventi sede e operanti esclusivamente nella medesima
+      provincia autonoma e che comunque non abbiano più di due sportelli siti in province limitrofe, tra cui la corrispondente
+      banca capogruppo, la quale adotta una delle forme di cui all'articolo 14, comma 1, lettera a); il requisito minimo di
+      patrimonio netto è stabilito dalla Banca d'Italia ai sensi del comma 7-bis. Le medesime banche hanno la facoltà di adottare,
+      in alternativa alla costituzione del gruppo bancario cooperativo, sistemi di tutela istituzionale, in coerenza con quanto
+      previsto dall'articolo 113, paragrafo 7, del regolamento (UE) n. 575/2013 del Parlamento europeo e del Consiglio, del
+      26 giugno 2013.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Lo statuto della capogruppo indica il numero massimo delle azioni con diritto di voto che possono essere detenute
+      da ciascun socio, direttamente o indirettamente, ai sensi dell'articolo 22, comma 1.
+    level: 0
+    abrogato: false
+  - label: 2-bis.
+    text: Lo statuto della capogruppo stabilisce che i componenti dell'organo di amministrazione espressione delle banche
+      di credito cooperativo aderenti al gruppo siano pari alla metà più due del numero complessivo dei consiglieri di amministrazione.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: 'Il contratto di coesione che disciplina la direzione e il coordinamento della capogruppo sul gruppo indica:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: la banca capogruppo, cui sono attribuiti la direzione e il coordinamento del gruppo;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: 'i poteri della capogruppo che, nel rispetto delle finalità mutualistiche e del carattere localistico delle banche
+      di credito cooperativo, includono:'
+    level: 1
+    abrogato: false
+  - label: 1)
+    text: l'individuazione e l'attuazione degli indirizzi strategici ed obiettivi operativi del gruppo, tenendo conto di quanto
+      previsto dal comma 3-bis, nonché gli altri poteri necessari per l'attività di direzione e coordinamento, proporzionati
+      alla rischiosità delle banche aderenti, ivi compresi i controlli ed i poteri di influenza sulle banche aderenti volti
+      ad assicurare il rispetto dei requisiti prudenziali e delle altre disposizioni in materia bancaria e finanziaria applicabili
+      al gruppo e ai suoi componenti;
+    level: 2
+    abrogato: false
+  - label: 2)
+    text: i casi, comunque motivati, in cui la capogruppo può, rispettivamente, nominare, opporsi alla nomina o revocare uno
+      o più componenti, fino a concorrenza della maggioranza, degli organi di amministrazione e controllo delle società aderenti
+      al gruppo e le modalità di esercizio di tali poteri;
+    level: 2
+    abrogato: false
+  - label: 3)
+    text: l'esclusione di una banca dal gruppo in caso di gravi violazioni degli obblighi previsti dal contratto e le altre
+      misure sanzionatorie graduate in relazione alla gravità della violazione;
+    level: 2
+    abrogato: false
+  - label: c)
+    text: i criteri di compensazione e l'equilibrio nella distribuzione dei vantaggi derivanti dall'attività comune;
+    level: 1
+    abrogato: false
+  - label: d)
+    text: i criteri e le condizioni di adesione, di diniego dell'adesione e di recesso dal contratto, nonché di esclusione
+      dal gruppo, secondo criteri non discriminatori in linea con il principio di solidarietà tra le banche cooperative a
+      mutualità prevalente.
+    level: 1
+    abrogato: false
+  - label: 3-bis.
+    text: Con atto della capogruppo è disciplinato il processo di consultazione delle banche di credito cooperativo aderenti
+      al gruppo in materia di strategie, politiche commerciali, raccolta del risparmio ed erogazione del credito nonché riguardo
+      al perseguimento delle finalità mutualistiche. Al fine di tener conto delle specificità delle aree interessate, la consultazione
+      avviene mediante assemblee territoriali delle banche di credito cooperativo, i cui pareri non sono vincolanti per la
+      capogruppo.
+    level: 0
+    abrogato: false
+  - label: 3-ter.
+    text: 'Le banche del gruppo che, sulla base del sistema di classificazione del rischio adottato dalla capogruppo, si collocano
+      nelle classi di rischio migliori: a) definiscono in autonomia i propri piani strategici e operativi, nel quadro degli
+      indirizzi impartiti dalla capogruppo e sulla base delle metodologie da quest''ultima definite; b) comunicano tali piani
+      alla capogruppo che ne verifica la coerenza con i citati indirizzi; c) nominano i componenti dei propri organi di amministrazione
+      e controllo e, in caso di mancato gradimento della capogruppo, sottopongono alla stessa, ai fini della sostituzione
+      di ogni componente non gradito, una lista di tre candidati diversi da quelli già indicati nella medesima procedura di
+      nomina, fermi restando i requisiti di cui al decreto del Ministro dell''economia e delle finanze adottato ai sensi dell''articolo
+      26. Ogni atto della capogruppo di specificazione del sistema di classificazione del rischio previsto nel contratto di
+      coesione è sottoposto all''approvazione preventiva della Banca d''Italia.'
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Il contratto di cui al comma 3 prevede la garanzia in solido delle obbligazioni assunte dalla capogruppo e dalle
+      altre banche aderenti, nel rispetto della disciplina prudenziale dei gruppi bancari e delle singole banche aderenti.
+    level: 0
+    abrogato: false
+  - label: '5.'
+    text: L'adesione, il rigetto delle richieste di adesione, il recesso e l'esclusione di una banca di credito cooperativo
+      sono autorizzati dalla Banca d'Italia avendo riguardo alla sana e prudente gestione del gruppo e della singola banca.
+    level: 0
+    abrogato: false
+  - label: '6.'
+    text: Alle partecipazioni al capitale della capogruppo delle banche di credito cooperativo e delle banche cui fanno capo
+      i sottogruppi territoriali non si applicano gli articoli 2359-bis, 2359-ter, 2359-quater e 2359-quinquies del codice
+      civile.
+    level: 0
+    abrogato: false
+  - label: '7.'
+    text: 'Con decreto del Presidente del Consiglio dei ministri, su proposta del Ministro dell''economia e delle finanze,
+      sentita la Banca d''Italia, può essere stabilita una soglia di partecipazione delle banche di credito cooperativo al
+      capitale della società capogruppo diversa da quella indicata al comma 1, lettera a), tenuto conto delle esigenze di
+      stabilità del gruppo. Il Ministro dell''economia e delle finanze, al fine di assicurare l''adeguatezza dimensionale
+      e organizzativa del gruppo bancario cooperativo, può stabilire con proprio decreto, sentita la Banca d''Italia:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: il numero minimo di banche di credito cooperativo di un gruppo bancario cooperativo;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: una soglia di partecipazione delle banche di credito cooperativo al capitale della società capogruppo diversa da
+      quella indicata al comma 1, lettera a), tenuto conto delle esigenze di stabilità del gruppo;
+    level: 1
+    abrogato: true
+  - label: c)
+    text: le modalità e i criteri per assicurare il riconoscimento e la salvaguardia delle peculiarità linguistiche e culturali
+      delle banche di credito cooperativo aventi sede legale nelle regioni a statuto speciale e nelle province autonome di
+      Trento e di Bolzano.
+    level: 1
+    abrogato: false
+  - label: 7-bis.
+    text: 'La Banca d''Italia, al fine di assicurare la sana e prudente gestione, la competitività e l''efficienza del gruppo
+      bancario cooperativo, nel rispetto della disciplina prudenziale applicabile e delle finalità mutualistiche, detta disposizioni
+      di attuazione del presente articolo e dell''articolo 37-ter, con particolare riferimento:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: ai requisiti minimi organizzativi e operativi della capogruppo;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: al contenuto minimo del contratto di cui al comma 3, alle caratteristiche della garanzia di cui al comma 4, al procedimento
+      per la costituzione del gruppo e all'adesione al medesimo;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: ai requisiti specifici, compreso il requisito minimo di patrimonio netto della capogruppo, relativi ai gruppi bancari
+      cooperativi previsti dal comma 1-bis.
+    level: 1
+    abrogato: false
+  - label: '8.'
+    text: Al gruppo bancario cooperativo si applicano, in quanto compatibili, le disposizioni del Titolo III, Capo II.
+    level: 0
+    abrogato: false
+TUB:37-ter:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Costituzione del gruppo bancario cooperativo
+  vigore: 15 aprile 2016
+  par:
+  - label: '1.'
+    text: 'La banca che intenda assumere il ruolo di capogruppo ai sensi dell''articolo 37-bis, comma 1, lettera a), trasmette
+      alla Banca d''Italia:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: uno schema di contratto conforme a quanto stabilito ai sensi dell'articolo 37-bis;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: un elenco delle banche di credito cooperativo e delle altre società che intendono aderire al gruppo bancario cooperativo.
+    level: 1
+    abrogato: false
+  - label: '2.'
+    text: La Banca d'Italia accerta la sussistenza delle condizioni previste ai sensi dell'articolo 37-bis e, in particolare,
+      il grado di adeguatezza patrimoniale e finanziaria del gruppo e l'idoneità del contratto a consentire la sana e prudente
+      gestione del gruppo.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: A seguito dell'accertamento previsto dal comma 2, le banche di credito cooperativo stipulano con la capogruppo il
+      contratto di cui all'articolo 37-bis e provvedono alle necessarie modifiche statutarie, che sono approvate con le maggioranze
+      previste dall'articolo 31, comma 1.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Il contratto è trasmesso alla Banca d'Italia, che provvede all'iscrizione del gruppo nell'albo dei gruppi. Successivamente,
+      si dà corso all'iscrizione nel registro delle imprese ai sensi dell'articolo 2497-bis, secondo comma, del codice civile.
+    level: 0
+    abrogato: false
+TUB:4:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Banca d'Italia
+  vigore: 16 novembre 2015
+  par:
+  - label: '1.'
+    text: La Banca d'Italia, nell'esercizio delle funzioni di vigilanza, formula le proposte per le deliberazioni di competenza
+      del CICR previste nel titolo II. La Banca d'Italia, inoltre, emana regolamenti nei casi previsti dalla legge, impartisce
+      istruzioni e adotta i provvedimenti di carattere particolare di sua competenza.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: La Banca d'Italia determina e rende pubblici previamente i princìpi e i criteri dell'attività di vigilanza.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: La Banca d'Italia, fermi restando i diversi termini fissati da disposizioni di legge, stabilisce i termini per provvedere,
+      individua il responsabile del procedimento, indica i motivi delle decisioni e pubblica i provvedimenti aventi carattere
+      generale. Si applicano, in quanto compatibili, le disposizioni della legge 7 agosto 1990, n. 241.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: La Banca d'Italia pubblica annualmente una relazione sull'attività di vigilanza.
+    level: 0
+    abrogato: false
+  - label: 4-bis.
+    text: Nell'esercizio delle funzioni previste dal presente decreto legislativo, alla Banca d'Italia, ai componenti dei
+      suoi organi nonché ai suoi dipendenti si applica l'articolo 24, comma 6-bis, della legge 28 dicembre 2005, n. 262.
+    level: 0
+    abrogato: false
+TUB:5:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Finalità e destinatari della vigilanza
+  vigore: 1 marzo 2010
+  par:
+  - label: '1.'
+    text: Le autorità creditizie esercitano i poteri di vigilanza a esse attribuiti dal presente decreto legislativo, avendo
+      riguardo alla sana e prudente gestione dei soggetti vigilati, alla stabilità complessiva, all'efficienza e alla competitività
+      del sistema finanziario nonché all'osservanza delle disposizioni in materia creditizia.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: La vigilanza si esercita nei confronti delle banche, dei gruppi bancari, degli intermediari finanziari, degli istituti
+      di moneta elettronica e degli istituti di pagamento.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Le autorità creditizie esercitano altresì gli altri poteri a esse attribuiti dalla legge.
+    level: 0
+    abrogato: false
+TUB:53:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Vigilanza regolamentare
+  vigore: 9 gennaio 2026
+  par:
+  - label: '1.'
+    text: 'La Banca d''Italia emana disposizioni di carattere generale aventi a oggetto:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: l'adeguatezza patrimoniale;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: il contenimento del rischio nelle sue diverse configurazioni;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: le partecipazioni detenibili;
+    level: 1
+    abrogato: true
+  - label: d)
+    text: il governo societario, l'organizzazione amministrativa e contabile, nonché i controlli interni e i sistemi di remunerazione
+      e di incentivazione;
+    level: 1
+    abrogato: false
+  - label: d-bis)
+    text: l'informativa da rendere al pubblico sulle materie di cui alle lettere da a) a d).
+    level: 1
+    abrogato: false
+  - label: '2.'
+    text: Le disposizioni emanate ai sensi del comma 1 possono prevedere che determinate operazioni siano sottoposte ad autorizzazione
+      della Banca d'Italia.
+    level: 0
+    abrogato: true
+  - label: 2-bis.
+    text: 'Le disposizioni emanate ai sensi del comma 1, lettera a), prevedono che le banche possano utilizzare:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: le valutazioni del rischio di credito rilasciate da società o enti esterni; le disposizioni disciplinano i requisiti,
+      anche di competenza tecnica e di indipendenza, che tali soggetti devono possedere e le relative modalità di accertamento;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: sistemi interni di misurazione dei rischi per la determinazione dei requisiti patrimoniali, previa autorizzazione
+      della Banca d'Italia. Per le banche sottoposte alla vigilanza consolidata di un'autorità di un altro Stato dell'Unione
+      europea, la decisione è di competenza della medesima autorità, qualora, entro sei mesi dalla presentazione della domanda
+      di autorizzazione, non venga adottata una decisione congiunta con la Banca d'Italia e sempre che, entro il medesimo
+      termine, il caso non sia stato rinviato all'ABE ai fini della procedura per la risoluzione delle controversie con le
+      autorità di vigilanza degli altri Stati membri in situazioni transfrontaliere.
+    level: 1
+    abrogato: false
+  - label: 2-ter.
+    text: Le società o enti esterni che, anche gestendo sistemi informativi creditizi, rilasciano alle banche valutazioni
+      del rischio di credito o sviluppano modelli statistici per l'utilizzo ai fini di cui al comma 1, lettera a), conservano,
+      per tale esclusiva finalità, anche in deroga alle altre vigenti disposizioni normative, i dati personali detenuti legittimamente
+      per un periodo di tempo storico di osservazione che sia congruo rispetto a quanto richiesto dalle disposizioni emanate
+      ai sensi del comma 2-bis. Le modalità di attuazione e i criteri che assicurano la non identificabilità sono individuati
+      su conforme parere del Garante per la protezione dei dati personali.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: 'La Banca d''Italia può:'
+    level: 0
+    abrogato: true
+  - label: a)
+    text: convocare gli amministratori, i sindaci e i dirigenti delle banche per esaminare la situazione delle stesse;
+    level: 1
+    abrogato: true
+  - label: b)
+    text: ordinare la convocazione degli organi collegiali delle banche, fissandone l'ordine del giorno, e proporre l'assunzione
+      di determinate decisioni;
+    level: 1
+    abrogato: true
+  - label: c)
+    text: procedere direttamente alla convocazione degli organi collegiali delle banche quando gli organi competenti non abbiano
+      ottemperato a quanto previsto dalla lettera b);
+    level: 1
+    abrogato: true
+  - label: d)
+    text: 'adottare per le materie indicate nel comma 1, ove la situazione lo richieda, provvedimenti specifici nei confronti
+      di singole banche, riguardanti anche: la restrizione delle attività o della struttura territoriale; il divieto di effettuare
+      determinate operazioni, anche di natura societaria, e di distribuire utili o altri elementi del patrimonio, nonché,
+      con riferimento a strumenti finanziari computabili nel patrimonio a fini di vigilanza, il divieto di pagare interessi;
+      la fissazione di limiti all''importo totale della parte variabile delle remunerazioni nella banca, quando sia necessario
+      per il mantenimento di una solida base patrimoniale. Per le banche che beneficiano di eccezionali interventi di sostegno
+      pubblico, la Banca d''Italia può inoltre fissare limiti alla remunerazione complessiva degli esponenti aziendali.'
+    level: 1
+    abrogato: true
+  - label: '4.'
+    text: La Banca d'Italia disciplina condizioni e limiti per l'assunzione, da parte delle banche o dei gruppi bancari, di
+      attività di rischio nei confronti di coloro che possono esercitare, direttamente o indirettamente, un'influenza sulla
+      gestione della banca o del gruppo bancario nonché dei soggetti a essi collegati. In ogni caso i soci e gli amministratori,
+      fermi restando gli obblighi previsti dall'articolo 2391, primo comma, del codice civile, si astengono dalle deliberazioni
+      in cui abbiano un interesse in conflitto, per conto proprio o di terzi. Ove verifichi in concreto l'esistenza di situazioni
+      di conflitto di interessi, la Banca d'Italia può stabilire condizioni e limiti specifici per l'assunzione delle attività
+      di rischio.
+    level: 0
+    abrogato: false
+  - label: 4-bis.
+    text: 'Le condizioni di cui al comma 4 sono determinate tenuto conto:'
+    level: 0
+    abrogato: true
+  - label: a)
+    text: dell'entità del patrimonio della banca;
+    level: 1
+    abrogato: true
+  - label: b)
+    text: dell'entità della partecipazione eventualmente detenuta;
+    level: 1
+    abrogato: true
+  - label: c)
+    text: dell'insieme delle attività di rischio del gruppo bancario nei confronti dei soggetti di cui al comma 4 e degli
+      altri soggetti ai medesimi collegati secondo quanto stabilito dalla Banca d'Italia.
+    level: 1
+    abrogato: true
+  - label: 4-ter.
+    text: La Banca d'Italia individua i casi in cui il mancato rispetto delle condizioni di cui al comma 4 comporta la sospensione
+      dei diritti amministrativi connessi con la partecipazione.
+    level: 0
+    abrogato: false
+  - label: 4-quater.
+    text: La Banca d'Italia disciplina i conflitti d'interessi tra le banche e i soggetti indicati nel comma 4, in relazione
+      ad altre tipologie di rapporti di natura economica.
+    level: 0
+    abrogato: false
+  - label: 4-quinquies.
+    text: Le disposizioni emanate ai sensi del presente articolo possono prevedere che determinate operazioni siano sottoposte
+      ad autorizzazione della Banca d'Italia. Possono inoltre prevedere che determinate decisioni in materia di remunerazione
+      e di incentivazione siano rimesse alla competenza dell'assemblea dei soci, anche nel modello dualistico di amministrazione
+      e controllo, stabilendo quorum costitutivi e deliberativi anche in deroga a norme di legge.
+    level: 0
+    abrogato: false
+  - label: 4-sexies.
+    text: E'nullo qualunque patto o clausola non conforme alle disposizioni in materia di sistemi di remunerazione e di incentivazione
+      emanate ai sensi del comma 1, lettera d), o contenute in atti dell'Unione europea direttamente applicabili. La nullità
+      della clausola non comporta la nullità del contratto. Le previsioni contenute nelle clausole nulle sono sostituite di
+      diritto, ove possibile, con i parametri indicati nelle disposizioni suddette nei valori più prossimi alla pattuizione
+      originaria.
+    level: 0
+    abrogato: false
+TUB:53-bis:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Poteri di intervento
+  vigore: 9 gennaio 2026
+  par:
+  - label: '1.'
+    text: 'La Banca d''Italia può:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: convocare gli amministratori, i sindaci e il personale delle banche;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: ordinare la convocazione degli organi collegiali delle banche, fissandone l'ordine del giorno, e proporre l'assunzione
+      di determinate decisioni;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: procedere direttamente alla convocazione degli organi collegiali delle banche quando gli organi competenti non abbiano
+      ottemperato a quanto previsto dalla lettera b);
+    level: 1
+    abrogato: false
+  - label: d)
+    text: 'adottare per le materie indicate nell''articolo 53, comma 1, ove la situazione lo richieda, provvedimenti specifici
+      nei confronti di una o più banche o dell''intero sistema bancario riguardanti anche: l''imposizione di un requisito
+      di fondi propri aggiuntivi; la restrizione delle attività, anche riguardo all''accettazione dei depositi, o della struttura
+      territoriale; il divieto di effettuare determinate operazioni, anche di natura societaria, e di distribuire utili o
+      altri elementi del patrimonio, nonché, con riferimento a strumenti finanziari computabili nel patrimonio a fini di vigilanza,
+      il divieto di pagare interessi; la fissazione di limiti all''importo totale della parte variabile delle remunerazioni
+      nella banca, quando sia necessario per il mantenimento di una solida base patrimoniale; per le banche che beneficiano
+      di eccezionali interventi di sostegno pubblico, possono inoltre essere fissati limiti alla remunerazione complessiva
+      degli esponenti aziendali; l''imposizione della riduzione dei rischi a breve, medio e lungo termine derivanti da fattori
+      ambientali, sociali e di governance; l''imposizione di effettuare prove di stress o analisi degli scenari per valutare
+      i rischi derivanti dalle esposizioni alle cripto-attività e dalla prestazione di servizi per le cripto-attività;'
+    level: 1
+    abrogato: false
+  - label: e)
+    text: disporre, qualora la loro permanenza in carica sia di pregiudizio per la sana e prudente gestione della banca, la
+      rimozione di uno o più esponenti aziendali; la rimozione non è disposta ove ricorrano gli estremi per pronunciare la
+      decadenza ai sensi dell'articolo 26, salvo che sussista urgenza di provvedere.
+    level: 1
+    abrogato: false
+  - label: '2.'
+    text: La Banca d'Italia può altresì convocare gli amministratori, i sindaci e il personale dei soggetti ai quali siano
+      state esternalizzate funzioni aziendali.
+    level: 0
+    abrogato: false
+TUB:53-ter:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Misure macroprudenziali
+  vigore: 13 dicembre 2016
+  par:
+  - label: '1.'
+    text: La Banca d'Italia è autorità nazionale designata per l'adozione delle misure richiamate dall'articolo 5 del regolamento
+      (UE) n. 1024/2013.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: I poteri di vigilanza attribuiti alla Banca d'Italia dal presente decreto legislativo possono essere esercitati,
+      per finalità macroprudenziali, anche nei confronti di soggetti significativi.
+    level: 0
+    abrogato: false
+TUB:6:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Rapporti con il diritto dell'Unione europea e integrazione nel SEVIF, nel MVU e nel MRU
+  vigore: 1 dicembre 2021
+  par:
+  - label: '1.'
+    text: Le autorità creditizie esercitano i poteri loro attribuiti in armonia con le disposizioni dell'Unione europea, applicano
+      i regolamenti e le decisioni dell'Unione europea e provvedono in merito alle raccomandazioni in materia creditizia e
+      finanziaria.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Nei casi e nei modi previsti dalle disposizioni dell'Unione europea, le autorità creditizie adempiono agli obblighi
+      di comunicazione nei confronti delle autorità e dei comitati che compongono il SEVIF e il MRU, della BCE e delle altre
+      autorità e istituzioni indicate dalle disposizioni dell'Unione europea.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: La Banca d'Italia, nell'esercizio delle funzioni di vigilanza, è parte del SEVIF e del MVU e partecipa alle attività
+      che essi svolgono, tenendo conto della convergenza degli strumenti e delle prassi di vigilanza in ambito europeo.
+    level: 0
+    abrogato: false
+  - label: 3-bis.
+    text: Le autorità creditizie esercitano i poteri d'intervento a esse attribuiti dal presente decreto legislativo anche
+      per assicurare il rispetto del regolamento (UE) n. 575/2013, delle relative norme tecniche di regolamentazione e di
+      attuazione emanate dalla Commissione europea ai sensi degli articoli 10 e 15 del regolamento (CE) n. 1093/2010, ovvero
+      in caso di inosservanza degli atti dell'ABE direttamente applicabili adottati ai sensi di quest'ultimo regolamento.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Nei casi e nei modi previsti dalle disposizioni dell'Unione europea, la Banca d'Italia può concludere accordi con
+      l'ABE e con le autorità di vigilanza di altri Stati membri che prevedano anche la ripartizione di compiti e la delega
+      di funzioni nonché ricorrere all'ABE per la risoluzione delle controversie con le autorità di vigilanza degli altri
+      Stati membri in situazioni transfrontaliere.
+    level: 0
+    abrogato: false
+TUB:6-bis:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Partecipazione al MVU e poteri della Banca d'Italia
+  vigore: 13 dicembre 2016
+  par:
+  - label: '1.'
+    text: Nelle materie disciplinate dalle disposizioni del MVU, i poteri attribuiti alla Banca d'Italia dal presente decreto
+      sono esercitati dalla Banca d'Italia stessa nei limiti e secondo le modalità stabilite dalle disposizioni del MVU che
+      disciplinano l'esercizio di compiti di vigilanza sulle banche prevedendo, tra l'altro, differenti modalità di cooperazione
+      tra la BCE e le autorità nazionali per i soggetti significativi e per quelli meno significativi.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: 'Ai sensi del comma 1, la Banca d''Italia, in particolare:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: formula alla BCE proposte per l'adozione dei provvedimenti di autorizzazione e revoca all'esercizio dell'attività
+      bancaria ai sensi dell'articolo 14 e di autorizzazione all'acquisto di partecipazioni ai sensi dell'articolo 19;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: fornisce alla BCE tutte le informazioni necessarie per lo svolgimento dei compiti ad essa attribuiti dalle disposizioni
+      del MVU, fermo restando il potere della BCE di ottenere le informazioni dai soggetti vigilati e di condurre ispezioni;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: assiste la BCE nella preparazione e attuazione degli atti relativi ai compiti di vigilanza ad essa attribuiti dalle
+      disposizioni del
+    level: 1
+    abrogato: false
+  - label: d)
+    text: informa la BCE dell'attività di vigilanza svolta e dei procedimenti amministrativi avviati, nei casi e secondo le
+      modalità previsti dalle disposizioni del MVU;
+    level: 1
+    abrogato: false
+  - label: e)
+    text: esercita i poteri, non attribuiti in via esclusiva alla BCE, previsti dal presente decreto nelle materie disciplinate
+      dalle disposizioni del MVU, anche su richiesta o dietro istruzioni della BCE, informando quest'ultima delle attività
+      svolte in esito alla richiesta;
+    level: 1
+    abrogato: false
+  - label: f)
+    text: esercita i poteri ad essa attribuiti dal presente decreto che non siano attribuiti alla BCE dalle disposizioni del
+      MVU.
+    level: 1
+    abrogato: false
+  - label: '3.'
+    text: Nelle materie inerenti all'esercizio dei compiti attribuiti alla BCE dalle disposizioni del MVU, le sanzioni amministrative
+      previste nel Titolo VIII sono applicate secondo quanto previsto dall'articolo 144-septies.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Ai fini dell'articolo 4, paragrafo 3, del regolamento (UE) n. 1024/2013, si intendono per “legislazione nazionale
+      di recepimento delle direttive europee” e “legislazione nazionale di esercizio delle opzioni previste dai regolamenti
+      europei” le disposizioni nazionali di carattere generale nelle materie disciplinate dalle disposizioni del MVU, incluse
+      quelle adottate, ove previsto dalla legislazione nazionale, dalla Banca d'Italia, per l'attuazione delle direttive dell'Unione
+      europea e per l'esercizio di opzioni rimesse dai regolamenti dell'Unione europea agli Stati membri o alle autorità competenti
+      o designate negli Stati membri, quando non esercitate dalla BCE.
+    level: 0
+    abrogato: false
+  - label: '5.'
+    text: Nell'esercizio delle rispettive competenze la Banca d'Italia e la BCE operano in stretta collaborazione, secondo
+      il principio di leale cooperazione.
+    level: 0
+    abrogato: false
+TUB:7:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Segreto d'ufficio e collaborazione tra autorità
+  vigore: 9 gennaio 2026
+  par:
+  - label: '1.'
+    text: Tutte le notizie, le informazioni e i dati in possesso della Banca d'Italia in ragione della sua attività di vigilanza
+      sono coperti da segreto d'ufficio anche nei confronti delle pubbliche amministrazioni, a eccezione del Ministro dell'economia
+      e delle finanze, Presidente del CICR, fatta salva la possibilità per la Banca d'Italia di comunicare informazioni in
+      forma sommaria o aggregata. Il segreto non può essere opposto né all'autorità giudiziaria quando le informazioni richieste
+      siano necessarie per le indagini o i procedimenti relativi a violazioni sanzionate penalmente né all'amministrazione
+      finanziaria quando le informazioni siano richieste nel corso di un'attività di controllo volta ad accertare un illecito
+      fiscale.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: I dipendenti della Banca d'Italia, nell'esercizio delle funzioni di vigilanza, sono pubblici ufficiali e hanno l'obbligo
+      di riferire esclusivamente al Direttorio tutte le irregolarità constatate, anche quando assumano la veste di reati.
+      Restano ferme le disposizioni del MVU in materia di comunicazione delle informazioni alla BCE.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: I dipendenti e coloro che a qualunque titolo lavorano o hanno lavorato per la Banca d'Italia, nonché i consulenti
+      e gli esperti dei quali la stessa si avvale o si è avvalsa, sono vincolati dal segreto d'ufficio.
+    level: 0
+    abrogato: false
+  - label: '4.'
+    text: Le pubbliche amministrazioni e gli enti pubblici forniscono le informazioni e le altre forme di collaborazione richieste
+      dalla Banca d'Italia, in conformità delle leggi disciplinanti i rispettivi ordinamenti.
+    level: 0
+    abrogato: false
+  - label: '5.'
+    text: La Banca d'Italia, la CONSOB, la COVIP e l'IVASS collaborano tra loro, anche mediante scambio di informazioni, al
+      fine di agevolare le rispettive funzioni. Per il medesimo fine, la Banca d'Italia e la UIF collaborano tra loro, anche
+      mediante scambio di informazioni. Detti organismi non possono reciprocamente opporsi il segreto d'ufficio.
+    level: 0
+    abrogato: false
+  - label: '6.'
+    text: Nel rispetto delle condizioni previste dalle disposizioni dell'Unione europea, la Banca d'Italia collabora, anche
+      mediante scambio di informazioni, con le autorità e i comitati che compongono il SEVIF, il MVU e il MRU, nonché con
+      le autorità di risoluzione e le autorità antiriciclaggio degli Stati dell'Unione europea, al fine di agevolare le rispettive
+      funzioni. Le informazioni ricevute dalla Banca d'Italia possono essere trasmesse alle autorità italiane competenti,
+      salvo diniego dell'autorità che ha fornito le informazioni.
+    level: 0
+    abrogato: false
+  - label: '7.'
+    text: Nell'ambito di accordi di cooperazione e di equivalenti obblighi di riservatezza, la Banca d'Italia può scambiare
+      informazioni preordinate all'esercizio delle funzioni di vigilanza con le autorità competenti degli Stati terzi; le
+      informazioni che la Banca d'Italia ha ricevuto da un altro Stato dell'Unione europea possono essere comunicate soltanto
+      con l'assenso esplicito delle autorità che le hanno fornite.
+    level: 0
+    abrogato: false
+  - label: '8.'
+    text: La Banca d'Italia può scambiare informazioni con autorità amministrative o giudiziarie nell'ambito di situazioni
+      di crisi ovvero nell'ambito di procedimenti di liquidazione o di fallimento, in Italia o all'estero, relativi a banche,
+      succursali di banche italiane all'estero o di banche dell'Unione europea o di Stato terzo in Italia, nonché relativi
+      a soggetti inclusi nell'ambito della vigilanza consolidata o ad altri soggetti operanti nel settore finanziario. Nei
+      rapporti con le autorità di Stato terzo lo scambio di informazioni avviene con le modalità di cui al comma 7.
+    level: 0
+    abrogato: false
+  - label: '9.'
+    text: La Banca d'Italia può comunicare ai sistemi di garanzia italiani e, a condizione che sia assicurata la riservatezza,
+      a quelli esteri informazioni e dati in suo possesso necessari al funzionamento dei sistemi stessi.
+    level: 0
+    abrogato: false
+  - label: '10.'
+    text: Nel rispetto delle condizioni previste dalle disposizioni dell'Unione europea, la Banca d'Italia scambia informazioni
+      con tutte le altre autorità e soggetti esteri indicati dalle disposizioni medesime.
+    level: 0
+    abrogato: false
+  - label: 10-bis.
+    text: La Banca d'Italia è il punto di contatto per la ricezione delle richieste di informazioni o di collaborazione provenienti
+      dalle autorità di altri Stati membri dell'Unione europea in relazione ai contratti di credito disciplinati dal capo
+      I-bis del titolo VI.
+    level: 0
+    abrogato: false
+TUB:8:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Pubblicazione di provvedimenti e di dati statistici
+  vigore: 27 giugno 2015
+  par:
+  - label: '1.'
+    text: La Banca d'Italia pubblica sul proprio sito web i provvedimenti di carattere generale emanati dalle autorità creditizie
+      nonché altri provvedimenti rilevanti relativi ai soggetti sottoposti a vigilanza.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Le delibere del CICR e i provvedimenti di carattere generale del Ministro dell'economia e delle finanze emanati
+      ai sensi del presente decreto legislativo sono pubblicati nella Gazzetta Ufficiale della Repubblica italiana. I provvedimenti
+      di carattere generale della Banca d'Italia sono pubblicati nella Gazzetta Ufficiale della Repubblica italiana quando
+      le disposizioni in essi contenute sono destinate anche a soggetti diversi da quelli sottoposti a vigilanza.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: La Banca d'Italia pubblica elaborazioni e dati statistici relativi a soggetti sottoposti a vigilanza.
+    level: 0
+    abrogato: false
+TUB:9:
+  fonte: TUB (d.lgs. 385/1993), testo consolidato al 22 gennaio 2026
+  rubrica: Reclamo al CICR
+  vigore: 1 gennaio 1994
+  par:
+  - label: '1.'
+    text: Contro i provvedimenti adottati dalla Banca d'Italia nell'esercizio dei poteri di vigilanza a essa attribuiti dal
+      presente decreto legislativo è ammesso reclamo al CICR, da parte di chi vi abbia interesse, nel termine di 30 giorni
+      dalla comunicazione o dalla pubblicazione. Si osservano, in quanto applicabili, le disposizioni del capo I del decreto
+      del Presidente della Repubblica 24 novembre 1971, n. 1199.
+    level: 0
+    abrogato: false
+  - label: '2.'
+    text: Il reclamo è deciso dal CICR previa consultazione delle associazioni di categoria dei soggetti sottoposti a vigilanza,
+      nel caso in cui la decisione comporti la risoluzione di questioni di interesse generale per la categoria.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Il CICR stabilisce in via generale, con propria deliberazione, le modalità per la consultazione prevista dal comma
+      2.
+    level: 0
+    abrogato: false
+UE:reg-ue-1024-2013:4:
+  fonte: Reg. (UE) n. 1024/2013, testo originale (GU L 287 del 29.10.2013, non consolidato)
+  rubrica: Compiti attribuiti alla BCE
+  vigore: ''
+  par:
+  - label: '1.'
+    text: 'Nel quadro dell’articolo 6, conformemente al paragrafo 3 del presente articolo la BCE ha competenza esclusiva nell’assolvimento
+      dei compiti seguenti, a fini di vigilanza prudenziale, nei confronti di tutti gli enti creditizi stabiliti negli Stati
+      membri partecipanti:'
+    level: 0
+    abrogato: false
+  - label: a)
+    text: rilasciare e revocare l’autorizzazione agli enti creditizi fatto salvo l’articolo 14;
+    level: 1
+    abrogato: false
+  - label: b)
+    text: nei confronti degli enti creditizi stabiliti in uno Stato membro partecipante che desiderano aprire una succursale
+      o prestare servizi transfrontalieri in uno Stato membro non partecipante, assolvere i compiti che incombono all’autorità
+      competente dello Stato membro di origine in virtù del pertinente diritto dell’Unione;
+    level: 1
+    abrogato: false
+  - label: c)
+    text: valutare le notifiche di acquisizione e di cessione di partecipazioni qualificate in enti creditizi, tranne nel
+      caso della risoluzione di una crisi bancaria, e fatto salvo l’articolo 15;
+    level: 1
+    abrogato: false
+  - label: d)
+    text: assicurare il rispetto degli atti di cui all’articolo 4, paragrafo 3, primo comma, che impongono agli enti creditizi
+      requisiti prudenziali relativamente a requisiti in materia di fondi propri, cartolarizzazione, limiti ai grandi rischi,
+      liquidità, leva finanziaria, segnalazione e informativa al pubblico delle informazioni su tali aspetti;
+    level: 1
+    abrogato: false
+  - label: e)
+    text: assicurare il rispetto degli atti di cui all’articolo 4, paragrafo 3, primo comma, che impongono agli enti creditizi
+      requisiti che assicurino la presenza di solidi dispositivi di governo societario, compresi i requisiti di professionalità
+      e onorabilità per le persone responsabili dell’amministrazione degli enti creditizi, di processi di gestione del rischio,
+      di meccanismi di controllo interno, di politiche e prassi di remunerazione e di processi efficaci di valutazione dell’adeguatezza
+      del capitale interno, compresi i modelli basati sui rating interni;
+    level: 1
+    abrogato: false
+  - label: f)
+    text: effettuare le valutazioni prudenziali comprese, se del caso in coordinamento con l’ABE, le prove di stress e la
+      loro eventuale pubblicazione, per accertare se i dispositivi, le strategie, i processi e meccanismi instaurati dagli
+      enti creditizi e i fondi propri da essi detenuti permettano una gestione solida e la copertura dei rischi e, alla luce
+      di tale valutazione prudenziale, imporre agli enti creditizi obblighi specifici in materia di fondi propri aggiuntivi,
+      specifici requisiti di informativa e di liquidità, nonché altre misure, ove specificamente contemplati dal pertinente
+      diritto dell’Unione;
+    level: 1
+    abrogato: false
+  - label: g)
+    text: esercitare la vigilanza su base consolidata sulle imprese madri degli enti creditizi stabilite in uno degli Stati
+      membri partecipanti, comprese le società di partecipazione finanziaria e le società di partecipazione finanziaria mista,
+      e partecipare alla vigilanza su base consolidata, anche in collegi delle autorità di vigilanza, fatta salva la partecipazione
+      delle autorità nazionali competenti a tali collegi in qualità di osservatori, sulle imprese madri non stabilite in uno
+      degli Stati membri partecipanti;
+    level: 1
+    abrogato: false
+  - label: h)
+    text: partecipare alla vigilanza supplementare dei conglomerati finanziari in relazione agli enti creditizi che ne fanno
+      parte e assumere i compiti di coordinatore quando la BCE è nominata coordinatore per un conglomerato finanziario conformemente
+      ai criteri fissati nel pertinente diritto dell’Unione;
+    level: 1
+    abrogato: false
+  - label: i)
+    text: assolvere i compiti di vigilanza collegati ai piani di risanamento e alle misure di intervento precoce qualora un
+      ente creditizio o gruppo nei cui confronti la BCE sia l’autorità di vigilanza su base consolidata non soddisfi o rischi
+      di violare i requisiti prudenziali applicabili, nonché, solo nei casi previsti espressamente dal pertinente diritto
+      dell’Unione per le autorità competenti, a cambiamenti strutturali richiesti agli enti creditizi per prevenire lo stress
+      finanziario o il fallimento, ad esclusione dei poteri di risoluzione.
+    level: 1
+    abrogato: false
+  - label: '2.'
+    text: Nei confronti degli enti creditizi stabiliti in uno Stato membro non partecipante che aprono una succursale o che
+      prestano servizi transfrontalieri in uno Stato membro partecipante, la BCE assolve, nell’ambito del paragrafo 1, i compiti
+      spettanti alle autorità competenti in conformità del pertinente diritto dell’Unione.
+    level: 0
+    abrogato: false
+  - label: '3.'
+    text: Ai fini dell’assolvimento dei compiti attribuitile dal presente regolamento e allo scopo di assicurare standard
+      elevati di vigilanza, la BCE applica tutto il pertinente diritto dell’Unione e, se tale diritto dell’Unione è composto
+      da direttive, la legislazione nazionale di recepimento di tali direttive. Laddove il pertinente diritto dell’Unione
+      sia costituito da regolamenti e al momento tali regolamenti concedano esplicitamente opzioni per gli Stati membri, la
+      BCE applica anche la legislazione nazionale di esercizio di tali opzioni.
+    level: 0
+    abrogato: false
+  - label: ''
+    text: A tal fine, la BCE adotta orientamenti e raccomandazioni e prende decisioni fatti salvi il pertinente diritto dell’Unione
+      e, in particolare, qualsiasi atto legislativo e non legislativo, compresi quelli di cui agli articoli 290 e 291 TFUE,
+      e conformemente agli stessi. In particolare, è soggetta alle norme tecniche di regolamentazione e di attuazione vincolanti
+      elaborate dall’ABE e adottate dalla Commissione a norma degli articoli da 10 a 15 del regolamento (UE) n. 1093/2010,
+      all’articolo 16 di tale regolamento e alle disposizioni di tale regolamento sul manuale di vigilanza europeo predisposto
+      dall’ABE conformemente a tale regolamento. La BCE può inoltre adottare regolamenti solo nella misura in cui ciò sia
+      necessario per organizzare o precisare le modalità di assolvimento dei compiti attribuitile dal presente regolamento.
+    level: 0
+    abrogato: false
+  - label: ''
+    text: Prima di adottare un regolamento la BCE effettua consultazioni pubbliche e analizza potenziali costi e benefici,
+      a meno che tali consultazioni e analisi siano sproporzionate in relazione alla portata e all’impatto del regolamento
+      in questione, ovvero in relazione alla particolare urgenza della questione, nel qual caso la BCE dà conto dell’urgenza.
+    level: 0
+    abrogato: false
+  - label: ''
+    text: Se necessario, la BCE contribuisce, svolgendo qualsiasi ruolo partecipativo, all’elaborazione di progetti di norme
+      tecniche di regolamentazione o di attuazione dell’ABE a norma del regolamento (UE) n. 1093/2010 o richiama l’attenzione
+      di quest’ultima sulla potenziale necessità di presentare alla Commissione progetti di norme che modificano le attuali
+      norme tecniche di regolamentazione o di attuazione.
+    level: 0
+    abrogato: false
