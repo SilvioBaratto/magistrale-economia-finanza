@@ -157,6 +157,7 @@ $if(graphicspath)$\graphicspath{{$graphicspath$}}$endif$
 %% slot 0 in the .aux, read each other's column widths and never converge.
 \makeatletter
 \AtBeginEnvironment{longtable}{\stepcounter{LT@tables}}
+\@ifundefined{c@none}{\newcounter{none}}{}
 \makeatother
 
 %% ----------------------------------------------------------------- lists
