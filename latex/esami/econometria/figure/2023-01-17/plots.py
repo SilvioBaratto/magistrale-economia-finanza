@@ -218,7 +218,7 @@ def d01():
     ax.plot(1970 + t / 4, ts, color=es.AMBER, lw=1.3, ls="--",
             label="trend deterministico:  I(0) attorno a una retta")
     ax.plot(1970 + t / 4, Y0 + drift * t, color=es.GRAY, lw=0.9, ls=":")
-    ax.set_title("A. Le due ipotesi compatibili con la Figura 1", loc="left")
+    ax.set_title("A. Due ipotesi compatibili con il grafico", loc="left")
     ax.set_xlabel("anno")
     ax.set_ylabel("indice del GDP reale")
     # La legenda stava in basso a destra, dove le due serie la attraversano:
@@ -256,9 +256,9 @@ def d01():
                 xy=(0.015, 0.50), xycoords="axes fraction",
                 ha="left", va="center", fontsize=8, color=es.RED,
                 fontweight="bold", zorder=6)
-    ax.set_title("B. Densita' nulla e critico al 5% nei tre casi", loc="left")
+    ax.set_title("B. Valori critici al 5%", loc="left")
     ax.set_xlabel("statistica di Dickey-Fuller")
-    ax.set_ylabel("densita'")
+    ax.set_ylabel("densità")
     ax.set_yticks([])
     ax.set_xlim(-6.0, 2.5)
     ax.legend(loc="upper right", fontsize=7.8, labelspacing=0.3, framealpha=1.0)
@@ -279,7 +279,7 @@ def d02():
     s = df_null("trend")
     grid = np.linspace(-6.0, 2.5, 600)
     dens = kde(s, grid)
-    ax.plot(grid, dens, color=es.BLUE, lw=1.4, label="densita' DF (costante e trend)")
+    ax.plot(grid, dens, color=es.BLUE, lw=1.4, label="densità DF (costante e trend)")
     ax.fill_between(grid, dens, color=es.BLUEBG)
     m = grid <= ADF_CRIT
     ax.fill_between(grid[m], dens[m], color=es.RED, alpha=0.30,
@@ -293,7 +293,7 @@ def d02():
                     fontweight="bold", va="center", zorder=6, bbox=dict(facecolor="white", alpha=0.92, edgecolor="none", pad=1.3))
     ax.set_title("A. Serie in livello: nessuna delle due statistiche entra nella regione di rifiuto",
                  loc="left")
-    ax.set_ylabel("densita'")
+    ax.set_ylabel("densità")
     ax.set_yticks([])
     ax.set_xlim(-6.0, 2.5)
     ax.legend(loc="upper left", fontsize=8.4, framealpha=1.0)
@@ -306,24 +306,24 @@ def d02():
     q05 = np.quantile(s, 0.05)
     psim = (s < EG_STAT).mean()
     ax.plot(grid, dens, color=es.BLUE, lw=1.4,
-            label="densita' di Engle-Granger (residui, 2 variabili)")
+            label="densità di Engle-Granger (residui)")
     ax.fill_between(grid, dens, color=es.BLUEBG)
     m = grid <= q05
     ax.fill_between(grid[m], dens[m], color=es.RED, alpha=0.30,
-                    label="regione di rifiuto al 5%:  $t<$ " + it(q05, 2))
+                    label="regione di rifiuto al 5%")
     m2 = grid <= EG_STAT
     ax.fill_between(grid[m2], dens[m2], color=es.GREEN, alpha=0.45,
-                    label="coda oltre la statistica: " + it(100 * psim, 1)
-                          + "% simulato, 1,4% dal testo")
+                    label="coda oltre la statistica")
     ax.vlines(EG_STAT, 0, 0.60 * dens.max(), color=es.GREEN, lw=2.0)
-    ax.annotate("residui:  " + it(EG_STAT, 3), xy=(EG_STAT, 0.55 * dens.max()),
+    ax.annotate("residui:  " + it(EG_STAT, 3) + "  (p-value 1,4%)",
+                xy=(EG_STAT, 0.55 * dens.max()),
                 xytext=(-8, 0), textcoords="offset points", fontsize=8.5,
                 color=es.GREEN, fontweight="bold", ha="right", va="center",
                 zorder=6, bbox=dict(facecolor="white", alpha=0.92, edgecolor="none", pad=1.3))
     ax.set_title("B. Residui della relazione di lungo periodo: la statistica cade nella regione di rifiuto",
                  loc="left")
     ax.set_xlabel("statistica del test di radice unitaria")
-    ax.set_ylabel("densita'")
+    ax.set_ylabel("densità")
     ax.set_yticks([])
     ax.set_xlim(-6.5, 1.0)
     ax.legend(loc="upper left", fontsize=8.2, framealpha=1.0)
@@ -368,11 +368,22 @@ def d03():
 # =====================================================================
 def d04():
     fig, axes = plt.subplots(1, 2, figsize=(6.6, 3.1))
-    _, _, tab = es.decay(LAM, horizon=24, targets=(0.5, 0.8), ax=axes[0],
-                         title="A. Quota di disequilibrio ancora aperta",
-                         ylabel=r"$(1+\hat\lambda)^h$")
-    axes[0].set_ylim(0, 1.05)
-    axes[0].set_xlabel("trimestri dopo lo shock ($h$)")
+
+    ax = axes[0]
+    # PS4: lo stesso disequilibrio unitario ha impatto lam, lam(1+lam),
+    # lam(1+lam)^2; la quota riassorbita e' la somma cumulata.
+    quote = [100 * (1 - (1 + LAM) ** (k + 1)) for k in range(3)]
+    ax.bar(range(3), quote, color=es.BLUE, alpha=0.88, width=0.55)
+    for k, q in enumerate(quote):
+        ax.annotate(it(q, 1) + "%", xy=(k, q), xytext=(0, 4),
+                    textcoords="offset points", ha="center", fontsize=8.4,
+                    color=es.BLUE, fontweight="bold")
+    ax.set_xticks(range(3))
+    ax.set_xticklabels(["subito", "entro 1 periodo", "entro 2 periodi"], fontsize=7.8)
+    ax.set_ylim(0, 48)
+    ax.set_title("A. Disequilibrio riassorbito", loc="left")
+    ax.set_ylabel("% del disequilibrio iniziale")
+    es.commas(ax, "y", decimals=0)
 
     h = np.arange(0, 25)
     z0 = -1.0                                   # disequilibrio iniziale unitario
@@ -384,7 +395,7 @@ def d04():
             label=r"disequilibrio $z_{t+h}$  (parte da $-1$)")
     ax.plot(h, dz, "s--", color=es.GREEN, lw=1.4, ms=3.4,
             label=r"spinta sulla crescita  $\hat\lambda\,z_{t+h-1}>0$")
-    ax.annotate("la spinta resta positiva:\nl'Australia cresce di piu'",
+    ax.annotate("la spinta resta positiva:\nl'Australia cresce di più",
                 xy=(3, dz[3]), xytext=(5.5, -0.72), textcoords="data",
                 fontsize=8, color=es.GREEN, fontweight="bold", zorder=6,
                 ha="left", va="center",
@@ -397,44 +408,19 @@ def d04():
 
     fig.tight_layout()
     es.save(fig, OUT / "d04-assorbimento-ecm.pdf")
-    return tab
+    return quote
 
 
 # =====================================================================
 #  D5 — identificazione ARMA per Dlog(usa)
 # =====================================================================
-def ar2_from_pacf(p11, p22):
-    """Yule-Walker inverso: dai primi due valori della PACF ai phi di un AR(2)."""
-    phi2 = p22
-    phi1 = p11 * (1 - p22)
-    return phi1, phi2
-
-
-def ar2_acf(phi1, phi2, k):
-    r = [1.0, phi1 / (1 - phi2)]
-    while len(r) <= k:
-        r.append(phi1 * r[-1] + phi2 * r[-2])
-    return np.array(r[1:k + 1])
-
-
 def d05():
-    phi1, phi2 = ar2_from_pacf(PACF_DUSA[0], PACF_DUSA[1])
     K = 20
-    acf_th = ar2_acf(phi1, phi2, K)
-    pacf_th = np.zeros(K)
-    pacf_th[0], pacf_th[1] = PACF_DUSA[0], PACF_DUSA[1]
-
     fig, axes = plt.subplots(2, 1, figsize=(6.4, 4.5), sharex=True)
     es.acf_pacf(ACF_DUSA, PACF_DUSA, n=T_ECM, axes=axes)
-    lags = np.arange(1, K + 1)
-    axes[0].plot(lags, acf_th, "-", color=es.AMBER, lw=1.4, zorder=6,
-                 label=f"ACF teorica di un AR(2) con $\\phi_1=${it(phi1, 3)}, "
-                       f"$\\phi_2=${it(phi2, 3)}")
-    axes[1].plot(lags, pacf_th, "-", color=es.AMBER, lw=1.4, zorder=6,
-                 label="PACF teorica dello stesso AR(2)")
     for ax in axes:
-        ax.set_xticks(range(0, 21, 5))
-        ax.set_xlim(0.2, 20.8)
+        ax.set_xticks(range(0, K + 1, 5))
+        ax.set_xlim(0.2, K + 0.8)
         ax.legend(loc="upper right", fontsize=7.4)
     axes[0].annotate("ritardi 1 e 2 fuori banda,\npoi decadimento",
                      xy=(2, ACF_DUSA[1]), xytext=(26, 6),
@@ -446,11 +432,10 @@ def d05():
                      textcoords="offset points", fontsize=8, color=es.RED,
                      fontweight="bold",
                      arrowprops=dict(arrowstyle="->", color=es.RED, lw=0.8))
-    fig.suptitle(r"$\Delta\log(\mathrm{usa}_t)$: ACF e PACF osservate contro l'AR(2) identificato",
+    fig.suptitle(r"$\Delta\log(\mathrm{usa}_t)$: ACF e PACF",
                  x=0.01, ha="left", color=es.BLUE, fontweight="bold")
     fig.tight_layout(rect=(0, 0, 1, 0.965))
     es.save(fig, OUT / "d05-acf-pacf-dusa.pdf")
-    return phi1, phi2, acf_th
 
 
 # =====================================================================
@@ -458,14 +443,10 @@ def d05():
 # =====================================================================
 def d06():
     b2, b3 = B["hrsemp"], B["h_grant"]
-    s2, s3 = SE["hrsemp"], SE["h_grant"]
     tot = b2 + b3
-    bound = s2 + s3                     # |Cov| <= se2*se3  =>  se(b2+b3) <= s2+s3
-    target = np.log(0.99)
+    target = -0.01
 
-    fig, axes = plt.subplots(1, 2, figsize=(6.6, 3.0))
-
-    ax = axes[0]
+    fig, ax = plt.subplots(figsize=(4.9, 3.1))
     hrs = np.linspace(0, 40, 200)
     ax.plot(hrs, 100 * b2 * hrs, color=es.BLUE, lw=1.6,
             label="senza finanziamento:  $\\hat\\beta_2=$ " + it(b2, 5))
@@ -474,28 +455,20 @@ def d06():
     ax.plot(hrs, 100 * target * hrs, color=es.GREEN, lw=1.4, ls="--",
             label="obiettivo: $-1\\%$ per ogni ora")
     ax.axhline(0, color=es.GRAY, lw=0.8)
+    ax.set_ylim(-43, 9)
     ax.annotate("effetto stimato positivo", xy=(32, 100 * tot * 32),
-                xytext=(-14, 30), textcoords="offset points", fontsize=8,
-                color=es.RED, fontweight="bold", ha="right",
+                xytext=(32, -3.4), textcoords="data", fontsize=8,
+                color=es.RED, fontweight="bold", ha="right", va="center",
                 arrowprops=dict(arrowstyle="->", color=es.RED, lw=0.8))
-    ax.set_title("A. Variazione cumulata di $\\log(\\mathrm{scrap})$", loc="left")
+    ax.set_title("Variazione cumulata di $\\log(\\mathrm{scrap})$", loc="left")
     ax.set_xlabel("ore di formazione per addetto")
     ax.set_ylabel("variazione attesa (%)")
     ax.legend(loc="lower left", fontsize=7.4)
     es.commas(ax, "both", decimals=0)
 
-    ax = axes[1]
-    es.ci_line(tot, tot - 1.96 * bound, tot + 1.96 * bound, h0=target, ax=ax,
-               label="intervallo conservativo al 95%", decimals=5,
-               xlabel=r"$\beta_2+\beta_3$  (effetto di un'ora, dato il finanziamento)",
-               title="B. Intervallo conservativo al 95%")
-    ax.annotate("larghezza massima possibile:\n"
-                r"errore standard $\leq$ " + it(bound, 5),
-                xy=(tot, -0.52), ha="center", va="top", fontsize=7.6, color=es.GRAY)
-
     fig.tight_layout()
     es.save(fig, OUT / "d06-effetto-ore.pdf")
-    return tot, bound, (tot - target) / bound
+    return tot
 
 
 # =====================================================================
@@ -506,23 +479,18 @@ def d07():
              (r"$5\times$ hrsemp", 5 * B["hrsemp"]),
              (r"$5\times$ h_grant", 5 * B["h_grant"])]
     theta = sum(v for _, v in parts)
-    bound = SE["grant"] + 5 * SE["hrsemp"] + 5 * SE["h_grant"]
-    lo, hi = theta - 1.96 * bound, theta + 1.96 * bound
-    pct = lambda v: 100 * (np.exp(v) - 1)
 
-    fig, axes = plt.subplots(1, 2, figsize=(6.8, 3.2))
-
-    ax = axes[0]
+    fig, ax = plt.subplots(figsize=(4.9, 3.2))
     base = 0.0
     for i, (lab, v) in enumerate(parts):
         col = es.BLUE if v < 0 else es.RED
         ax.bar(i, v, bottom=base, color=col, alpha=0.88, width=0.58)
-        ax.annotate(it(v, 4), xy=(i, base + v / 2),
-                    xytext=(0, 0), textcoords="offset points",
-                    ha="center", va="center", fontsize=7.4,
-                    color="white" if abs(v) > 0.05 else col,
-                    fontweight="bold")
-        if abs(v) <= 0.05:
+        if abs(v) > 0.05:
+            ax.annotate(it(v, 4), xy=(i, base + v / 2),
+                        xytext=(0, 0), textcoords="offset points",
+                        ha="center", va="center", fontsize=7.4,
+                        color="white", fontweight="bold")
+        else:
             ax.annotate(it(v, 4), xy=(i, base + v),
                         xytext=(0, 9 if v > 0 else -13), textcoords="offset points",
                         ha="center", fontsize=7.4, color=col, fontweight="bold")
@@ -531,46 +499,20 @@ def d07():
             ax.plot([i + 0.29, i + 0.71], [nxt, nxt], color=es.GRAY, lw=0.7, ls=":")
         base = nxt
     ax.bar(3, theta, color=es.TEAL, width=0.58)
-    ax.annotate(it(theta, 4), xy=(3, theta / 2), ha="center", va="center",
-                fontsize=8, color="white", fontweight="bold")
+    ax.annotate(it(theta, 4) + "\n(" + it(100 * theta, 1) + "%)", xy=(3, theta / 2),
+                ha="center", va="center", fontsize=8, color="white",
+                fontweight="bold")
     ax.axhline(0, color=es.GRAY, lw=0.9)
     ax.set_xticks(range(4))
-    ax.set_xticklabels([p[0] for p in parts] + [r"totale $\theta$"], fontsize=7.4)
+    ax.set_xticklabels([p[0] for p in parts] + ["totale"], fontsize=7.4)
     ax.set_ylim(-0.33, 0.055)
-    ax.set_title(r"A. Scomposizione di $\theta=\beta_1+5\beta_2+5\beta_3$", loc="left")
+    ax.set_title(r"Scomposizione di $\beta_1+5\beta_2+5\beta_3$", loc="left")
     ax.set_ylabel(r"contributo a $\Delta\log(\mathrm{scrap})$")
     es.commas(ax, "y", decimals=2)
 
-    ax = axes[1]
-    ax.barh([1], [pct(theta)], color=es.TEAL, height=0.34,
-            xerr=[[pct(theta) - pct(lo)], [pct(hi) - pct(theta)]],
-            error_kw=dict(ecolor=es.GRAY, capsize=4, lw=1.2))
-    ax.barh([0], [100 * theta], color=es.BLUE, alpha=0.5, height=0.34)
-    ax.axvline(0, color=es.RED, lw=1.5, ls="--")
-    ax.annotate(r"$H_0:\ \theta=0$", xy=(0, 1.62), xytext=(-6, 0),
-                textcoords="offset points", fontsize=8.5, color=es.RED,
-                fontweight="bold", va="center", ha="right")
-    ax.annotate("esatta  " + it(pct(theta), 2) + "%", xy=(pct(theta) / 2, 1),
-                ha="center", va="center", fontsize=8.5, color="white",
-                fontweight="bold")
-    ax.annotate("approssimata  " + it(100 * theta, 2) + "%",
-                xy=(100 * theta / 2, 0), ha="center", va="center",
-                fontsize=8.5, color="white", fontweight="bold")
-    ax.annotate("banda: " + it(pct(lo), 1) + "% / " + it(pct(hi), 1) + "%",
-                xy=(pct(lo), 1.34), xytext=(0, 0), textcoords="offset points",
-                ha="left", va="center", fontsize=7.4, color=es.GRAY)
-    ax.set_yticks([0, 1])
-    ax.set_yticklabels([r"$100\,\theta$", r"$100(e^{\theta}-1)$"], fontsize=8.5)
-    ax.set_ylim(-0.55, 1.95)
-    ax.set_xlim(-40, 14)
-    ax.set_xlabel("differenza percentuale attesa (A rispetto a B)", fontsize=8.5)
-    ax.set_title("B. Conversione in percentuale", loc="left")
-    ax.grid(axis="y", visible=False)
-    es.commas(ax, "x", decimals=0)
-
     fig.tight_layout()
     es.save(fig, OUT / "d07-differenza-aziende.pdf")
-    return theta, bound, pct(theta)
+    return theta
 
 
 # =====================================================================
@@ -597,43 +539,28 @@ def d08():
         halfw.append(np.quantile(np.abs(res[m]), 0.90))
         nobs.append(int(m.sum()))
     centres, halfw = np.array(centres), np.array(halfw)
-    X = np.column_stack([np.ones(len(centres)), centres ** 2])
-    coef, *_ = np.linalg.lstsq(X, halfw, rcond=None)
-    lab = ("$" + it(coef[0], 3).replace(",", "{,}") + " + "
-           + it(coef[1], 3).replace(",", "{,}") + r"\,\hat y^{2}$")
 
     fig, axes = plt.subplots(1, 2, figsize=(6.7, 3.05))
     ax = axes[0]
     ax.scatter(yhat, res, s=16, facecolors="none", edgecolors=es.TEAL, lw=0.7)
     ax.axhline(0, color=es.GRAY, lw=0.8, ls=":")
-    xx = np.linspace(-5.6, 4.8, 300)
-    env = coef[0] + coef[1] * xx ** 2
-    ax.fill_between(xx, -env, env, color=es.REDBG, alpha=0.6, zorder=0,
-                    label="banda al 90%:  " + lab)
-    ax.plot(xx, env, color=es.RED, lw=1.0, zorder=1)
-    ax.plot(xx, -env, color=es.RED, lw=1.0, zorder=1)
-    ax.set_title("A. La nube a clessidra della Figura 4", loc="left")
+    ax.set_title("A. Valori predetti e residui", loc="left")
     ax.set_xlabel("valori predetti")
     ax.set_ylabel("residui")
     ax.set_ylim(-3.3, 6.9)
-    ax.legend(loc="upper right", fontsize=7.2, framealpha=1.0)
     es.commas(ax, "both", decimals=0)
 
     ax = axes[1]
-    ax.bar(centres, halfw, width=0.42, color=es.BLUE, alpha=0.8,
-           label="semi-ampiezza al 90% (Figura 4)")
-    gg = np.linspace(0, 4.5, 200)
-    ax.plot(gg, coef[0] + coef[1] * gg ** 2, color=es.RED, lw=1.4, label=lab)
-    ax.set_title(r"B. La dispersione cresce come $\hat y^{2}$", loc="left")
+    ax.bar(centres, halfw, width=0.42, color=es.BLUE, alpha=0.8)
+    ax.set_title("B. La dispersione cresce con $|\\hat y|$", loc="left")
     ax.set_xlabel(r"$|\hat y|$")
-    ax.set_ylabel("semi-ampiezza dei residui")
+    ax.set_ylabel("semi-ampiezza dei residui (90%)")
     ax.set_ylim(0, 3.35)
-    ax.legend(loc="upper left", fontsize=7.0, framealpha=1.0)
     es.commas(ax, "both", decimals=1)
 
     fig.tight_layout()
     es.save(fig, OUT / "d08-residui-eteroschedasticita.pdf")
-    return list(zip(np.round(centres, 2), np.round(halfw, 3), nobs)), coef
+    return list(zip(np.round(centres, 2), np.round(halfw, 3), nobs))
 
 
 # =====================================================================
@@ -642,13 +569,12 @@ def d08():
 def d09():
     keys = ["grant", "hrsemp", "h_grant"]
     titoli = {"grant": "grant", "hrsemp": "hrsemp", "h_grant": "h_grant"}
-    delta = {k: (B[k] - BL[k]) / BL["l_sales"] for k in keys}
 
-    fig, axes = plt.subplots(1, 4, figsize=(7.0, 3.0))
-    for ax, k in zip(axes[:3], keys):
+    fig, axes = plt.subplots(1, 3, figsize=(6.6, 3.0))
+    for ax, k in zip(axes, keys):
         for i, (bb, ss, col, lab) in enumerate(
-                [(B[k], SE[k], es.AMBER, "modello (6)"),
-                 (BL[k], SEL[k], es.BLUE, "modello (9)")]):
+                [(B[k], SE[k], es.AMBER, "Domanda 6"),
+                 (BL[k], SEL[k], es.BLUE, "Domanda 9")]):
             ax.errorbar([i], [bb], yerr=[1.96 * ss], fmt="o", ms=6, color=col,
                         capsize=5, lw=1.4, label=lab)
             ax.annotate(it(bb, 5), xy=(i, bb), xytext=(8, 0),
@@ -659,33 +585,17 @@ def d09():
                     arrowprops=dict(arrowstyle="->", color=es.RED, lw=1.1, ls="--"))
         ax.set_xlim(-0.6, 1.9)
         ax.set_xticks([0, 1])
-        ax.set_xticklabels(["(6)", "(9)"])
+        ax.set_xticklabels(["Dom. 6", "Dom. 9"])
         ax.set_title(titoli[k], loc="left")
         es.commas(ax, "y")
     axes[0].set_ylabel("stima e intervallo al 95%")
     axes[0].legend(loc="upper left", fontsize=7.0)
 
-    ax = axes[3]
-    vals = [delta[k] for k in keys]
-    cols = [es.RED if v > 0 else es.BLUE for v in vals]
-    ax.bar(range(3), vals, color=cols, width=0.6)
-    ax.axhline(0, color=es.GRAY, lw=0.9)
-    for i, v in enumerate(vals):
-        ax.annotate(it(v, 3), xy=(i, v), xytext=(0, 5 if v > 0 else -13),
-                    textcoords="offset points", ha="center", fontsize=7.4,
-                    color=cols[i], fontweight="bold")
-    ax.set_xticks(range(3))
-    ax.set_xticklabels([titoli[k] for k in keys], fontsize=7.4, rotation=20)
-    ax.set_title(r"$\hat\delta_j$ implicito", loc="left")
-    ax.set_ylabel(r"coefficiente di $X_j$ in $\log(\mathrm{sales})$")
-    es.commas(ax, "y", decimals=1)
-
-    fig.suptitle("Confronto fra le due specificazioni e distorsione implicata dall'omissione di "
+    fig.suptitle("Stime prima e dopo l'inclusione di "
                  r"$\log(\mathrm{sales})$",
                  x=0.01, ha="left", color=es.BLUE, fontweight="bold", fontsize=10)
     fig.tight_layout(rect=(0, 0, 1, 0.94))
     es.save(fig, OUT / "d09-variabile-omessa.pdf")
-    return delta
 
 
 # =====================================================================
@@ -693,57 +603,47 @@ def d09():
 # =====================================================================
 def d10():
     b2, b3 = Q["hrsemp"], Q["sq_hrsemp"]
-    s3 = QSE["sq_hrsemp"]
-    tstat = b3 / s3
-    tcrit = stats.t.ppf(0.975, DF2)
-    turn = turn_point(b2, b3)
+    tstat = 1.260                       # rapporto t riportato nell'output
 
     fig, axes = plt.subplots(1, 2, figsize=(6.8, 3.0))
-    _, ax, _ = es.quadratic_effect(b2, b3, xmax=12, xmin=0, ax=axes[0],
-                                   varname="hrsemp",
-                                   ylabel="effetto marginale su scrap",
-                                   title="A. Effetto marginale crescente")
-    ax.legend(loc="lower right", fontsize=7.0)
+    ax = axes[0]
+    hrs = np.linspace(0, 12, 100)
+    ax.plot(hrs, b2 + 2 * b3 * hrs, color=es.GRAY, lw=1.3, ls="--",
+            label=r"stima puntuale $\hat\beta_2+2\hat\beta_3\,\mathrm{hrsemp}$")
+    ax.plot(hrs, np.full_like(hrs, b2), color=es.BLUE, lw=1.8,
+            label=r"effetto costante $\hat\beta_2=$ " + it(b2, 4))
+    ax.axhline(0, color=es.GRAY, lw=0.8)
+    ax.set_title("A. Effetto marginale di hrsemp", loc="left")
     ax.set_xlabel("hrsemp (ore di formazione per addetto)")
+    ax.set_ylabel("effetto marginale su scrap")
+    ax.set_ylim(-0.013, 0.021)
+    ax.legend(loc="upper left", fontsize=7.0)
     es.commas(ax, "x", decimals=0)
     es.commas(ax, "y", decimals=3)
-    ax.annotate("effetto negativo sotto " + it(turn, 2) + " ore,\npositivo sopra",
-                xy=(0.04, 0.80), xycoords="axes fraction", fontsize=7.6,
-                color=es.RED, va="top")
 
-    es.dist_test("t", DF2, stat=tstat, crit=tcrit, tail="two", ax=axes[1],
-                 pvalue=0.2086,
+    es.dist_test("z", stat=tstat, crit=1.96, tail="two", ax=axes[1],
+                 pvalue=0.2086, statlabel="t = " + it(tstat, 3),
                  title=r"B. $H_0:\beta_3=0$ contro $H_1:\beta_3\neq0$")
-    axes[1].legend(loc="upper left", fontsize=6.9)
+    axes[1].legend_.remove()
+    axes[1].text(2.12, 0.30, "$t=$ " + it(tstat, 2) + "\np-value\n" + it(0.2086, 4),
+                 color=es.GREEN, fontsize=7.6, fontweight="bold", va="center")
+    axes[1].text(-4.3, 0.30, "rifiuto se\n$|t|>$ " + it(1.96, 2),
+                 color=es.RED, fontsize=8, fontweight="bold", va="center")
 
     fig.tight_layout()
     es.save(fig, OUT / "d10-quadratica.pdf")
-    return turn, tstat, tcrit
-
-
-def turn_point(b1, b2):
-    return -b1 / (2 * b2)
 
 
 # =====================================================================
 if __name__ == "__main__":
     print("figure dell'appello 2023-01-17")
-    crit = d01()
-    print("   critici DF simulati:", {k: round(v, 3) for k, v in crit.items()})
-    q05, psim = d02()
-    print(f"   Engle-Granger: critico 5% {q05:.3f}, p-value simulato {psim:.4f}")
-    print("   banda correlogramma:", round(d03(), 5))
-    print("   orizzonti di assorbimento:", d04())
-    phi1, phi2, acf_th = d05()
-    print(f"   AR(2) identificato: phi1={phi1:.4f} phi2={phi2:.4f}; "
-          f"ACF teorica ai ritardi 1-4: {np.round(acf_th[:4], 4)}")
-    tot, bound, tmin = d06()
-    print(f"   b2+b3 = {tot:.8f}; se <= {bound:.8f}; t minimo = {tmin:.4f}")
-    theta, bt, pct = d07()
-    print(f"   theta = {theta:.8f} -> {pct:.3f}% esatto; se <= {bt:.6f}")
-    bins, coef = d08()
-    print("   semi-ampiezza al 90% per bin di |yhat|:", bins)
-    print("   fit  %.4f + %.4f * yhat^2" % (coef[0], coef[1]))
-    print("   delta impliciti:", {k: round(v, 4) for k, v in d09().items()})
-    tp, ts, tc = d10()
-    print(f"   punto di svolta {tp:.4f}; t = {ts:.4f}; critico {tc:.4f}")
+    d01()
+    d02()
+    d03()
+    print("   quote riassorbite:", np.round(d04(), 2))
+    d05()
+    print("   b2+b3 =", round(d06(), 8))
+    print("   theta =", round(d07(), 8))
+    print("   bin di |yhat|:", d08())
+    d09()
+    d10()

@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: all list combined sections esami esami-volume verifica figure figure-esami everything clean distclean
+.PHONY: all list combined sections esami esami-volume verifica verifica-simulati figure figure-esami everything clean distclean
 all:            ## build one PDF per subject
 	$(PY) build.py --all
 
@@ -18,6 +18,10 @@ esami:          ## build the exam material of every course into ../esami/<corso>
 
 verifica:       ## check format and completeness of the oral-exam tracks
 	$(PY) verifica_orale.py --quiet
+
+verifica-simulati: ## check the simulated Finanza Strategica exams (structure, answer key, duplicates)
+	$(PY) verifica_simulati.py
+	$(PY) verifica_calcoli_simulati.py
 
 esami-volume:   ## build the single volume of every course
 	$(PY) build_esami.py --volume

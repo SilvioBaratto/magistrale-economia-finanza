@@ -24,25 +24,25 @@ Questo tipo di informazione è utile per prendere decisioni: ad esempio, un indi
 
 ![](assets/econ-02/fig01.png)
 
-**Figura 1** — Scatterplot di educ vs. wage (526 individui osservati nel 1976). Mostra la relazione grezza tra anni di istruzione e salario orario per un campione di 526 lavoratori; i punti presentano una tendenza crescente ma con forte dispersione attorno ad essa.
+**Figura 1** — Scatterplot di educ vs. wage (526 individui osservati nel 1976). Relazione grezza tra anni di istruzione e salario orario: i punti seguono una tendenza crescente, con forte dispersione attorno ad essa.
 
 Con l'analisi di regressione si cerca un modello che riassuma, **in modo semplice**, come variano le distribuzioni condizionali di una variabile $Y$ al variare di una seconda variabile $X$. Nell'esempio, la distribuzione condizionale è la distribuzione di probabilità dei salari ($Y$) per un qualsiasi livello di istruzione ($X$). Questo modello rappresenta l'ipotesi (ex-ante) sulla relazione causale: si definisce una variabile obiettivo (variabile dipendente) e una variabile causale (regressore, causa scatenante). Il nesso causale ipotizzato è, per costruzione, **unidirezionale** ($X \to Y$).
 
 ![](assets/econ-02/fig02.png)
 
-**Figura 2** — Distribuzione condizionale dei salari per ogni livello di istruzione. Boxplot che mostrano come la distribuzione del salario (mediana, quartili, valori estremi) cambi per ciascun valore di anni di istruzione; sia il livello medio sia la dispersione dei salari tendono a crescere con l'istruzione.
+**Figura 2** — Distribuzione condizionale dei salari per ogni livello di istruzione. Boxplot del salario (mediana, quartili, valori estremi) per ciascun valore di anni di istruzione: sia il livello medio sia la dispersione dei salari tendono a crescere con l'istruzione.
 
-Trovare un modello che si adatti con precisione a **tutte** le distribuzioni condizionali sarebbe troppo complicato. I modelli statistici si concentrano quindi sul descrivere la dinamica di alcuni momenti (caratteristiche) delle distribuzioni condizionali; nel modello di regressione queste caratteristiche sono i valori attesi (medie). L'obiettivo diventa costruire un modello che descriva le **medie condizionali** di $Y$: ad esempio, qual è il salario atteso per i lavoratori che hanno studiato esattamente 10 anni?
+Trovare un modello che si adatti con precisione a **tutte** le distribuzioni condizionali sarebbe troppo complicato. I modelli statistici descrivono quindi la dinamica di alcuni momenti (caratteristiche) delle distribuzioni condizionali; nel modello di regressione queste caratteristiche sono i valori attesi (medie). L'obiettivo diventa costruire un modello che descriva le **medie condizionali** di $Y$: ad esempio, qual è il salario atteso per i lavoratori che hanno studiato esattamente 10 anni?
 
 ![](assets/econ-02/fig03.png)
 
-**Figura 3** — Scatterplot di educ vs. wage e $E[wage|educ]$ (quadrati rossi). Sovrappone ai dati osservati le medie condizionate stimate per ciascun livello di istruzione, evidenziando un andamento crescente ma non perfettamente lineare delle medie.
+**Figura 3** — Scatterplot di educ vs. wage e $E[wage|educ]$ (quadrati rossi). Le medie condizionate stimate per ciascun livello di istruzione sono sovrapposte ai dati osservati; il loro andamento è crescente ma non perfettamente lineare.
 
 Per rispondere a queste domande è conveniente definire un modello che descriva la relazione tra istruzione e salari attesi: **la linea è il modello più semplice che si conosca**.
 
 ![](assets/econ-02/fig04.png)
 
-**Figura 4** — Scatterplot di educ vs. wage con $E[wage|educ]$ (quadrati rossi) e la linea di regressione. Aggiunge alla figura precedente la retta di regressione stimata (fitted values), mostrando come la retta approssimi in modo semplice l'andamento delle medie condizionate.
+**Figura 4** — Scatterplot di educ vs. wage con $E[wage|educ]$ (quadrati rossi) e la linea di regressione. Alla figura precedente si aggiunge la retta di regressione stimata (fitted values), che approssima in modo semplice l'andamento delle medie condizionate.
 
 Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello $x$ di $X$. La retribuzione media stimata per un dato numero di anni di istruzione è riportata nella tabella seguente:
 
@@ -101,7 +101,7 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 >
 > $$\Delta Y = \beta \Delta X$$
 >
-> Inoltre, sapendo che $\mathrm{Cov}(X,\epsilon)=0$, si può dimostrare che $E[\epsilon|X]=0$ e, di conseguenza, che $\hat{Y}(X)\approx E[Y|X]$. Questa ipotesi stabilisce che l'unica spiegazione delle variazioni di $Y$ è fornita da $X$: ipotizzando che $\epsilon$ e $X$ non siano correlati, il risultato di una scelta dipende unicamente dalla scelta stessa ($\Delta X$) e non da altri fattori confondenti ($\Delta \epsilon$). Questa ipotesi è nota come **esogeneità**, ed è un ingrediente cruciale nello studio di relazioni causali.
+> Inoltre, se $E[\epsilon|X]=0$, allora $\mathrm{Cov}(X,\epsilon)=0$ e $\hat{Y}(X)\approx E[Y|X]$ (le slide scrivono l'implicazione in senso inverso, da $\mathrm{Cov}(X,\epsilon)=0$ a $E[\epsilon|X]=0$, che in generale non vale: l'assenza di correlazione è una condizione più debole). Questa ipotesi stabilisce che l'unica spiegazione delle variazioni di $Y$ è fornita da $X$: ipotizzando che $\epsilon$ e $X$ non siano correlati, il risultato di una scelta dipende unicamente dalla scelta stessa ($\Delta X$) e non da altri fattori confondenti ($\Delta \epsilon$). Questa ipotesi è nota come **esogeneità**, ed è alla base dello studio di relazioni causali.
 >
 > **Esempio numerico.** Si consideri il modello che lega salario e istruzione con $\alpha=-1$ e $\beta=0.5$:
 >
@@ -114,13 +114,13 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 ## Stima del modello: il metodo dei minimi quadrati ordinari (OLS)
 
 > [!abstract] Definizione
-> Considerati dei dati, è fondamentale poter stimare i parametri $\alpha$ e $\beta$ del modello di regressione. L'idea di base è trovare valori per $\alpha$ e $\beta$ che **minimizzino la distanza media** tra ciascuna osservazione e la retta di regressione: questi due parametri identificano in modo univoco la retta.
+> Dati i dati campionari, occorre stimare i parametri $\alpha$ e $\beta$ del modello di regressione. L'idea di base è trovare valori per $\alpha$ e $\beta$ che **minimizzino la distanza media** tra ciascuna osservazione e la retta di regressione: questi due parametri identificano in modo univoco la retta.
 >
 > Il metodo dei **minimi quadrati ordinari (OLS)** suggerisce di minimizzare la varianza del termine di errore, ovvero calcolare
 >
 > $$\min_{\alpha,\beta} \mathrm{Var}(\epsilon) = \min_{\alpha,\beta} E[\epsilon^2] \approx \min_{\alpha,\beta} \frac{1}{n}\sum_{i=1}^n (Y_i-\alpha-\beta X_i)^2$$
 >
-> Si può dimostrare facilmente che la pendenza della retta di regressione $\beta$ è proporzionale alla covarianza tra $X$ e $Y$:
+> Si dimostra che la pendenza della retta di regressione $\beta$ è proporzionale alla covarianza tra $X$ e $Y$:
 >
 > $$\hat\beta = \frac{\frac{1}{n}\sum_{i=1}^n (Y_i-\bar Y)(X_i-\bar X)}{\frac{1}{n}\sum_{i=1}^n (X_i-\bar X)^2} = \frac{\mathrm{Cov}(X,Y)}{\mathrm{Var}(X)}$$
 >
@@ -131,9 +131,9 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 > | educ | .5413593 | .053248 | 10.17 | 0.000 | .4367534 | .6459651 |
 > | _cons | -.9048516 | .6849678 | -1.32 | 0.187 | -2.250472 | .4407687 |
 >
-> Il modello stimato risulta quindi
+> Il modello stimato risulta quindi (coefficienti arrotondati alla quarta cifra; le slide troncano a $-.9048$ e $.5413$)
 >
-> $$wage = -.9048 + .5413\, educ$$
+> $$wage = -.9049 + .5414\, educ$$
 >
 > Studiare un anno in più induce una variazione positiva di circa 54 centesimi nei salari.
 >
@@ -147,14 +147,14 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 >
 > ![](assets/econ-02/fig05.png)
 >
-> **Figura 5** — Rappresentazione grafica di $Y_i$ come somma di residuo ($\hat\epsilon_i$) e valore predetto ($\hat Y_i$). Mostra graficamente come ogni osservazione $Y_i$ si scomponga nella somma del valore previsto dalla retta di regressione e del residuo, cioè la distanza verticale tra il punto osservato e la retta.
+> **Figura 5** — Rappresentazione grafica di $Y_i$ come somma di residuo ($\hat\epsilon_i$) e valore predetto ($\hat Y_i$). Ogni osservazione $Y_i$ si scompone nella somma del valore previsto dalla retta e del residuo, cioè la distanza verticale tra il punto osservato e la retta.
 
 *(slide 17–21)*
 
 ## Il termine d'errore ε: proprietà, omoschedasticità ed eteroschedasticità
 
 > [!abstract] Definizione
-> Le proprietà della variabile casuale $\epsilon$ sono cruciali per derivare le proprietà degli stimatori OLS: interessano i suoi momenti e la relazione tra $\epsilon$ ed $X$.
+> Le proprietà della variabile casuale $\epsilon$ servono a derivare le proprietà degli stimatori OLS: interessano i suoi momenti e la relazione tra $\epsilon$ ed $X$.
 >
 > Per costruzione, $\epsilon_i$ è la differenza tra $Y_i$ e la media condizionale $E[Y|X_i]$:
 >
@@ -181,22 +181,22 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 > - **Omoschedasticità**: $\mathrm{Var}(\epsilon|X)=\sigma^2$, cioè non dipende da $X$.
 > - **Eteroschedasticità**: $\mathrm{Var}(\epsilon|X)=\sigma^2(X)$, quindi è funzione di $X$.
 >
-> Differenti ipotesi su $\mathrm{Var}(\epsilon|X)$ portano a diversi stimatori OLS.
+> Differenti ipotesi su $\mathrm{Var}(\epsilon|X)$ portano a formule diverse per la varianza, e quindi per gli errori standard, dello stimatore OLS; i coefficienti stimati restano gli stessi (le slide parlano di «diversi stimatori OLS»).
 >
 > ![](assets/econ-02/fig06.png)
 >
-> **Figura 6** — Retta di regressione $E(Y|X=x)$ ed errori omoschedastici. Lo scatterplot mostra che, a diversi valori di $X$, la dispersione di $Y$ attorno alla retta rimane simile (livelli simili di variabilità condizionale).
+> **Figura 6** — Retta di regressione $E(Y|X=x)$ ed errori omoschedastici. A diversi valori di $X$ la dispersione di $Y$ attorno alla retta rimane simile (variabilità condizionale simile).
 >
 > ![](assets/econ-02/fig07.png)
 >
-> **Figura 7** — Retta di regressione $E(Y|X=x)$ ed errori eteroschedastici. Lo scatterplot mostra che a diversi valori di $X$ corrispondono diverse ampiezze della variabilità di $Y$ attorno alla retta, cioè diverse $\mathrm{Var}(Y|X)$.
+> **Figura 7** — Retta di regressione $E(Y|X=x)$ ed errori eteroschedastici. A diversi valori di $X$ corrispondono ampiezze diverse della variabilità di $Y$ attorno alla retta, cioè diverse $\mathrm{Var}(Y|X)$.
 
 *(slide 22–27)*
 
 ## Le ipotesi del modello di regressione OLS
 
 > [!abstract] Definizione
-> Sembra cruciale, ai fini pratici, verificare se la strategia OLS fornisce stime affidabili dei parametri di interesse: il coefficiente $\beta$ misura l'impatto di una politica (valutata come $\Delta X$) sulla variabile dipendente. Per valutare queste proprietà occorre definire formalmente le ipotesi sul modello di regressione:
+> Ai fini pratici occorre verificare se la strategia OLS fornisce stime affidabili dei parametri di interesse: il coefficiente $\beta$ misura l'impatto di una politica (valutata come $\Delta X$) sulla variabile dipendente. Per valutare queste proprietà occorre definire formalmente le ipotesi sul modello di regressione:
 >
 > 1. Il vero modello (la retta nella popolazione) è lineare: $E[Y|X]=\alpha+\beta X$;
 > 2. Il modello statistico (approssimato) coincide con quello vero, ovvero $Y=\alpha+\beta X+\epsilon$. Come conseguenza principale, $\mathrm{Cov}(X,\epsilon)=0$;
@@ -242,7 +242,7 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 > | X | 2.129496 | .063634 | 33.46 | 0.000 | 2.004008 | 2.254983 |
 > | _cons | 2.962697 | .0635759 | 46.60 | 0.000 | 2.837324 | 3.08807 |
 >
-> Si noti che $\hat\beta = 2.129$ è abbastanza diverso da $1.5$. Qui $\hat\beta$ non è una stima affidabile del parametro di policy $\beta$: in questo caso $2.129$ è una stima affidabile di $(\beta+\Delta\epsilon)$, che non è ciò che interessa.
+> Si noti che $\hat\beta = 2.129$ è abbastanza diverso da $1.5$. Qui $\hat\beta$ non è una stima affidabile del parametro di policy $\beta$: in questo caso $2.129$ è una stima affidabile di $(\beta+\Delta\epsilon)$, che non è ciò che interessa (più precisamente, $\hat\beta$ converge a $\beta+\mathrm{Cov}(X,\epsilon)/\mathrm{Var}(X)$, qui circa $1.5+0.6=2.1$ se $\mathrm{Var}(X)\approx 1$, valore coerente con gli errori standard in tabella).
 
 *(slide 28–33)*
 
@@ -267,17 +267,17 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 >
 > $$E[\hat\beta|X_1,\dots,X_n] = \beta + \sum \omega_i \underbrace{E[\epsilon_i|X_1,\dots,X_n]}_{\text{per hyp. } =0} = \beta$$
 >
-> I momenti marginali, cioè la media di $\hat\beta$ rispetto a tutti i possibili $X_1,\dots,X_n$ osservati, è quindi $\beta$: lo stimatore è **non distorto**. Se $E[\epsilon|X_1,\dots,X_n]\neq 0$, questo risultato non è più valido e, in media, lo stimatore non fornisce una buona proxy per il vero coefficiente $\beta$.
+> Il momento marginale, cioè la media di $\hat\beta$ rispetto a tutti i possibili $X_1,\dots,X_n$ osservati, è quindi $\beta$: lo stimatore è **non distorto**. Se $E[\epsilon|X_1,\dots,X_n]\neq 0$, questo risultato non è più valido e, in media, lo stimatore non fornisce una buona proxy per il vero coefficiente $\beta$.
 >
 > **Varianza condizionale (consistenza).** La varianza condizionale di $\hat\beta$ è
 >
-> $$\mathrm{Var}[\hat\beta|X_1,\dots,X_n] = \sum \omega_i^2 \underbrace{\mathrm{Var}[\epsilon_i|X_1,\dots,X_n]}_{\times \text{ ip. } =\sigma^2} = \frac{\sigma^2}{\sum_{i=1}^n (X_i-\bar X)^2} = \frac{\sigma^2}{(n-1)}\underbrace{\frac{n-1}{\sum_{i=1}^n (X_i-\bar X)^2}}_{=1/\sigma^2 \text{ if } n\to+\infty} \quad (\text{consistency})$$
+> $$\mathrm{Var}[\hat\beta|X_1,\dots,X_n] = \sum \omega_i^2 \underbrace{\mathrm{Var}[\epsilon_i|X_1,\dots,X_n]}_{\times \text{ ip. } =\sigma^2} = \frac{\sigma^2}{\sum_{i=1}^n (X_i-\bar X)^2} = \frac{\sigma^2}{(n-1)}\underbrace{\frac{n-1}{\sum_{i=1}^n (X_i-\bar X)^2}}_{\to 1/\sigma_X^2 \text{ if } n\to+\infty} \quad (\text{consistency})$$
 >
-> Per questo risultato si è utilizzata l'ipotesi di omoschedasticità.
+> Per questo risultato si è utilizzata l'ipotesi di omoschedasticità. Il limite è l'inverso della varianza di $X$, $\sigma_X^2=\mathrm{Var}(X)$ (le slide scrivono $1/\sigma^2$, che si confonderebbe con la varianza dell'errore).
 >
 > ![](assets/econ-02/fig09.png)
 >
-> **Figura 9** — Distribuzioni di $\hat\beta$ per campioni di diverse dimensioni ($n_1<n_2<n_3$). Mostra come la dispersione della distribuzione campionaria di $\hat\beta$ si riduca al crescere della dimensione campionaria, collassando su $\beta$ quando $n\to\infty$.
+> **Figura 9** — Distribuzioni di $\hat\beta$ per campioni di diverse dimensioni ($n_1<n_2<n_3$). La dispersione della distribuzione campionaria di $\hat\beta$ si riduce al crescere della dimensione campionaria e collassa su $\beta$ quando $n\to\infty$.
 >
 > ![](assets/econ-02/fig10.png)
 >
@@ -287,7 +287,7 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 >
 > - **Linearità**: il modello nella popolazione è lineare nei parametri, $Y=\alpha+\beta X+\epsilon$;
 > - **I.I.D.**: campione casuale di $(X_i,Y_i)$, $i=1,\dots,N$;
-> - **Esogenità**: il regressore non è correlato al termine di errore;
+> - **Esogeneità**: $E[\epsilon|X]=0$ (le slide scrivono «il regressore non è correlato al termine di errore», condizione più debole);
 > - **Omoschedasticità**: $\mathrm{Var}(Y|X=x_i)=\sigma^2$;
 >
 > allora OLS fornisce il **miglior stimatore lineare non distorto (BLUE)**, il più efficiente (con varianza minore) nella classe degli stimatori lineari e non distorti.
@@ -302,9 +302,9 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 > - lo stimatore di $\beta$ ha distribuzione normale: $\hat\beta \sim N\big(\beta,\ \mathrm{Var}(\hat\beta|X)\big)$;
 > - lo stimatore standardizzato ha distribuzione Student $t$:
 >
-> $$\frac{\hat\beta-\beta}{\sqrt{\mathrm{Var}(\hat\beta|X)}} \sim t_{n-2}$$
+> $$\frac{\hat\beta-\beta}{\hat\sigma_{\hat\beta}} \sim t_{n-2}$$
 >
-> Quest'ultimo risultato dipende dal fatto che il denominatore è ignoto e deve essere stimato. Se $n\to\infty$, la Student $t$ converge a una gaussiana.
+> Quest'ultimo risultato dipende dal fatto che il denominatore è ignoto e deve essere stimato: $\hat\sigma_{\hat\beta}$ è l'errore standard stimato, definito più sotto (le slide scrivono $\sqrt{\mathrm{Var}(\hat\beta|X)}$ al denominatore; con la varianza vera, cioè con $\sigma^2$ noto, il rapporto sarebbe $N(0,1)$). Se $n\to\infty$, la Student $t$ converge a una gaussiana.
 >
 > **Normalità asintotica.** In statistica, per stimare il valore atteso di una popolazione si usa la media campionaria, che si distribuisce come una v.c. gaussiana per campioni sufficientemente grandi. Nell'ipotesi che $E[\epsilon|X]=0$, $\hat\beta$ gode della stessa proprietà, essendo sostanzialmente costruito come una media:
 >
@@ -326,7 +326,7 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 >
 > ![](assets/econ-02/fig11.png)
 >
-> **Figura 11** — Istogramma rispetto alla densità normale: stime standardizzate di $\beta$ per diversi campioni di dimensione $n$, rappresentate come istogrammi. Pannello di sinistra: campione di piccole dimensioni ($n=2$); pannello di destra: campione di grandi dimensioni ($n=50$, buona approssimazione gaussiana). Il confronto mostra come l'approssimazione normale migliori al crescere della dimensione campionaria.
+> **Figura 11** — Istogramma rispetto alla densità normale: stime standardizzate di $\beta$ per diversi campioni di dimensione $n$. Pannello di sinistra: campione di piccole dimensioni ($n=2$); pannello di destra: campione di grandi dimensioni ($n=50$, buona approssimazione gaussiana). L'approssimazione normale migliora al crescere della dimensione campionaria.
 
 *(slide 43–46)*
 
@@ -352,20 +352,22 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 ## Intervalli di confidenza per β
 
 > [!abstract] Definizione
-> Per quanto riguarda la media campionaria, è utile fornire un intervallo di possibili valori in cui si ritiene il vero parametro $\beta$ rientrerà con alta probabilità. Come per la media campionaria, $\hat\beta$ è distribuita normalmente, e si vuole ottenere un intervallo che includa il vero parametro sconosciuto $\beta$ con alta probabilità (diciamo $1-\alpha$). Valgono quindi tutti i risultati validi per la media campionaria: un intervallo di confidenza per $\beta$ può essere calcolato come
+> Come per la media campionaria, è utile fornire un intervallo di valori in cui il vero parametro sconosciuto $\beta$ rientra con alta probabilità (diciamo $1-\alpha$; in questa formula $\alpha$ è il livello di significatività, non l'intercetta). Poiché $\hat\beta$ è distribuita normalmente, valgono gli stessi risultati della media campionaria: un intervallo di confidenza per $\beta$ può essere calcolato come
 >
 > $$\text{Confidence interval} = \left[\hat\beta - z_{\frac{\alpha}{2}}\times \hat\sigma_{\hat\beta}\ ;\ \hat\beta + z_{\frac{\alpha}{2}}\times \hat\sigma_{\hat\beta}\right]$$
 >
 > **Esempio: wage vs. educ.** L'intervallo di confidenza al 95% per $\beta$ è calcolato come
 >
-> $$[0.541 - 1.96\times 0.053\ ;\ 0.541 + 1.96\times 0.053] = [.436;\ .645]$$
+> $$[0.541 - 1.96\times 0.053\ ;\ 0.541 + 1.96\times 0.053] = [.437;\ .645]$$
+>
+> (Le slide riportano $[.436;\ .645]$, cioè l'intervallo in tabella troncato. Stata usa il quantile $t_{524}\approx 1.9645$ al posto di 1.96 e ottiene $[.4368;\ .6460]$.)
 >
 > | Variabile | Coef. | Std. Err. | t | P>\|t\| | IC 95% inf. | IC 95% sup. |
 > |---|---|---|---|---|---|---|
 > | educ | .5413593 | .053248 | 10.17 | 0.000 | .4367534 | .6459651 |
 > | _cons | -.9048516 | .6849678 | -1.32 | 0.187 | -2.250472 | .4407687 |
 >
-> Ci si aspetta quindi che, con probabilità 95%, il vero $\beta$ sia compreso tra $[.436;\ .645]$, suggerendo l'esistenza di un'associazione positiva tra wages e years of education.
+> Ci si aspetta quindi che il vero $\beta$ sia compreso tra $[.437;\ .646]$, con livello di confidenza del 95%: il 95% riguarda la procedura (in campionamenti ripetuti il 95% degli intervalli così costruiti contiene $\beta$), non è la probabilità che $\beta$ cada in questo intervallo particolare. L'intervallo suggerisce l'esistenza di un'associazione positiva tra wages e years of education.
 
 *(slide 49–50)*
 
@@ -429,7 +431,7 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 > | x | 2.129496 | .063634 | 33.46 | 0.000 | 2.004008 | 2.254983 |
 > | _cons | 2.962697 | .0635759 | 46.60 | 0.000 | 2.837324 | 3.08807 |
 >
-> Si noti che l'$R^2$ è elevato ($\approx 84.9\%$). Tuttavia si sa già che il modello **non** rappresenta una relazione causale: un $R^2$ alto non implica causalità.
+> Si noti che l'$R^2$ è elevato ($\approx 85.0\%$; le slide scrivono 84,9%, troncando 84,98%). Tuttavia si sa già che il modello **non** rappresenta una relazione causale: un $R^2$ alto non implica causalità.
 >
 > **Esempio 2 — wage vs. educ.** Si consideri ora la relazione tra salari e istruzione, che potrebbe rappresentare un legame causale:
 >
@@ -446,6 +448,6 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 > | educ | .5413593 | .053248 | 10.17 | 0.000 | .4367534 | .6459651 |
 > | _cons | -.9048516 | .6849678 | -1.32 | 0.187 | -2.250472 | .4407687 |
 >
-> Si noti che $R^2$ è piuttosto basso ($\approx 16.4\%$). Nonostante questo risultato, il collegamento tra le due variabili ha comunque senso da un punto di vista logico: un $R^2$ basso non esclude una relazione causale plausibile.
+> Si noti che $R^2$ è piuttosto basso ($\approx 16.5\%$; le slide scrivono 16,4%, troncando 16,48%). Nonostante questo risultato, il collegamento tra le due variabili ha comunque senso da un punto di vista logico: un $R^2$ basso non esclude una relazione causale plausibile.
 
 *(slide 54–57)*

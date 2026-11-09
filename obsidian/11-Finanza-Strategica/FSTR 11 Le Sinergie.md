@@ -1,235 +1,205 @@
 ---
-title: "Strategie di Investimento — Crescita esterna e valore delle operazioni di integrazione: Le sinergie"
+title: "Le sinergie nelle operazioni di integrazione"
 tags:
   - corso/finanza-strategica
   - tipo/lezione
 corso: "[[Finanza Strategica]]"
 source: "FSTR_Slide_11_Le-Sinergie.pdf"
-pages: 14
 text_layer: true
 verified: true
 generated: 2026-08-30
 ---
 
-## Introduzione e riferimenti
+## Introduzione
 
-**Corso:** Strategie di Investimento — *Crescita esterna e valore delle operazioni di integrazione: Le sinergie*.
+La crescita esterna consiste nell'integrazione tra imprese. Il capitolo classifica queste operazioni secondo il profilo industriale e quello giuridico, poi imposta la valutazione dell'impresa acquisita: il suo valore è la somma del valore *stand alone* e del valore delle sinergie. Seguono i tipi di sinergie, il ruolo dei benefici privati nel prezzo di un pacchetto di controllo e l'effetto della quota di capitale acquistata sul prezzo per azione. Il capitolo si chiude con i premi di controllo e gli sconti di minoranza.
 
-**Letture di riferimento:** Capitolo 9, Testo BBS.
+## Tipi di integrazione
 
-*(slide 1)*
-
-## Tipi di integrazione: profilo industriale e profilo giuridico
-
-Le operazioni di crescita esterna (integrazione tra imprese) possono essere classificate secondo due profili: quello industriale (natura economica dell'operazione) e quello giuridico (forma tecnica con cui si realizza).
+Le operazioni di crescita esterna si classificano secondo due profili: quello industriale, che riguarda la natura economica dell'operazione, e quello giuridico, che riguarda la forma tecnica con cui si realizza.
 
 ### Profilo industriale
 
-- **Orizzontali**: integrazione di imprese che operano nella stessa linea di business.
-- **Verticali**: l'impresa espande il proprio controllo a monte (materie prime) o a valle (consumatore finale).
-- **Conglomerali**: coinvolgono aziende che operano in settori non correlati (es. Tata: ristorazione, acciaio, auto, hotel, …).
+Un'integrazione **orizzontale** riunisce imprese che operano nella stessa linea di business. Nell'integrazione **verticale** un'impresa estende il proprio controllo a monte, verso le materie prime, oppure a valle, verso il consumatore finale. Le integrazioni **conglomerali** coinvolgono aziende che operano in settori non correlati; un esempio è il gruppo Tata, presente tra l'altro nella ristorazione, nell'acciaio, nell'auto e negli hotel.
 
 ### Profilo giuridico
 
-- **Fusione per unione**: una società nuova prende vita dalle società "fuse", che perdono la propria precedente identità giuridica. Il loro patrimonio viene trasferito nella nuova società.
-- **Fusione per incorporazione**: l'incorporante mantiene la propria identità mentre le incorporate la perdono. I patrimoni confluiscono tutti nell'incorporata.
-- **Semplice acquisto delle azioni dell'impresa in vendita.**
+Sotto il profilo giuridico l'integrazione assume tre forme.
 
-*(slide 2–3)*
+Nella **fusione per unione** una società nuova nasce dalle società fuse, che perdono la propria precedente identità giuridica; il loro patrimonio è trasferito nella nuova società. Nella **fusione per incorporazione** l'incorporante mantiene la propria identità, mentre le incorporate la perdono e i loro patrimoni confluiscono nell'incorporante. Il **semplice acquisto delle azioni** dell'impresa in vendita lascia invece distinte le due società: cambia chi detiene le azioni della società acquistata, che conserva la propria identità giuridica.
+
+Casi reali di ciascuna forma sono raccolti negli [[FSTR 10 Esempi di Sinergie|esempi di integrazione industriale e giuridica]].
 
 ## Il valore nelle operazioni di integrazione
 
+Il valore di un'impresa è pari ai flussi di cassa *stand alone* attesi, cioè quelli che l'impresa genera da sola, scontati a un determinato tasso di rendimento. Quando l'impresa è oggetto di acquisizione o di fusione, il valore complessivo dipende da due componenti: i flussi di cassa *stand alone* e i flussi differenziali che l'acquisizione rende ottenibili, detti **sinergie**.
+
 > [!abstract] Definizione
-> Il valore di un'impresa è pari ai flussi di cassa *stand alone* attesi, scontati ad un determinato tasso di rendimento.
->
-> Nel caso in cui l'impresa sia oggetto di acquisizione/fusione, il valore complessivo sarà determinato da:
->
-> - Flussi di cassa *stand alone*;
-> - Flussi differenziali prodotti dalle **sinergie** ottenibili dall'acquisizione.
->
-> Da cui la relazione fondamentale:
+> Il valore di acquisizione è la somma del valore *stand alone* e del valore delle sinergie:
 >
 > $$W_{acq} = W_S + W_D$$
 >
 > dove $W_{acq}$ è il valore di acquisizione, $W_S$ il valore *stand alone* e $W_D$ il valore delle sinergie.
 
-*(slide 4)*
-
-## Esempi introduttivi: effetto delle sinergie sul valore di acquisizione
+### Effetto delle sinergie sul valore: due casi
 
 > [!example] Esempio
-> ### Caso 1
+> La società B intende acquistare la società A. Per ciascuna componente il valore si ottiene dividendo il flusso di cassa (FC) per il tasso di rendimento (R), cioè come valore di una rendita perpetua a flusso costante: $W = FC/R$. Il valore *stand alone* è quindi $100/10\% = 1.000$. Il flusso differenziale da sinergie è attualizzato a un tasso proprio, l'8%, diverso da quello dei flussi *stand alone*.
 >
-> La società B è intenzionata ad acquistare la società A. I dati relativi ai flussi di cassa generati dall'impresa A sono i seguenti:
+> Nel primo caso i flussi da sinergie ammontano a 50 e il loro valore è $50/8\% = 625$. Il valore di acquisizione è $1.000 + 625 = 1.625$.
 >
-> | Voce | Valore |
-> |---|---|
-> | FC stand alone | 100 |
-> | R stand alone | 10% |
-> | W stand alone | 1000 |
-> | FC sinergie | 50 |
-> | R sinergie | 8% |
-> | W sinergie | 625 |
+> Nel secondo caso B, dopo l'acquisizione, sostituisce il management di A. Alcuni clienti, i cui rapporti commerciali dipendevano dalla presenza del vecchio management, scelgono di non rinnovare i contratti, e i flussi di cassa legati alle sinergie diminuiscono da 50 a 40. Il loro valore scende a $40/8\% = 500$ e il valore di acquisizione a $1.000 + 500 = 1.500$.
 >
-> Il valore di acquisizione sarà pari a:
+> | Voce | Primo caso | Secondo caso |
+> |---|---|---|
+> | FC *stand alone* | 100 | 100 |
+> | R *stand alone* | 10% | 10% |
+> | W *stand alone* | 1.000 | 1.000 |
+> | FC sinergie | 50 | 40 |
+> | R sinergie | 8% | 8% |
+> | W sinergie | 625 | 500 |
+> | Valore di acquisizione | 1.625 | 1.500 |
 >
-> - $100/10\% = 1.000$
-> - $50/8\% = 625$
-> - Totale: **1.625** (1.000 + 625)
->
-> ### Caso 2
->
-> La società B, una volta acquisita la società A, ne sostituisce il management. Alcuni clienti, i cui rapporti commerciali erano dettati dalla presenza del vecchio management, scelgono di non rinnovare i loro contratti: i flussi di cassa legati alle sinergie **diminuiscono**.
->
-> | Voce | Valore |
-> |---|---|
-> | FC stand alone | 100 |
-> | R stand alone | 10% |
-> | W stand alone | 1000 |
-> | FC sinergie | 40 |
-> | R sinergie | 8% |
-> | W sinergie | 500 |
->
-> Il valore di acquisizione, considerando gli effetti del cambiamento del management, è **1.500** (1.000 + 500).
->
-> Confrontando i due casi si osserva come una riduzione dei flussi di cassa da sinergie (da 50 a 40, quindi da $W$ sinergie 625 a 500) riduca direttamente il valore complessivo di acquisizione (da 1.625 a 1.500).
-
-*(slide 5–6)*
+> Una riduzione di 10 nel flusso annuo da sinergie abbassa quindi di 125 il valore di acquisizione, da 1.625 a 1.500, mentre il valore *stand alone* resta invariato.
 
 ## Tipologie di sinergie ed effetto sul valore
 
+Il valore riconosciuto in un'operazione dipende da chi acquisisce. Se l'impresa è acquistata da una persona fisica o da un altro investitore generico, vale il valore *stand alone* definito sopra. Se è acquisita, incorporata o fusa da un'altra impresa, il valore riconosciuto è il valore *stand alone* più le sinergie. In quest'ultimo caso le sinergie si classificano in due modi: per origine e per effetto sul valore.
+
+### Sinergie per origine
+
+Le sinergie **generiche** si sviluppano a prescindere dal settore delle imprese e dalle parti coinvolte; un esempio è la riduzione del numero dei componenti del consiglio di amministrazione dopo l'integrazione.
+
+Le sinergie **endemiche** dipendono dal settore in cui opera l'impresa, ad esempio perché vi è un'integrazione verticale: un reparto dell'impresa acquisita viene smantellato perché già presente nell'impresa acquirente.
+
+Le sinergie **specifiche** dipendono dalle parti coinvolte. L'impresa A si integra con B anziché con C perché con B ottiene risparmi sui costi di trasporto dei beni; un'integrazione con un soggetto alternativo non produrrebbe lo stesso valore.
+
+I **benefici privati** maturano in capo a chi controlla l'impresa, anziché all'insieme indistinto degli investitori, ed emergono soltanto in caso di acquisizione.
+
+### Sinergie per effetto sul valore
+
+Alla classificazione per origine si affianca quella per il canale attraverso cui le sinergie modificano il valore.
+
+| Effetto sul valore | Denominazione | Come agisce |
+|---|---|---|
+| Flussi di cassa | sinergie operative | Modificano i flussi generati, ad esempio con la razionalizzazione dei processi o l'integrazione di funzioni. |
+| Costo del capitale | sinergie finanziarie | Modificano il tasso di attualizzazione, per un cambiamento del profilo di rischio o della struttura finanziaria. |
+| Scudi fiscali | sinergie fiscali | Aggiungono il valore dei risparmi d'imposta, ad esempio quelli legati alla deducibilità degli interessi sul nuovo debito. |
+
+La quantificazione dei tre effetti è sviluppata nel capitolo sulla [[FSTR 12 Valutazione Operazioni di Integrazione|valutazione delle operazioni di integrazione]].
+
+## Benefici privati e valore di una quota di controllo
+
+Quando l'acquisizione non riguarda l'intero pacchetto azionario, ma solo una quota sufficiente a garantire il controllo della società, il valore di acquisizione dipende da tre componenti: i flussi di cassa *stand alone*, i flussi differenziali prodotti dalle sinergie e i flussi riferibili ai cosiddetti benefici privati.
+
 > [!abstract] Definizione
-> Il valore riconosciuto in un'operazione dipende da **chi** acquisisce l'impresa:
->
-> - **Impresa acquisita da una persona fisica o altro investitore generico** → il valore riconosciuto è il **valore stand-alone** (come visto in precedenza).
-> - **Impresa acquisita, incorporata o fusa da un'altra impresa** → il valore riconosciuto è **valore stand-alone + sinergie**.
->
-> In quest'ultimo caso si distinguono:
->
-> **Tipi di sinergie**
-> - Generiche
-> - Endemiche
-> - Specifiche
-> - Benefici privati
->
-> **Effetto sul valore**
-> - Flussi di cassa (sinergie operative)
-> - Costo del capitale (sinergie finanziarie)
-> - Scudi fiscali (sinergie fiscali)
->
-> ### Descrizione delle tipologie
->
-> - **Generiche**: sono sinergie che si sviluppano a prescindere dal settore delle imprese e dalle parti coinvolte (es. riduzione dei componenti del consiglio di amministrazione).
-> - **Endemiche**: sono dipendenti dal settore dell'impresa, ad esempio perché vi è un'integrazione verticale (smantellamento di un reparto dell'impresa acquisita poiché già presente nell'impresa acquirente).
-> - **Specifiche**: sono dipendenti dalle specifiche parti coinvolte (A che si integra con B al posto di C perché con essa ottiene dei risparmi di costi di trasporto dei beni).
-> - **Benefici privati**: maturano in capo a chi controlla l'impresa, piuttosto che verso la pletora indistinta di investitori; emergono nel solo caso di acquisizione.
+> I **benefici privati** sono flussi di cassa di cui godono gli azionisti-manager di controllo. Possono ridurre i flussi *stand alone*, ad esempio con remunerazioni più elevate degli standard di mercato, oppure non avere alcun effetto sui flussi aziendali, ad esempio quando le risorse intangibili della società sono usate per sviluppare altri business non legati a essa.
 
-*(slide 7–8)*
+### Valore di acquisizione con benefici privati
 
-## Approfondimento sui benefici privati e derivazione della formula del valore di acquisizione con quota di controllo
-
-> [!note] Dimostrazione
-> ### Impostazione del problema
->
-> Quando l'acquisizione non riguarda l'intero pacchetto azionario, ma solo una quota sufficiente a garantire il controllo della società, il valore di acquisizione sarà determinato da:
->
-> - Flussi di cassa *stand alone*;
-> - Flussi differenziali prodotti dalle sinergie ottenibili dall'acquisizione;
-> - Flussi riferibili ai cosiddetti **benefici privati**.
->
-> I benefici privati sono flussi di cassa di cui godono gli azionisti-manager di controllo. Possono portare ad una decurtazione dei flussi *stand alone* (ad esempio remunerazioni più elevate rispetto agli standard di mercato), oppure non avere effetto sui flussi aziendali (ad esempio l'utilizzo delle risorse intangibili per sviluppare altri business non legati alla società).
->
-> Il valore di acquisizione sarà pari a:
+> [!abstract] Definizione
+> Il valore di acquisizione di una quota di controllo $\alpha$ è
 >
 > $$W_\alpha = (W_S + W_D)\times \alpha + W_{PB^*} + (1-\alpha)\times W_{PB}$$
 >
 > dove:
 >
-> - $\alpha$: quota di controllo
-> - $W_S$: valore stand alone
-> - $W_D$: valore delle sinergie
-> - $W_{PB^*}$: valore dei benefici privati **senza** effetto sui flussi stand alone
-> - $W_{PB}$: valore dei benefici privati **con** effetto sui flussi stand alone
->
-> ### Derivazione formale
->
-> Si parte dalla seguente equazione:
+> - $\alpha$ è la quota di controllo acquisita;
+> - $W_S$ è il valore *stand alone*;
+> - $W_D$ è il valore delle sinergie;
+> - $W_{PB^*}$ è il valore dei benefici privati **senza** effetto sui flussi *stand alone*;
+> - $W_{PB}$ è il valore dei benefici privati **con** effetto sui flussi *stand alone*.
+
+### Benefici divisibili e indivisibili
+
+La formula si ottiene separando la parte di valore che si ripartisce in proporzione alla quota di partecipazione (benefici divisibili) dalla parte che resta per intero a chi controlla (benefici indivisibili).
+
+> [!note] Dimostrazione
+> Si parte dall'equazione
 >
 > $$W_\alpha = (W_S + W_D - W_{PB})\times \alpha + W_{PB} + W_{PB^*} \qquad (1)$$
 >
-> - Il termine $(W_S + W_D - W_{PB})$ rappresenta il valore dei **benefici divisibili** (cioè proporzionali alla quota di partecipazione), che risente del valore delle sinergie che hanno impatto sul flusso e che vanno in mano al socio di maggioranza.
+> Il termine $(W_S + W_D - W_{PB})$ è il valore divisibile, proporzionale alla quota di partecipazione. Dipende dalle sinergie che hanno impatto sui flussi, depurate dei benefici privati con effetto sui flussi, che non si ripartiscono tra gli azionisti. Vale $W_D - W_{PB} = W_{DIV}$, il valore delle sinergie divisibili. Di questo valore l'acquirente riceve la frazione $\alpha$.
 >
->   NB: $W_D - W_{PB} = W_{DIV}$ (valore sinergie divisibili).
+> Il termine $W_{PB} + W_{PB^*}$, indicato anche con $W_{IND}$, è il valore dei benefici indivisibili, con e senza effetto sui flussi. Va per intero al socio di maggioranza, qualunque sia $\alpha$.
 >
-> - Il termine $W_{PB} + W_{PB^*}$ (indicato anche come $W_{IND}$) è il valore dei **benefici indivisibili** (sia senza sia con effetto sui flussi) che vanno in mano al socio di maggioranza.
+> Sviluppando il prodotto in (1) e raccogliendo i termini in $W_{PB}$ si ottiene
 >
-> Dalla (1) si perviene facilmente alla (2):
+> $$W_\alpha = (W_S + W_D)\times \alpha - \alpha\, W_{PB} + W_{PB} + W_{PB^*} = (W_S + W_D)\times \alpha + W_{PB^*} + (1-\alpha)\times W_{PB} \qquad (2)$$
 >
-> $$W_\alpha = (W_S + W_D)\times \alpha + W_{PB^*} + (1-\alpha)\times W_{PB} \qquad (2)$$
->
-> Questa è esattamente la formula presentata in apertura di sezione: la (2) è quindi la riscrittura della (1) separando i benefici divisibili da quelli indivisibili.
+> che è la formula del paragrafo precedente.
+## Il valore di acquisizione delle partecipazioni di controllo
 
-*(slide 9–10)*
+### Formula sintetica
 
-## Il valore di acquisizione delle partecipazioni di controllo: formula, esempio numerico e sensitività rispetto alla quota acquisita
+Poiché $W_{DIV} = W_D - W_{PB}$ e $W_{IND} = W_{PB} + W_{PB^*}$, la (1) si scrive in termini di sinergie e opportunità divisibili e indivisibili.
 
-> [!example] Esempio
-> ### Formula sintetica
->
-> Riscrivendo la formula precedente in termini di sinergie/opportunità divisibili e indivisibili, si ottiene:
->
+> [!abstract] Definizione
 > $$W_\alpha = (W_S + W_{DIV})\,\alpha + W_{IND}$$
 >
 > dove:
 >
-> - $W_\alpha$ = valore di acquisizione del pacchetto
-> - $W_S$ = valore stand alone dell'azienda target
-> - $W_{DIV}$ = valore delle sinergie e opportunità divisibili
-> - $\alpha$ = % del capitale acquisito
-> - $W_{IND}$ = valore delle sinergie e opportunità indivisibili
+> - $W_\alpha$ è il valore di acquisizione del pacchetto;
+> - $W_S$ è il valore *stand alone* dell'azienda target, cioè dell'impresa oggetto di acquisizione;
+> - $W_{DIV}$ è il valore delle sinergie e opportunità divisibili;
+> - $\alpha$ è la frazione del capitale acquisita;
+> - $W_{IND}$ è il valore delle sinergie e opportunità indivisibili.
+
+### Esempio numerico
+
+> [!example] Esempio
+> Gli importi sono in milioni (ML). I dati sono:
 >
-> ### Esempio numerico
+> - $W_S = 180$;
+> - numero di azioni $N = 100$;
+> - $W_{DIV} = 20$;
+> - $W_{IND} = 65$.
 >
-> **Dati:**
+> Il valore *stand alone* per azione è $180/100 = 1{,}8$.
 >
-> - $W_S = 180$ ML
-> - N° azioni $= 100$ ML
-> - $W_{DIV} = 20$ ML
-> - $W_{IND} = 65$ ML
->
-> **Acquisizione del 100%:**
+> Con l'acquisizione del 100% del capitale:
 >
 > $$W_{ACQ}(100\%) = 180 + 20 + 65 = 265$$
 > $$w = 265/100 = 2{,}65$$
 >
-> **Quanto vale, ad esempio, il 60%?**
+> Il valore di un pacchetto pari al 60% del capitale si ottiene applicando $\alpha = 0{,}6$ ai soli termini divisibili:
 >
-> $$W_{ACQ}(60\%) = W_{BASE}\times 0{,}6 + W_{DIV}\times 0{,}6 + W_{IND} = 180\times 0{,}6 + 20\times 0{,}6 + 65 = 185 \text{ ML}$$
-> $$w = 185 \text{ ML} / (100\cdot 60\%) = 3{,}083$$
+> $$W_{ACQ}(60\%) = W_S\times 0{,}6 + W_{DIV}\times 0{,}6 + W_{IND} = 180\times 0{,}6 + 20\times 0{,}6 + 65 = 185$$
+> $$w = 185/(100\cdot 60\%) = 3{,}083$$
 >
-> Il valore unitario **aumenta al diminuire** della percentuale di capitale acquisito: acquisendo una quota di controllo inferiore al 100%, il valore delle sinergie e opportunità indivisibili ($W_{IND}$) si concentra su un numero minore di azioni, facendone salire il valore unitario.
->
-> **Figura 13** — *Andamento del valore unitario di acquisizione delle azioni al variare della frazione del capitale acquistata*. Il grafico riporta sull'asse orizzontale la percentuale di capitale acquistata (100%, 75%, 51%) e sull'asse verticale il valore unitario di acquisizione delle azioni $w_x$: al 100% il valore unitario è 2,65; al 75% è 2,867; al 51% è 3,275. Una linea tratteggiata orizzontale indica il valore base (stand alone unitario) pari a 1,8. Il grafico mostra visivamente che il valore unitario delle azioni cresce in modo crescente (convesso) man mano che la quota acquisita si riduce verso la soglia minima di controllo, poiché il premio legato a $W_{IND}$ si distribuisce su un numero via via minore di azioni.
+> Il valore unitario **aumenta al diminuire** della percentuale di capitale acquisito: acquistando meno del 100%, il valore delle sinergie e opportunità indivisibili ($W_{IND}$) si concentra su un numero minore di azioni e ne fa salire il valore unitario.
 
-*(slide 11–13)*
+### Sensitività rispetto alla quota acquisita
+
+Il valore unitario di acquisizione è $w = W_\alpha / (N\alpha)$. Con i dati dell'esempio diventa
+
+$$w(\alpha) = \frac{W_S + W_{DIV}}{N} + \frac{W_{IND}}{N\,\alpha} = 2 + \frac{0{,}65}{\alpha}$$
+
+La prima componente (2 per azione) non dipende da $\alpha$. La seconda è il valore indivisibile ripartito sulle sole azioni acquistate e cresce quando $\alpha$ scende, con pendenza sempre maggiore: la curva è convessa.
+
+| Quota acquisita $\alpha$ | Valore del pacchetto $W_\alpha$ | Valore unitario $w$ |
+|---|---|---|
+| 100% | 265 | 2,65 |
+| 75% | 215 | 2,867 |
+| 60% | 185 | 3,083 |
+| 51% | 167 | 3,275 |
+
+Il grafico seguente riporta il valore unitario per i pacchetti del 100%, del 75% e del 51%, a confronto con il valore base di 1,8 per azione.
+
+![](assets/fstr-11/fig01.png)
+
+**Figura 1** — Valore unitario di acquisizione delle azioni al variare della quota di capitale acquistata: il valore unitario passa da 2,65 con il 100% a 2,867 con il 75% e a 3,275 con il 51%, sempre al di sopra del valore base di 1,8, e cresce con pendenza maggiore man mano che la quota scende verso la soglia di controllo, perché il valore indivisibile si distribuisce su un numero minore di azioni.
 
 ## Premi e sconti nelle valutazioni
 
-Il valore-base di un'acquisizione viene aggiustato attraverso l'applicazione di **premi** e **sconti**.
+Il valore base di un'acquisizione viene aggiustato con premi e sconti.
 
 ### Premio di controllo
 
-Nel caso in cui l'acquisizione delle partecipazioni permetta di controllare la società, il valore di acquisizione dovrà incorporare i benefici (**premio di controllo**) che ne derivano.
+Se l'acquisizione delle partecipazioni consente di controllare la società, il valore di acquisizione deve incorporare i benefici del controllo. L'aggiustamento che li riflette è il **premio di controllo**.
 
-- Il premio di controllo è determinato dalla presenza di benefici privati sia di natura monetaria sia di natura non monetaria (potere di decidere gli indirizzi strategici, la quotazione in Borsa).
+Il premio è determinato dalla presenza di benefici privati, sia di natura monetaria sia di natura non monetaria, come il potere di decidere gli indirizzi strategici e la quotazione in Borsa. Nel modello della sezione precedente questi benefici, che spettano solo a chi controlla, confluiscono in $W_{IND}$, ed è questo termine a far crescere il valore unitario al diminuire della quota acquisita.
 
 ### Sconto di minoranza
 
-Nel caso in cui venga ceduta una quota di minoranza, l'acquirente sarà disposto a pagare un prezzo inferiore a causa degli svantaggi derivanti dal fatto di essere un azionista di minoranza.
-
-Lo sconto di minoranza è determinato da:
-
-- **Impossibilità di decidere gli indirizzi strategici** (sconto in funzione della mancanza di controllo);
-- **Difficoltà di negoziare partecipazioni di scarso rilievo ai fini del controllo** (sconto in funzione della mancanza di liquidità).
-
-*(slide 14)*
+Quando viene ceduta una quota di minoranza, l'acquirente è disposto a pagare un prezzo inferiore, per gli svantaggi di essere azionista di minoranza. Lo **sconto di minoranza** dipende da due fattori. Il primo è l'impossibilità di decidere gli indirizzi strategici, e dà luogo a uno sconto per mancanza di controllo. Il secondo è la difficoltà di negoziare partecipazioni di scarso rilievo ai fini del controllo, e dà luogo a uno sconto per mancanza di liquidità.

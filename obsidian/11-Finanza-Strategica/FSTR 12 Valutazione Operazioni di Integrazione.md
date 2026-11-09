@@ -1,11 +1,10 @@
 ---
-title: "La valutazione delle operazioni di integrazione (crescita esterna e valore)"
+title: "La valutazione delle operazioni di integrazione"
 tags:
   - corso/finanza-strategica
   - tipo/lezione
 corso: "[[Finanza Strategica]]"
 source: "FSTR_Slide_12_Valutazione-Operazioni-di-Integrazione.pdf"
-pages: 12
 text_layer: true
 verified: true
 generated: 2026-08-30
@@ -13,168 +12,194 @@ generated: 2026-08-30
 
 ## Introduzione e riferimenti
 
-**Strategie di investimento** — Crescita esterna e valore delle operazioni di integrazione. La valutazione delle operazioni di integrazione.
+Il capitolo quantifica il valore creato da un'operazione di integrazione. Il valore di acquisizione è la somma del valore *stand alone* del target e del valore delle sinergie, $W_{acq} = W_S + W_D$, con la notazione del capitolo sulle [[FSTR 11 Le Sinergie|sinergie]]. Qui $W_D$ si scompone in tre strati e si stima su un esempio numerico. Il confronto con il prezzo pagato dà il valore creato per l'acquirente e il premio massimo che questi può riconoscere al venditore. Seguono i rapporti di concambio minimo e massimo in una fusione per incorporazione e le motivazioni economiche, valide e dubbie, delle fusioni.
 
-Letture di riferimento: Capitolo 9, Testo BBS.
+Lettura di riferimento: capitolo 9 del testo BBS.
 
-*(slide 1)*
+## I tre effetti delle sinergie sul valore
 
-## Le sinergie: tre effetti sul valore
+Le sinergie di un'operazione di integrazione, fusione o acquisizione, incidono sul valore dell'impresa risultante attraverso tre differenziali rispetto alla situazione delle imprese separate.
 
-> [!abstract] Definizione
-> Le sinergie generate da un'operazione di integrazione (fusione o acquisizione) possono essere ricondotte a tre effetti distinti sul valore dell'impresa risultante:
->
-> A. **Differenziale di quantità** → impatto sui flussi (di cassa)
->
-> B. **Differenziale di qualità** → impatto sul rischio
->
-> C. **Differenziale di struttura finanziaria** → impatto sul debt/equity ratio obiettivo
+| Differenziale | Su che cosa incide | Sinergie corrispondenti |
+|---|---|---|
+| A. Quantità | i flussi di cassa | operative |
+| B. Qualità | il rischio, quindi il tasso di attualizzazione | finanziarie |
+| C. Struttura finanziaria | il rapporto debt/equity obiettivo, quindi il debito e i suoi scudi fiscali | fiscali |
 
-*(slide 2)*
+Le denominazioni operative, finanziarie e fiscali sono quelle della [[FSTR 11 Le Sinergie|classificazione delle sinergie per effetto sul valore]].
 
 ## Il modello di stratificazione del valore
 
+La quantificazione delle sinergie si effettua con il **modello di stratificazione del valore**, che presuppone il [[FSTR 04-full Modelli Valutazione Finanziaria Parte2|modello del valore attuale modificato]] in *steady state*. In questa ipotesi il valore *unlevered* di un flusso operativo al netto delle imposte (FCFO) è $W_U = FCFO / r_0$, dove $r_0$ è il costo del capitale *unlevered* (indicato anche con $K_{eu}$). Con debito costante e perpetuo $D$, lo scudo fiscale vale $D\,t_c$, dove $t_c$ è l'aliquota dell'imposta societaria. Il valore *levered* è quindi $W_L = W_U + D\,t_c$ e il valore dell'equity è $W_E = W_L - D$.
+
 > [!abstract] Definizione
-> La quantificazione delle sinergie si può effettuare tramite il **modello di stratificazione del valore**, che presuppone a sua volta l'utilizzo del **valore attuale modificato (steady state)**. Ipotizzando due imprese A e B, il valore delle sinergie si scompone in tre componenti, elencate in ordine di crescente difficoltà di stima:
+> Date due imprese A e B, il valore delle sinergie $W_D$ è la somma di tre strati, elencati in ordine di difficoltà di stima crescente.
 >
 > 1. **Valore dei flussi incrementali**
-> $$V_{Flussi} = \frac{\Delta FCFO_A}{r_{0,A+B}} + \frac{\Delta FCFO_B}{r_{0,A+B}}$$
+> Capitalizza, al costo del capitale unlevered dell'entità combinata $r_{0,A+B}$, i maggiori flussi operativi $\Delta FCFO_A$ e $\Delta FCFO_B$ prodotti dall'integrazione:
+> $$W_{flussi} = \frac{\Delta FCFO_A}{r_{0,A+B}} + \frac{\Delta FCFO_B}{r_{0,A+B}}$$
 >
-> 2. **Valore del debito incrementale** (maggiore scudo fiscale)
-> $$V_{TS} = \Delta D \cdot t_c$$
+> 2. **Valore del debito incrementale**
+> Il maggiore debito $\Delta D$ dell'entità combinata genera un maggiore scudo fiscale:
+> $$W_{TS} = \Delta D \cdot t_c$$
 >
 > 3. **Valore della modifica del costo del capitale**
-> $$V_{c.cap.} = \frac{FCFO_A+FCFO_B}{r_{0,A+B}} - \left(\frac{FCFO_A}{r_{0,A}}+\frac{FCFO_B}{r_{0,B}}\right)$$
+> È la differenza tra il valore unlevered dei flussi stand alone $FCFO_A + FCFO_B$ attualizzati al tasso dell'entità combinata e la somma dei valori unlevered stand alone, ciascuno attualizzato al tasso della propria impresa:
+> $$W_{c.cap.} = \frac{FCFO_A+FCFO_B}{r_{0,A+B}} - \left(\frac{FCFO_A}{r_{0,A}}+\frac{FCFO_B}{r_{0,B}}\right)$$
 >
-> Il valore complessivo delle sinergie è dato dalla somma delle tre componenti:
-> $$\text{VALORE SINERGIE} = V_{Flussi} + V_{TS} + V_{c.cap.}$$
+> Il valore delle sinergie è la somma dei tre strati:
+> $$W_D = W_{flussi} + W_{TS} + W_{c.cap.}$$
+
+Il modello non include i benefici privati trattati nel capitolo sul [[FSTR 11 Le Sinergie|valore di una quota di controllo]]. Si pone quindi $W_{PB} = W_{PB^*} = 0$, da cui $W_{DIV} = W_D$ e $W_{IND} = 0$, e il valore di acquisizione di una quota $\alpha$ del capitale è $\alpha\,(W_S + W_D)$. L'esempio che segue riguarda l'acquisto dell'intero capitale ($\alpha = 1$).
+
+> [!note] Dimostrazione
+> Il valore delle sinergie è la differenza tra il valore levered dell'entità combinata e la somma dei valori levered stand alone di A e di B. Con $\Delta FCFO = \Delta FCFO_A + \Delta FCFO_B$ e $W_L = W_U + D\,t_c$:
 >
-> La freccia "DIFFICOLTÀ' STIMA" che accompagna lo schema indica che la stima diventa progressivamente più complessa man mano che si passa dal valore dei flussi incrementali al valore del debito incrementale, fino al valore della modifica del costo del capitale.
+> $$W_{L,A+B} = \frac{FCFO_A+FCFO_B+\Delta FCFO}{r_{0,A+B}} + (D_A+D_B+\Delta D)\,t_c$$
+>
+> $$W_{L,A}+W_{L,B} = \frac{FCFO_A}{r_{0,A}}+\frac{FCFO_B}{r_{0,B}} + (D_A+D_B)\,t_c$$
+>
+> Nella differenza i termini $(D_A+D_B)\,t_c$ si elidono. Resta il termine $\Delta FCFO / r_{0,A+B}$, che è $W_{flussi}$, il termine $\Delta D\,t_c$, che è $W_{TS}$, e la differenza tra $(FCFO_A+FCFO_B)/r_{0,A+B}$ e $FCFO_A/r_{0,A}+FCFO_B/r_{0,B}$, che è $W_{c.cap.}$. Quindi
+>
+> $$W_{L,A+B}-(W_{L,A}+W_{L,B}) = W_{flussi}+W_{TS}+W_{c.cap.} = W_D$$
 
-*(slide 3)*
-
-## Esempio numerico: valutazione stand-alone e levered di A e B
+## Esempio: valutazione stand alone di A e B
 
 > [!example] Esempio
-> Si considerino due imprese: l'impresa acquirente (A) e l'impresa-target (B).
+> Si considerano l'impresa acquirente (A) e l'impresa target (B). I valori delle ultime righe si ricavano dalle precedenti: $W_U = FCFO/r_0$, $W_L = W_U + D \times t_c$, $W_E = W_L - D$.
 >
-> | | Impresa acquirente (A) | Impresa-*target* (B) |
+> | | Impresa acquirente (A) | Impresa target (B) |
 > |---|---|---|
-> | A) Flusso di cassa operativo al netto delle imposte (FCFO) | 4 000 | 3 000 |
-> | B) Costo del capitale unlevered: ($K_{eu}$) | 20% | 15% |
-> | C) Valore unlevered: $W_U=(a/b)$ | 20 000 | 20 000 |
-> | D) Indebitamento finanziario netto: (D) | 10 000 | 8 000 |
-> | E) Aliquota dell'imposta societaria | 37% | 37% |
-> | F) Valore levered: $W_L=(c+d\times e)$ | 23 700 | 22 960 |
-> | G) Valore dell'equity: $W_E$ | 13 700 | 14 960 |
+> | Flusso di cassa operativo al netto delle imposte (FCFO) | 4.000 | 3.000 |
+> | Costo del capitale unlevered ($r_0 = K_{eu}$) | 20% | 15% |
+> | Valore unlevered $W_U$ | 20.000 | 20.000 |
+> | Indebitamento finanziario netto ($D$) | 10.000 | 8.000 |
+> | Aliquota dell'imposta societaria ($t_c$) | 37% | 37% |
+> | Valore levered $W_L$ | 23.700 | 22.960 |
+> | Valore dell'equity $W_E$ | 13.700 | 14.960 |
 >
-> È stato calcolato che gli impatti dell'acquisizione saranno:
+> Per A: $W_U = 4.000/0{,}20 = 20.000$, $W_L = 20.000 + 10.000 \times 0{,}37 = 23.700$, $W_E = 23.700 - 10.000 = 13.700$. Per B: $W_U = 3.000/0{,}15 = 20.000$, $W_L = 20.000 + 8.000 \times 0{,}37 = 22.960$, $W_E = 22.960 - 8.000 = 14.960$. Il valore stand alone del target è il valore del suo equity, $W_S = 14.960$.
 >
-> $$\Delta FCFO = 1.000 \qquad \Delta Debito = 6.000 \qquad R_0 = K_{eu} = 16\%$$
-
-*(slide 4)*
+> Le stime degli effetti dell'acquisizione sono:
+>
+> $$\Delta FCFO = 1.000 \qquad \Delta D = 6.000 \qquad r_{0,A+B} = K_{eu} = 16\%$$
 
 ## La determinazione del valore di acquisizione
 
 > [!example] Esempio
-> A partire dai dati dell'esempio precedente si scompone il valore di acquisizione nelle sue quattro componenti:
+> Con i dati precedenti il valore di acquisizione si ottiene sommando al valore stand alone del target i tre strati delle sinergie.
 >
-> **Valore riferibile alla differenza di struttura finanziaria** (maggiori scudi fiscali generati dal debito incrementale):
-> $$W_{diff.\ strutt.\ finanz.} = 6\,000 \times 0{,}37 = 2\,220$$
+> Flussi operativi incrementali:
 >
-> **Valore riferibile alla riduzione del rischio**:
-> $$W_{diff.\ rischio} = \frac{3\,000+4\,000}{0{,}16} - \frac{3\,000}{0{,}15} - \frac{4\,000}{0{,}20} = 3\,750$$
+> $$W_{flussi} = \frac{1.000}{0{,}16} = 6.250$$
 >
-> **Valore dei flussi operativi incrementali**:
-> $$W_{diff.\ flussi} = \frac{1\,000}{0{,}16} = 6\,250$$
+> Riduzione del rischio, cioè modifica del costo del capitale:
 >
-> **Valore stand alone dell'impresa-target**: 14 960
+> $$W_{c.cap.} = \frac{3.000+4.000}{0{,}16} - \frac{3.000}{0{,}15} - \frac{4.000}{0{,}20} = 43.750 - 20.000 - 20.000 = 3.750$$
 >
-> Sommando le quattro componenti si ottiene il valore di acquisizione:
-> $$2\,220 + 3\,750 + 6\,250 + 14\,960 = 27.180 = \text{TOTALE} = \text{valore di acquisizione}$$
-
-*(slide 5)*
+> La somma dei valori unlevered stand alone, 40.000, corrisponde a un tasso implicito del 17,5% sui flussi complessivi di 7.000. Attualizzati al 16% gli stessi flussi valgono 43.750.
+>
+> Maggiori scudi fiscali, generati dal debito incrementale (differenza di struttura finanziaria):
+>
+> $$W_{TS} = 6.000 \times 0{,}37 = 2.220$$
+>
+> Il valore delle sinergie e il valore di acquisizione sono:
+>
+> $$W_D = 6.250 + 3.750 + 2.220 = 12.220$$
+>
+> $$W_{acq} = W_S + W_D = 14.960 + 12.220 = 27.180$$
+>
+> | Strato | Calcolo | Valore | Valore cumulato |
+> |---|---|---|---|
+> | Valore stand alone del target | $W_E$ di B | 14.960 | 14.960 |
+> | Flussi operativi incrementali | $1.000/0{,}16$ | 6.250 | 21.210 |
+> | Riduzione del rischio | $7.000/0{,}16 - 3.000/0{,}15 - 4.000/0{,}20$ | 3.750 | 24.960 |
+> | Maggiori scudi fiscali | $6.000 \times 0{,}37$ | 2.220 | 27.180 |
+>
+> Verifica con la dimostrazione precedente: il valore levered dell'entità combinata è $(7.000+1.000)/0{,}16 + (10.000+8.000+6.000)\times 0{,}37 = 50.000 + 8.880 = 58.880$. Sottraendo la somma dei valori levered stand alone, $23.700 + 22.960 = 46.660$, si ottiene 12.220.
 
 ## Valore stand alone e valore di acquisizione: il premio massimo
 
-**Figura** — Schema a blocchi: alla base il blocco grigio "EV del target" (= "Valore stand alone"); sopra di esso si impilano tre blocchi che rappresentano rispettivamente le sinergie fiscali, le sinergie operative e le sinergie finanziarie, fino a un limite segnato da un segnale di stop con l'etichetta "Premio massimo!"; a fianco un blocco giallo "Premio per l'acquisizione" copre lo spazio tra il valore stand alone e il livello del premio massimo.
+Il valore stand alone del target è la base del valore di acquisizione. Il premio per l'acquisizione è ciò che l'acquirente riconosce in più rispetto a tale base, e trova copertura solo nelle sinergie. L'acquirente non dovrebbe quindi pagare un premio superiore al valore complessivo delle sinergie attese, fiscali, operative e finanziarie. Il premio massimo coincide con $W_D$ e il prezzo massimo con il valore di acquisizione:
 
-La figura mostra che l'acquirente non dovrebbe mai pagare, come premio sopra il valore stand-alone (EV) del target, più del valore complessivo delle sinergie attese (fiscali + operative + finanziarie). Il "premio massimo" pagabile coincide quindi con la somma di EV del target e valore totale delle sinergie: oltre quel limite l'acquisizione distrugge valore per gli azionisti dell'acquirente.
+$$\text{premio}_{MAX} = W_D \qquad P_{MAX} = W_S + W_D = W_{acq}$$
 
-*(slide 6)*
+![](assets/fstr-12/fig01.png)
+
+**Figura 1** — Premio massimo nell'acquisizione: sopra il valore stand alone del target, il premio per l'acquisizione arriva al massimo alla sommità dei tre gradini delle sinergie fiscali, operative e finanziarie, cioè al valore complessivo delle sinergie.
+
+Nell'esempio numerico il premio massimo è 12.220 e il prezzo massimo per l'equity del target è 27.180. Nello schema il valore stand alone del target è il valore dell'equity, pari a 14.960. Sommando il debito netto del target, 8.000, il limite in termini di valore dell'impresa è 35.180, pari a 22.960 più 12.220.
 
 ## NPV di investimenti e acquisizioni
 
-> [!abstract] Definizione
-> Il problema di valutazione è sempre lo stesso: verificare l'effetto dell'iniziativa (un investimento o un'acquisizione) sul valore d'impresa. Si può quindi definire il NPV creato da un investimento o da un'acquisizione come segue:
->
-> $$NPV(\text{investimento}) = V.A.\ \text{lordo} - \text{Inv. Iniziale}$$
->
-> $$NPV(\text{acquisizione}) = W_{\text{acquisizione}} - P_{\text{pagato}}$$
->
-> dove $W_{acquisizione}$ è il valore complessivo generato dall'acquisizione (comprensivo delle sinergie, secondo il modello di stratificazione del valore visto in precedenza) e $P_{pagato}$ è il prezzo effettivamente corrisposto per l'operazione.
+Il problema di valutazione è lo stesso per un investimento e per un'acquisizione: verificare l'effetto dell'iniziativa sul valore dell'impresa. Il valore attuale netto (NPV) si definisce perciò in modo analogo nei due casi.
 
-*(slide 7)*
+> [!abstract] Definizione
+> $$NPV(\text{investimento}) = \text{V.A. lordo} - \text{Inv. iniziale}$$
+>
+> $$NPV(\text{acquisizione}) = W_{acq} - P$$
+>
+> Il valore attuale lordo è il valore attuale dei flussi dell'investimento prima di sottrarre l'esborso iniziale. $W_{acq} = W_S + W_D$ è il valore complessivo dell'acquisizione, comprensivo delle sinergie stimate con il modello di stratificazione, e $P$ è il prezzo pagato.
+
+Poiché $W_{acq} = W_S + W_D$, il NPV dell'acquisizione si riscrive come
+
+$$NPV(\text{acquisizione}) = W_D - (P - W_S)$$
+
+La differenza $P - W_S$ è il premio pagato sul valore stand alone, cioè il guadagno degli azionisti del target. Il valore delle sinergie si ripartisce quindi tra il venditore, che incassa il premio, e l'acquirente, che trattiene il resto. La somma dei due guadagni è $W_D$ qualunque sia il prezzo, che ne determina solo la ripartizione.
+
+L'acquisizione crea valore per l'acquirente se $P < W_{acq}$, cioè se il premio è inferiore al valore delle sinergie. Al prezzo $P = W_{acq}$ il NPV è nullo e le sinergie passano per intero al venditore; oltre questo prezzo l'acquisizione distrugge valore per gli azionisti dell'acquirente. Nell'esempio il NPV è positivo per ogni prezzo inferiore a 27.180.
 
 ## Il rapporto di concambio: RC massimo e RC minimo
 
+Si considera la fusione tra società indipendenti, realizzata per incorporazione di B in A.
+
 > [!note] Dimostrazione
-> Si ipotizza un'unione per incorporazione dell'impresa B nell'impresa A.
+> **Definizione.** Il rapporto di concambio (RC) è il numero di azioni dell'incorporante (A) ottenute per ogni azione dell'incorporata (B). È un prezzo negoziato tra le parti. Gli azionisti di B ricevono $N_B\,RC$ nuove azioni di A, e dopo la fusione il numero di azioni in circolazione è $N_A + N_B\,RC$.
 >
-> **Definizione.** Il rapporto di concambio (RC) è il numero di azioni dell'incorporante (A) ottenuto per ogni azione dell'incorporata (B); si tratta di un prezzo negoziato tra le parti.
+> Si indicano con $N_A$ e $N_B$ il numero di azioni in circolazione di A e B, con $W_A$ e $W_B$ il valore stand alone del capitale degli azionisti di A e di B e con $W_{A+B}$ il valore del capitale dell'entità combinata dopo la fusione.
 >
 > **RC massimo, per gli azionisti dell'incorporante.**
-> Condizione: la quota percentuale di ricchezza complessiva post-fusione spettante agli azionisti di A deve restare almeno pari alla loro ricchezza pre-fusione $W_A$, cioè $W\ complessivo\% = W_A$:
+> Gli azionisti di A detengono la frazione $N_A/(N_A+N_B\,RC)$ di $W_{A+B}$. Al limite la loro ricchezza dopo la fusione eguaglia quella precedente, $W_A$:
+>
 > $$W_{A+B}\,\frac{N_A}{N_A+N_B\,RC_{MAX}} = W_A$$
 >
-> Da cui, risolvendo per $RC_{MAX}$:
+> Moltiplicando per il denominatore si ha $W_{A+B}N_A = W_A N_A + W_A N_B\,RC_{MAX}$, da cui
+>
 > $$RC_{MAX} = \frac{N_A}{N_B}\left(\frac{W_{A+B}-W_A}{W_A}\right)$$
 >
-> che si può riscrivere come:
+> che si può riscrivere come
+>
 > $$RC_{MAX} = \frac{N_A}{N_B}\frac{W_{A+B}}{W_A} - \frac{N_A}{N_B} = \frac{W_{A+B}}{N_B\dfrac{W_A}{N_A}} - \frac{N_A}{N_B}$$
 >
 > **RC minimo, per gli azionisti dell'incorporata.**
-> Condizione analoga: la quota percentuale di ricchezza complessiva post-fusione spettante agli azionisti di B deve restare almeno pari a $W_B$, cioè $W\ complessivo\% = W_B$:
+> Gli azionisti di B detengono la frazione $N_B\,RC/(N_A+N_B\,RC)$ di $W_{A+B}$. Al limite la loro ricchezza eguaglia $W_B$:
+>
 > $$W_{A+B}\,\frac{N_B\,RC_{MIN}}{N_A+N_B\,RC_{MIN}} = W_B$$
 >
-> Da cui:
+> Moltiplicando per il denominatore si ha $W_{A+B}N_B\,RC_{MIN} = W_B N_A + W_B N_B\,RC_{MIN}$, da cui
+>
 > $$RC_{MIN} = \frac{W_B\,N_A}{N_B(W_{A+B}-W_B)}$$
 >
-> che si può riscrivere come:
-> $$RC_{MIN} = \frac{\dfrac{W_B}{N_B}\,N_A}{W_{A+B}-W_B}$$
+> che si può riscrivere come
 >
-> Dove $N_A$, $N_B$ sono il numero di azioni in circolazione di A e B, e $W_A$, $W_B$, $W_{A+B}$ sono rispettivamente il valore stand-alone di A, il valore stand-alone di B e il valore dell'entità combinata post-fusione.
+> $$RC_{MIN} = \frac{\dfrac{W_B}{N_B}\,N_A}{W_{A+B}-W_B}$$
 
-*(slide 8–9)*
+Un RC più alto aumenta la frazione del capitale combinato spettante agli azionisti di B e riduce quella degli azionisti di A. Oltre $RC_{MAX}$ gli azionisti di A scendono sotto $W_A$; sotto $RC_{MIN}$ gli azionisti di B ricevono meno di $W_B$. Il rapporto negoziato cade quindi tra $RC_{MIN}$ e $RC_{MAX}$.
+
+L'intervallo esiste solo se $W_{A+B} \ge W_A + W_B$. Poiché il valore combinato comprende le sinergie, $W_{A+B} = W_A + W_B + W_D$, la condizione equivale a $W_D \ge 0$. Agli estremi l'intero $W_D$ va a una sola delle due parti: con $RC_{MAX}$ gli azionisti di A hanno esattamente $W_A$ e quelli di B hanno $W_B + W_D$; con $RC_{MIN}$ vale il contrario. Il rapporto negoziato all'interno dell'intervallo ripartisce $W_D$ tra le due compagini.
 
 ## Validi motivi per una fusione
 
-Le principali motivazioni economicamente valide per una fusione sono:
+Le motivazioni economicamente valide per una fusione sono quattro.
 
-1. **Economie di scala**
-   - Le imprese più grandi possono ridurre i costi medi unitari aumentando le quantità prodotte e distribuendo i costi fissi su un volume maggiore di produzione (riduzione delle inefficienze operative e amministrative).
+Le **economie di scala** abbassano i costi medi unitari: un'impresa più grande aumenta le quantità prodotte e ripartisce i costi fissi su un volume di produzione maggiore, con minori inefficienze operative e amministrative.
 
-2. **Economie di integrazione verticale**
-   - Riducono i costi aumentando l'efficienza.
-   - Possono essere verso l'alto (fornitura) o verso il basso (cliente finale).
-   - Il controllo dei fornitori può ridurre i costi.
-   - Soluzione migliore quando due attività sono strettamente collegate.
+Le **economie di integrazione verticale** riducono i costi aumentando l'efficienza. L'integrazione può essere a monte, sul lato della fornitura, oppure a valle, verso il cliente finale; il controllo dei fornitori può ridurre i costi. È la soluzione migliore quando due attività sono strettamente collegate.
 
-3. **Combinazione di risorse complementari**
-   - La fusione può completare ciò che manca alle imprese coinvolte (ad es. un'impresa con un prodotto esclusivo ma scarse capacità distributive, e un'altra che ha la rete distributiva ma non il prodotto).
-   - Le piccole imprese possono beneficiare dell'organizzazione delle grandi imprese già esistenti.
+La **combinazione di risorse complementari** consente alla fusione di completare ciò che manca alle imprese coinvolte. Ad esempio un'impresa ha un prodotto esclusivo ma scarse capacità distributive, mentre l'altra ha la rete distributiva ma non il prodotto. Le piccole imprese possono inoltre beneficiare dell'organizzazione di quelle grandi già esistenti.
 
-4. **Eccesso di fondi**
-   - Nel caso di imprese mature (*cash cows*), con pochi progetti a VAN positivo, le acquisizioni (spesso per contante) possono essere una valida alternativa all'impiego di fondi all'interno dell'impresa.
-
-*(slide 10–11)*
+Un quarto motivo è l'**eccesso di fondi**. Le imprese mature (*cash cows*) hanno pochi progetti a valore attuale netto positivo, e per esse le acquisizioni, spesso pagate per contante, sono una valida alternativa all'impiego dei fondi all'interno dell'impresa.
 
 ## Ragioni dubbie per una fusione: la diversificazione
 
-Tra le ragioni comunemente addotte per una fusione, ma economicamente dubbie, vi è la **diversificazione**:
-
-- La diversificazione in sé è positiva.
-- Tuttavia è più facile da realizzare per l'azionista (individuo), che può diversificare autonomamente il proprio portafoglio, piuttosto che per l'impresa.
-- Gli investitori non pagano un premio per le aziende diversificate: si osserva anzi il cosiddetto *discount* di gruppo.
-
-*(slide 12)*
+Tra le ragioni addotte per una fusione ma economicamente dubbie rientra la **diversificazione**. La diversificazione in sé è positiva, ma è più facile per l'azionista, che può diversificare da solo il proprio portafoglio, che per l'impresa. Gli investitori non pagano un premio per le aziende diversificate: si osserva anzi il cosiddetto *discount* di gruppo.

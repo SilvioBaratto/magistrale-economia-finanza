@@ -152,42 +152,6 @@ Si può dunque rispondere con una formula: la società nasce nel registro delle 
 > Vale lo stesso schema per una società già esistente che si trasformi in banca?
 > → Sì, mutatis mutandis: la domanda è inviata dopo l'approvazione della delibera di modifica dell'atto costitutivo e prima che se ne chieda l'iscrizione nel registro delle imprese.
 
-## D5 — Il previgente sistema delle tre autorizzazioni e le ragioni del suo superamento
-
-> [!question] Domanda
-> Prima del Testo unico, come era disciplinato l'accesso al mercato bancario? Mi descriva il sistema della legge bancaria del 1936 e mi spieghi perché è stato abbandonato.
-
-> [!success] Attacco
-> La legge bancaria del 1936 disciplinava l'accesso all'art. 28 e prevedeva **tre distinte autorizzazioni**: l'autorizzazione alla costituzione della banca, l'autorizzazione all'inizio delle operazioni e l'autorizzazione all'apertura di sportelli. Il rilascio era rimesso a una valutazione ampiamente discrezionale della Banca d'Italia, ancorata al criterio delle «esigenze economiche del mercato».
-
-Il meccanismo funzionava così. Prima della stipula dell'atto costitutivo occorreva ottenere dalla Banca d'Italia l'autorizzazione alla costituzione della società bancaria; dopo la stipula, e prima dell'iscrizione nel registro delle imprese, occorreva l'autorizzazione all'inizio delle operazioni. Le due autorizzazioni servivano ad assicurare la coerenza fra l'atto costitutivo effettivamente stipulato e quanto dichiarato nella richiesta iniziale. Poiché per operare occorreva almeno uno sportello, era infine richiesta una terza autorizzazione per l'apertura della dipendenza.
-
-Il tratto qualificante era il cosiddetto **principio di discrezionalità**: nell'esercizio della vigilanza strutturale la Banca d'Italia poteva negare o rilasciare l'autorizzazione valutando se il mercato «avesse bisogno» di una nuova banca, sotto l'alta vigilanza del CICR. Per decenni l'autorizzazione alla costituzione di nuove banche è stata sistematicamente negata. Questo assetto alimentava anche un dibattito teorico: si trattava di un'autorizzazione in senso tecnico o di una concessione? Nella concessione lo Stato attribuisce ad altri l'esercizio di un diritto proprio; nell'autorizzazione il privato è già titolare del diritto e l'amministrazione si limita a verificare la sussistenza delle condizioni per esercitarlo. La questione non era accademica: se si fosse trattato di concessione, il richiedente non avrebbe avuto alcuna posizione soggettiva da far valere di fronte al diniego; qualificandola come autorizzazione, invece, il diniego deve essere motivato e resta sindacabile. È il TUB a sciogliere il dubbio, ancorando il rilascio a condizioni tassative e sottraendo all'autorità il giudizio sull'opportunità economica dell'ingresso.
-
-La rottura viene dal diritto comunitario. La **prima direttiva banche del 1977** (dir. 77/780/CEE), recepita in Italia con il d.P.R. 27 giugno 1985, n. 350, ha per la prima volta condizionato il rilascio dell'autorizzazione al possesso di requisiti e condizioni **oggettivi**, sottraendo alla vigilanza il potere di misurare l'opportunità economica dell'ingresso. Il TUB ha portato a compimento quel passaggio, concentrando tutto in un'unica autorizzazione all'attività bancaria.
-
-La ragione del superamento è dunque duplice. Sul piano dei principi, un regime discrezionale di accesso è incompatibile con la libertà di stabilimento e con la costruzione del mercato unico dei servizi bancari. Sul piano funzionale, la scelta di quante banche debbano esistere non spetta all'autorità di vigilanza ma al mercato: all'autorità spetta verificare che chi entra sia in condizione di stare sul mercato in modo sano e prudente.
-
-> [!tip] Fonti da citare
-> - art. 28 della legge bancaria del 1936 — sistema delle tre autorizzazioni (come ricostruito negli appunti del corso)
-> - prima direttiva banche 1977 (dir. 77/780/CEE), recepita con d.P.R. 27 giugno 1985, n. 350 — introduzione di condizioni oggettive
-> - art. 161, comma 2, TUB — elenco delle norme abrogate, che cita testualmente il d.P.R. 27 giugno 1985, n. 350
-> - art. 14, comma 1, TUB — autorizzazione unica e condizioni tassative
-> - art. 5 TUB — finalità della vigilanza, che sostituisce il criterio delle «esigenze economiche del mercato»
-
-> [!warning] Attenzione
-> La data del recepimento è essa stessa argomento: il d.P.R. n. 350 è del 27 giugno 1985, non del 1980, e arriva otto anni dopo la direttiva, al termine di una procedura d'infrazione. Il dato si verifica sul testo del TUB, che all'art. 161, comma 2, elenca fra le norme abrogate «il decreto del Presidente della Repubblica 27 giugno 1985, n. 350». E non si dica che oggi la Banca d'Italia «non ha più alcuna discrezionalità»: la discrezionalità tecnica sopravvive nella valutazione del programma di attività e della qualità dei partecipanti. Ciò che è scomparso è la discrezionalità **di opportunità economica** sul se il mercato abbia bisogno di un nuovo operatore.
-
-> [!note] Rilancio
-> Quante autorizzazioni servono oggi per aprire uno sportello?
-> → Nessuna: dal 2007 l'apertura di succursali in Italia è sostanzialmente liberalizzata; residua il potere della Banca d'Italia di vietarla ex art. 15, comma 1, TUB nei confronti di soggetti meno significativi.
->
-> Che cosa resta del CICR in questa materia?
-> → L'alta vigilanza e il potere di deliberazione in materia creditizia, ma non più l'indirizzo sull'ingresso di nuovi operatori.
->
-> La qualificazione come autorizzazione ha conseguenze pratiche?
-> → Sì: implica che esista una posizione soggettiva del richiedente tutelabile, e che il diniego debba essere motivato e sia sindacabile dal giudice.
-
 ## D6 — L'art. 14, comma 1: natura del provvedimento e condizioni
 
 > [!question] Domanda
@@ -1409,7 +1373,7 @@ Il comma 1 rinvia agli artt. 15, commi 01 e 1, e 16, comma 1, cioè al regime de
 ## D38 — L'attività bancaria fuori sede
 
 > [!question] Domanda
-> Le banche possono operare al di fuori delle proprie succursali? Mi illustri la disciplina dell'attività fuori sede e la sua evoluzione.
+> Le banche possono operare al di fuori delle proprie succursali? Mi illustri la disciplina dell'attività fuori sede.
 
 > [!success] Attacco
 > Sì, ma entro limiti precisi. Le Istruzioni di vigilanza definiscono l'attività fuori sede come l'attività svolta dalla banca in luogo diverso dalla sede legale o dalle proprie succursali, e la disciplinano essenzialmente a tutela del risparmiatore: proprio per questo la qualificano come norma **di interesse generale**, con la conseguenza che vi si attengono anche le banche estere che intendano operare in Italia con proprie succursali o in regime di libera prestazione di servizi.

@@ -40,37 +40,6 @@ A questi due elementi tradizionali la riforma del 2016 ha aggiunto un terzo trat
 > Che cosa resta, allora, della cooperazione nelle banche popolari?
 > → Essenzialmente il voto capitario (art. 30, comma 1), il limite di possesso azionario dell'1 per cento (art. 30, comma 2) e i vincoli alla destinazione degli utili (art. 32).
 
-## D2 — Dalle casse rurali e artigiane alle banche di credito cooperativo
-
-> [!question] Domanda
-> Ci dia qualche cenno sull'evoluzione storica delle banche di credito cooperativo: da dove nascono e come si è arrivati alla denominazione attuale?
-
-> [!success] Attacco
-> Le banche di credito cooperativo nascono nel XIX secolo come **casse rurali e artigiane**, con lo scopo di sostenere agricoltori e artigiani, cioè le categorie più esposte al fenomeno dell'usura e più difficilmente servite dal credito ordinario. Il nome attuale è recente: risale alla riforma del 1992 attuata con il d.lgs. 14 dicembre 1992, n. 481, in vigore dal 1° gennaio 1993, che ha sostituito alla denominazione di casse rurali e artigiane quella di banche di credito cooperativo; il TUB, l'anno successivo, l'ha recepita.
-
-L'origine della categoria è quella del credito cooperativo di matrice ottocentesca: piccole banche radicate in un singolo comune o in una valle, che raccoglievano il risparmio dei soci per prestarlo ai soci stessi, con una struttura del capitale volutamente frammentata e un principio di voto per testa che rendeva la partecipazione indipendente dalla ricchezza del singolo. Gli appunti del corso ricordano che la più antica in Italia è quella veneta di Loreggia. La forma societaria originaria era quella della cooperativa, in alcuni casi con responsabilità illimitata dei soci: un profilo che l'art. 33, comma 1, TUB ha definitivamente abbandonato, imponendo la forma di società cooperativa per azioni a responsabilità limitata.
-
-Il passaggio decisivo è legato all'apertura del mercato bancario europeo. Il recepimento della seconda direttiva banche, con il principio dell'autorizzazione unica e del mutuo riconoscimento, ha reso insostenibile un assetto in cui banche di dimensioni minime e con vincoli operativi rigidissimi si trovavano a competere con intermediari italiani e stranieri di ben altra scala. La riforma del 1992 — il d.lgs. 14 dicembre 1992, n. 481, in vigore dal 1° gennaio 1993 — ha così sostituito alla denominazione di casse rurali e artigiane quella attuale di banche di credito cooperativo; l'anno successivo il Testo unico bancario l'ha recepita, consentendo però, all'art. 150, comma 1, alle banche costituite anteriormente al 1° gennaio 1993 di mantenere l'originaria denominazione purché integrata dall'espressione «credito cooperativo».
-
-La traccia normativa di questo passaggio è ancora leggibile nell'art. 150 TUB, che è la disposizione transitoria dedicata proprio alla categoria: il comma 1 consente alle banche di credito cooperativo costituite anteriormente al 1° gennaio 1993 di mantenere l'originaria denominazione purché integrata dall'espressione «credito cooperativo»; il comma 2 fissava al 1° gennaio 1997 il termine per uniformarsi agli artt. 33, comma 1, 34, commi 1 e 2, e 35, comma 2; il comma 3 esonerava dall'adeguamento al valore nominale minimo delle azioni le banche costituite prima del 22 febbraio 1992. Si tratta di norme oggi esaurite nella loro funzione, ma utili all'orale perché dimostrano che il legislatore del 1993 stava riordinando un ceto bancario preesistente, non creandone uno nuovo.
-
-La reazione della categoria alla pressione competitiva è stata, per un quarto di secolo, l'associazionismo volontario: strutture consortili, federazioni locali e nazionali, sistemi di garanzia della categoria, società strumentali comuni. È esattamente questa la linea che il d.l. 14 febbraio 2016, n. 18, convertito con modificazioni dalla legge 8 aprile 2016, n. 49, ha reso obbligatoria e ha irrigidito nella forma del gruppo bancario cooperativo.
-
-> [!tip] Fonti da citare
-> - art. 150, commi 1, 2, 3 e 4, TUB — disposizioni transitorie sulle banche di credito cooperativo e richiamo al d.lgs. n. 481/1992
-> - d.lgs. 14 dicembre 1992, n. 481 — riforma del 1992 e nuova denominazione della categoria
-> - art. 33, comma 1, TUB — forma di società cooperativa per azioni a responsabilità limitata
-> - d.l. 14 febbraio 2016, n. 18, conv. con modif. dalla l. 8 aprile 2016, n. 49 — riforma del credito cooperativo
-
-> [!warning] Attenzione
-> La sequenza corretta è «casse rurali e artigiane — banche di credito cooperativo»: il cambio di denominazione è del 1992 (d.lgs. 14 dicembre 1992, n. 481, in vigore dal 1° gennaio 1993) e il TUB si è limitato a recepirlo, come conferma l'art. 150, comma 1; non esiste un passaggio intermedio per «casse di credito cooperativo». Gli appunti del corso riferiscono invece una sequenza a tre tappe, con un passaggio per le «casse di credito cooperativo»: è proprio il punto su cui conviene citare l'art. 150, comma 1. Sui nomi e sulle date della singola cassa più antica conviene essere prudenti: la notizia su Loreggia proviene dagli appunti di lezione e non da una fonte normativa.
-
-> [!note] Rilancio
-> Perché la responsabilità illimitata è stata abbandonata?
-> → Perché incompatibile con l'esigenza di certezza del patrimonio di vigilanza: i fondi propri devono essere quantificabili ex ante, e la garanzia personale dei soci non è computabile come capitale.
-> Il localismo è compatibile con la libertà di stabilimento europea?
-> → È il punto di frizione più evidente della categoria: una banca autorizzata può operare in tutta l'Unione, ma la banca di credito cooperativo si autolimita per statuto. La conciliazione avviene sul piano statutario e regolamentare, non su quello della licenza.
-
 ## D3 — L'art. 33 TUB: forma giuridica, denominazione, azioni
 
 > [!question] Domanda
@@ -1103,8 +1072,8 @@ L'art. 150-bis non si limita però a sottrarre. Il comma 4 reintroduce in forma 
 > [!note] Rilancio
 > L'elenco dettato per le banche popolari è lo stesso?
 > → No, e il confronto è illuminante. Il comma 2 esclude per le popolari anche l'art. 2512 c.c., coerentemente con il fatto che esse non sono cooperative a mutualità prevalente, nonché l'intero art. 2514, gli artt. 2534 e 2535, secondo comma, primo periodo, e l'art. 2530 anche nel primo comma. Il comma 2-bis aggiunge per le sole popolari una regola sulle deleghe: in deroga all'art. 2539, primo comma, c.c., lo statuto fissa il numero massimo di deleghe conferibili a un socio, che non può essere inferiore a dieci né superiore a venti.
-> Perché il legislatore del 2004 ha sentito il bisogno di questa norma?
-> → Perché la riforma del diritto societario del 2003 aveva riscritto il Titolo VI del Libro V del codice civile senza coordinarlo con la disciplina speciale delle banche cooperative: l'art. 150-bis è la norma di raccordo che rende esplicito che cosa del nuovo diritto comune delle cooperative valga per le banche e che cosa no.
+> Perché serve una norma di raccordo come l'art. 150-bis?
+> → Perché il diritto comune delle cooperative (Titolo VI del Libro V del codice civile) non è coordinato con la disciplina speciale delle banche cooperative: l'art. 150-bis rende esplicito che cosa di quel diritto comune valga per le banche e che cosa no.
 
 ## D36 — La banca cooperativa fra vigilanza bancaria e controlli sulle cooperative
 

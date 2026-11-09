@@ -10,7 +10,6 @@ didascalie.  Nessuna serie simulata.
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 import numpy as np, econstyle as es
-from scipy import stats
 es.use()
 OUT = pathlib.Path(__file__).resolve().parent
 
@@ -61,8 +60,30 @@ PACF_ECM = [0.390, 0.240, -0.030, 0.100, -0.020, 0.030, 0.130, -0.160, -0.005,
 BAND = 1.96 / np.sqrt(T_FULL)
 
 
-def ljung_box(rho, T, j):
-    return T * (T + 2) * sum(r ** 2 / (T - i - 1) for i, r in enumerate(rho[:j]))
+def ci_plot(ax, est, lo, hi, *, label, mark, marklab, markcol, xlabel, title, dec=4,
+            markha="center"):
+    """Intervallo al 95% su retta numerica con un solo valore di confronto."""
+    ax.hlines(0, lo, hi, color=es.BLUE, lw=5, alpha=0.5, label=label)
+    for v in (lo, hi):
+        ax.vlines(v, -0.16, 0.16, color=es.BLUE, lw=1.6)
+        ax.annotate(it(v, dec), xy=(v, -0.20), ha="center", va="top", fontsize=8.5,
+                    color=es.BLUE)
+    ax.plot([est], [0], "o", color=es.BLUE, ms=7, zorder=5)
+    ax.annotate("stima " + it(est, dec), xy=(est, 0.20), ha="center", va="bottom",
+                fontsize=9, color=es.BLUE, fontweight="bold")
+    ax.plot([mark], [0], "D", color=markcol, ms=8, zorder=6)
+    ax.annotate(marklab, xy=(mark, -0.62), ha=markha, va="top", fontsize=8.5,
+                color=markcol, fontweight="bold")
+    pad = 0.18 * (hi - lo)
+    ax.set_xlim(min(lo, mark) - pad, max(hi, mark) + pad)
+    ax.set_ylim(-1.15, 0.75)
+    ax.set_yticks([])
+    ax.spines["left"].set_visible(False)
+    ax.grid(axis="y", visible=False)
+    es.commas(ax, "x")
+    ax.set_xlabel(xlabel)
+    ax.set_title(title, loc="left")
+    ax.legend(loc="upper right")
 
 
 def tidy_corrgm(axes, band, legend_kw=None):
@@ -77,103 +98,41 @@ def tidy_corrgm(axes, band, legend_kw=None):
     axes[-1].set_xticks([1, 5, 10, 15, 20])
 
 
-# ============================================================ D1 - eta', IC 95%
+# ============================================================ D1 - età, IC 95%
 def d01():
-    est = 5 * B_AGE
-    se = 5 * SE_AGE
-    lo, hi = est - 1.96 * se, est + 1.96 * se
-    fig, axes = plt.subplots(2, 1, figsize=(6.3, 3.9))
-    es.ci_line(est, lo, hi, h0=-0.10, ax=axes[0], decimals=4,
-               label="IC 95% per $5\\beta_3$",
-               title="a) scala logaritmica: intervallo per $5\\,\\beta_3$",
-               xlabel="variazione di $\\log(\\mathrm{expend})$ per $+5$ anni di eta'")
-    axes[0].plot([np.log(0.90)], [0], "s", color=es.TEAL, ms=6, zorder=7)
-    axes[0].annotate("soglia esatta  log(0,90) = " + it(np.log(0.9)),
-                     xy=(np.log(0.9), 0.58), xytext=(-4, 0), textcoords="offset points",
-                     ha="right", va="center", fontsize=8, color=es.TEAL)
-    axes[0].plot([0.0], [0], "s", color=es.GRAY, ms=6, zorder=7)
-    axes[0].annotate("nessun effetto", xy=(0.0, 0.30), xytext=(6, 0),
-                     textcoords="offset points", ha="left", va="center",
-                     fontsize=8, color=es.GRAY)
-
-    ax = axes[1]
-    plo, phi_ = 100 * (np.exp(lo) - 1), 100 * (np.exp(hi) - 1)
-    pest = 100 * (np.exp(est) - 1)
-    ax.hlines(0, plo, phi_, color=es.BLUE, lw=5, alpha=0.5,
-              label="stesso intervallo, in variazione percentuale esatta")
-    for v in (plo, phi_):
-        ax.vlines(v, -0.16, 0.16, color=es.BLUE, lw=1.6)
-        ax.annotate(it(v, 2) + "%", xy=(v, -0.22), ha="center", va="top",
-                    fontsize=8.5, color=es.BLUE)
-    ax.plot([pest], [0], "o", color=es.BLUE, ms=7, zorder=5)
-    ax.annotate("stima " + it(pest, 2) + "%", xy=(pest, 0.22), ha="center",
-                va="bottom", fontsize=9, color=es.BLUE, fontweight="bold")
-    ax.plot([-10.0], [0], "D", color=es.AMBER, ms=8, zorder=6)
-    ax.annotate("$-10\\%$ ipotizzato\n(nell'intervallo)", xy=(-10.0, -0.26),
-                ha="center", va="top", fontsize=8.5, color=es.AMBER, fontweight="bold")
-    ax.set_xlim(plo - 4, phi_ + 4)
-    ax.set_ylim(-0.95, 0.75)
-    ax.set_yticks([])
-    ax.spines["left"].set_visible(False)
-    ax.grid(axis="y", visible=False)
-    es.commas(ax, "x")
-    ax.set_xlabel("variazione percentuale della spesa attesa")
-    ax.set_title("b) stessa conclusione sulla scala percentuale", loc="left")
-    ax.legend(loc="upper right")
+    lo, hi = B_AGE - 1.96 * SE_AGE, B_AGE + 1.96 * SE_AGE
+    fig, ax = plt.subplots(figsize=(6.3, 2.2))
+    ci_plot(ax, B_AGE, lo, hi, label="IC 95% per $\\beta_3$", mark=-0.02,
+            marklab="$-0{,}02$ (nell'intervallo)", markcol=es.AMBER,
+            xlabel="coefficiente di age", dec=4,
+            title="$5\\beta_3 = -0{,}10$ equivale a $\\beta_3 = -0{,}02$")
     fig.tight_layout()
     es.save(fig, OUT / "d01-eta-intervallo.pdf")
 
 
 # ================================================= D2 - derog, test unilaterale
 def d02():
-    th, se = 2 * B_DEROG, 2 * SE_DEROG
-    t_app = (th - 0.05) / se
-    t_ex = (th - np.log(1.05)) / se
+    t = (B_DEROG - 0.025) / SE_DEROG
     fig, axes = plt.subplots(2, 1, figsize=(6.3, 5.0))
-    es.dist_test("z", stat=t_app, crit=1.64, tail="right", ax=axes[0],
-                 title="a) $H_0:\\ 2\\beta_2 = 0{,}05$ contro $H_1:\\ 2\\beta_2 > 0{,}05$",
-                 statlabel="statistica osservata = " + it(t_app, 3),
-                 critlabel="regione di rifiuto: $z$ > 1,64 (valore critico dato dal testo)")
-    ax = axes[1]
-    lo, hi = th - 1.96 * se, th + 1.96 * se
-    ax.hlines(0, lo, hi, color=es.BLUE, lw=5, alpha=0.5, label="IC 95% per $2\\beta_2$")
-    for v in (lo, hi):
-        ax.vlines(v, -0.16, 0.16, color=es.BLUE, lw=1.6)
-        ax.annotate(it(v), xy=(v, -0.20), ha="center", va="top", fontsize=8.5,
-                    color=es.BLUE)
-    ax.plot([th], [0], "o", color=es.BLUE, ms=7, zorder=5)
-    ax.annotate("stima " + it(th) + "   (+" + it(100 * (np.exp(th) - 1), 2) + "%)",
-                xy=(th, 0.20), ha="center", va="bottom", fontsize=9,
-                color=es.BLUE, fontweight="bold")
-    ax.plot([0.05], [0], "D", color=es.RED, ms=8, zorder=6)
-    ax.plot([np.log(1.05)], [0], "D", color=es.AMBER, ms=8, zorder=7)
-    ax.annotate("soglie del $5\\%$: 0,0500 (approssimata)\n"
-                "e log(1,05) = 0,0488 (esatta)\n"
-                "entrambe fuori dall'intervallo", xy=(0.05, -0.62), ha="left",
-                va="top", fontsize=8.5, color=es.RED, fontweight="bold")
-    ax.set_xlim(-0.02, hi + 0.06)
-    ax.set_ylim(-1.45, 0.75)
-    ax.set_yticks([])
-    ax.spines["left"].set_visible(False)
-    ax.grid(axis="y", visible=False)
-    es.commas(ax, "x")
-    ax.set_xlabel("effetto di due segnalazioni negative su $\\log(\\mathrm{expend})$")
-    ax.set_title("b) le due soglie cadono entrambe fuori dall'intervallo", loc="left")
-    ax.legend(loc="upper right")
+    es.dist_test("z", stat=t, crit=1.64, tail="left", ax=axes[0], xlim=(-9, 6),
+                 title="a) $H_0:\\ \\beta_2 \\geq 0{,}025$ contro $H_1:\\ \\beta_2 < 0{,}025$",
+                 statlabel="statistica osservata = " + it(t, 3),
+                 critlabel="regione di rifiuto: $z$ < $-1{,}64$")
+    lo, hi = B_DEROG - 1.96 * SE_DEROG, B_DEROG + 1.96 * SE_DEROG
+    ci_plot(axes[1], B_DEROG, lo, hi, label="IC 95% per $\\beta_2$", mark=0.025,
+            marklab="$0{,}025$ (a sinistra dell'intervallo)", markcol=es.GREEN,
+            xlabel="coefficiente di derog", dec=4, markha="left",
+            title="b) la soglia sta fuori dall'intervallo, a sinistra")
     fig.tight_layout()
     es.save(fig, OUT / "d02-derog-test.pdf")
 
 
 # =================================================== D3 - dummy titolo di studio
 def d03():
-    fig, axd = plt.subplot_mosaic([["a", "b"], ["c", "c"]], figsize=(6.4, 5.4),
-                                  height_ratios=[1.0, 1.05])
-    ax = axd["a"]
+    fig, ax = plt.subplots(figsize=(6.3, 2.5))
     labs = ["$\\delta_1$  (elementare/media)", "$\\delta_2$  (diploma)"]
-    vals = [D1, D2]
-    ses = [SE_D1, SE_D2]
     ypos = [1, 0]
-    for y, v, s in zip(ypos, vals, ses):
+    for y, v, s in zip(ypos, [D1, D2], [SE_D1, SE_D2]):
         ax.hlines(y, v - 1.96 * s, v + 1.96 * s, color=es.BLUE, lw=4, alpha=0.55)
         ax.plot([v], [y], "o", color=es.BLUE, ms=6)
         ax.annotate(it(v), xy=(v, y + 0.16), ha="center", fontsize=8.5,
@@ -186,31 +145,8 @@ def d03():
     ax.set_ylim(-0.6, 1.7)
     ax.grid(axis="y", visible=False)
     es.commas(ax, "x")
-    ax.set_xlabel("scarto rispetto ai laureati (categoria base)")
-    ax.set_title("a) IC 95% dei due coefficienti dummy", loc="left")
-
-    ax = axd["b"]
-    cats = ["elementare/\nmedia", "diploma", "laurea\n(base)"]
-    rel = [100 * np.exp(D1), 100 * np.exp(D2), 100.0]
-    cols = [es.RED, es.AMBER, es.GREEN]
-    bars = ax.bar(cats, rel, color=cols, alpha=0.85, width=0.62)
-    for b, v in zip(bars, rel):
-        ax.annotate(it(v, 2), xy=(b.get_x() + b.get_width() / 2, v), xytext=(0, 3),
-                    textcoords="offset points", ha="center", fontsize=8.5,
-                    fontweight="bold", color=es.INK)
-    ax.set_ylim(0, 118)
-    ax.set_ylabel("spesa attesa, laureati = 100")
-    es.commas(ax, "y")
-    ax.set_title("b) livelli relativi $e^{\\delta_j}$", loc="left")
-
-    es.dist_test("F", (2, 65), crit=stats.f.ppf(0.95, 2, 65), tail="right",
-                 ax=axd["c"], xlim=(0, 8),
-                 title="c) regione di rifiuto del test proposto  $H_0:\\ \\delta_1 = \\delta_2 = 0$",
-                 critlabel="regione di rifiuto al 5%: $F$ > 3,138")
-    axd["c"].annotate("il testo non riporta la statistica $F$ osservata:\n"
-                      "qui si mostra solo la regola di decisione",
-                      xy=(0.42, 0.52), xycoords="axes fraction", fontsize=8.5,
-                      color=es.GRAY, ha="left")
+    ax.set_xlabel("scarto rispetto ai laureati (categoria omessa)")
+    ax.set_title("IC 95% dei due coefficienti dummy", loc="left")
     fig.tight_layout()
     es.save(fig, OUT / "d03-istruzione.pdf")
 
@@ -219,16 +155,16 @@ def d03():
 def d04():
     fig, axes = plt.subplots(2, 1, figsize=(6.3, 5.2))
     es.dist_test("z", stat=B_SQ / SE_SQ, crit=1.96, tail="two", ax=axes[0],
-                 title="a) la non linearita' si testa su $H_0:\\ \\beta_{sq} = 0$",
+                 title="a) la non linearità si testa su $H_0:\\ \\beta_5 = 0$",
                  statlabel="statistica osservata = " + it(B_SQ / SE_SQ, 3),
                  critlabel="regione di rifiuto: $|z|$ > 1,96")
     _, ax, turn = es.quadratic_effect(B_INC, B_SQ, xmin=0.0, xmax=10.0, ax=axes[1],
                                       varname="income",
                                       title="b) effetto marginale del reddito e punto di svolta",
-                                      ylabel="$\\partial\\,\\log(\\mathrm{expend})/\\partial\\,\\mathrm{income}$")
+                                      ylabel="$\\beta_1 + 2\\beta_5\\,\\mathrm{income}$")
     ax.set_xlabel("income (decine di migliaia di dollari)")
-    ax.annotate("cioe' 57.385 dollari l'anno", xy=(turn, 0),
-                xytext=(10, -26), textcoords="offset points",
+    ax.annotate("cioè 57.385 dollari l'anno", xy=(turn, 0),
+                xytext=(-8, -22), textcoords="offset points", ha="right",
                 fontsize=8.5, color=es.RED)
     fig.tight_layout()
     es.save(fig, OUT / "d04-quadratica.pdf")
@@ -236,49 +172,28 @@ def d04():
 
 # ================================================================== D5 - VIF
 def d05():
-    fig, axes = plt.subplots(1, 2, figsize=(6.4, 3.3), width_ratios=[1.35, 1.0])
-    ax = axes[0]
+    fig, ax = plt.subplots(figsize=(6.3, 3.0))
     names = list(VIF)
-    vals = [VIF[n] for n in names]
-    roots = [np.sqrt(v) for v in vals]
     y = np.arange(len(names))
-    cols = [es.RED if v >= 10 else es.GRAY for v in vals]
-    ax.barh(y, roots, color=cols, alpha=0.85, height=0.6)
-    for yy, r, v in zip(y, roots, vals):
-        ax.annotate(it(r, 3) + "x", xy=(r, yy), xytext=(4, 0),
-                    textcoords="offset points", va="center", fontsize=8.5,
-                    color=es.INK, fontweight="bold")
-    ax.axvline(1.0, color=es.GREEN, ls="--", lw=1.2)
-    ax.annotate("1 = caso ideale, regressori ortogonali", xy=(1.0, -1.05),
-                xytext=(5, 0), textcoords="offset points", fontsize=8,
-                va="center", color=es.GREEN)
+    cols = [es.RED if VIF[n] > 10 else es.GRAY for n in names]
+    ax.barh(y, [VIF[n] for n in names], color=cols, alpha=0.85, height=0.6)
+    for yy, n in zip(y, names):
+        lab = it(VIF[n], 3)
+        if VIF[n] > 10:
+            lab += "   errore std. $\\times$ " + it(np.sqrt(VIF[n]), 2)
+        ax.annotate(lab, xy=(VIF[n], yy), xytext=(4, 0), textcoords="offset points",
+                    va="center", fontsize=8.5, color=es.INK, fontweight="bold")
+    ax.axvline(10, color=es.RED, ls="--", lw=1.2)
+    ax.annotate("soglia 10", xy=(10, -0.75), xytext=(-4, 0), textcoords="offset points",
+                ha="right", va="center", fontsize=8.5, color=es.RED)
     ax.set_yticks(y)
     ax.set_yticklabels(names, fontsize=8.5)
-    ax.set_xlim(0, 4.9)
-    ax.set_ylim(-1.5, len(names) - 0.4)
+    ax.set_xlim(0, 27)
+    ax.set_ylim(-1.1, len(names) - 0.4)
     ax.grid(axis="y", visible=False)
     es.commas(ax, "x")
-    ax.set_xlabel("fattore di inflazione dell'errore standard, $\\sqrt{\\mathrm{VIF}_j}$")
-    ax.set_title("a) l'errore standard cresce di $\\sqrt{\\mathrm{VIF}}$, non di VIF", loc="left")
-
-    ax = axes[1]
-    se_orth = SE_INC / np.sqrt(VIF["income"])
-    ax.bar(["ortogonale\n(ipotetico)", "osservato\n(VIF = 15,174)"],
-           [se_orth, SE_INC], color=[es.GREEN, es.RED], alpha=0.85, width=0.58)
-    for i, v in enumerate([se_orth, SE_INC]):
-        ax.annotate(it(v, 5), xy=(i, v), xytext=(0, 3), textcoords="offset points",
-                    ha="center", fontsize=8.5, fontweight="bold", color=es.INK)
-    ax.annotate("$t$ = " + it(B_INC / se_orth, 2), xy=(0, se_orth / 2), ha="center",
-                fontsize=9, color="white", fontweight="bold")
-    ax.annotate("$t$ = " + it(B_INC / SE_INC, 2), xy=(1, SE_INC / 2), ha="center",
-                fontsize=9, color="white", fontweight="bold")
-    ax.set_ylim(0, SE_INC * 1.30)
-    ax.annotate("valore ipotetico indicativo:\nse HC1 diviso per $\\sqrt{\\mathrm{VIF}}$",
-                xy=(0.02, 0.985), xycoords="axes fraction", ha="left", va="top",
-                fontsize=7.4, color=es.GRAY)
-    es.commas(ax, "y")
-    ax.set_ylabel("errore standard di $\\hat\\beta_{income}$")
-    ax.set_title("b) che cosa costa la collinearita'", loc="left")
+    ax.set_xlabel("VIF")
+    ax.set_title("L'errore standard cresce di $\\sqrt{\\mathrm{VIF}}$", loc="left")
     fig.tight_layout()
     es.save(fig, OUT / "d05-vif.pdf")
 
@@ -293,10 +208,6 @@ def d06():
     ax.annotate("valore critico dato\ndal testo: $-2{,}38$", xy=(ADF_CRIT, 0.40),
                 xytext=(7, 0), textcoords="offset points", ha="left", va="center",
                 fontsize=8.5, color=es.RED, fontweight="bold")
-    ax.axvline(-2.85, color=es.GRAY, ls=":", lw=1.1)
-    ax.annotate("$-2{,}85$\n(DF con drift,\nvalore del corso)", xy=(-2.85, 0.16),
-                xytext=(-6, 0), textcoords="offset points", ha="right", va="bottom",
-                fontsize=8, color=es.GRAY)
     for (name, (c, s)), y, col in zip(ADF.items(), (0.66, 0.36), (es.BLUE, es.TEAL)):
         t = c / s
         ax.plot([t], [y], "o", color=col, ms=9, zorder=6)
@@ -322,18 +233,12 @@ def d07():
     fig, axes = es.acf_pacf(ACF_LP, PACF_LP, n=T_FULL,
                             title="Residui della relazione di lungo periodo: nessuna persistenza")
     axes[0].annotate("$\\hat\\rho_1 \\approx 0{,}01$: nessuna memoria al primo ritardo",
-                     xy=(1, 0.01), xytext=(1.6, 0.20), fontsize=8.5, color=es.GREEN,
+                     xy=(1, 0.01), xytext=(2.6, 0.29), fontsize=8.5, color=es.GREEN,
                      arrowprops=dict(arrowstyle="->", color=es.GREEN, lw=0.9))
     for lag in (2, 8):
         axes[0].annotate(f"ritardo {lag}", xy=(lag, 0.0), xytext=(0, 7),
                          textcoords="offset points", ha="center",
                          fontsize=8, color=es.RED)
-    q = ljung_box(ACF_LP, T_FULL, 8)
-    axes[0].annotate("Ljung-Box $Q(8)$ = " + it(q, 3) + "  <  " +
-                     it(stats.chi2.ppf(0.95, 8), 3) + "  (p = " +
-                     it(1 - stats.chi2.cdf(q, 8), 3) + ")",
-                     xy=(0.02, 0.06), xycoords="axes fraction", fontsize=8.5,
-                     color=es.GREEN)
     tidy_corrgm(axes, BAND)
     fig.tight_layout()
     es.save(fig, OUT / "d07-acf-lungo-periodo.pdf")
@@ -341,18 +246,12 @@ def d07():
 
 # ====================================================== D8 - coefficienti ECM
 def d08():
-    fig, axes = plt.subplots(2, 1, figsize=(6.3, 3.9))
-    es.ci_line(B_DFUT, B_DFUT - 1.96 * SE_DFUT, B_DFUT + 1.96 * SE_DFUT, h0=1.0,
-               ax=axes[0], decimals=4, label="IC 95% per $\\beta$ (HAC)",
-               title="a) effetto di breve periodo: $\\beta$ non e' distinguibile da 1",
-               xlabel="coefficiente di $\\Delta \\mathrm{futures}_t$")
-    es.ci_line(LAM, LAM - 1.96 * SE_LAM, LAM + 1.96 * SE_LAM, h0=0.0,
-               ax=axes[1], decimals=4, label="IC 95% per $\\lambda$ (HAC)",
-               title="b) coefficiente di correzione: negativo, significativo, dentro $(-1,0)$",
-               xlabel="coefficiente di $(\\mathrm{spot}_{t-1} - a - b\\,\\mathrm{futures}_{t-1})$",
-               extra=[(-1.0, "$\\lambda = -1$ (rientro immediato)", es.TEAL)])
-    axes[1].axvspan(-1.0, 0.0, color=es.GREENBG, zorder=0)
-    axes[1].set_xlim(-1.08, 0.12)
+    lo, hi = LAM - 1.96 * SE_LAM, LAM + 1.96 * SE_LAM
+    fig, ax = plt.subplots(figsize=(6.3, 2.2))
+    ci_plot(ax, LAM, lo, hi, label="IC 95% per $\\lambda$ (HAC)", mark=0.0,
+            marklab="$0$ (fuori dall'intervallo)", markcol=es.RED,
+            xlabel="coefficiente del termine di correzione",
+            title="Il coefficiente di correzione è negativo e significativo")
     fig.tight_layout()
     es.save(fig, OUT / "d08-ecm-coefficienti.pdf")
 
@@ -360,41 +259,28 @@ def d08():
 # ================================================== D9 - ACF/PACF residui ECM
 def d09():
     fig, axes = es.acf_pacf(ACF_ECM, PACF_ECM, n=T_FULL,
-                            title="Residui del modello ECM: persistenza positiva, PACF che rientra dopo il primo ritardo")
-    h = np.arange(1, 21)
-    axes[0].plot(h, 0.39 ** h, ls="--", lw=1.1, color=es.AMBER,
-                 label="decadimento geometrico $0{,}39^{\\,h}$ (AR(1) di confronto)")
-    q = ljung_box(ACF_ECM, T_ECM, 8)
-    axes[0].annotate("Ljung-Box $Q(8)$ = " + it(q, 3) + "  >  " +
-                     it(stats.chi2.ppf(0.95, 8), 3) + "  (p = " +
-                     it(1 - stats.chi2.cdf(q, 8), 5) + ")",
-                     xy=(0.02, 0.05), xycoords="axes fraction", fontsize=8.5,
-                     color=es.RED)
-    axes[1].annotate("un picco netto, il secondo sul bordo: AR(1)-AR(2) nei residui",
-                     xy=(0.17, 0.04), xycoords="axes fraction", fontsize=8.5,
-                     color=es.RED)
-    tidy_corrgm(axes, BAND, {axes[0]: {"loc": "upper right", "fontsize": 7.6}})
+                            title="Residui del modello ECM: autocorrelazione ai primi ritardi")
+    tidy_corrgm(axes, BAND)
     fig.tight_layout()
     es.save(fig, OUT / "d09-acf-ecm.pdf")
 
 
 # ======================================================= D10 - assorbimento
 def d10():
-    fig, ax, table = es.decay(LAM, horizon=10, targets=(0.5, 0.8),
+    fig, ax, table = es.decay(LAM, horizon=10, targets=(0.8,),
                               title="Quota di disequilibrio ancora presente dopo $h$ mesi")
-    ax.set_xlabel("mesi dopo lo shock ($h$)")
+    ax.set_xlabel("mesi dopo il disequilibrio ($h$)")
     phi = 1 + LAM
     for h in (1, 2, 3):
         ax.annotate(it(phi ** h, 4), xy=(h, phi ** h), xytext=(-8, -7),
                     textcoords="offset points", ha="right", va="top", fontsize=8,
                     color=es.GRAY)
-    ax.annotate("dopo 2 mesi resta il 23,82%: non basta\n"
-                "dopo 3 mesi resta l'11,62%: assorbito l'88,38%",
+    ax.annotate("assorbito dopo 1, 2, 3 mesi:\n51,2%, 76,2%, 88,4%",
                 xy=(0.40, 0.70), xycoords="axes fraction", fontsize=8.5,
                 color=es.INK)
     fig.tight_layout()
     es.save(fig, OUT / "d10-assorbimento.pdf")
-    print("  h* (50%, 80%):", table)
+    print("  h* (80%):", table)
 
 
 if __name__ == "__main__":

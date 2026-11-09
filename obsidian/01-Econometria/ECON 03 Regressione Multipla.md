@@ -14,9 +14,9 @@ generated: 2026-07-10
 ## Esempio motivante: test scores e dimensione della classe
 
 > [!example] Esempio
-> Comunemente si pensa che un rapporto studenti-insegnanti più basso induca un rendimento migliore degli studenti. Di conseguenza, ad esempio in California, verso la fine degli anni '90, tutte le classi K-3 sono state ridotte per avere un rapporto massimo studenti-insegnanti di 20 (*Class Size Reduction Act* - CSR). Ciò ha un costo, ovviamente: inizialmente era di 1,8 miliardi di dollari all'anno. Per un costo così alto, sorge spontanea la domanda se ne valga la pena o meno. Il Commissario per l'Istruzione potrebbe essere interessato a sapere se questa spesa extra ha un impatto significativo sul rendimento scolastico atteso.
+> Comunemente si pensa che un rapporto studenti-insegnanti più basso induca un rendimento migliore degli studenti. Per questo, ad esempio in California, verso la fine degli anni '90, tutte le classi K-3 sono state ridotte per avere un rapporto massimo studenti-insegnanti di 20 (*Class Size Reduction Act* - CSR). Ciò ha un costo: inizialmente era di 1,8 miliardi di dollari all'anno. Con un costo così alto ci si chiede se ne valga la pena. Il Commissario per l'Istruzione potrebbe essere interessato a sapere se questa spesa extra ha un impatto significativo sul rendimento scolastico atteso.
 >
-> Ci chiediamo se la dimensione della classe sia l'unica informazione rilevante che ha un impatto nello spiegare la variazione del punteggio medio atteso di questi studenti, o se c'è qualcosa di più da considerare.
+> Ci chiediamo se la dimensione della classe sia l'unica informazione rilevante che ha un impatto nello spiegare la variazione del punteggio medio atteso di questi studenti, o se vadano considerati altri fattori.
 >
 > Un modello di regressione naïve evidenzia che esiste una dipendenza negativa significativa tra la dimensione media della classe, `str`, e il punteggio medio atteso, `avg_score`:
 >
@@ -25,7 +25,7 @@ generated: 2026-07-10
 > | str | -2.279808 | .4798256 | -4.75 | 0.000 | -3.22298 | -1.336637 |
 > | _cons | 698.933 | 9.467491 | 73.82 | 0.000 | 680.3231 | 717.5428 |
 >
-> Apparentemente sembra che ridurre la dimensione delle classi sia una scelta rilevante, poiché una riduzione della dimensione di una classe induce un aumento del punteggio medio di circa 2,28 punti. Ma questo modello statistico è una relazione causale? Esistono altre spiegazioni più credibili?
+> A prima vista ridurre la dimensione delle classi sembra una scelta rilevante, poiché una riduzione della dimensione di una classe induce un aumento del punteggio medio di circa 2,28 punti. Ma questo modello statistico è una relazione causale? Esistono altre spiegazioni più credibili?
 >
 > Ad un esame più attento, osserviamo che il reddito medio (`avginc`) per le persone che vivono in ciascun distretto è correlato positivamente con `avg_score`: i distretti con reddito più alto tendono ad avere studenti con voti più alti. Esiste anche una dipendenza negativa tra reddito e dimensione della classe (`str`): i distretti a reddito più elevato tendono ad avere classi di dimensioni inferiori. Le correlazioni (comando `correlate avg_score str avginc`) sono:
 >
@@ -45,7 +45,7 @@ generated: 2026-07-10
 >
 > ![](assets/econ-03/fig02.png)
 >
-> **Figura 2** — Rappresentazione causale del modello (diagramma con `income` che punta sia ad `average score` con correlazione 0.7124 sia a `class size` con correlazione -0.2322, e una freccia da `class size` ad `average score` con correlazione -0.2264). Il diagramma illustra come il reddito (`income`) sia una causa comune che influenza sia il punteggio medio sia la dimensione della classe, generando una correlazione osservata tra `class size` e `average score` che non riflette necessariamente un nesso causale diretto.
+> **Figura 2** — Rappresentazione causale del modello (diagramma con `income` che punta sia ad `average score` con correlazione 0.7124 sia a `class size` con correlazione -0.2322, e una freccia da `class size` ad `average score` con correlazione -0.2264). Il diagramma illustra come il reddito (`income`) sia una causa comune che influenza sia il punteggio medio sia la dimensione della classe: la correlazione osservata tra `class size` e `average score` non riflette quindi necessariamente un nesso causale diretto.
 
 *(slide 3–7)*
 
@@ -62,9 +62,9 @@ generated: 2026-07-10
 >
 > $Y$ è la variabile dipendente, $X_1$ e $X_2$ sono i regressori mentre $\epsilon$ è un termine di errore che misura la distanza tra il modello di regressione e l'osservabile $Y$.
 >
-> **Interpretazione dei parametri.** Nell'ambito della regressione semplice, $\beta_1$ misura la variazione attesa di $Y$ a condizione che $\Delta X = 1$. Infatti $\Delta \hat{Y} = \beta_1 \underbrace{\Delta X}_{=1}$.
+> **Interpretazione dei parametri.** Nella regressione semplice, $\beta_1$ misura la variazione attesa di $Y$ a condizione che $\Delta X = 1$. Infatti $\Delta \hat{Y} = \beta_1 \underbrace{\Delta X}_{=1}$.
 >
-> Nell'impostazione data dalla regressione multipla, il coefficiente $\beta_1$ è la variazione attesa di $Y$ dovuta a una variazione unitaria di $X_1$ a condizione che $X_2$ sia mantenuto costante. In pratica, se calcoliamo la variazione attesa di $Y$ per un dato livello dei due regressori $X_1=\bar X_1$ e $X_2=\bar X_2$, otteniamo
+> Nella regressione multipla, il coefficiente $\beta_1$ è la variazione attesa di $Y$ dovuta a una variazione unitaria di $X_1$ a condizione che $X_2$ sia mantenuto costante. In pratica, se calcoliamo la variazione attesa di $Y$ per un dato livello dei due regressori $X_1=\bar X_1$ e $X_2=\bar X_2$, otteniamo
 >
 > $$\hat{Y}(\bar X_1, \bar X_2) = \alpha + \beta_1 \bar X_1 + \beta_2 \bar X_2 + \epsilon(\bar X_1, \bar X_2).$$
 >
@@ -76,11 +76,11 @@ generated: 2026-07-10
 >
 > $$\Delta \hat{Y} = \hat{Y}(\bar X_1 + \Delta X_1, \bar X_2) - \hat{Y}(\bar X_1, \bar X_2) = \beta_1 \Delta X_1 + \Delta \epsilon$$
 >
-> Nell'ipotesi che $\epsilon$ non sia rilevante per descrivere il valore atteso di $Y$, cioè $\Delta \epsilon = 0$, allora una variazione del valore atteso di $Y$ è proporzionale alla variazione di $X_1$, cioè
+> Nell'ipotesi che $\epsilon$ non sia rilevante per descrivere il valore atteso di $Y$, cioè $\Delta \epsilon = 0$ (in media vale per $E[\epsilon|X_1,X_2]=0$; la presenza di $\epsilon$ nelle espressioni di $\hat Y$ qui sopra è impropria, perché $\hat Y$ è la media condizionale e non contiene l'errore), allora una variazione del valore atteso di $Y$ è proporzionale alla variazione di $X_1$, cioè
 >
 > $$\Delta Y = \beta_1 \Delta X_1$$
 >
-> Nella regressione multipla, un parametro descrive l'effetto di una variabile esplicativa una volta controllati gli effetti dell'altra variabile esplicativa nel modello (imponendo $X_2 = \bar X_2$). La regressione semplice ha una sola variabile esplicativa, quindi il parametro descrive l'effetto di una variabile al netto di tutte le altre possibili variabili esplicative. I coefficienti $\beta_j$ sono chiamati **effetti marginali**.
+> Nella regressione multipla, un parametro descrive l'effetto di una variabile esplicativa una volta controllati gli effetti dell'altra variabile esplicativa nel modello (imponendo $X_2 = \bar X_2$). La regressione semplice ha una sola variabile esplicativa, quindi il parametro descrive l'effetto di una variabile senza controllare per le altre possibili variabili esplicative, la cui influenza, se correlate con il regressore, confluisce nel coefficiente (le slide scrivono «al netto di tutte le altre», da intendere come «ignorando le altre»). I coefficienti $\beta_j$ sono chiamati **effetti marginali**.
 >
 > **Esempio: class scores vs. reddito e class size.** Consideriamo il modello di regressione multipla che lega il punteggio medio degli studenti, la dimensione della classe e il reddito delle famiglie:
 >
@@ -115,7 +115,7 @@ generated: 2026-07-10
 > - $\text{Cov}(\tilde\epsilon, X_j) = 0$, $j=1,2$ (esogeneità rispetto al vero modello)
 > - $\text{Cov}(X_1, X_2) \neq 0$
 >
-> Nel Modello 2, la variabile $X_2$ è stata omessa. Ciò significa che il suo impatto atteso su $Y$ è stato inglobato dal termine di errore $\epsilon$. Come conseguenza principale, nel Modello 2, $\epsilon = \beta_2 X_2 + \tilde\epsilon$, quindi
+> Nel Modello 2, la variabile $X_2$ è stata omessa. Ciò significa che il suo impatto atteso su $Y$ è stato inglobato dal termine di errore $\epsilon$. Nel Modello 2 vale $\epsilon = \beta_2 X_2 + \tilde\epsilon$, quindi
 >
 > $$\text{Cov}(X_1, \epsilon) = \beta_2 \text{Cov}(X_1, X_2) \neq 0 \quad \text{se } \beta_2 \neq 0$$
 >
@@ -123,7 +123,7 @@ generated: 2026-07-10
 >
 > $$\hat\beta_1 \xrightarrow{p} \beta_1 + \rho_{X_1\epsilon} \frac{\sigma_\epsilon}{\sigma_X} \quad \text{(non consistenza di } \hat\beta_1\text{)}$$
 >
-> Se prendiamo come punto di riferimento una regressione sbagliata, probabilmente prenderemo decisioni sbagliate. Come affermato prima, ciò che effettivamente stimiamo è
+> Se prendiamo come punto di riferimento una regressione sbagliata, probabilmente prenderemo decisioni sbagliate. Come affermato prima, ciò che effettivamente stimiamo (al limite, per $n\to\infty$) è
 >
 > $$\hat\beta_1 = \beta_1 + \rho_{X_1\epsilon} \frac{\sigma_\epsilon}{\sigma_X} \neq \beta_1$$
 >
@@ -131,10 +131,10 @@ generated: 2026-07-10
 >
 > $$\Delta Y = \beta_1 + \underbrace{\Delta \epsilon}_{\approx \rho_{X_1\epsilon}\, \sigma_\epsilon/\sigma_X}$$
 >
-> In questo caso non possiamo distinguere gli effetti dovuti dai regressori inclusi e da quelli omessi dal modello. Nell'esempio della CAL school, non sappiamo se la stima di $\hat\beta = -2.279$ sia dovuta all'effettiva variazione della dimensione della classe o ad altri fattori come ad esempio il reddito.
+> In questo caso non possiamo distinguere gli effetti dovuti dai regressori inclusi e da quelli omessi dal modello. Nell'esempio della CAL school, non sappiamo se la stima di $\hat\beta = -2.280$ sia dovuta all'effettiva variazione della dimensione della classe o ad altri fattori come ad esempio il reddito.
 >
 > **Sintesi.** Nel modello di regressione semplice, l'ipotesi chiave è $E(\epsilon|X)=0 \Rightarrow \text{Cov}(\epsilon,X)=0$. Se una variabile rilevante viene omessa, dobbiamo affrontare delle conseguenze:
-> - L'omissione di una variabile rilevante induce una correlazione non nulla tra il regressore incluso ed il termine di errore $\Rightarrow \text{Cov}(\epsilon,X) \neq 0$. L'ipotesi di **esogeneità** non è più valida;
+> - L'omissione di una variabile rilevante e correlata con il regressore incluso induce una correlazione non nulla tra il regressore incluso ed il termine di errore $\Rightarrow \text{Cov}(\epsilon,X) \neq 0$. L'ipotesi di **esogeneità** non è più valida;
 > - $E[\hat\beta] \neq \beta$, ovvero $\hat\beta$ è **distorto**;
 > - Questa distorsione persiste anche se $n$ è grande (**non consistenza**).
 
@@ -156,15 +156,15 @@ generated: 2026-07-10
 >
 > $$Y_i = \beta X_i^* + \epsilon_i^*$$
 >
-> Per comprendere a fondo ciò che stiamo facendo, scriviamo la regressione originale in funzione del regressore osservabile $X^*$, per verificare se la regressione ammissibile soddisfa l'ipotesi OLS:
+> Scriviamo la regressione originale in funzione del regressore osservabile $X^*$, per verificare se la regressione ammissibile soddisfa l'ipotesi OLS:
 >
 > $$Y_i = \gamma X_i + \epsilon_i = \gamma(X_i^* - u_i) + \epsilon_i = \gamma X_i^* + \underbrace{\epsilon_i - \gamma u_i}_{\epsilon_i^*}$$
 >
 > La regressione calcolabile diventa
 >
-> $$Y_i = \gamma X_i^* + \epsilon_i^* \;\Rightarrow\; \text{Cov}(X_i^*, \epsilon_i^*) = \gamma \text{Var}(u_i) \neq 0 \;\Rightarrow\; \text{Endogeneity}$$
+> $$Y_i = \gamma X_i^* + \epsilon_i^* \;\Rightarrow\; \text{Cov}(X_i^*, \epsilon_i^*) = -\gamma \text{Var}(u_i) \neq 0 \;\Rightarrow\; \text{Endogeneity}$$
 >
-> Quindi, l'utilizzo di regressori che non sono osservati accuratamente porta a stimatori distorti e non consistenti.
+> Quindi, l'utilizzo di regressori che non sono osservati accuratamente porta a stimatori distorti e non consistenti. (Segno: $\text{Cov}(X+u,\,\epsilon-\gamma u) = -\gamma\,\text{Var}(u)$, con $u$ incorrelato con $X$ ed $\epsilon$; le slide riportano $+\gamma\,\text{Var}(u)$.)
 >
 > **Esempio numerico.** Consideriamo un dataset simulato di dimensione 200 che soddisfa le seguenti condizioni:
 >
@@ -192,30 +192,30 @@ generated: 2026-07-10
 >
 > Si noti che in questo caso $\hat\beta$ non è neanche vicino a 1.5 (il valore vero per questo parametro) poiché l'intervallo di confidenza del 95% non lo include.
 >
-> La distorsione o bias in questo caso può essere quantificato. Sappiamo infatti che nella regressione calcolabile (con $X^*$),
+> La distorsione o bias in questo caso può essere quantificato. Sappiamo infatti che nella regressione calcolabile (con $X^*$), al limite per $n\to\infty$ (la formula seguente è il limite in probabilità di $\hat\beta$),
 >
-> $$\hat\beta = \frac{\text{Cov}(X^*, y)}{V(X^*)} = \beta \frac{V(X)}{V(X) + V(u) + \text{Cov}(X,u)} \approx \frac{1}{2}\beta$$
+> $$\hat\beta = \frac{\text{Cov}(X^*, y)}{V(X^*)} = \beta \frac{V(X)}{V(X) + V(u) + 2\,\text{Cov}(X,u)} \approx \frac{1}{2}\beta$$
 >
-> Nella simulazione è stato ipotizzato $\text{Var}(X) = \text{Var}(u) = 1$. Inoltre si è ipotizzato $\text{Cov}(X,u) = 0$. Di conseguenza la distorsione risulta essere la metà del vero valore del parametro, in questo esempio circa 0.75. Si noti quindi che quello che stimo (.70249) corrisponde al vero $\beta = 1.5$ meno la distorsione (.75).
+> Nella simulazione è stato ipotizzato $\text{Var}(X) = \text{Var}(u) = 1$. Inoltre si è ipotizzato $\text{Cov}(X,u) = 0$ (le slide scrivono $\text{Cov}(X,u)$ senza il fattore 2 al denominatore, ininfluente perché la covarianza è nulla). Di conseguenza la distorsione risulta essere la metà del vero valore del parametro, in questo esempio circa 0.75. Si noti quindi che quello che stimo (.70249) è prossimo al vero $\beta = 1.5$ meno la distorsione (.75).
 
 *(slide 17–21)*
 
 ## L'errore ε: momenti condizionali
 
 > [!abstract] Definizione
-> Le proprietà della variabile casuale $\epsilon$ sono cruciali per derivare le proprietà degli stimatori OLS. In particolare, ci interessa valutare i suoi momenti e le relazioni tra $\epsilon$ e $X_1,\ldots,X_k$.
+> Le proprietà della variabile casuale $\epsilon$ servono a derivare le proprietà degli stimatori OLS. In particolare, ci interessa valutare i suoi momenti e le relazioni tra $\epsilon$ e $X_1,\ldots,X_k$.
 >
 > Per costruzione, $\epsilon_i$ può essere visto come la differenza tra $Y_i$ e la media condizionale $E[Y|X_1,\ldots,X_k]$, cioè
 >
-> $$\epsilon_i = Y_i - E[Y|X_{ji},\ldots,X_{ki}] = Y_i - \alpha - \sum_{j=1}^{k} \beta_j X_{ji}$$
+> $$\epsilon_i = Y_i - E[Y|X_{1i},\ldots,X_{ki}] = Y_i - \alpha - \sum_{j=1}^{k} \beta_j X_{ji}$$
 >
 > $\epsilon$ raccoglie tutte le caratteristiche dei soggetti non esplicitamente prese in considerazione dal modello e descrive una certa eterogeneità del campione.
 >
-> **Media condizionale, $E[\epsilon|X_1,\ldots,X_k]$.** Supponiamo, ad esempio, che $E[Y|X] = \alpha + \beta X$ sia un'approssimazione credibile della media condizionale. Con questa ipotesi, la media condizionale di $\epsilon$ è quindi
+> **Media condizionale, $E[\epsilon|X_1,\ldots,X_k]$.** Supponiamo, ad esempio, che $E[Y|X] = \alpha + \sum_{j=1}^{k} \beta_j X_j$ sia un'approssimazione credibile della media condizionale. Con questa ipotesi, la media condizionale di $\epsilon$ è quindi
 >
 > $$E[\epsilon|X] = E[Y|X] - \alpha - \sum_{j=1}^{k} \beta_j X_j = 0$$
 >
-> Come conseguenza principale, $\text{Cov}(\epsilon, X) = 0$ e quindi tutte le variabili che concorrono a costruire $\epsilon$ devono essere incorrelate con $X_j$, $\forall j$. L'intuizione alla base di questo risultato è che le uniche informazioni rilevanti per descrivere la media condizionale di $Y$ sono $X_1,\ldots,X_k$. Tutte le altre variabili non possono avere un impatto sistematico su di esso.
+> Come conseguenza principale, $\text{Cov}(\epsilon, X) = 0$ e quindi tutte le variabili che concorrono a costruire $\epsilon$ devono essere incorrelate con $X_j$, $\forall j$. L'intuizione è che le uniche informazioni rilevanti per descrivere la media condizionale di $Y$ sono $X_1,\ldots,X_k$. Tutte le altre variabili non possono avere un impatto sistematico su di esso.
 >
 > **Varianza condizionale, $\text{Var}(\epsilon|X_1,\ldots,X_k)$.** In generale, la forma funzionale della varianza condizionale di $\epsilon$ non è nota. In ogni caso, la variabilità di $\epsilon$ descrive anche la variabilità della variabile dipendente $Y$, ovvero
 >
@@ -223,7 +223,7 @@ generated: 2026-07-10
 >
 > Possiamo formulare due diverse ipotesi riguardo alle varianze condizionali:
 > - **Omoschedasticità**: si assume che $\text{Var}(\epsilon|X_1,\ldots,X_k) = \sigma^2$ non dipende da $X$.
-> - **Eteroschedasticità**: si assume che $\text{Var}(\epsilon|X_1,\ldots,X_k) = \sigma^2(X_1,\ldots,X_k)$ dipende da $X_j$, $\forall j$.
+> - **Eteroschedasticità**: si assume che $\text{Var}(\epsilon|X_1,\ldots,X_k) = \sigma^2(X_1,\ldots,X_k)$ dipende dai regressori (da almeno uno degli $X_j$).
 
 *(slide 22–24)*
 
@@ -235,7 +235,7 @@ generated: 2026-07-10
 > - Il modello vero (nella popolazione) è lineare, ovvero $E[Y|X] = \alpha + \beta_1 X_1 + \cdots + \beta_k X_k$;
 > - Il modello statistico corrisponde a quello vero, ovvero $Y = \alpha + \beta_1 X_1 + \cdots + \beta_k X_k + \epsilon$;
 >   - Come conseguenza principale, $\text{Cov}(X_j, \epsilon) = 0$, e quindi $X_j$ si dice **esogeno** (per ogni $j$);
-> - Le $k$-uple $(X_{1,i},\ldots,X_{k,i}, Y_i)$, $i=1,\ldots,n$ sono **I.I.D.**;
+> - Le $(k+1)$-uple $(X_{1,i},\ldots,X_{k,i}, Y_i)$, $i=1,\ldots,n$ sono **I.I.D.**;
 > - I momenti quarti di $X_j$ e $Y$ esistono e sono finiti (per tutti i $j$);
 > - Supponiamo, ad esempio, che $\text{var}[\epsilon|X] = \sigma^2$ (**Omoschedasticità**);
 > - **Assenza di perfetta collinearità**: non esistono relazioni lineari esatte tra le variabili indipendenti.
@@ -245,7 +245,7 @@ generated: 2026-07-10
 ## Perfetta collinearità
 
 > [!example] Esempio
-> Intuitivamente, il motivo per cui la perfetta multicollinearità è un problema è legato alla logica alla base del modello di regressione. In generale, un parametro rappresenta come varia $Y$ in corrispondenza di una variazione unitaria del regressore, diciamo $X_1$, una volta che tutte le altre variabili sono fissate. Ma se, ad esempio, $X_1$ e $X_2$ sono perfettamente correlati, come è possibile variare $X_1$ e fissare $X_2$, dato che $X_1$ ed $X_2$ si muovono assieme?
+> Intuitivamente, la perfetta multicollinearità è un problema perché contraddice la logica del modello di regressione. In generale, un parametro rappresenta come varia $Y$ in corrispondenza di una variazione unitaria del regressore, diciamo $X_1$, una volta che tutte le altre variabili sono fissate. Ma se, ad esempio, $X_1$ e $X_2$ sono perfettamente correlati, come è possibile variare $X_1$ e fissare $X_2$, dato che $X_1$ ed $X_2$ si muovono assieme?
 >
 > Perfetta collinearità viene osservata quando almeno uno dei regressori è funzione lineare esatta di alcuni altri regressori. Un esempio di una relazione lineare esatta tra $X_1, X_2, X_3$ e $X_5$ è $X_2 = a_1 X_1 + a_3 X_3 + a_5 X_5$ per alcune costanti note $a_1, a_3, a_5$.
 >
@@ -268,7 +268,7 @@ generated: 2026-07-10
 ## Stima OLS della regressione multipla
 
 > [!note] Dimostrazione
-> Una volta osservati dei dati, è fondamentale poter stimare i parametri $\alpha$ e $\beta_j$ che definiscono il modello di regressione. L'idea di base è trovare i parametri $\alpha$ e $\beta_j$ che permettano di minimizzare la distanza tra ciascuna osservazione e la retta di regressione.
+> Una volta osservati i dati, occorre stimare i parametri $\alpha$ e $\beta_j$ che definiscono il modello di regressione. L'idea di base è trovare i parametri $\alpha$ e $\beta_j$ che permettano di minimizzare la distanza tra ciascuna osservazione e la retta di regressione.
 >
 > Come nel caso della regressione semplice, OLS suggerisce di minimizzare la varianza del termine di errore:
 >
@@ -280,17 +280,17 @@ generated: 2026-07-10
 >
 > Il regressore ausiliario $\hat u_j$ è definito come segue:
 >
-> $$\hat u_j = X_j - \hat a - \hat b X_i, \qquad i \neq j$$
+> $$\hat u_j = X_j - \hat a - \hat b X_h, \qquad h \neq j$$
 >
-> Si noti che $\hat u_j$ sono i residui della regressione $X_j = a + bX_i + u_j$, per cui lo stimatore OLS risulta
+> Si noti che $\hat u_j$ sono i residui della regressione $X_j = a + bX_h + u_j$ (l'indice $h$ denota l'altro regressore; $i$ resta l'indice dell'osservazione), per cui lo stimatore OLS risulta
 >
 > $$\hat\beta_j = \frac{\sum_{i=1}^n \hat u_{j,i} Y_i}{\sum_{i=1}^n \hat u_{j,i}^2}, \qquad j=1,2$$
 >
-> In particolare, $\hat u_j$ rappresenta l'informazione fornita dalla variabile $X_j$, ma che non dipende da $X_i$. Risultati equivalenti possono essere ottenuti per regressioni con un numero generico $k$ di regressori.
+> In particolare, $\hat u_j$ rappresenta l'informazione fornita dalla variabile $X_j$, ma che non dipende da $X_h$. Risultati equivalenti possono essere ottenuti per regressioni con un numero generico $k$ di regressori.
 >
-> Questa formula mostra che possiamo quindi eseguire una semplice regressione di $Y$ su $\hat u_j$ per ottenere $\hat\beta_j$. L'intuizione è la seguente: l'informazione fornita dai regressori $X_j$ può essere suddivisa in due segnali: (1) la parte che può essere spiegata da altri fattori ($X_i, i \neq j$); (2) la parte che non dipende da $X_i$. Ad esempio, per $\hat\beta_1$, i residui $\hat u_{1,i}$ sono la parte di $X_1$ non correlata con $X_2$.
+> Questa formula mostra che possiamo quindi eseguire una semplice regressione di $Y$ su $\hat u_j$ per ottenere $\hat\beta_j$. L'intuizione è la seguente: l'informazione fornita dai regressori $X_j$ può essere suddivisa in due segnali: (1) la parte che può essere spiegata da altri fattori ($X_h, h \neq j$); (2) la parte che non dipende da $X_h$. Ad esempio, per $\hat\beta_1$, i residui $\hat u_{1,i}$ sono la parte di $X_1$ non correlata con $X_2$.
 >
-> Un altro modo per dirlo è che $\hat u_{1,i}$ rappresenta $X_{1,i}$ dopo che gli effetti di $X_{2,i}$ sono stati controllati. Quindi, $\hat\beta_1$ misura la **relazione campionaria tra $Y$ e $X_1$ dopo che l'effetto di $X_2$ è stato controllato/eliminato**.
+> In altre parole, $\hat u_{1,i}$ rappresenta $X_{1,i}$ dopo che gli effetti di $X_{2,i}$ sono stati controllati. Quindi, $\hat\beta_1$ misura la **relazione campionaria tra $Y$ e $X_1$ dopo che l'effetto di $X_2$ è stato controllato/eliminato**.
 >
 > **Valori predetti e residui.** La previsione del valore atteso di $Y$, o valore predetto, è
 >
@@ -315,7 +315,7 @@ generated: 2026-07-10
 > (b) Si regredisce $X_1$ su $X_2$ e si calcolano i residui $\hat u$.
 > (c) Infine, si regredisce $\hat\epsilon_y$ su $\hat u$ per ottenere $\hat\beta_1$.
 >
-> Questo risultato, noto come **Teorema di Frisch-Waugh-Lovell**, permette di interpretare ciascun coefficiente OLS $\beta_1$ come la correlazione tra la variabile dipendente $Y$ e il regressore $X_1$, una volta eliminati gli effetti di $X_2$ (lo stesso vale se siamo interessati a $\beta_2$).
+> Questo risultato, noto come **Teorema di Frisch-Waugh-Lovell**, permette di interpretare ciascun coefficiente OLS $\beta_1$ come l'associazione lineare (pendenza della regressione parziale, non una correlazione) tra la variabile dipendente $Y$ e il regressore $X_1$, una volta eliminati gli effetti di $X_2$ (lo stesso vale se siamo interessati a $\beta_2$).
 >
 > **Esempio.** Consideriamo il modello di regressione che lega le performance e la dimensione della classe:
 >
@@ -331,7 +331,7 @@ generated: 2026-07-10
 >
 > Il modello stimato diventa quindi
 >
-> $$E[\text{avg\_score}] = 638.72 - 0.648\,\text{str} + 1.839\,\text{avginc}$$
+> $$E[\text{avg\_score}] = 638.73 - 0.649\,\text{str} + 1.839\,\text{avginc}$$
 >
 > Usando il teorema di Frisch-Waugh-Lovell:
 >
@@ -356,7 +356,7 @@ generated: 2026-07-10
 > | resid_str | -.6487401 | .3539808 | -1.83 | 0.068 | -1.344544 | .0470642 |
 > | _cons | 1.35e-08 | .6505869 | 0.00 | 1.000 | -1.27883 | 1.27883 |
 >
-> Il coefficiente ottenuto nel passo (3), -.6487401, coincide esattamente con il coefficiente di `str` stimato nella regressione multipla completa, verificando numericamente il teorema.
+> Il coefficiente ottenuto nel passo (3), -.6487401, coincide esattamente con il coefficiente di `str` stimato nella regressione multipla completa: è la verifica numerica del teorema.
 
 *(slide 34–36)*
 
@@ -367,7 +367,7 @@ generated: 2026-07-10
 >
 > $$R^2 = \text{Corr}^2(Y, \hat Y)$$
 >
-> Vale la pena notare che questo indicatore è appropriato per verificare se il modello prevede correttamente la variabile dipendente, **ma non indica presenza di relazioni causali**.
+> Questo indicatore è appropriato per verificare se il modello prevede correttamente la variabile dipendente, **ma non indica presenza di relazioni causali**.
 >
 > **Output completo (esempio avg_score su str e avginc, n = 420):**
 >
@@ -399,9 +399,9 @@ generated: 2026-07-10
 >
 > in cui
 >
-> $$\hat\sigma_{\hat\beta_j}^2 = \frac{\hat\sigma^2}{\sum_{i=1}^n (X_{i,j} - \bar X_j)^2 (1-R_j^2)}, \qquad \hat\sigma^2 = \frac{1}{n-k}\sum_{i=1}^n \hat\epsilon_i^2$$
+> $$\hat\sigma_{\hat\beta_j}^2 = \frac{\hat\sigma^2}{\sum_{i=1}^n (X_{i,j} - \bar X_j)^2 (1-R_j^2)}, \qquad \hat\sigma^2 = \frac{1}{n-k-1}\sum_{i=1}^n \hat\epsilon_i^2$$
 >
-> e $R_j^2$ è il coefficiente di bontà di adattamento calcolato dalla regressione di $X_j$ su tutte le altre variabili indipendenti. Questo risultato consente di effettuare test di ipotesi su $\beta_j$ e di costruire intervalli di confidenza.
+> e $R_j^2$ è il coefficiente di bontà di adattamento calcolato dalla regressione di $X_j$ su tutte le altre variabili indipendenti. (Con $k$ regressori più l'intercetta i gradi di libertà sono $n-k-1$, come nell'output Stata: 420 − 2 − 1 = 417; le slide scrivono $n-k$, valido solo se $k$ conta anche l'intercetta. La formula della varianza vale sotto omoschedasticità.) Questo risultato consente di effettuare test di ipotesi su $\beta_j$ e di costruire intervalli di confidenza.
 >
 > **La varianza di $\hat\beta_j$.** L'errore standard di $\hat\beta_j$ è
 >
@@ -410,24 +410,26 @@ generated: 2026-07-10
 > - Valori grandi di $\sigma^2$ rendono grande l'errore standard (nota: questa grandezza non dipende dalla dimensione del campione $n$);
 > - Valori grandi di $\sum_{i=1}^n (X_{ji}-\bar X_j)^2$ rendono piccolo l'errore standard. Cioè, maggiore è la variabilità di $X_j$, minore è l'errore standard;
 > - Inoltre, maggiore è la dimensione del campione $n$, minore è l'errore standard;
-> - Alta correlazione tra regressori (quasi collinearità) implica un errore standard grande. Vale la pena notare che, nel caso di perfetta collinearità, $R_j^2 = 1 \Rightarrow \hat\sigma_{\hat\beta} \to +\infty$.
+> - Alta correlazione tra regressori (quasi collinearità) implica un errore standard grande. Nel caso di perfetta collinearità, $R_j^2 = 1 \Rightarrow \hat\sigma_{\hat\beta} \to +\infty$.
 
 *(slide 39–40)*
 
 ## Intervalli di confidenza per βj
 
 > [!abstract] Definizione
-> Per quanto riguarda la media campionaria, è utile fornire un intervallo di possibili valori in cui riteniamo il vero parametro $\beta$ probabilmente cadrà con alta probabilità. Si noti che, come per la media campionaria, $\hat\beta_j$ è normalmente distribuita.
+> Come per la media campionaria, è utile fornire un intervallo di valori plausibili in cui riteniamo che il vero parametro $\beta$ cada con alta probabilità (nel senso dei campioni ripetuti: una quota $1-\alpha$ degli intervalli così costruiti contiene il vero valore). Si noti che anche $\hat\beta_j$ è normalmente distribuita.
 >
-> Per questo motivo valgono ancora tutti i risultati validi per la media campionaria. Un intervallo di confidenza per $\beta_j$ può quindi essere calcolato come
+> Per questo valgono ancora tutti i risultati validi per la media campionaria. Un intervallo di confidenza per $\beta_j$ può quindi essere calcolato come
 >
 > $$\text{Intervallo di confidenza} = \left[\hat\beta_j - z_{\alpha/2} \times \hat\sigma_{\hat\beta_j} \;;\; \hat\beta_j + z_{\alpha/2} \times \hat\sigma_{\hat\beta_j}\right]$$
 >
 > **Esempio: intervalli di confidenza per scores vs. income and class size.** Nell'esempio del performance vs. class size e reddito, l'intervallo di confidenza al 95% per $\beta_1$ e $\beta_2$ è calcolato come
 >
-> $$C.I.(\beta_1) \equiv [-0.648 - 1.96\times 0.354 \;;\; -0.648 + 1.96\times 0.354] = [-1.345;\, 0.047]$$
+> $$C.I.(\beta_1) \equiv [-0.6487 - 1.96\times 0.3544 \;;\; -0.6487 + 1.96\times 0.3544] = [-1.343;\, 0.046]$$
 >
-> $$C.I.(\beta_2) \equiv [1.839 - 1.96\times 0.092 \;;\; 1.839 + 1.96\times 0.092] = [1.656;\, 2.021]$$
+> $$C.I.(\beta_2) \equiv [1.8391 - 1.96\times 0.0928 \;;\; 1.8391 + 1.96\times 0.0928] = [1.657;\, 2.021]$$
+>
+> (Le slide riportano $[-1.345;\, 0.047]$ e $[1.656;\, 2.021]$ con coefficienti ed errori standard arrotondati, ma con quei valori e 1.96 il calcolo non dà quei risultati: sono, a meno di arrotondamenti, gli intervalli dell'output, ottenuti da Stata con il quantile $t_{417;\,0.975}\approx 1.966$ al posto di 1.96.)
 >
 > | | Coef. | Std. Err. | t | P>\|t\| | [95% Conf. | Interval] |
 > |---|---|---|---|---|---|---|
@@ -444,7 +446,7 @@ generated: 2026-07-10
 >
 > $$\Delta \hat Y = \beta_j \Delta X_j.$$
 >
-> Se $\beta_j$ fosse 0, allora qualunque sia la variazione di $X_j$, la variazione attesa di $Y$ prevista dal modello sarebbe nulla. Diventa quindi abbastanza naturale verificare se $\beta_j$ è abbastanza vicino a 0 oppure no.
+> Se $\beta_j$ fosse 0, allora qualunque sia la variazione di $X_j$, la variazione attesa di $Y$ prevista dal modello sarebbe nulla. Diventa quindi naturale verificare se $\beta_j$ è sufficientemente vicino a 0.
 >
 > In generale, potremmo essere interessati a verificare se l'evidenza empirica è **coerente** con qualche valore specifico del parametro. Si noti che $\hat\beta_j$ è distribuito secondo una variabile casuale gaussiana. Quindi la procedura di test può basarsi esattamente sugli stessi risultati forniti per la regressione semplice.
 >
@@ -452,13 +454,13 @@ generated: 2026-07-10
 >
 > $$t = \frac{\hat\beta_j - 0}{\hat\sigma_{\hat\beta_j}}$$
 >
-> Il p-value può essere facilmente calcolato come al solito.
+> Il p-value si calcola come al solito.
 >
 > **Esempio.** Nel punteggio medio vs. dimensione della classe e reddito, per il sistema di ipotesi $H_0: \beta_1 = 0$ vs. $H_a: \beta_1 \neq 0$, la statistica t osservata è
 >
 > $$t^{obs} = \frac{-.6487401 - 0}{.354405} = -1.83$$
 >
-> e il p-value è calcolato come $2P_{H_0}(|t| > t^{oss}) = 0.068$. Ciò significa che a un livello del 5% non rifiutiamo l'ipotesi nulla e quindi questo parametro non è considerato statisticamente diverso da 0. Quindi la dimensione della classe, secondo questo modello, non è una variabile rilevante.
+> e il p-value è calcolato come $2P_{H_0}(|t| > t^{oss}) = 0.068$. Ciò significa che a un livello del 5% non rifiutiamo l'ipotesi nulla e quindi questo parametro non è considerato statisticamente diverso da 0. Quindi, secondo questo modello, la dimensione della classe non risulta statisticamente significativa al 5% (lo sarebbe al 10%, coerentemente con «debolmente significativa» dell'esempio precedente; il mancato rifiuto di $H_0$ non prova che l'effetto sia nullo).
 >
 > Per il sistema di ipotesi $H_0: \beta_2 = 0$ vs. $H_a: \beta_2 \neq 0$ la statistica t osservata è
 >
@@ -471,7 +473,7 @@ generated: 2026-07-10
 ## Il teorema di Gauss-Markov
 
 > [!tip] Teorema
-> Un risultato importante può essere enunciato come segue. Se sono soddisfatte le seguenti ipotesi:
+> Un risultato importante può essere enunciato come segue. Se sono soddisfatte le seguenti ipotesi (a cui si aggiunge l'assenza di perfetta collinearità, vista sopra, senza la quale OLS non è definito):
 >
 > - **Linearità**: nel modello sulla popolazione, la variabile dipendente $Y$ è correlata alle variabili indipendenti $X_1,\ldots,X_k$ e all'errore $\epsilon$, come
 >
@@ -488,7 +490,7 @@ generated: 2026-07-10
 ## Rappresentazione matriciale del modello
 
 > [!abstract] Definizione
-> Un modo compatto e pratico per descrivere un modello di regressione passa per la sua rappresentazione matriciale.
+> La rappresentazione matriciale descrive un modello di regressione in modo compatto.
 >
 > Definiamo la matrice dei regressori come
 >
@@ -508,7 +510,7 @@ generated: 2026-07-10
 >
 > $$\epsilon_{n\times 1} = \begin{pmatrix} \epsilon_1 \\ \epsilon_2 \\ \vdots \\ \epsilon_n \end{pmatrix}$$
 >
-> In poche parole, il modello di regressione può essere scritto come:
+> Il modello di regressione si scrive quindi come:
 >
 > $$\begin{pmatrix} Y_1 \\ Y_2 \\ \vdots \\ Y_n \end{pmatrix} = \begin{pmatrix} 1 & X_{11} & X_{12} & \ldots & X_{1k} \\ 1 & X_{21} & X_{22} & \ldots & X_{2k} \\ \vdots & \vdots & \vdots & \vdots & \vdots \\ 1 & X_{n1} & \ldots & \ldots & X_{nk} \end{pmatrix} \begin{pmatrix} \alpha \\ \beta_1 \\ \vdots \\ \beta_k \end{pmatrix} + \begin{pmatrix} \epsilon_1 \\ \epsilon_2 \\ \vdots \\ \epsilon_n \end{pmatrix}$$
 >
@@ -531,7 +533,9 @@ generated: 2026-07-10
 >
 > Uguagliando a 0 le derivate prime rispetto a $\beta$ si ottiene
 >
-> $$\frac{\partial S}{\partial \beta} = -\mathbf{X}'\mathbf{Y} + \mathbf{X}'\mathbf{X}\beta = 0$$
+> $$\frac{\partial S}{\partial \beta} = -2\mathbf{X}'\mathbf{Y} + 2\mathbf{X}'\mathbf{X}\beta = 0$$
+>
+> (Le slide omettono il fattore 2, che non cambia la soluzione.)
 >
 > Gli stimatori OLS possono essere ottenuti come
 >

@@ -13,7 +13,7 @@ generated: 2026-07-10
 
 ## Introduzione alle serie storiche
 
-In econometria si fa largo usodi dati di serie storica, cioè osservazioni su una o più variabili economiche raccolte nel tempo. La loro utilità è evidente pensando a come gli eventi economici siano caratterizzati da aspetti dinamici: il passato contribuisce a determinare, almeno in parte, il presente e, di conseguenza, nella spiegazione ed interpretazione dei fatti economici un ruolo molto importante è assunto dalla componente temporale. Per questo motivo in econometria sono stati sviluppati molteplici modelli dinamici con l'obiettivo di catturare questo aspetto. I dati di serie storica sono ordinabili in modo oggettivo e universalmente accettato.
+In econometria si fa largo uso di dati di serie storica, cioè osservazioni su una o più variabili economiche raccolte nel tempo. Gli eventi economici hanno una natura dinamica: il passato contribuisce a determinare, almeno in parte, il presente e, di conseguenza, la componente temporale pesa molto nella spiegazione e nell'interpretazione dei fatti economici. Per questo motivo in econometria sono stati sviluppati diversi modelli dinamici che catturano questo aspetto. I dati di serie storica sono ordinabili in modo oggettivo e universalmente accettato.
 
 Questi dati sono molto diversi dai dati in cross-section: si tratta di dati **dipendenti**, cioè di osservazioni relative a un'unica entità che si protraggono nel tempo.
 
@@ -36,11 +36,11 @@ Questi dati sono molto diversi dai dati in cross-section: si tratta di dati **di
 >
 > ![](assets/econ-06/fig01.png)
 >
-> **Figura 1** — Esempio di serie storica: Fed funds mensili osservati da luglio 1954 ad ottobre 2022. Il grafico mostra l'andamento del tasso di riferimento della Federal Reserve nel tempo, con marcati periodi di crescita (fine anni '70 - primi '80, con un picco vicino al 20%) e di successiva discesa fino a valori prossimi allo zero.
+> **Figura 1** — Esempio di serie storica: Fed funds mensili osservati da luglio 1954 ad ottobre 2022. Il tasso di riferimento della Federal Reserve cresce marcatamente tra la fine degli anni '70 e i primi '80 (picco vicino al 20%) e poi scende fino a valori prossimi allo zero.
 >
 > ![](assets/econ-06/fig02.png)
 >
-> **Figura 2** — Stima della distribuzione di probabilità dei tassi per decadi. Si nota che la distribuzione di $Y_t$ tende a cambiare nel tempo (forma e posizione delle distribuzioni stimate cambiano decade per decade), per cui risulta difficile ipotizzare che le osservazioni siano identicamente distribuite.
+> **Figura 2** — Stima della distribuzione di probabilità dei tassi per decadi. Si nota che la distribuzione di $Y_t$ tende a cambiare nel tempo (forma e posizione delle distribuzioni stimate cambiano decade per decade), quindi è difficile ipotizzare che le osservazioni siano identicamente distribuite.
 
 *(slide 3–5)*
 
@@ -70,20 +70,20 @@ Questi dati sono molto diversi dai dati in cross-section: si tratta di dati **di
 > Si consideri la trasformazione generica $Y_t=T(Z_t)$ e il suo sviluppo in serie di Taylor al primo ordine attorno alla media di $Z_t$, cioè $\mu_t$:
 > $$T(Z_t) \approx T(\mu_t) + T'(\mu_t)(Z_t-\mu_t).$$
 >
-> **Dimostrazione.** Si consideri una serie storica $Z_t$ la cui varianza sia proporzionale alla media, cioè $\mathrm{Var}(Z_t)=\sigma_t^2 = c\mu_t^2$, con $c$ costante positiva. Questa condizione si verifica frequentemente in molte serie storiche macroeconomiche e finanziarie.
+> **Dimostrazione.** Si consideri una serie storica $Z_t$ la cui varianza sia proporzionale al quadrato della media (le slide dicono "alla media"), cioè $\mathrm{Var}(Z_t)=\sigma_t^2 = c\mu_t^2$, con $c$ costante positiva. Questa condizione si verifica spesso nelle serie storiche macroeconomiche e finanziarie.
 >
 > Considerando $Y_t = T(Z_t) = \log(Z_t)$, per cui $T'(\mu_t)=1/\mu_t$, si ottiene
 > $$
-> \mathrm{Var}(Y_t) = \mathrm{Var}\big(T(\mu_t)+T'(\mu_t)(Z_t-\mu_t)\big) = 0 + \frac{1}{\mu_t^2}\underbrace{\mathrm{Var}(Z_t)}_{\text{per ip. }\sigma_t^2=c\mu_t^2} = c\,\frac{1}{\mu_t^2}\mu_t^2 = c.
+> \mathrm{Var}(Y_t) \approx \mathrm{Var}\big(T(\mu_t)+T'(\mu_t)(Z_t-\mu_t)\big) = 0 + \frac{1}{\mu_t^2}\underbrace{\mathrm{Var}(Z_t)}_{\text{per ip. }\sigma_t^2=c\mu_t^2} = c\,\frac{1}{\mu_t^2}\mu_t^2 = c.
 > $$
-> Quindi la varianza della serie trasformata $Y_t=\log(Z_t)$ non dipende più da $t$: la trasformazione logaritmica ha stabilizzato la varianza.
+> Quindi la varianza della serie trasformata $Y_t=\log(Z_t)$ non dipende più da $t$ (in approssimazione di primo ordine, come lo sviluppo di Taylor: le slide scrivono "=" al posto di "$\approx$"): la trasformazione logaritmica ha stabilizzato la varianza.
 
 *(slide 7–8)*
 
 ## Distribuzioni condizionali e distribuzione congiunta
 
 > [!abstract] Definizione
-> I modelli per le serie storiche descrivono, come tutti i modelli di regressione, l'evoluzione delle **medie condizionali**. Rispetto ai modelli di regressione classica, hanno anche come obiettivo quello di misurare la relazione esistente tra presente e passato di una certa variabile.
+> I modelli per le serie storiche descrivono, come tutti i modelli di regressione, l'evoluzione delle **medie condizionali**. Rispetto ai modelli di regressione classica, mirano anche a misurare la relazione tra presente e passato di una certa variabile.
 >
 > Più in generale, lo scopo dei modelli per le serie storiche è approssimare le **distribuzioni condizionali** dei dati; in particolare cercano di approssimare
 > $$
@@ -121,9 +121,11 @@ Questi dati sono molto diversi dai dati in cross-section: si tratta di dati **di
 > p(Y_1,\dots,Y_T) = p(Y_1)p(Y_2|Y_1)p(Y_3|Y_2)\dots p(Y_T|Y_{T-1})
 > $$
 > $$
-> \propto \prod_{t=2}^{N} \frac{1}{\sigma\sqrt{2\pi}}\exp\left[-\frac{1}{2\sigma^2}(Y_t-\alpha-\beta Y_{t-1})^2\right]
-> = \frac{1}{(2\pi\sigma^2)^{T/2}}\exp\left\{-\frac{\sum_{t=2}^{T}(Y_t-\alpha-\beta Y_{t-1})^2}{2\sigma^2}\right\}.
+> \propto \prod_{t=2}^{T} \frac{1}{\sigma\sqrt{2\pi}}\exp\left[-\frac{1}{2\sigma^2}(Y_t-\alpha-\beta Y_{t-1})^2\right]
+> = \frac{1}{(2\pi\sigma^2)^{(T-1)/2}}\exp\left\{-\frac{\sum_{t=2}^{T}(Y_t-\alpha-\beta Y_{t-1})^2}{2\sigma^2}\right\}.
 > $$
+>
+> (Le slide riportano $N$ come estremo del prodotto e l'esponente $T/2$; il prodotto ha $T-1$ fattori, da $t=2$ a $t=T$, e il fattore $p(Y_1)$ è trascurato nella proporzionalità.)
 
 *(slide 11–12)*
 
@@ -148,7 +150,7 @@ Questi dati sono molto diversi dai dati in cross-section: si tratta di dati **di
 >
 > ![](assets/econ-06/fig03.png)
 >
-> **Figura 3** — Esempio di albero binomiale: da $S_0=4$ si diramano $S_1(H)=8$ e $S_1(T)=2$; da $S_1(H)=8$ si diramano $S_2(HH)=16$ e $S_2(HT)=4$; da $S_1(T)=2$ si diramano $S_2(TH)=4$ e $S_2(TT)=1$. Il grafico mostra tutte le traiettorie possibili del prezzo nei due giorni successivi ad oggi, con le relative probabilità di transizione (0.4 per il ramo "raddoppia", 0.6 per il ramo "dimezza").
+> **Figura 3** — Esempio di albero binomiale: da $S_0=4$ si diramano $S_1(H)=8$ e $S_1(T)=2$; da $S_1(H)=8$ si diramano $S_2(HH)=16$ e $S_2(HT)=4$; da $S_1(T)=2$ si diramano $S_2(TH)=4$ e $S_2(TT)=1$. Sono riportate tutte le traiettorie possibili del prezzo nei due giorni successivi ad oggi, con le relative probabilità di transizione (0.4 per il ramo "raddoppia", 0.6 per il ramo "dimezza").
 >
 > La **distribuzione condizionale** tra un giorno è
 > $$
@@ -175,14 +177,14 @@ Questi dati sono molto diversi dai dati in cross-section: si tratta di dati **di
 > s_2=1, & p=0.6^2
 > \end{cases}
 > $$
-> si ottengono così i valori numerici $p(S_2=16)=0.16$, $p(S_2=4)=0.48$, $p(S_2=1)=0.36$, che sommano correttamente a 1. Si noti la differenza concettuale rispetto alle distribuzioni condizionali sopra riportate: la marginale "integra via" l'informazione su $S_1$.
+> si ottengono così i valori numerici $p(S_2=16)=0.16$, $p(S_2=4)=0.48$, $p(S_2=1)=0.36$, che sommano a 1. Si noti la differenza concettuale rispetto alle distribuzioni condizionali sopra riportate: la marginale "integra via" l'informazione su $S_1$.
 
 *(slide 14–17)*
 
 ## Autocorrelazione: definizione, ACF e PACF
 
 > [!abstract] Definizione
-> Nelle serie temporali è lecito aspettarsi che il valore di $Y$ al tempo $t$ sia dipendente dal proprio valore nel periodo successivo. La correlazione di una serie con i propri valori ritardati è detta **autocorrelazione** (o correlazione seriale): è la dipendenza lineare tra le realizzazioni di una variabile osservata in due istanti temporali diversi.
+> Nelle serie temporali è lecito aspettarsi che il valore di $Y$ al tempo $t$ sia dipendente dal proprio valore nel periodo precedente (le slide dicono "successivo", refuso). La correlazione di una serie con i propri valori ritardati è detta **autocorrelazione** (o correlazione seriale): è la dipendenza lineare tra le realizzazioni di una variabile osservata in due istanti temporali diversi.
 >
 > Se, ad esempio, esiste un'autocorrelazione positiva, ci si aspetta che se $Y_{t-1}>0$, in media, anche $Y_t$ tenderà ad assumere valori positivi; oppure, al contrario, un'osservazione negativa sarà seguita da un'altra osservazione negativa.
 >
@@ -206,18 +208,18 @@ Questi dati sono molto diversi dai dati in cross-section: si tratta di dati **di
 >
 > ![](assets/econ-06/fig04.png)
 >
-> **Figura 4** — Dipendenza tra $Y_t$ e $Y_{t-j}$, $j=1,2,3,4$ (serie "ar3"): quattro scatterplot di $Y_t$ contro i propri ritardi mostrano che la nuvola di punti è più "allineata" (correlata) per ritardi bassi e diventa più dispersa (meno correlata) all'aumentare del ritardo.
+> **Figura 4** — Dipendenza tra $Y_t$ e $Y_{t-j}$, $j=1,2,3,10$ (serie "ar3"; la didascalia delle slide riporta $j=1,2,3,4$, ma i pannelli sono etichettati ar3_1, ar3_2, ar3_3, ar3_10): quattro scatterplot di $Y_t$ contro i propri ritardi mostrano che la nuvola di punti è più "allineata" (correlata) per ritardi bassi e diventa più dispersa (meno correlata) all'aumentare del ritardo.
 >
 > ![](assets/econ-06/fig05.png)
 >
-> **Figura 5** — Correlogramma della serie $Y_t$ (ar3): l'ACF mostra valori significativi ai primi ritardi che decrescono, mentre la PACF mostra picchi significativi solo ai primi ritardi (coerente con un processo autoregressivo di ordine basso); le bande tratteggiate rappresentano i limiti di significatività $\pm 1.96/\sqrt{T}$.
+> **Figura 5** — Correlogramma della serie $Y_t$ (ar3): l'ACF decresce lentamente e resta oltre le bande per circa i primi dieci ritardi, mentre la PACF supera le bande solo ai primissimi ritardi (coerente con un processo autoregressivo di ordine basso); le bande tratteggiate rappresentano i limiti di significatività $\pm 1.96/\sqrt{T}$.
 
 *(slide 18–22)*
 
 ## Il test di Ljung-Box per l'autocorrelazione
 
 > [!tip] Teorema
-> La struttura di autocorrelazione di una serie storica fornisce importanti informazioni, utili (i) per identificare un modello appropriato per i dati e (ii) per verificare se il modello proposto è corretto. È quindi importante controllare se le osservazioni presentano un'autocorrelazione seriale significativa. Tale verifica si basa sullo studio delle autocorrelazioni campionarie $\hat\rho_j$, $j=1,2,\dots$, che al variare del ritardo $j$ descrivono l'**autocorrelogramma**.
+> La struttura di autocorrelazione di una serie storica fornisce importanti informazioni, utili (i) per identificare un modello appropriato per i dati e (ii) per verificare se il modello proposto è corretto. Occorre quindi controllare se le osservazioni presentano un'autocorrelazione seriale significativa. Tale verifica si basa sullo studio delle autocorrelazioni campionarie $\hat\rho_j$, $j=1,2,\dots$, che al variare del ritardo $j$ descrivono l'**autocorrelogramma**.
 >
 > Si dimostra che, sotto opportune ipotesi,
 > $$
@@ -253,7 +255,7 @@ Questi dati sono molto diversi dai dati in cross-section: si tratta di dati **di
 > | 11 | 0.0110 | 24.0964 | [0.012] |
 > | 12 | 0.0475 | 24.2268 | [0.019] |
 >
-> Tutti i p-value della statistica $Q_{LB}(j)$ sono molto piccoli (≤ 0.019): si rifiuta l'ipotesi nulla di assenza di autocorrelazione fino al ritardo 12.
+> Tutti i p-value della statistica $Q_{LB}(j)$ sono piccoli (≤ 0.019): si rifiuta l'ipotesi nulla di assenza di autocorrelazione fino al ritardo 12.
 
 *(slide 23–26)*
 
@@ -287,7 +289,7 @@ Questi dati sono molto diversi dai dati in cross-section: si tratta di dati **di
 >
 > Media della variabile dipendente = 0.729731; Deviazione standard della variabile dipendente = 8.77071; Somma dei quadrati dei residui = 8452.02; Errore standard dei residui = 8.09441; R-quadro = 0.154171; R-quadro corretto = 0.154171; Statistica F (1, 129) = 23.5132 (p-value < 0.00001); Statistica Durbin-Watson = 1.92748.
 >
-> Un titolo con $\beta$ minore di 1 risulta meno rischioso rispetto al portafoglio di mercato e ha quindi un eccesso di rendimento atteso minore rispetto al portafoglio stesso. In pratica, un incremento dell'1% al tempo $t$ dell'eccesso di rendimento del portafoglio di mercato (S&P500) causa un incremento dello 0.78% del rendimento di Boeing.
+> Un titolo con $\beta$ minore di 1 risulta meno rischioso rispetto al portafoglio di mercato e ha quindi un eccesso di rendimento atteso minore rispetto al portafoglio stesso. In pratica, un incremento dell'1% al tempo $t$ dell'eccesso di rendimento del portafoglio di mercato (S&P500) comporta in media un incremento dello 0.78% del rendimento di Boeing (le slide dicono "causerà": una regressione OLS misura un'associazione, non prova il nesso causale).
 >
 > Il valore di
 > $$
@@ -299,11 +301,11 @@ Questi dati sono molto diversi dai dati in cross-section: si tratta di dati **di
 
 ## Motivazioni per la specificazione dinamica dei modelli
 
-In econometria esistono almeno due ragioni fondamentali che giustificano il ricorso alla specificazione dinamica dei modelli.
+Esistono almeno due ragioni per ricorrere alla specificazione dinamica dei modelli.
 - Da un lato vi è l'esigenza di giungere ad una migliore comprensione del funzionamento nel tempo del sistema oggetto di studio, differenziando, ad esempio, il comportamento di breve periodo da quello di lungo periodo.
 - Dall'altro lato vi può essere la necessità di disporre di un modello che, utilizzando osservazioni provenienti da serie storiche, abbia caratteristiche idonee a produrre buone previsioni.
 
-Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabili, incorporino al loro interno relazioni tra variabili differite nel tempo, quindi dinamiche.
+Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabili, incorporino relazioni tra variabili differite nel tempo, quindi dinamiche.
 
 *(slide 32)*
 
@@ -322,11 +324,11 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 >
 > ![](assets/econ-06/fig08.png)
 >
-> **Figura 8** — Esempio di dati generati da un modello White Noise: la serie oscilla in modo irregolare attorno a zero, senza pattern visibile, con ampiezza compresa circa tra $-4$ e $4$.
+> **Figura 8** — Esempio di dati generati da un modello White Noise: la serie oscilla in modo irregolare attorno a zero, senza pattern visibile, con ampiezza compresa circa tra $-3$ e $3$.
 >
 > ![](assets/econ-06/fig09.png)
 >
-> **Figura 9** — Grafico dell'autocorrelogramma di un modello White Noise: sia l'ACF che la PACF non mostrano alcun valore significativamente diverso da zero a nessun ritardo, coerentemente con l'assenza di dipendenza seriale.
+> **Figura 9** — Grafico dell'autocorrelogramma di un modello White Noise: né l'ACF né la PACF mostrano valori significativamente diversi da zero, coerentemente con l'assenza di dipendenza seriale.
 
 *(slide 33–35)*
 
@@ -341,11 +343,13 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 > L'autocorrelogramma di $Y_t$ si calcola come segue:
 > $$
 > \mathrm{Cov}(Y_t,Y_{t-j}) = \begin{cases}
-> (1+\theta)\sigma^2 & \text{se } j=0 \\
+> (1+\theta^2)\sigma^2 & \text{se } j=0 \\
 > \theta\sigma^2 & \text{se } j=1 \\
 > 0 & \text{altrimenti.}
 > \end{cases}
 > $$
+>
+> Nel caso $j=0$ le slide riportano $(1+\theta)\sigma^2$, refuso: $\mathrm{Var}(Y_t)=\sigma^2+\theta^2\sigma^2$, perché $\mathrm{Cov}(\epsilon_t,\epsilon_{t-1})=0$; la forma corretta coincide con la varianza di un MA($q$) riportata più sotto.
 >
 > **Dimostrazione.** Si ricordi che la sequenza $\epsilon_t$ soddisfa $\mathrm{Cov}(\epsilon_t,\epsilon_{t-j})=0$ per $j\ge 1$. Di conseguenza
 > $$
@@ -355,7 +359,7 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 >
 > ![](assets/econ-06/fig10.png)
 >
-> **Figura 10** — Grafico di una serie storica MA(1) con $\theta=-0.7$ e $\sigma=0.9$: la serie oscilla in modo irregolare, con un pattern leggermente più "liscio" rispetto al white noise puro a causa della dipendenza dal ritardo 1.
+> **Figura 10** — Grafico di una serie storica MA(1) con $\theta=-0.7$ e $\sigma=0.9$: la serie oscilla in modo irregolare, con frequenti inversioni di segno tra osservazioni consecutive, più "frastagliata" del white noise puro: con $\theta<0$ la correlazione al ritardo 1 è negativa ($\rho_1=\theta/(1+\theta^2)\approx-0.47$).
 >
 > **Generalizzazione: MA(q).** L'osservazione di oggi dipende da $q$ shock passati:
 > $$
@@ -386,18 +390,18 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 >
 > ![](assets/econ-06/fig11.png)
 >
-> **Figura 14** — Grafico di una serie storica di un modello MA(2) con $\theta_1=-0.9,\theta_2=0.7,\sigma=0.9$: la serie mostra oscillazioni più regolari rispetto al MA(1), riflesso della dipendenza da due shock passati.
+> **Figura 14** — Grafico di una serie storica di un modello MA(2) con $\theta_1=-0.9,\theta_2=0.7,\sigma=0.9$: la serie oscilla in modo irregolare, con frequenti inversioni di segno come nel MA(1): con questi parametri $\rho_1<0$ ($\rho_1\approx-0.67$) e $\rho_2>0$ ($\rho_2\approx0.30$).
 >
 > ![](assets/econ-06/fig12.png)
 >
-> **Figura 15** — Autocorrelogramma del modello MA(2) precedente: sia l'ACF sia la PACF mostrano valori significativi solo ai primi due ritardi, coerentemente con la teoria.
+> **Figura 15** — Autocorrelogramma del modello MA(2) precedente: l'ACF mostra valori significativi solo ai primi due ritardi, come previsto dalla teoria per un MA(2); anche la PACF è marcata soprattutto ai primi due ritardi (in teoria, per un MA, la PACF decade gradualmente senza annullarsi).
 
 *(slide 36–38)*
 
 ## Esempio: il modello di Roll per il bid-ask spread (MA(1))
 
 > [!example] Esempio
-> Nel caso di applicazioni finanziarie, il modello MA(1) può essere interessante per descrivere l'andamento di un rendimento atteso in presenza di uno spread tra prezzi di domanda e di offerta.
+> In finanza il modello MA(1) può servire a descrivere l'andamento di un rendimento atteso in presenza di uno spread tra prezzi di domanda e di offerta.
 >
 > In alcuni mercati (NYSE) i *market maker* forniscono liquidità comprando e vendendo quantità rilevanti di asset in maniera anonima, senza modificarne sostanzialmente il prezzo. In cambio si riservano il diritto di vendere gli asset ad un prezzo leggermente maggiore rispetto a quello di acquisto. Essi acquistano un asset al prezzo *bid* $P_b$ e cercano di venderlo al prezzo *ask* $P_a$; la differenza $S=P_a-P_b$, detta **bid-ask spread**, è di solito piccola.
 >
@@ -405,19 +409,19 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 >
 > ![](assets/econ-06/fig13.png)
 >
-> **Figura 12** — Prezzi intra-giornalieri dell'asset: la serie oscilla tra circa 1.04 e 1.24, con andamento a zig-zag rapido tipico dei dati ad alta frequenza intraday.
+> **Figura 12** — Prezzi intra-giornalieri dell'asset: la serie oscilla tra circa 1.05 e 1.23, con andamento a zig-zag rapido tipico dei dati ad alta frequenza intraday. L'asse orizzontale arriva a circa 12300 osservazioni, cioè al campione usato nella stima più sotto.
 >
 > **Modello di Roll (1984).** Il prezzo osservato $P_t$ di un asset al tempo $t$ è
 > $$
 > P_t = P_t^* + I_t\frac{S}{2} = P_t^* + \begin{cases} +S/2 & \text{con prob. } 0.5 \\ -S/2 & \text{con prob. } 0.5 \end{cases}
 > $$
-> dove: $S=P_a-P_b$ è lo spread; $P_t^*$ è il prezzo teorico (fondamentale) dell'asset in un mercato senza frizioni; $I_t$ è una sequenza di variabili binarie con $P(I_t=-1)=P(I_t=1)=0.5$, interpretabile come indicatore del tipo d'ordine: $+1$ se la transazione è iniziata dall'acquirente, $-1$ se dal venditore.
+> dove: $S=P_a-P_b$ è lo spread; $P_t^*$ è il prezzo teorico (fondamentale) dell'asset in un mercato senza frizioni; $I_t$ è una sequenza di variabili binarie indipendenti (ipotesi necessaria per la covarianza nulla a ritardi superiori a 1, non esplicitata nelle slide) con $P(I_t=-1)=P(I_t=1)=0.5$, interpretabile come indicatore del tipo d'ordine: $+1$ se la transazione è iniziata dall'acquirente, $-1$ se dal venditore.
 >
 > Ipotizzando che il prezzo fondamentale non cambi, si calcola il rendimento
 > $$
 > \Delta P_t = (I_t-I_{t-1})\frac{S}{2}.
 > $$
-> Si può facilmente dimostrare che:
+> Si dimostra che:
 > - $E[\Delta P_t] = 0$ (coerente con la teoria dei mercati efficienti);
 > - $\mathrm{Var}(\Delta P_t) = S^2/2$;
 > - $\mathrm{Cov}(\Delta P_t,\Delta P_{t-1}) = -S^2/4 \Rightarrow \mathrm{Corr}(\Delta P_t,\Delta P_{t-1}) = -0.5$;
@@ -429,7 +433,7 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 > $$
 > \Delta P_t = \begin{cases} 0 & \text{con prob. } 0.5 \\ -S & \text{con prob. } 0.5 \end{cases}
 > $$
-> L'autocorrelazione negativa a ritardo 1 (e non a ritardi successivi) viene introdotta in maniera evidente.
+> L'autocorrelazione negativa a ritardo 1 (e non a ritardi successivi) emerge quindi in modo evidente.
 >
 > ![](assets/econ-06/fig14.png)
 >
@@ -451,7 +455,7 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 ## Modelli autoregressivi AR(1) e AR(p)
 
 > [!abstract] Definizione
-> Molto spesso i modelli specificati per dati di serie storica vengono utilizzati per fare previsioni su una variabile di interesse. Il primo modello considerato è il **Modello Autoregressivo**, in cui una variabile è spiegata dal proprio passato tramite ritardi. Il modello più semplice è quello autoregressivo del primo ordine, **AR(1)**:
+> I modelli specificati per dati di serie storica servono spesso a prevedere una variabile di interesse. Il primo modello considerato è il **Modello Autoregressivo**, in cui una variabile è spiegata dal proprio passato tramite ritardi. Il modello più semplice è quello autoregressivo del primo ordine, **AR(1)**:
 > $$
 > Y_t = \beta_0 + \beta_1 Y_{t-1} + \epsilon_t.
 > $$
@@ -476,18 +480,18 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 >
 > ![](assets/econ-06/fig17.png)
 >
-> **Figura 18** — Grafico di una serie autocorrelata al terzo ordine (AR(3)): la serie mostra cicli più ampi e persistenti rispetto all'AR(1), con più lenta reversione verso lo zero.
+> **Figura 18** — Grafico di una serie autocorrelata al terzo ordine (AR(3)): la serie mostra fasi sopra e sotto lo zero più prolungate rispetto all'AR(1), con più lenta reversione verso lo zero; l'ampiezza delle oscillazioni è però minore (valori tra circa $-2.5$ e $3$).
 >
 > ![](assets/econ-06/fig18.png)
 >
-> **Figura 19** — Autocorrelogramma del modello AR(3): l'ACF decresce lentamente e in modo oscillante, mentre la PACF mostra picchi significativi solo ai primi tre ritardi, coerentemente con l'ordine del processo generatore.
+> **Figura 19** — Autocorrelogramma del modello AR(3): l'ACF decresce lentamente, restando positiva fino a circa il ritardo 12, mentre la PACF supera le bande di confidenza solo ai primi due ritardi (il terzo, di circa 0.1, resta all'interno; fuori banda c'è solo un valore isolato al ritardo 19), in linea con la teoria per un AR($p$), la cui PACF si annulla oltre il ritardo $p$ (qui $p=3$).
 
 *(slide 51–56)*
 
 ## Il modello autoregressivo misto ADL(p,q)
 
 > [!abstract] Definizione
-> I modelli visti fino ad ora sono modelli statistici, utili per fare previsioni. In economia, però, si è più spesso interessati allo studio delle relazioni causali tra variabili, per cercare di capire il tipo di dipendenza che esiste tra grandezze economiche. Per analizzare queste relazioni, quando i dati sono espressi in forma di serie storica, è stata proposta una tipologia di modelli più generali detti **modelli autoregressivi misti** o **ADL(p,q)** ("Autoregressive Distributed Lag"), definiti come segue:
+> I modelli visti finora sono modelli statistici, utili per fare previsioni. In economia, però, interessano più spesso le relazioni causali tra variabili, cioè il tipo di dipendenza che esiste tra grandezze economiche. Per analizzarle, quando i dati sono espressi in forma di serie storica, si usano modelli più generali detti **modelli autoregressivi misti** o **ADL(p,q)** ("Autoregressive Distributed Lag"), definiti come segue:
 > $$
 > Y_t = \beta_0+\beta_1 Y_{t-1}+\dots+\beta_p Y_{t-p}+\delta_0 X_t+\delta_1 X_{t-1}+\dots+\delta_q X_{t-q}+\epsilon_t,
 > $$
@@ -502,13 +506,13 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 > $$
 > Y_t = \beta Y_{t-1} + \epsilon_t.
 > $$
-> Nel modello di regressione semplice deve valere, tra l'altro, $E[\epsilon_i|X_1,\dots,X_N]=0,\ \forall i$. Nel contesto dinamico AR(1), l'unico regressore è $X_t\equiv Y_{t-1}$. La condizione di esogenità diviene quindi $E[\epsilon_t|Y_1,\dots,Y_T]=0,\ \forall t$.
+> Nel modello di regressione semplice deve valere, tra l'altro, $E[\epsilon_i|X_1,\dots,X_N]=0,\ \forall i$. Nel contesto dinamico AR(1), l'unico regressore è $X_t\equiv Y_{t-1}$. La condizione di esogenità diviene quindi $E[\epsilon_t|Y_0,\dots,Y_{T-1}]=0,\ \forall t$ (le slide scrivono $Y_1,\dots,Y_T$, ma i regressori delle $T$ equazioni sono $Y_0,\dots,Y_{T-1}$).
 >
-> **Dimostrazione (l'esogenità stretta non vale nei modelli dinamici).** Se vale $E[\epsilon_t|X_t]=E[\epsilon_t|Y_{t-1}]=0$, allora $\mathrm{Cov}[\epsilon_t Y_{t-1}]=0$. Si calcoli però
+> **Dimostrazione (l'esogenità stretta non vale nei modelli dinamici).** Se vale $E[\epsilon_t|X_t]=E[\epsilon_t|Y_{t-1}]=0$, allora $\mathrm{Cov}[\epsilon_t, Y_{t-1}]=0$. Si calcoli però
 > $$
 > E[\epsilon_t X_{t+1}] = E[\epsilon_t Y_t] = E[\epsilon_t(\beta Y_{t-1}+\epsilon_t)] = \beta\underbrace{E[\epsilon_t Y_{t-1}]}_{=0 \text{ per ip.}} + E[\epsilon_t^2] \neq 0.
 > $$
-> Per cui, nel caso di modelli dinamici, **non può essere utilizzata** l'ipotesi di stretta esogenità e quindi non si può parlare di non distorsione (unbiasedness) dello stimatore OLS. Fortunatamente è ancora possibile dimostrare, sotto opportune ipotesi, che lo stimatore OLS è **consistente** (l'eventuale distorsione sparisce per $T$ sufficientemente grande).
+> Quindi, nel caso di modelli dinamici, **non può essere utilizzata** l'ipotesi di stretta esogenità e non si può parlare di non distorsione (unbiasedness) dello stimatore OLS. È però ancora possibile dimostrare, sotto opportune ipotesi, che lo stimatore OLS è **consistente** (l'eventuale distorsione sparisce per $T$ sufficientemente grande).
 >
 > **La sostituzione dell'ipotesi di indipendenza con la stazionarietà.** Non si può utilizzare l'ipotesi di indipendenza del vettore $(Y,X_1,\dots,X_K)$: i dati in serie storica per loro natura non sono indipendenti. È comunque possibile indebolire tale ipotesi sostituendola con opportune condizioni di regolarità sulla forma di dipendenza, ad esempio richiedendo che la serie storica sia **stazionaria**.
 >
@@ -536,18 +540,18 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 ## L'ipotesi di stazionarietà nel caso AR(1)
 
 > [!note] Dimostrazione
-> Si consideri il modello AR(1) definito da $Y_t = \beta_0+\beta_1 Y_{t-1}+\epsilon_t$, con $\epsilon_t\sim WN(0,\sigma^2)$. È interessante chiedersi sotto quali condizioni questo modello risulta stazionario. Per semplicità si ipotizzi $\beta_0=0$; risolvendo all'indietro:
+> Si consideri il modello AR(1) definito da $Y_t = \beta_0+\beta_1 Y_{t-1}+\epsilon_t$, con $\epsilon_t\sim WN(0,\sigma^2)$. Si cercano le condizioni sotto cui il modello risulta stazionario. Per semplicità si ipotizzi $\beta_0=0$; risolvendo all'indietro:
 > $$
 > Y_t = \beta_1\underbrace{Y_{t-1}}_{\beta_1 Y_{t-2}+\epsilon_{t-1}}+\epsilon_t = \beta_1^2 Y_{t-2}+\beta_1\epsilon_{t-1}+\epsilon_t = \dots = \sum_{j=0}^{\infty}\beta_1^j \epsilon_{t-j}.
 > $$
 >
-> **Media.** È immediato constatare che
+> **Media.** Si ha
 > $$
 > E[Y_t] = \sum_{j=0}^{\infty}\beta_1^j E[\epsilon_{t-j}] = 0,
 > $$
-> non dipende quindi da $t$.
+> che non dipende da $t$.
 >
-> **Varianza.** Diversamente, la varianza non dipende da $t$ solo se $|\beta_1|<1$:
+> **Varianza.** La varianza non dipende da $t$ solo se $|\beta_1|<1$:
 > $$
 > \mathrm{Var}(Y_t) = \mathrm{Var}(\epsilon_t)\sum_{j=0}^{\infty}\beta_1^{2j} = \frac{\sigma^2}{1-\beta_1^2}.
 > $$
@@ -597,9 +601,9 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 >
 > **Il problema della data ignota e la statistica QLR.** In generale non è nota a priori la data $\tau$ in cui si verificherà il break strutturale. Si può affrontare il problema calcolando il test di Chow per ogni potenziale valore di $\tau$, ottenendo una sequenza di statistiche $F_\tau$: la statistica $F$ con valore più grande presumibilmente corrisponde al possibile break. La statistica **QLR** (Quandt Likelihood Ratio) è
 > $$
-> QLR = \max\{F(1),\dots,F(T)\},
+> QLR = \max\{F(\tau_0),\dots,F(\tau_1)\},
 > $$
-> la cui distribuzione non è nota in forma chiusa, anche se è comunque possibile calcolare numericamente i p-value.
+> dove $\tau_0$ e $\tau_1$ escludono una quota iniziale e finale del campione, di solito il 15% come nell'esempio Exelon (le slide scrivono $F(1),\dots,F(T)$, ma agli estremi un sotto-campione è troppo piccolo per stimare i parametri). La distribuzione della statistica non è nota in forma chiusa, anche se è comunque possibile calcolare numericamente i p-value.
 
 *(slide 65–68)*
 
@@ -608,7 +612,7 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 > [!example] Esempio
 > Si supponga di voler sottoporre a verifica il modello CAPM utilizzando gli extra-rendimenti mensili del titolo Exelon per il periodo 1991-2000, usando come proxy del mercato l'indice S&P 500.
 >
-> La verifica del CAPM su tutto il periodo evidenzia come il $\beta$ del titolo sia nullo — risultato apparentemente strano. Un'analisi economica più dettagliata ha evidenziato come nel 1998, in corrispondenza di una breve crisi economica, il titolo Exelon abbia realizzato una serie di extra-rendimenti elevati in controtendenza con l'intero mercato. Ci si chiede quindi se nel 1998 si siano verificati break strutturali che spiegano un valore del $\beta$ così anomalo.
+> La verifica del CAPM su tutto il periodo evidenzia come il $\beta$ del titolo non sia significativamente diverso da zero (le slide dicono «nullo»; la stima è 0.0153, con $t=0.089$) — risultato apparentemente strano. Un'analisi economica più dettagliata ha evidenziato come nel 1998, in corrispondenza di una breve crisi economica, il titolo Exelon abbia realizzato una serie di extra-rendimenti elevati in controtendenza con l'intero mercato. Ci si chiede quindi se nel 1998 si siano verificati break strutturali che spiegano un valore del $\beta$ così anomalo.
 >
 > **Regressione sull'intero campione** (extra-rendimenti dal 1991 al 2000). Stime OLS usando le 119 osservazioni 1991:02-2000:12, variabile dipendente: rend_exln
 >
@@ -644,8 +648,8 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 ## Trend deterministico e trend stocastico
 
 > [!abstract] Definizione
-> Molto spesso le variabili economiche sono influenzate da una componente detta **trend**, che rappresenta un movimento persistente di lungo periodo di una variabile nel corso del tempo. Esistono due tipi di trend, che producono effetti molto diversi sulle serie dei dati:
-> - **Trend deterministico**: la componente tendenziale è descritta da una funzione $g(\cdot)$ non aleatoria del tempo, ad esempio $g(t)=t$ oppure $g(t)=\alpha_1 t+\alpha_2 t^2+\dots+\alpha_p t^p$, con gli $\alpha_i$ noti.
+> Le variabili economiche sono spesso influenzate da una componente detta **trend**, che rappresenta un movimento persistente di lungo periodo di una variabile nel corso del tempo. Esistono due tipi di trend, che producono effetti molto diversi sulle serie dei dati:
+> - **Trend deterministico**: la componente tendenziale è descritta da una funzione $g(\cdot)$ non aleatoria del tempo, ad esempio $g(t)=t$ oppure $g(t)=\alpha_1 t+\alpha_2 t^2+\dots+\alpha_p t^p$, con gli $\alpha_i$ costanti non aleatorie (le slide scrivono «noti»; in pratica sono incogniti e si stimano, ad esempio con OLS).
 > - **Trend stocastico**: la componente tendenziale varia nel tempo in maniera aleatoria; ad esempio può manifestarsi come un prolungato periodo di crescita della serie seguito da un prolungato periodo di stabilità o di decrescita.
 >
 > ![](assets/econ-06/fig19.png)
@@ -654,14 +658,14 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 >
 > ![](assets/econ-06/fig20.png)
 >
-> **Figura 21** — Esempio di trend stocastico: la serie mostra fasi prolungate di crescita e decrescita irregolari, senza seguire un percorso deterministico prevedibile, scendendo fino a circa $-14$ nell'arco delle osservazioni mostrate.
+> **Figura 21** — Esempio di trend stocastico: la serie mostra fasi prolungate di crescita e decrescita irregolari, senza seguire un percorso deterministico prevedibile, scendendo fino a circa $-13$ nell'arco delle osservazioni mostrate.
 
 *(slide 74–76)*
 
 ## Il random walk e la sua non stazionarietà
 
 > [!note] Dimostrazione
-> Il caso più interessante da un punto di vista economico è quello dei trend stocastici, poiché spesso non è credibile supporre che una serie storica economica sia predicibile in maniera deterministica. Uno dei modelli più semplici che generano trend stocastici è un AR(1) in cui $\beta_1=1$, detto **random walk**:
+> In economia il caso più rilevante è quello dei trend stocastici, perché spesso non è credibile supporre che una serie storica economica sia predicibile in maniera deterministica. Uno dei modelli più semplici che generano trend stocastici è un AR(1) in cui $\beta_1=1$, detto **random walk**:
 > $$
 > Y_t = Y_{t-1}+\epsilon_t.
 > $$
@@ -669,7 +673,7 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 >
 > ![](assets/econ-06/fig21.png)
 >
-> **Figura 22** — Grafico di $Y_t=Y_{t-1}+\epsilon_t$: la serie mostra un tipico andamento "a deriva", con lunghe escursioni non prevedibili, muovendosi tra circa $-8$ e $10$.
+> **Figura 22** — Grafico di $Y_t=Y_{t-1}+\epsilon_t$: la serie mostra un tipico andamento "a deriva", con lunghe escursioni non prevedibili, muovendosi tra circa $-6$ e $8$.
 >
 > ![](assets/econ-06/fig22.png)
 >
@@ -689,7 +693,7 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 > $$
 > \mathrm{Var}(Y_t) = \mathrm{Var}\left(\sum_{j=1}^{t}\epsilon_j\right) = t\sigma^2,
 > $$
-> che dipende da $t$: la varianza diverge con $t$, e le autocorrelazioni non sono nemmeno definite (in senso teorico). Le autocorrelazioni campionarie però si possono comunque calcolare, e tendono ad essere prossime a uno anche ad elevati ritardi.
+> che dipende da $t$: la varianza diverge con $t$, e le autocorrelazioni non sono nemmeno definite (in senso teorico: $\mathrm{Corr}(Y_t,Y_{t-h})=\sqrt{(t-h)/t}$ dipende da $t$ e non solo dal ritardo $h$). Le autocorrelazioni campionarie però si possono comunque calcolare, e tendono ad essere prossime a uno anche ad elevati ritardi.
 
 *(slide 77–81)*
 
@@ -700,7 +704,7 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 >
 > L'estensione più ovvia del modello random walk è il **Random Walk con drift**:
 > $$
-> Y_t = \beta_0+Y_{t-1}+\epsilon_t = \beta_0 t+Y_0+\sum_{j=1}^{t}\epsilon_t.
+> Y_t = \beta_0+Y_{t-1}+\epsilon_t = \beta_0 t+Y_0+\sum_{j=1}^{t}\epsilon_j.
 > $$
 > - Se $\beta_0>0$ allora $Y_t$ tenderà in media a crescere;
 > - Se $\beta_0<0$ allora $Y_t$ tenderà in media a decrescere.
@@ -709,22 +713,22 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 >
 > ![](assets/econ-06/fig23.png)
 >
-> **Figura 24** — Grafico di $Y_t=0.5+Y_{t-1}+\epsilon_t$: la serie mostra una crescita netta e progressiva, da circa 0 fino a circa 120-140, sovrapposta a fluttuazioni casuali di breve periodo — il drift positivo domina l'andamento di lungo periodo.
+> **Figura 24** — Grafico di $Y_t=0.5+Y_{t-1}+\epsilon_t$: la serie mostra una crescita netta e progressiva, da circa 0 fino a circa 120, sovrapposta a fluttuazioni casuali di breve periodo — il drift positivo domina l'andamento di lungo periodo.
 
 *(slide 82–83)*
 
 ## Conseguenze dei trend stocastici per la stima OLS
 
 > [!tip] Teorema
-> L'ipotesi di stazionarietà è imprescindibile ai fini dell'inferenza. La sua violazione ha importanti conseguenze:
+> L'ipotesi di stazionarietà è necessaria per l'inferenza. La sua violazione ha due conseguenze:
 >
 > 1. Se un regressore $X_{jt}$ ha un trend stocastico, la distribuzione della statistica $t=\dfrac{\hat\beta_j-\beta_{j0}}{\hat\sigma_{\hat\beta_j}}$ ha una distribuzione diversa da quella Gaussiana sotto $H_0$, con la conseguenza che l'abituale procedura di verifica d'ipotesi porta a risultati errati.
 >
-> 2. Se la serie $Y_t$ è correttamente descritta da un modello random walk, ma per errore si stima un modello AR(1), si può dimostrare che lo stimatore è consistente ma **distorto**: infatti $E[\hat\beta_1] = 1-5.3/T$. Inoltre, la distribuzione asintotica di $\hat\beta_1$ risulta non Gaussiana ed asimmetrica (verso lo zero).
+> 2. Se la serie $Y_t$ è correttamente descritta da un modello random walk, ma per errore si stima un modello AR(1), si può dimostrare che lo stimatore è consistente ma **distorto**: infatti, per il modello con costante, $E[\hat\beta_1] \approx 1-5.3/T$. Inoltre, la distribuzione asintotica di $\hat\beta_1$ risulta non Gaussiana ed asimmetrica (verso lo zero).
 >
 > ![Densità simulate con lo stesso esperimento dell'originale (regressione tra random walk indipendenti).](assets/econ-06/fig24.png)
 >
-> **Figura 25** — Distribuzione della statistica $t$ nel caso standard (area verde — $N(0,1)$) e nel caso in cui $X$ ed $Y$ sono random walk (area rosa), con $T=500$: la densità dell'area rosa risulta molto più concentrata e stretta attorno allo zero rispetto alla Normale standard, mostrando che la statistica $t$ calcolata sotto trend stocastici non è confrontabile con i valori critici usuali di una $N(0,1)$.
+> **Figura 25** — Distribuzione della statistica $t$ nel caso standard (area azzurra — $N(0,1)$) e nel caso in cui $X$ ed $Y$ sono random walk (area rosa), con $T=500$: la densità dell'area rosa risulta molto più dispersa della Normale standard (la massa principale cade tra circa $-40$ e $40$, contro l'intervallo $\pm3$ della $N(0,1)$), mostrando che la statistica $t$ calcolata sotto trend stocastici non è confrontabile con i valori critici usuali di una $N(0,1)$.
 
 *(slide 84–85)*
 
@@ -737,8 +741,8 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 > $$
 > in cui sia $X_t$ che $Y_t$ sono descritti da **random walk indipendenti**. Il vero valore di $\beta_1$ è 0 per costruzione. Si dimostra che:
 > - lo stimatore OLS $\hat\beta_1$ non converge a 0, ma ad una variabile casuale non Gaussiana e non necessariamente a media nulla;
-> - la conseguenza più evidente riguarda la distribuzione della statistica $t$, che risulta ben lungi dall'essere una Normale standard (si veda la Figura 25);
-> - l'$R^2$ della regressione tende a 1 se $T\to+\infty$, e quindi il modello potrebbe sembrare avere un buon adattamento anche se non è correttamente specificato.
+> - la statistica $t$ ha una distribuzione molto lontana da una Normale standard (si veda la Figura 25);
+> - l'$R^2$ della regressione non tende a 0 né a 1, ma converge a una variabile casuale non degenere che può assumere valori elevati (le slide scrivono «tende a 1»; Phillips 1986 mostra un limite non degenere), e quindi il modello potrebbe sembrare avere un buon adattamento anche se non è correttamente specificato.
 >
 > ![](assets/econ-06/fig25.png)
 >
@@ -760,7 +764,7 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 ## Modelli per variabili non stazionarie: trend deterministico e stocastico
 
 > [!abstract] Definizione
-> È stato evidenziato come la non stazionarietà di una serie possa essere descritta da componenti deterministiche oppure stocastiche. Una formalizzazione generale è
+> La non stazionarietà di una serie può essere descritta da componenti deterministiche oppure stocastiche. Una formalizzazione generale è
 > $$
 > Y_t = TD_t + Y_t^*,
 > $$
@@ -770,11 +774,11 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 >
 > Se invece $Y_t^*$ fosse un random walk, la componente di lungo periodo è descritta da
 > $$
-> Y_t^* = \sum_{i=1}^{t}\epsilon_t + Y_0^*,
+> Y_t^* = \sum_{i=1}^{t}\epsilon_i + Y_0^*,
 > $$
 > e si parla di presenza di **trend stocastico**.
 >
-> **Derivazione.** Ipotizzando $Y_t^* = Y_{t-1}^*+\epsilon_t$ (random walk), semplici passaggi algebrici permettono di scrivere il modello per $Y_t$ come
+> **Derivazione.** Ipotizzando $Y_t^* = Y_{t-1}^*+\epsilon_t$ (random walk), con semplici passaggi algebrici il modello per $Y_t$ diventa
 > $$
 > Y_t = TD_t+Y_t^* = TD_t+Y_{t-1}^*+\epsilon_t = TD_t - TD_{t-1} + \underbrace{Y_{t-1}}_{Y_{t-1}^*}+\epsilon_t.
 > $$
@@ -787,9 +791,9 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 > $$
 > Y_t = \delta+Y_{t-1}+\epsilon_t = Y_0+\delta t+\sum_{j=1}^{t}\epsilon_j.
 > $$
-> - Nel caso di trend polinomiale di grado 2, si ottiene
+> - Nel caso di trend polinomiale di grado 2, si ottiene (le slide riportano $-2\gamma t$, segno errato: $TD_t-TD_{t-1}=\delta+\gamma\left(t^2-(t-1)^2\right)=(\delta-\gamma)+2\gamma t$)
 > $$
-> Y_t = (\delta-\gamma)-2\gamma t+Y_{t-1}+\epsilon_t.
+> Y_t = (\delta-\gamma)+2\gamma t+Y_{t-1}+\epsilon_t.
 > $$
 
 *(slide 89–92)*
@@ -797,11 +801,11 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 ## Verifica della non stazionarietà: il test di Dickey-Fuller
 
 > [!tip] Teorema
-> Quando si usano serie storiche di dati economici, è necessario verificare se sono stazionari oppure no. In letteratura sono stati proposti diversi test per verificare la presenza o meno di una **radice unitaria**, cioè la presenza di una componente di tipo random walk nei dati.
+> Quando si usano serie storiche di dati economici, è necessario verificare se sono stazionarie. Esistono diversi test per verificare la presenza di una **radice unitaria**, cioè la presenza di una componente di tipo random walk nei dati.
 >
 > Si consideri innanzitutto il modello AR(1),
 > $$
-> Y_t = \beta_0+\beta_1 Y_{t-1}+\epsilon_t, \qquad \mathrm{Cov}(\epsilon_t,\epsilon_{t-j})=0,\ \forall j.
+> Y_t = \beta_0+\beta_1 Y_{t-1}+\epsilon_t, \qquad \mathrm{Cov}(\epsilon_t,\epsilon_{t-j})=0,\ \forall j\ge1.
 > $$
 > Il random walk è un caso particolare di questo modello in cui $\beta_1=1$. L'idea alla base del test di **Dickey-Fuller (DF)** per verificare la non stazionarietà è di stimare il modello AR(1) e verificare il sistema d'ipotesi
 > $$
@@ -826,14 +830,14 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 >
 > ![](assets/econ-06/fig26.png)
 >
-> **Figura 27** — Distribuzione asintotica della statistica $t$ (o $DF$) al variare del modello: se $|\beta_1|<1$, $t \to N(0,1)$; se $\beta_1=1,\beta_0=0$ la distribuzione è non standard (Dickey-Fuller, $t_{\beta_0=0,\beta_1=1}$); se $\beta_1=1,\beta_0\neq0$ la distribuzione è non standard (Dickey-Fuller con drift, $t_{\beta_0\neq0,\beta_1=1}$). Il grafico sovrappone le tre densità: quella $N(0,1)$ è la più stretta e centrata, mentre le due densità di Dickey-Fuller (senza e con drift) sono spostate verso sinistra e più larghe. Il valore critico al 5% unilaterale a sinistra risulta $-2.85$ per il test DF con drift, $-1.95$ per il test senza drift, ed $-1.64$ per una $N(0,1)$.
+> **Figura 27** — Distribuzione asintotica della statistica $t$ (o $DF$) al variare del modello: se $|\beta_1|<1$, $t \to N(0,1)$; se $\beta_1=1,\beta_0=0$ la distribuzione è non standard (Dickey-Fuller, $t_{\beta_0=0,\beta_1=1}$); se $\beta_1=1,\beta_0\neq0$ la distribuzione è non standard (Dickey-Fuller con drift, $t_{\beta_0\neq0,\beta_1=1}$); l'etichetta è quella delle slide: la curva «con drift» è la $t$ del modello stimato con la costante $\beta_0$ quando il vero processo è un random walk senza drift, come nel testo, mentre con un vero drift $\beta_0\neq0$ la $t$ calcolata con la costante sarebbe asintoticamente $N(0,1)$ (West 1988). Il grafico sovrappone le tre densità: la $N(0,1)$ è simmetrica e centrata in 0, mentre le due densità di Dickey-Fuller (senza e con drift) sono spostate verso sinistra (picco attorno a $-0.7$ senza drift e a $-1.5$ con drift) e asimmetriche, con coda sinistra più lunga. Il valore critico al 5% unilaterale a sinistra risulta $-2.85$ per il test DF con drift, $-1.95$ per il test senza drift, ed $-1.64$ per una $N(0,1)$ (i valori asintotici tabulati da MacKinnon sono $-2.86$ e $-1.94$ per i due test DF).
 
 *(slide 93–96)*
 
 ## Il test aumentato di Dickey-Fuller (ADF)
 
 > [!note] Dimostrazione
-> Il test DF fornisce una decisione corretta sulla non stazionarietà se la serie originale è descritta da un modello AR(1) con errori incorrelati, cioè $\mathrm{Cov}(\epsilon_t,\epsilon_{t-j})=0,\ \forall j$. In generale questa potrebbe essere un'ipotesi poco credibile in casi pratici. Nel caso di autocorrelazione dei residui, la distribuzione asintotica della statistica $t$ risulta **non trattabile**.
+> Il test DF fornisce una decisione corretta sulla non stazionarietà se la serie originale è descritta da un modello AR(1) con errori incorrelati, cioè $\mathrm{Cov}(\epsilon_t,\epsilon_{t-j})=0,\ \forall j\ge1$. In pratica questa ipotesi è spesso poco credibile. Nel caso di autocorrelazione dei residui, la distribuzione asintotica della statistica $t$ risulta **non trattabile**.
 >
 > Per ovviare a questo inconveniente è stato proposto il test **Augmented Dickey-Fuller (ADF)**, che estende il test DF a un modello autoregressivo generico di ordine $p$. Come prima, la statistica test verifica sotto $H_0$ la presenza di radici unitarie. Si ipotizzi che i dati seguano un processo AR(p):
 > $$
@@ -841,9 +845,9 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 > $$
 > Una rappresentazione equivalente del modello, utile ai fini del calcolo del test, è
 > $$
-> \Delta Y_t = \beta_0^*+\delta Y_{t-1}+\beta_1^*\Delta Y_{t-1}+\dots+\beta_p^*\Delta Y_{t-p+1}+\epsilon_t.
+> \Delta Y_t = \beta_0^*+\delta Y_{t-1}+\beta_1^*\Delta Y_{t-1}+\dots+\beta_{p-1}^*\Delta Y_{t-p+1}+\epsilon_t.
 > $$
-> Anche in questa parametrizzazione $\delta=\beta_1-1$. Il caso $\delta=0$ è equivalente alla presenza di radice unitaria; se $\delta<0$ vale la condizione di stazionarietà. L'alternativa è unilaterale, poiché se la serie fosse stazionaria $\delta$ risulterebbe negativo:
+> In questa parametrizzazione $\delta=\beta_1+\dots+\beta_p-1$ (le slide scrivono $\delta=\beta_1-1$, valido solo per $p=1$, e indicizzano l'ultimo coefficiente come $\beta_p^*$ invece di $\beta_{p-1}^*$). Il caso $\delta=0$ è equivalente alla presenza di radice unitaria; se $\delta<0$ vale la condizione di stazionarietà. L'alternativa è unilaterale, poiché se la serie fosse stazionaria $\delta$ risulterebbe negativo:
 > $$
 > H_0:\delta=0 \quad \text{vs.} \quad H_1:\delta<0.
 > $$
@@ -857,7 +861,7 @@ Quindi l'idea è considerare modelli che, oltre a relazioni statiche tra variabi
 > $$
 > Il primo regressore rappresenta il solito modello per il test DF; il secondo è la parte *augmented*, che se omessa introdurrebbe autocorrelazione nel termine d'errore della procedura standard del test DF.
 >
-> Sotto l'ipotesi nulla, la statistica $t$ si distribuisce seguendo una distribuzione non standard, diversa rispetto al caso del modello AR(1). Anche per il test ADF risulta possibile calcolare p-value e valori critici tramite simulazione.
+> Sotto l'ipotesi nulla, la statistica $t$ si distribuisce seguendo una distribuzione non standard, che asintoticamente coincide con quella del test DF con le stesse componenti deterministiche (le slide scrivono «diversa rispetto al caso del modello AR(1)», ma i valori critici non dipendono da $p$: Said e Dickey 1984). Anche per il test ADF risulta possibile calcolare p-value e valori critici tramite simulazione.
 >
 > **Estensione: trend deterministico nel modello AR(p).** Un'ulteriore generalizzazione consiste nell'ipotizzare un modello in cui, oltre alla componente AR(p), si aggiunge un trend deterministico:
 > $$
@@ -873,7 +877,7 @@ Si ricordi che una serie storica può essere rappresentata dal modello $Y_t = TD
 
 ![](assets/econ-06/fig27.png)
 
-**Figura 28** — $Y_t = TD_t+Y_t^*$: la linea verde $Y_t$ rappresenta la serie osservata (con andamento crescente da circa 5 fino a circa 25-30 tra il 2006 e il 2022), rappresentata come combinazione del trend deterministico $TD_t$ (retta arancione crescente) e della dinamica stocastica $Y_t^*$ (serie blu oscillante attorno a zero senza trend).
+**Figura 28** — $Y_t = TD_t+Y_t^*$: la linea verde $Y_t$ rappresenta la serie osservata (con andamento crescente da circa 2 a fine 2004 fino a circa 24-26 nel 2021), rappresentata come combinazione del trend deterministico $TD_t$ (retta arancione crescente) e della dinamica stocastica $Y_t^*$ (serie viola senza trend, che oscilla tra circa $-4$ e $5$).
 
 **Caso 1: trend deterministico costante.** Si ipotizzi $TD_t=\kappa$ e $Y_t^*=\alpha Y_{t-1}^*+\epsilon_t$. Ne consegue che
 $$
@@ -893,7 +897,7 @@ Se fosse vera l'ipotesi nulla $\alpha=1$, si ottiene
 $$
 Y_t = \delta+Y_{t-1}+\epsilon_t,
 $$
-cioè, sotto la nulla, un random walk con drift, con valore iniziale $y_0$ non necessariamente pari a 0.
+cioè, sotto la nulla, un random walk con drift, con valore iniziale $Y_0$ non necessariamente pari a 0.
 
 **Regola approssimativa** per decidere quale test utilizzare:
 - se la serie storica non evidenzia un andamento tendenziale netto, si può usare il primo test (componente deterministica definita solo da una costante): sia sotto l'ipotesi nulla che sotto l'alternativa il processo ha media costante;
@@ -918,7 +922,7 @@ $$
 ## Riepilogo delle ipotesi OLS per le serie storiche e distribuzione asintotica
 
 > [!tip] Teorema
-> Concludendo, le ipotesi necessarie per ottenere stimatori OLS ottimali nel caso di modelli dinamici sono:
+> Le ipotesi necessarie per ottenere stimatori OLS ottimali nel caso di modelli dinamici sono:
 > - il modello è lineare;
 > - il vettore $(Y_t,X_t)$ è stazionario, ed inoltre la dipendenza seriale tra $(Y_t,X_t)$ e $(Y_{t-j},X_{t-j})$ diventa nulla per $j$ grande;
 > - $Y_t$ ed $X_t$ possiedono almeno i primi 8 momenti;
@@ -940,7 +944,7 @@ $$
 >
 > (iii) la variabile casuale $t$, definita come $t=\dfrac{\hat\beta_j-\beta_j}{\hat\sigma_{\hat\beta_j}}$, converge ad una Normale standard:
 > $$
-> t=\frac{\hat\beta_j-\beta_j}{\hat\sigma_{\hat\beta_j}} \xrightarrow{p} N(0,1);
+> t=\frac{\hat\beta_j-\beta_j}{\hat\sigma_{\hat\beta_j}} \xrightarrow{d} N(0,1);
 > $$
 >
 > (iv) lo stimatore $\hat\sigma_{\hat\beta_j}$ viene calcolato come nel caso del modello di regressione con errori omoschedastici.

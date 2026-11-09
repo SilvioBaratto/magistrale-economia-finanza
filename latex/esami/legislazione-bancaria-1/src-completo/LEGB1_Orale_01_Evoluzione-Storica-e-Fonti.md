@@ -5,7 +5,7 @@ subtitle: "Punto 1 del programma — cenni sull'evoluzione storica della legisla
 
 # Evoluzione storica della legislazione bancaria e sistema delle fonti
 
-Questo capitolo copre il primo punto del programma e, insieme, il presupposto metodologico di tutto il corso: sapere da dove viene il Testo unico bancario e in quale sistema di fonti esso oggi si colloca. Il docente tende ad aprire l'orale proprio di qui, con una domanda apparentemente larga — «mi parli dell'evoluzione della legislazione bancaria» — che serve a verificare due cose insieme: se lo studente possiede la linea del tempo e se sa agganciarla agli articoli. La trappola è rispondere raccontando una storia senza mai citare una norma; il rimedio è tenere fisso il filo logico che segue. Il punto di partenza è la crisi del 1929 e la risposta della legge bancaria del 1936-38, costruita sulla stabilità e sulla vigilanza strutturale. Il punto di arrivo è il d.lgs. 1° settembre 1993, n. 385, che nasce dalla spinta congiunta di un fatto economico (l'internazionalizzazione e la despecializzazione di fatto del mercato) e di un fatto giuridico (la seconda direttiva banche), e che riscrive l'ordinamento intorno a tre idee: la banca è impresa, la concorrenza è un valore, la vigilanza è prudenziale e non strutturale. Da lì in avanti il baricentro si sposta verso l'alto — SEVIF, Unione bancaria, single rulebook — e verso il basso, con la delegificazione e la normativa secondaria della Banca d'Italia. Chi sa muoversi lungo questi due assi, verticale europeo e verticale interno, domina la materia. Le domande che seguono alternano il piano storico, quello definitorio dell'art. 1 e quello del sistema delle fonti: sono i tre registri su cui il docente si muove.
+Questo capitolo copre il primo punto del programma e, insieme, il presupposto metodologico di tutto il corso: conoscere il Testo unico bancario e il sistema di fonti in cui oggi si colloca. All'orale il docente si concentra sul diritto vigente: la storia bancaria — da dove viene il TUB, perché un fatto storico ha prodotto una certa legge — è cultura generale utile, ma non è materia d'esame, e le domande che seguono la usano al più come chiave per capire il perché di una norma attuale. La trappola è rispondere raccontando senza mai citare una norma; il rimedio è tenere fisso il filo logico che segue. Il d.lgs. 1° settembre 1993, n. 385 poggia su tre idee: la banca è impresa, la concorrenza è un valore, la vigilanza è prudenziale e non strutturale. Intorno a esso il baricentro si è spostato verso l'alto — SEVIF, Unione bancaria, single rulebook — e verso il basso, con la delegificazione e la normativa secondaria della Banca d'Italia. Chi sa muoversi lungo questi due assi, verticale europeo e verticale interno, domina la materia. Le domande che seguono alternano il piano definitorio dell'art. 1 e quello del sistema delle fonti: sono i registri su cui il docente si muove.
 
 ## D1 — Legislazione bancaria e diritto bancario: oggetto e confini della materia
 
@@ -42,93 +42,19 @@ Vale la pena aggiungere un rilievo di metodo, perché il programma indica fra i 
 > Perché la vigilanza appartiene al filone pubblicistico?
 > → Perché il rapporto è fra il soggetto vigilato e un'autorità che esercita potestà pubbliche, con provvedimenti impugnabili e procedimenti retti dalla l. 241/1990.
 
-## D2 — La legge bancaria del 1936-38 e il contesto della crisi del 1929
+## D4 — Vigilanza strutturale e vigilanza prudenziale
 
 > [!question] Domanda
-> Ricostruisca la genesi e l'impianto della legge bancaria del 1936-38: quale problema intendeva risolvere e con quali strumenti?
+> Mi spieghi la differenza fra vigilanza strutturale e vigilanza prudenziale e mi dica dove, nel testo del TUB, la scelta prudenziale è leggibile.
 
 > [!success] Attacco
-> La legge bancaria è il regio decreto-legge 12 marzo 1936, n. 375, convertito con modificazioni dalla legge 7 marzo 1938, n. 141: non un testo unitario, ma una serie di provvedimenti collegati che hanno finito per comporre un corpo unico. È stata la risposta istituzionale alla crisi del 1929 e al collasso del modello della banca mista, ed è rimasta in vigore fino al 31 dicembre 1993, perché l'art. 161, comma 1, del TUB la abroga espressamente, sia pure facendo salvi il titolo III, sulla Banca d'Italia, e poche altre disposizioni, e l'art. 162 fissa l'entrata in vigore del Testo unico al 1° gennaio 1994.
+> La vigilanza strutturale è quella in cui l'autorità conforma direttamente la struttura del mercato, decidendo quanti operatori vi siano, con quale specializzazione e con quale articolazione territoriale; la vigilanza prudenziale è quella in cui l'autorità predetermina regole tecniche di prudenza — patrimonio, contenimento del rischio, governo societario — e lascia poi all'imprenditore bancario la libertà di operare nel loro rispetto. La scelta prudenziale è scritta negli artt. 5 e 53 TUB e, quanto all'articolazione territoriale, nell'art. 15.
 
-Il problema che il legislatore degli anni Trenta si trovava davanti era la **instabilità sistemica** generata dall'intreccio fra banca e industria. La banca mista raccoglieva a breve e impiegava a lungo termine nel capitale delle imprese: quando le imprese saltavano, saltava anche la banca, e con essa il risparmio dei depositanti. La risposta fu duplice: separare il credito ordinario dal credito mobiliare e ridurre drasticamente il grado di concorrenza fra gli intermediari.
-
-Da qui discendono i due pilastri dell'impianto. Il primo è la **specializzazione**, temporale e operativa insieme: aziende di credito abilitate al breve termine e istituti di credito speciale abilitati al medio-lungo, e all'interno di ciascuna categoria una ripartizione per settori di intervento, tanto che, come si ricordava a lezione, il credito cinematografico era riservato a un solo ente e quello sportivo a pochissimi. Il secondo pilastro è la **vigilanza strutturale**: alle autorità creditizie era attribuito il potere di incidere sulla struttura stessa del mercato, decidendo quante banche potessero esistere, dove e con quanti sportelli.
-
-Questo secondo pilastro poteva funzionare solo grazie a una precisa scelta di tecnica legislativa: la legge del 1936-38 era deliberatamente **elastica**. Enunciava principi senza predeterminare criteri e requisiti — la Banca d'Italia «autorizza» l'apertura di nuovi sportelli, senza dire in base a che cosa — e in questo modo conferiva all'autorità una discrezionalità sostanzialmente piena. L'elasticità le assicurò una longevità eccezionale, quasi sessant'anni, perché consentiva letture opposte a seconda dell'indirizzo di politica economica. Ma fu anche il suo tallone d'Achille, perché una discrezionalità non vincolata è incompatibile con la logica comunitaria dell'autorizzazione su presupposti oggettivi.
-
-Va ricordato, per completezza, che il 1936 non è il primo intervento organico: nel 1926 era stata emanata quella che si suole chiamare la prima legge bancaria, travolta però dalla crisi del 1929 e dal mutamento di scenario che ne seguì.
-
-> [!tip] Fonti da citare
-> - art. 161, comma 1, TUB — abrogazione del r.d.l. 12 marzo 1936, n. 375, convertito con modificazioni dalla l. 7 marzo 1938, n. 141, fatta eccezione per il titolo III e per gli artt. 32, primo comma, lett. d) e f), e 35, secondo comma, lett. b)
-> - art. 162 TUB — entrata in vigore del Testo unico il 1° gennaio 1994
-> - art. 10, comma 3, TUB — despecializzazione operativa, come termine di confronto con l'assetto previgente
-
-> [!warning] Attenzione
-> Non chiamarla «legge bancaria del 1936» senza altro. La formula corretta all'orale è «legge bancaria del 1936-38», e se si vuole essere precisi si cita il r.d.l. 375/1936 convertito dalla l. 141/1938: è esattamente così che l'art. 161 TUB la individua. Chi cita solo il 1936 lascia intendere di non avere mai aperto l'articolo sulle abrogazioni.
-
-> [!note] Rilancio
-> Perché una legge elastica è anche longeva?
-> → Perché non cristallizza scelte di merito: gli stessi enunciati possono essere applicati in senso restrittivo o liberale, adattandosi al mutare dell'indirizzo politico senza bisogno di riforme.
->
-> Che cosa si intende per banca mista?
-> → L'intermediario che raccoglie a breve e finanzia stabilmente l'industria anche assumendone partecipazioni, con un disallineamento strutturale fra scadenze dell'attivo e del passivo.
->
-> La legge del 1936-38 è stata abrogata tutta in un colpo?
-> → No, e la precisazione va fatta subito perché è il punto della domanda. L'art. 161, comma 1, abroga il r.d.l. 375/1936 convertito dalla l. 141/1938 «fatta eccezione per il titolo III e per gli articoli 32, primo comma, lettere d) e f) e 35, secondo comma, lettera b)»: il titolo III, dedicato alla Banca d'Italia, è rimasto in vigore, sicché la legge bancaria sopravvive in frammenti anche dopo il 1° gennaio 1994. A ciò si aggiunge che i commi 2 e 5 dello stesso articolo prevedono meccanismi di ultrattività per altre norme e per la normativa secondaria emanata in loro attuazione.
-
-## D3 — L'ordinamento sezionale del credito e la costruzione di Giannini
-
-> [!question] Domanda
-> Che cosa si intende per ordinamento sezionale del credito, e perché quella ricostruzione è oggi considerata superata?
-
-> [!success] Attacco
-> Con l'espressione «ordinamento sezionale» la dottrina, e per prima quella amministrativistica di Massimo Severo Giannini, ha inquadrato il settore del credito disegnato dalla legge del 1936-38 come un ordinamento giuridico particolare, incardinato nell'ordinamento generale ma dotato di autorità proprie, di soggetti propri e di fonti normative proprie. Quella lettura aveva un appiglio testuale preciso: l'art. 1 della legge bancaria qualificava la raccolta del risparmio e l'esercizio del credito come funzioni di interesse pubblico, ed è su quella qualificazione che una parte della dottrina amministrativistica dell'epoca costruì la tesi dell'attività bancaria come servizio pubblico, riferito allo Stato direttamente per le banche pubbliche e solo in via indiretta per quelle private. È una chiave di lettura che spiega bene il diritto bancario del periodo strutturale, e che il TUB ha in larga parte disattivato riconoscendo all'art. 10, comma 1, il carattere imprenditoriale dell'attività bancaria.
-
-L'idea di fondo è la seguente. Un ordinamento sezionale presenta i tre elementi classici di ogni ordinamento: una **plurisoggettività** (gli enti creditizi), una **organizzazione** (le autorità di settore) e una **normazione** propria (gli atti di quelle autorità). Ciò che lo rende «sezionale» è che esso non è autonomo rispetto all'ordinamento statale, ma vi è inserito come una sezione, ritagliata per governare un comparto ritenuto di rilievo pubblicistico tale da non poter essere lasciato al diritto comune dell'impresa.
-
-Conviene ricordare che la tesi della **riferibilità mediata** fu contestata fin da subito, e su un argomento testuale: la locuzione «funzioni di interesse pubblico» dell'art. 1 della legge bancaria non è sinonimo di «servizio pubblico», e dal fatto che un'attività sia di interesse pubblico non discende che essa sia esercitata per conto dello Stato. Saper dire che la ricostruzione fu discussa, e perché, vale più che saperla riferire.
-
-Applicata alla legge del 1936-38, la costruzione rende comunque conto di tre dati. Primo, gli enti creditizi erano visti come soggetti che svolgono una funzione, non come imprenditori che esercitano un'attività economica. Secondo, l'accesso e la permanenza nel settore dipendevano da valutazioni discrezionali dell'autorità, come in una relazione di supremazia speciale. Terzo, la normazione di settore era in larga misura prodotta dall'autorità stessa, che esercitava in concreto una funzione quasi-normativa senza criteri legali predeterminati.
-
-Il TUB rompe questo schema su tutti e tre i fronti, ed è questo il giudizio che conviene esprimere all'orale. Sul primo, l'art. 10, comma 1, qualifica l'attività bancaria come attività d'impresa e l'art. 1, comma 1, lett. b), definisce la banca come «l'impresa autorizzata all'esercizio dell'attività bancaria»: non più funzione, ma impresa autorizzata. Sul secondo, l'art. 14 tipizza le condizioni dell'autorizzazione, che è rilasciata quando ricorrano presupposti puntualmente elencati e può essere negata solo quando non risulti garantita la sana e prudente gestione: la discrezionalità diventa tecnica e vincolata nel fine. Sul terzo, l'art. 4, comma 2, impone alla Banca d'Italia di determinare e rendere pubblici previamente i principi e i criteri dell'attività di vigilanza, e l'art. 5 fissa per legge le finalità cui la vigilanza deve tendere.
-
-Resta però un fondo di verità nella lettura sezionale, e riconoscerlo è segno di maturità: il settore bancario conserva autorità dedicate, una riserva di attività, una normazione secondaria molto densa e un regime di crisi derogatorio rispetto al diritto comune dell'insolvenza. Ciò che è cambiato non è l'esistenza di uno statuto speciale, ma il suo fondamento: non più la natura pubblicistica del soggetto, bensì la tutela di interessi pubblici — il risparmio, la stabilità — che l'art. 5 TUB enumera espressamente.
-
-> [!tip] Fonti da citare
-> - art. 1 della legge bancaria del 1936-38 — raccolta del risparmio ed esercizio del credito come «funzioni di interesse pubblico»
-> - art. 1, comma 1, lett. b), TUB — banca come impresa autorizzata
-> - art. 10, commi 1 e 2, TUB — carattere d'impresa e riserva di attività
-> - art. 5 TUB — finalità della vigilanza: sana e prudente gestione, stabilità complessiva, efficienza e competitività del sistema finanziario, osservanza delle disposizioni in materia creditizia
-> - art. 4, comma 2, TUB — previa pubblicità dei principi e criteri di vigilanza
-
-> [!warning] Attenzione
-> La ricostruzione dell'ordinamento sezionale è dottrina, non norma: non esiste un articolo del TUB che la enunci, e il suo unico appiglio positivo stava nell'art. 1 della legge bancaria. Presentarla come diritto positivo vigente è un errore; presentarla come chiave storico-ricostruttiva ancorata a quel testo, e poi confrontarla con gli artt. 5 e 10 TUB, è esattamente la risposta che il docente cerca. Il riferimento bibliografico puntuale allo scritto di Giannini va controllato sul manuale, perché quel testo non è fra i materiali del corso.
-
-> [!note] Rilancio
-> Quali sono gli elementi che fanno di un settore un ordinamento sezionale?
-> → Soggetti propri, organizzazione propria e normazione propria, inseriti però nell'ordinamento generale e non autonomi da esso.
->
-> Che cos'è la teoria della riferibilità mediata?
-> → La costruzione con cui una parte della dottrina qualificava come servizio pubblico anche l'attività delle banche private, riferendola allo Stato solo in via indiretta; fu contestata perché «funzioni di interesse pubblico» non equivale a «servizio pubblico». All'orale conviene presentarla come orientamento risalente, senza attribuirla a un autore determinato se non se ne è verificata la paternità sul manuale.
->
-> Che cosa cambia l'art. 4, comma 2, TUB rispetto alla legge del 1936-38?
-> → Trasforma la discrezionalità libera in discrezionalità tecnica conoscibile ex ante, perché obbliga l'autorità a dichiarare in anticipo i criteri con cui deciderà.
-
-## D4 — Dalla vigilanza strutturale alla vigilanza prudenziale
-
-> [!question] Domanda
-> Illustri il passaggio dalla vigilanza strutturale alla vigilanza prudenziale e mi dica dove, nel testo del TUB, questo passaggio è leggibile.
-
-> [!success] Attacco
-> La vigilanza strutturale è quella in cui l'autorità conforma direttamente la struttura del mercato, decidendo quanti operatori vi siano, con quale specializzazione e con quale articolazione territoriale; la vigilanza prudenziale è quella in cui l'autorità predetermina regole tecniche di prudenza — patrimonio, contenimento del rischio, governo societario — e lascia poi all'imprenditore bancario la libertà di operare nel loro rispetto. Il passaggio è scritto negli artt. 5 e 53 TUB e, quanto all'articolazione territoriale, nell'art. 15.
-
-Il modello strutturale era coerente con il proprio obiettivo. Se la finalità primaria è la stabilità, e se si assume che la concorrenza generi instabilità almeno nel breve periodo, allora il modo più diretto per ottenere stabilità è comprimere la concorrenza: pochi operatori, ciascuno nel proprio recinto operativo e territoriale, pochi sportelli, nessuna sovrapposizione. La vigilanza della Banca d'Italia, in quegli anni, era considerata fra le migliori al mondo quanto a efficacia; era però rigida e protettiva, e finiva per premiare la rendita di posizione piuttosto che l'efficienza.
+Il modello strutturale era coerente con il proprio obiettivo. Se la finalità primaria è la stabilità, e se si assume che la concorrenza generi instabilità almeno nel breve periodo, allora il modo più diretto per ottenere stabilità è comprimere la concorrenza: pochi operatori, ciascuno nel proprio recinto operativo e territoriale, pochi sportelli, nessuna sovrapposizione. Un modello simile è rigido e protettivo, e finisce per premiare la rendita di posizione piuttosto che l'efficienza.
 
 Il modello prudenziale rovescia il rapporto fra autonomia e controllo. L'autorità non dice più alla banca che cosa fare, ma con quanta prudenza farlo. L'art. 53, comma 1, TUB è la norma-manifesto: la Banca d'Italia emana disposizioni di carattere generale aventi a oggetto l'adeguatezza patrimoniale, il contenimento del rischio nelle sue diverse configurazioni, il governo societario, l'organizzazione amministrativa e contabile, i controlli interni e i sistemi di remunerazione e incentivazione, nonché l'informativa da rendere al pubblico su tali materie. Sono le regole del «bravo banchiere»: rispettate quelle, la scelta imprenditoriale è libera.
 
-La conferma più eloquente sta però nell'art. 15. Sotto la legge del 1936-38 l'apertura di uno sportello richiedeva un'autorizzazione discrezionale; oggi le banche italiane stabiliscono succursali nel territorio della Repubblica e negli altri Stati dell'Unione in conformità alle procedure previste dalle disposizioni del Meccanismo di vigilanza unico, e alla Banca d'Italia, dentro il mercato interno, resta il solo potere di vietare la nuova succursale di un soggetto italiano meno significativo, per motivi attinenti all'adeguatezza delle strutture organizzative o alla situazione finanziaria, economica e patrimoniale. L'autorizzazione preventiva sopravvive, ai sensi del comma 2, per le sole succursali in uno Stato terzo. Nel mercato interno si è dunque passati dall'autorizzazione al divieto eventuale e motivato: è il segno più tangibile della liberalizzazione.
-
-Che questo passaggio sia avvenuto per gradi, e prima ancora che il diritto europeo lo imponesse in questa forma, lo documentano due interventi di normativa secondaria che vale la pena citare perché sono fra i materiali del corso. Il Bollettino di Vigilanza del dicembre 2005 riscrive la disciplina dell'attività bancaria fuori sede «in un'ottica di semplificazione della stessa e di valorizzazione dell'autonomia imprenditoriale e organizzativa delle banche», ampliando i soggetti di cui la banca può avvalersi per la distribuzione. Il Bollettino del marzo 2007 interviene sull'apertura di succursali e sull'accertamento delle modificazioni statutarie, nell'ambito di una revisione dichiaratamente diretta a «eliminare istituti non armonizzati, contenere gli oneri a carico dei destinatari, semplificare e razionalizzare l'attività di supervisione». Citarli è il modo più concreto di mostrare che la liberalizzazione non è una formula di manuale.
+La conferma più eloquente sta però nell'art. 15. Le banche italiane stabiliscono succursali nel territorio della Repubblica e negli altri Stati dell'Unione in conformità alle procedure previste dalle disposizioni del Meccanismo di vigilanza unico, e alla Banca d'Italia, dentro il mercato interno, resta il solo potere di vietare la nuova succursale di un soggetto italiano meno significativo, per motivi attinenti all'adeguatezza delle strutture organizzative o alla situazione finanziaria, economica e patrimoniale. L'autorizzazione preventiva sopravvive, ai sensi del comma 2, per le sole succursali in uno Stato terzo. Nel mercato interno vale dunque il divieto eventuale e motivato, non l'autorizzazione: è il segno più tangibile della scelta prudenziale.
 
 Il quadro è completato dall'art. 5, che fissa per legge le finalità della vigilanza — sana e prudente gestione, stabilità complessiva, efficienza e competitività del sistema finanziario, osservanza delle disposizioni in materia creditizia — mettendo così sullo stesso piano stabilità ed efficienza. È in questo enunciato che si trova il punto di equilibrio fra autonomia imprenditoriale della banca e interessi pubblici tutelati, che è poi la domanda di fondo dell'intero corso.
 
@@ -136,8 +62,6 @@ Il quadro è completato dall'art. 5, che fissa per legge le finalità della vigi
 > - art. 5 TUB — finalità e destinatari della vigilanza
 > - art. 53, comma 1, TUB — vigilanza regolamentare: adeguatezza patrimoniale, contenimento del rischio, governo societario, controlli interni, remunerazioni, informativa al pubblico
 > - art. 15, commi 01, 1 e 2, TUB — libertà di stabilimento nel mercato interno, potere di divieto residuale, autorizzazione per le succursali in Stato terzo
-> - Bollettino di Vigilanza dicembre 2005, par. 4 — attività bancaria fuori sede e valorizzazione dell'autonomia organizzativa
-> - Bollettino di Vigilanza marzo 2007, par. 2 — modificazioni statutarie e apertura di succursali
 > - Circ. Banca d'Italia n. 285 del 17 dicembre 2013, Premessa — la Circolare come attuazione degli artt. 53 e 67 TUB
 
 > [!warning] Attenzione
@@ -153,85 +77,13 @@ Il quadro è completato dall'art. 5, che fissa per legge le finalità della vigi
 > Stabilità ed efficienza possono confliggere?
 > → Sì, e l'art. 5 non risolve il conflitto in astratto: lo rimette al bilanciamento dell'autorità, che deve però rendere previamente pubblici i criteri ai sensi dell'art. 4, comma 2.
 
-## D5 — Il mutamento di contesto che ha imposto la riforma
+## D7 — I tre principi che reggono l'operatività transfrontaliera delle banche
 
 > [!question] Domanda
-> Il TUB nasce anche da ragioni che non sono giuridiche. Quali sono i fenomeni economici e di mercato che alla fine degli anni Ottanta rendevano insostenibile la legge del 1936-38?
+> Su quali principi si regge oggi l'operatività transfrontaliera delle banche nell'Unione europea, e quali eccezioni conosce il principio dell'home country control?
 
 > [!success] Attacco
-> Il TUB non è soltanto il frutto dell'obbligo di recepire la seconda direttiva banche: è la presa d'atto che l'ambiente in cui le banche operavano non era più quello degli anni Trenta. Il divario fra il mercato reale e l'assetto normativo era diventato tale che la legge del 1936-38 era ormai una gabbia, e l'art. 10, comma 3, TUB — le banche esercitano «ogni altra attività finanziaria» oltre a quella bancaria — è la traduzione normativa di quella presa d'atto.
-
-Cinque fenomeni convergevano. Il primo è l'**internazionalizzazione** dell'attività bancaria e della finanza: un dato oggi ovvio, che nel momento in cui iniziavano i lavori preparatori non lo era affatto, tanto che il vecchio corpo normativo si limitava a un riferimento generico alle filiali di banche estere. Il secondo è l'**ampliamento della gamma dei prodotti**: il codice civile tipizzava un numero molto ridotto di contratti bancari, mentre nella prassi le banche offrivano già molto di più e iniziavano a svolgere attività finanziaria in senso ampio. Il terzo è la **despecializzazione di fatto**: il sistema finanziario tradizionale, con banche, assicurazioni e agenti di cambio ciascuno nel proprio recinto, si era già sgretolato, e si erano formate ampie «aree grigie» di contiguità fra intermediari. Il quarto è l'**informatizzazione** dell'attività, con la dematerializzazione dei supporti e delle operazioni. Il quinto è l'affacciarsi di **nuovi meccanismi di concorrenza**, non solo fra banche ma fra banche e intermediari non bancari — SIM, SGR, SICAV, fondi pensione — e, soprattutto, fra ordinamenti.
-
-A questo scenario globale si sommavano peculiarità tutte italiane. Il sistema era frammentato in un numero elevatissimo di banche di dimensione ridotta: la maggiore banca italiana dell'epoca non figurava fra le prime cento europee. Era fortemente specializzato per legge. Contava pochissimi sportelli, e quei pochi offrivano pochi servizi. Vedeva una presenza massiccia di banche pubbliche. Ed era presidiato da un sistema di vigilanza efficace ma rigido.
-
-Il fattore che rese la riforma non più rinviabile fu però la **concorrenza fra ordinamenti**. Con il mutuo riconoscimento, una banca autorizzata in un altro Stato membro avrebbe potuto operare in Italia — attraverso succursali o in libera prestazione di servizi — senza bisogno di un'autorizzazione della Banca d'Italia. Il sistema oggi si legge negli artt. 15 e 16 TUB, letti insieme alla definizione di «banca dell'Unione europea» dell'art. 1, comma 2, lett. b). Il rischio era evidente: banche estere più grandi, più patrimonializzate, con gamme di servizi più ampie sarebbero entrate in un mercato i cui operatori nazionali restavano vincolati da una legge che ne limitava dimensione e operatività. Mantenere la legge del 1936-38 significava condannare le banche italiane a competere con le mani legate.
-
-> [!tip] Fonti da citare
-> - art. 10, comma 3, TUB — esercizio di ogni altra attività finanziaria, connessa o strumentale
-> - art. 1, comma 2, lett. b), TUB — nozione di banca dell'Unione europea
-> - art. 1, comma 2, lett. f), TUB — elenco delle attività ammesse al mutuo riconoscimento
-> - artt. 15 e 16 TUB — succursali e libera prestazione di servizi
-> - art. 17 TUB — attività non ammesse al mutuo riconoscimento
-
-> [!warning] Attenzione
-> L'espressione «patentino europeo», usata a lezione, è efficace ma atecnica. All'orale conviene usarla una volta sola e poi tradurla subito: si tratta del principio del mutuo riconoscimento, che opera nei limiti dell'elenco delle attività ammesse di cui all'art. 1, comma 2, lett. f), TUB. Fuori da quell'elenco il riconoscimento non opera e si applica l'art. 17, che rimette alla Banca d'Italia la disciplina dell'esercizio in Italia di quelle attività da parte delle banche dell'Unione europea: è un potere regolamentare, non un potere di autorizzazione.
-
-> [!note] Rilancio
-> Che cosa sono le «aree grigie» fra intermediari?
-> → Gli spazi di sovrapposizione operativa in cui lo stesso bisogno finanziario può essere soddisfatto da soggetti sottoposti a regimi di vigilanza diversi, con conseguente rischio di arbitraggio regolamentare.
->
-> Perché la concorrenza fra ordinamenti è più insidiosa della concorrenza fra imprese?
-> → Perché sposta il vantaggio competitivo sul piano delle regole: l'impresa sceglie il diritto che le conviene, e lo Stato che non si adegua perde operatori e base imponibile.
->
-> Le banche italiane potevano già operare all'estero prima del TUB?
-> → Solo in misura marginale, e sempre con il permesso dell'autorità: sotto la legge del 1936-38 l'articolazione territoriale, in Italia come all'estero, dipendeva da un'autorizzazione discrezionale della Banca d'Italia, e il sistema bancario italiano era per di più poco internazionalizzato, tanto che il vecchio corpo normativo si limitava a un riferimento generico alle filiali di banche estere. Oggi il rapporto è rovesciato: l'art. 15, comma 01, rimette lo stabilimento di succursali nel territorio della Repubblica e negli altri Stati dell'Unione alle procedure previste dalle disposizioni del Meccanismo di vigilanza unico, e l'autorizzazione della Banca d'Italia, ai sensi del comma 2, resta necessaria soltanto per le succursali in uno Stato terzo.
-
-## D6 — Le fonti europee delle origini: Trattato di Roma e prima direttiva banche
-
-> [!question] Domanda
-> Partiamo dall'inizio del percorso europeo: quali sono le libertà del Trattato che interessano l'ordinamento bancario e che cosa ha fatto la prima direttiva banche?
-
-> [!success] Attacco
-> Il punto di partenza è il Trattato di Roma del 1957, in vigore dal 1958, con il quale nasce la Comunità economica europea e l'obiettivo del mercato unico. Gli strumenti che ancora oggi reggono la disciplina bancaria transfrontaliera sono due libertà: la libertà di stabilimento e la libera prestazione di servizi, che il TUB traduce rispettivamente negli artt. 15 e 16. La prima direttiva banche è la direttiva 77/780/CEE, relativa al coordinamento delle disposizioni riguardanti l'accesso all'attività degli enti creditizi e il suo esercizio.
-
-La **libertà di stabilimento** consente all'impresa di istituire sedi secondarie in Stati membri diversi da quello in cui ha la sede legale; per le banche ciò significa aprire succursali, cioè — secondo la definizione dell'art. 1, comma 2, lett. e), TUB — sedi sprovviste di personalità giuridica che effettuano direttamente, in tutto o in parte, l'attività per la quale la banca è autorizzata. La **libera prestazione di servizi** consente invece di operare in un altro Stato membro senza stabilirvi alcuna struttura, dirigendo l'attività dal Paese d'origine.
-
-L'ostacolo che per anni impedì di tradurre queste libertà in diritto bancario effettivo fu concettuale prima che politico: ogni Stato aveva una propria nozione di banca e di attività bancaria, e senza una nozione comune non si può riconoscere l'autorizzazione altrui. Un primo tentativo di legge bancaria europea, nel 1962, naufragò proprio su questo. Si procedette allora per gradi, con un primo intervento — la cosiddetta «direttiva zero» del 1973 — che si limitava a sopprimere le restrizioni poste dalle legislazioni nazionali alle due libertà, e poi con la direttiva 77/780/CEE.
-
-Il contenuto della prima direttiva è essenzialmente triplice. Essa introduce un **glossario** che fissa nozioni comuni, a partire da quella di ente creditizio. Impone che il **rilascio dell'autorizzazione** all'attività bancaria avvenga sulla base di presupposti oggettivi, e non di valutazioni discrezionali: è il principio che oggi si legge nell'art. 14, comma 1, TUB, dove le condizioni sono elencate in modo tassativo. Introduce infine le prime **norme di coordinamento e collaborazione** fra autorità nazionali, che nel TUB trovano oggi sviluppo negli artt. 6 e 7.
-
-Proprio il secondo profilo creò all'Italia un problema serio. La legge del 1936-38, come si è visto, non enunciava i criteri dell'autorizzazione, affidandosi all'elasticità. L'adeguamento tardò, l'Italia subì una procedura d'infrazione e il recepimento arrivò soltanto con il d.P.R. 27 giugno 1985, n. 350 — provvedimento che l'art. 161, comma 2, TUB colloca, significativamente, fra le norme oggetto di abrogazione differita.
-
-> [!tip] Fonti da citare
-> - direttiva 73/183/CEE — la «direttiva zero» del 1973, soppressione delle restrizioni a stabilimento e libera prestazione
-> - direttiva 77/780/CEE — prima direttiva banche, coordinamento sull'accesso all'attività degli enti creditizi
-> - art. 1, comma 2, lett. e), TUB — nozione di succursale
-> - artt. 15 e 16 TUB — stabilimento di succursali e libera prestazione di servizi
-> - art. 14, comma 1, TUB — condizioni oggettive per il rilascio dell'autorizzazione
-> - art. 161, comma 2, TUB — abrogazione differita del d.P.R. 27 giugno 1985, n. 350
-> - Circ. Banca d'Italia n. 229, Titolo I, Capitolo 1 — elenco delle fonti in materia di autorizzazione, con richiamo alle direttive 77/780/CEE, 89/646/CEE e 95/26/CE
-
-> [!warning] Attenzione
-> La direttiva che precede la 77/780 e che si limitava a sopprimere le restrizioni a stabilimento e libera prestazione è quella che a lezione viene chiamata «direttiva zero»: gli appunti del corso la individuano come direttiva 183 del 1973, cioè la dir. 73/183/CEE. Conviene citarla con il numero e insieme spiegarne il contenuto — soppressione delle restrizioni nazionali, non ancora armonizzazione — perché è proprio la differenza di contenuto, più della data, a far capire perché occorse poi la prima direttiva del 1977.
-
-> [!note] Rilancio
-> Perché la nozione comune di banca era il presupposto di tutto?
-> → Perché il mutuo riconoscimento è riconoscimento di un'autorizzazione altrui: se l'oggetto autorizzato è diverso da Stato a Stato, non c'è nulla da riconoscere.
->
-> Che differenza c'è fra succursale e filiazione?
-> → La succursale è priva di personalità giuridica ed è parte della banca; la filiazione è una società distinta, che come tale deve essere autonomamente autorizzata.
->
-> Perché l'Italia ha subito una procedura d'infrazione?
-> → Per mancato tempestivo recepimento della prima direttiva, la cui logica dei presupposti oggettivi era incompatibile con la discrezionalità della legge del 1936-38; il recepimento arrivò solo nel 1985, con il d.P.R. 350/1985.
-
-## D7 — La seconda direttiva banche e i tre principi che reggono il sistema
-
-> [!question] Domanda
-> La seconda direttiva di coordinamento è considerata la svolta. Quali principi introduce e quali eccezioni conosce il principio dell'home country control?
-
-> [!success] Attacco
-> La seconda direttiva di coordinamento è la direttiva 89/646/CEE del Consiglio del 15 dicembre 1989, richiamata espressamente nel preambolo del TUB. Essa poggia su tre principi che ancora oggi reggono l'intero ordinamento bancario europeo: il mutuo riconoscimento o autorizzazione unica, l'armonizzazione minima e il controllo dello Stato d'origine. Il TUB li recepisce nell'art. 1, comma 2, lettere b) ed f), e negli artt. 15, 16, 17 e 18.
+> L'operatività transfrontaliera delle banche poggia su tre principi, fissati dalla direttiva 89/646/CEE e tuttora alla base dell'intero ordinamento bancario europeo: il mutuo riconoscimento o autorizzazione unica, l'armonizzazione minima e il controllo dello Stato d'origine. Il TUB li recepisce nell'art. 1, comma 2, lettere b) ed f), e negli artt. 15, 16, 17 e 18.
 
 Il **mutuo riconoscimento** significa che la banca autorizzata in uno Stato membro può operare in tutti gli altri senza bisogno di una nuova autorizzazione. Il TUB lo costruisce tecnicamente in due passaggi. Anzitutto definisce all'art. 1, comma 2, lett. b), la «banca dell'Unione europea» come la banca avente sede legale e amministrazione centrale nel medesimo Stato membro diverso dall'Italia: il requisito è congiunto, per impedire che la sede legale venga collocata in uno Stato di comodo mentre la direzione effettiva risiede altrove. Poi delimita l'oggetto del riconoscimento con l'elenco dell'art. 1, comma 2, lett. f), che enumera quindici voci — dalla raccolta di depositi alle operazioni di prestito, dal leasing finanziario ai servizi di pagamento, fino alla gestione di patrimoni e alla locazione di cassette di sicurezza — e la cui ultima voce rinvia dinamicamente all'elenco allegato alla direttiva 89/646/CEE.
 
@@ -241,11 +93,8 @@ L'**armonizzazione minima** è la scelta di non unificare tutto, ma di fissare u
 
 L'**home country control** attribuisce la vigilanza all'autorità dello Stato in cui la banca ha sede legale e amministrazione centrale, perché solo essa dispone della visione d'insieme dell'intermediario. Il principio conosce però tre eccezioni tradizionali, in cui opera il criterio opposto dell'host country control: la vigilanza sulla liquidità; la tutela del cliente, e quindi la disciplina della trasparenza; le ragioni di ordine pubblico, e quindi le discipline antiriciclaggio e antiusura. La ratio è intuitiva: si tratta di materie in cui l'interesse tutelato è radicato nel mercato ospitante, non in quello d'origine.
 
-La seconda direttiva ha innescato in Italia una doppia delega: una per il recepimento e una per la redazione di un testo unico. L'art. 25 della legge 19 febbraio 1992, n. 142, richiamato nel preambolo del TUB, è la disposizione che fonda il potere delegato.
-
 > [!tip] Fonti da citare
-> - direttiva 89/646/CEE del 15 dicembre 1989 — seconda direttiva di coordinamento
-> - preambolo del TUB — richiamo all'art. 25 della l. 19 febbraio 1992, n. 142, attuativo della dir. 89/646/CEE
+> - direttiva 89/646/CEE del 15 dicembre 1989 — seconda direttiva di coordinamento, cui rinvia l'art. 1, comma 2, lett. f)
 > - art. 1, comma 2, lett. b), TUB — banca dell'Unione europea (sede legale e amministrazione centrale nel medesimo Stato)
 > - art. 1, comma 2, lett. f), TUB — attività ammesse al mutuo riconoscimento
 > - art. 17 TUB — attività non ammesse al mutuo riconoscimento: potere di disciplina della Banca d'Italia
@@ -266,78 +115,6 @@ La seconda direttiva ha innescato in Italia una doppia delega: una per il recepi
 >
 > Perché la liquidità è affidata allo Stato ospitante?
 > → Perché la tensione di liquidità si manifesta sul mercato in cui la succursale opera e coinvolge il sistema dei pagamenti locale.
-
-## D8 — Le direttive di consolidamento: dalla 2000/12/CE alla CRD IV
-
-> [!question] Domanda
-> Fra la seconda direttiva del 1989 e la riforma post-crisi il percorso europeo non si interrompe. Quali sono le tappe intermedie e che senso hanno?
-
-> [!success] Attacco
-> Dopo la seconda direttiva il legislatore europeo procede per due vie parallele: da un lato una serie di direttive tecniche di dettaglio, dall'altro periodiche operazioni di consolidamento, che raccolgono in un solo atto le direttive bancarie succedutesi nel tempo. Le due tappe da ricordare sono la direttiva 2000/12/CE, presentata come una «direttiva di semplificazione» e descritta a lezione come una sorta di testo unico delle direttive bancarie, e la direttiva 2006/48/CE, da alcuni chiamata terza direttiva, che arriva alle soglie della crisi del 2008 e sarà poi abrogata dalla direttiva 2013/36/UE con effetto dal 1° gennaio 2014.
-
-Il senso di queste tappe si coglie solo tenendo presente il metodo europeo. L'armonizzazione minima scelta nel 1989 implicava di procedere per aggiunte successive: ogni profilo tecnico — fondi propri, coefficiente di solvibilità, grandi fidi, vigilanza consolidata, garanzia dei depositi — veniva affrontato da una direttiva distinta. Il risultato, alla fine degli anni Novanta, era una stratificazione difficile da consultare, con rinvii incrociati fra atti di epoche diverse. La **direttiva 2000/12/CE** risponde a questa esigenza: non innova in modo sostanziale, ma raccoglie e riordina, sostituendo gli atti anteriori, fra cui la prima e la seconda direttiva banche.
-
-La **direttiva 2006/48/CE** compie la stessa operazione sei anni più tardi, questa volta con un contenuto innovativo importante, perché è l'atto con cui l'Unione recepisce l'accordo di Basilea II e ne porta nel diritto europeo i tre pilastri. È la disciplina su cui il sistema bancario europeo arriva alla crisi del 2008, e che si rivelerà insufficiente: da qui la riforma del 2013, che separa la materia in un regolamento — il reg. (UE) n. 575/2013, il CRR — e in una direttiva, la 2013/36/UE, la CRD IV. Che la 2006/48 sia stata abrogata dalla CRD IV dal 1° gennaio 2014 è ricordato dalla stessa Banca d'Italia nella Circolare n. 229, a proposito della disciplina delle partecipazioni.
-
-Il giudizio da esprimere all'orale è duplice, e riguarda il metodo prima ancora del contenuto. Primo: il ricorso periodico al consolidamento dimostra che la tecnica della direttiva, per quanto flessibile, produce inevitabilmente stratificazione, e che la leggibilità della disciplina è essa stessa un valore regolatorio — lo stesso problema che, sul piano interno, il TUB aveva affrontato nel 1993. Secondo: il passaggio dalla direttiva al regolamento, nel 2013, non è una scelta di tecnica ma di politica del diritto, perché toglie agli Stati il margine del recepimento. La linea che va dal 1977 al 2013 è dunque una linea di progressiva riduzione della discrezionalità nazionale: prima si armonizzano le nozioni, poi si consolidano le regole, infine si sottraggono al recepimento.
-
-Nel ricostruire questa sequenza conviene essere prudenti sui riferimenti puntuali. I materiali normativi del corso contengono la CRD IV e il CRR, non le direttive del 2000 e del 2006: di queste ultime è opportuno citare numero e funzione, come fanno gli appunti di lezione, e riservarsi di verificare articoli e date esatte sul testo consolidato, piuttosto che rischiare un riferimento non controllabile.
-
-> [!tip] Fonti da citare
-> - direttiva 2000/12/CE — consolidamento delle direttive bancarie, che sostituisce gli atti anteriori fra cui la dir. 89/646/CEE
-> - direttiva 2006/48/CE — consolidamento successivo, recepimento di Basilea II
-> - direttiva 2013/36/UE (CRD IV) e reg. (UE) n. 575/2013 (CRR), entrambi del 26 giugno 2013 — separazione fra direttiva e regolamento
-> - Circ. Banca d'Italia n. 229 — richiamo all'abrogazione della dir. 2006/48/CE da parte della dir. 2013/36/UE dal 1° gennaio 2014
-> - art. 1, comma 2, lett. f), n. 15, TUB — rinvio all'elenco allegato alla dir. 89/646/CEE, sopravvissuto ai consolidamenti
-
-> [!warning] Attenzione
-> Non presentare le direttive di consolidamento come semplici riordini formali: la 2006/48/CE porta in Europa Basilea II, e dunque innova in modo sostanziale. E non lasciare un salto dal 1989 al 2010 nella ricostruzione storica: il docente lo nota, perché è proprio nel ventennio intermedio che si costruisce la disciplina prudenziale su cui la crisi metterà alla prova l'intero impianto.
-
-> [!note] Rilancio
-> Perché un rinvio del TUB punta ancora all'allegato della direttiva del 1989?
-> → Perché l'elenco delle attività ammesse al mutuo riconoscimento fu costruito su quell'allegato e il rinvio è rimasto anche dopo i consolidamenti: è il caso di scuola della catena normativa da ricostruire storicamente.
->
-> Che cosa cambia fra Basilea II e la riforma del 2013?
-> → Cambia lo strumento prima ancora del contenuto: la disciplina prudenziale sostanziale passa da una direttiva a un regolamento direttamente applicabile, per realizzare un single rulebook.
->
-> Il consolidamento europeo somiglia al testo unico italiano?
-> → Nella funzione sì, perché entrambi rispondono al problema della stratificazione; nella natura no, perché il testo unico innovativo è un atto delegato interno con forza di legge, mentre la direttiva di consolidamento resta atto dell'Unione da recepire.
-
-## D9 — La legge Amato, il d.lgs. 481/1992 e la strada verso il Testo unico
-
-> [!question] Domanda
-> Fra la seconda direttiva e il TUB si colloca una fase intermedia. Mi illustri il ruolo della legge Amato e del d.lgs. 481/1992.
-
-> [!success] Attacco
-> La fase intermedia è governata da due interventi distinti ma convergenti. La legge 30 luglio 1990, n. 218 — la cosiddetta legge Amato — con il relativo d.lgs. 20 novembre 1990, n. 356, affronta il problema della natura pubblica degli enti creditizi e introduce il modello del gruppo creditizio; il d.lgs. 14 dicembre 1992, n. 481 recepisce la seconda direttiva banche ed è il «decreto di passaggio» verso il Testo unico. Il loro destino nel TUB è però diverso, e conviene dirlo subito: il d.lgs. 481/1992 è abrogato per intero dall'art. 161, comma 1, fatta eccezione per gli articoli 43, 45 e 49, commi 5 e 6, mentre della legge Amato è abrogato il solo art. 5 e del d.lgs. 356/1990 soltanto l'art. 18 e il titolo VII — tanto che l'art. 57, comma 1-bis, fa oggi espressamente salva l'applicazione delle disposizioni di quel decreto.
-
-La **legge Amato** risponde a una peculiarità tutta italiana: la presenza massiccia di enti creditizi di diritto pubblico, che non erano società, non avevano azionisti e non potevano quindi raccogliere capitale di rischio sul mercato. La soluzione fu la trasformazione in società per azioni e la separazione fra l'attività bancaria, conferita alla società conferitaria, e la funzione non profit, rimasta all'ente conferente, da cui nasceranno le fondazioni di origine bancaria. È una riforma che prepara il terreno alla despecializzazione istituzionale del TUB, perché rende omogenea la forma giuridica degli operatori.
-
-Il secondo lascito della legge Amato è il **modello di gruppo**. La Circolare n. 229 della Banca d'Italia lo dice in modo esplicito, nel Titolo I, Capitolo 2, Sezione I: il Testo unico, nel disciplinare il gruppo bancario, «conferma il modello di gruppo introdotto dalla legge n. 218 del 30 luglio 1990 e dal d.lgs. n. 356 del 20 novembre 1990». La continuità è dunque affermata dalla stessa autorità di vigilanza.
-
-Il **d.lgs. 481/1992** è invece il recepimento della seconda direttiva. La sua peculiarità è di essere nato con una vita breve programmata: il legislatore aveva ottenuto due deleghe, una per recepire la direttiva e una per raccogliere la materia in un testo unico, abrogando la legge del 1936-38 e lo stesso decreto di recepimento. Nel giro di pochi mesi, dunque, il d.lgs. 481/1992 ha svolto la funzione di traghettare l'ordinamento verso il TUB.
-
-La conferma testuale è nell'art. 161, comma 1, TUB, che abroga «il decreto legislativo 14 dicembre 1992, n. 481, fatta eccezione per gli articoli 43, 45 e 49, commi 5 e 6». La riserva è istruttiva: anche un decreto destinato a essere assorbito conserva qualche disposizione autonoma, e questo è il tipo di dettaglio che, citato con esattezza, distingue una preparazione di fascia alta.
-
-> [!tip] Fonti da citare
-> - l. 30 luglio 1990, n. 218 — ristrutturazione e integrazione patrimoniale degli istituti di credito di diritto pubblico
-> - d.lgs. 20 novembre 1990, n. 356 — attuazione della legge Amato
-> - art. 161, comma 1, TUB — abrogazione del solo art. 5 della l. 218/1990, del solo art. 18 e titolo VII del d.lgs. 356/1990, e del d.lgs. 14 dicembre 1992, n. 481, salvi gli artt. 43, 45 e 49, commi 5 e 6
-> - art. 57, comma 1-bis, TUB — «è fatta salva l'applicazione delle disposizioni previste dal decreto legislativo 20 novembre 1990, n. 356»
-> - Circ. Banca d'Italia n. 229, Titolo I, Cap. 2, Sez. I, par. 1 — continuità del modello di gruppo rispetto alla l. 218/1990 e al d.lgs. 356/1990
-
-> [!warning] Attenzione
-> La legge Amato non è una legge di recepimento comunitario: è una riforma interna, motivata dall'esigenza di patrimonializzare e societarizzare le banche pubbliche. Presentarla come attuazione della seconda direttiva è un errore di ricostruzione che il docente coglie immediatamente. Il recepimento è il d.lgs. 481/1992. E non dire che la legge Amato «è stata abrogata dal TUB»: l'art. 161 ne abroga il solo art. 5.
-
-> [!note] Rilancio
-> Perché il d.lgs. 356/1990 è tuttora richiamato dal TUB?
-> → Perché l'art. 161 ne abroga soltanto l'art. 18 e il titolo VII, e l'art. 57, comma 1-bis, TUB, nel testo oggi vigente, fa espressamente salva l'applicazione delle sue disposizioni in materia di fusioni e scissioni.
->
-> Che rapporto c'è fra legge Amato e fondazioni bancarie?
-> → Le fondazioni sono l'esito della separazione fra ente conferente e società conferitaria: la disciplina delle fondazioni è però successiva e fuori dal TUB.
->
-> Perché due deleghe e non una?
-> → Perché il recepimento della direttiva aveva scadenze europee inderogabili, mentre la redazione del testo unico richiedeva un lavoro di sistemazione più lungo.
 
 ## D10 — Il TUB come testo unico: natura dell'atto, abrogazioni, entrata in vigore
 
@@ -615,15 +392,15 @@ Sul piano del sistema, questa coppia di riserve è la traduzione operativa dell'
 > Le due riserve possono essere violate separatamente?
 > → Sì: sono presidi autonomi, l'uno sulla sostanza dell'attività, l'altro sull'apparenza del nome, e il concorso è possibile ma non necessario.
 
-## D17 — Le idee di fondo del TUB rispetto alla legge previgente
+## D17 — Le idee di fondo del Testo unico bancario
 
 > [!question] Domanda
-> Se dovesse riassumere in che cosa il TUB rompe con la legge del 1936-38, quali scelte di fondo indicherebbe?
+> Se dovesse riassumere le scelte di fondo su cui poggia oggi il Testo unico bancario, quali indicherebbe?
 
 > [!success] Attacco
 > Le scelte di fondo sono cinque, e conviene enunciarle come sistema perché sono fra loro concatenate: riconoscimento del carattere imprenditoriale dell'attività bancaria; valorizzazione della concorrenza; despecializzazione; passaggio dalla vigilanza strutturale a quella prudenziale; delegificazione. La prima è la chiave di volta, ed è scritta nell'art. 10, comma 1, TUB: l'attività bancaria «ha carattere d'impresa».
 
-La prima scelta chiude una questione teorica che aveva attraversato decenni. Poiché l'attività bancaria tocca interessi pubblici rilevanti — la tutela del risparmio in primo luogo — molti ne mettevano in dubbio la natura imprenditoriale, qualificandola come servizio pubblico. L'art. 10, comma 1, e l'art. 1, comma 1, lett. b), risolvono per legge: la banca è impresa, e impresa autorizzata. Ne deriva che alla banca si applica, salvo deroghe espresse, lo statuto dell'imprenditore commerciale, e che l'autonomia imprenditoriale è la regola e il vincolo pubblicistico l'eccezione da giustificare.
+La prima scelta risolve una questione teorica. Poiché l'attività bancaria tocca interessi pubblici rilevanti — la tutela del risparmio in primo luogo — se ne potrebbe dubitare la natura imprenditoriale, qualificandola come servizio pubblico. L'art. 10, comma 1, e l'art. 1, comma 1, lett. b), risolvono per legge: la banca è impresa, e impresa autorizzata. Ne deriva che alla banca si applica, salvo deroghe espresse, lo statuto dell'imprenditore commerciale, e che l'autonomia imprenditoriale è la regola e il vincolo pubblicistico l'eccezione da giustificare.
 
 La seconda scelta discende dalla prima. Se la banca è impresa, essa opera in un mercato concorrenziale. Il TUB non auspica l'instabilità: assume piuttosto che la concorrenza sia strumento di efficienza, e l'art. 5 lo conferma ponendo fra le finalità della vigilanza, accanto alla stabilità complessiva, «l'efficienza e la competitività del sistema finanziario».
 
@@ -825,9 +602,6 @@ Il quadro va infine completato ricordando che, dopo l'avvio del Meccanismo di vi
 > [!note] Rilancio
 > Perché la tutela della concorrenza è competenza esclusiva statale?
 > → Perché è materia trasversale che incide sull'unità del mercato nazionale, e una disciplina regionale differenziata la frammenterebbe.
->
-> L'art. 117, comma 1, era già così prima del 2001?
-> → No: il vincolo comunitario esplicito è frutto della riforma del Titolo V operata dalla l.cost. 3/2001; prima veniva ricavato in via interpretativa dagli artt. 10 e 11 Cost.
 >
 > Che cosa disciplina l'art. 159 TUB?
 > → Il raccordo con le Regioni a statuto speciale, che in alcune ipotesi esercitano competenze autorizzatorie previo parere vincolante della Banca d'Italia.
@@ -1175,46 +949,6 @@ Il riparto che ne discende non è però una separazione netta, ed è questo il g
 > Che cosa succede se una banca supera la soglia?
 > → Cambia l'autorità competente per la vigilanza corrente, non il diritto applicabile: il single rulebook resta lo stesso, e la Banca d'Italia conserva i poteri non attribuiti alla BCE e la designazione macroprudenziale dell'art. 53-ter.
 
-## D32 — La linea del tempo interna dopo il 1993: dalla legge sul risparmio ai decreti del 2015-2016
-
-> [!question] Domanda
-> Il TUB è del 1993, ma il testo che leggiamo oggi è molto diverso da quello originario. Quali sono le leggi interne che lo hanno riscritto?
-
-> [!success] Attacco
-> Dopo il 1993 la linea del tempo interna si scandisce in quattro momenti, e conviene enunciarli in ordine perché ciascuno corrisponde a un'esigenza diversa: la legge 28 dicembre 2005, n. 262, sulla tutela del risparmio, che è la risposta interna agli scandali finanziari di inizio secolo; il d.lgs. 12 maggio 2015, n. 72, che recepisce la CRD IV; la coppia dei d.lgs. 16 novembre 2015, nn. 180 e 181, che recepisce la BRRD; e il d.lgs. 14 novembre 2016, n. 223, che adegua il TUB al Meccanismo di vigilanza unico. Accanto a questi corrono le due riforme del settore cooperativo, il d.l. 24 gennaio 2015, n. 3, sulle banche popolari e il d.l. 14 febbraio 2016, n. 18, sulle banche di credito cooperativo.
-
-La **legge 262/2005** interviene sull'apparato di garanzia. Il suo art. 39, comma 1, aumenta le pene dell'abusivismo bancario: l'art. 130 passa dall'arresto da sei mesi a tre anni all'arresto da uno a tre anni, e l'art. 131 dalla reclusione da sei mesi a quattro anni alla reclusione da uno a otto anni, con multa da 4.130 a 10.329 euro. È la fonte da citare quando si spiega perché la riserva di attività è presidiata così severamente. La stessa legge tocca poi il riparto di competenze, e in particolare il suo art. 26, comma 1, dispone il trasferimento delle funzioni allora previste dall'art. 14 in materia di succursali di banche estere.
-
-Il **d.lgs. 72/2015** è il decreto che conviene saper nominare ogni volta che si citano gli articoli sulla vigilanza. Esso spezza il vecchio art. 53 inserendo gli artt. 53-bis, sui poteri di intervento, e 53-ter, sulle misure macroprudenziali; sostituisce integralmente l'art. 26, introducendo la clausola generale di idoneità e la distinzione fra requisiti e criteri; riscrive le lettere d) ed e) dell'art. 14, comma 1, sostituendo ai vecchi «requisiti» degli esponenti il rinvio all'idoneità «ai sensi dell'articolo 26»; e sostituisce il comma 1 dell'art. 8. Chi usa quelle norme senza saper dire da dove vengano dimostra di conoscerne il testo ma non la storia.
-
-I **d.lgs. 180 e 181 del 2015** recepiscono la direttiva 2014/59/UE sul risanamento e la risoluzione: il primo detta la disciplina della risoluzione, il secondo modifica il TUB. È il d.lgs. 181/2015 ad aver sostituito la rubrica del Titolo IV, che da «Disciplina delle crisi» è diventata «Misure preparatorie, di intervento precoce e liquidazione coatta amministrativa», e ad aver aggiunto il comma 4-bis dell'art. 4. La BRRD è, insieme al reg. (UE) n. 806/2014 richiamato dall'art. 1, comma 1, lett. e-quinquies), lo strumento portante del secondo pilastro dell'Unione bancaria.
-
-Il **d.lgs. 223/2016** è invece l'adeguamento al MVU: inserisce l'art. 6-bis sulla partecipazione della Banca d'Italia al Meccanismo, inserisce il comma 01 dell'art. 15 sul quale poggia la liberalizzazione dello stabilimento di succursali, sostituisce l'art. 53-ter nel testo vigente e riformula l'art. 13, comma 1, facendo salvo l'elenco dei vigilati pubblicato secondo le disposizioni del MVU.
-
-Restano le due riforme del credito cooperativo, che appartengono alla linea del tempo anche se la loro disciplina è oggetto di altra unità. Il d.l. 3/2015, convertito dalla l. 24 marzo 2015, n. 33, introduce all'art. 29 il limite dimensionale all'attivo della banca popolare, oggi fissato in sedici miliardi di euro dopo la l. 5 marzo 2024, n. 21, con l'obbligo di trasformazione o riduzione in caso di superamento. Il d.l. 18/2016 costruisce il gruppo bancario cooperativo degli artt. 37-bis e 37-ter, con capogruppo in forma di società per azioni il cui capitale è detenuto almeno al sessanta per cento dalle BCC aderenti e con requisito minimo di patrimonio netto di un miliardo di euro.
-
-> [!tip] Fonti da citare
-> - l. 28 dicembre 2005, n. 262, art. 39, comma 1 — aumento delle pene degli artt. 130 e 131 TUB; art. 26, comma 1, per il trasferimento di funzioni
-> - d.lgs. 12 maggio 2015, n. 72 — inserimento degli artt. 53-bis e 53-ter, sostituzione dell'art. 26, modifica dell'art. 14, comma 1, lett. d) ed e), e dell'art. 8, comma 1
-> - d.lgs. 16 novembre 2015, nn. 180 e 181 — recepimento della dir. 2014/59/UE; sostituzione della rubrica del Titolo IV e inserimento dell'art. 4, comma 4-bis
-> - d.lgs. 14 novembre 2016, n. 223 — inserimento degli artt. 6-bis e 15, comma 01; sostituzione dell'art. 53-ter e modifica dell'art. 13, comma 1
-> - d.l. 24 gennaio 2015, n. 3, conv. l. 24 marzo 2015, n. 33 — art. 29, commi 2-bis e 2-ter, TUB, limite all'attivo delle banche popolari
-> - d.l. 14 febbraio 2016, n. 18 — artt. 37-bis e 37-ter TUB, gruppo bancario cooperativo
-> - d.lgs. 31 dicembre 2025, n. 208 — ultimo anello della catena, in vigore dal 9 gennaio 2026
-
-> [!warning] Attenzione
-> Non attribuire alla l. 262/2005 l'inserimento del comma 4-bis dell'art. 4 TUB: quel comma è stato aggiunto dal d.lgs. 181/2015 e si limita a richiamare l'art. 24, comma 6-bis, della legge sul risparmio. La distinzione fra la norma richiamata e l'atto che opera il richiamo è esattamente il tipo di precisione che l'orale premia.
-
-> [!note] Rilancio
-> Quali pene prevedono oggi gli artt. 130 e 131?
-> → L'art. 130 l'arresto da uno a tre anni e l'ammenda da 12.911 a 51.645 euro; l'art. 131 la reclusione da uno a otto anni e la multa da 4.130 a 10.329 euro, entrambe nel testo risultante dall'art. 39, comma 1, della l. 262/2005.
->
-> Quale decreto ha creato l'art. 53-bis?
-> → Il d.lgs. 12 maggio 2015, n. 72, di recepimento della CRD IV, che con lo stesso comma ha inserito anche l'art. 53-ter, poi sostituito dal d.lgs. 223/2016.
->
-> Perché il Titolo IV ha cambiato rubrica?
-> → Perché il d.lgs. 181/2015, di recepimento della BRRD, ne ha sostituito la vecchia intitolazione «Disciplina delle crisi» con «Misure preparatorie, di intervento precoce e liquidazione coatta amministrativa», spostando l'accento dalla gestione dell'insolvenza alla prevenzione.
-
 ## D33 — Quando la raccolta non è «tra il pubblico»: il contenuto del Provvedimento dell'8 novembre 2016
 
 > [!question] Domanda
@@ -1397,44 +1131,6 @@ Il giudizio da esprimere è che tutte queste deroghe non smentiscono la qualific
 > Queste deroghe valgono anche per gli altri intermediari?
 > → In larga parte sì, perché l'art. 5, comma 2, estende la vigilanza a gruppi bancari, intermediari finanziari, istituti di moneta elettronica e istituti di pagamento, ma le singole norme vanno verificate una per una: la specialità non si presume.
 
-## D38 — Che fine hanno fatto le banche pubbliche: dalla legge Amato all'art. 151 TUB
-
-> [!question] Domanda
-> Lei ha ricordato che il sistema italiano era caratterizzato da una massiccia presenza di banche pubbliche. Che cosa ne è stato con il Testo unico?
-
-> [!success] Attacco
-> La risposta va data su due piani, perché la scomparsa delle banche pubbliche non è opera del TUB ma della riforma che lo precede. Sul piano della forma societaria il Testo unico è netto: l'art. 14, comma 1, lett. a), ammette l'autorizzazione solo se «sia adottata la forma di società per azioni o di società cooperativa per azioni a responsabilità limitata», e non contempla più l'ente pubblico creditizio. La trasformazione era però già stata compiuta dalla legge 30 luglio 1990, n. 218 e dal d.lgs. 20 novembre 1990, n. 356, dei quali l'art. 161, comma 1, TUB abroga soltanto, rispettivamente, l'art. 5 e l'art. 18 con il titolo VII. Del vecchio mondo il TUB conserva una sola norma di chiusura, l'art. 151, secondo cui «l'operatività, l'organizzazione e il funzionamento delle banche pubbliche residue sono disciplinati dal presente decreto legislativo, dagli statuti e dalle altre norme in questi richiamate».
-
-Conviene ricostruire la sequenza, perché è la prova che il TUB è il punto d'arrivo di un processo e non il suo inizio. Il problema di partenza era strutturale: gli enti creditizi di diritto pubblico non erano società, non avevano azionisti e non potevano raccogliere capitale di rischio sul mercato, proprio mentre l'apertura del mercato interno imponeva alle banche italiane di patrimonializzarsi per competere. La **legge Amato** risolve separando l'attività bancaria, conferita a una società per azioni, dalla funzione non profit, rimasta all'ente conferente da cui nasceranno le fondazioni di origine bancaria. Quando il TUB entra in vigore, il 1° gennaio 1994, la societarizzazione è dunque in corso, e il Testo unico si limita a renderla irreversibile fissando le due sole forme ammesse: è la **despecializzazione istituzionale** vista dal lato soggettivo.
-
-L'art. 151 va letto per quello che è: una norma **transitoria** che accompagna la coda del processo. Alle banche pubbliche che alla data di entrata in vigore non si erano ancora trasformate il TUB non concede un regime autonomo, ma le assoggetta al Testo unico, ai loro statuti e alle norme da questi richiamate. Non è una sopravvivenza di specialità, è un innesto nel regime comune. La stessa logica di chiusura governa l'art. 152, che imponeva alle Casse comunali di credito agrario e ai Monti di credito su pegno di seconda categoria che non raccoglievano risparmio tra il pubblico di cessare l'attività creditizia o di estinguersi entro il 1° gennaio 1996, disponendo la liquidazione per chi non avesse provveduto.
-
-Va infine evitato un equivoco frequente. Il TUB non vieta che il capitale di una banca sia in mano pubblica: disciplina la **forma** dell'impresa bancaria, non la natura dei suoi soci, e i profili soggettivi dell'assetto proprietario sono governati dall'autorizzazione dell'art. 19. Ciò che il Testo unico ha eliminato è la banca costituita in forma di ente pubblico, non la partecipazione pubblica a una banca in forma di società per azioni.
-
-Il rilievo di sistema con cui chiudere è che di quel mondo resta traccia anche in Costituzione: l'art. 117, comma 3, continua a elencare fra le materie di legislazione concorrente «casse di risparmio, casse rurali, aziende di credito a carattere regionale», categorie soggettive che la despecializzazione ha cancellato. È un residuo storico, e saperlo qualificare come tale è il modo migliore di mostrare di aver compreso la portata della riforma.
-
-> [!tip] Fonti da citare
-> - art. 14, comma 1, lett. a), TUB — forma di società per azioni o di società cooperativa per azioni a responsabilità limitata
-> - art. 151 TUB — banche pubbliche residue: applicazione del Testo unico, degli statuti e delle norme da questi richiamate
-> - art. 152 TUB — Casse comunali di credito agrario e Monti di credito su pegno di seconda categoria: cessazione o estinzione entro il 1° gennaio 1996
-> - l. 30 luglio 1990, n. 218 e d.lgs. 20 novembre 1990, n. 356 — trasformazione degli enti creditizi pubblici e separazione fra ente conferente e società conferitaria
-> - art. 161, comma 1, TUB — abrogazione del solo art. 5 della l. 218/1990 e del solo art. 18 e titolo VII del d.lgs. 356/1990
-> - art. 19 TUB — autorizzazione all'acquisto di partecipazioni, che governa la natura dei soci
-> - art. 117, comma 3, Cost. — permanenza nominale di casse di risparmio, casse rurali e aziende di credito a carattere regionale
-
-> [!warning] Attenzione
-> Non dire che «il TUB ha privatizzato le banche pubbliche»: la privatizzazione formale è della legge Amato del 1990, e il TUB la presuppone. E non confondere la banca pubblica con la banca partecipata da soggetti pubblici: la prima è una forma giuridica non più ammessa dall'art. 14, comma 1, lett. a), la seconda è una società per azioni come le altre, il cui assetto proprietario passa per l'autorizzazione dell'art. 19.
-
-> [!note] Rilancio
-> Perché la forma cooperativa è stata conservata?
-> → Perché il TUB ha mantenuto le banche popolari e le banche di credito cooperativo come residui di specialità, disciplinati nel Titolo II, Capo V, e la società cooperativa per azioni a responsabilità limitata è la veste che l'art. 14, comma 1, lett. a), riserva loro.
->
-> L'art. 151 è ancora applicato?
-> → È una disposizione transitoria pensata per la coda della trasformazione avviata nel 1990; la sua utilità odierna è soprattutto ricostruttiva, perché mostra la tecnica con cui il TUB ha riassorbito nel regime comune le figure previgenti.
->
-> Che rapporto c'è fra la legge Amato e la despecializzazione istituzionale?
-> → La legge Amato rende omogenea la forma giuridica degli operatori e prepara il terreno; il TUB chiude il processo riducendo a due le forme ammesse e superando la pluralità di categorie della legge del 1936-38.
-
 ## D39 — La sorveglianza sul sistema dei pagamenti: l'art. 146 TUB
 
 > [!question] Domanda
@@ -1534,8 +1230,8 @@ Conviene infine distinguere due nozioni che l'espressione «tutela della concorr
 > Non dire che il TUB «contiene la disciplina antitrust del settore bancario»: il Testo unico pone la concorrenza fra le finalità della vigilanza e disciplina gli assetti proprietari, ma la tutela della concorrenza in senso antitrust vive in un corpo normativo distinto, che non è oggetto del programma. E non presentare concorrenza e stabilità come alternative secche: il TUB afferma entrambe, e la domanda d'esame non è quale prevalga, ma con quale criterio si bilanciano.
 
 > [!note] Rilancio
-> Perché sotto la legge del 1936-38 la concorrenza era considerata un rischio?
-> → Perché si assumeva che, almeno nel breve periodo, la concorrenza generasse instabilità; la risposta fu la specializzazione, che assegnava a ciascun ente un proprio recinto operativo e territoriale.
+> Perché la concorrenza può entrare in tensione con la stabilità?
+> → Perché, almeno nel breve periodo, la pressione competitiva può generare instabilità: per questo l'art. 5 pone fra le finalità della vigilanza sia la stabilità complessiva sia l'efficienza e la competitività, e rimette all'autorità il bilanciamento.
 >
 > La concorrenza è un valore o uno strumento?
 > → Nel disegno del Testo unico è strumento rispetto all'efficienza: la concorrenza fra imprese bancarie è valorizzata perché l'efficienza del sistema finanziario è essa stessa una finalità della vigilanza ai sensi dell'art. 5.
@@ -1616,8 +1312,8 @@ La terza cosa riguarda le **autorità**. La CONSOB è definita dall'art. 1, comm
 > Perché la CONSOB è definita nell'art. 1 se non è autorità creditizia?
 > → Perché il TUB la nomina in più disposizioni di raccordo — artt. 7, comma 5, 15, comma 3, e 16, comma 5 — e l'articolo definitorio serve appunto a fissare una volta per tutte il significato dei termini impiegati nel decreto.
 >
-> Che cosa resta nel TUB della materia mobiliare del 1993?
-> → Sul piano sostanziale quasi nulla: l'art. 158 è abrogato dal 1996, l'art. 160 dal 1998. Sopravvive il potere informativo dell'art. 129, collocato nel Titolo VII, che ha natura conoscitiva e non di vigilanza.
+> Che cosa resta oggi nel TUB della materia mobiliare?
+> → Sul piano sostanziale quasi nulla: gli artt. 158 e 160 sono abrogati. Sopravvive il potere informativo dell'art. 129, collocato nel Titolo VII, che ha natura conoscitiva e non di vigilanza.
 
 ## D44 — Il Titolo VII «Altri controlli»: che cosa è rimasto dell'art. 129 TUB
 
@@ -1683,8 +1379,8 @@ Va infine dichiarato il **limite** della risposta, ed è un dichiararlo che giov
 > Non confondere la riserva dell'art. 10, comma 2, con quella dell'art. 106, comma 1. La prima ha per oggetto l'attività bancaria, cioè la congiunzione di raccolta del risparmio tra il pubblico ed esercizio del credito; la seconda ha per oggetto la sola concessione di finanziamenti nei confronti del pubblico. È la congiunzione a fare la banca: chi concede credito senza raccogliere risparmio tra il pubblico è intermediario finanziario, non banca abusiva, e la norma penale che lo riguarda è l'art. 132 e non l'art. 131. E non sconfinare nella disciplina sostanziale del Titolo V: in questo punto del programma se ne chiede la collocazione, non il contenuto.
 
 > [!note] Rilancio
-> Perché i Titoli V-bis e V-ter non c'erano nel 1993?
-> → Perché gli istituti di moneta elettronica e gli istituti di pagamento sono figure nate dal diritto europeo dei pagamenti dopo quella data; il TUB le ha assorbite aggiungendo Titoli, e l'elenco dell'art. 5, comma 2, si è ampliato di conseguenza.
+> Perché gli istituti di moneta elettronica e di pagamento hanno Titoli propri nel TUB?
+> → Perché sono figure nate dal diritto europeo dei pagamenti; il TUB le ha assorbite aggiungendo Titoli, e l'elenco dell'art. 5, comma 2, si è ampliato di conseguenza.
 >
 > La despecializzazione ha eliminato le categorie di intermediari?
 > → Ha eliminato le categorie di banche, non quelle degli intermediari: oggi la distinzione non passa più per lo statuto soggettivo ma per l'attività riservata, ed è presidiata da riserve e da fattispecie penali distinte.

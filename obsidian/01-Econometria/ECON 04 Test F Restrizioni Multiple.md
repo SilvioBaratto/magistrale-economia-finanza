@@ -37,7 +37,7 @@ generated: 2026-07-10
 > | single_non~k | .2408201 | .0960229 | 2.51 | 0.012 | .0523724 .4292678 |
 > | _cons | 5.162973 | .1359471 | 37.98 | 0.000 | 4.896173 5.429773 |
 >
-> (*single_black* viene automaticamente escluso dal software — "dropped" — perché costituisce la categoria di riferimento rispetto alla quale sono definite le altre tre dummy di gruppo, insieme alla costante.)
+> (*single_black* viene escluso automaticamente dal software ("dropped") perché le quattro dummy di gruppo sommano a 1 e sono quindi perfettamente collineari con la costante (trappola delle variabili dummy); la dummy esclusa diventa la categoria di riferimento rispetto alla quale si interpretano le altre tre.)
 >
 > I salari medi attesi per ogni gruppo, condizionati sulle altre variabili, sono:
 >
@@ -50,15 +50,17 @@ generated: 2026-07-10
 > - Se $married=0$ e $black=0$, cioè $single\_nonblack=1$:
 > $$E[lwage|X] = \alpha + \beta_1 educ + \dots + \beta_6 \times 0 + \beta_8 \times 0 + \beta_9 \times 1$$
 >
+> (Le espressioni precedenti pongono $\beta_7=0$: *single_black* è la dummy esclusa, quindi per questo gruppo non compare alcun termine dummy.)
+>
 > Sulla base del modello, tra le persone sposate, la differenza salariale causata dalla razza è rappresentata da:
 >
 > $$E[lwage|married\_black=1] - E[lwage|married\_nonblack=1] = \beta_6 - \beta_8 = .2502685 - .4297348$$
 >
-> È possibile verificare se questa differenza è statisticamente significativa? Una possibile soluzione è calcolare il seguente statistico $t$:
+> È possibile verificare se questa differenza è statisticamente significativa? Una possibile soluzione è calcolare la seguente statistica $t$:
 >
 > $$t = \frac{\hat\beta_6 - \hat\beta_8 - 0}{\text{st.err.}\left(\hat\beta_6 - \hat\beta_8\right)}$$
 >
-> Sfortunatamente, in alcuni casi, non è immediato valutare il denominatore (lo standard error di una combinazione lineare di stimatori correlati). Serve quindi una strategia più generale per implementare questo tipo di test — il test F, sviluppato nelle sezioni seguenti.
+> Sfortunatamente non è sempre immediato valutare il denominatore, cioè lo standard error di una combinazione lineare di stimatori correlati. Serve quindi una strategia più generale per questo tipo di test: il test F, sviluppato nelle sezioni seguenti.
 
 *(slide 2–5)*
 
@@ -73,7 +75,7 @@ generated: 2026-07-10
 >
 > $$H_0: \beta_1=\beta_2=\beta_3=0 \quad \text{contro} \quad H_1: \text{almeno un } \beta_j \neq 0,\ j=1,2,3.$$
 >
-> Se l'ipotesi nulla è corretta, i tre regressori sono inutili per predire $Y$: se $H_0$ fosse vera, la regressione si ridurrebbe a
+> Se $H_0$ è vera, i tre regressori sono inutili per predire $Y$ e la regressione si riduce a
 >
 > $$Y = \alpha + \epsilon$$
 >
@@ -90,7 +92,7 @@ generated: 2026-07-10
 >
 > $$0.95 \times 0.95 \times 0.95 = 0.8574$$
 >
-> L'errore di Tipo I del test congiunto — cioè la probabilità di rigettare l'ipotesi nulla quando è corretta — è quindi
+> L'errore di Tipo I del test congiunto, cioè la probabilità di rigettare l'ipotesi nulla quando è corretta, è quindi
 >
 > $$1 - 0.8574 = 0.1426 \neq 0.05$$
 >
@@ -116,7 +118,7 @@ generated: 2026-07-10
 
 ## Costruzione del test F: modello completo vs modello ristretto
 
-Una strategia credibile per implementare un test su parametri multipli passa attraverso la **statistica F**.
+Un test su parametri multipli si può implementare con la **statistica F**.
 
 Siano $R_c^2$ e $R_r^2$ gli indicatori di bontà di adattamento ($R^2$) rispettivamente del modello *completo* e del modello *ristretto*:
 
@@ -139,6 +141,8 @@ Se l'ipotesi alternativa fosse corretta, ci si aspetta che la capacità preditti
 > - $s$ è il numero di vincoli sotto l'ipotesi nulla (nell'esempio di significatività congiunta è 3, poiché si ipotizza $\beta_1=0$, $\beta_2=0$ e $\beta_3=0$);
 > - $k$ è il numero totale di regressori nel modello completo (nell'esempio è 3);
 > - $n$ è la dimensione del campione.
+>
+> La forma in termini di $R^2$ è valida solo se modello completo e modello ristretto hanno la stessa variabile dipendente, come negli esempi di questa nota; altrimenti si usano le somme dei quadrati dei residui dei due modelli.
 
 *(slide 11)*
 
@@ -153,7 +157,7 @@ Se l'ipotesi alternativa fosse corretta, ci si aspetta che la capacità preditti
 >
 > ![](assets/econ-04/fig01.png)
 >
-> **Figura 1** — Rappresentazione grafica della variabile casuale F. Il grafico (*"The 5% critical value and rejection region in an $F_{3,60}$ distribution"*) mostra la densità di una distribuzione F asimmetrica a destra: l'area sottesa fino al valore critico 2.76 corrisponde al 95% della probabilità ("area = .95"), mentre l'area a destra di 2.76 ("area = .05", la *rejection region*) corrisponde al livello di significatività del 5%. Se la statistica F osservata cade in quest'area, l'ipotesi nulla viene respinta.
+> **Figura 1** — Rappresentazione grafica della variabile casuale F. Il grafico (*"The 5% critical value and rejection region in an $F_{3,60}$ distribution"*) mostra la densità di una distribuzione F asimmetrica a destra: l'area fino al valore critico 2.76 è il 95% della probabilità ("area = .95"), l'area a destra di 2.76 ("area = .05", la *rejection region*) è il livello di significatività del 5%. Se la statistica F osservata cade in questa regione, si respinge l'ipotesi nulla.
 >
 > **Regola di decisione con il valore critico.** Come al solito si può definire il livello $\alpha$ e calcolare il valore critico utilizzando tabelle F adeguate:
 >
@@ -166,11 +170,11 @@ Se l'ipotesi alternativa fosse corretta, ci si aspetta che la capacità preditti
 
 ## Relazione tra la distribuzione F e la distribuzione chi-quadro
 
-Si noti che $F(k_1,k_2)$ è ben approssimata da una variabile $\chi^2_{k_1}$ se $k_2$ è sufficientemente grande. Questo accade quando $n$ è grande, visto che $F \sim F_{s;\,n-k-1}$ (e quindi $k_2 = n-k-1$ cresce con la numerosità campionaria).
+Si noti che $k_1 F(k_1,k_2)$ è ben approssimata da una variabile $\chi^2_{k_1}$, cioè $F(k_1,k_2)\approx\chi^2_{k_1}/k_1$, se $k_2$ è sufficientemente grande (le slide scrivono $F(k_1,k_2)\approx\chi^2_{k_1}$, omettendo la divisione per $k_1$, che vale 1 solo per $k_1=1$). Questo accade quando $n$ è grande, visto che $F \sim F_{s;\,n-k-1}$ (e quindi $k_2 = n-k-1$ cresce con la numerosità campionaria).
 
 ![](assets/econ-04/fig02.png)
 
-**Figura 2** — $\chi^2_{df}$ con diversi gradi di libertà, cioè $df=1,2,5,10$. Il pannello mostra quattro istogrammi di variabili casuali chi-quadro simulate con gradi di libertà crescenti (1, 2, 5, 10): per $df=1$ la densità è fortemente concentrata vicino allo zero e decrescente; all'aumentare dei gradi di libertà la distribuzione si sposta verso destra, si allarga e assume una forma progressivamente più simmetrica e campanulare, illustrando visivamente come l'approssimazione chi-quadro della F migliori (in forma) al crescere dei gradi di libertà al denominatore.
+**Figura 2** — $\chi^2_{df}$ con diversi gradi di libertà, cioè $df=1,2,5,10$. Il pannello mostra quattro istogrammi di variabili casuali chi-quadro simulate con 1, 2, 5 e 10 gradi di libertà: per $df=1$ la densità è concentrata vicino allo zero e decrescente; al crescere dei gradi di libertà la distribuzione si sposta a destra, si allarga e diventa più simmetrica e campanulare. È la forma della $\chi^2_{df}$, cioè della distribuzione limite di $s\,F$ con $df=s$ quando i gradi di libertà al denominatore sono grandi.
 
 *(slide 15)*
 
@@ -183,7 +187,7 @@ Si noti che $F(k_1,k_2)$ è ben approssimata da una variabile $\chi^2_{k_1}$ se 
 >
 > L'ipotesi nulla è quindi $H_0: \beta_1=\beta_2=0$ contro l'alternativa che almeno uno di questi due parametri sia diverso da 0.
 >
-> Non è banale calcolare, carta e penna, la statistica F osservata, poiché richiede una serie di calcoli noiosi: stimare i due modelli (completo e ristretto), calcolare i loro indicatori di bontà di adattamento $R^2$, e valutare la statistica $F$ osservata, cioè $F^{obs}$. Di solito i test F vengono calcolati tramite software statistici/econometrici.
+> Non è banale calcolare a mano la statistica F osservata, perché servono vari passaggi: stimare i due modelli (completo e ristretto), calcolare i loro indicatori di bontà di adattamento $R^2$, e valutare la statistica $F$ osservata, cioè $F^{oss}$. Di solito i test F vengono calcolati tramite software statistici/econometrici.
 >
 > **Procedura con Gretl:**
 >
@@ -219,7 +223,7 @@ Si noti che $F(k_1,k_2)$ è ben approssimata da una variabile $\chi^2_{k_1}$ se 
 >
 > In Gretl si procede così:
 >
-> 1. Si stimi la regressione completa (`reg lwage` su `educ exper tenure south urban marr_black single_black marr_nonblack single_nonblack`).
+> 1. Si stimi la regressione completa (`reg lwage` su `educ exper tenure south urban marr_black single_black marr_nonblack single_nonblack`; `reg` è la sintassi di Stata usata per la tabella, in Gretl il comando è `ols`).
 > 2. Dall'output della regressione si utilizzi il menu *Test -> Vincoli lineari*.
 > 3. Si definisca il test come segue:
 >
@@ -236,6 +240,6 @@ Si noti che $F(k_1,k_2)$ è ben approssimata da una variabile $\chi^2_{k_1}$ se 
 > Statistica test: F(1, 926) = 19,60, con p-value = 0.000
 > ```
 >
-> Il p-value è nullo. In altre parole, la differenza tra i due gruppi (lavoratori sposati di colore vs. sposati non di colore) è effettivamente significativamente diversa da 0 — confermando, con lo strumento generale del test F, quanto ci si chiedeva nell'esempio introduttivo senza poter calcolare agevolmente la statistica t per la combinazione $\hat\beta_6-\hat\beta_8$.
+> Il p-value è praticamente nullo (circa 0,00001, riportato come 0.000). In altre parole, la differenza tra i due gruppi (lavoratori sposati di colore vs. sposati non di colore) è significativamente diversa da 0. Il test F risponde così, con uno strumento generale, alla domanda dell'esempio introduttivo, senza passare dal calcolo diretto della statistica t per la combinazione $\hat\beta_6-\hat\beta_8$.
 
 *(slide 18)*

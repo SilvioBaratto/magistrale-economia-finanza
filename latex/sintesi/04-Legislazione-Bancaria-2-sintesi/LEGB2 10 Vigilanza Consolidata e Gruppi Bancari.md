@@ -1,0 +1,63 @@
+---
+title: "La vigilanza su base consolidata e i gruppi bancari"
+tags:
+  - corso/legislazione-bancaria-2
+  - tipo/lezione
+corso: "[[Legislazione Bancaria 2]]"
+verified: true
+generated: 2026-11-07
+---
+
+## Introduzione: vigilanza su base consolidata vs vigilanza sui gruppi bancari
+
+Il TUB disciplina prima la vigilanza sulla singola banca (art. 51 e seguenti) e poi quella sui gruppi bancari e la vigilanza consolidata. Le due espressioni non coincidono. La **vigilanza su base consolidata** in senso stretto è una disciplina più ampia, che comprende anche la **vigilanza sui gruppi bancari**: ne è la riprova l'art. 65 TUB, che estende gli strumenti della vigilanza consolidata anche a soggetti che non appartengono a un gruppo bancario. Il capo si articola in tre sezioni. La Sezione I è dedicata alla vigilanza sui gruppi bancari, la Sezione II alla vigilanza consolidata e la Sezione III, aggiunta dal d.lgs. 182/2021, all'impresa madre intermedia (art. 69.3).
+
+Il fondamento della vigilanza consolidata sta nella natura del gruppo, un insieme di società giuridicamente distinte, unite da legami di controllo e gestite come un'unica impresa. Di norma la struttura è piramidale, con la capogruppo al vertice che esercita direzione e coordinamento. La separazione dei patrimoni non impedisce però che i rischi si trasmettano alla banca: vi concorrono la possibile responsabilità patrimoniale della controllante, affermata in via giurisprudenziale, il danno reputazionale, i dubbi dei depositanti sulla solvibilità e la copertura delle perdite delle controllate da parte della capogruppo.
+
+## Art. 59 TUB: Definizioni
+
+Dell'art. 59 interessano solo le prime due definizioni. Ai fini del capo, il **controllo** sussiste nei casi previsti dall'art. 23 TUB, mentre per **società finanziarie** si intendono le società indicate nell'art. 4, par. 1, punto 26, del regolamento (UE) n. 575/2013 (CRR). Il controllo dell'art. 23 persegue finalità diverse da quello dell'art. 2359 c.c., pur richiamato fra le ipotesi incluse: il codice civile guarda al potere di influenzare la volontà dell'assemblea, la norma bancaria al potere di influenzare in modo stabile la gestione dell'impresa, con presunzioni ulteriori.
+
+## Art. 60 TUB: Composizione del gruppo bancario
+
+Il **gruppo bancario** è composto dalla capogruppo e dalle società bancarie e finanziarie da questa controllate (art. 60, comma 1). La disciplina nasce con la legge Amato del 1990. Il codice civile non conosce la fattispecie del gruppo e ne ammette i poteri in modo limitato, mentre il TUB attribuisce alla capogruppo una gestione accentrata che va oltre il diritto societario. Dal 9 gennaio 2026 (d.lgs. 208/2025) il comma 1 non menziona più le società strumentali, che la Banca d'Italia riconduce alla nozione di società finanziaria.
+
+Il comma 2 stabilisce chi può essere **capogruppo**, con tre casi alternativi. Nel primo (lettera a) è capogruppo la banca italiana che non sia controllata da un'altra banca italiana o da una società di partecipazione finanziaria o di partecipazione finanziaria mista (di seguito holding), con sede legale in Italia o in un altro Stato dell'Unione europea, che possa essere considerata capogruppo ai sensi dello stesso articolo. Nel secondo (lettera b) è capogruppo la holding con sede legale in Italia o in un altro Stato dell'Unione, non controllata a sua volta da una banca italiana o da un'altra holding con sede in Italia o nell'Unione che possa essere considerata capogruppo, purché ricorra una di tre condizioni: fra le società controllate vi sono solo banche italiane; oppure il totale dell'attivo delle banche italiane controllate è maggiore di quello delle banche controllate in ciascuno Stato dell'Unione diverso dall'Italia; oppure la Banca d'Italia è altrimenti nominata autorità di vigilanza su base consolidata.
+
+Nel terzo caso (lettera c) è capogruppo la holding con sede legale in Italia che rientra nella vigilanza consolidata delle autorità di un altro Stato dell'Unione, non è controllata da una banca italiana o da un'altra holding con sede in Italia e controlla almeno una banca italiana. Il comma 2, introdotto dal d.lgs. 182/2021, è applicabile dal 14 luglio 2022.
+
+Il confronto fra le lettere a e b chiarisce il criterio. Se una banca italiana è capogruppo (lettera a), si tratta necessariamente di un gruppo bancario: è un'ipotesi di tipo qualitativo. La lettera b ammette invece un gruppo bancario anche quando la capogruppo è una holding e non una banca italiana; in tal caso la società deve controllare in via esclusiva o principale società bancarie e finanziarie. Secondo le disposizioni di vigilanza (Circolare 285, Parte Prima, Titolo I, cap. 2, sez. II), la condizione è soddisfatta quando per uno degli indicatori fra attivo di bilancio, patrimonio netto, ricavi e personale il rapporto fra il valore delle banche e società finanziarie controllate e quello dell'intero insieme di società ed enti controllati supera il 50 per cento.
+
+### Capogruppo e società di partecipazione finanziaria
+
+Oltre alla banca, può essere capogruppo di un gruppo bancario una società di partecipazione finanziaria o finanziaria mista, purché ricorrano le condizioni dell'art. 60, comma 2. La **società di partecipazione finanziaria** ha per oggetto l'assunzione di partecipazioni di controllo prevalentemente in campo finanziario, fra le quali vi sia almeno una banca; sono escluse le holding cui fanno capo prevalentemente imprese industriali. La **società di partecipazione finanziaria mista** è quella che detiene il controllo di banche, imprese di investimento e imprese di assicurazione. Se la capogruppo è una holding con sede in Italia o in un altro Stato dell'Unione, il gruppo è considerato italiano quando le banche italiane rappresentano una componente importante dell'insieme delle società.
+
+La holding, per assumere il ruolo di capogruppo, deve essere autorizzata. L'autorità verifica gli stessi requisiti previsti per le banche in materia di esponenti aziendali e di partecipanti al capitale, e accerta che l'articolazione del gruppo non ostacoli la vigilanza consolidata. Nel diritto europeo (dir. 2019/878/UE) l'«approvazione» è negata se i dispositivi interni e la distribuzione dei compiti non sono adeguati ed efficaci per coordinare le filiazioni, gestire i conflitti infragruppo e far rispettare le politiche di gruppo. Il gruppo bancario è iscritto in un apposito albo tenuto dalla Banca d'Italia; la vigilanza può spettare alla BCE se si tratta di «gruppo vigilato significativo».
+
+## Art. 61 TUB: Capogruppo
+
+L'art. 61, comma 1, attribuisce alla capogruppo la direzione e il coordinamento del gruppo bancario e la responsabilità di assicurare, tra l'altro, il rispetto delle norme che disciplinano l'attività bancaria su base consolidata. Il comma 3 prevede che, ferma restando la specifica disciplina dell'attività bancaria, la capogruppo sia soggetta ai controlli di vigilanza previsti dal capo: quando una banca è capogruppo, nei suoi confronti resta ferma la disciplina valida per tutte le altre banche e si aggiungono queste norme. Il periodo che affidava alla Banca d'Italia l'accertamento dello statuto è stato abrogato dal d.lgs. 182/2021: l'idoneità delle clausole statutarie è ora valutata nel procedimento dell'art. 56 TUB per la banca capogruppo e nell'autorizzazione ad assumere il ruolo di capogruppo per la holding.
+
+Il comma 4 disciplina il raccordo con la vigilanza. La capogruppo emana disposizioni alle componenti del gruppo per assicurare il rispetto e l'esecuzione dei provvedimenti di carattere generale e particolare impartiti dalla Banca d'Italia nell'interesse della stabilità del gruppo, e gli amministratori delle società del gruppo sono tenuti a fornire ogni dato e informazione necessari e a collaborare per il rispetto delle norme sulla vigilanza consolidata. Oltre alla classica attività di direzione e coordinamento, la capogruppo diventa così l'anello di congiunzione fra le autorità di vigilanza e i soggetti del gruppo e, se è inadempiente, ne risponde.
+
+### Natura della direzione e coordinamento
+
+La capogruppo è il referente dell'autorità di vigilanza per tutto ciò che attiene alla vigilanza consolidata, nell'ordinamento nazionale ed europeo. Se al vertice vi è una società diversa da una banca, questa è sottoposta a un regime equivalente a quello delle banche, che comprende richieste di informazioni, provvedimenti particolari (compresa la rimozione di esponenti aziendali) e ispezioni: nel TUB dal 1990, nel diritto europeo dal 2019.
+
+L'art. 61, comma 4, non si limita a riconoscere la legittimità della direzione e coordinamento, come fa l'art. 2497 c.c., ma la rende obbligatoria ai fini dell'esecuzione delle disposizioni di vigilanza. Il modello di gruppo bancario è perciò necessariamente accentrato. Secondo l'interpretazione prevalente, quest'attività non è né pubblicistica né meramente esecutiva: è attività d'impresa, che comporta valutazioni discrezionali degli amministratori della capogruppo sulle modalità attuative delle disposizioni di vigilanza. Non è priva di limiti e non afferma la prevalenza dell'interesse del gruppo su quello delle controllate: la capogruppo resta soggetta all'art. 2497 c.c., e la responsabilità verso soci e creditori delle controllate è valutata alla luce delle disposizioni di vigilanza e dei vantaggi compensativi della partecipazione al gruppo.
+
+## Art. 65 TUB: Soggetti inclusi nell'ambito della vigilanza consolidata
+
+Ai fini della vigilanza su base consolidata, l'art. 65, comma 1, attribuisce alla Banca d'Italia i poteri previsti dalla sezione nei confronti di tre categorie di soggetti: le società appartenenti a un gruppo bancario (lettera a); le società bancarie e finanziarie partecipate almeno per il 20% dalle società appartenenti a un gruppo bancario o da una singola banca (lettera b); le società bancarie e finanziarie non comprese in un gruppo bancario, ma controllate dalla persona fisica o giuridica che controlla un gruppo bancario ovvero una singola banca (lettera c). La vigilanza consolidata riguarda dunque anche soggetti diversi dai gruppi bancari; gli articoli successivi riprendono gli istituti della vigilanza informativa, regolamentare e ispettiva.
+
+### Ulteriori soggetti e poteri
+
+Oltre ai soggetti delle lettere a-c, l'ambito della vigilanza consolidata a fini informativi e ispettivi comprende, secondo le lettere h-i-ter, le società che controllano almeno una banca; le società diverse da quelle bancarie e finanziarie, quando sono controllate da una singola banca oppure quando società del gruppo o soggetti che controllano almeno una banca vi detengono, anche congiuntamente, una partecipazione di controllo; le holding esentate dal ruolo di capogruppo; le società incluse nel perimetro di consolidamento prudenziale del regolamento (UE) n. 575/2013. Alcuni di questi soggetti devono fornire informazioni, anche periodiche, altri soltanto a richiesta. Tutti possono essere ispezionati, ma le ispezioni sulle società diverse da quelle bancarie e finanziarie servono solo a verificare l'esattezza dei dati forniti per il consolidamento.
+
+La vigilanza sul gruppo si esercita con disposizioni indirizzate alla capogruppo ma riferite al gruppo nel suo complesso. Esse riguardano l'adeguatezza patrimoniale, il contenimento del rischio, l'organizzazione e i controlli interni e le altre aree della vigilanza regolamentare (art. 67 TUB). Se la capogruppo non è una banca, l'autorità ha nei suoi confronti gli stessi poteri di intervento previsti per le banche. Dopo il recepimento della dir. 2019/878/UE può inoltre imporre misure di secondo pilastro su base consolidata, comprese misure aggiuntive di capitale e di liquidità.
+
+### Vigilanza consolidata in ambito UE
+
+Quando capogruppo e società del gruppo hanno sede in più Stati dell'Unione, l'autorità competente (*consolidating supervisor*) è individuata secondo l'art. 111 della dir. 2013/36/UE. Per la capogruppo che è una banca, è l'autorità che l'ha autorizzata. Per la holding con più banche in Stati diversi, è l'autorità dello Stato in cui sono insediate la capogruppo e almeno una banca; altrimenti, quella che ha autorizzato la banca con il totale di bilancio più elevato.
+
+Nel meccanismo di vigilanza unico la vigilanza consolidata spetta alla BCE per i «gruppi vigilati significativi», individuati con gli stessi criteri delle banche significative, e alle autorità nazionali per gli altri. Se infine due banche dell'Unione fanno capo a un gruppo con impresa madre extra-UE, è richiesta un'**impresa madre intermedia** nell'Unione, salvo che le attività totali del gruppo estero nell'Unione siano inferiori a 40 miliardi di euro.

@@ -1,0 +1,11 @@
+%% Header additions for the finanza-strategica PDFs only (build_esami.py includes
+%% esami/<corso>/macros.tex after the template's environments).
+%%
+%% A question or an exercise never opens in the last lines of a page, and a table is
+%% never cut after its first rows: \Needspace asks for room first and otherwise
+%% moves the block to the next page. Unlike a minipage it lets a long exercise
+%% still run across pages.
+\usepackage{needspace}
+\usepackage{etoolbox}
+\BeforeBeginEnvironment{cvtesto}{\Needspace{8\baselineskip}}
+\BeforeBeginEnvironment{longtable}{\Needspace{9\baselineskip}}

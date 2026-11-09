@@ -15,16 +15,41 @@ Il programma ufficiale (AF 728602, ultima modifica 01/04/2026) dice:
 > la capacità di esporli in maniera appropriata, nonché l'attitudine a consultare le fonti
 > normative.
 
-Tre criteri, e ognuno ha lasciato un segno nella struttura delle risposte. *Conoscenza e
-comprensione* → ogni argomento del materiale ha almeno una domanda. *Capacità di esporli in
-maniera appropriata* → le risposte sono scritte in prosa discorsiva, come si parla, non come
-si prendono appunti. *Attitudine a consultare le fonti normative* → ogni risposta finisce con
-gli articoli da citare, e ogni articolo è stato verificato sul testo della norma.
+Tre criteri, e ognuno ha lasciato un segno. *Conoscenza e comprensione* → ogni argomento delle
+note ha almeno una domanda. *Capacità di esporli in maniera appropriata* → le risposte sono in
+prima persona e in prosa, come si parla, non come si prendono appunti. *Attitudine a consultare
+le fonti normative* → ogni risposta poggia sull'articolo che regge il ragionamento, verificato
+sul testo della norma.
 
-La graduazione dei voti aggiunge, per la fascia 27-30 e per la lode, la «capacità di
-raccogliere e interpretare i dati formulando giudizi autonomi». Di qui i riquadri *Attenzione*
-(la distinzione che il docente pretende, l'errore che fa perdere punti) e i *Rilanci* (le
-domande di approfondimento che si innestano sulla risposta).
+## Come è stato rifatto il volume (07/11/2026)
+
+Il volume precedente (100 domande a tre blocchi: domanda, risposta da dare, spiegazione) è stato
+sostituito con lo stesso metodo di LEGB-1. Per LEGB-2 non esistono testimonianze di studenti:
+**lo stile viene da LEGB-1** (cinque testimonianze più il feedback di Silvio sul volume), i pesi
+per argomento no. La nota di lavoro `../legislazione-bancaria-1/STILE-DOMANDE-ORALE.md` descrive
+forma, profondità e cose che non si chiedono.
+
+- **Solo Domanda e Risposta ideale.** Prima persona, registro orale; tesi, perché, norme,
+  distinguo (o ponte, o «e oggi?»). 110-270 parole.
+- **Domande aperte.** Si cita l'articolo («Commenti l'art. 53-bis»), mai comma, lettera o
+  allegato. Nessuna meta-domanda sulle fonti.
+- **Solo ciò che sta nel materiale del corso.** Note di lezione, Appunti, manuale (Brescia Morra,
+  capp. 7-10), testo di legge. Tolti dal vecchio volume Titolo VI sulla trasparenza, ABF,
+  antiriciclaggio e il caso del Tribunale di Terni, che non stanno nelle note.
+- **Filo unificante: la specialità bancaria rispetto al diritto comune** (crisi e fallimento,
+  fusione bancaria e opposizione dei creditori, gruppo bancario e art. 2497 c.c., bilancio e capitale
+  della banca). Una sezione di **percorsi** riproduce la catena di temi degli assistenti.
+- **Ogni sezione è stata riletta da un revisore indipendente** contro il testo di legge, e le
+  correzioni sono tornate agli scrittori (una decina di errori di sostanza, un centinaio di
+  imprecisioni). Un secondo giro, su tutto il volume, ha controllato le correzioni e le domande
+  aggiunte dopo il primo. I dubbi che restano sono in `dubbi-verifica.md`.
+
+**Domande tecniche aggiunte (08/11/2026).** Il programma raccomanda gli appunti «specie per le singole
+norme tecniche di vigilanza prudenziale»: alle sezioni 02, 03 e 04 sono state aggiunte 14 domande di
+approfondimento in coda (matrice dei conti e lettera di attestazione, SREP e punteggi, linee guida NPL;
+filtri prudenziali, denominatore del coefficiente, metodo standardizzato, autorizzazione IRB; LCR e
+NSFR, governo del rischio di liquidità, clienti connessi, limite del 25% e esenzioni, rischio di
+controparte e di regolamento, rischio di mercato). Hanno avuto una revisione indipendente.
 
 ## Vincolo temporale sulla seconda prova
 
@@ -37,78 +62,92 @@ cartelle dei due moduli siano allineate e utilizzabili insieme.
 
 | PDF | Punto | Domande | Pagine |
 |---|---|---|---|
-| `LEGB2_Orale_01_Basilea-e-Quadro-Prudenziale.pdf` | premessa all'8 | 8 | 12 |
-| `LEGB2_Orale_02_Vigilanza-Informativa.pdf` | 8 | 8 | 11 |
-| `LEGB2_Orale_03_Centrale-Rischi-e-Giurisprudenza.pdf` | 8 | 8 | 13 |
-| `LEGB2_Orale_04_Adeguatezza-Patrimoniale-e-Rischi.pdf` | 8 | 8 | 13 |
-| `LEGB2_Orale_05_Partecipazioni-Detenibili.pdf` | 8 | 7 | 13 |
-| `LEGB2_Orale_06_Governo-Societario-e-Controlli.pdf` | 8 | 9 | 14 |
-| `LEGB2_Orale_07_Poteri-di-Intervento.pdf` | 8 | 7 | 11 |
-| `LEGB2_Orale_08_Vigilanza-Ispettiva.pdf` | 8 | 7 | 11 |
-| `LEGB2_Orale_09_Disciplina-Sanzionatoria.pdf` | 8 | 7 | 11 |
-| `LEGB2_Orale_10_Concorrenza-e-Altre-Vigilanze.pdf` | 9 | 8 | 12 |
-| `LEGB2_Orale_11_Gruppi-e-Vigilanza-Consolidata.pdf` | 10 | 8 | 14 |
-| `LEGB2_Orale_12_Crisi-Amministrazione-Straordinaria-e-LCA.pdf` | 11 | 8 | 14 |
-| `LEGB2_Orale_13_Risoluzione-e-BRRD.pdf` | 11 | 7 | 13 |
-| **`LEGB2_Orale_Completo.pdf`** | **8-11** | **100** | **141** |
+| `LEGB2_Orale_01_Basilea-e-Quadro-Prudenziale.pdf` | 8 (premessa) | 8 | 7 |
+| `LEGB2_Orale_02_Vigilanza-Informativa.pdf` | 8 | 13 | 10 |
+| `LEGB2_Orale_03_Adeguatezza-Patrimoniale.pdf` | 8 | 14 | 10 |
+| `LEGB2_Orale_04_Rischi-e-Centrale-dei-Rischi.pdf` | 8 | 15 | 11 |
+| `LEGB2_Orale_05_Partecipazioni-Detenibili.pdf` | 8 | 8 | 7 |
+| `LEGB2_Orale_06_Governo-Societario-e-Controlli.pdf` | 8 | 12 | 9 |
+| `LEGB2_Orale_07_Poteri-di-Intervento.pdf` | 8 | 8 | 7 |
+| `LEGB2_Orale_08_Vigilanza-Ispettiva.pdf` | 8 | 8 | 7 |
+| `LEGB2_Orale_09_Disciplina-Sanzionatoria.pdf` | 8 | 8 | 7 |
+| `LEGB2_Orale_10_Altre-Vigilanze-e-Concorrenza.pdf` | 9 | 9 | 8 |
+| `LEGB2_Orale_11_Gruppi-e-Vigilanza-Consolidata.pdf` | 10 | 10 | 8 |
+| `LEGB2_Orale_12_Crisi-Amministrazione-Straordinaria-e-LCA.pdf` | 11 | 12 | 10 |
+| `LEGB2_Orale_13_Risoluzione-e-BRRD.pdf` | 11 | 13 | 10 |
+| `LEGB2_Orale_14_Percorsi.pdf` | 8-11 | 11 | 9 |
+| **`LEGB2_Orale_Completo.pdf`** | **8-11** | **149** | **99** |
 
-Il punto 8 è diviso in otto sezioni perché è il più esteso del programma: vi confluiscono la
-cornice di Basilea, le tre forme di vigilanza, i poteri di intervento e l'apparato
-sanzionatorio.
+Il punto 8 è diviso in nove sezioni perché è il più esteso del programma: vi confluiscono la
+cornice di Basilea, le tre forme di vigilanza, i poteri di intervento e l'apparato sanzionatorio.
+Le sezioni 03 e 04 sono state ridisegnate sulle note (adeguatezza patrimoniale; rischi e Centrale
+dei rischi).
 
 ## Com'è fatta ogni domanda
 
-Tre blocchi, ciascuno con la sua testa nel PDF:
+Due blocchi, ciascuno con la sua testa nel PDF:
 
 | Blocco | Callout nel sorgente | Che cosa contiene |
 |---|---|---|
-| **Domanda** | `> [!question] Domanda` | come la porrebbe il docente, in una o due frasi |
-| **Risposta da dare** | `> [!success] Risposta da dare` | le prime frasi da pronunciare: definizione o tesi centrale, già ancorata all'articolo. È quello che salva i primi trenta secondi |
-| **Spiegazione** | `> [!info] Spiegazione` | 250-600 parole di prosa, quella che si espone in due-quattro minuti, con gli articoli citati nel corpo del discorso |
+| **Domanda** | `> [!question] Domanda` | come la porrebbe l'esaminatore, in una o due frasi |
+| **Risposta ideale** | `> [!success] Risposta ideale` | la risposta da due minuti, in prima persona: tesi in una frase, il perché, le norme su cui poggia, e in chiusura il distinguo, il ponte verso il tema successivo o il «e oggi?» |
 
-`verifica_orale.py` segnala ogni domanda a cui manca uno dei tre blocchi.
-
-Questa è la **versione da studiare**: cento domande per modulo, la domanda, la risposta da
-dare e la sua spiegazione, nient'altro. I riquadri *Fonti da citare*, *Attenzione* e *Rilancio* della versione
-estesa sono stati tolti per far stare il volume in un numero di pagine leggibile.
+La Spiegazione estesa è stata tolta. `verifica_orale.py` segnala una domanda senza uno dei due
+blocchi, o con un blocco `[!info]`; non controlla la lunghezza delle risposte.
 
 ## La versione estesa
 
-Le tracce integrali — tutte le domande di ogni sezione, con *Fonti da citare*, *Attenzione* e
-*Rilancio* — restano nei sorgenti in `src-completo/`. Non sono compilate in PDF. Usano il
-formato precedente (la risposta breve si chiama *Attacco* e la spiegazione non ha un blocco
-proprio): per tornare alla versione lunga va sostituito il contenuto di `src/` con quello di
-`src-completo/`, avvolta la prosa di ogni domanda in un callout `> [!info] Spiegazione` e
-ricompilato. `.bozze-precedenti/` conserva le bozze di lavorazione anteriori.
+Le tracce integrali del volume precedente (domande con *Fonti da citare*, *Attenzione* e
+*Rilancio*) restano nei sorgenti in `src-completo/`. Non sono compilate in PDF e **non sono state
+corrette**: ripetono errori noti, per esempio le società strumentali fuori dal gruppo bancario,
+la cronologia dell'art. 52 TUB, l'art. 89 CRR ante CRR III e il nuovo art. 57/58 TUB come già
+applicabile. `.bozze-precedenti/` conserva le bozze di lavorazione anteriori.
 
 ## Su che cosa sono costruite
 
-- Le note del vault, `../../../obsidian/04-Legislazione-Bancaria-2/` — 12 note generate dalla
-  `pipeline` dagli appunti di lezione.
-- Le fonti normative, lette nel testo quando `../Normativa/` era ancora nel repository: TUB consolidato al 22.01.2026, CRR,
-  CRD IV/V, Reg. (UE) n. 1024/2013, Circolari Banca d'Italia 115, 139, 154, 229, 262, 263,
-  269, 272, 285 e 302, d.l. 99/2017, provvedimenti su sanzioni e piani di risanamento.
-- Le slide in `.ppt`/`.pptx` che la `pipeline` non processa (Crisi bancarie Aloia-Spina,
-  Ca' Foscari 2022, Anna Scarpa, Camillo La Gioia): estratte a parte.
-- Le due sentenze sulla Centrale dei Rischi, allora in `../Casi-Giurisprudenza/`, che sono scansioni
-  senza livello di testo e sono state **lette pagina per pagina**, non dedotte.
+- Le note del vault, `../../../obsidian/04-Legislazione-Bancaria-2/` — 12 note, verificate sul
+  diritto vigente il 06/11/2026 e allineate a lezione e libro il 07/11/2026.
+- Gli Appunti di lezione (`Moodle/04-Legislazione-Bancaria-2/Appunti/`) e il manuale di Brescia
+  Morra, *Il diritto delle banche*, 4a ed. 2025, capitoli 7-10 (`brescia_morra.md`).
+- Le fonti normative, lette nel testo quando `Normativa/` era ancora nel repository: TUB consolidato
+  al 22.01.2026, CRD IV, CRR (testo del 2021, anteriore al CRR III), Reg. (UE) n. 1024/2013,
+  Circolari Banca d'Italia 139, 272 e 285 (aggiornamento 50), d.l. 99/2017, d.lgs. 208/2025 (estratto
+  GU), provvedimenti su sanzioni e piani di risanamento.
 
-**Ogni articolo, soglia, percentuale e data citati sono stati verificati sul testo della
-norma**, non ripresi dal materiale didattico. Non è pedanteria: in più punti il materiale del
-corso è superato dalla normativa vigente, e le tracce lo segnalano invece di propagarlo —
-l'art. 54 TUB nella versione anteriore al d.lgs. 182/2021, per fare un esempio, che gli
-appunti e la stessa Circolare 285 riportano ancora nella formulazione vecchia.
+## Che cosa è stato verificato, e che cosa no
+
+Ogni risposta è stata rivista da un revisore indipendente contro il testo di legge. Sono stati
+corretti, tra gli altri: la competenza sull'amministrazione straordinaria (per le banche
+significative decide la BCE), la penalità di mora (oggi prevista dagli artt. 144-ter.1 e 145.1 TUB),
+il reato di informazioni false sulle partecipazioni (l'omissione è solo illecito amministrativo), il
+nuovo art. 26 TUB (non ancora applicabile) e la parola «dipendenti», attribuita per errore all'art. 54.
+
+**Non verificabile sul testo**, con formula prudente nelle risposte:
+- il **d.lgs. 180/2015**: il testo non è disponibile; le risposte su risoluzione e bail-in si
+  appoggiano alla nota 12, al manuale e al TUB;
+- il **CRR III** (reg. 2024/1623) e la CRD VI, le Circolari successive all'aggiornamento 50, la
+  Circolare 269 e 229, il codice civile e il d.lgs. 47/2026 sulla governance;
+- il **testo della riforma CMDI**, omessa di proposito.
+
+**Errori trovati nelle note di lezione e corretti il 07/11/2026** (`obsidian/04-Legislazione-Bancaria-2/`,
+ogni correzione porta la dicitura «Testo vigente» o è spiegata nel testo): nota 08, l'omessa richiesta di
+autorizzazione per le partecipazioni non è reato, lo sono solo le false indicazioni (artt. 139-140); nota 10, le
+società strumentali non escono dal perimetro del gruppo e «nel TUB dal 1990» diventa «nell'ordinamento italiano»;
+nota 11, l'accertamento del dissesto spetta alla BCE solo per le significative, la revoca è disposta «sentita la
+Banca d'Italia o su sua proposta», la sospensione dei pagamenti scatta dal sesto giorno lavorativo (art. 83);
+nota 12, la Banca d'Italia riconosce i sistemi di garanzia ma non autorizza gli interventi né esclude le banche
+(artt. 96-ter e 96-quater); nota 01, CRR2 e CRD V anticipano solo alcuni aspetti di Basilea IV; nota 02, il reg.
+2019/630 è una deduzione dal capitale e non una svalutazione; nota 03, il minimo di leva è vincolante con il reg.
+2019/876. Le dispense `dispense/04-legislazione-bancaria-2.pdf` e `...-sintesi.pdf` sono state rigenerate con queste correzioni (la sintesi, che è un vault separato in `latex/sintesi/`, è stata corretta a parte).
 
 ## Che cosa non copre
 
-- **I manuali.** Il programma indica pagine precise di CAPRIGLIONE (a cura di), *Manuale di
-  diritto bancario e finanziario*, 3a ed. 2024, **oppure** di BRESCIA MORRA, *Il diritto delle
-  banche*, 4a ed. 2025. Nessuno dei due è nel repository: queste tracce **non li sostituiscono**
-  e nessuna affermazione è loro attribuita. Il programma indica per i punti 8-11 le pp. 144-149,
-  160-185, 415-421, 499-524, 525-566 di Capriglione (per le sole parti sulle banche) oppure le
-  pp. 141-167, 225-227, 231-271, 284-336 di Brescia Morra.
-- `LEGB2_Normativa_TUB-2007-ridotto.pdf`, tenuto come riferimento storico, e la versione
-  inglese delle slide per studenti, che duplica quella italiana.
+- **I manuali nella loro interezza.** Il programma indica pagine precise di CAPRIGLIONE (a cura di),
+  *Manuale di diritto bancario e finanziario*, 3a ed. 2024, **oppure** di BRESCIA MORRA, *Il diritto
+  delle banche*, 4a ed. 2025. Nel repository c'è solo una parte di Brescia Morra; queste tracce
+  **non li sostituiscono**.
+- Trasparenza (Titolo VI), ABF e antiriciclaggio: sono tra i prerequisiti del programma, non nelle
+  note di LEGB-2.
 
 ## Ricompilare
 
@@ -116,23 +155,17 @@ Dalla cartella `latex/`, con lo stesso template e gli stessi filtri delle dispen
 (`template/dispensa.latex`, `filters/esami.lua`, `filters/callouts.lua`):
 
 ```bash
-python3 verifica_orale.py --corso legislazione-bancaria-2 --rinumera   # formato e completezza
+python3 verifica_orale.py --corso legislazione-bancaria-2 --rinumera   # formato
 python3 build_esami.py --corso legislazione-bancaria-2 --list          # che cosa c'è e quante domande
 python3 build_esami.py --corso legislazione-bancaria-2 --all           # un PDF per sezione
 python3 build_esami.py --corso legislazione-bancaria-2 --volume        # il volume unico
 python3 build_esami.py --corso legislazione-bancaria-2 --exam 05       # una sola sezione
-python3 build_esami.py --corso legislazione-bancaria-2 --all --keep    # conserva i .tex per il debug
 ```
 
-Servono `pandoc`, `xelatex` e `latexmk` (TeX Live). Le tracce compilate stanno in `src/`; le
-versioni integrali, non compilate, in `src-completo/`.
-
-`verifica_orale.py` controlla due cose. Il **formato**, cioè quello che romperebbe la compilazione:
-front matter, una sola intestazione di capitolo, domande numerate in sequenza, callout con riga
-vuota prima e dopo, niente intestazioni di livello 3 o wikilink. E la **completezza**: confronta
-ogni sorgente con la bozza corrispondente in `.bozze/` e segnala `TRONCATO` se ha perso domande.
-Il secondo controllo esiste perché è un guasto che non si vede: un file troncato compila
-benissimo e produce un PDF dall'aria perfetta con metà del contenuto.
+Servono `pandoc`, `xelatex` e `latexmk` (TeX Live). Le tracce compilate stanno in `src/`.
+`verifica_orale.py` controlla il **formato**, cioè quello che romperebbe la compilazione: front
+matter, una sola intestazione di capitolo, domande numerate in sequenza, callout con riga vuota
+prima e dopo, niente intestazioni di livello 3 o wikilink, nessun blocco `[!info]`.
 
 ## Avvertenza
 

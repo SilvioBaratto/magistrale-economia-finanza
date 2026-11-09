@@ -1583,7 +1583,7 @@ Il **comma 3** guarda a una figura oggi scomparsa: entro tre anni dall'entrata i
 > Non si presenti l'art. 149, comma 2, come una deroga aperta: opera soltanto per i possessi già in essere al 20 marzo 1992 e nei limiti del valore nominale di 7.746,85 euro, e non consente incrementi. E non si confonda l'art. 149, che è disposizione transitoria del 1993, con la disciplina transitoria del d.l. 3/2015, che è tutt'altro: diciotto mesi per l'adeguamento alla soglia dell'attivo e ventiquattro mesi per il tetto statutario del cinque per cento ai voti.
 
 > [!note] Rilancio
-> Perché il legislatore del 1993 ha fatto salvi quei possessi anziché imporne la dismissione?
+> Perché l'art. 149 fa salvi quei possessi anziché imporne la dismissione?
 > → Perché il tetto dell'art. 30, comma 2, è un presidio organizzativo e non prudenziale, e applicarlo retroattivamente a posizioni legittimamente costituite avrebbe imposto alienazioni forzose senza un corrispondente guadagno di stabilità.
 >
 > Il limite superiore del comma 2 è espresso in valore nominale o in percentuale?

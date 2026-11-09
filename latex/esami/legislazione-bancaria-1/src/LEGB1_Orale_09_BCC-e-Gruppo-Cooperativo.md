@@ -1,172 +1,226 @@
 ---
 title: "Le banche di credito cooperativo e il gruppo bancario cooperativo"
-subtitle: "Punto 7 del programma — Organizzazione e attività delle banche: i residui elementi di specialità (le banche di credito cooperativo)"
+subtitle: "Punto 7 del programma — BCC, artt. 33-37-ter TUB"
 ---
 
 # Le banche di credito cooperativo e il gruppo bancario cooperativo
 
-Questo capitolo copre la Sezione II del Capo V del Titolo II del TUB — gli artt. da 33 a 37-ter — insieme alle norme comuni alle banche cooperative (artt. 28 e 150-bis) e alla disciplina secondaria che le attua, oggi raccolta nella Parte Terza, Capitoli 4, 5 e 6 della Circolare della Banca d'Italia n. 285 del 17 dicembre 2013. Il professor Urbani entra quasi sempre nell'argomento da una domanda apparentemente semplice — «che cosa distingue una banca di credito cooperativo da una banca costituita in forma di società per azioni?» — per poi verificare se il candidato sa tenere insieme i due pilastri della categoria, la **mutualità** e il **localismo**, e se sa dire dove ciascuno dei due si traduce in una regola puntuale. Il filo logico da tenere è questo: ogni singola norma degli artt. 33-37 serve a proteggere l'uno o l'altro dei due pilastri; la riforma del 2016, introducendo il gruppo bancario cooperativo, ha aggiunto un terzo interesse — la stabilità e l'accesso al mercato dei capitali — e ha dovuto trovare il punto di equilibrio fra questo e i primi due. Chi riesce a raccontare gli artt. 37-bis e 37-ter come la risposta a un problema concreto (banche troppo piccole per ricapitalizzarsi, impossibilitate per statuto a emettere azioni sul mercato) e non come un elenco di commi, ha già dimostrato la capacità di giudizio autonomo che la fascia alta pretende. Attenzione, infine, a un punto di metodo: gli appunti del corso e le slide risalgono al 2022-2023 e su almeno tre profili — il testo dell'art. 36, la nozione di zona di competenza territoriale e la soglia di partecipazione delle banche affiliate al capitale della capogruppo — sono superati o imprecisi rispetto alla normativa vigente. Segnalarlo all'orale è un punto guadagnato, non un rischio.
+Il capitolo copre la banca di credito cooperativo (artt. 33-37-ter TUB, con le norme comuni dell'art. 28) e il gruppo bancario cooperativo. Le BCC compaiono in quattro testimonianze su cinque: le domande tipiche sono il residuo di specializzazione oggi, gli utili e la loro destinazione, l'art. 28, comma 2-ter («quello del morto») e i poteri della capogruppo, di solito senza troppo dettaglio. Le soglie operative (più del 50 per cento verso i soci, 5 per cento fuori zona) non stanno nel TUB ma nella Circolare 285 della Banca d'Italia.
 
-## D1 — I tratti identificativi della banca di credito cooperativo
-
-> [!question] Domanda
-> Mi inquadri la banca di credito cooperativo nel sistema del Testo unico bancario: dove è collocata la disciplina e quali sono gli elementi che la distinguono dalle altre banche?
-
-> [!success] Risposta da dare
-> La banca di credito cooperativo è disciplinata dalla Sezione II del Capo V del Titolo II del TUB, agli artt. da 33 a 37-ter, preceduta dalle norme comuni a tutte le banche cooperative contenute nell'art. 28. Si tratta di una società cooperativa per azioni a responsabilità limitata alla quale l'ordinamento riconosce lo statuto di cooperativa a mutualità prevalente, e che è caratterizzata da due elementi coessenziali e inscindibili: la **mutualità** e il **localismo**.
-
-> [!info] Spiegazione
-> Il Capo V del Titolo II è dedicato alle banche cooperative e si articola in due Sezioni: la Sezione I, dedicata alle banche popolari (artt. 29-32-ter), e la Sezione II, dedicata alle banche di credito cooperativo. L'art. 28, comma 1, chiude il sistema sul piano della riserva di attività: l'esercizio dell'attività bancaria da parte di società cooperative è consentito soltanto alle banche popolari e alle banche di credito cooperativo. Una cooperativa che intenda fare banca non ha, quindi, altra alternativa che assumere uno di questi due statuti.
->
-> La mutualità della banca di credito cooperativo non è una mutualità generica, ma la **mutualità prevalente** di cui all'art. 2514 del codice civile. L'art. 28, comma 2-bis, TUB stabilisce che, ai fini delle disposizioni fiscali di carattere agevolativo, sono considerate cooperative a mutualità prevalente le banche di credito cooperativo che rispettano i requisiti di mutualità previsti dall'art. 2514 c.c. e i requisiti di operatività prevalente con i soci previsti ai sensi dell'art. 35 TUB. L'art. 150-bis, comma 4, aggiunge che lo statuto della banca di credito cooperativo contiene le clausole previste dall'art. 2514, primo comma, del codice civile: le clausole mutualistiche, dunque, non sono una scelta ma un obbligo, e la banca non può eliminarle.
->
-> Il localismo si traduce in una serie di vincoli puntuali: il requisito territoriale per l'acquisto della qualità di socio (art. 34, comma 2), il vincolo di operatività entro la zona di competenza territoriale, e — sul piano secondario — l'obbligo di inserire nella denominazione riferimenti utili a identificare la banca nelle aree di mercato in cui opera. La Banca d'Italia, nella Premessa del Capitolo 5 della Parte Terza della Circolare n. 285, riassume la categoria con efficacia: intermediari «caratterizzati dalla finalità mutualistica e da un'operatività circoscritta ai territori di insediamento», in cui «la democraticità di funzionamento è assicurata dai limiti di partecipazione del socio e dal principio del voto capitario» e «la finalità lucrativa è esclusa dai limiti rigorosi alla distribuzione di utili e dal principio di indivisibilità del patrimonio».
->
-> A questi due elementi tradizionali la riforma del 2016 ha aggiunto un terzo tratto strutturale, che oggi non è più eventuale: l'appartenenza obbligatoria a un gruppo bancario cooperativo, condizione per il rilascio e per la conservazione dell'autorizzazione all'esercizio dell'attività bancaria (art. 33, comma 1-bis, TUB).
-
-## D2 — I soci della banca di credito cooperativo: l'art. 34 TUB
+## D1 — Mi parli delle banche di credito cooperativo
 
 > [!question] Domanda
-> Mi illustri la disciplina dei soci delle banche di credito cooperativo: numero, requisiti, diritto di voto, limiti di possesso.
+> Mi parli delle banche di credito cooperativo.
 
-> [!success] Risposta da dare
-> L'art. 34 TUB, riscritto dalla riforma del 2016, fissa quattro regole cardine: il numero minimo dei soci non può essere inferiore a **cinquecento**; per essere soci occorre risiedere, aver sede ovvero operare con carattere di continuità nel territorio di competenza della banca; ogni socio ha un voto qualunque sia il numero delle azioni possedute; nessun socio può possedere azioni il cui valore nominale complessivo superi **centomila euro**.
+> [!success] Risposta ideale
+> La banca di credito cooperativo è una banca in forma di società cooperativa per azioni a responsabilità limitata, disciplinata dagli artt. 33-37-ter, che seguono le norme comuni a tutte le banche cooperative dell'art. 28. Il comma 1 di quell'articolo riserva l'attività bancaria in forma cooperativa solo a popolari e BCC: chi vuole fare banca da cooperativa ha due soli modelli. La BCC è definita da due tratti, la mutualità e il localismo, e dal 2016 ne ha un terzo, l'appartenenza a un gruppo.
+>
+> La mutualità è prevalente: lo statuto contiene per obbligo le clausole dell'art. 2514 del codice civile (art. 150-bis, comma 4), l'art. 28, comma 2-bis, considera la BCC cooperativa a mutualità prevalente ai fini fiscali se rispetta quelle clausole e l'operatività prevalente con i soci dell'art. 35, e l'utile non remunera il capitale ma alimenta riserve indivisibili (art. 37). Il localismo sta nel socio, che deve risiedere o operare nel territorio di competenza (art. 34), e nell'operatività, circoscritta a quella zona. I controlli sulle cooperative dell'autorità governativa non si applicano: l'art. 28, comma 2, li assorbe nella vigilanza bancaria.
+>
+> Il terzo tratto è il gruppo: l'adesione a un gruppo bancario cooperativo è condizione per l'autorizzazione (art. 33, comma 1-bis), e la capogruppo, una s.p.a., esercita direzione e coordinamento sulla base del contratto di coesione (art. 37-bis). La BCC resta quindi una cooperativa autonoma sul piano giuridico, ma governata dentro un gruppo. E viene subito da chiedersi che cosa resti, oggi, della specializzazione bancaria: la BCC ne è il residuo.
 
-> [!info] Spiegazione
-> Il numero minimo è la prima deroga rilevante rispetto al diritto comune, dove per la costituzione di una cooperativa bastano nove soci, e anche rispetto alla banca popolare, per la quale l'art. 30, comma 4, si ferma a duecento. Il precetto è presidiato da una sanzione strutturale: qualora il numero diminuisca, la compagine sociale deve essere reintegrata entro un anno; in caso contrario, la banca è posta in liquidazione. Prima della riforma del 2016 la soglia era anch'essa di duecento soci: l'art. 1, comma 2, lett. a), del d.l. n. 18/2016 l'ha più che raddoppiata, e l'art. 2, comma 5, dello stesso decreto ha concesso alle banche già autorizzate sessanta mesi per adeguarsi — termine che la Circolare n. 285 individua nel 16 febbraio 2021.
->
-> Il requisito territoriale del comma 2 è la proiezione soggettiva del localismo. La Circolare n. 285, Parte Terza, Capitolo 5, Sezione II, par. 3.1, ne dà una lettura non formalistica: la condizione dell'«operare con carattere di continuità» è soddisfatta quando la zona costituisca un «centro di interessi» per l'aspirante socio, interessi che possono consistere sia nello svolgimento di un'attività lavorativa dipendente o autonoma che si avvalga di stabili organizzazioni ubicate nella zona, sia in altre forme di legame con il territorio purché di tipo essenzialmente economico, come la titolarità di diritti reali su immobili ivi siti. Per le persone giuridiche si tiene conto dell'ubicazione della sede legale, della direzione, degli stabilimenti o di altre unità operative; e la stessa disposizione ammette che siano acquisiti soci residenti o aventi sede in paesi esteri, comunitari ed extracomunitari, rientranti nella zona di competenza territoriale.
->
-> Il voto capitario del comma 3 e il tetto di possesso del comma 4 lavorano insieme. Il primo è il tratto che, da solo, certifica la natura cooperativa dell'ente; il secondo impedisce che un socio, pur non potendo pesare in assemblea più degli altri, acquisisca una posizione patrimoniale sproporzionata. Si noti la differenza di tecnica rispetto alla banca popolare: l'art. 30, comma 2, fissa un limite percentuale (l'1 per cento del capitale sociale, riducibile in statuto fino allo 0,5 per cento), l'art. 34, comma 4, fissa un limite in valore assoluto — centomila euro di valore nominale complessivo.
->
-> Il comma 4-bis, inserito nel 2016, consente allo statuto di prevedere, tra i requisiti per l'ammissione a socio, la sottoscrizione o l'acquisto di un numero minimo di azioni. La Circolare ne tempera l'uso: tale numero è determinato in modo da non ostacolare di fatto l'ingresso di nuovi soci, in coerenza con i principi della «porta aperta» e della parità di trattamento nei rapporti con i soci di cui all'art. 2516 c.c. Il comma 5, che vietava alla banca di acquistare proprie azioni, è stato abrogato nel 1999, ma il divieto sopravvive in via secondaria: la Circolare prescrive che le banche di credito cooperativo non possano fare anticipazioni su proprie azioni, accettarle in garanzia o compensarle con debiti dei soci.
->
-> | Profilo | Banca popolare | Banca di credito cooperativo |
-> |---|---|---|
-> | Numero minimo di soci | 200 (art. 30, c. 4) | 500 (art. 34, c. 1) |
-> | Requisito territoriale del socio | non previsto | residenza, sede o operatività continuativa nella ZCT (art. 34, c. 2) |
-> | Voto | capitario (art. 30, c. 1) | capitario (art. 34, c. 3) |
-> | Limite di possesso | 1% del capitale, statutariamente riducibile a non meno dello 0,5% (art. 30, c. 2) | 100.000 euro di valore nominale complessivo (art. 34, c. 4) |
-> | Valore nominale dell'azione | non inferiore a 2 euro (art. 29, c. 2) | fra 25 e 500 euro (art. 33, c. 4) |
-
-## D3 — L'operatività prevalente a favore dei soci: l'art. 35 TUB
+## D2 — La BCC e la cooperativa del codice civile
 
 > [!question] Domanda
-> Che cosa significa che le banche di credito cooperativo esercitano il credito «prevalentemente» a favore dei soci, e come si misura questa prevalenza?
+> In che cosa la banca di credito cooperativo si distingue dalla cooperativa del codice civile? E perché i controlli governativi sulle cooperative non si applicano?
 
-> [!success] Risposta da dare
-> L'art. 35, comma 1, TUB stabilisce che le banche di credito cooperativo esercitano il credito prevalentemente a favore dei soci. La quantificazione della prevalenza è rimessa alla normativa secondaria: la Circolare n. 285, Parte Terza, Capitolo 5, Sezione III, par. 1, precisa che il principio è rispettato quando **più del 50 per cento delle esposizioni è verso soci cooperatori o è garantito da soci cooperatori**.
+> [!success] Risposta ideale
+> Il codice civile resta il diritto comune della cooperativa bancaria, e il TUB cede il passo solo dove pone una regola propria. La tecnica è l'elenco negativo dell'art. 150-bis, comma 1, che enumera le disposizioni del codice non applicabili alle BCC; tutto il resto continua a valere. Dove il codice fissa limiti o procedure, il TUB mette i suoi: il numero minimo di soci è cinquecento, il valore nominale delle azioni sta fra venticinque e cinquecento euro, il possesso massimo è centomila euro, il rifiuto dell'ammissione va motivato ed è riesaminabile dai probiviri (artt. 33 e 34). Dove invece il codice persegue lo scopo mutualistico, il TUB lo rende obbligatorio: l'art. 150-bis, comma 4, impone nello statuto le clausole dell'art. 2514, primo comma, e la BCC non può eliminarle.
+>
+> La deroga più importante è l'art. 28, comma 2: alle popolari e alle BCC non si applicano i controlli sulle cooperative che il codice civile attribuisce all'autorità governativa. La vigilanza bancaria, della Banca d'Italia o della BCE, li assorbe: duplicarli non aggiungerebbe tutela, e lo stesso supervisore verifica già la mutualità, per esempio autorizzando l'operatività prevalente con non soci. L'ordine dei procedimenti lo conferma: prima l'autorizzazione bancaria, poi l'iscrizione all'albo delle cooperative (art. 33, comma 1-ter). Non si diventa banca perché si è cooperativa, ma si è cooperativa bancaria perché si è autorizzati a fare banca.
 
-> [!info] Spiegazione
-> Questa è la traduzione operativa della mutualità e, insieme all'art. 2514 c.c., il presupposto della qualificazione come cooperativa a mutualità prevalente ai fini delle agevolazioni fiscali, a norma dell'art. 28, comma 2-bis, TUB. È bene sottolineare che la prevalenza riguarda l'**attivo**, cioè gli impieghi: non esiste un vincolo corrispondente sulla raccolta, che può provenire anche da non soci.
->
-> Il calcolo non è meccanico. La Circolare individua un perimetro di esposizioni assimilate a quelle verso i soci: le esposizioni verso o garantite dalle amministrazioni centrali della Repubblica italiana e di altri Paesi dell'eurozona, dalla Banca centrale europea e dalla Banca d'Italia; quelle verso o garantite dalla capogruppo e dalle altre società del gruppo bancario cooperativo di appartenenza, ivi compresi gli impegni e le garanzie assunti in esecuzione dell'accordo di garanzia in solido; quelle verso o garantite dai sistemi di garanzia istituiti tra banche di credito cooperativo. L'assimilazione delle esposizioni infragruppo è la conseguenza diretta della riforma del 2016: la liquidità depositata presso la capogruppo non «consuma» il plafond mutualistico.
->
-> Quanto alla nozione di esposizione garantita, la Circolare distingue due ipotesi: il finanziamento verso un non socio assistito da una garanzia del socio ammissibile come tecnica di attenuazione del rischio di credito, che in applicazione del principio di sostituzione si considera esposizione diretta verso il garante; e, fuori da questo caso, il finanziamento per il quale il socio è responsabile in solido con il debitore non socio. La nota esemplificativa è molto utile all'orale: si considerano crediti verso soci i finanziamenti alla società semplice o in nome collettivo cui partecipa il socio, o alla società in accomandita semplice di cui il socio sia accomandatario, e i finanziamenti cointestati al socio e al non socio limitatamente alla quota di spettanza del socio; non vi rientrano invece i finanziamenti intestati esclusivamente a un non socio, ancorché coniuge, parente o affine di un socio, né quelli alla società in accomandita semplice nella quale il socio sia mero accomandante.
->
-> L'art. 35, comma 1, prevede infine una valvola di sfogo: la Banca d'Italia — oggi, più correttamente, «l'autorità competente», secondo la terminologia della Circolare — può autorizzare, per periodi determinati, le singole banche a un'operatività prevalente a favore di soggetti diversi dai soci, unicamente qualora sussistano ragioni di stabilità. Si tratta di un procedimento amministrativo tipizzato, con termine di centoventi giorni. Il presupposto è esclusivo: non basta l'opportunità commerciale, occorre la stabilità.
->
-> Il comma 2 dell'art. 35, modificato nel 2016, chiude il cerchio sul piano statutario: gli statuti contengono le norme relative alle attività, alle operazioni di impiego e di raccolta e alla competenza territoriale, nonché ai poteri attribuiti alla capogruppo ai sensi dell'art. 37-bis, determinate sulla base dei criteri fissati dalla Banca d'Italia.
-
-## D4 — La zona di competenza territoriale: nozione e perimetrazione
+## D3 — L'art. 34: i soci della BCC
 
 > [!question] Domanda
-> Che cos'è la zona di competenza territoriale di una banca di credito cooperativo e come si determina?
+> Mi illustri l'art. 34 TUB: chi può essere socio di una banca di credito cooperativo e con quali limiti?
 
-> [!success] Risposta da dare
-> La zona di competenza territoriale è definita dalla Circolare n. 285, Parte Terza, Capitolo 5, Sezione I, par. 3, come «il territorio entro il quale le banche di credito cooperativo acquisiscono i soci, assumono rischi nei confronti della clientela e aprono o trasferiscono le succursali». Ogni banca la indica nel proprio statuto, e la Circolare, alla Sezione II, par. 4, ne fissa i criteri di perimetrazione.
+> [!success] Risposta ideale
+> L'art. 34 è la proiezione soggettiva della mutualità e del localismo, e si ricorda per quattro regole. Primo, il numero minimo dei soci è cinquecento: se scende, la compagine va reintegrata entro un anno, altrimenti la banca è posta in liquidazione; nelle popolari la soglia è duecento (art. 30, comma 4), e la differenza dice che la BCC deve avere una base mutualistica davvero larga. Secondo, per essere soci occorre risiedere, avere sede o operare con continuità nel territorio di competenza: il legame col territorio è condizione d'ingresso, e nelle popolari non c'è. Terzo, il voto è capitario, uno a testa qualunque sia il numero delle azioni. Quarto, nessun socio può possedere azioni per più di centomila euro di valore nominale complessivo, perché chi non pesa di più in assemblea non deve nemmeno accumulare una posizione patrimoniale sproporzionata. La tecnica è diversa da quella delle popolari: lì il tetto è una percentuale del capitale, l'1 per cento riducibile in statuto (art. 30, comma 2); qui è un valore assoluto.
+>
+> Lo statuto può chiedere un numero minimo di azioni per l'ammissione (comma 4-bis), e il rifiuto di ammettere un aspirante socio deve essere motivato e può essere riesaminato dai probiviri, per il richiamo dell'art. 30, comma 5: è il principio della porta aperta.
 
-> [!info] Spiegazione
-> La zona ricomprende, in primo luogo, i comuni nei quali la banca ha la sede, proprie succursali **oppure** un numero di soci rapportato alla popolazione residente almeno pari a quello risultante dalla metodologia fissata dalla Circolare; in secondo luogo, i comuni limitrofi a quelli così individuati. Il criterio del numero minimo di soci è per scaglioni di popolazione:
->
-> | Popolazione residente nel comune | Percentuale | Numero minimo di soci richiesto |
-> |---|---|---|
-> | fino a 20.000 | 1,5 % | 1,5 % della popolazione |
-> | oltre 20.000 e fino a 50.000 | 0,6 % | 300 + 0,6 % della parte eccedente 20.000 |
-> | oltre 50.000 e fino a 200.000 | 0,3 % | 480 + 0,3 % della parte eccedente 50.000 |
-> | oltre 200.000 | — | più di 930 |
->
-> Gli arrotondamenti sono all'unità superiore e i dati di popolazione sono quelli Istat sulla popolazione residente al 1° gennaio. Fra tutti i comuni della zona di competenza deve esistere **contiguità territoriale**: la zona non può essere un arcipelago di presenze scollegate. La Circolare precisa che il requisito non ricorre, di norma, quando due o più comuni siano separati dalle acque del mare o di un lago; in via eccezionale la contiguità può essere ritenuta esistente avendo riguardo all'elevata frequenza dei collegamenti marittimi, all'esistenza di altre infrastrutture di collegamento, a particolari conformazioni del territorio, a stabili relazioni con clientela interessata da fenomeni di pendolarismo o ad altri fattori che denotino una sostanziale unitarietà geografica e socio-economica. La decisione motivata di estendere la competenza a un comune separato dalle acque è assunta dall'organo con funzione di supervisione strategica e comunicata tempestivamente all'autorità competente.
->
-> La zona non è statica: è un perimetro che si espande e si contrae. Si espande anche per via «anagrafica»: i soggetti residenti, aventi sede o operanti con carattere di continuità in comuni limitrofi a quelli già di competenza, ma non ancora inclusi, possono presentare domanda di ammissione a socio, subordinata al raggiungimento del numero minimo richiesto; il comune si considera incluso dopo che l'organo amministrativo ha deliberato positivamente su tante domande quante ne servono per raggiungere il minimo e i soci hanno integralmente versato l'importo delle azioni sottoscritte e l'eventuale sovrapprezzo. Si contrae quando il presupposto viene meno, ma con un ammortizzatore: se il numero dei soci in un comune di competenza scende sotto il minimo, oppure se la banca decide di chiudere la succursale in un comune in cui non ha il numero minimo di soci, la banca può presentare all'autorità competente un piano di ripristino o conseguimento del numero minimo entro un periodo non superiore, di norma, a tre anni; valutato il piano, l'autorità può autorizzare, per periodi determinati, a ricomprendere nella zona il comune in questione e quelli limitrofi. In caso di chiusura di una succursale, infine, il comune continua a rientrare nella zona se resta soddisfatto il criterio del numero minimo di soci o quello della limitrofia.
-
-## D5 — La destinazione degli utili e le riserve indivisibili
+## D4 — Il residuo di specializzazione oggi
 
 > [!question] Domanda
-> Come devono essere destinati gli utili di una banca di credito cooperativo?
+> La despecializzazione ha eliminato le banche speciali. Che cosa ne resta oggi? Perché le BCC hanno ancora vincoli operativi?
 
-> [!success] Risposta da dare
-> L'art. 37 TUB impone tre vincoli in sequenza: almeno il **settanta per cento** degli utili netti annuali va destinato a riserva legale; una quota degli utili netti annuali va corrisposta ai fondi mutualistici per la promozione e lo sviluppo della cooperazione, nella misura e con le modalità previste dalla legge — quota che la Circolare n. 285 quantifica nel **3 per cento**; la parte residua, se non utilizzata per la rivalutazione delle azioni, assegnata ad altre riserve o distribuita ai soci, deve essere destinata a fini di beneficenza o mutualità.
+> [!success] Risposta ideale
+> Il residuo di specializzazione, oggi, è la banca di credito cooperativo. La despecializzazione del TUB ha cancellato la specialità per scadenze, per oggetto e per categoria di ente: ogni banca può esercitare ogni attività finanziaria, salve le riserve di legge (art. 10, comma 3), e le forme giuridiche sono solo due, la s.p.a. e la cooperativa (art. 14). Ciò che resta di speciale sta tutto nella BCC, che ha tre vincoli. Uno soggettivo: esercita il credito prevalentemente a favore dei soci (art. 35, comma 1). Uno territoriale: opera nella zona di competenza fissata dallo statuto, con una piccola quota fuori zona. Uno operativo: non può assumere posizioni speculative in cambi e in derivati.
+>
+> Il perché è la mutualità prevalente. La BCC non lo è per etichetta ma per sostanza, e solo se opera in prevalenza con i soci: l'art. 28, comma 2-bis, lega proprio a quel requisito le agevolazioni fiscali. Se potesse operare con chiunque, ovunque e in qualunque rischio, sarebbe una banca come le altre con un nome cooperativo: i vincoli sono il prezzo del suo statuto di favore. La popolare non ha quella qualifica e non ha neppure questi vincoli: i suoi limiti sono di governance e di dimensione, e ne parlo a proposito delle popolari.
+>
+> Quindi la specialità non è sparita: è passata dall'operazione, che qualunque banca può compiere, al soggetto, e oggi sopravvive solo nella BCC.
 
-> [!info] Spiegazione
-> Il confronto con la banca popolare è immediato e va fatto: l'art. 32, comma 1, TUB impone alle popolari di destinare a riserva legale almeno il dieci per cento degli utili netti annuali. Il settanta per cento dell'art. 37 è dunque una regola di tutt'altro ordine di grandezza, ed è la traduzione contabile della mutualità prevalente: l'utile non serve a remunerare il capitale, serve a costruire un patrimonio che resta nella banca e nella categoria.
->
-> Il punto decisivo è che la riserva legale della banca di credito cooperativo è **indivisibile**. Le clausole dell'art. 2514, primo comma, c.c., che l'art. 150-bis, comma 4, TUB rende obbligatorie negli statuti, comprendono il divieto di distribuire le riserve fra i soci cooperatori. Da qui discende l'effetto più severo della disciplina: il patrimonio accumulato non è mai appropriabile dai soci, né in costanza di rapporto né allo scioglimento, e in caso di operazioni che facciano uscire la banca dalla categoria va devoluto ai fondi mutualistici ai sensi dell'art. 150-bis, comma 5, TUB, che richiama l'art. 17 della legge 23 dicembre 2000, n. 388.
->
-> La quota del 3 per cento ai fondi mutualistici non è una specialità bancaria: discende dall'art. 11, comma 4, della legge 31 gennaio 1992, n. 59, richiamato espressamente dalla Circolare n. 285 fra le fonti della materia. È il contributo che ogni cooperativa versa al sistema della cooperazione per finanziarne la promozione e lo sviluppo.
->
-> La Circolare n. 285, Parte Terza, Capitolo 5, Sezione IV, dettaglia l'impiego delle quote residue: rivalutazione delle azioni secondo le norme in materia di cooperazione; assegnazione ad altre riserve o fondi consentiti dalla legge; distribuzione ai soci dei dividendi; finalità di beneficenza o mutualità. La stessa Sezione disciplina i **ristorni**, cioè la restituzione ai soci di una parte del vantaggio mutualistico in proporzione agli scambi intrattenuti: se previsti dallo statuto — facoltà che l'art. 150-bis, comma 6, TUB consente in coerenza con l'art. 2545-sexies c.c. — il loro ammontare non può eccedere il 50 per cento dell'utile netto residuo dopo l'accantonamento a riserva legale e la contribuzione ai fondi mutualistici, e almeno la metà del ristorno è liquidata mediante incremento della partecipazione sociale. I ristorni vanno disciplinati da un apposito regolamento assembleare che ripartisce le competenze fra organo amministrativo e assemblea.
-
-## D6 — La riforma del 2016: genesi, ratio e architettura
+## D5 — L'art. 35: come si misura la prevalenza
 
 > [!question] Domanda
-> Perché nel 2016 il legislatore è intervenuto sul credito cooperativo, e quale soluzione ha adottato?
+> L'art. 35 dice che le BCC esercitano il credito prevalentemente a favore dei soci. Come si misura la prevalenza? E perché il limite del 5 per cento fuori zona non si trova nell'art. 35?
 
-> [!success] Risposta da dare
-> Il d.l. 14 febbraio 2016, n. 18, convertito con modificazioni dalla legge 8 aprile 2016, n. 49, ha affrontato un problema strutturale: banche piccolissime, prive per statuto della possibilità di raccogliere capitale sul mercato, in un contesto prudenziale post-crisi che richiede ricapitalizzazioni rapide e ingenti. La soluzione è stata il **gruppo bancario cooperativo**, introdotto negli artt. 37-bis e 37-ter TUB, con l'adesione resa obbligatoria dall'art. 33, comma 1-bis.
+> [!success] Risposta ideale
+> L'art. 35 fissa il principio e rinvia. Il comma 1 dice che le BCC esercitano il credito prevalentemente a favore dei soci, e consente alla Banca d'Italia di autorizzare per periodi determinati un'operatività prevalente a favore di non soci, solo per ragioni di stabilità. Il comma 2 rimette agli statuti le norme su attività, impieghi e raccolta, competenza territoriale e poteri della capogruppo, sulla base dei criteri fissati dalla Banca d'Italia. Le cifre che cito vengono quindi dalla Circolare 285, non dal TUB. La prevalenza è rispettata quando più del cinquanta per cento delle esposizioni è verso soci o garantito da soci; la Circolare assimila ai soci le esposizioni verso amministrazioni centrali dell'eurozona, BCE e Banca d'Italia, verso la capogruppo e il gruppo, e verso i sistemi di garanzia di categoria, così la liquidità depositata presso la capogruppo non consuma il plafond. Il vincolo riguarda gli impieghi, non la raccolta, che può venire anche da non soci.
+>
+> Il secondo vincolo è territoriale e distinto: fuori dalla zona di competenza può essere assunto al massimo il cinque per cento del totale delle esposizioni. Una banca può rispettare l'uno e violare l'altro. Quel cinque per cento, come il cinquanta, non sta nell'art. 35: è la Circolare, in attuazione del comma 2, a dargli la misura, e va attribuito a lei.
 
-> [!info] Spiegazione
-> La Banca d'Italia enuncia la ratio con nettezza nella Premessa del Capitolo 5 della Parte Terza della Circolare n. 285: l'ordinamento impone a queste banche l'appartenenza a più ampi gruppi bancari cooperativi quale condizione per l'esercizio dell'attività bancaria «per superare i vincoli normativi e operativi tipici degli organismi costituiti in forma cooperativa — che potrebbero ostacolare una rapida ricapitalizzazione in caso di necessità, anche attraverso l'accesso al mercato dei capitali — e le diseconomie connesse alle ridotte dimensioni aziendali». Due problemi, dunque: capitale e scala.
->
-> L'architettura scelta è ingegnosa e per certi versi rovesciata rispetto al diritto comune dei gruppi. Nel gruppo ordinario la capogruppo controlla perché detiene la maggioranza del capitale delle controllate. Nel gruppo bancario cooperativo, invece, la capogruppo è una società per azioni il cui capitale è detenuto in misura maggioritaria **dalle banche affiliate**: sono le controllate a possedere la controllante. Il controllo, che pure deve sussistere secondo la nozione dei principi contabili internazionali adottati dall'Unione europea, non deriva dalla partecipazione ma dal **contratto di coesione**. È una costruzione che il legislatore ha dovuto puntellare con una norma ad hoc, l'art. 37-bis, comma 6, che esclude l'applicazione degli artt. 2359-bis, 2359-ter, 2359-quater e 2359-quinquies del codice civile alle partecipazioni delle banche affiliate al capitale della capogruppo: senza quella deroga, la disciplina civilistica delle partecipazioni reciproche avrebbe reso lo schema impraticabile.
->
-> Il vantaggio del disegno è duplice. Sul piano del capitale, la capogruppo è una società per azioni e può quindi aprirsi a investitori terzi e ricorrere al mercato dei capitali di rischio — la Circolare impone anzi che lo statuto della capogruppo non ostacoli tale apertura. Sul piano prudenziale, il gruppo è vigilato su base consolidata e la garanzia in solido reciproca mette in comune la capacità di assorbimento delle perdite. Il prezzo è la compressione dell'autonomia della singola banca, che accetta contrattualmente di sottostare a poteri di direzione, controllo, nomina e sanzione della capogruppo.
->
-> Il decreto non si è limitato a questo. Ha riscritto l'art. 34 alzando a cinquecento il numero minimo dei soci e introducendo il comma 4-bis; ha modificato gli artt. 35 e 36; ha riscritto l'art. 150-ter aprendo le azioni di finanziamento alla capogruppo; ha previsto, all'art. 2-bis, il Fondo temporaneo delle banche di credito cooperativo per il periodo transitorio; e ha disciplinato, all'art. 2, la prima applicazione e la via d'uscita del conferimento dell'azienda bancaria.
-
-## D7 — L'art. 37-bis: composizione del gruppo e requisiti della capogruppo
+## D6 — Derivati e cambi: i limiti operativi della BCC
 
 > [!question] Domanda
-> Da chi è composto il gruppo bancario cooperativo e quali requisiti deve possedere la capogruppo?
+> Una banca di credito cooperativo può svolgere tutte le attività delle altre banche? In particolare, perché non può speculare in derivati?
 
-> [!success] Risposta da dare
-> L'art. 37-bis, comma 1, TUB indica quattro componenti: la società capogruppo, costituita in forma di **società per azioni** e autorizzata all'esercizio dell'attività bancaria, il cui capitale è detenuto in misura pari ad almeno il **sessanta per cento** dalle banche di credito cooperativo appartenenti al gruppo e il cui requisito minimo di patrimonio netto è di **un miliardo di euro**; le banche di credito cooperativo che aderiscono al contratto di coesione e adottano le connesse clausole statutarie; le società bancarie e finanziarie controllate dalla capogruppo come definite dall'art. 59 TUB; ed eventuali sottogruppi territoriali.
-
-> [!info] Spiegazione
-> La lettera a) del comma 1 concentra i requisiti della capogruppo. Va sottolineato che il contratto di coesione «assicura l'esistenza di una situazione di controllo come definito dai principi contabili internazionali adottati dall'Unione europea»: il controllo è quindi requisito di sostanza, verificato secondo l'IFRS 10, e non discende dalla catena partecipativa. La soglia del sessanta per cento non è quella originaria: il testo del 2016 richiedeva la sola maggioranza, e l'art. 11, comma 2, lett. a), del d.l. 25 luglio 2018, n. 91, convertito con modificazioni dalla legge 21 settembre 2018, n. 108, l'ha innalzata. Il comma 7 consente peraltro che con decreto del Presidente del Consiglio dei ministri, su proposta del Ministro dell'economia e delle finanze e sentita la Banca d'Italia, sia stabilita una soglia diversa, tenuto conto delle esigenze di stabilità del gruppo.
+> [!success] Risposta ideale
+> In linea di principio sì: il TUB le riconosce l'attività bancaria e ogni altra attività finanziaria, nonché le connesse e strumentali, nel rispetto delle riserve di legge (art. 10, comma 3), e rimette agli statuti le norme su attività, impieghi e raccolta secondo i criteri della Banca d'Italia (art. 35, comma 2). I vincoli concreti stanno quindi nella Circolare 285, e le cifre che cito vengono da lì, non dal TUB. Vanno tutti nella direzione di ridurre il rischio. La negoziazione per conto terzi è ammessa solo se il cliente anticipa il prezzo o consegna prima gli strumenti. Soprattutto c'è il divieto di assumere posizioni speculative in cambi e in derivati: la posizione netta aperta in cambi sta entro il due per cento dei fondi propri, elevabile al cinque con l'approvazione della capogruppo; i contratti a termine e gli altri derivati sono ammessi solo con funzione di copertura, alle condizioni che la Circolare fissa. Il divieto, quindi, non è dei derivati ma della speculazione.
 >
-> La disciplina secondaria dettaglia il resto. La Circolare n. 285, Parte Terza, Capitolo 6, Sezione II, par. 2, chiede alla capogruppo requisiti di tre ordini. Anzitutto i requisiti formali: sede legale e direzione generale in Italia, forma di società per azioni, autorizzazione all'esercizio dell'attività bancaria ai sensi dell'art. 14 TUB. Poi il requisito patrimoniale: un patrimonio netto di almeno un miliardo di euro, da possedere al momento della costituzione del gruppo e da mantenere successivamente; se scende sotto soglia, l'autorità competente assegna un termine, di norma non superiore a dodici mesi, per ripristinarlo. Infine i requisiti organizzativi: strutture operative e assetti idonei ad assicurare alle affiliate l'accesso ai mercati interbancari, i servizi operativo-contabili di incasso e pagamento, i servizi tecnologici e infrastrutturali, l'intermediazione dei flussi finanziari e la gestione del collateral per le operazioni di politica monetaria, nonché a esercitare effettivamente la direzione e il coordinamento. La stessa disposizione vieta di esternalizzare o delegare le attività che rientrano nell'esclusiva responsabilità della capogruppo: l'emanazione delle disposizioni di gruppo, le prerogative in materia di nomina e revoca degli organi delle affiliate, il monitoraggio e la classificazione delle affiliate, le misure correttive e sanzionatorie, l'approvazione delle operazioni di rilievo strategico.
->
-> Il comma 2 dell'art. 37-bis impone allo statuto della capogruppo di indicare il numero massimo di azioni con diritto di voto detenibili da ciascun socio, direttamente o indirettamente ai sensi dell'art. 22, comma 1, TUB. Il comma 2-bis, aggiunto dal d.l. n. 91/2018, stabilisce che i componenti dell'organo di amministrazione espressione delle banche affiliate siano pari alla **metà più due** del numero complessivo dei consiglieri: una garanzia di governo a favore della base cooperativa, che convive con l'esigenza — sottolineata dalla Circolare — di non ostacolare l'apertura del capitale a investitori diversi dalle banche di credito cooperativo.
+> La ragione è duplice: sono banche piccole, per cui un rischio di mercato sarebbe difficile da governare; e quel rischio non è riconducibile alla finalità mutualistica, che è servire soci e territorio. Anche qui il meccanismo è del gruppo: la capogruppo può innalzare alcune soglie, perché la specialità non è più un dato rigido di legge ma un parametro gestito dentro il gruppo.
 
-## D8 — Il contratto di coesione
+## D7 — L'art. 37: gli utili della BCC
 
 > [!question] Domanda
-> Che cos'è il contratto di coesione e quale contenuto deve avere?
+> Commenti l'art. 37 TUB: come vanno destinati gli utili di una banca di credito cooperativo?
 
-> [!success] Risposta da dare
-> Il contratto di coesione è l'atto che costituisce il gruppo bancario cooperativo e ne fonda il controllo. Con esso le banche di credito cooperativo aderiscono al gruppo e accettano di essere sottoposte all'attività di direzione e coordinamento della capogruppo; la capogruppo assume verso le affiliate i doveri e le responsabilità connessi al proprio ruolo. Il contenuto minimo è fissato dall'art. 37-bis, comma 3, TUB e dettagliato dalla Circolare n. 285, Parte Terza, Capitolo 6, Sezione III.
-
-> [!info] Spiegazione
-> L'art. 37-bis, comma 3, indica quattro blocchi di contenuto. La lettera a) individua la banca capogruppo, cui sono attribuiti la direzione e il coordinamento del gruppo. La lettera b) elenca i poteri della capogruppo che — «nel rispetto delle finalità mutualistiche e del carattere localistico delle banche di credito cooperativo» — devono includere: l'individuazione e l'attuazione degli indirizzi strategici e degli obiettivi operativi del gruppo, tenendo conto del comma 3-bis, nonché gli altri poteri necessari alla direzione e al coordinamento, **proporzionati alla rischiosità delle banche aderenti**, compresi i controlli e i poteri di influenza volti ad assicurare il rispetto dei requisiti prudenziali; i casi, comunque motivati, in cui la capogruppo può nominare, opporsi alla nomina o revocare uno o più componenti, fino a concorrenza della maggioranza, degli organi di amministrazione e controllo delle società aderenti, e le modalità di esercizio di tali poteri; l'esclusione di una banca dal gruppo in caso di gravi violazioni degli obblighi contrattuali e le altre misure sanzionatorie graduate in relazione alla gravità della violazione. La lettera c) impone di stabilire i criteri di compensazione e l'equilibrio nella distribuzione dei vantaggi derivanti dall'attività comune. La lettera d) impone di fissare i criteri e le condizioni di adesione, di diniego dell'adesione e di recesso dal contratto, nonché di esclusione dal gruppo, «secondo criteri non discriminatori in linea con il principio di solidarietà tra le banche cooperative a mutualità prevalente».
+> [!success] Risposta ideale
+> L'art. 37 pone tre vincoli in sequenza. Il comma 1 impone di destinare almeno il settanta per cento degli utili netti annuali a riserva legale. Il comma 2 impone di corrispondere una quota ai fondi mutualistici per la promozione e lo sviluppo della cooperazione, nella misura e con le modalità previste dalla legge: la misura, il tre per cento, non è scritta nell'art. 37 ma nell'art. 11 della legge 59 del 1992. Il comma 3 chiude: la quota non assegnata a riserva legale e ai fondi mutualistici, e non usata per rivalutare le azioni, né assegnata ad altre riserve o distribuita ai soci, deve essere destinata a beneficenza o mutualità. Per questo molte BCC finanziano iniziative locali: è un obbligo, non una scelta di immagine.
 >
-> La Circolare n. 285 organizza il contenuto minimo in otto aree: governo societario; nomina degli organi delle banche affiliate; controlli interni e sistemi informativi; attività di controllo e interventi; requisiti prudenziali e segnalazioni di vigilanza; decisioni di rilievo strategico; sanzioni; doveri della capogruppo e criteri di compensazione. Alcuni contenuti meritano di essere ricordati perché mostrano quanto il contratto incida sull'autonomia della singola banca: le funzioni di controllo interno delle affiliate sono svolte in regime di esternalizzazione dalla capogruppo o da altre società del gruppo; la capogruppo definisce regole e criteri sull'intero processo di concessione del credito, sull'area finanza, sugli investimenti partecipativi e immobiliari, sui conflitti di interesse; approva preventivamente le operazioni di rilievo strategico, comprese le aperture di succursali in Italia e all'estero; predispone il piano di sviluppo territoriale dell'intero gruppo.
->
-> Il contratto deve inoltre prevedere, o richiamare come parte integrante, l'accordo di garanzia in solido: la partecipazione a tale accordo è condizione imprescindibile per l'adesione al contratto e quindi al gruppo. E deve indicare i criteri e le condizioni di adesione, diniego, recesso ed esclusione, la cui efficacia è comunque subordinata all'autorizzazione dell'autorità competente.
+> La ratio è che l'utile non serve a remunerare il capitale ma a costruire un patrimonio che resta nella banca e nella categoria. La riserva legale è indivisibile: le clausole dell'art. 2514 del codice civile, che lo statuto deve contenere ai sensi dell'art. 150-bis, comma 4, vietano di distribuire le riserve fra i soci. E se la banca esce dalla categoria, trasformandosi o cedendo l'azienda, il patrimonio va ai fondi mutualistici (art. 150-bis, comma 5, con l'art. 17 della legge 388 del 2000). Il settanta per cento è la traduzione contabile della mutualità prevalente.
 
-## D9 — La garanzia in solido fra la capogruppo e le banche affiliate
+## D8 — Gli utili: BCC, popolari e diritto comune
 
 > [!question] Domanda
-> In che cosa consiste la garanzia in solido prevista per il gruppo bancario cooperativo e quali limiti incontra?
+> Gli utili delle BCC seguono la stessa regola delle popolari e delle cooperative del codice civile? Perché le percentuali sono così diverse?
 
-> [!success] Risposta da dare
-> L'art. 37-bis, comma 4, TUB stabilisce che il contratto di coesione «prevede la garanzia in solido delle obbligazioni assunte dalla capogruppo e dalle altre banche aderenti, nel rispetto della disciplina prudenziale dei gruppi bancari e delle singole banche aderenti». La Circolare n. 285, Parte Terza, Capitolo 6, Sezione III, par. 2, la qualifica come garanzia **reciproca**, una cross-guarantee: la capogruppo garantisce tutte le affiliate e ciascuna affiliata garantisce la capogruppo e le altre affiliate.
+> [!success] Risposta ideale
+> Sono tre gradi della stessa idea, e per le due banche cooperative il TUB sostituisce la regola del codice con la propria: l'art. 150-bis, commi 1 e 2, esclude l'art. 2545-quater. Nella cooperativa di diritto comune quell'articolo impone di destinare a riserva legale almeno il trenta per cento degli utili netti, senza alcun tetto. La BCC sta all'estremo mutualistico: almeno il settanta per cento a riserva legale (art. 37), la quota ai fondi mutualistici, il residuo a beneficenza o mutualità, riserve indivisibili. La popolare sta all'estremo opposto: l'art. 32 impone almeno il dieci per cento a riserva legale, e il residuo non distribuito va a beneficenza o assistenza.
+>
+> La differenza si spiega con la mutualità prevalente: solo la BCC è tale ai fini fiscali agevolativi, se rispetta l'art. 2514 del codice civile e l'art. 35 (art. 28, comma 2-bis). Nella BCC l'utile costruisce un patrimonio non appropriabile dai soci. La popolare, banca di mercato in forma cooperativa, ha una deroga favorevole sulla misura, dal trenta al dieci per cento, ma conserva un tratto cooperativo: l'obbligo grava su ogni esercizio in utile. Quanto al tre per cento ai fondi mutualistici, è la misura dell'art. 11 della legge 59 del 1992, che l'art. 150, comma 4, TUB rende applicabile alle BCC: nel TUB l'obbligo c'è solo per la BCC (art. 37, comma 2), mentre l'art. 32 sulle popolari tace.
 
-> [!info] Spiegazione
-> La garanzia ha due dimensioni, che vanno tenute distinte. La prima è la **garanzia esterna**: l'accordo produce l'effetto di qualificare le passività della capogruppo e delle banche affiliate come obbligazioni in solido di tutte le banche aderenti, sicché ciascun aderente assume, entro il limite del proprio obbligo individuale, le obbligazioni di ogni altro aderente che si renda inadempiente verso i propri creditori. La seconda è il **sostegno intra-gruppo**: le banche aderenti si forniscono reciprocamente il sostegno finanziario necessario ad assicurare solvibilità e liquidità, in particolare per il rispetto dei requisiti prudenziali e delle richieste dell'autorità competente, e per evitare, ove necessario, la risoluzione ai sensi del d.lgs. n. 180/2015 o la liquidazione coatta amministrativa di cui agli artt. 80 e seguenti del TUB.
+## D9 — L'art. 28, «quello del morto»: il rimborso al socio uscente
+
+> [!question] Domanda
+> Il socio di una banca di credito cooperativo che recede ha diritto al rimborso integrale delle azioni? Mi parli dell'art. 28, quello del morto.
+
+> [!success] Risposta ideale
+> No, non necessariamente. L'art. 28, comma 2-ter, dice che nelle popolari e nelle BCC il diritto al rimborso delle azioni in caso di recesso, anche a seguito di trasformazione, di morte o di esclusione del socio, è limitato secondo quanto previsto dalla Banca d'Italia, anche in deroga a norme di legge, laddove ciò sia necessario ad assicurare la computabilità delle azioni nel patrimonio di vigilanza di qualità primaria. La ratio è prudenziale ed europea: un'azione è capitale primario solo se la banca può almeno limitarne il rimborso (art. 29 del regolamento 575/2013), perché un capitale che il socio può ritirare a richiesta non assorbe le perdite. Il verbo è «limitato» perché, dove la legge riconosce il rimborso, la deroga arriva fin dove serve al capitale primario.
 >
-> Il limite è il punto più delicato e va enunciato con precisione. L'obbligazione di garanzia di ciascuna banca è commisurata alle **esposizioni ponderate per il rischio** di ciascuna banca ed è contenuta entro il limite delle **risorse patrimoniali eccedenti i requisiti obbligatori a livello individuale**, restando impregiudicato il rispetto di tali requisiti da parte delle singole banche e della capogruppo. Per requisiti obbligatori si intende la somma del requisito di primo pilastro ex art. 92, par. 1, CRR, dell'eventuale requisito specifico di secondo pilastro imposto dall'autorità competente e del requisito combinato di riserva di capitale. Nessuna banca, in altre parole, può essere trascinata sotto i propri minimi per salvarne un'altra.
+> Il punto critico è la disciplina secondaria: la Circolare consente di limitare o rinviare il rimborso in tutto o in parte e senza limiti di tempo, e un rinvio senza termine arriva vicino all'esclusione; la Corte di giustizia (causa C-686/18) l'ha però ritenuto compatibile con il diritto dell'Unione. La decisione concreta spetta, secondo lo statuto, all'organo con funzione di supervisione strategica, su proposta della gestione e sentito il controllo: non all'assemblea.
 >
-> Sul piano operativo, gli interventi di sostegno — sia di capitale sia di liquidità — sono effettuati soltanto dalla capogruppo, anche quando le risorse siano messe a disposizione dalle affiliate in esecuzione dell'accordo; in particolare, negli interventi di ripatrimonializzazione la sottoscrizione di azioni di finanziamento o di altri strumenti di capitale è riservata alla capogruppo. L'accordo deve poi conformarsi all'art. 4, n. 127, CRR, che reca la definizione di cross-guarantee scheme, e attribuire alla capogruppo i compiti di cui all'art. 113, par. 7, lett. c), d) ed e), CRR: monitoraggio e classificazione dei rischi, analisi dei rischi e comunicazione alle aderenti, preparazione del bilancio consolidato.
+> Per le BCC c'è un distinguo: l'art. 150-bis, comma 1, non esclude gli artt. 2534 e 2535 del codice civile, che restano applicabili, mentre per le popolari il comma 2 esclude l'art. 2534 e l'art. 2535, secondo comma, primo periodo.
+
+## D10 — Dalla riforma del 2016 all'adesione obbligatoria al gruppo
+
+> [!question] Domanda
+> Perché nel 2016 il legislatore è intervenuto sul credito cooperativo? E oggi una BCC può essere autorizzata restando indipendente?
+
+> [!success] Risposta ideale
+> Il decreto-legge 18 del 2016 affronta un problema strutturale: banche piccolissime, che per la forma cooperativa non possono raccogliere capitale di rischio sul mercato, in un contesto prudenziale che richiede ricapitalizzazioni rapide e imponenti. Sono due problemi, capitale e scala. La soluzione è il gruppo bancario cooperativo degli artt. 37-bis e 37-ter, e per renderlo effettivo l'adesione è obbligatoria: l'art. 33, comma 1-bis, dice che l'adesione a un gruppo è condizione per il rilascio dell'autorizzazione all'attività bancaria in forma di BCC. Quindi no, una BCC non può più essere autorizzata restando indipendente. Il gruppo non è un modo di organizzarsi ma un requisito di accesso al mercato, che si aggiunge a quelli dell'art. 14, e il comma 1-ter ordina i procedimenti: niente iscrizione all'albo delle cooperative senza autorizzazione.
 >
-> Quanto alla provvista, l'accordo stabilisce il criterio di ripartizione dei mezzi finanziari prontamente disponibili fra una quota precostituita **ex ante** presso la capogruppo — sotto forma di sottoscrizione di azioni della capogruppo computabili come CET1 o di fondi dedicati patrimonialmente separati — e una quota richiamabile **ex post** in caso di necessità. Infine, una regola che va ricordata perché spiega perché l'uscita dal gruppo non è indolore: in caso di recesso o esclusione, gli obblighi reciproci di garanzia esterna permangono per almeno **dieci anni** in capo alla banca uscente e alle banche che restano, relativamente alle passività garantite esistenti al momento dell'uscita.
+> C'è un'eccezione, fatta salva dallo stesso comma 1-bis: l'art. 37-bis, comma 1-bis, consente alle BCC delle province autonome di Trento e di Bolzano di costituire gruppi provinciali, formati da banche con sede e operatività nella provincia, la cui capogruppo può avere una qualunque delle forme dell'art. 14, comma 1, lettera a, anche cooperativa, con patrimonio minimo fissato dalla Banca d'Italia (comma 7-bis, lettera c); oppure, in alternativa al gruppo, di adottare un sistema di tutela istituzionale ai sensi dell'art. 113 del regolamento 575/2013. Il gruppo provinciale non elude l'obbligo: ne è una specie, con requisiti attenuati.
+>
+> Il rovescio dell'obbligo è l'uscita: chi esce dal gruppo o si trasforma in s.p.a. o si liquida (art. 36, comma 1-bis). E dentro il gruppo resta da chiedersi quali poteri abbia la capogruppo.
+
+## D11 — I poteri della capogruppo
+
+> [!question] Domanda
+> Che poteri ha la capogruppo del gruppo bancario cooperativo? Non entriamo troppo nel dettaglio.
+
+> [!success] Risposta ideale
+> La capogruppo ha i poteri tipici di una capogruppo di gruppo bancario, ma li ha per contratto e con una gradazione. La fonte è l'art. 37-bis, comma 3: il contratto di coesione, che disciplina direzione e coordinamento, deve indicarne i poteri, nel rispetto delle finalità mutualistiche e del carattere localistico delle BCC. Sono tre. Primo, gli indirizzi strategici e gli obiettivi operativi del gruppo, con controlli e poteri di influenza per far rispettare i requisiti prudenziali, proporzionati alla rischiosità delle banche aderenti. Secondo, nei casi motivati previsti dal contratto, nominare, opporsi alla nomina e revocare i componenti degli organi di amministrazione e controllo, fino a concorrenza della maggioranza. Terzo, l'esclusione dal gruppo per gravi violazioni e le altre misure sanzionatorie, graduate in relazione alla gravità. A questi la Circolare 285 aggiunge l'approvazione preventiva delle operazioni di rilievo strategico e le regole sul credito e sulla finanza.
+>
+> I contrappesi sono quattro. Il primo è proprietario: le BCC detengono almeno il sessanta per cento della capogruppo e ne esprimono la metà più due dei consiglieri (art. 37-bis, comma 1, lettera a, e comma 2-bis). Poi la proporzionalità: le banche nelle classi di rischio migliori hanno più autonomia (comma 3-ter). Poi la consultazione delle BCC nelle assemblee territoriali, con pareri non vincolanti (comma 3-bis). Infine il controllo pubblico: adesione, recesso ed esclusione sono autorizzati dalla Banca d'Italia (comma 5).
+>
+> Il filo è che i poteri sono penetranti ma ordinati dalla legge, perché il fine è la stabilità del gruppo. La domanda che ne discende è se si tratti di poteri di vigilanza, o dove stia il loro limite.
+
+## D12 — La composizione del gruppo e il lessico
+
+> [!question] Domanda
+> Da chi è composto il gruppo bancario cooperativo e quali requisiti deve avere la capogruppo? Che differenza c'è fra banche aderenti e banche affiliate?
+
+> [!success] Risposta ideale
+> L'art. 37-bis, comma 1, indica quattro componenti: la capogruppo; le BCC che aderiscono al contratto e adottano le clausole statutarie; le società bancarie e finanziarie controllate dalla capogruppo; gli eventuali sottogruppi territoriali. La capogruppo deve essere una s.p.a. autorizzata all'attività bancaria, perché opera sui mercati interbancari e presso la banca centrale anche per le affiliate. Il suo capitale è detenuto per almeno il sessanta per cento dalle BCC del gruppo, e il patrimonio netto minimo è di un miliardo di euro. È l'inverso del gruppo ordinario: qui le controllate possiedono la controllante, e il controllo, nel senso dei principi contabili internazionali, è assicurato dal contratto di coesione; per questo il comma 6 disapplica gli artt. 2359-bis e seguenti del codice civile alle partecipazioni delle BCC nella capogruppo.
+>
+> Quanto al lessico, secondo la Circolare 285 «banche aderenti» è l'espressione più ampia, perché comprende la capogruppo e le affiliate: la capogruppo è dentro il contratto e la garanzia che governa. «Banche affiliate» sono le BCC, o la banca a capo di un sottogruppo territoriale, soggette alla direzione e al coordinamento. «Società del gruppo» comprende anche banche non cooperative, società finanziarie e strumentali controllate, che vi appartengono per il controllo e non per il contratto. Confondere aderenti e affiliate è l'errore tipico: la garanzia in solido copre le obbligazioni della capogruppo e delle altre aderenti proprio per questo.
+
+## D13 — La governance della capogruppo: l'art. 37-bis
+
+> [!question] Domanda
+> Come è organizzata la capogruppo del gruppo bancario cooperativo? Che cosa dice l'art. 37-bis sullo statuto e sulla composizione del consiglio?
+
+> [!success] Risposta ideale
+> La capogruppo è una s.p.a., e quindi può aprirsi ad altri investitori, ma il legislatore ha voluto che il governo resti alla base cooperativa, e lo fa in tre modi. Il capitale è detenuto per almeno il sessanta per cento dalle BCC del gruppo (comma 1, lettera a); un decreto del Presidente del Consiglio, su proposta del ministro dell'economia e sentita la Banca d'Italia, può fissare una soglia diversa per esigenze di stabilità (comma 7). Lo statuto deve indicare il numero massimo di azioni con diritto di voto che ciascun socio può detenere, direttamente o indirettamente (comma 2): un tetto al voto per ciascun socio. E deve stabilire che i componenti dell'organo di amministrazione espressione delle BCC aderenti siano la metà più due dei consiglieri (comma 2-bis), regola inserita nel 2018.
+>
+> Il filo è l'equilibrio. La capogruppo ha poteri penetranti sulle affiliate, ma sono le affiliate a possederla e ad amministrarla, per maggioranza. Secondo la Circolare, questo deve convivere con l'esigenza di non ostacolare l'apertura del capitale a investitori diversi dalle BCC.
+
+## D14 — Il contratto di coesione
+
+> [!question] Domanda
+> Che cos'è il contratto di coesione e che cosa deve contenere? Quali operazioni delle affiliate richiedono l'approvazione preventiva della capogruppo?
+
+> [!success] Risposta ideale
+> Il contratto di coesione è l'atto con cui le BCC aderiscono al gruppo e accettano la direzione e il coordinamento della capogruppo. È la fonte del controllo: l'art. 37-bis, comma 1, lettera a, dice che assicura una situazione di controllo ai sensi dei principi contabili internazionali, quindi non è un patto parasociale ma il titolo del consolidamento. Il contenuto minimo è nel comma 3: la capogruppo; i suoi poteri; i criteri di compensazione e di equilibrata distribuzione dei vantaggi dell'attività comune; i criteri e le condizioni di adesione, diniego, recesso ed esclusione, non discriminatori e in linea con la solidarietà fra cooperative a mutualità prevalente. Il comma 4 aggiunge la garanzia in solido.
+>
+> La Circolare 285 riempie il contenuto. Le funzioni di controllo interno delle affiliate sono esternalizzate alla capogruppo; la capogruppo detta le regole su credito, finanza e partecipazioni; approva preventivamente le operazioni di rilievo strategico, come fusioni, acquisto di partecipazioni e immobili, apertura di succursali; predispone il piano di sviluppo territoriale. Ha poi attività che non può esternalizzare né delegare: le disposizioni di gruppo, nomina e revoca degli organi, monitoraggio e classificazione delle affiliate, misure sanzionatorie. Il contratto non nasce per sola volontà privata: la Banca d'Italia accerta l'idoneità dello schema a consentire la sana e prudente gestione (art. 37-ter) e iscrive il gruppo all'albo. Così la direzione unitaria si ottiene senza sopprimere la cooperativa.
+
+## D15 — Poteri proporzionati alla rischiosità
+
+> [!question] Domanda
+> I poteri della capogruppo sono proporzionati alla rischiosità delle banche aderenti. Che cosa significa in concreto?
+
+> [!success] Risposta ideale
+> Significa che l'intensità dei poteri varia con il rischio, e che le banche migliori ottengono più autonomia. Il principio è nell'art. 37-bis, comma 3, lettera b, numero 1; la Circolare lo traduce in un sistema di indicatori di early warning, su fondi propri, rischio di credito, redditività, liquidità e raccolta, a cui sono agganciati controllo, intervento e sanzione. Il d.l. 91 del 2018 ha aggiunto due commi. Il 3-bis prevede la consultazione delle BCC mediante assemblee territoriali sui temi strategici e commerciali, con pareri non vincolanti: è voce, non codecisione. Il 3-ter dice che le banche nelle classi di rischio migliori definiscono in autonomia i propri piani strategici e operativi nel quadro degli indirizzi della capogruppo, li comunicano perché ne verifichi la coerenza e nominano i propri organi; se la capogruppo non gradisce un componente, la banca propone una lista di tre candidati diversi, ferma la verifica dei requisiti del decreto dell'art. 26. La chiave di questa autonomia non è nelle mani della capogruppo: ogni atto che specifica il sistema di classificazione del rischio è sottoposto all'approvazione preventiva della Banca d'Italia.
+>
+> Quanto al limite, i poteri di nomina, opposizione e revoca si esercitano sempre nei casi motivati previsti dal contratto. Per le banche migliori il comma 3-ter cambia la procedura, con la lista di tre candidati, non la titolarità del potere: la proporzionalità gradua le modalità, non l'esistenza.
+
+## D16 — La revoca degli amministratori: è un potere di vigilanza?
+
+> [!question] Domanda
+> La capogruppo può revocare gli amministratori di una banca affiliata. Si tratta di un potere di vigilanza? Come si colloca rispetto alle autorità creditizie?
+
+> [!success] Risposta ideale
+> No, non è un potere di vigilanza in senso tecnico, anche se ne ha l'apparenza. La capogruppo non è un'autorità creditizia: non compare nell'elenco dell'art. 1, comma 1, lettera a, TUB, che indica il CICR, il Ministro dell'economia e la Banca d'Italia; è anzi essa stessa una banca vigilata, perché l'art. 37-bis la vuole s.p.a. autorizzata all'attività bancaria. Il suo potere ha fonte contrattuale, il contratto di coesione: nominare, opporsi alla nomina o revocare uno o più componenti, fino alla maggioranza, nei casi motivati previsti (comma 3, lettera b, numero 2). Ma ha un contenuto autoritativo, e la legge lo disciplina come tale: ricorda la rimozione degli esponenti dell'art. 53-bis, che spetta alla Banca d'Italia, e la graduazione delle misure ricorda la proporzionalità della vigilanza.
+>
+> Per questo l'ordinamento lo raccorda all'autorità pubblica. La Banca d'Italia accerta le condizioni e l'idoneità del contratto prima della costituzione e iscrive il gruppo (art. 37-ter); autorizza adesione, recesso ed esclusione (comma 5); approva preventivamente il sistema di classificazione del rischio (comma 3-ter); detta le disposizioni di attuazione (comma 7-bis). E gli esponenti nominati dalla capogruppo restano soggetti ai requisiti dell'art. 26.
+>
+> Quindi il gruppo non sottrae le BCC alla vigilanza pubblica: interpone fra esse e l'autorità un livello privato di direzione, che la legge conforma e l'autorità autorizza nei passaggi essenziali.
+
+## D17 — La garanzia in solido
+
+> [!question] Domanda
+> In che cosa consiste la garanzia in solido del gruppo bancario cooperativo e quali limiti incontra?
+
+> [!success] Risposta ideale
+> L'art. 37-bis, comma 4, dice che il contratto di coesione prevede la garanzia in solido delle obbligazioni assunte dalla capogruppo e dalle altre banche aderenti, nel rispetto della disciplina prudenziale dei gruppi bancari e delle singole banche. La Circolare 285 la qualifica come garanzia reciproca, una cross-guarantee: la capogruppo garantisce le affiliate e ciascuna affiliata garantisce la capogruppo e le altre. Ha due dimensioni: una garanzia esterna, per cui ogni aderente risponde in solido verso i creditori delle altre; e un sostegno interno, per cui le aderenti si forniscono il supporto necessario a rispettare i requisiti prudenziali ed evitare la risoluzione. È condizione per l'adesione al gruppo.
+>
+> Il limite è il punto delicato, e qui il TUB dà solo lo scheletro; la misura viene dalla Circolare 285. L'obbligo di ciascuna banca è commisurato alle sue esposizioni ponderate per il rischio e contenuto entro le risorse patrimoniali eccedenti i requisiti obbligatori individuali: nessuna banca può essere trascinata sotto i propri minimi per salvarne un'altra. Gli interventi di sostegno sono effettuati dalla capogruppo, a cui è riservata la ripatrimonializzazione. E in caso di recesso o esclusione gli obblighi di garanzia esterna permangono per almeno dieci anni, per cui l'uscita non è indolore.
+>
+> Non è un fondo di garanzia dei depositi né una solidarietà illimitata: è un obbligo contrattuale, che mette in comune la capacità di assorbire le perdite.
+
+## D18 — Entrare e uscire dal gruppo
+
+> [!question] Domanda
+> Come si entra e come si esce da un gruppo bancario cooperativo? Chi decide, e che cosa accade alla banca che esce?
+
+> [!success] Risposta ideale
+> L'art. 37-bis, comma 3, lettera d, vuole che il contratto indichi criteri e condizioni di adesione, diniego, recesso ed esclusione secondo criteri non discriminatori, in linea con la solidarietà fra le cooperative a mutualità prevalente. Il comma 5 dice chi decide: adesione, rigetto, recesso ed esclusione sono autorizzati dalla Banca d'Italia, avendo riguardo alla sana e prudente gestione del gruppo e della singola banca. La delibera della capogruppo non produce effetto finché l'autorità non autorizza. Il TUB dà lo scheletro; il dettaglio, come il preavviso di ventiquattro mesi, viene dalla Circolare 285, per cui l'ingresso si fonda su condizioni oggettive e non su gradimenti discrezionali; il recesso è ammesso per giustificati motivi con un preavviso di almeno ventiquattro mesi; l'esclusione è l'ultima ratio, dopo che gli interventi correttivi e le sanzioni graduate sono stati inutilmente esperiti.
+>
+> Le conseguenze dell'uscita sono pesanti. Per l'art. 33, comma 1-bis, la banca perde il presupposto dell'autorizzazione, e per l'art. 36, comma 1-bis, può soltanto deliberare, entro il termine stabilito e con l'autorizzazione della Banca d'Italia, la trasformazione in s.p.a.; in mancanza, si liquida. La Circolare aggiunge l'adesione a un altro gruppo o la cessione dell'azienda. Restano gli obblighi di garanzia.
+>
+> Quindi nessuno può uscire dal gruppo e restare una BCC indipendente: e da qui si passa all'art. 36.
+
+## D19 — L'art. 36: fusioni e trasformazioni
+
+> [!question] Domanda
+> Mi illustri l'art. 36 TUB. Quando una banca di credito cooperativo può fondersi con una banca di diversa natura o trasformarsi in società per azioni?
+
+> [!success] Risposta ideale
+> L'art. 36 regola l'uscita dalla categoria, e il TUB la rende possibile ma costosa. La trasformazione in s.p.a. è prevista solo dal comma 1-bis, per la banca che recede o è esclusa dal gruppo: previa autorizzazione della Banca d'Italia, con riguardo alla sana e prudente gestione, entro il termine stabilito; in mancanza la banca delibera la liquidazione. Altrimenti l'uscita passa dalla fusione eterogenea del comma 1: la Banca d'Italia autorizza fusioni tra BCC e banche di diversa natura da cui risultino banche in forma di s.p.a. Nel testo in vigore dal 9 gennaio 2026 l'autorizzazione non ha più i presupposti tipizzati che prima il comma conteneva, ma non è libera: restano i filtri generali richiamati dal comma 3, cioè l'art. 57 sulla sana e prudente gestione e l'art. 56, comma 2, e i filtri della Circolare, che privilegia le aggregazioni interne alla categoria e non autorizza l'uscita se esistono soluzioni alternative, come la fusione con un'altra BCC o l'intervento di un sistema di garanzia. Il comma 2 prevede le maggioranze statutarie per le modifiche dello statuto, fermo il recesso dei soci.
+>
+> Il costo vero è la devoluzione: nelle fusioni e trasformazioni da cui risulti una s.p.a. restano fermi gli effetti dell'art. 150-bis, comma 5, e il patrimonio va ai fondi mutualistici, perché le riserve sono indivisibili. Non c'è una via verso la popolare: la Circolare la esclude.
+
+## D20 — Il gruppo cooperativo e l'Unione bancaria
+
+> [!question] Domanda
+> Il gruppo bancario cooperativo ha qualcosa a che vedere con l'Unione bancaria? In che senso?
+
+> [!success] Risposta ideale
+> Sì, e il nesso è la significatività. Il d.l. 18 del 2016 interviene subito dopo l'avvio del Meccanismo di vigilanza unico e risponde a una domanda: come rendere compatibile con una vigilanza costruita su gruppi, capitale computabile e soglie di significatività una categoria di banche piccolissime. Per il Meccanismo la significatività si valuta al massimo livello di consolidamento (art. 6, paragrafo 4, del regolamento 1024/2013), sulla base di dimensioni, importanza per l'economia e attività transfrontaliere. Ciascuna BCC, da sola, non è significativa; ma aggregata in un gruppo che consolida può superare le soglie e diventare un soggetto significativo, vigilato direttamente dalla BCE. È il consolidamento, non la singola banca, a decidere.
+>
+> Il gruppo, del resto, è un soggetto prudenziale unico: l'art. 37-bis, comma 8, applica al gruppo bancario cooperativo, in quanto compatibili, le norme sulla vigilanza sui gruppi, e la garanzia in solido e il controllo contrattuale della capogruppo servono a renderlo tale. L'altro nesso con l'Unione bancaria, il capitale computabile dell'art. 28, comma 2-ter, l'ho già visto; la soglia dimensionale delle popolari e il suo linguaggio da riparto di competenze li affronto parlando di quelle.
+>
+> Il filo, anche qui, è la specialità: il gruppo è ciò che permette a una categoria di piccole cooperative di stare sotto il supervisore europeo.

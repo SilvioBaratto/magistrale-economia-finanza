@@ -42,14 +42,12 @@ A questo nucleo si affiancano due Titoli autonomi che il programma tratta insiem
 ## D2 — L'art. 106 e l'albo unico degli intermediari finanziari
 
 > [!question] Domanda
-> Mi illustri l'art. 106 del Testo unico: quale attività è riservata, a chi, e che cosa è cambiato rispetto al testo originario del 1993.
+> Mi illustri l'art. 106 del Testo unico: quale attività è riservata, a chi, e quali attività ulteriori sono consentite.
 
 > [!success] Attacco
 > L'art. 106, comma 1, TUB riserva l'esercizio nei confronti del pubblico dell'attività di **concessione di finanziamenti sotto qualsiasi forma** agli intermediari finanziari autorizzati e iscritti in un **albo unico tenuto dalla Banca d'Italia**. È il perno del Titolo V: è da questa riserva che discendono l'autorizzazione dell'art. 107, la vigilanza dell'art. 108 e la sanzione penale dell'art. 132.
 
-Conviene partire dalla formulazione originaria, perché il confronto è esattamente ciò che il docente vuole sentire. Il vecchio art. 106 elencava **quattro attività finanziarie** — assunzione di partecipazioni, concessione di finanziamenti sotto qualsiasi forma, prestazione di servizi di pagamento e intermediazione in cambi — il cui esercizio nei confronti del pubblico era riservato ai soggetti iscritti in un **elenco generale** tenuto dal Ministero del tesoro, che si avvaleva dell'**Ufficio Italiano dei Cambi**. Si trattava di una forma di vigilanza puramente anagrafica: l'iscrizione certificava l'esistenza del soggetto, non la sua solidità. L'art. 107, nella versione originaria, aggiungeva un **elenco speciale** tenuto dalla Banca d'Italia, cui erano tenuti a iscriversi gli intermediari di dimensione o di operatività più rilevante, sottoposti per ciò stesso a una vigilanza di tipo prudenziale.
-
-Questa architettura a doppio binario è stata smantellata dal **d.lgs. 13 agosto 2010, n. 141**, che ha sostituito l'intero Titolo V. Le novità sono tre e vanno enunciate in ordine. Primo: l'oggetto della riserva si contrae alla sola **concessione di finanziamenti sotto qualsiasi forma**, mentre le altre tre attività escono dal Titolo V per strade diverse — i servizi di pagamento hanno ormai una riserva e un albo propri nel Titolo V-ter; l'intermediazione in cambi rileva oggi, per le operazioni su valute che integrano strumenti finanziari, come servizio di investimento disciplinato dal TUF, mentre l'attività di cambiavalute, che il vecchio art. 155, comma 5, collocava in una sezione dell'elenco dell'art. 106, è stata estratta dal TUB e affidata a un registro autonomo; l'assunzione di partecipazioni, invece, ha semplicemente cessato di essere attività riservata, e viene in rilievo soltanto come presupposto della vigilanza sui gruppi e, quando la partecipazione è in una banca o in un intermediario, dell'autorizzazione dell'art. 19. Secondo: i due elenchi si fondono in un **unico albo**, tenuto dalla Banca d'Italia. Terzo, e decisivo: si passa dall'iscrizione alla **autorizzazione**; la vigilanza anagrafica diventa vigilanza prudenziale per tutti, senza più distinzione dimensionale.
+Tre caratteri distinguono la disciplina vigente, introdotta dal d.lgs. 13 agosto 2010, n. 141, che ha sostituito l'intero Titolo V. Primo: l'oggetto della riserva è la sola **concessione di finanziamenti sotto qualsiasi forma**; le altre attività non sono riservate dall'art. 106 — i servizi di pagamento hanno una riserva e un albo propri nel Titolo V-ter; l'intermediazione in cambi rileva, per le operazioni su valute che integrano strumenti finanziari, come servizio di investimento disciplinato dal TUF, mentre l'attività di cambiavalute è affidata a un registro autonomo, fuori dal TUB; l'assunzione di partecipazioni non è attività riservata, e viene in rilievo soltanto come presupposto della vigilanza sui gruppi e, quando la partecipazione è in una banca o in un intermediario, dell'autorizzazione dell'art. 19. Secondo: esiste un **unico albo**, tenuto dalla Banca d'Italia. Terzo, e decisivo: l'accesso richiede **autorizzazione**, non una semplice iscrizione, e la vigilanza è prudenziale per tutti gli iscritti, senza distinzione dimensionale.
 
 Il comma 2 elenca le attività ulteriori consentite: l'emissione di moneta elettronica e la prestazione di servizi di pagamento, ma soltanto se l'intermediario è a ciò autorizzato ai sensi degli artt. 114-quinquies, comma 4, o 114-novies, comma 4, e iscritto nel relativo albo (lett. a); la prestazione di servizi di investimento, se autorizzato ai sensi dell'art. 18, comma 3, del TUF (lett. b); le altre attività consentite dalla legge e le attività connesse o strumentali, nel rispetto delle disposizioni della Banca d'Italia (lett. c). Il comma 3 delega al Ministro dell'economia e delle finanze, sentita la Banca d'Italia, il compito di specificare il contenuto delle attività del comma 1 e — profilo pratico cruciale — di stabilire **in quali circostanze ricorra l'esercizio nei confronti del pubblico**: la delega è stata esercitata con il D.M. 2 aprile 2015, n. 53.
 
@@ -58,7 +56,7 @@ Vale la pena osservare che «concessione di finanziamenti» ed «erogazione del 
 > [!tip] Fonti da citare
 > - art. 106, commi 1, 2 e 3, TUB — riserva, attività ulteriori e delega al MEF
 > - D.M. Economia e Finanze 2 aprile 2015, n. 53 — attuazione dell'art. 106, comma 3
-> - d.lgs. 13 agosto 2010, n. 141, art. 7 — sostituzione dell'intero Titolo V
+> - d.lgs. 13 agosto 2010, n. 141, art. 7 — fonte dell'assetto vigente del Titolo V
 > - art. 133, comma 1-quater, TUB — riserva dell'uso della parola «finanziaria» agli intermediari ex art. 106
 > - art. 132 TUB — sanzione penale per l'esercizio abusivo delle attività dell'art. 106, comma 1
 
@@ -559,7 +557,7 @@ Sul versante penale, il Tribunale di Firenze pronuncia sentenza nel giugno 2005;
 > [!note] Rilancio
 > Perché la Banca d'Italia si costituì parte civile?
 > → Perché l'abusivismo lede direttamente l'interesse pubblico alla tutela del risparmio affidato all'autorità di vigilanza e ne danneggia la credibilità istituzionale; la Cassazione ha respinto l'istanza difensiva di esclusione della parte civile.
-> Che cosa erano i «titoli fiduciari» degli anni Novanta?
+> Che cosa erano i «titoli fiduciari»?
 > → Operazioni di vendita a terzi di un titolo di credito con contestuale patto di riacquisto a un prezzo maggiorato degli interessi pattuiti: in sostanza un pronti contro termine, che sotto le vesti di una doppia compravendita realizza un'acquisizione di fondi con obbligo di rimborso.
 
 ## D18 — Romanelli: silenzio-assenso, omologa e iscrizione nel registro delle imprese

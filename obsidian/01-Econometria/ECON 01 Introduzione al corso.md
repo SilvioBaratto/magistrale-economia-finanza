@@ -99,7 +99,7 @@ generated: 2026-07-10
 
 ## Causalità: l'impossibilità di dimostrarla e il ruolo della confutazione
 
-In generale **non è possibile dimostrare l'esistenza di una relazione causale**, perché quasi mai è possibile escludere tutte le altre possibili spiegazioni di un fenomeno. Spesso non siamo in grado di controllare per tutte le possibili spiegazioni alternative (sono troppe) rispetto a un certo livello di associazione misurato.
+In generale **non è possibile dimostrare l'esistenza di una relazione causale**, perché quasi mai è possibile escludere tutte le altre possibili spiegazioni di un fenomeno. Spesso non si riescono a controllare tutte le spiegazioni alternative (sono troppe) rispetto a un certo livello di associazione misurato.
 
 Possiamo però **confutare** ipotesi di causalità: se riusciamo a confutare tutte le ipotesi tranne una, possiamo essere abbastanza certi nel definire il legame come nesso causale.
 
@@ -119,11 +119,11 @@ Possiamo però **confutare** ipotesi di causalità: se riusciamo a confutare tut
 
 ## Associazione non implica causalità
 
-In generale, l'associazione tra variabili **non** rappresenta un criterio sufficiente per stabilire se un legame sia interpretabile come causale. Una raccolta (a scopo illustrativo) di associazioni spurie "divertenti" è disponibile su http://www.tylervigen.com/spurious-correlations.
+In generale, l'associazione tra variabili **non** è un criterio sufficiente per stabilire se un legame sia interpretabile come causale. Una raccolta (a scopo illustrativo) di associazioni spurie "divertenti" è disponibile su http://www.tylervigen.com/spurious-correlations.
 
-Non è difficile trovare variabili fortemente associate ma non legate tra loro: come visto sopra, l'associazione in questi casi rappresenta un **legame spurio**.
+Non è difficile trovare variabili fortemente associate ma non legate tra loro: come visto sopra, l'associazione in questi casi è un **legame spurio**.
 
-Una volta osservato un legame statistico, risulta indispensabile spiegarlo dal punto di vista teorico e verificare se risulti anche credibile dal punto di vista logico.
+Una volta osservato un legame statistico, è indispensabile spiegarlo dal punto di vista teorico e verificare che sia credibile anche dal punto di vista logico.
 
 *(slide 13)*
 
@@ -141,13 +141,13 @@ Una volta osservato un legame statistico, risulta indispensabile spiegarlo dal p
 > [!example] Esempio
 > **Il problema.** Si pensa spesso che un basso rapporto studenti/insegnanti (*class size*) possa migliorare la performance degli alunni. In California, verso la fine degli anni '90, tutte le classi K-3 furono ridotte per ottenere un rapporto studenti/insegnanti pari a 20 (*Class Size Reduction Act* – CSR), con un costo iniziale di $1.8 miliardi annui. Per questo costo, ne vale davvero la pena?
 >
-> Ci si chiede se la dimensione della classe sia l'unico (o il principale) fattore rilevante nello spiegare la variazione della performance attesa degli studenti, oppure se esistano ulteriori informazioni rilevanti da considerare. Si vuole inoltre **quantificare** come una riduzione della dimensione della classe impatti sui voti degli alunni.
+> Ci si chiede se la dimensione della classe sia l'unico (o il principale) fattore rilevante nello spiegare la variazione della performance attesa degli studenti, oppure se esistano ulteriori informazioni da considerare. Si vuole inoltre **quantificare** come una riduzione della dimensione della classe impatti sui voti degli alunni.
 >
 > ![](assets/econ-01/fig01.png)
 >
-> **Figura 1** — Scatterplot delle variabili rilevanti (Fonte: *California Standardized Testing and Reporting Survey*, year 1999). Lo scatterplot mette in relazione l'*Average Class Size* ($str$, asse orizzontale) con l'*Average Score* ($avg\_score$, asse verticale); la retta interpolante (*fitted values*) ha pendenza negativa, suggerendo che classi più numerose sono associate a punteggi mediamente più bassi.
+> **Figura 1** — Scatterplot delle variabili rilevanti (Fonte: *California Standardized Testing and Reporting Survey*, year 1999). Lo scatterplot mette in relazione l'*Average Class Size* ($str$, asse orizzontale) con l'*Average Score* ($avg\_score$, asse verticale); la retta interpolante (*fitted values*) ha pendenza negativa: le classi più numerose sono associate a punteggi mediamente più bassi.
 >
-> Sembrerebbe quindi che ridurre il rapporto studenti/insegnanti sia rilevante: a una riduzione della dimensione delle classi corrisponde un aumento medio dei punteggi. La correlazione tra le due variabili è **-0.2264** (rappresenta la pendenza della retta di regressione). Esiste inoltre un legame temporale e logico plausibile: prima viene implementata la policy, poi si valutano i benefici.
+> Sembrerebbe quindi che ridurre il rapporto studenti/insegnanti sia rilevante: a una riduzione della dimensione delle classi corrisponde un aumento medio dei punteggi. La correlazione tra le due variabili è **-0.2264** (ha il segno della pendenza della retta di regressione, che vale invece $-2.28$; le slide le identificano). Esiste inoltre un legame temporale e logico plausibile: prima viene implementata la policy, poi si valutano i benefici.
 >
 > **Un'altra possibile spiegazione.** Un'analisi più dettagliata suggerisce che anche il reddito medio ($avginc$) delle persone che vivono in ogni distretto scolastico risulta positivamente correlato con il punteggio $avg\_score$: distretti più ricchi tendono ad essere associati a voti migliori. Inoltre esiste una dipendenza negativa tra $income$ e $class\ size$ ($str$), suggerendo che distretti ad alto reddito sono legati a scuole in cui le classi sono mediamente più piccole.
 >
@@ -163,19 +163,19 @@ Una volta osservato un legame statistico, risulta indispensabile spiegarlo dal p
 >
 > ![](assets/econ-01/fig02.png)
 >
-> **Figura 2** — Scatterplot delle variabili a coppie. La matrice di scatterplot incrocia $avg\_score$, $str$ e $avginc$ a due a due, confermando visivamente le correlazioni riportate nella matrice sopra (in particolare la forte associazione positiva tra $avg\_score$ e $avginc$).
+> **Figura 2** — Scatterplot delle variabili a coppie. La matrice di scatterplot incrocia $avg\_score$, $str$ e $avginc$ a due a due e conferma visivamente le correlazioni riportate nella matrice sopra (in particolare la forte associazione positiva tra $avg\_score$ e $avginc$).
 >
 > ![](assets/econ-01/fig03.png)
 >
-> **Figura 3** — Rappresentazione causale del nuovo modello (in parentesi le correlazioni): $income \to average\ score$ (0.7124), $income \to class\ size$ (-0.2322), $class\ size \to average\ score$ (-0.2264). Il diagramma mostra uno schema in cui il reddito ($income$) influisce sia sul punteggio medio sia sulla dimensione delle classi, potendo così generare una correlazione osservata (ma potenzialmente spuria) tra $class\ size$ e $average\ score$.
+> **Figura 3** — Rappresentazione causale del nuovo modello (in parentesi le correlazioni): $income \to average\ score$ (0.7124), $income \to class\ size$ (-0.2322), $class\ size \to average\ score$ (-0.2264). Il diagramma mostra uno schema in cui il reddito ($income$) influisce sia sul punteggio medio sia sulla dimensione delle classi, e può quindi generare una correlazione osservata (ma potenzialmente spuria) tra $class\ size$ e $average\ score$.
 >
-> Questa evidenza empirica suggerisce che la dipendenza negativa tra *class size* e *performance* potrebbe essere **spuria**, poiché potrebbe essere spiegata dall'effetto reddito. Questa relazione causale più complessa potrebbe rappresentare una nuova spiegazione del fenomeno e fornire strumenti per una migliore comprensione della realtà.
+> Questa evidenza empirica suggerisce che la dipendenza negativa tra *class size* e *performance* potrebbe essere **spuria**, poiché può essere spiegata dall'effetto reddito. Questa relazione causale più complessa offrirebbe una nuova spiegazione del fenomeno.
 >
-> **Verifica: controllo per il reddito.** Cosa si può fare? Si divide il dataset in due parti: da un lato i distretti ad alto reddito, dall'altro quelli a basso reddito. In questi due sottoinsiemi si calcola la correlazione tra *class size* e *test score*. In questo modo è possibile controllare l'effetto reddito, poiché ogni sottoinsieme risulta omogeneo rispetto a quel fattore: quindi l'effetto reddito dovrebbe non essere più rilevante.
+> **Verifica: controllo per il reddito.** Cosa si può fare? Si divide il dataset in due parti: da un lato i distretti ad alto reddito, dall'altro quelli a basso reddito. In questi due sottoinsiemi si calcola la correlazione tra *class size* e *test score*. In questo modo è possibile controllare l'effetto reddito, poiché ogni sottoinsieme è omogeneo rispetto a quel fattore: quindi l'effetto reddito dovrebbe non essere più rilevante.
 > - Nei distretti a **basso reddito**, la correlazione tra *class size* e *test score* è **-0.1464**, debolmente statisticamente significativa.
 > - Nei distretti ad **alto reddito** la correlazione è **-0.1962**, comunque non significativa.
 >
-> Quindi, una volta controllato l'effetto reddito, la correlazione tra la variabile di policy *class size* e *test score* viene praticamente azzerata. Questo rappresenta, con buona probabilità, il sintomo di una relazione **spuria**.
+> Quindi, una volta controllato l'effetto reddito, la correlazione tra la variabile di policy *class size* e *test score* viene praticamente azzerata. Questo è, con buona probabilità, il sintomo di una relazione **spuria**.
 
 *(slide 15–22)*
 
@@ -184,14 +184,14 @@ Una volta osservato un legame statistico, risulta indispensabile spiegarlo dal p
 > [!tip] Teorema
 > In ambito finanziario si ipotizza spesso che gli investitori abbiano bisogno di incentivi per aumentare il rischio che sono disposti ad accollarsi: i rendimenti attesi $R$ di un investimento rischioso dovrebbero essere maggiori di quelli di un investimento non rischioso (*risk-free*, $R_f$). Gli extra rendimenti $R - R_f \geq 0$ dovrebbero quindi essere positivi.
 >
-> Il rischio viene spesso descritto tramite la varianza; può essere minimizzato costruendo portafogli diversificati, comprando o vendendo asset i cui prezzi sono correlati alle variazioni di mercato. Misurare il rischio, quindi, non implica solo il calcolo delle varianze, ma anche della struttura di covarianza tra l'investimento e il mercato.
+> Il rischio viene spesso descritto tramite la varianza; può essere minimizzato costruendo portafogli diversificati, comprando o vendendo asset i cui prezzi sono correlati alle variazioni di mercato. Misurare il rischio richiede quindi, oltre alle varianze, la struttura di covarianza tra l'investimento e il mercato.
 >
 > Il modello **CAPM** (*Capital Asset Pricing Model*) è stato proposto per descrivere la relazione tra i rendimenti di un portafoglio generico e il *portafoglio di mercato*. Gli investitori decidono come allocare le proprie risorse massimizzando il rendimento atteso di un portafoglio, mantenendo fissato il livello di rischio.
 >
 > In equilibrio si dimostra che deve valere:
 > $$\underbrace{E[R_t]}_{\text{Rendimenti attesi}} = \beta \, \underbrace{E[(R_{mt})]}_{\text{Rendimento del mercato}}$$
 >
-> Ci si chiede se questa relazione teorica sia credibile dal punto di vista empirico.
+> Ci si chiede se questa relazione teorica sia credibile dal punto di vista empirico. (Il CAPM vale per gli extra rendimenti: $R_t$ e $R_{mt}$ vanno letti al netto di $R_f$, cioè $E[R_t]-R_f=\beta\,(E[R_{mt}]-R_f)$; le slide omettono $R_f$.)
 >
 > Si ipotizzi di descrivere la relazione come segue:
 > $$E[R_t] = \alpha + \beta R_{mt}$$
@@ -214,13 +214,13 @@ Una volta osservato un legame statistico, risulta indispensabile spiegarlo dal p
 >
 > ![](assets/econ-01/fig04.png)
 >
-> **Figura 4** — Serie storiche dei rendimenti del portafoglio (*Portfolio*) e del mercato (*Market*) nel tempo, da gennaio 1960 a inizio anni 2000. I due andamenti mostrano un forte comovimento: i rendimenti del portafoglio seguono da vicino le oscillazioni dei rendimenti di mercato, con ampiezza leggermente maggiore nei picchi (positivi e negativi).
+> **Figura 4** — Serie storiche dei rendimenti del portafoglio (*Portfolio*) e del mercato (*Market*) nel tempo, dal 1960 al 2004 circa. I due andamenti mostrano un forte comovimento: i rendimenti del portafoglio seguono da vicino le oscillazioni dei rendimenti di mercato, con ampiezza leggermente maggiore nei picchi (positivi e negativi).
 >
 > ![](assets/econ-01/fig05.png)
 >
 > **Figura 5** — Scatterplot di *Portfolio Returns* contro *Market Portfolio*, con retta di regressione interpolante (*fitted values*). La nuvola di punti mostra una chiara relazione lineare positiva, con pendenza superiore a 1, coerente con un $\beta$ maggiore di uno.
 >
-> Se il modello CAPM fosse coerente con i dati, ci si aspetta che il parametro $\alpha$ sia $0$. Per verificarlo è quindi necessario stimarlo e verificare l'ipotesi che sia nullo. L'analisi di regressione può essere utilizzata a questo scopo.
+> Se il modello CAPM fosse coerente con i dati, ci si aspetta che il parametro $\alpha$ sia $0$. Per verificarlo è quindi necessario stimarlo e testare l'ipotesi che sia nullo. L'analisi di regressione può essere utilizzata a questo scopo.
 > - Una stima credibile per $\beta$ è **1.083759**, con errore standard **.0404768**. L'intervallo di confidenza al 95% è **[1.004; 1.163]**, che suggerisce che questo investimento è più rischioso del mercato. Infatti:
 > $$\text{Var}(R_t) = \beta^2 \text{Var}(R_{mt}) + \sigma^2, \qquad \beta > 1$$
 > - La stima di $\alpha$ è **.2942161**, e l'intervallo di confidenza al 95% è **[-.063; .651]**. Questa evidenza non permette di escludere che $0$ possa essere il vero valore per l'intercetta.
@@ -233,9 +233,9 @@ Una volta osservato un legame statistico, risulta indispensabile spiegarlo dal p
 > [!example] Esempio
 > Kiel e McClain (1995) hanno studiato l'effetto che la costruzione di un nuovo inceneritore di rifiuti ha avuto sul valore delle case a North Andover, nel Massachusetts. Gli autori originali eseguirono un'analisi econometrica piuttosto complicata; in questo esempio si considera un modello semplificato, anche se la strategia implementata è simile all'originale.
 >
-> I rumor secondo cui un nuovo inceneritore sarebbe stato costruito a North Andover iniziarono dopo il 1978, anche se la costruzione iniziò solo nel 1981. L'inceneritore sarebbe entrato in funzione subito dopo l'inizio della costruzione, e ha effettivamente iniziato a funzionare nel 1985. Si utilizzano i dati sui prezzi delle case vendute nel 1978 e un altro campione su quelle vendute nel 1981. L'ipotesi è che il prezzo delle case situate vicino all'inceneritore diminuisca maggiormente rispetto a quello delle case più distanti.
+> I rumor secondo cui un nuovo inceneritore sarebbe stato costruito a North Andover iniziarono dopo il 1978, anche se la costruzione iniziò solo nel 1981. L'inceneritore sarebbe entrato in funzione subito dopo l'inizio della costruzione, e ha effettivamente iniziato a funzionare nel 1985. Si utilizzano i dati sui prezzi delle case vendute nel 1978 e un altro campione su quelle vendute nel 1981 (sono due campioni indipendenti di case diverse, cioè cross section ripetute e non un panel in senso stretto; le slide le trattano come panel). L'ipotesi è che il prezzo delle case situate vicino all'inceneritore diminuisca maggiormente rispetto a quello delle case più distanti.
 >
-> **Prima evidenza (solo 1981).** Alcune evidenze empiriche suggeriscono che nel 1981 le case costruite vicino al nuovo stabilimento costavano circa 30mila dollari in meno rispetto alle altre:
+> **Prima evidenza (solo 1981).** Alcune evidenze empiriche suggeriscono che nel 1981 le case costruite vicino al nuovo stabilimento costavano circa 30mila dollari in meno rispetto alle altre (prezzi reali, in dollari del 1978):
 >
 > | year | Base price | "Near" effect |
 > |---|---|---|

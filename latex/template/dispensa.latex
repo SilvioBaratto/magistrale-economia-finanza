@@ -341,7 +341,7 @@ $endfor$
   \vspace{0.5cm}$endif$
   $if(stats)$Contenuto:\\ {\bfseries $stats$}\par
   \vspace{0.5cm}$endif$
-  Anno Accademico:\\ {\bfseries $date$}\par
+  $if(date)$Anno Accademico:\\ {\bfseries $date$}\par$endif$
   $if(disclaimer)$\vspace{1cm}{\footnotesize\itshape $disclaimer$\par}$endif$
 \end{titlepage}
 \hypersetup{pageanchor=true}

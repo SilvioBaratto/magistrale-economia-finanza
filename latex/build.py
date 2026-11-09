@@ -445,8 +445,10 @@ def render(slug: str, markdown: str, meta: dict[str, str], toc_depth: int, keep:
 
     cmd = [
         "pandoc", str(md_path),
+        # Obsidian lets a list interrupt a paragraph; without the extension pandoc
+        # folds the items into that paragraph and prints the dashes literally.
         "--from", "markdown+fenced_divs+header_attributes+tex_math_dollars+pipe_tables+raw_tex"
-                    "+autolink_bare_uris-implicit_figures",
+                    "+autolink_bare_uris-implicit_figures+lists_without_preceding_blankline",
         "--to", "latex",
         "--standalone",
         "--template", str(TEMPLATE),

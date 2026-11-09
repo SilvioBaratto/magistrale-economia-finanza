@@ -1,10 +1,19 @@
 # Esami di Econometria — soluzioni svolte
 
-Svolgimento completo dei temi d'esame del corso, con **derivazione matematica
-passo a passo** e **una figura per ogni passaggio inferenziale**. Un PDF per appello.
+Soluzioni dei temi d'esame **in stile docente** (prof. Raggi): per ogni domanda il
+testo integrale, una risposta breve di 3-8 righe e una figura. Un PDF per appello.
 
-La teoria di riferimento è quella del corso, cioè le note in
-`obsidian/01-Econometria/`. Nessuna formula proviene da altre fonti.
+Il metodo è quello delle soluzioni ufficiali dei Problem Set e dei manoscritti del
+15/06/2023 e del 29/08/2023: effetto marginale scritto come Δ, decisione con
+l'intervallo di confidenza o con il test F su un vincolo lineare, conversioni in
+percentuale con la sola approssimazione 100·β, soglia VIF 10, numerazione dei
+coefficienti come nel testo dell'esame. Ogni numero è ricavabile dalle sole tabelle
+del testo d'esame. Per le domande 1-6 di 15/06/2023 e 29/08/2023 le risposte seguono
+il manoscritto; per gli altri cinque appelli non esiste una soluzione del prof e lo
+stile è dedotto dai Problem Set.
+
+Le versioni lunghe, con derivazioni e richiami di teoria (circa 45 pagine ad
+appello), sono nella storia di git al commit `7059143`.
 
 ## Struttura
 
@@ -63,18 +72,20 @@ l'unico con i dati veri).
 
 ## Che cosa c'è
 
-| PDF | Pagine | Domande | Figure | Righe di sorgente |
-|---|---|---|---|---|
-| `ECON_Sol_2022-12-22.pdf` | 47 | 10 | 10 | 1667 |
-| `ECON_Sol_2023-01-17.pdf` | 49 | 10 | 10 | 1703 |
-| `ECON_Sol_2023-06-15.pdf` | 50 | 10 | 10 | 1557 |
-| `ECON_Sol_2023-08-29.pdf` | 48 | 10 | 10 | 1712 |
-| `ECON_Sol_2023-12-21.pdf` | 42 | 10 | 10 | 1389 |
-| `ECON_Sol_2024-06-13.pdf` | 47 | 10 | 10 | 1411 |
-| `ECON_Sol_2025-01-21.pdf` | 43 | 10 | 10 | 1428 |
+| PDF | Domande | Figure | Righe di sorgente |
+|---|---|---|---|
+| `ECON_Sol_2022-12-22.pdf` | 10 | 10 | 323 |
+| `ECON_Sol_2023-01-17.pdf` | 10 | 10 | 302 |
+| `ECON_Sol_2023-06-15.pdf` | 10 | 10 | 279 |
+| `ECON_Sol_2023-08-29.pdf` | 10 | 10 | 271 |
+| `ECON_Sol_2023-12-21.pdf` | 10 | 10 | 274 |
+| `ECON_Sol_2024-06-13.pdf` | 10 | 10 | 261 |
+| `ECON_Sol_2025-01-21.pdf` | 10 | 10 | 261 |
 
-**326 pagine, 70 domande, 70 figure.** Ogni domanda ha testo integrale, teoria citata,
-calcolo passo a passo, figura e risposta esplicita — verificato strutturalmente sul sorgente.
+**70 domande, 70 figure.** Ogni domanda ha il testo integrale, la risposta breve e la figura.
+Ciascun sorgente è stato ricontrollato da un revisore indipendente, che ha ricalcolato i
+numeri dalle tabelle d'esame; le scelte dubbie (per esempio dove l'esame è incoerente con sé
+stesso) sono state decise caso per caso seguendo il metodo dei Problem Set.
 
 ## Corrispondenza esame → soluzione
 
@@ -108,11 +119,9 @@ Ogni domanda è scandita da blocchi con testa a capoverso:
 
 ### Autosufficienza
 
-I documenti **non rimandano ad alcun file esterno**. Ogni formula usata è enunciata
-per intero nel punto in cui serve, comprese quelle che il corso non enuncia
-(interpretazione dei modelli log, quadratiche, interazioni, varianza di una
-combinazione lineare, orizzonte di assorbimento dell'ECM, VIF): dove una regola è
-stata derivata anziché citata, il testo lo dichiara e mostra la derivazione.
+I documenti **non rimandano ad alcun file esterno**: la formula che serve a una risposta
+(effetto marginale, varianza di β̂ⱼ con il VIF, assorbimento dell'ECM) è scritta nella
+risposta stessa. Le derivazioni complete restano in `_teoria/`.
 
 ## Avvertenza
 

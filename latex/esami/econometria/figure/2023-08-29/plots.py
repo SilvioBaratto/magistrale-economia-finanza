@@ -3,6 +3,7 @@
 
 Esercizio 1 — studenti-atleti (log-lin, interazione season x tothrs, White, VIF).
 Esercizio 2 — petrolio e occupazione in Texas (ADF, cointegrazione, due ECM).
+Il coefficiente di shrs e' beta_6, come nel manoscritto del docente.
 
 Tutti i numeri provengono dagli output riportati nel testo d'esame
 (`../../Esami/ECON_Esame_2023-08-29.md`): nessun dataset e' disponibile per
@@ -91,24 +92,15 @@ def ci_soglie(ax, est, lo, hi, marks, *, xlabel="", title="", decimals=4,
 
 # ============================================================ D1 — soglia 2%
 def d01():
-    theta, se = 30 * B_TOT1, 30 * SE_TOT1
-    lo, hi = theta - 1.96 * se, theta + 1.96 * se
-    h0a, h0b = 0.02, np.log(1.02)
-    t_obs = (theta - h0a) / se
+    lo, hi = B_TOT1 - 1.96 * SE_TOT1, B_TOT1 + 1.96 * SE_TOT1
+    soglia = 0.02 / 30
 
-    fig, (ax1, ax2) = plt.subplots(
-        2, 1, figsize=(6.2, 5.0), gridspec_kw={"height_ratios": [1.0, 1.45]})
-
-    ci_soglie(ax1, theta, lo, hi,
-              [(h0a, r"$H_0$: 0,0200" + "\nfuori dall'IC: rifiuto", es.RED, 0.45),
-               (h0b, r"$\log(1{,}02) = 0{,}0198$", es.TEAL, -0.50)],
-              xlabel=r"$\theta = 30\,\beta_4$  (punti di log-gpa)", pad=0.24,
-              title="(a) IC al 95% per l'effetto di 30 ore: entrambe le soglie restano fuori")
-
-    es.dist_test("z", stat=t_obs, crit=1.645, tail="right", ax=ax2,
-                 title="(b) test unilaterale destro  $H_0:\\theta = 0{,}02$  contro  $H_1:\\theta > 0{,}02$",
-                 statlabel=f"$t$ osservata = {n(t_obs, 4)}", pvalue=0.0146,
-                 critlabel=r"regione di rifiuto: $z > 1{,}645$ (5%)")
+    fig, ax = plt.subplots(figsize=(6.2, 2.5))
+    ci_soglie(ax, B_TOT1, lo, hi,
+              [(soglia, r"$0{,}000667$" + "\nfuori dall'IC, a sinistra", es.RED, 0.45)],
+              xlabel=r"$\beta_4$  (punti di log-gpa per ora)", pad=0.30,
+              decimals=6,
+              title=r"IC al 95% per $\beta_4$ e soglia $0{,}02/30$")
     fig.tight_layout()
     es.save(fig, OUT / "d01-soglia-due-percento.pdf")
 
@@ -123,6 +115,9 @@ def d02():
                  statlabel=r"$T_W$ = 24,697")
     # spazio sopra la densita': altrimenti la legenda ci cade sopra
     ax1.set_ylim(0, ax1.get_ylim()[1] * 1.45)
+    # le rette verticali si fermano sotto la legenda, che altrimenti le taglia
+    for ln in ax1.lines[1:]:
+        ln.set_ydata([0.0, 0.58])
     ax1.legend(loc="upper right", fontsize=8.2)
 
     rng = np.random.default_rng(20230829)
@@ -150,39 +145,31 @@ def d02():
 # =============================================== D3 — gap season a tothrs = 50
 def d03():
     h = np.linspace(0, 120, 400)
-    gap_log = B_SEA2 + B_SHRS * h
-    gap_pct = 100 * (np.exp(gap_log) - 1)
-    turn = -B_SEA2 / B_SHRS
-    at50 = 100 * (np.exp(B_SEA2 + 50 * B_SHRS) - 1)
+    gap = 100 * (B_SEA2 + B_SHRS * h)
+    at50 = 100 * (B_SEA2 + 50 * B_SHRS)
+    at0 = 100 * B_SEA2
 
     fig, ax = plt.subplots(figsize=(6.2, 3.3))
-    ax.plot(h, gap_pct, color=es.BLUE, lw=1.7,
-            label=r"$100\,[\exp(\beta_2 + \beta_5\,\mathrm{tothrs}) - 1]$")
+    ax.plot(h, gap, color=es.BLUE, lw=1.7,
+            label=r"$100\,(\hat\beta_2 + \hat\beta_6\,\mathrm{tothrs})$")
     ax.axhline(0, color=es.GRAY, lw=0.9)
-    ax.fill_between(h, gap_pct, 0, where=gap_pct >= 0, color=es.GREENBG)
-    ax.fill_between(h, gap_pct, 0, where=gap_pct < 0, color=es.REDBG)
-
-    ax.axvline(turn, color=es.RED, ls=":", lw=1.1)
-    ax.plot([turn], [0], "o", color=es.RED, ms=6, zorder=6)
-    ax.annotate("gap nullo a tothrs = " + n(turn, 2), xy=(turn, 0),
-                xytext=(8, 64), textcoords="offset points",
-                fontsize=8.5, color=es.RED, fontweight="bold",
-                arrowprops=dict(arrowstyle="->", color=es.RED, lw=0.8))
+    ax.fill_between(h, gap, 0, where=gap >= 0, color=es.GREENBG)
+    ax.fill_between(h, gap, 0, where=gap < 0, color=es.REDBG)
 
     ax.plot([50], [at50], "*", color=es.TEAL, ms=15, zorder=7)
-    ax.annotate("tothrs = 50:  gap = +" + n(at50, 2) + r"%", xy=(50, at50),
+    ax.annotate("tothrs = 50:  gap = +" + n(at50, 1) + r"%", xy=(50, at50),
                 xytext=(12, -16), textcoords="offset points", va="top",
                 fontsize=9, color=es.TEAL, fontweight="bold")
 
-    ax.plot([0], [100 * (np.exp(B_SEA2) - 1)], "s", color=es.AMBER, ms=6, zorder=6)
-    ax.annotate("tothrs = 0:  gap = " + n(100 * (np.exp(B_SEA2) - 1), 2) + r"%",
-                xy=(0, 100 * (np.exp(B_SEA2) - 1)), xytext=(54, -12),
-                textcoords="offset points", va="top", fontsize=8.5, color=es.AMBER,
+    ax.plot([0], [at0], "s", color=es.AMBER, ms=6, zorder=6)
+    ax.annotate("tothrs = 0:  gap = " + n(at0, 1) + r"%", xy=(0, at0),
+                xytext=(54, -12), textcoords="offset points", va="top",
+                fontsize=8.5, color=es.AMBER,
                 arrowprops=dict(arrowstyle="->", color=es.AMBER, lw=0.8))
 
     es.commas(ax, "both", decimals=1)
     ax.set_xlabel("tothrs (ore frequentate)")
-    ax.set_ylabel("effetto di season su gpa (%)")
+    ax.set_ylabel("gap di season su gpa (%)")
     ax.set_title("Impatto della stagione agonistica in funzione delle ore frequentate",
                  loc="left")
     ax.legend(loc="upper left")
@@ -193,40 +180,37 @@ def d03():
 
 
 # ================================================ D4 — effetto marginale tothrs
+T_SHRS = 2.5443   # rapporto t riportato nella tabella d'esame
+
+
 def d04():
     fig, (ax1, ax2) = plt.subplots(
         2, 1, figsize=(6.2, 5.2), gridspec_kw={"height_ratios": [1.15, 1.0]})
 
     h = np.linspace(0, 120, 300)
-    ax1.plot(h, 100 * (np.exp(B_TOT2 * h) - 1), color=es.BLUE, lw=1.8,
-             label=r"season = 0:  $100(e^{\beta_4\,\mathrm{tothrs}}-1)$,  $\beta_4 = 0{,}00130725$")
-    ax1.plot(h, 100 * (np.exp((B_TOT2 + B_SHRS) * h) - 1), color=es.AMBER, lw=1.8,
-             label=r"season = 1:  $100(e^{(\beta_4+\beta_5)\mathrm{tothrs}}-1)$,  "
-                   r"$\beta_4+\beta_5 = 0{,}00328211$")
-    ax1.fill_between(h, 100 * (np.exp(B_TOT2 * h) - 1),
-                     100 * (np.exp((B_TOT2 + B_SHRS) * h) - 1),
+    ax1.plot(h, 100 * B_TOT2 * h, color=es.BLUE, lw=1.8,
+             label=r"season = 0:  pendenza $\beta_4 = 0{,}00130725$")
+    ax1.plot(h, 100 * (B_TOT2 + B_SHRS) * h, color=es.AMBER, lw=1.8,
+             label=r"season = 1:  pendenza $\beta_4+\beta_6 = 0{,}00328211$")
+    ax1.fill_between(h, 100 * B_TOT2 * h, 100 * (B_TOT2 + B_SHRS) * h,
                      color=es.BLUEBG, alpha=0.9)
-    for hh in (50, 100):
-        ax1.axvline(hh, color=es.RULE, lw=0.8)
-    ax1.annotate("la differenza fra le pendenze in log-gpa\nè esattamente  " +
-                 r"$\beta_5 = 0{,}00197486$",
-                 xy=(88, 0.5 * (100 * (np.exp(B_TOT2 * 88) - 1) +
-                                100 * (np.exp((B_TOT2 + B_SHRS) * 88) - 1))),
+    ax1.annotate("la differenza fra le pendenze\n" + r"è $\beta_6 = 0{,}00197486$",
+                 xy=(88, 100 * (B_TOT2 + 0.5 * B_SHRS) * 88),
                  xytext=(0.27, 0.60), textcoords="axes fraction", va="top",
                  fontsize=8.5, color=es.GRAY,
                  arrowprops=dict(arrowstyle="->", color=es.GRAY, lw=0.8))
     es.commas(ax1, "both", decimals=1)
     ax1.set_xlabel("tothrs (ore frequentate)")
-    ax1.set_ylabel("gpa rispetto a tothrs = 0 (%)")
-    ax1.set_title("(a) profili esatti di gpa: le pendenze in log-gpa differiscono di "
-                  r"$\beta_5$", loc="left")
+    ax1.set_ylabel(r"$100\,\Delta\mathrm{gpa}/\mathrm{gpa}$ rispetto a tothrs = 0")
+    ax1.set_title(r"(a) $\Delta\mathrm{gpa}/\mathrm{gpa} = (\beta_4 + \beta_6\,\mathrm{season})\,\Delta\mathrm{tothrs}$",
+                  loc="left")
     ax1.legend(loc="upper left")
     ax1.set_xlim(0, 120)
-    ax1.set_ylim(0, 66)
+    ax1.set_ylim(0, 44)
 
-    es.dist_test("z", stat=B_SHRS / SE_SHRS, crit=1.96, tail="two", ax=ax2,
-                 pvalue=0.0109, statlabel=r"$t$ su $\beta_5$ = 2,5441",
-                 title=r"(b) $H_0:\beta_5 = 0$ (effetto marginale indipendente da season) contro $H_1:\beta_5 \neq 0$")
+    es.dist_test("z", stat=T_SHRS, crit=1.96, tail="two", ax=ax2,
+                 pvalue=0.0109, statlabel=r"$t$ su $\beta_6$ = 2,5443",
+                 title=r"(b) $H_0:\beta_6 = 0$ contro $H_1:\beta_6 \neq 0$")
     # nel test bilaterale la legenda finirebbe sul critico negativo: le rette
     # si fermano sotto la fascia che le lascio
     ax2.set_ylim(0, ax2.get_ylim()[1] * 1.42)
@@ -241,140 +225,49 @@ def d04():
 def d05():
     b, s = B_FEM2, SE_FEM2
     lo, hi = b - 1.96 * s, b + 1.96 * s
-    fig, (ax1, ax2) = plt.subplots(
-        2, 1, figsize=(6.2, 4.6), gridspec_kw={"height_ratios": [1.0, 1.05]})
-
-    ci_soglie(ax1, b, lo, hi,
-              [(0.25, r"$H_0$: 0,2500" + "\ndentro l'IC", es.AMBER, 0.45),
-               (np.log(1.25), r"$\log(1{,}25) = 0{,}2231$" + "\ndentro l'IC", es.TEAL, -0.50)],
-              xlabel=r"$\beta_3$  (punti di log-gpa)",
-              title=r"(a) IC al 95% per $\beta_3$: entrambe le soglie cadono dentro")
-
-    vals = [100 * b, 100 * (np.exp(b) - 1)]
-    labs = ["approssimazione\n" + r"$100\,\beta_3$",
-            "versione esatta\n" + r"$100(e^{\beta_3}-1)$"]
-    cols = [es.GRAY, es.BLUE]
-    ypos = [0, 1]
-    ax2.barh(ypos, vals, color=cols, height=0.5, alpha=0.85)
-    # valori dentro le barre: fuori cadrebbero sull'IC esatto disegnato a y = 1
-    for y, v in zip(ypos, vals):
-        ax2.annotate(n(v, 2) + r"%", xy=(v, y), xytext=(-8, 0),
-                     textcoords="offset points", ha="right", va="center",
-                     fontsize=9, fontweight="bold", color="white")
-    lo_p, hi_p = 100 * (np.exp(lo) - 1), 100 * (np.exp(hi) - 1)
-    ax2.hlines(1, lo_p, hi_p, color=es.BLUE, lw=2.4, alpha=0.45)
-    ax2.vlines([lo_p, hi_p], 0.87, 1.13, color=es.BLUE, lw=1.3, alpha=0.7)
-    ax2.annotate("IC esatto sul premio:  [" + n(lo_p, 2) + r"%; " +
-                 n(hi_p, 2) + r"%]", xy=(0.6, 1.34), ha="left", va="bottom",
-                 fontsize=8.5, color=es.BLUE)
-    ax2.set_ylim(-0.45, 1.85)
-    ax2.axvline(25, color=es.RED, ls="--", lw=1.4, label=r"soglia del 25%")
-    ax2.set_yticks(ypos)
-    ax2.set_yticklabels(labs, fontsize=8.5)
-    ax2.set_xlim(0, 38)
-    es.commas(ax2, "x", decimals=0)
-    ax2.grid(axis="y", visible=False)
-    ax2.set_xlabel("premio femminile su gpa (%)")
-    ax2.set_title("(b) la stima puntuale sta sotto o sopra il 25% a seconda della convenzione",
-                  loc="left")
-    ax2.legend(loc="lower right")
+    fig, ax = plt.subplots(figsize=(6.2, 2.5))
+    ci_soglie(ax, b, lo, hi,
+              [(0.25, r"$0{,}25$" + "\ndentro l'IC", es.AMBER, 0.45)],
+              xlabel=r"$\beta_3$  (punti di log-gpa)", pad=0.30,
+              title=r"IC al 95% per $\beta_3$ e valore $0{,}25$")
     fig.tight_layout()
     es.save(fig, OUT / "d05-premio-femminile.pdf")
 
 
 # ================================================================== D6 — VIF
 def d06():
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(6.2, 5.0))
+    fig, ax = plt.subplots(figsize=(6.2, 3.1))
 
     names = list(VIF)
     v = np.array([VIF[k] for k in names])
     r = np.sqrt(v)
     x = np.arange(len(names))
-    ax1.bar(x - 0.19, v, width=0.36, color=es.RULE, label=r"$\mathrm{VIF}_j$ (varianza)")
-    ax1.bar(x + 0.19, r, width=0.36, color=es.BLUE,
-            label=r"$\sqrt{\mathrm{VIF}_j}$ (errore standard)")
+    ax.bar(x - 0.19, v, width=0.36, color=es.RULE, label=r"$\mathrm{VIF}_j$ (varianza)")
+    ax.bar(x + 0.19, r, width=0.36, color=es.BLUE,
+           label=r"$\sqrt{\mathrm{VIF}_j}$ (errore standard)")
     for xi, vi, ri in zip(x, v, r):
-        ax1.annotate(n(vi, 3), xy=(xi - 0.19, vi), xytext=(0, 4),
-                     textcoords="offset points", ha="center", fontsize=8.2,
-                     color=es.GRAY)
-        ax1.annotate(n(ri, 3), xy=(xi + 0.19, ri), xytext=(0, 4),
-                     textcoords="offset points", ha="center", fontsize=8.2,
-                     color=es.BLUE, fontweight="bold")
-    ax1.axhline(1.0, color=es.GREEN, lw=1.0, ls=":")
-    ax1.set_xticks(x)
-    ax1.set_xticklabels(names, fontsize=9)
-    es.commas(ax1, "y", decimals=1)
-    ax1.set_ylim(0, 6.3)
-    ax1.set_ylabel("fattore di gonfiaggio")
-    ax1.set_title("(a) il VIF gonfia la varianza, la sua radice l'errore standard", loc="left")
-    ax1.legend(loc="upper left", fontsize=8.3)
-
-    se_perp = SE_SHRS / np.sqrt(VIF["shrs"])
-    t_perp, t_obs = B_SHRS / se_perp, B_SHRS / SE_SHRS
-    ax2.bar([0, 1], [t_perp, t_obs], width=0.42, color=[es.GREEN, es.AMBER], alpha=0.85)
-    ax2.axhline(1.96, color=es.RED, ls="--", lw=1.2, label=r"soglia $|t| = 1{,}96$")
-    for xi, ti in zip([0, 1], [t_perp, t_obs]):
-        ax2.annotate("t = " + n(ti, 3), xy=(xi, ti), xytext=(0, 4),
-                     textcoords="offset points", ha="center", fontsize=9,
-                     fontweight="bold", color=es.INK)
-    ax2.set_xticks([0, 1])
-    ax2.set_xticklabels(["regressori ortogonali\n" + r"se $= 0{,}000357$",
-                         "collinearità osservata\n" + r"se $= 0{,}000776$"], fontsize=8.5)
-    es.commas(ax2, "y", decimals=1)
-    ax2.set_xlim(-0.62, 1.62)
-    ax2.set_ylim(0, 6.4)
-    ax2.grid(axis="x", visible=False)
-    ax2.set_ylabel(r"rapporto $t$ su $\beta_5$")
-    ax2.set_title(r"(b) il prezzo pagato dalla $t$ di shrs: da 5,538 a 2,544", loc="left")
-    ax2.legend(loc="upper right", fontsize=8.3)
+        ax.annotate(n(vi, 3), xy=(xi - 0.19, vi), xytext=(0, 4),
+                    textcoords="offset points", ha="center", fontsize=8.2,
+                    color=es.GRAY)
+        ax.annotate(n(ri, 3), xy=(xi + 0.19, ri), xytext=(0, 4),
+                    textcoords="offset points", ha="center", fontsize=8.2,
+                    color=es.BLUE, fontweight="bold")
+    ax.axhline(1.0, color=es.GREEN, lw=1.0, ls=":")
+    ax.set_xticks(x)
+    ax.set_xticklabels(names, fontsize=9)
+    es.commas(ax, "y", decimals=1)
+    ax.set_ylim(0, 6.3)
+    ax.set_ylabel("fattore di gonfiaggio")
+    ax.set_title("Il VIF gonfia la varianza, la sua radice l'errore standard", loc="left")
+    ax.legend(loc="upper left", fontsize=8.3)
     fig.tight_layout()
     es.save(fig, OUT / "d06-vif-shrs.pdf")
-
-
-# ---------------------------------------- primitiva locale: test su retta reale
-def _stat_line(ax, data, crit, title, xlab, note):
-    """Statistiche osservate su una retta numerica, con regione di rifiuto."""
-    names = list(data)
-    stats_ = [data[k][0] for k in names]
-    lo = min(min(stats_), crit) - 1.1
-    hi = max(max(stats_), 0.0) + 0.9
-    ax.axvspan(lo, crit, color=es.REDBG, alpha=0.85)
-    ax.axvspan(crit, hi, color=es.BLUEBG, alpha=0.8)
-    ax.annotate(f"$t <$ {n(crit, 2)}", xy=(crit, -0.45), xytext=(-6, 0),
-                textcoords="offset points", ha="right", va="center",
-                fontsize=8.5, color=es.RED, fontweight="bold")
-    # la retta del critico si ferma sotto la fascia delle diciture in alto
-    ax.vlines(crit, -0.65, len(names) + 0.12, color=es.RED, ls="--", lw=1.3)
-    for i, k in enumerate(names):
-        st = data[k][0]
-        ax.plot([st], [i], "o", color=es.BLUE, ms=8, zorder=6)
-        # se la statistica sfiora il critico, l'etichetta va di fianco al punto
-        vicino = abs(st - crit) < 0.5
-        ax.annotate(n(st, 4), xy=(st, i),
-                    xytext=(11, 3) if vicino else (0, 9),
-                    textcoords="offset points",
-                    ha="left" if vicino else "center",
-                    fontsize=8.5, color=es.BLUE, fontweight="bold")
-    ax.set_yticks(range(len(names)))
-    ax.set_yticklabels(names, fontsize=9)
-    ax.set_ylim(-0.65, len(names) + 0.9)
-    ax.set_xlim(lo, hi)
-    ax.grid(axis="y", visible=False)
-    es.commas(ax, "x", decimals=1)
-    ax.annotate("rifiuto di $H_0$: serie stazionaria" if "ADF" in xlab
-                else "rifiuto di $H_0$: cointegrazione",
-                xy=(0.015, 0.97), xycoords="axes fraction", ha="left", va="top",
-                fontsize=8.5, color=es.RED, fontweight="bold")
-    ax.annotate("non rifiuto di $H_0$", xy=(0.985, 0.97), xycoords="axes fraction",
-                ha="right", va="top", fontsize=8.5, color=es.BLUE, fontweight="bold")
-    ax.set_xlabel(xlab + "\n" + note, fontsize=8.5)
-    ax.set_title(title, loc="left")
 
 
 def _pvalue_bars(ax, data, title):
     names = list(data)
     p = [data[k][1] for k in names]
-    y = np.arange(len(names))
+    y = np.arange(len(names))[::-1]
     ax.barh(y, p, height=0.5, color=es.AMBER, alpha=0.85)
     ax.axvline(0.05, color=es.RED, ls="--", lw=1.3)
     for yi, pi in zip(y, p):
@@ -395,138 +288,69 @@ def _pvalue_bars(ax, data, title):
 
 # ========================================================= D7 — radici unitarie
 def d07():
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(6.2, 5.0))
-    _stat_line(ax1, ADF, -2.85,
-               "(a) statistiche ADF e regione di rifiuto",
-               "statistica ADF",
-               "riferimento minimale $-2{,}85$ (DF con drift, 5%: unico critico\n"
-               "tabulato nelle note); con costante e trend il critico è $-3{,}41$,\n"
-               "ancora più a sinistra. Per l'ADF vale il p-value")
-    _pvalue_bars(ax2, ADF, "(b) p-value: nessuno scende sotto il 5%")
+    fig, ax = plt.subplots(figsize=(6.2, 2.6))
+    _pvalue_bars(ax, ADF, "p-value dei test ADF: nessuno scende sotto il 5%")
     fig.tight_layout()
     es.save(fig, OUT / "d07-radici-unitarie.pdf")
 
 
 # ========================================================= D8 — cointegrazione
 def d08():
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(6.2, 5.0))
-    _stat_line(ax1, CDF, -3.34,
-               "(a) statistiche CDF (Engle-Granger) e regione di rifiuto",
-               r"statistica CDF, $\tau_c(2)$",
-               "il critico al 5% della $\\tau_c(2)$ non è tabulato nelle note:\n"
-               "$-3{,}34$ è indicativo, la decisione usa il p-value")
-    _pvalue_bars(ax2, CDF, "(b) p-value: tutti vicini a 1, nessuna cointegrazione")
+    fig, ax = plt.subplots(figsize=(6.2, 2.6))
+    _pvalue_bars(ax, CDF, "p-value dei test CDF: nessuna coppia scende sotto il 5%")
     fig.tight_layout()
     es.save(fig, OUT / "d08-cointegrazione.pdf")
 
 
 # ======================================================= D9 — assorbimento ECM
 def d09():
-    fig, (ax1, ax2) = plt.subplots(
-        2, 1, figsize=(6.2, 5.4), gridspec_kw={"height_ratios": [1.35, 1.0]})
-    _, _, tab = es.decay(LAM_TX, horizon=14, targets=(0.5, 0.8), ax=ax1,
-                         title=r"(a) quota di disequilibrio residua, $(1+\hat\lambda)^h$ con $\hat\lambda = -0{,}218680$")
-    # la primitiva scrive "(1-0,2187)^h" dentro $...$ e mathtext apre uno
-    # spazio dopo la virgola: rietichetto tenendo il numero fuori dal math
-    ax1.lines[0].set_label(r"$(1+\hat\lambda)^h$  con  $1+\hat\lambda$ = 0,7813")
-    es.commas(ax1, "y", decimals=1)
-    for t in ax1.texts:
-        t.set_fontsize(8.5)
-    ax1.legend(loc="upper right")
-    print("   orizzonti D9:", tab)
-
-    lo, hi = LAM_TX - 1.96 * SE_LAM_TX, LAM_TX + 1.96 * SE_LAM_TX
-    grid = np.linspace(lo, hi, 400)
-    hstar = np.ceil(np.log(0.5) / np.log(1 + grid))
-    ax2.step(grid, hstar, where="post", color=es.BLUE, lw=1.7,
-             label=r"$h^\star = \lceil \ln(0{,}5)/\ln(1+\lambda) \rceil$")
-    ax2.fill_between(grid, 0, hstar, step="post", color=es.BLUEBG)
-    ax2.plot([LAM_TX], [3], "*", color=es.RED, ms=15, zorder=6)
-    ax2.annotate(r"stima puntuale: $h^\star = 3$", xy=(LAM_TX, 3), xytext=(10, -22),
-                 textcoords="offset points", fontsize=8.5, color=es.RED,
-                 fontweight="bold",
-                 arrowprops=dict(arrowstyle="->", color=es.RED, lw=0.8))
-    ax2.set_xlim(lo, hi)
-    ax2.set_ylim(0, 9.5)
-    es.commas(ax2, "x", decimals=2)
-    es.commas(ax2, "y", decimals=0)
-    ax2.set_xlabel(r"$\lambda$ entro l'IC al 95%:  $[-0{,}3496;\ -0{,}0878]$")
-    ax2.set_ylabel("trimestri per il 50%")
-    ax2.set_title("(b) sensibilità dell'orizzonte all'incertezza su $\\lambda$: da 2 a 8 trimestri",
-                  loc="left")
-    ax2.legend(loc="upper left")
+    k = np.arange(0, 6)
+    cum = 1 - (1 + LAM_TX) ** (k + 1)
+    fig, ax = plt.subplots(figsize=(6.2, 3.0))
+    cols = [es.BLUE if c < 0.5 else es.GREEN for c in cum]
+    ax.bar(k, 100 * cum, width=0.55, color=cols, alpha=0.85)
+    for ki, ci in zip(k, cum):
+        ax.annotate(n(100 * ci, 2) + r"%", xy=(ki, 100 * ci), xytext=(0, 4),
+                    textcoords="offset points", ha="center", fontsize=8.5,
+                    fontweight="bold", color=es.INK)
+    ax.axhline(50, color=es.RED, ls="--", lw=1.3, label="50% del disequilibrio")
+    ax.set_xticks(k)
+    ax.set_xticklabels(["subito", "+1", "+2", "+3", "+4", "+5"])
+    es.commas(ax, "y", decimals=0)
+    ax.set_ylim(0, 92)
+    ax.grid(axis="x", visible=False)
+    ax.set_xlabel("trimestri dopo l'impatto")
+    ax.set_ylabel("disequilibrio assorbito (%)")
+    ax.set_title(r"Quota cumulata assorbita, $1-(1+\hat\lambda)^{k+1}$ con $\hat\lambda = -0{,}21868$",
+                 loc="left")
+    ax.legend(loc="upper left")
     fig.tight_layout()
     es.save(fig, OUT / "d09-assorbimento-ecm.pdf")
 
 
 # =================================================== D10 — disequilibrio < 0
 def d10():
-    # gamma_0 e' significativa (p = 0,0225): la legge di moto e' AFFINE,
-    # z_t = (1+lambda) z_{t-1} + gamma_0, con punto di riposo z* = -gamma_0/lambda.
-    # Entrambi i pannelli usano questa stessa legge.
-    phi = 1 + LAM_IDX
-    zstar = -G0_IDX / LAM_IDX               # +1,255884
-    z0 = -1.0                               # disequilibrio normalizzato
-    h = np.arange(0, 13)
-    z = zstar + phi ** h * (z0 - zstar)     # z_{t-1+h}
-    corr = LAM_IDX * z                      # correzione dell'errore
-    drift = np.full_like(corr, G0_IDX)      # deriva costante
-    tot = drift + corr                      # E[Delta IDX] = lambda (z - z*)
-    h_zero = np.log(zstar / (zstar - z0)) / np.log(phi)                   # 3,756
-    h_half = np.log((0.5 * z0 - zstar) / (z0 - zstar)) / np.log(phi)      # 1,607
-    h_life = np.ceil(np.log(0.5) / np.log(phi))                           # 5
-    print("   D10: z* =", round(zstar, 6), " zero a h =", round(h_zero, 4),
-          " metà gap a h =", round(h_half, 4), " emivita da z* =", int(h_life))
+    ecm = np.linspace(-3.0, 0.0, 200)
+    corr = LAM_IDX * ecm
+    tot = G0_IDX + corr
 
-    fig, (ax1, ax2) = plt.subplots(
-        2, 1, figsize=(6.2, 5.6), gridspec_kw={"height_ratios": [1.2, 1.0]})
-
-    ax1.plot(h, z, "o-", color=es.BLUE, lw=1.7, ms=4.5,
-             label=r"$z_{t-1+h} = z^\star + (1+\hat\lambda)^h (z_{t-1}-z^\star)$")
-    ax1.axhline(0, color=es.GREEN, lw=1.3, ls="--",
-                label="relazione di lungo periodo stimata ($z = 0$)")
-    ax1.axhline(zstar, color=es.AMBER, lw=1.4, ls="-.",
-                label=r"punto di riposo $z^\star = -\hat\gamma_0/\hat\lambda = +1{,}2559$")
-    ax1.fill_between(h, np.minimum(z, 0.0), 0, color=es.REDBG, alpha=0.9)
-    ax1.fill_between(h, np.maximum(z, 0.0), 0, color=es.GREENBG, alpha=0.9)
-
-    # la verticale si ferma sulla curva: piu' in alto taglierebbe la legenda
-    ax1.vlines(h_half, -1.8, -0.674, color=es.TEAL, ls=":", lw=1.1)
-    ax1.annotate("metà del gap iniziale:\n" + r"$h = 1{,}61 \to 2$ trimestri",
-                 xy=(h_half, -0.674), xytext=(26, -19), textcoords="offset points",
-                 va="top", fontsize=8.2, color=es.TEAL, fontweight="bold",
-                 arrowprops=dict(arrowstyle="->", color=es.TEAL, lw=0.8))
-    ax1.plot([h_zero], [0.0], "*", color=es.RED, ms=15, zorder=7)
-    ax1.annotate(r"attraversa lo zero a $h = 3{,}76$", xy=(h_zero, 0.0),
-                 xytext=(14, -18), textcoords="offset points", va="top",
-                 fontsize=8.5, color=es.RED, fontweight="bold",
-                 arrowprops=dict(arrowstyle="->", color=es.RED, lw=0.8))
-    es.commas(ax1, "y", decimals=2)
-    ax1.set_xlabel("trimestri dopo il disequilibrio ($h$)")
-    ax1.set_ylabel(r"$z$ (normalizzato a $-1$)")
-    ax1.set_title(r"(a) con $\hat\gamma_0$ significativa il bersaglio non è lo zero, "
-                  r"ma $z^\star > 0$", loc="left")
-    ax1.legend(loc="upper left", fontsize=8.3)
-    ax1.set_ylim(-1.8, 2.9)
-
-    ax2.bar(h, drift, width=0.62, color=es.RULE,
-            label=r"deriva $\hat\gamma_0 = +0{,}1813$")
-    ax2.bar(h, corr, width=0.62, bottom=drift, color=es.GREEN, alpha=0.85,
-            label=r"correzione $\hat\lambda\,z$: $>0$ finché $z<0$")
-    ax2.plot(h, tot, "o-", color=es.BLUE, lw=1.5, ms=4,
-             label=r"totale $\operatorname{E}[\Delta IDX] = \hat\lambda (z-z^\star) > 0$")
-    ax2.axhline(0, color=es.GRAY, lw=0.8)
-    for i in (0, 1, 4):
-        ax2.annotate("+" + n(tot[i], 4), xy=(h[i], tot[i]), xytext=(0, 7),
-                     textcoords="offset points", ha="center", fontsize=8.2,
-                     fontweight="bold", color=es.INK)
-    es.commas(ax2, "y", decimals=2)
-    ax2.set_xlabel("trimestri dopo il disequilibrio ($h$)")
-    ax2.set_ylabel(r"$\operatorname{E}[\Delta IDX]$")
-    ax2.set_ylim(-0.09, 0.53)
-    ax2.set_title(r"(b) il totale resta positivo, ma dal quarto trimestre la "
-                  r"correzione cambia segno", loc="left")
-    ax2.legend(loc="upper right", fontsize=8.3)
+    fig, ax = plt.subplots(figsize=(6.2, 3.1))
+    ax.axhline(0, color=es.GRAY, lw=0.9)
+    ax.fill_between(ecm, G0_IDX, tot, color=es.GREENBG)
+    ax.plot(ecm, tot, color=es.BLUE, lw=1.8,
+            label=r"$\hat\gamma_0 + \hat\lambda\,\mathrm{ecm}_{t-1}$  (con $\Delta RPO_t = 0$)")
+    ax.axhline(G0_IDX, color=es.AMBER, ls=":", lw=1.2,
+               label=r"$\hat\gamma_0 = 0{,}1813$")
+    ax.annotate(r"$\hat\lambda\,\mathrm{ecm}_{t-1} > 0$", xy=(-1.6, 0.30),
+                fontsize=9, color=es.GREEN, fontweight="bold", ha="center")
+    es.commas(ax, "both", decimals=1)
+    ax.set_xlabel(r"disequilibrio negativo, $\mathrm{ecm}_{t-1} < 0$")
+    ax.set_ylabel(r"$\operatorname{E}[\Delta IDX_t]$")
+    ax.set_xlim(-3.0, 0.0)
+    ax.set_ylim(-0.05, 0.70)
+    ax.set_title(r"Con $\mathrm{ecm}_{t-1} < 0$ e $\hat\lambda < 0$ la variazione attesa di $IDX$ è positiva",
+                 loc="left")
+    ax.legend(loc="upper right", fontsize=8.3)
     fig.tight_layout()
     es.save(fig, OUT / "d10-disequilibrio-negativo.pdf")
 

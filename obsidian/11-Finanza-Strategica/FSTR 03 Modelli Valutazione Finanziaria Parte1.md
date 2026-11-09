@@ -1,121 +1,117 @@
 ---
-title: "Dal valore degli investimenti al valore d'impresa: i metodi DCF (modelli sintetici asset side ed equity side)"
+title: "I metodi DCF: modelli sintetici asset side ed equity side"
 tags:
   - corso/finanza-strategica
   - tipo/lezione
 corso: "[[Finanza Strategica]]"
 source: "FSTR_Slide_03_Modelli-Valutazione-Finanziaria-Parte1.pdf"
-pages: 30
 text_layer: true
 verified: true
 generated: 2026-08-30
 ---
 
-## Introduzione e programma del corso
+## Inquadramento
 
-**Titolo del modulo:** Strategie di investimento — *Dal valore degli investimenti al valore d'impresa: i metodi DCF* — *I modelli sintetici asset side e equity side*.
+Questo capitolo presenta i metodi **DCF** (Discounted Cash Flow) come passaggio dal valore dei singoli investimenti al valore dell'intera impresa. Al centro stanno i **modelli sintetici**, in entrambe le ottiche di valutazione, asset side ed equity side. Il testo di riferimento è il capitolo 8 del testo BBS, fino al paragrafo 8.4.
 
-**Lettura di riferimento:** Capitolo 8, fino a 8.4, Testo BBS.
-
-**Argomenti del corso (in questo modulo si tratta il punto evidenziato):**
-- Le decisioni di investimento per l'impresa indebitata
-- **Dal valore degli investimenti al valore d'impresa (I): i metodi DCF** ← argomento di questa lezione
-- Dal valore degli investimenti al valore d'impresa (II): i multipli di borsa
-- Crescita esterna e valore delle operazioni di integrazione
-- La Due Diligence
-
-*(slide 1–2)*
+I tassi di sconto usati in questi modelli, il WACC per l'ottica assets e il costo dell'equity per l'ottica equity, derivano dalle decisioni di investimento dell'impresa indebitata ([[FSTR 02-full Costo del Capitale|il costo del capitale]]). Dopo i metodi DCF la sequenza degli argomenti passa ai multipli di borsa ([[FSTR 06 Multipli di Borsa lez01|i multipli di borsa]]), alla crescita esterna con la valutazione delle operazioni di integrazione e alla due diligence. I modelli DCF analitici e il terminal value sono sviluppati in [[FSTR 04-full Modelli Valutazione Finanziaria Parte2|i metodi DCF analitici e il VAM]].
 
 ## Le grandezze di riferimento per la valutazione dell'impresa
 
 > [!abstract] Definizione
-> La valutazione d'impresa può essere condotta secondo due ottiche alternative e complementari, **assets** ed **equity**, ciascuna con le proprie grandezze di riferimento a livello patrimoniale, reddituale, finanziario e di costo del capitale:
+> La valutazione d'impresa si conduce in due ottiche, **assets** ed **equity**. In ciascuna si individuano grandezze di riferimento sul piano del valore stimato, patrimoniale, reddituale, finanziario e del costo del capitale.
 >
-> | Dimensione | Ottica «ASSETS» | Ottica «EQUITY» |
+> | Dimensione | Ottica assets | Ottica equity |
 > |---|---|---|
-> | Valore stimato | Asset Value (EV) | Equity (MK CAP) |
+> | Valore stimato | Asset value (enterprise value, EV) | Equity value (capitalizzazione di mercato, MK CAP) |
 > | Patrimoniale | CIN rettificato | Capitale proprio rettificato |
 > | Reddituale | NOPAT normalizzato | Reddito di bilancio normalizzato |
-> | Finanziario | FCFF / FCFO | FCFE |
-> | Costo del capitale | WACC | Costo Equity |
->
-> **Le grandezze da considerare** — schema di raccordo tra le due ottiche:
-> - **Enterprise Value (Assets) = E.V.**
-> - **Equity Value** = MK CAP (capitalizzazione di mercato) + Debt (NFP)
->
-> In altri termini, l'Enterprise Value rappresenta il valore complessivo del capitale investito nell'attività operativa dell'impresa, mentre l'Equity Value (la capitalizzazione di mercato) ne rappresenta solo la componente di pertinenza degli azionisti, al netto della Posizione Finanziaria Netta (NFP).
+> | Finanziario | FCFF (indicato anche come FCFO) | FCFE |
+> | Costo del capitale | WACC | Costo dell'equity |
 
-*(slide 3–4)*
+L'**enterprise value** è il valore del capitale investito nell'attività operativa. Si scompone nel valore del capitale di rischio, cioè l'**equity value** o capitalizzazione di mercato (MK CAP), e nel valore del debito netto, la **posizione finanziaria netta** (PFN, in inglese net financial position, NFP), che è il debito finanziario al netto della cassa:
 
-## Relazione tra Enterprise Value ed Equity Value: esempi numerici
+$$EV = MK\,CAP + PFN$$
+
+L'equity value è dunque la parte dell'EV di pertinenza degli azionisti: $MK\,CAP = EV - PFN$.
+
+## Relazione tra enterprise value ed equity value: esempi numerici
+
+Gli esempi seguenti applicano la relazione $EV = MK\,CAP + PFN$ ai tre casi possibili per il segno della PFN. I valori sono in milioni di euro.
+
+### Impresa indebitata (PFN > 0)
 
 > [!example] Esempio
-> Relazione generale: $$EV = MK\,CAP + NFP$$ dove NFP (Posizione Finanziaria Netta) è il debito finanziario al netto della cassa.
->
-> **Caso 1 — Impresa indebitata, NFP > 0**
->
-> | Impresa | Enterprise Value (E.V.) | Equity Value (MK CAP) | Debt (NFP) |
+> | Impresa | Enterprise value (EV) | Equity value (MK CAP) | Debito (PFN) |
 > |---|---|---|---|
-> | Alfa | €60m | €15m | €45m |
-> | Beta | €70m | €15m | €55m |
+> | Alfa | 60 | 15 | 45 |
+> | Beta | 70 | 15 | 55 |
 >
-> Verifica: Alfa 15+45=60; Beta 15+55=70. A parità di Equity Value, un maggiore indebitamento (NFP) fa aumentare l'Enterprise Value.
->
-> **Caso 2 — Impresa non indebitata, NFP = 0**
->
-> | Impresa | Enterprise Value (E.V.) | Equity Value (MK CAP) |
-> |---|---|---|
-> | Gamma | €95m | €95m |
-> | Delta | €74m | €74m |
->
-> In assenza di debito, Enterprise Value ed Equity Value coincidono numericamente.
->
-> **Caso 3 — Impresa non indebitata con liquidità netta, NFP < 0**
->
-> Rispetto al caso precedente, alle stesse imprese Gamma e Delta si aggiunge una componente di cassa (NFP negativo, cioè posizione di liquidità netta):
-> - Impresa Gamma: Fixed Assets €95m + Cassa (NFP) €10m sul lato dell'attivo; Equity Value (MK CAP) €105m sul lato del passivo; il riquadro complessivo «EV — Enterprise Value» riportato in slide vale €105m (somma di Fixed Assets e Cassa).
-> - Impresa Delta: Fixed Assets €74m + Cassa (NFP) €10m; Equity Value (MK CAP) €84m; il riquadro «EV» vale €84m.
->
-> In entrambi i casi, non essendoci debito, l'Equity Value coincide con il totale dell'attivo (immobilizzazioni + cassa): la liquidità netta si somma, anziché sottrarsi, nel passaggio dal valore degli assets operativi al valore per gli azionisti.
->
-> **Figura (pagine 5-7)** — Schemi a blocchi che scompongono l'Enterprise Value nelle componenti Equity Value (MK CAP) e Debt (NFP) per le imprese Alfa, Beta, Gamma e Delta, nei tre casi di indebitamento netto positivo, nullo e negativo. Illustrano graficamente come $MK\,CAP = EV - NFP$.
+> Verifica: per Alfa 15 + 45 = 60, per Beta 15 + 55 = 70. Le due imprese hanno lo stesso equity value. Beta ha una PFN superiore di 10 e un EV superiore di 10: a parità di equity value, l'EV varia in misura pari alla PFN.
 
-*(slide 5–7)*
+### Impresa non indebitata (PFN = 0)
+
+> [!example] Esempio
+> | Impresa | Enterprise value (EV) | Equity value (MK CAP) |
+> |---|---|---|
+> | Gamma | 95 | 95 |
+> | Delta | 74 | 74 |
+>
+> Senza debito, enterprise value ed equity value coincidono.
+
+### Impresa non indebitata con liquidità netta (PFN < 0)
+
+Le imprese Gamma e Delta hanno la stessa attività operativa del caso precedente (immobilizzazioni per 95 e 74) e in più una cassa di 10. La PFN è quindi pari a $-10$.
+
+> [!example] Esempio
+> | Impresa | Immobilizzazioni (attivo operativo) | Cassa | PFN | Equity value (MK CAP) | EV = MK CAP + PFN |
+> |---|---|---|---|---|---|
+> | Gamma | 95 | 10 | -10 | 105 | 95 |
+> | Delta | 74 | 10 | -10 | 84 | 74 |
+>
+> Per Gamma 105 - 10 = 95, per Delta 84 - 10 = 74.
+
+La cassa aumenta di 10 il valore per gli azionisti e lascia invariato l'EV, perché non fa parte del capitale investito nell'attività operativa. Con liquidità netta il passaggio dal valore dell'attivo operativo al valore per gli azionisti somma la cassa anziché sottrarre il debito. Se si chiamasse enterprise value l'intero attivo, cassa compresa (105 per Gamma, 84 per Delta), l'EV coinciderebbe con l'equity value e non rispetterebbe più la relazione $EV = MK\,CAP + PFN$.
+
+![](assets/fstr-03/fig01.png)
+
+**Figura 1** — Scomposizione dell'enterprise value in equity value (MK CAP) e posizione finanziaria netta (PFN), con blocchi di altezza proporzionale ai valori in milioni di euro. Con PFN positiva l'EV supera l'equity value della PFN, con PFN nulla i due valori coincidono, con PFN negativa l'EV corrisponde alle sole immobilizzazioni (95 e 74) e l'equity value (105 e 84) lo supera della liquidità netta (10).
 
 ## Richiami: EBIT, EBITDA e NOPAT
 
 > [!abstract] Definizione
-> **Definizione.** Il **NOPAT** (Net Operating Profit After Taxes), traducibile come Utile netto operativo (EBIT) post imposte, misura il risultato operativo di una società al netto delle imposte. Di conseguenza misura il profitto netto generato dalle sole attività caratteristiche, indipendentemente dalla struttura finanziaria:
+> Il **NOPAT** (Net Operating Profit After Taxes) è l'utile netto operativo, cioè l'EBIT al netto delle imposte. Misura il profitto netto generato dalle attività caratteristiche. Poiché parte dall'EBIT, prima degli oneri finanziari, non dipende dalla struttura finanziaria dell'impresa:
 > $$NOPAT = EBIT \times (1 - t_c)$$
->
-> **Esempio illustrativo (conto economico):**
->
+
+L'EBITDA coincide con il margine operativo lordo (MOL). Il conto economico seguente mostra la sequenza dall'EBITDA al reddito netto e il calcolo del NOPAT.
+
+> [!example] Esempio
 > | Voce | Valore |
 > |---|---|
 > | Ricavi | 150.000 |
-> | Costo del venduto | 70.000 |
+> | Costo del venduto | -70.000 |
 > | **EBITDA** | **80.000** |
-> | Ammortamenti | 25.000 |
+> | Ammortamenti | -25.000 |
 > | **EBIT** | **55.000** |
-> | Oneri finanziari | 10.000 |
-> | **EBT** | **45.000** |
-> | Imposte 20% | 9.000 |
-> | **Reddito operativo** | **36.000** |
+> | Oneri finanziari | -10.000 |
+> | **EBT** (risultato prima delle imposte) | **45.000** |
+> | Imposte (20%) | -9.000 |
+> | **Reddito netto** | **36.000** |
 >
 > $$NOPAT = EBIT \times (1-t_c) = 55.000 \times (1-20\%) = 44.000$$
 
-*(slide 8)*
+Il NOPAT (44.000) supera il reddito netto (36.000) di 8.000, pari agli oneri finanziari al netto del risparmio d'imposta: $10.000 \times (1 - 20\%)$.
 
 ## Esercizio svolto: EBIT e NOPAT dell'azienda Alfa
 
+L'azienda Alfa di questo esercizio è distinta dall'impresa Alfa dell'esempio sull'enterprise value.
+
 > [!example] Esempio
-> **Traccia.** L'azienda Alfa presenta un Fatturato di € 568.000 e costi di acquisto materie prime per € 372.000, costo del lavoro per € 58.000, costi per affitto immobile produttivo € 43.000, ammortamenti € 12.000, oneri finanziari € 22.000. Il carico fiscale stimato è pari al 27,9%.
+> **Dati.** Fatturato di € 568.000; acquisto di materie prime € 372.000; costo del lavoro € 58.000; affitto dell'immobile produttivo € 43.000; ammortamenti € 12.000; oneri finanziari € 22.000. Il carico fiscale stimato è il 27,9%.
 >
-> Richieste:
-> 1. Calcolare EBITDA e NOPAT.
-> 2. Calcolare il Reddito netto d'esercizio.
+> **Richieste.** Calcolare EBITDA e NOPAT, e il reddito netto d'esercizio.
 >
-> **Soluzione — Conto economico:**
+> **Conto economico**
 >
 > | Voce | Valore |
 > |---|---|
@@ -129,280 +125,314 @@ generated: 2026-08-30
 > | Oneri finanziari | -22.000 |
 > | **EBT** | **61.000** |
 > | Imposte d'esercizio | -17.019 |
-> | **Reddito operativo** | **43.981** |
+> | **Reddito netto** | **43.981** |
 >
-> **Calcolo del NOPAT:**
+> **Calcolo del NOPAT**
 >
 > | Voce | Valore |
 > |---|---|
 > | EBIT | 83.000 |
 > | Imposte sull'EBIT | -23.157 |
 > | **NOPAT** | **59.843** |
->
-> **Nota (NB):** l'ammontare delle imposte calcolate sull'EBIT (23.157, cioè EBIT × 27,9%) è diverso dalle imposte d'esercizio (17.019, cioè EBT × 27,9%), perché diversa è la base imponibile a cui si applica l'aliquota (EBIT vs EBT).
 
-*(slide 9–10)*
+Le imposte sull'EBIT (23.157, cioè $83.000 \times 27{,}9\%$) differiscono dalle imposte d'esercizio (17.019, cioè $61.000 \times 27{,}9\%$) perché è diversa la base imponibile a cui si applica l'aliquota: l'EBIT nel primo caso, l'EBT nel secondo. La differenza, 6.138, è il risparmio d'imposta sugli oneri finanziari ($22.000 \times 27{,}9\%$), detto scudo fiscale. Ne segue il raccordo tra NOPAT e reddito netto: $59.843 - 22.000 + 6.138 = 43.981$.
 
-## Richiami: Capitale Investito Netto (CIN) e Capitale Circolante Netto (CCN)
+## Richiami: capitale investito netto e capitale circolante netto
+
+Lo stato patrimoniale riclassificato in ottica finanziaria contrappone al capitale investito netto le fonti di finanziamento:
+
+| Capitale investito netto | Fonti di finanziamento |
+|---|---|
+| Capitale circolante netto (CCN) | Patrimonio netto (equity) |
+| Capitale immobilizzato netto | Posizione finanziaria netta (PFN, debt) |
 
 > [!abstract] Definizione
-> Lo stato patrimoniale riclassificato in ottica finanziaria contrappone il capitale investito alle fonti di finanziamento:
->
-> | Capitale investito netto | Fonti di finanziamento |
-> |---|---|
-> | CCN: Capitale Circolante Netto | Patrimonio netto: Equity |
-> | Capitale immobilizzato netto | PFN: Debt |
->
-> **Definizione.** Il **capitale investito netto operativo (CIN)** è dato dalla somma tra capitale circolante commerciale (CCN) ed immobilizzazioni caratteristiche nette:
+> Il **capitale investito netto operativo** (CIN) è la somma del capitale circolante commerciale (CCN) e delle immobilizzazioni caratteristiche nette:
 > $$CIN = CCN + \text{Immobilizzazioni caratteristiche nette}$$
-> Specularmente, le fonti di finanziamento si compongono di Patrimonio Netto (Equity) e Posizione Finanziaria Netta (PFN, Debt).
 
-*(slide 11)*
+Le due colonne hanno per costruzione lo stesso totale, quindi $CIN = \text{Patrimonio netto} + PFN$. Nelle formule successive il capitale investito netto operativo è indicato con CINO, il capitale circolante netto operativo con CCNO e il patrimonio netto (capitale proprio) con C.P.
 
 ## La valutazione assoluta (DCF)
 
-La valutazione assoluta (Discounted Cash Flow):
-- È **focalizzata sull'impresa** e fondata:
-  - sull'analisi delle sue **caratteristiche** (business model, strategie, management, patrimonio, ecc.) e sulla previsione delle future **performance economico-finanziarie**;
-  - sulla considerazione delle sue **politiche finanziarie** (di finanziamento e di dividendo);
-  - sulla misurazione del suo **rischio operativo e finanziario**.
-- Si basa su un **criterio analitico di stima**.
-- Conduce a **valori finanziari** (anche detti «fondamentali», o valori **intrinseci**) che hanno significato economico in quanto fondati sul principio di convenienza economica dell'investimento in capitale di rischio aziendale.
+La **valutazione assoluta** si concentra sull'impresa. Poggia sull'analisi delle sue caratteristiche (modello di business, strategie, management, patrimonio e così via) e sulla previsione delle performance economico-finanziarie future. Considera le sue politiche finanziarie, di finanziamento e di dividendo, e misura il suo rischio operativo e finanziario. Si basa su un criterio analitico di stima.
 
-**Note terminologiche:**
-- *Rischio operativo*: rischio di perdite derivanti da fallimenti o inadeguatezza dei processi interni, delle risorse umane e dei sistemi tecnologici, oppure derivanti da eventi esterni.
-- *Rischio finanziario*: rischio che incide sulla liquidità aziendale, legato all'equilibrio tra flussi monetari in entrata e in uscita.
+Il risultato è un insieme di **valori finanziari**, detti anche valori fondamentali o **valori intrinseci**. Hanno significato economico perché fondati sul principio di convenienza economica dell'investimento in capitale di rischio aziendale.
 
-**Figura (pagina 13)** — Estratto del rendiconto finanziario consolidato di Brembo (esercizi 31/12/2020 e 31/12/2019), articolato in flusso monetario generato dalla gestione operativa, flusso da attività di investimento e flusso da attività di finanziamento, con riconciliazione della disponibilità liquida di inizio e fine periodo. L'esempio mostra concretamente come, a partire da un bilancio reale, si ricostruiscono i flussi di cassa che alimentano i modelli DCF di valutazione assoluta.
+Per rischio operativo si intende il rischio di perdite derivanti da fallimenti o inadeguatezza dei processi interni, delle risorse umane e dei sistemi tecnologici, oppure da eventi esterni. Il rischio finanziario incide sulla liquidità aziendale ed è legato all'equilibrio tra flussi monetari in entrata e in uscita.
 
-*(slide 12–13)*
+Un esempio di rendiconto finanziario di un'impresa reale è quello consolidato di Brembo, in migliaia di euro, per gli esercizi chiusi al 31 dicembre 2020 e 2019.
 
-## La valutazione relativa (multipli): definizione
+| Voce | 31.12.2020 | 31.12.2019 |
+|---|---|---|
+| **Disponibilità liquide e mezzi equivalenti all'inizio del periodo** | **168.559** | **195.871** |
+| Risultato prima delle imposte | 156.044 | 307.691 |
+| Ammortamenti/Svalutazioni | 207.550 | 196.630 |
+| Plusvalenze/Minusvalenze | -1.695 | -2.157 |
+| Proventi e oneri da partecipazioni al netto dei dividendi ricevuti | -413 | -3.984 |
+| Componente finanziaria dei fondi a benefici definiti e debiti per il personale | 407 | 577 |
+| Accantonamenti a fondi relativi al personale | 2.423 | 2.502 |
+| Altri accantonamenti ai fondi al netto degli utilizzi | 48.618 | -52 |
+| Risultato derivante da attività operative cessate | -304 | -6.422 |
+| **Flusso monetario generato dalla gestione reddituale** | **412.630** | **494.785** |
+| Imposte correnti pagate | -48.873 | -65.961 |
+| Utilizzi dei fondi relativi al personale | -4.580 | -4.813 |
+| *(Aumento) diminuzione delle attività a breve:* | | |
+| rimanenze | -23.913 | -7.604 |
+| attività finanziarie | 136 | -5 |
+| crediti commerciali | 4.387 | 14.558 |
+| crediti verso altri e altre attività | -9.175 | -6.306 |
+| *Aumento (diminuzione) delle passività a breve:* | | |
+| debiti commerciali | 910 | -90.846 |
+| debiti verso altri e altre passività | 18.382 | -26.374 |
+| Effetto delle variazioni dei cambi sul capitale circolante | -16.503 | -814 |
+| **Flusso monetario netto generato/(assorbito) da attività operativa** | **333.401** | **306.620** |
+| *Investimenti in immobilizzazioni:* | | |
+| materiali | -162.052 | -213.657 |
+| di cui diritto di utilizzo beni in leasing | -37.755 | -38.165 |
+| immateriali | -28.273 | -38.111 |
+| finanziarie | -182.862 | -131 |
+| Prezzo di realizzo, o valore di rimborso, di immobilizzazioni | 4.205 | 6.589 |
+| **Flusso monetario netto generato/(assorbito) da attività di investimento** | **-368.982** | **-245.310** |
+| Dividendi pagati nel periodo | 0 | -71.541 |
+| Acquisto azioni proprie | 0 | -11.329 |
+| Dividendi pagati nel periodo ad azionisti di minoranza | -640 | -800 |
+| Variazione di fair value di strumenti derivati | 648 | -1.920 |
+| Nuovi contratti per beni in leasing | 35.616 | 38.167 |
+| Rimborso passività per beni in leasing | -24.826 | -24.436 |
+| Mutui e finanziamenti assunti nel periodo da banche e altri finanziatori | 425.000 | 103.518 |
+| Rimborso di mutui e finanziamenti a lungo termine | -122.492 | -120.205 |
+| **Flusso monetario netto generato/(assorbito) da attività di finanziamento** | **313.306** | **-88.546** |
+| **Flusso monetario complessivo** | **277.725** | **-27.236** |
+| Effetto delle variazioni dei cambi sulle disponibilità liquide e mezzi equivalenti | -1.054 | -76 |
+| **Disponibilità liquide e mezzi equivalenti alla fine del periodo** | **445.230** | **168.559** |
+
+Il flusso monetario complessivo è la somma dei flussi dell'attività operativa, di investimento e di finanziamento: nel 2020, $333.401 - 368.982 + 313.306 = 277.725$. Aggiungendo questo flusso e l'effetto dei cambi (-1.054) alla liquidità iniziale (168.559) si ottiene la liquidità finale di 445.230.
+
+## La valutazione relativa (multipli)
 
 > [!abstract] Definizione
-> Nella logica comparativa, la valutazione:
-> - esprime un **valore relativo** dell'impresa, fondato sulla comparazione con imprese simili (*comparables*);
-> - richiede l'applicazione di moltiplicatori (i **multipli di mercato**) desumibili dalla dinamica dei prezzi che il mercato segna per i comparables;
-> - conduce a **valori di mercato** (anche detti **prezzi probabili**).
+> La valutazione relativa esprime un **valore relativo** dell'impresa, fondato sul confronto con imprese simili (*comparables*). Richiede l'applicazione di moltiplicatori, i **multipli di mercato**, ricavati dai prezzi che il mercato segna per i comparables, e conduce a **valori di mercato**, detti anche **prezzi probabili**.
 >
-> **Definizione.** I multipli di mercato sono **rapporti tra i prezzi di mercato (quotazioni) di uno strumento azionario e una data grandezza di bilancio**.
+> I multipli di mercato sono rapporti tra il prezzo di mercato (quotazione) di uno strumento azionario e una data grandezza di bilancio.
 
-*(slide 14)*
+### Esempio: individuazione dei comparables nel settore automotive
 
-## Esempio: individuazione dei comparables e calcolo dei multipli
+Il primo passo è scegliere le imprese confrontabili. Partendo da Brembo, si considerano quattro imprese del settore automotive e se ne confrontano sede, dimensione e valutazione.
 
 > [!example] Esempio
-> **Passo 1 — Identificazione dei comparables.** Partendo da Brembo (produttore di sistemi frenanti), si individua un insieme di comparables nel settore automotive tramite uno strumento di ricerca aziendale:
->
-> | Azienda | Sede principale (HQ) | Dipendenti | Valutazione ($) |
-> |---|---|---|---|
-> | Brembo | Stezzano, IT | 10.868 (↑3%) | 3,5 miliardi |
-> | Kongsberg Automotive | Zürich, CH | 11.234 (↑3%) | 265,9 milioni |
-> | Ford Otosan | İstanbul, TR | 14.145 | N/A |
-> | Subaru | Tokyo, JP | 36.910 | 13,2 miliardi |
-> | BorgWarner | Auburn Hills, US | 49.300 (↓1%) | 9,2 miliardi |
->
-> **Figura (pagina 15)** — Screenshot di uno strumento di ricerca comparables che affianca Brembo a quattro potenziali comparables del settore automotive, con sede, numero di dipendenti e valutazione. Mostra il primo passo pratico di selezione dell'insieme di comparables.
->
-> **Passo 2 — Calcolo dei multipli su comparables più mirati.** Il set viene affinato a due comparables più simili a Brembo per attività (componentistica auto): Sogefi e Valeo.
->
+> | Azienda | Attività | Sede principale | Dipendenti | Valutazione (USD) |
+> |---|---|---|---|---|
+> | Brembo | Tecnologie di freni a disco per veicoli | Stezzano (IT) | 10.868 (+3%) | 3,5 miliardi |
+> | Kongsberg Automotive | Sviluppo, produzione e vendita di prodotti per l'industria automotive | Zurigo (CH) | 11.234 (+3%) | 265,9 milioni |
+> | Ford Otosan | Produzione, assemblaggio, importazione, esportazione e vendita di veicoli a motore e ricambi in Turchia | Istanbul (TR) | 14.145 | n.d. |
+> | Subaru | Gruppo con attività automotive e aerospaziali (già Fuji Heavy Industries) | Tokyo (JP) | 36.910 | 13,2 miliardi |
+> | BorgWarner | Soluzioni tecnologiche per veicoli a combustione, ibridi ed elettrici | Auburn Hills (US) | 49.300 (-1%) | 9,2 miliardi |
+
+### Esempio: P/E e P/BV di Brembo, Sogefi e Valeo
+
+Si considerano poi come comparables di Brembo due società della componentistica automotive, Sogefi e Valeo, e si confrontano due multipli: il P/E (prezzo su utili) e il P/BV (prezzo su valore contabile del patrimonio netto).
+
+> [!example] Esempio
 > | Azienda | P/E | P/BV |
 > |---|---|---|
 > | Brembo | 16,48 | 2,02 |
 > | Sogefi | 51,53 | 0,54 |
 > | Valeo | 22,99 | 1,09 |
->
-> **Figura (pagina 16)** — Confronto tra Brembo, Sogefi e Valeo sui multipli Price/Earnings (P/E) e Price/Book Value (P/BV). Evidenzia una forte eterogeneità di valutazione tra imprese dello stesso settore: Brembo presenta il P/E più basso ma il P/BV più alto del gruppo.
->
-> **Passo 3 — Applicazione del multiplo EV/EBITDA nel settore alimentare (secondo esempio).**
->
-> | Azienda | Capitalizzazione (mgl €) | EBITDA (mgl €) | Multiplo EBITDA |
-> |---|---|---|---|
-> | Conagra Foods Inc. | 17.383.003 € | 1.391.339 € | 12,49 |
-> | General Mills Inc. | 35.364.038 € | 2.999.013 € | 11,79 |
-> | Kellog Co. | 24.665.300 € | 2.319.281 € | 10,63 |
-> | Marr S.p.A. | 1.269.299 € | 105.674 € | 12,01 |
-> | Tyson Foods, Inc. | 19.542.863 € | 2.479.693 € | 7,88 |
->
-> Valore medio del multiplo EBITDA nel gruppo: **10,96**.
->
-> **Figura (pagina 17)** — Grafico a barre «Multiplo EBITDA» per le cinque aziende del settore alimentare, con linea orizzontale del valore medio (10,96). Mostra la dispersione dei multipli EV/EBITDA impliciti tra i comparables (da 7,88 di Tyson Foods a 12,49 di Conagra Foods), multipli che possono essere applicati all'EBITDA di un'impresa target (es. MARR S.p.A., evidenziata) per stimarne il valore per analogia di mercato.
 
-*(slide 15–17)*
+Brembo ha il P/E più basso del gruppo (16,48 contro 51,53 e 22,99) e il P/BV più alto (2,02 contro 0,54 e 1,09). I multipli di imprese dello stesso settore possono quindi differire molto, e in senso opposto a seconda del multiplo considerato.
+
+### Esempio: multiplo dell'EBITDA nel settore alimentare
+
+> [!example] Esempio
+> Il multiplo dell'EBITDA è il rapporto tra capitalizzazione ed EBITDA. Importi in migliaia di euro.
+>
+> | Azienda | Capitalizzazione | EBITDA | Multiplo EBITDA |
+> |---|---|---|---|
+> | Conagra Foods Inc. | 17.383.003 | 1.391.339 | 12,49 |
+> | General Mills Inc. | 35.364.038 | 2.999.013 | 11,79 |
+> | Kellogg Co. | 24.665.300 | 2.319.281 | 10,63 |
+> | Marr S.p.A. | 1.269.299 | 105.674 | 12,01 |
+> | Tyson Foods Inc. | 19.542.863 | 2.479.693 | 7,88 |
+>
+> Il valore medio del multiplo nel gruppo è $(12{,}49 + 11{,}79 + 10{,}63 + 12{,}01 + 7{,}88)/5 = 10{,}96$.
+
+![](assets/fstr-03/fig02.png)
+
+**Figura 2** — Multiplo EBITDA nel settore alimentare: i valori vanno da 7,88 (Tyson Foods) a 12,49 (Conagra Foods), con media semplice 10,96. Kellogg e Tyson Foods si collocano sotto la media, le altre tre società sopra.
+
+Moltiplicando il multiplo (per esempio la media del gruppo) per l'EBITDA dell'impresa da valutare si ottiene una stima del suo valore per analogia con i comparables. In senso stretto, il numeratore dei multipli della tabella è la capitalizzazione di mercato, mentre l'EBITDA è un margine calcolato prima degli oneri finanziari: un rapporto coerente con l'EBITDA avrebbe al numeratore l'enterprise value (multiplo EV/EBITDA). Il tema è ripreso in [[FSTR 06 Multipli di Borsa lez01|l'ottica assets e l'ottica equity nei multipli]].
 
 ## Valutazione assoluta e valutazione relativa: un approccio complementare
 
-L'approccio professionale oggi ritenuto più corretto è quello di **associare** le valutazioni assolute e relative.
-
-Il ricorso ai multipli in senso **complementare** risponde all'esigenza di identificare le **leve del valore** e le **leve di prezzo** (variabili di contesto) che guidano i prezzi del mercato finanziario, nella prospettiva di una migliore copertura dello spettro di informazioni rilevanti ai fini della valutazione.
-
-*(slide 18)*
+Sul piano professionale si ritiene oggi più corretto associare le valutazioni assolute e relative. Il ricorso ai multipli in senso **complementare** serve a individuare le **leve del valore** e le **leve di prezzo** (variabili di contesto) che guidano i prezzi del mercato finanziario, e a coprire meglio lo spettro delle informazioni rilevanti per la valutazione.
 
 ## I metodi DCF: formule generali
 
 > [!abstract] Definizione
-> Le formule generali dei metodi DCF si distinguono per ottica di valutazione (Assets vs Equity):
+> Le formule generali dei metodi DCF dipendono dall'ottica di valutazione.
 >
-> **Ottica Assets:**
+> Ottica assets (il valore dell'attività operativa è la somma dei FCFF attualizzati al WACC):
 > $$V = \sum_{t=1}^{\infty} \frac{FCFF_t}{(1 + WACC)^t}$$
 >
-> **Ottica Equity:**
+> Ottica equity (il valore del capitale proprio è la somma dei FCFE attualizzati al costo dell'equity):
 > $$E = \sum_{t=1}^{\infty} \frac{FCFE_t}{(1 + r_E)^t}$$
 >
-> Le due grandezze sono legate dalla relazione:
+> I due valori sono legati da
 > $$E = V - D$$
->
-> **Nota importante:** Affinché sia possibile utilizzare tassi di sconto stabili (WACC e $r_E$ costanti nel tempo), tali metodi assumono **costanza nel tempo del rischio operativo e finanziario** dell'impresa.
+> dove $D$ è il valore del debito finanziario netto (PFN).
 
-*(slide 19)*
+Per poter usare tassi di sconto stabili, WACC e $r_E$ costanti nel tempo, i metodi assumono la costanza nel tempo del rischio operativo e del rischio finanziario.
 
 ## I flussi finanziari di riferimento: dal MOL a FCFF e FCFE
 
+Il flusso di cassa rilevante per le valutazioni aziendali si costruisce a cascata a partire dal MOL e attraversa cinque aree: gestione corrente, investimenti, straordinaria, capitale di terzi e capitale proprio.
+
 > [!abstract] Definizione
-> Il flusso di cassa rilevante per le valutazioni aziendali si costruisce a cascata a partire dal MOL, attraversando le diverse aree gestionali dell'impresa:
->
 > | Area | Voce | Flusso intermedio |
 > |---|---|---|
-> | Area gestione corrente | MOL | |
-> | | − Variazione CCNO | |
-> | | | **CASH FLOW GESTIONALE LORDO** |
-> | | − Flusso fiscale operativo (imposte + scudi fiscali − variazione debiti per imposte) | |
-> | | | **CASH FLOW GESTIONALE NETTO** |
-> | Area investimenti | −/+ Investimenti/Disinvestimenti in capitale fisso | |
-> | | | **FREE CASH FLOW TO THE FIRM (FCFF)** |
-> | Area straordinaria | +/− Proventi/Oneri straordinari | |
-> | Area capitale di terzi | − Oneri finanziari netti | |
-> | | + Scudo fiscale oneri finanziari | |
-> | | +/− Aumento/Riduzione debiti finanziari | |
-> | Area capitale proprio | | **FREE CASH FLOW TO EQUITY (FCFE)** |
->
-> Il FCFF rappresenta il flusso disponibile per tutti i finanziatori (equity e debito), mentre il FCFE è il flusso residuo disponibile per i soli azionisti dopo aver remunerato e rimborsato/rifinanziato il debito.
+> | Gestione corrente | MOL | |
+> | | - Variazione CCNO | |
+> | | | **Cash flow gestionale lordo** |
+> | | - Flusso fiscale operativo (imposte + scudi - variazione dei debiti per imposte) | |
+> | | | **Cash flow gestionale netto** |
+> | Investimenti | -/+ Investimenti/disinvestimenti in capitale fisso | |
+> | | | **Free cash flow to the firm (FCFF)** |
+> | Straordinaria | +/- Proventi/oneri straordinari | |
+> | Capitale di terzi | - Oneri finanziari netti | |
+> | | + Scudo fiscale sugli oneri finanziari | |
+> | | +/- Aumento/riduzione dei debiti finanziari | |
+> | Capitale proprio | | **Free cash flow to equity (FCFE)** |
 
-*(slide 20)*
+Il FCFF è il flusso disponibile per tutti i finanziatori, equity e debito. Il FCFE è il flusso residuo che spetta ai soli azionisti, dopo la gestione straordinaria, gli oneri finanziari al netto dello scudo fiscale e la variazione dei debiti finanziari.
 
-## I metodi DCF: funzionamento — modelli sintetici e analitici
+## I metodi DCF: modelli sintetici e modelli analitici
 
 > [!abstract] Definizione
-> I metodi DCF si distinguono in due modelli alternativi di funzionamento:
->
 > | Modello sintetico | Modello analitico |
 > |---|---|
-> | Il valore degli assets o dell'equity viene ottenuto con **formule compatte** che, ad esempio, prevedono: flussi costanti; flussi con tasso di crescita costante | Il valore degli assets o dell'equity viene ottenuto come **somma tra**: un valore frutto di un piano esplicito (3-7 anni); un **terminal value** attualizzato, frutto di un metodo sintetico |
->
-> **Nota importante:** solitamente si utilizza il metodo analitico; tuttavia il vantaggio dei metodi sintetici rispetto a quello analitico si manifesta nel caso di «periodi di discontinuità» (grossi investimenti pluriennali, abbattimento debito, ecc.), dove i modelli sintetici — con la loro semplicità — restano comunque utili come base per stimare il terminal value nel metodo analitico.
+> | Il valore degli assets o dell'equity si ottiene con **formule compatte**, che prevedono per esempio flussi costanti oppure flussi che crescono a un tasso costante. | Il valore degli assets o dell'equity si ottiene come somma di un **valore frutto di un piano esplicito** (3-7 anni) e di un **terminal value** attualizzato, calcolato con un metodo sintetico. |
 
-*(slide 21)*
+Di norma si utilizza il metodo analitico. Il suo vantaggio rispetto ai metodi sintetici emerge nei periodi di discontinuità, per esempio grandi investimenti pluriennali o abbattimento del debito: in queste fasi i flussi non sono né costanti né crescenti a tasso costante, e solo un piano esplicito può rappresentarli. Il terminal value del metodo analitico è a sua volta ottenuto con un modello sintetico, come quelli illustrati di seguito. Il metodo analitico è trattato in [[FSTR 04-full Modelli Valutazione Finanziaria Parte2|i metodi DCF analitici]] e il terminal value in [[FSTR 05 Annotazioni sul Terminal Value|le annotazioni sul terminal value]].
 
-## I flussi finanziari FCFF e FCFE nelle ipotesi Steady State e Steady Growth
+## FCFF e FCFE in steady state e in steady growth
+
+Le formule generali del flusso di cassa si semplificano sotto due ipotesi limite: i flussi costanti nel tempo (steady state) e i flussi che crescono a un tasso costante $g$ (steady growth).
+
+### Steady state
 
 > [!abstract] Definizione
-> Le formule generali del flusso di cassa (si veda la sezione precedente) si semplificano notevolmente sotto due ipotesi limite.
->
-> **Ipotesi Steady State (flussi costanti nel tempo):**
->
 > | Formula generale | Steady state |
 > |---|---|
 > | MOL | MOL |
-> | − Variazione CCNO | − (nulla) |
-> | CASH FLOW GESTIONALE LORDO | → MOL |
-> | − Flusso fiscale operativo | − Imposte operative |
-> | CASH FLOW GESTIONALE NETTO | → MOL netto |
-> | −/+ Investimenti/Disinvestimenti capitale fisso | −/+ Ammortamenti |
-> | FREE CASH FLOW TO THE FIRM (FCFF) | → **NOPAT** |
-> | +/− Proventi/Oneri straordinari | +/− Proventi/Oneri straordinari |
-> | − Oneri finanziari netti | − Oneri finanziari netti |
-> | + Scudo fiscale oneri finanziari | + Scudo fiscale oneri finanziari |
-> | +/− Aumento/Riduzione debiti finanziari | − (nulla) |
-> | FREE CASH FLOW TO EQUITY (FCFE) | → **RIS. BIL.** (Reddito di bilancio) |
->
-> In steady state, non essendovi variazioni di capitale circolante, investimenti netti in eccesso rispetto agli ammortamenti, né variazioni del debito finanziario, il **FCFF coincide con il NOPAT** e il **FCFE coincide con il Reddito di bilancio**.
->
-> **Ipotesi Steady Growth (flussi che crescono a un tasso costante g):**
->
+> | - Variazione CCNO | 0 (variazione nulla) |
+> | Cash flow gestionale lordo | → MOL |
+> | - Flusso fiscale operativo | - Imposte operative |
+> | Cash flow gestionale netto | → MOL netto |
+> | -/+ Investimenti/disinvestimenti in capitale fisso | -/+ Ammortamenti |
+> | Free cash flow to the firm (FCFF) | → **NOPAT** |
+> | +/- Proventi/oneri straordinari | +/- Proventi/oneri straordinari |
+> | - Oneri finanziari netti | - Oneri finanziari netti |
+> | + Scudo fiscale sugli oneri finanziari | + Scudo fiscale sugli oneri finanziari |
+> | +/- Aumento/riduzione dei debiti finanziari | 0 (nessuna variazione) |
+> | Free cash flow to equity (FCFE) | → **Reddito di bilancio** |
+
+In steady state il capitale circolante non varia, gli investimenti in capitale fisso si limitano a reintegrare gli ammortamenti e il debito finanziario resta costante. Il MOL al netto delle imposte operative e degli ammortamenti è il NOPAT, quindi il **FCFF coincide con il NOPAT**. Aggiungendo oneri finanziari, scudo fiscale e componenti straordinarie si arriva al reddito di bilancio, quindi il **FCFE coincide con il reddito di bilancio**.
+
+### Steady growth
+
+> [!abstract] Definizione
 > | Formula generale | Steady growth |
 > |---|---|
 > | MOL | MOL × (1+g) |
-> | − Variazione CCNO | − g × CCNO |
-> | CASH FLOW GESTIONALE LORDO | → MOL×(1+g) − g×CCNO |
-> | − Flusso fiscale operativo | − Imposte operative × (1+g) |
-> | CASH FLOW GESTIONALE NETTO | → MOL netto×(1+g) − g×CCNO |
-> | −/+ Investimenti/Disinvestimenti capitale fisso | − (g×C.F. + Amm.×(1+g)) |
-> | FREE CASH FLOW TO THE FIRM (FCFF) | → **NOPAT×(1+g) − g×CINO** |
-> | +/− Proventi/Oneri straordinari | +/− Proventi/Oneri straordinari × (1+g) |
-> | − Oneri finanziari netti | − Oneri finanziari netti × (1+g) |
-> | + Scudo fiscale oneri finanziari | + Scudo fiscale × (1+g) |
-> | +/− Aumento/Riduzione debiti finanziari | + g × Debiti finanziari |
-> | FREE CASH FLOW TO EQUITY (FCFE) | → **RIS. BIL.×(1+g) − g×C.P.** |
->
-> In steady growth, tutte le componenti crescono al tasso costante g; il FCFF risulta pari a NOPAT×(1+g) al netto del reinvestimento necessario a sostenere la crescita del capitale investito netto operativo (CINO), e analogamente il FCFE è pari al Reddito di bilancio×(1+g) al netto del reinvestimento in capitale proprio (C.P.) necessario a sostenere la crescita.
+> | - Variazione CCNO | - g × CCNO |
+> | Cash flow gestionale lordo | → MOL × (1+g) - g × CCNO |
+> | - Flusso fiscale operativo | - Imposte operative × (1+g) |
+> | Cash flow gestionale netto | → MOL netto × (1+g) - g × CCNO |
+> | -/+ Investimenti/disinvestimenti in capitale fisso | - (g × C.F. + Amm. × (1+g)) |
+> | Free cash flow to the firm (FCFF) | → **NOPAT × (1+g) - g × CINO** |
+> | +/- Proventi/oneri straordinari | +/- Proventi/oneri straordinari × (1+g) |
+> | - Oneri finanziari netti | - Oneri finanziari netti × (1+g) |
+> | + Scudo fiscale sugli oneri finanziari | + Scudo fiscale × (1+g) |
+> | +/- Aumento/riduzione dei debiti finanziari | + g × Debiti finanziari |
+> | Free cash flow to equity (FCFE) | → **Reddito di bilancio × (1+g) - g × C.P.** |
 
-*(slide 22–23)*
+Le grandezze economiche (MOL, imposte operative, ammortamenti, oneri finanziari, scudo fiscale) e quelle patrimoniali (CCNO, capitale fisso C.F., debiti finanziari) sono riferite all'ultimo esercizio e crescono al tasso $g$. Gli ammortamenti moltiplicati per $(1+g)$ si sottraggono al MOL netto $\times (1+g)$ e lasciano il $NOPAT \times (1+g)$. Restano da sottrarre l'aumento del CCNO ($g \times CCNO$) e la crescita del capitale fisso ($g \times C.F.$), che insieme valgono $g \times CINO$, perché $CINO = CCNO + C.F.$ Ne risulta $FCFF = NOPAT \times (1+g) - g \times CINO$.
 
-## I modelli sintetici DCF: le formule di Steady State e Steady Growth
+Per il FCFE si aggiunge che il debito finanziario cresce anch'esso al tasso $g$ e produce una nuova raccolta di $g \times D$. Poiché $CINO - D = C.P.$, il FCFE diventa:
+
+$$FCFE = \text{Reddito di bilancio} \times (1+g) - g \times CINO + g \times D = \text{Reddito di bilancio} \times (1+g) - g \times C.P.$$
+
+## Le formule dei modelli sintetici
+
+Le formule compatte si ottengono sostituendo i flussi appena descritti nelle formule generali e sommando la serie. Per un flusso costante $F$ scontato al tasso $i$, la somma dei valori attuali è $F/i$. Per un flusso che cresce ogni anno al tasso $g$, con primo flusso $F_1$, è $F_1/(i-g)$, purché $g < i$.
 
 > [!abstract] Definizione
-> Applicando le semplificazioni di flusso viste nella sezione precedente alle formule generali di valutazione, si ottengono le formule compatte dei modelli sintetici:
->
-> **Steady state:**
+> **Steady state**
 > $$V = \frac{NOPAT}{WACC}$$
 > $$E = \frac{R.BILANCIO}{r_E}$$
 >
-> **Steady growth:**
+> **Steady growth**
 > $$V = \frac{NOPAT(1+g) - CINO \cdot g}{WACC - g}$$
 > $$E = \frac{R.BILANCIO(1+g) - C.P. \cdot g}{r_E - g}$$
 >
-> dove $V$ è il valore in ottica assets (Enterprise Value), $E$ il valore in ottica equity (Equity Value), $g$ il tasso di crescita costante, $CINO$ il Capitale Investito Netto Operativo, $C.P.$ il Capitale Proprio, $WACC$ il costo medio ponderato del capitale e $r_E$ il costo dell'equity (rendimento atteso dagli azionisti).
+> Nelle formule $V$ è il valore in ottica assets (enterprise value), $E$ il valore in ottica equity (equity value), $g$ il tasso di crescita costante, $CINO$ il capitale investito netto operativo, $C.P.$ il capitale proprio, $WACC$ il costo medio ponderato del capitale e $r_E$ il costo dell'equity, cioè il rendimento atteso dagli azionisti.
 
-*(slide 24)*
-
-## Esempio «Steady State»: valutazione dell'impresa Alfa
+## Esempio steady state: valutazione dell'impresa Alfa
 
 > [!example] Esempio
-> **Traccia.** Considerando l'esempio precedente dell'azienda Alfa (pagine 9-10 di queste slides), si calcoli l'Enterprise Value e l'Equity Value sapendo che è stato stimato un WACC del 5,8% ed un rendimento atteso per gli azionisti ($r_E$) pari al 7,5%.
+> **Dati.** Si riprendono i risultati dell'esercizio sull'azienda Alfa: NOPAT 59.843 e reddito netto 43.981. Il WACC stimato è il 5,8% e il rendimento atteso per gli azionisti ($r_E$) è il 7,5%. Si vuole il valore dell'impresa in ottica assets e in ottica equity.
 >
-> Domanda: Quanto vale l'impresa Alfa? In ottica Assets? In ottica Equity?
+> **Ottica assets.**
 >
-> **Soluzione.** Applicando le formule dello steady state con NOPAT = 59.843 e Reddito operativo = 43.981 (calcolati nell'esercizio delle pagine 9-10):
+> $$EV = \frac{NOPAT}{WACC} = \frac{59.843}{5{,}8\%} = 1.031.776$$
 >
-> | EV = NOPAT / WACC | |
+> **Ottica equity.**
+>
+> $$E = \frac{R.BILANCIO}{r_E} = \frac{43.981}{7{,}5\%} = 586.413$$
+>
+> **Posizione finanziaria netta implicita.** Dalla relazione $E = EV - PFN$:
+>
+> $$PFN = EV - E = 1.031.776 - 586.413 = 445.363$$
+>
+> | Grandezza | Valore |
 > |---|---|
-> | 59.843 / 5,8% = | **1.031.776** |
->
-> | Equity Value = Redd. Operativo / $r_E$ | |
-> |---|---|
-> | 43.981 / 7,5% = | **586.413** |
->
-> **Risultato finale:**
-> - Enterprise Value (ottica Assets) = **1.031.776**
-> - Equity Value (ottica Equity) = **586.413**
-> - Posizione Finanziaria Netta implicita: $NFP = EV - Equity\,Value = 1.031.776 - 586.413 = $ **445.363**
+> | Enterprise value (ottica assets) | 1.031.776 |
+> | Equity value (ottica equity) | 586.413 |
+> | PFN implicita | 445.363 |
 
-*(slide 25–27)*
+In steady state il FCFE coincide con il reddito netto. Il passaggio dal NOPAT al reddito netto si verifica con i dati dell'esercizio: $59.843 - 22.000 + 6.138 = 43.981$, cioè NOPAT, meno oneri finanziari, più scudo fiscale ($22.000 \times 27{,}9\%$).
 
-## Esempio «Steady Growth»: valutazione dell'impresa Alfa
+## Esempio steady growth: valutazione dell'impresa Alfa
 
 > [!example] Esempio
-> **Traccia.** Considerando l'esempio precedente dell'azienda Alfa, si calcoli l'Enterprise Value e l'Equity Value sapendo che è stato stimato un WACC del 5,8% ed un rendimento atteso per gli azionisti ($r_E$) pari al 7,5%. Sappiamo inoltre che l'azienda presenta un Capitale Investito Netto Operativo di Euro 760.000, un Capitale Proprio di Euro 302.000 e prevede di crescere ad un tasso costante del 2,0%.
+> **Dati.** Stessi NOPAT (59.843), reddito netto (43.981), WACC (5,8%) e $r_E$ (7,5%) dell'esempio precedente. L'azienda ha un capitale investito netto operativo di € 760.000, un capitale proprio di € 302.000 e prevede di crescere a un tasso costante $g$ del 2,0%.
 >
-> Domanda: Quanto vale l'impresa Alfa? In ottica Assets? In ottica Equity?
+> **Ottica assets.**
 >
-> **Soluzione.** Applicando le formule dello steady growth:
+> $$EV = \frac{NOPAT(1+g) - CINO \cdot g}{WACC - g}$$
 >
-> | EV = [NOPAT × (1+g) − CINO×g] / (WACC−g) | |
+> Numeratore: $59.843 \times 1{,}02 - 760.000 \times 0{,}02 = 61.039{,}86 - 15.200 = 45.839{,}86 \approx 45.840$.
+>
+> Denominatore: $5{,}8\% - 2{,}0\% = 3{,}8\%$.
+>
+> $$EV = \frac{45.839{,}86}{3{,}8\%} = 1.206.312$$
+>
+> **Ottica equity.**
+>
+> $$E = \frac{R.BILANCIO(1+g) - C.P. \cdot g}{r_E - g}$$
+>
+> Numeratore: $43.981 \times 1{,}02 - 302.000 \times 0{,}02 = 44.860{,}62 - 6.040 = 38.820{,}62 \approx 38.821$.
+>
+> Denominatore: $7{,}5\% - 2{,}0\% = 5{,}5\%$.
+>
+> $$E = \frac{38.820{,}62}{5{,}5\%} = 705.829$$
+>
+> **Posizione finanziaria netta implicita.**
+>
+> $$PFN = EV - E = 1.206.312 - 705.829 = 500.483$$
+>
+> | Grandezza | Valore |
 > |---|---|
-> | Numeratore | 45.840 |
-> | Denominatore | 3,80% |
-> | **EV=** | **1.206.312** |
->
-> | Equity value = [Redd. Operativo × (1+g) − Cap Proprio×g] / ($r_E$−g) | |
-> |---|---|
-> | Numeratore | 38.821 |
-> | Denominatore | 5,50% |
-> | **Equity value=** | **705.829** |
->
-> **Risultato finale:**
-> - Enterprise Value (ottica Assets) = **1.206.312**
-> - Equity Value (ottica Equity) = **705.829**
-> - Posizione Finanziaria Netta implicita: $NFP = EV - Equity\,value = 1.206.312 - 705.829 = $ **500.483**
-
-*(slide 28–30)*
+> | Enterprise value (ottica assets) | 1.206.312 |
+> | Equity value (ottica equity) | 705.829 |
+> | PFN implicita | 500.483 |

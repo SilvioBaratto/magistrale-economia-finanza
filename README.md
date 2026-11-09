@@ -15,16 +15,16 @@ Un PDF per insegnamento, generato dalle note Obsidian.
 
 | Insegnamento | Codice | Dispensa | Pagine | Note Obsidian |
 |---|---|---|---|---|
-| Econometria | EM0004 | [PDF](dispense/01-econometria.pdf) | 115 | [note](obsidian/01-Econometria/) |
+| Econometria | EM0004 | [PDF](dispense/01-econometria.pdf) | 118 | [note](obsidian/01-Econometria/) |
 | Legislazione Bancaria — modulo 1 | EM2101 | [PDF](dispense/03-legislazione-bancaria-1.pdf) | 196 | [note](obsidian/03-Legislazione-Bancaria-1/) |
-| Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 102 | [note](obsidian/04-Legislazione-Bancaria-2/) |
-| Economia dei Mercati e degli Investimenti Finanziari — modulo 1 | EM5002 | [PDF](dispense/05-economia-mercati-investimenti-1.pdf) | 261 | [note](obsidian/05-Economia-Mercati-Investimenti-1/) |
-| Gestione della Banca | EM2102 | [PDF](dispense/07-gestione-della-banca.pdf) | 86 | [note](obsidian/07-Gestione-della-Banca/) |
-| Diritto del Mercato Finanziario | EM0001 | [PDF](dispense/08-diritto-mercato-finanziario.pdf) | 105 | [note](obsidian/08-Diritto-Mercato-Finanziario/) |
-| Metodi per la Gestione dei Portafogli Personali | EM5011 | [PDF](dispense/09-metodi-portafogli.pdf) | 150 | [note](obsidian/09-Metodi-Portafogli/) |
+| Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 143 | [note](obsidian/04-Legislazione-Bancaria-2/) |
+| Economia dei Mercati e degli Investimenti Finanziari — modulo 1 | EM5002 | [PDF](dispense/05-economia-mercati-investimenti-1.pdf) | 269 | [note](obsidian/05-Economia-Mercati-Investimenti-1/) |
+| Gestione della Banca | EM2102 | [PDF](dispense/07-gestione-della-banca.pdf) | 89 | [note](obsidian/07-Gestione-della-Banca/) |
+| Diritto del Mercato Finanziario | EM0001 | [PDF](dispense/08-diritto-mercato-finanziario.pdf) | 107 | [note](obsidian/08-Diritto-Mercato-Finanziario/) |
+| Metodi per la Gestione dei Portafogli Personali | EM5011 | [PDF](dispense/09-metodi-portafogli.pdf) | 155 | [note](obsidian/09-Metodi-Portafogli/) |
 | Misurazione del Rischio | EM5012 | [PDF](dispense/10-misurazione-rischio.pdf) | 7 | [note](obsidian/10-Misurazione-Rischio/) |
-| Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 160 | [note](obsidian/11-Finanza-Strategica/) |
-| **Volume unico** (tutti gli insegnamenti) | | [PDF](dispense/00-dispense-complete.pdf) | 1179 | |
+| Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 151 | [note](obsidian/11-Finanza-Strategica/) |
+| **Volume unico** (tutti gli insegnamenti) | | [PDF](dispense/00-dispense-complete.pdf) | 1233 | |
 
 ## Esami svolti — Econometria
 
@@ -33,14 +33,14 @@ una figura per ogni passaggio inferenziale.
 
 | Appello | Soluzione | Pagine | Sorgente |
 |---|---|---|---|
-| 22/12/2022 | [PDF](esami/econometria/ECON_Sol_2022-12-22.pdf) | 48 | [sorgente](latex/esami/econometria/src/ECON_Sol_2022-12-22.md) |
-| 17/01/2023 | [PDF](esami/econometria/ECON_Sol_2023-01-17.pdf) | 50 | [sorgente](latex/esami/econometria/src/ECON_Sol_2023-01-17.md) |
-| 15/06/2023 | [PDF](esami/econometria/ECON_Sol_2023-06-15.pdf) | 50 | [sorgente](latex/esami/econometria/src/ECON_Sol_2023-06-15.md) |
-| 29/08/2023 | [PDF](esami/econometria/ECON_Sol_2023-08-29.pdf) | 48 | [sorgente](latex/esami/econometria/src/ECON_Sol_2023-08-29.md) |
-| 21/12/2023 | [PDF](esami/econometria/ECON_Sol_2023-12-21.pdf) | 43 | [sorgente](latex/esami/econometria/src/ECON_Sol_2023-12-21.md) |
-| 13/06/2024 | [PDF](esami/econometria/ECON_Sol_2024-06-13.pdf) | 48 | [sorgente](latex/esami/econometria/src/ECON_Sol_2024-06-13.md) |
-| 21/01/2025 | [PDF](esami/econometria/ECON_Sol_2025-01-21.pdf) | 44 | [sorgente](latex/esami/econometria/src/ECON_Sol_2025-01-21.md) |
-| **Tutti gli appelli** | [PDF](esami/econometria/ECON_Soluzioni_Raccolta.pdf) | 334 | |
+| 22/12/2022 | [PDF](esami/econometria/ECON_Sol_2022-12-22.pdf) | 16 | [sorgente](latex/esami/econometria/src/ECON_Sol_2022-12-22.md) |
+| 17/01/2023 | [PDF](esami/econometria/ECON_Sol_2023-01-17.pdf) | 16 | [sorgente](latex/esami/econometria/src/ECON_Sol_2023-01-17.md) |
+| 15/06/2023 | [PDF](esami/econometria/ECON_Sol_2023-06-15.pdf) | 15 | [sorgente](latex/esami/econometria/src/ECON_Sol_2023-06-15.md) |
+| 29/08/2023 | [PDF](esami/econometria/ECON_Sol_2023-08-29.pdf) | 14 | [sorgente](latex/esami/econometria/src/ECON_Sol_2023-08-29.md) |
+| 21/12/2023 | [PDF](esami/econometria/ECON_Sol_2023-12-21.pdf) | 15 | [sorgente](latex/esami/econometria/src/ECON_Sol_2023-12-21.md) |
+| 13/06/2024 | [PDF](esami/econometria/ECON_Sol_2024-06-13.pdf) | 15 | [sorgente](latex/esami/econometria/src/ECON_Sol_2024-06-13.md) |
+| 21/01/2025 | [PDF](esami/econometria/ECON_Sol_2025-01-21.pdf) | 15 | [sorgente](latex/esami/econometria/src/ECON_Sol_2025-01-21.md) |
+| **Tutti gli appelli** | [PDF](esami/econometria/ECON_Soluzioni_Raccolta.pdf) | 102 | |
 
 ## Tracce d'orale — Legislazione Bancaria
 
@@ -52,37 +52,38 @@ gli articoli di riferimento).
 
 | # | Traccia | PDF | Pagine | Sorgente |
 |---|---|---|---|---|
-| 01 | Evoluzione storica della legislazione bancaria e sistema delle fonti | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_01_Evoluzione-Storica-e-Fonti.pdf) | 12 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_01_Evoluzione-Storica-e-Fonti.md) |
-| 02 | Le Autorità creditizie nazionali | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_02_Autorita-Creditizie.pdf) | 13 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_02_Autorita-Creditizie.md) |
-| 03 | L'Unione Bancaria e il Meccanismo di Vigilanza Unico | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_03_Unione-Bancaria-e-SSM.pdf) | 14 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_03_Unione-Bancaria-e-SSM.md) |
-| 04 | Le attività e i soggetti nell'ordinamento bancario | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_04_Attivita-e-Soggetti.pdf) | 13 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_04_Attivita-e-Soggetti.md) |
-| 05 | L'accesso al mercato bancario | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_05_Accesso-al-Mercato.pdf) | 16 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_05_Accesso-al-Mercato.md) |
-| 06 | Gli assetti proprietari | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_06_Assetti-Proprietari.pdf) | 15 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_06_Assetti-Proprietari.md) |
-| 07 | Gli esponenti aziendali | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_07_Esponenti-Aziendali.pdf) | 15 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_07_Esponenti-Aziendali.md) |
-| 08 | Le banche popolari | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_08_Banche-Popolari.pdf) | 14 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_08_Banche-Popolari.md) |
-| 09 | Le banche di credito cooperativo e il gruppo bancario cooperativo | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_09_BCC-e-Gruppo-Cooperativo.pdf) | 13 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_09_BCC-e-Gruppo-Cooperativo.md) |
-| 10 | Abusivismo bancario, Titolo V e la giurisprudenza del corso | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_10_Abusivismo-e-Giurisprudenza.pdf) | 13 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_10_Abusivismo-e-Giurisprudenza.md) |
-| 11 | Temi trasversali: FinTech, vigilanza in trasformazione e metodo d'esame | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_11_Temi-Trasversali.pdf) | 12 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_11_Temi-Trasversali.md) |
-| | **Tutte le tracce** | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_Completo.pdf) | 133 | |
+| 01 | Fonti, direttive e Costituzione | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_01_Evoluzione-Storica-e-Fonti.pdf) | 9 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_01_Evoluzione-Storica-e-Fonti.md) |
+| 02 | Le autorità creditizie | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_02_Autorita-Creditizie.pdf) | 10 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_02_Autorita-Creditizie.md) |
+| 03 | Unione bancaria, SSM e SEVIF | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_03_Unione-Bancaria-e-SSM.pdf) | 11 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_03_Unione-Bancaria-e-SSM.md) |
+| 04 | Le attività e i soggetti nell'ordinamento bancario | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_04_Attivita-e-Soggetti.pdf) | 11 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_04_Attivita-e-Soggetti.md) |
+| 05 | L'accesso al mercato bancario | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_05_Accesso-al-Mercato.pdf) | 12 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_05_Accesso-al-Mercato.md) |
+| 06 | Gli assetti proprietari | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_06_Assetti-Proprietari.pdf) | 12 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_06_Assetti-Proprietari.md) |
+| 07 | Gli esponenti aziendali | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_07_Esponenti-Aziendali.pdf) | 11 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_07_Esponenti-Aziendali.md) |
+| 08 | Le banche popolari | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_08_Banche-Popolari.pdf) | 15 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_08_Banche-Popolari.md) |
+| 09 | Le banche di credito cooperativo e il gruppo bancario cooperativo | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_09_BCC-e-Gruppo-Cooperativo.pdf) | 14 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_09_BCC-e-Gruppo-Cooperativo.md) |
+| 10 | Abusivismo bancario e giurisprudenza del corso | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_10_Abusivismo-e-Giurisprudenza.pdf) | 10 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_10_Abusivismo-e-Giurisprudenza.md) |
+| 11 | Temi trasversali e percorsi fra gli argomenti | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_11_Temi-Trasversali.pdf) | 8 | [sorgente](latex/esami/legislazione-bancaria-1/src/LEGB1_Orale_11_Temi-Trasversali.md) |
+| | **Tutte le tracce** | [PDF](esami/legislazione-bancaria-1/LEGB1_Orale_Completo.pdf) | 107 | |
 
 ### Modulo 2 — punti 8-11 (seconda prova)
 
 | # | Traccia | PDF | Pagine | Sorgente |
 |---|---|---|---|---|
-| 01 | Gli Accordi di Basilea e il quadro prudenziale europeo | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_01_Basilea-e-Quadro-Prudenziale.pdf) | 12 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_01_Basilea-e-Quadro-Prudenziale.md) |
-| 02 | La vigilanza informativa | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_02_Vigilanza-Informativa.pdf) | 11 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_02_Vigilanza-Informativa.md) |
-| 03 | La Centrale dei Rischi e la giurisprudenza sulle segnalazioni | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_03_Centrale-Rischi-e-Giurisprudenza.pdf) | 12 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_03_Centrale-Rischi-e-Giurisprudenza.md) |
-| 04 | Vigilanza regolamentare: adeguatezza patrimoniale e contenimento dei rischi | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_04_Adeguatezza-Patrimoniale-e-Rischi.pdf) | 12 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_04_Adeguatezza-Patrimoniale-e-Rischi.md) |
-| 05 | Vigilanza regolamentare: le partecipazioni detenibili dalle banche | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_05_Partecipazioni-Detenibili.pdf) | 13 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_05_Partecipazioni-Detenibili.md) |
-| 06 | Vigilanza regolamentare: governo societario, controlli interni e remunerazioni | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_06_Governo-Societario-e-Controlli.pdf) | 13 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_06_Governo-Societario-e-Controlli.md) |
-| 07 | I poteri di intervento della vigilanza | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_07_Poteri-di-Intervento.pdf) | 10 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_07_Poteri-di-Intervento.md) |
-| 08 | La vigilanza ispettiva | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_08_Vigilanza-Ispettiva.pdf) | 11 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_08_Vigilanza-Ispettiva.md) |
-| 09 | La disciplina sanzionatoria | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_09_Disciplina-Sanzionatoria.pdf) | 11 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_09_Disciplina-Sanzionatoria.md) |
-| 10 | La vigilanza sul mercato, la concorrenza bancaria e le altre forme di controllo | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_10_Concorrenza-e-Altre-Vigilanze.pdf) | 11 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_10_Concorrenza-e-Altre-Vigilanze.md) |
-| 11 | I gruppi bancari e la vigilanza su base consolidata | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_11_Gruppi-e-Vigilanza-Consolidata.pdf) | 14 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_11_Gruppi-e-Vigilanza-Consolidata.md) |
-| 12 | La disciplina delle crisi: amministrazione straordinaria e liquidazione coatta amministrativa | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_12_Crisi-Amministrazione-Straordinaria-e-LCA.pdf) | 13 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_12_Crisi-Amministrazione-Straordinaria-e-LCA.md) |
-| 13 | La risoluzione: BRRD, d.lgs. 180/2015 e il Meccanismo di Risoluzione Unico | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_13_Risoluzione-e-BRRD.pdf) | 12 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_13_Risoluzione-e-BRRD.md) |
-| | **Tutte le tracce** | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_Completo.pdf) | 134 | |
+| 01 | Basilea e il quadro prudenziale | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_01_Basilea-e-Quadro-Prudenziale.pdf) | 7 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_01_Basilea-e-Quadro-Prudenziale.md) |
+| 02 | La vigilanza informativa | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_02_Vigilanza-Informativa.pdf) | 10 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_02_Vigilanza-Informativa.md) |
+| 03 | L'adeguatezza patrimoniale | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_03_Adeguatezza-Patrimoniale.pdf) | 10 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_03_Adeguatezza-Patrimoniale.md) |
+| 04 | I rischi bancari e la Centrale dei rischi | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_04_Rischi-e-Centrale-dei-Rischi.pdf) | 11 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_04_Rischi-e-Centrale-dei-Rischi.md) |
+| 05 | Le partecipazioni detenibili dalle banche | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_05_Partecipazioni-Detenibili.pdf) | 7 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_05_Partecipazioni-Detenibili.md) |
+| 06 | Governo societario e controlli interni | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_06_Governo-Societario-e-Controlli.pdf) | 9 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_06_Governo-Societario-e-Controlli.md) |
+| 07 | I poteri di intervento (art. 53-bis) | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_07_Poteri-di-Intervento.pdf) | 7 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_07_Poteri-di-Intervento.md) |
+| 08 | La vigilanza ispettiva | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_08_Vigilanza-Ispettiva.pdf) | 7 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_08_Vigilanza-Ispettiva.md) |
+| 09 | La disciplina sanzionatoria | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_09_Disciplina-Sanzionatoria.pdf) | 8 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_09_Disciplina-Sanzionatoria.md) |
+| 10 | Modifiche statutarie, fusioni, cessioni e concorrenza | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_10_Altre-Vigilanze-e-Concorrenza.pdf) | 8 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_10_Altre-Vigilanze-e-Concorrenza.md) |
+| 11 | Gruppi bancari e vigilanza consolidata | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_11_Gruppi-e-Vigilanza-Consolidata.pdf) | 8 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_11_Gruppi-e-Vigilanza-Consolidata.md) |
+| 12 | La crisi: intervento precoce, amministrazione straordinaria, LCA | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_12_Crisi-Amministrazione-Straordinaria-e-LCA.pdf) | 10 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_12_Crisi-Amministrazione-Straordinaria-e-LCA.md) |
+| 13 | La risoluzione e la BRRD | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_13_Risoluzione-e-BRRD.pdf) | 10 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_13_Risoluzione-e-BRRD.md) |
+| 14 | Percorsi fra gli argomenti | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_14_Percorsi.pdf) | 9 | [sorgente](latex/esami/legislazione-bancaria-2/src/LEGB2_Orale_14_Percorsi.md) |
+| | **Tutte le tracce** | [PDF](esami/legislazione-bancaria-2/LEGB2_Orale_Completo.pdf) | 99 | |
 
 ## Test di ingresso — prova di verifica EMR20
 

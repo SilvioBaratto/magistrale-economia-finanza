@@ -13,7 +13,7 @@ generated: 2026-07-10
 
 ## Introduzione e struttura della lezione
 
-Corso: *Econometrics* — lezione **L'ipotesi di Eteroschedasticità**, tenuta da Davide Raggi, 25 novembre 2025.
+Corso: *Econometrics*, lezione **L'ipotesi di Eteroschedasticità**, tenuta da Davide Raggi, 25 novembre 2025.
 
 Argomenti trattati nella lezione:
 
@@ -57,21 +57,21 @@ Domanda: questi stimatori per $\sigma_{\hat\alpha}$ e $\sigma_{\hat\beta}$ sono 
 > [!example] Esempio
 > Si consideri un modello di regressione in cui il prezzo di alcune case (*price*) viene spiegato attraverso alcune variabili: la dimensione (*sqrft*), la dimensione del lotto (*lotsize*), il numero di stanze (*bdrms*). I dati sono raccolti in `hprices.gdt`.
 >
-> Una delle principali ipotesi per la regressione stimata con OLS è l'omogeneità della varianza degli errori. Se il modello è ben definito, ci si aspetta non venga riconosciuto alcun pattern chiaro tra i residui e i valori predetti dal modello. Esistono metodi grafici e non grafici per rilevare l'eteroschedasticità. Un metodo grafico comunemente usato è rappresentare graficamente i residui (o i residui al quadrato) rispetto ai valori predetti (o ai singoli regressori).
+> Una delle principali ipotesi per la regressione stimata con OLS è l'omogeneità della varianza degli errori. Se il modello è ben definito, ci si aspetta che non emerga alcun pattern chiaro tra i residui e i valori predetti dal modello. Esistono metodi grafici e non grafici per rilevare l'eteroschedasticità. Un metodo grafico comunemente usato è rappresentare graficamente i residui (o i residui al quadrato) rispetto ai valori predetti (o ai singoli regressori).
 >
 > ![](assets/econ-05/fig01.png)
 >
-> **Figura 1** — Residui vs. valori adattati $\hat\epsilon$ vs. $\hat Y$. Lo scatterplot (residui tra circa $-100$ e $300$, valori adattati tra $200$ e $600$) mostra che la dispersione dei residui non è costante: per valori elevati di $\hat Y = X\hat\beta$ la variabilità dei residui sembra aumentare, e sono presenti pochi residui estremi. In generale, questo grafico è usato per rilevare la non linearità, varianze degli errori non uguali e la presenza di outlier.
+> **Figura 1** — Residui vs. valori adattati $\hat\epsilon$ vs. $\hat Y$. Lo scatterplot (residui tra circa $-120$ e $210$, valori adattati tra circa $165$ e $560$) mostra che la dispersione dei residui non è costante: per valori elevati di $\hat Y = X\hat\beta$ la variabilità dei residui sembra aumentare, e sono presenti pochi residui estremi. In generale, questo grafico è usato per rilevare la non linearità, varianze degli errori non uguali e la presenza di outlier.
 >
 > Dalla Figura 1 si evince che:
 >
 > - I residui rimbalzano casualmente intorno alla linea $0$ (media dei residui stessi). Ciò suggerisce che l'ipotesi di relazione lineare è ragionevole.
 > - I residui **non** formano approssimativamente una banda orizzontale intorno allo $0$: per valori elevati di $\hat Y$ la dispersione/variabilità dei residui aumenta (**eteroschedasticità**).
-> - Pochi residui risultano estremi rispetto agli altri: questo accade solo per prezzi predetti maggiori di $500$ e per una casa il cui residuo sfiora $200$ pur avendo un prezzo poco superiore a $200$K dollari.
+> - Pochi residui risultano estremi rispetto agli altri: questo accade solo per prezzi predetti maggiori di $500$ e per una casa il cui residuo sfiora $200$ pur avendo un prezzo predetto poco superiore a $200$K dollari (il prezzo osservato è $425$K).
 >
 > ![](assets/econ-05/fig02.png)
 >
-> **Figura 2** — Esempio di comportamento corretto di $\hat\epsilon$ vs. $\hat Y$. Lo scatterplot mostra i residui distribuiti in una banda orizzontale uniforme intorno allo zero su tutto il range dei valori adattati ($2500$–$4000$), senza l'allargamento a imbuto osservato in Figura 1: questo è ciò che ci si aspetta da un modello omoschedastico ragionevole.
+> **Figura 2** — Esempio di comportamento corretto di $\hat\epsilon$ vs. $\hat Y$. Lo scatterplot mostra i residui distribuiti in una banda orizzontale uniforme intorno allo zero su tutto il range dei valori adattati ($2500$–$4000$), senza l'allargamento a imbuto osservato in Figura 1: è il comportamento atteso da un modello omoschedastico ragionevole.
 >
 > **Confronto tra due specificazioni.** Di seguito viene stimato il modello di regressione utilizzando due formule alternative per il calcolo degli standard error: il primo output riporta le stime OLS con deviazioni standard naïve ("normali"), il secondo fornisce una correzione per un'eventuale eteroschedasticità.
 >
@@ -93,13 +93,13 @@ Domanda: questi stimatori per $\sigma_{\hat\alpha}$ e $\sigma_{\hat\beta}$ sono 
 > | bdrms | 13.85252 | 8.478625 | 1.63 | 0.106 | -3.008154 | 30.7132 |
 > | _cons | -21.77031 | 37.13821 | -0.59 | 0.559 | -95.62371 | 52.0831 |
 >
-> Nelle slide originali la riga di *lotsize* è esplicitamente evidenziata in entrambi i modelli: passando dagli standard error naïve a quelli corretti, il p-value di *lotsize* passa da $0.002$ (significativo) a $0.102$ (non significativo) — un esempio concreto di come la scelta degli standard error possa cambiare le conclusioni inferenziali. Domanda aperta: quale delle due specificazioni risulta più attendibile?
+> Nelle slide originali la riga di *lotsize* è evidenziata in entrambi i modelli: passando dagli standard error naïve a quelli corretti, il p-value di *lotsize* passa da $0.002$ (significativo) a $0.102$ (non significativo), un esempio concreto di come la scelta degli standard error possa cambiare le conclusioni inferenziali. Domanda aperta: quale delle due specificazioni risulta più attendibile?
 >
 > ![](assets/econ-05/fig03.png)
 >
-> **Figura 3** — Residui al quadrato vs. ogni regressore. I tre scatterplot mostrano $\hat\epsilon^2$ rispettivamente contro *bdrms* (asse $2$–$7$), *lotsize* (asse $0$–$100000$) e *sqrft* (asse $1000$–$4000$), con i residui al quadrato sull'asse verticale nel range $0$–$300000$ circa. Si osserva una chiara dipendenza crescente tra $\hat\epsilon^2$ e, rispettivamente, *bdrms* e *sqrft* (pattern più marcato e quasi lineare per *sqrft*), mentre la dipendenza con *lotsize* è meno netta.
+> **Figura 3** — Residui al quadrato vs. ogni regressore. I tre scatterplot mostrano $\hat\epsilon^2$ rispettivamente contro *bdrms* (asse $2$–$7$), *lotsize* (asse $0$–$100000$) e *sqrft* (asse $1000$–$4000$), con i residui al quadrato sull'asse verticale nel range $0$–$300000$ circa. Si osserva una chiara dipendenza crescente tra $\hat\epsilon^2$ e, rispettivamente, *bdrms* e *sqrft* (pattern più marcato e quasi lineare per *sqrft*), mentre la dipendenza con *lotsize* è meno netta. (Verifica sui dati HPRICE1: i punti della figura coincidono con i quadrati dei valori adattati $\hat Y^2$, non con i residui al quadrato, che arrivano al massimo a circa $43800$. Con i veri $\hat\epsilon^2$ la dipendenza dai regressori è più debole ma significativa: la regressione di $\hat\epsilon^2$ su *sqrft*, *lotsize* e *bdrms* dà $R^2=0.160$, $F=5.34$, p-value $0.002$.)
 >
-> I residui al quadrato, che sono una proxy della varianza condizionale, risultano fortemente dipendenti dalle variabili del modello: la varianza sembra quindi dipendere da $X$, evidenziando **eteroschedasticità**. In particolare, i residui al quadrato crescono proporzionalmente a *bdrms* e *sqrft*. La varianza condizionale non sembra dunque costante, per cui l'output più credibile è il **Modello 2**, che corregge per l'eteroschedasticità.
+> I residui al quadrato, che sono una proxy della varianza condizionale, risultano dipendenti dalle variabili del modello: la varianza sembra quindi dipendere da $X$, segno di **eteroschedasticità**. In particolare, i residui al quadrato crescono proporzionalmente a *bdrms* e *sqrft*. La varianza condizionale non sembra costante, per cui l'output più credibile è il **Modello 2**, che corregge per l'eteroschedasticità.
 
 *(slide 6–12)*
 
@@ -137,8 +137,8 @@ Domanda: questi stimatori per $\sigma_{\hat\alpha}$ e $\sigma_{\hat\beta}$ sono 
 > Un'ipotesi ragionevole, ad esempio, è
 > $$\epsilon^2 = \sigma^2 \exp\{\delta_0 + \delta_1 Z_1 + \dots + \delta_m Z_m\}\, \nu$$
 >
-> Consideriamo dunque il modello completo per le medie e le varianze condizionate:
-> $$Y_i = \alpha + \beta_1 X_{i1} + \dots + X_{ik} + \epsilon_i$$
+> Consideriamo dunque il modello completo per le medie e le varianze condizionate (nelle slide manca $\beta_k$ davanti a $X_{ik}$ nella prima equazione):
+> $$Y_i = \alpha + \beta_1 X_{i1} + \dots + \beta_k X_{ik} + \epsilon_i$$
 > $$\epsilon^2 = \sigma^2 \exp\{\delta_0 + \delta_1 Z_1 + \dots + \delta_m Z_m\}\, \nu$$
 >
 > Un procedimento ragionevole per calcolare $\hat\sigma_i$ è il seguente:
@@ -151,10 +151,10 @@ Domanda: questi stimatori per $\sigma_{\hat\alpha}$ e $\sigma_{\hat\beta}$ sono 
 
 *(slide 16–18)*
 
-## Stimatori robusti: l'idea di White (Huber-Heicker) nel modello semplice
+## Stimatori robusti: l'idea di White (Huber-Eicker) nel modello semplice
 
 > [!note] Dimostrazione
-> Gli stimatori robusti sono un insieme di procedure che permettono di valutare gli standard error in maniera corretta, indipendentemente dall'ipotesi fatta su omoschedasticità od eteroschedasticità. L'idea si basa sull'intuizione che gli stimatori OLS forniscono stimatori consistenti dei parametri ($\hat\beta_j \xrightarrow{p} \beta_j$) e non distorti, **indipendentemente dall'ipotesi che facciamo sulle varianze condizionali**.
+> Gli stimatori robusti (metodo di Eicker-Huber-White; nelle slide «Heicker» è un refuso per Eicker) sono un insieme di procedure che permettono di valutare gli standard error in maniera corretta sia in omoschedasticità sia in eteroschedasticità. L'idea parte dal fatto che gli stimatori OLS dei parametri sono consistenti ($\hat\beta_j \xrightarrow{p} \beta_j$) e non distorti, **indipendentemente dall'ipotesi che facciamo sulle varianze condizionali**.
 >
 > **Come calcolare gli standard error in presenza di eteroschedasticità?** Per semplificare, si consideri il modello di regressione semplice
 > $$Y = \alpha + \beta X + \epsilon$$
@@ -165,20 +165,20 @@ Domanda: questi stimatori per $\sigma_{\hat\alpha}$ e $\sigma_{\hat\beta}$ sono 
 >
 > **Vera varianza condizionale.** Si vuole stimare la vera varianza condizionale di $\hat\beta$, cioè
 > $$\mathrm{Var}(\hat\beta|X) = \frac{\sum_{i=1}^n \overbrace{\sigma_i^2}^{\mathrm{Var}(\epsilon_i|X)} (X_i - \bar X)^2}{\left[\sum_{i=1}^n (X_i - \bar X)^2\right]^2}$$
-> L'idea di White (1980) è piuttosto semplice: dato che $\hat\epsilon_i$ è un'approssimazione di $\epsilon_i$, allora $\hat\epsilon_i^2(X_i-\bar X)^2$ è uno stimatore ragionevole per $E[\epsilon_i^2(X_i-\bar X)^2|X] = \sigma_i^2(X_i-\bar X)^2$. White ha proposto:
+> L'idea di White (1980) è semplice: dato che $\hat\epsilon_i$ è un'approssimazione di $\epsilon_i$, allora $\hat\epsilon_i^2(X_i-\bar X)^2$ è uno stimatore ragionevole per $E[\epsilon_i^2(X_i-\bar X)^2|X] = \sigma_i^2(X_i-\bar X)^2$. White ha proposto:
 > $$\widehat{\mathrm{Var}}(\hat\beta|X) = \frac{\sum_{i=1}^n (X_i - \bar X)^2 \hat\epsilon_i^2}{\left[\sum_{i=1}^n (X_i - \bar X)^2\right]^2}$$
 > ... e ha anche dimostrato che $\widehat{\mathrm{Var}}(\hat\beta|X)$ è **consistente** per $\mathrm{Var}(\hat\beta|X)$.
 >
 > **Intuizione del risultato.** Nel modello di regressione semplice:
 > $$\hat\epsilon_i = Y_i - \hat Y_i = \underbrace{\alpha + \beta X_i + \epsilon_i}_{Y_i} - \underbrace{(\hat\alpha + \hat\beta X_i)}_{\hat Y_i} = \underbrace{(\alpha - \hat\alpha)}_{=0 \text{ se } n\to+\infty} + \underbrace{(\beta - \hat\beta)}_{=0 \text{ se } n\to+\infty} X_i + \epsilon_i$$
 >
-> Come conseguenza principale, abbiamo che asintoticamente
+> Di conseguenza, asintoticamente
 > $$\frac{1}{n}\sum_{i=1}^n \hat\epsilon_i^2 (X_i - \bar X)^2 \approx \frac{1}{n}\sum_{i=1}^n \epsilon_i^2 (X_i - \bar X)^2$$
 > Nella pratica, questo risultato serve per trovare uno stimatore consistente di $\mathrm{Var}(\hat\beta|X)$: se le due quantità sono equivalenti, lo saranno anche calcolando il limite per $n\to\infty$. Per la legge dei grandi numeri vale che
 > $$\frac{1}{n}\sum_{i=1}^n \epsilon_i^2(X_i-\bar X)^2 \to E\left[\frac{1}{n}\sum_{i=1}^n \epsilon_i^2(X_i-\bar X)^2\right] = \frac{1}{n}\sum_{i=1}^n \sigma_i^2(X_i-\bar X)^2$$
 > $$\Rightarrow \frac{1}{n}\sum_{i=1}^n \hat\epsilon_i^2(X_i-\bar X)^2 \to \frac{1}{n}\sum_{i=1}^n \sigma_i^2(X_i-\bar X)^2$$
 
-*(slide 20–23)*
+*(slide 19–23)*
 
 ## Stimatori robusti: caso di regressione multipla e sintesi
 
@@ -186,8 +186,8 @@ Domanda: questi stimatori per $\sigma_{\hat\alpha}$ e $\sigma_{\hat\beta}$ sono 
 > Nel caso di regressione multipla
 > $$Y = \alpha + \beta_1 X_1 + \dots + \beta_k X_k + \epsilon$$
 > si può dimostrare che
-> $$\widehat{\mathrm{Var}}(\hat\beta_j|X) = \frac{\sum_{i=1}^n \hat r_{ij}^2 \hat\epsilon_i^2}{\left[\sum_{i=1}^n (X_{ij} - \bar X_j)^2\right]^2} \qquad j = 1,\dots,k$$
-> in cui $\hat r_{ij}$ è una stima del residuo $i$-esimo ottenuta dalla regressione di $X_j$ su tutti gli altri regressori:
+> $$\widehat{\mathrm{Var}}(\hat\beta_j|X) = \frac{\sum_{i=1}^n \hat r_{ij}^2 \hat\epsilon_i^2}{\left[\sum_{i=1}^n \hat r_{ij}^2\right]^2} \qquad j = 1,\dots,k$$
+> in cui $\hat r_{ij}$ è una stima del residuo $i$-esimo ottenuta dalla regressione di $X_j$ su tutti gli altri regressori (nelle slide il denominatore è $\left[\sum_{i=1}^n (X_{ij} - \bar X_j)^2\right]^2$, valido solo nella regressione semplice, dove $\hat r_i = X_i - \bar X$):
 > $$X_j = \alpha_0 + \alpha_1 X_1 + \dots + \alpha_{j-1}X_{j-1} + \alpha_{j+1}X_{j+1} + \dots + \alpha_k X_k + u$$
 >
 > Usando la notazione matriciale, si consideri la matrice diagonale varianza-covarianza $\Sigma$:
@@ -196,7 +196,7 @@ Domanda: questi stimatori per $\sigma_{\hat\alpha}$ e $\sigma_{\hat\beta}$ sono 
 > $$\mathrm{Var}(\hat\beta|X) = (X'X)^{-1} X' E[\epsilon\epsilon'] X (X'X)^{-1}$$
 > Come risultato generale, White ha dimostrato che uno stimatore consistente di $\frac{X'\Sigma X}{n}$ è $\frac{X'\hat\Sigma X}{n}$, in cui gli elementi diagonali di $\hat\Sigma$ sono stimati attraverso $\hat\sigma_i^2 = \hat\epsilon_i^2$.
 >
-> **Sintesi.** Gli stimatori OLS $\hat\sigma_{\hat\beta_j}$ calcolati sotto l'ipotesi di omoschedasticità non sono adatti quando questa ipotesi non è soddisfatta. Tuttavia, gli stimatori OLS sono consistenti e non distorti a prescindere, e quindi anche $\hat\epsilon$ è una misura ragionevole per $\epsilon$: White-(Huber-Heicker) sfruttano questa proprietà per correggere il calcolo dell'errore standard.
+> **Sintesi.** Gli stimatori OLS $\hat\sigma_{\hat\beta_j}$ calcolati sotto l'ipotesi di omoschedasticità non sono adatti quando l'ipotesi non vale. Tuttavia, gli stimatori OLS sono consistenti e non distorti a prescindere, e quindi anche $\hat\epsilon$ è una misura ragionevole per $\epsilon$: White-(Huber-Eicker) sfruttano questa proprietà per correggere il calcolo dell'errore standard.
 >
 > Principali vantaggi:
 >
@@ -235,7 +235,7 @@ Domanda: questi stimatori per $\sigma_{\hat\alpha}$ e $\sigma_{\hat\beta}$ sono 
 >
 > L'ipotesi nulla di omoschedasticità può essere verificata attraverso il seguente sistema di ipotesi
 > $$H_0: \mathrm{Var}(\epsilon|X) = \sigma^2 \Leftrightarrow H_0: \delta_1=\delta_2=\dots=\delta_k=0 \quad \text{vs.} \quad H_1: \text{almeno un coefficiente non è zero}$$
-> Questo test è molto simile a un test $F$. Ovviamente, $\epsilon^2$ non è osservabile, tuttavia può essere approssimato attraverso $\hat\epsilon^2$. Il modello ridotto (sotto $H_0$) è
+> Questo test è molto simile a un test $F$. Poiché $\epsilon^2$ non è osservabile, lo si approssima con $\hat\epsilon^2$. Il modello ridotto (sotto $H_0$) è
 > $$\hat\epsilon^2 = \delta_0 + err \Rightarrow R_c^2 = 0$$
 > La statistica test risulta quindi
 > $$F_{k,n-k-1} = \frac{R_{\hat\epsilon^2}^2/k}{(1-R_{\hat\epsilon^2}^2)/(n-k-1)}$$
@@ -253,7 +253,7 @@ Domanda: questi stimatori per $\sigma_{\hat\alpha}$ e $\sigma_{\hat\beta}$ sono 
 >   con p-value = P(Chi-quadro(3) > 30,0227) = 1,36495e-06
 > ```
 >
-> In questo caso si rifiuta l'ipotesi nulla di omoschedasticità poiché il p-value è piccolo.
+> In questo caso si rifiuta l'ipotesi nulla di omoschedasticità poiché il p-value è piccolo. (LM = 30,0227 è la statistica originale di Breusch-Pagan, valida con errori normali, che Gretl riporta di default; la versione $nR^2$ sopra, di Koenker, sugli stessi dati vale circa 14,09 con p-value 0,0028: la conclusione non cambia.)
 
 *(slide 28–32)*
 
@@ -279,7 +279,7 @@ Domanda: questi stimatori per $\sigma_{\hat\alpha}$ e $\sigma_{\hat\beta}$ sono 
 >
 > Anche in questo caso il test rifiuta l'ipotesi nulla di omoschedasticità.
 >
-> **Stima con errori standard robusti in Gretl.** Stimare gli errori standard robusti tramite Gretl è facile: è sufficiente, in sede di definizione del modello, spuntare l'opzione *Errori Standard Robusti*. Dato che si rifiuta l'ipotesi nulla, è necessario stimare la regressione OLS mediante errori standard robusti. La procedura robusta restituisce i seguenti risultati:
+> **Stima con errori standard robusti in Gretl.** Stimare gli errori standard robusti tramite Gretl è facile: è sufficiente, in sede di definizione del modello, spuntare l'opzione *Errori Standard Robusti*. Dato che si rifiuta l'ipotesi nulla, è necessario stimare la regressione OLS mediante errori standard robusti. La procedura robusta restituisce i seguenti risultati (output nel formato di Stata; gli errori standard sono la variante HC1 della formula di White, con fattore $n/(n-k-1)$):
 >
 > ```
 > Linear regression                                     Number of obs =       88

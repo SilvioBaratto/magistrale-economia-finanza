@@ -8,14 +8,17 @@
     python3 build_esami.py --corso legislazione-bancaria-1 --exam 04
     python3 build_esami.py --all --keep                             # keep LaTeX intermediates
 
-Three kinds of material, one pipeline, the template of the dispense:
+Four kinds of material, one pipeline, the template of the dispense:
 
 - econometria: worked solutions of past written exams, one PDF per sitting;
 - legislazione-bancaria-1/-2: question-and-answer tracks for the oral exam,
   one PDF per point of the syllabus;
 - test-ingresso: the multiple-choice bank of the EMR20 entry test, questions
   and solutions, read straight from Moodle/00-Test-di-Ingresso/ and reshaped
-  by quiz_markdown().
+  by quiz_markdown();
+- finanza-strategica: past exam papers as the professor set them, without
+  answers, one PDF per sitting, plus one volume of all the simulated exams
+  and one of all their solutions.
 
     esami/<corso>/src/*.md
       -> normalisation (front matter, Obsidian callouts, glyphs)
@@ -53,6 +56,28 @@ ACCADEMICO = "2026/2027"
 
 
 @dataclass(frozen=True)
+class Volume:
+    """A single-file edition of the sources of a course that match one glob.
+
+    Attributes:
+        stem: File stem of the PDF.
+        pattern: Glob of the sources in src/ that go into the edition.
+        title: Title of the edition.
+        subtitle: Subtitle of the edition.
+        disclaimer: Last line of its title page.
+        chapter_label: Each source becomes a chapter "<label> NN" (NN from the
+            source's file name) and its own headings move one level down.
+    """
+
+    stem: str
+    pattern: str
+    title: str
+    subtitle: str
+    disclaimer: str
+    chapter_label: str
+
+
+@dataclass(frozen=True)
 class Course:
     """What differs between the exam material of two courses.
 
@@ -73,6 +98,10 @@ class Course:
         src: Folder of the sources when they live outside esami/<corso>/src/.
         prepare: Turns a whole source file into title-page fields and body,
             for sources not written in the exam format; front matter by default.
+        dated: Whether the title page shows the current academic year. Off for
+            papers of a past sitting, which belong to no current year.
+        volumes: Single-file editions of subsets of the sources, for a course
+            whose papers and solutions each deserve one file.
     """
 
     slug: str
@@ -88,6 +117,8 @@ class Course:
     unit: str
     src: Path | None = None
     prepare: Callable[[str], tuple[dict[str, str], str]] | None = None
+    dated: bool = True
+    volumes: tuple[Volume, ...] = ()
 
     @property
     def sources_dir(self) -> Path:
@@ -273,6 +304,43 @@ COURSES = {c.slug: c for c in (
         src=REPO / "Moodle" / "00-Test-di-Ingresso",
         prepare=quiz_markdown,
     ),
+    Course(
+        slug="finanza-strategica",
+        pattern="FSTR_*.md",
+        coursecode="EM5005",
+        disclaimer=("Traccia d’esame di Finanza Strategica (EM5005, prof. Alessandro "
+                    "Genovesi) riportata senza risposte né svolgimenti, a fini di studio. "
+                    "Non è materiale ufficiale del docente."),
+        subtitle="Traccia d’esame integrale, senza risposte",
+        volume=None,
+        volume_title="",
+        volume_subtitle="",
+        parts=False,
+        question_re=r'kind="question"',
+        unit="appelli",
+        dated=False,
+        volumes=(
+            Volume(
+                stem="FSTR_Esame_Simulato_Completo",
+                pattern="FSTR_Esame_Simulato_*.md",
+                title="Finanza Strategica \u2014 dieci appelli simulati",
+                subtitle="Tracce complete, senza risposte",
+                disclaimer=("Appelli simulati costruiti a fini di studio sul modello dei veri appelli e "
+                            "sui contenuti del corso (EM5005, prof. Alessandro Genovesi). Non sono "
+                            "tracce ufficiali del docente."),
+                chapter_label="Appello simulato",
+            ),
+            Volume(
+                stem="FSTR_Soluzioni_Simulato_Completo",
+                pattern="FSTR_Soluzioni_Simulato_*.md",
+                title="Finanza Strategica \u2014 soluzioni dei dieci appelli simulati",
+                subtitle="Chiave del test, svolgimento degli esercizi e tracce di risposta",
+                disclaimer=("Soluzioni degli appelli simulati, preparate a fini di studio. Non sono "
+                            "soluzioni ufficiali del docente."),
+                chapter_label="Appello simulato",
+            ),
+        ),
+    ),
 )}
 
 FENCE = ":" * 5
@@ -450,7 +518,7 @@ def render(course: Course, slug: str, body: str, meta: dict[str, str],
         "title": meta.get("title", slug),
         "subtitle": meta.get("subtitle", course.subtitle),
         "author": AUTHOR,
-        "date": meta.get("date", ACCADEMICO),
+        "date": meta.get("date", ACCADEMICO if course.dated else ""),
         "university": UNIVERSITY,
         "department": DEPARTMENT,
         "degree": DEGREE,
@@ -544,6 +612,34 @@ def volume_markdown(course: Course) -> tuple[str, dict[str, str]]:
     return "\n\n".join(pieces), meta
 
 
+def edition_markdown(course: Course, spec: Volume) -> tuple[str, dict[str, str]]:
+    """Join the sources matching ``spec.pattern`` into one document, a chapter per source.
+
+    Args:
+        course: The course the sources belong to.
+        spec: The edition to build.
+
+    Returns:
+        The Markdown body and its title-page fields. Headings of each source move
+        one level down under a chapter named after the source.
+    """
+    pieces, tests, answers = [], 0, 0
+    paths = sorted(course.src_dir.glob(spec.pattern))
+    for md in paths:
+        _meta, body = course.load(md)
+        tests += len(re.findall(r'heading="\d+"', body))
+        answers += len(re.findall(r"\*\*\d+\) [ABC]\.", body))
+        body = namespace_references(body, md.stem)
+        body = re.sub(r"^(#{1,5}) ", r"\1# ", body, flags=re.M)
+        number = re.search(r"_(\d+)$", md.stem)
+        title = f"{spec.chapter_label} {int(number.group(1)):02d}" if number else md.stem
+        pieces.append(f"# {title}\n\n{body}")
+    stats = (f"{len(paths)} appelli \u00b7 {tests} domande a risposta multipla" if tests
+             else f"{len(paths)} appelli svolti \u00b7 {answers} risposte motivate")
+    meta = {"title": spec.title, "subtitle": spec.subtitle, "stats": stats, "disclaimer": spec.disclaimer}
+    return "\n\n".join(pieces), meta
+
+
 # ------------------------------------------------------------------------ cli
 def sources(course: Course) -> list[Path]:
     return sorted(course.src_dir.glob(course.pattern))
@@ -595,6 +691,12 @@ def main() -> int:
             body, meta = volume_markdown(course)
             depth = max(args.toc_depth, 3) if course.parts else args.toc_depth
             out = render(course, volume, body, meta, depth, args.keep)
+            print(f"    {out.relative_to(REPO)}")
+            built += 1
+        for spec in course.volumes if args.volume else ():
+            print(f"==> {spec.stem}")
+            body, meta = edition_markdown(course, spec)
+            out = render(course, spec.stem, body, meta, max(args.toc_depth, 2), args.keep)
             print(f"    {out.relative_to(REPO)}")
             built += 1
     if not built:

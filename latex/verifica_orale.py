@@ -12,8 +12,9 @@ Due famiglie di controlli:
 * FORMATO — quello che romperebbe pandoc/XeLaTeX o il filtro dei callout:
   front matter, una sola intestazione di capitolo, domande «## D<n> — ...»
   numerate in sequenza, ognuna con Domanda, Risposta da dare e
-  Spiegazione, callout con riga vuota prima e dopo, niente
-  intestazioni di livello 3, wikilink, immagini o blocchi di codice.
+  Spiegazione (solo Domanda e Risposta per i corsi in SOLO_DOMANDA_RISPOSTA),
+  callout con riga vuota prima e dopo, niente intestazioni di livello 3,
+  wikilink, immagini o blocchi di codice.
 
 * COMPLETEZZA — il confronto con la bozza in .bozze/. La revisione può solo
   aggiungere: se il file finale ha meno domande o meno righe della bozza,
@@ -31,6 +32,11 @@ ESAMI = Path(__file__).resolve().parent / "esami"
 CORSI = ("legislazione-bancaria-1", "legislazione-bancaria-2")
 # Set per course by main(); controlla() reads the drafts from BOZZE.
 SRC, BOZZE = Path(), Path()
+CORSO = ""
+# These courses keep only the question and the model answer: without the
+# explanation the prose is far shorter than the drafts, so the line-count
+# comparison below would flag every file as truncated.
+SOLO_DOMANDA_RISPOSTA = {"legislazione-bancaria-1", "legislazione-bancaria-2"}
 
 Q_RE = re.compile(r"^##\s+D(\d+)\s+—\s+(.+)$")
 CALLOUT_RE = re.compile(r"^>\s*\[!(\w+)\]")
@@ -112,7 +118,10 @@ def controlla(path: Path) -> list[str]:
             problemi.append(f"«{etichetta}» senza callout [!question]")
         if "success" not in tipi:
             problemi.append(f"«{etichetta}» senza callout [!success]")
-        if "info" not in tipi:
+        if CORSO in SOLO_DOMANDA_RISPOSTA:
+            if "info" in tipi:
+                problemi.append(f"«{etichetta}» ha un callout [!info]: questo corso tiene solo Domanda e Risposta")
+        elif "info" not in tipi:
             problemi.append(f"«{etichetta}» senza callout [!info] Spiegazione")
 
     # completezza rispetto alla bozza: la revisione puo' solo aggiungere
@@ -122,9 +131,11 @@ def controlla(path: Path) -> list[str]:
         b_dom = len([l for l in b_lines if Q_RE.match(l)])
         if len(numeri) < b_dom:
             problemi.append(f"TRONCATO: {len(numeri)} domande contro le {b_dom} della bozza")
-        elif len(lines) < len(b_lines) * 0.9:
+        elif CORSO not in SOLO_DOMANDA_RISPOSTA and len(lines) < len(b_lines) * 0.9:
             problemi.append(f"TRONCATO: {len(lines)} righe contro le {len(b_lines)} della bozza")
-    else:
+    elif CORSO not in SOLO_DOMANDA_RISPOSTA:
+        # The drafts of the rewritten courses predate the new section names,
+        # so a missing draft is expected there and not a sign of truncation.
         problemi.append("nessuna bozza di riferimento in .bozze/ (completezza non verificabile)")
 
     return problemi
@@ -162,9 +173,10 @@ def main() -> int:
                     help="riporta le domande a una numerazione continua prima di controllare")
     args = ap.parse_args()
 
-    global SRC, BOZZE
+    global SRC, BOZZE, CORSO
     guasti = 0
     for corso in args.corso or CORSI:
+        CORSO = corso
         SRC, BOZZE = ESAMI / corso / "src", ESAMI / corso / ".bozze"
         print(f"== {corso}")
         guasti += verifica_corso(args)

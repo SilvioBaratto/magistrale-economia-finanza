@@ -453,8 +453,8 @@ Il contrappeso dell'indipendenza è la responsabilità democratica. Sul piano na
 > Come si garantisce che la vigilanza non sia piegata a fini di politica monetaria?
 > → Con la separazione organizzativa e procedurale imposta dall'art. 25 del reg. (UE) n. 1024/2013 e con il gruppo di esperti di mediazione ivi previsto.
 >
-> Il divorzio Tesoro-Banca d'Italia è un tema giuridico o storico?
-> → Entrambi: storicamente segna l'emancipazione della banca centrale dal finanziamento del disavanzo; giuridicamente è oggi presidiato dal divieto europeo di finanziamento monetario.
+> Che cosa garantisce oggi la separazione fra Tesoro e Banca d'Italia?
+> → Il divieto europeo di finanziamento monetario, che sottrae la banca centrale al finanziamento del disavanzo.
 
 ## D13 — L'art. 5 TUB: le finalità della vigilanza e i loro rapporti
 
@@ -1069,10 +1069,10 @@ Il criterio che distingue i tre strumenti è il modo in cui l'autorità viene a 
 > Dove ricompare la stessa tripartizione fuori dal Titolo III?
 > → Nell'art. 146, comma 2, che nel campo della sorveglianza sui pagamenti attribuisce poteri informativi, regolamentari, ispettivi e di provvedimento.
 
-## D29 — La struttura del TUB e le idee di fondo della riforma del 1993
+## D29 — La struttura del TUB e le sue idee di fondo
 
 > [!question] Domanda
-> Prima di entrare nel Titolo I, mi dica come è strutturato il Testo unico bancario e quali sono le scelte di fondo che lo distinguono dalla legge bancaria del 1936.
+> Prima di entrare nel Titolo I, mi dica come è strutturato il Testo unico bancario e quali sono le scelte di fondo su cui poggia.
 
 > [!success] Attacco
 > Il Testo unico è il d.lgs. 1° settembre 1993, n. 385. Si apre con un articolo definitorio, l'art. 1, e si articola poi in Titoli: il Titolo I è dedicato alle autorità creditizie, il Titolo II alle banche, il Titolo III alla vigilanza, il Titolo IV alle crisi, il Titolo V ai soggetti operanti nel settore finanziario, il Titolo VI alla trasparenza, il Titolo VII agli altri controlli, il Titolo VIII alle sanzioni e il Titolo IX alle disposizioni transitorie e finali. La sequenza non è casuale: prima chi vigila, poi chi è vigilato, poi come si vigila.
@@ -1081,7 +1081,7 @@ Il Titolo II merita un dettaglio in più, perché è quello in cui il candidato 
 
 Due avvertenze sulla struttura, che valgono come prova di aggiornamento. La prima: le rubriche non sono rimaste quelle del 1993. Il Titolo IV, che il materiale d'aula chiama «Disciplina delle crisi», è oggi rubricato «Misure preparatorie, di intervento precoce e liquidazione coatta amministrativa», perché la risoluzione vera e propria è migrata nel d.lgs. 16 novembre 2015, n. 180; e il Titolo V, che si chiamava «Altri intermediari finanziari», è oggi «Soggetti operanti nel settore finanziario». La seconda: la struttura si è dilatata per stratificazione, con l'inserimento dei Titoli V-bis sulla moneta elettronica, V-ter sugli istituti di pagamento e VI-bis su agenti in attività finanziaria e mediatori creditizi.
 
-Quanto alle idee di fondo, sono cinque e conviene enumerarle. La prima è il **riconoscimento del carattere imprenditoriale** dell'attività bancaria: l'art. 10, comma 1, dice che l'attività bancaria «ha carattere d'impresa» e l'art. 1, comma 1, lett. b), definisce la banca come «l'impresa autorizzata all'esercizio dell'attività bancaria». La seconda è la **valorizzazione della concorrenza**, non come valore contrapposto alla stabilità ma come strumento di efficienza. La terza è la **despecializzazione**, nella sua triplice dimensione: istituzionale, perché cadono le categorie di banche della legge del 1936 e resta un unico tipo, con due sole forme societarie ammesse dall'art. 14, comma 1, lett. a), cioè la società per azioni e la società cooperativa per azioni a responsabilità limitata; temporale, perché scompare la distinzione fra aziende di credito a breve e istituti di credito speciale a medio-lungo termine; operativa, perché l'art. 10, comma 3, consente alle banche ogni altra attività finanziaria e le attività connesse o strumentali. La quarta è il passaggio dalla **vigilanza strutturale alla vigilanza prudenziale**, consacrato dall'art. 5. La quinta è la **delegificazione**: il legislatore fissa i principi e rinvia alla fonte secondaria la disciplina tecnica, ed è la ragione per cui il TUB si legge sempre insieme alle disposizioni della Banca d'Italia.
+Quanto alle idee di fondo, sono cinque e conviene enumerarle. La prima è il **riconoscimento del carattere imprenditoriale** dell'attività bancaria: l'art. 10, comma 1, dice che l'attività bancaria «ha carattere d'impresa» e l'art. 1, comma 1, lett. b), definisce la banca come «l'impresa autorizzata all'esercizio dell'attività bancaria». La seconda è la **valorizzazione della concorrenza**, non come valore contrapposto alla stabilità ma come strumento di efficienza. La terza è la **despecializzazione**, nella sua triplice dimensione: istituzionale, perché non esistono più categorie di banche e resta un unico tipo, con due sole forme societarie ammesse dall'art. 14, comma 1, lett. a), cioè la società per azioni e la società cooperativa per azioni a responsabilità limitata; temporale, perché scompare la distinzione fra aziende di credito a breve e istituti di credito speciale a medio-lungo termine; operativa, perché l'art. 10, comma 3, consente alle banche ogni altra attività finanziaria e le attività connesse o strumentali. La quarta è il passaggio dalla **vigilanza strutturale alla vigilanza prudenziale**, consacrato dall'art. 5. La quinta è la **delegificazione**: il legislatore fissa i principi e rinvia alla fonte secondaria la disciplina tecnica, ed è la ragione per cui il TUB si legge sempre insieme alle disposizioni della Banca d'Italia.
 
 > [!tip] Fonti da citare
 > - d.lgs. 1° settembre 1993, n. 385 — articolazione in nove Titoli, più i Titoli V-bis, V-ter e VI-bis
