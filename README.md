@@ -3,8 +3,9 @@
 Appunti di studio per la Laurea Magistrale in **Economia e Finanza**
 dell'Università Ca' Foscari Venezia, A.A. 2026/2027: le note di ogni
 insegnamento in formato Obsidian, le dispense PDF composte da quelle note e gli
-esami di Econometria svolti passo per passo, con tutte le figure, le tracce
-per l'orale di Legislazione Bancaria e la banca di domande del test di ingresso.
+esami di Econometria svolti passo per passo, con tutte le figure, le
+esercitazioni di preparazione (esercizi e soluzioni), le tracce per l'orale di
+Legislazione Bancaria e la banca di domande del test di ingresso.
 
 > Appunti personali, non ufficiali e non rivisti dai docenti. Possono contenere
 > errori: verificare sempre sul materiale del corso.
@@ -15,16 +16,16 @@ Un PDF per insegnamento, generato dalle note Obsidian.
 
 | Insegnamento | Codice | Dispensa | Pagine | Note Obsidian |
 |---|---|---|---|---|
-| Econometria | EM0004 | [PDF](dispense/01-econometria.pdf) | 118 | [note](obsidian/01-Econometria/) |
-| Legislazione Bancaria — modulo 1 | EM2101 | [PDF](dispense/03-legislazione-bancaria-1.pdf) | 196 | [note](obsidian/03-Legislazione-Bancaria-1/) |
-| Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 143 | [note](obsidian/04-Legislazione-Bancaria-2/) |
+| Econometria | EM0004 | [PDF](dispense/01-econometria.pdf) | 133 | [note](obsidian/01-Econometria/) |
+| Legislazione Bancaria — modulo 1 | EM2101 | [PDF](dispense/03-legislazione-bancaria-1.pdf) | 197 | [note](obsidian/03-Legislazione-Bancaria-1/) |
+| Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 160 | [note](obsidian/04-Legislazione-Bancaria-2/) |
 | Economia dei Mercati e degli Investimenti Finanziari — modulo 1 | EM5002 | [PDF](dispense/05-economia-mercati-investimenti-1.pdf) | 269 | [note](obsidian/05-Economia-Mercati-Investimenti-1/) |
 | Gestione della Banca | EM2102 | [PDF](dispense/07-gestione-della-banca.pdf) | 89 | [note](obsidian/07-Gestione-della-Banca/) |
 | Diritto del Mercato Finanziario | EM0001 | [PDF](dispense/08-diritto-mercato-finanziario.pdf) | 107 | [note](obsidian/08-Diritto-Mercato-Finanziario/) |
 | Metodi per la Gestione dei Portafogli Personali | EM5011 | [PDF](dispense/09-metodi-portafogli.pdf) | 155 | [note](obsidian/09-Metodi-Portafogli/) |
 | Misurazione del Rischio | EM5012 | [PDF](dispense/10-misurazione-rischio.pdf) | 7 | [note](obsidian/10-Misurazione-Rischio/) |
-| Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 151 | [note](obsidian/11-Finanza-Strategica/) |
-| **Volume unico** (tutti gli insegnamenti) | | [PDF](dispense/00-dispense-complete.pdf) | 1233 | |
+| Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 157 | [note](obsidian/11-Finanza-Strategica/) |
+| **Volume unico** (tutti gli insegnamenti) | | [PDF](dispense/00-dispense-complete.pdf) | 1272 | |
 
 ## Esami svolti — Econometria
 
@@ -41,6 +42,29 @@ una figura per ogni passaggio inferenziale.
 | 13/06/2024 | [PDF](esami/econometria/ECON_Sol_2024-06-13.pdf) | 15 | [sorgente](latex/esami/econometria/src/ECON_Sol_2024-06-13.md) |
 | 21/01/2025 | [PDF](esami/econometria/ECON_Sol_2025-01-21.pdf) | 15 | [sorgente](latex/esami/econometria/src/ECON_Sol_2025-01-21.md) |
 | **Tutti gli appelli** | [PDF](esami/econometria/ECON_Soluzioni_Raccolta.pdf) | 102 | |
+
+## Esercitazioni — Econometria
+
+Esercizi per prepararsi agli appelli, dalle fondamenta di probabilità e statistica
+al livello delle domande d'esame: otto moduli e quattro appelli simulati. I dati sono
+sintetici; ogni numero è generato da codice e ricalcolato da un risolutore
+indipendente. Le soluzioni spiegano il procedimento, con un grafico per esercizio.
+Esercizi sintetici costruiti a fini di studio: non sono materiale del docente.
+
+| Parte | Esercizi | Soluzioni | Sorgenti |
+|---|---|---|---|
+| 00 — Fondamenta di probabilità e statistica | [PDF](esami/econometria/esercitazioni/ECON_Esercizi_00_Fondamenta-probabilita-statistica.pdf) · 16 pp | [PDF](esami/econometria/esercitazioni/ECON_Soluzioni_00_Fondamenta-probabilita-statistica.pdf) · 30 pp | [sorgenti](latex/esami/econometria/esercitazioni/moduli/00-fondamenta-probabilita-statistica/) |
+| 01 — Introduzione e causalità | [PDF](esami/econometria/esercitazioni/ECON_Esercizi_01_Introduzione-causalita.pdf) · 11 pp | [PDF](esami/econometria/esercitazioni/ECON_Soluzioni_01_Introduzione-causalita.pdf) · 18 pp | [sorgenti](latex/esami/econometria/esercitazioni/moduli/01-introduzione-causalita/) |
+| 02 — Regressione semplice | [PDF](esami/econometria/esercitazioni/ECON_Esercizi_02_Regressione-semplice.pdf) · 15 pp | [PDF](esami/econometria/esercitazioni/ECON_Soluzioni_02_Regressione-semplice.pdf) · 31 pp | [sorgenti](latex/esami/econometria/esercitazioni/moduli/02-regressione-semplice/) |
+| 03 — Regressione multipla | [PDF](esami/econometria/esercitazioni/ECON_Esercizi_03_Regressione-multipla.pdf) · 20 pp | [PDF](esami/econometria/esercitazioni/ECON_Soluzioni_03_Regressione-multipla.pdf) · 34 pp | [sorgenti](latex/esami/econometria/esercitazioni/moduli/03-regressione-multipla/) |
+| 04 — Test F e restrizioni multiple | [PDF](esami/econometria/esercitazioni/ECON_Esercizi_04_Test-f-restrizioni.pdf) · 18 pp | [PDF](esami/econometria/esercitazioni/ECON_Soluzioni_04_Test-f-restrizioni.pdf) · 35 pp | [sorgenti](latex/esami/econometria/esercitazioni/moduli/04-test-f-restrizioni/) |
+| 05 — Eteroschedasticità | [PDF](esami/econometria/esercitazioni/ECON_Esercizi_05_Eteroschedasticita.pdf) · 18 pp | [PDF](esami/econometria/esercitazioni/ECON_Soluzioni_05_Eteroschedasticita.pdf) · 28 pp | [sorgenti](latex/esami/econometria/esercitazioni/moduli/05-eteroschedasticita/) |
+| 06 — Modelli dinamici | [PDF](esami/econometria/esercitazioni/ECON_Esercizi_06_Modelli-dinamici.pdf) · 22 pp | [PDF](esami/econometria/esercitazioni/ECON_Soluzioni_06_Modelli-dinamici.pdf) · 36 pp | [sorgenti](latex/esami/econometria/esercitazioni/moduli/06-modelli-dinamici/) |
+| 07 — Cointegrazione e correzione dell'errore | [PDF](esami/econometria/esercitazioni/ECON_Esercizi_07_Cointegrazione.pdf) · 21 pp | [PDF](esami/econometria/esercitazioni/ECON_Soluzioni_07_Cointegrazione.pdf) · 39 pp | [sorgenti](latex/esami/econometria/esercitazioni/moduli/07-cointegrazione/) |
+| 08 — Appello simulato 1 | [PDF](esami/econometria/esercitazioni/ECON_Esercizi_08_Appello-simulato-1.pdf) · 7 pp | [PDF](esami/econometria/esercitazioni/ECON_Soluzioni_08_Appello-simulato-1.pdf) · 18 pp | [sorgenti](latex/esami/econometria/esercitazioni/appelli/01/) |
+| 09 — Appello simulato 2 | [PDF](esami/econometria/esercitazioni/ECON_Esercizi_09_Appello-simulato-2.pdf) · 8 pp | [PDF](esami/econometria/esercitazioni/ECON_Soluzioni_09_Appello-simulato-2.pdf) · 19 pp | [sorgenti](latex/esami/econometria/esercitazioni/appelli/02/) |
+| 10 — Appello simulato 3 | [PDF](esami/econometria/esercitazioni/ECON_Esercizi_10_Appello-simulato-3.pdf) · 9 pp | [PDF](esami/econometria/esercitazioni/ECON_Soluzioni_10_Appello-simulato-3.pdf) · 20 pp | [sorgenti](latex/esami/econometria/esercitazioni/appelli/03/) |
+| 11 — Appello simulato 4 | [PDF](esami/econometria/esercitazioni/ECON_Esercizi_11_Appello-simulato-4.pdf) · 7 pp | [PDF](esami/econometria/esercitazioni/ECON_Soluzioni_11_Appello-simulato-4.pdf) · 18 pp | [sorgenti](latex/esami/econometria/esercitazioni/appelli/04/) |
 
 ## Tracce d'orale — Legislazione Bancaria
 
@@ -103,7 +127,7 @@ statistica), organizzate per materia e argomento.
 .
 ├── dispense/              le dispense (solo PDF)
 ├── esami/                  materiale d'esame (solo PDF)
-│   ├── econometria/              soluzioni svolte
+│   ├── econometria/              soluzioni svolte; esercitazioni/ con esercizi e soluzioni
 │   ├── legislazione-bancaria-1/  tracce d'orale, modulo 1
 │   ├── legislazione-bancaria-2/  tracce d'orale, modulo 2
 │   └── test-ingresso/            test di ingresso EMR20, domande e soluzioni
@@ -135,11 +159,13 @@ cd latex
 make everything        # tutte le dispense e tutto il materiale d'esame
 make combined          # solo le dispense (+ volume unico)
 make esami             # solo il materiale d'esame, tutti i corsi
+make esercitazioni     # le esercitazioni di Econometria (24 PDF)
 make figure            # rigenera le figure delle dispense
 ```
 
 Dettagli in [`latex/README.md`](latex/README.md) e nei README di
 [`latex/esami/econometria/`](latex/esami/econometria/README.md),
+[`latex/esami/econometria/esercitazioni/`](latex/esami/econometria/esercitazioni/README.md),
 [`latex/esami/legislazione-bancaria-1/`](latex/esami/legislazione-bancaria-1/README.md),
 [`latex/esami/legislazione-bancaria-2/`](latex/esami/legislazione-bancaria-2/README.md) e
 [`latex/esami/test-ingresso/`](latex/esami/test-ingresso/README.md).

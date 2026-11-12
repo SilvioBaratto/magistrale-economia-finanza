@@ -42,6 +42,20 @@ generated: 2026-07-10
 
 *(slide 1–4)*
 
+> [!lezione] Dalla lezione del 10 novembre 2026: impostazione del corso
+> L'impostazione è più intuitiva che tecnica. Il corso si concentra sull'interpretazione economica ed è fatto soprattutto di ciò che non si deve fare, più che di come si eseguono i calcoli: lo scopo è dare la consapevolezza di che cosa evitare e di come riconoscere un modello che non va bene. La scelta del modello e delle variabili conta più della metodologia con cui si fanno poi i conti, e a guidarla è la teoria economica, non i dati.
+>
+> L'econometria è una disciplina ibrida: la distinzione rispetto all'economia non è netta, mentre lo è quella rispetto alla statistica. A separarla dalla statistica è un'ipotesi aggiuntiva con un'importante implicazione economica, l'**ipotesi di esogeneità**, che si formalizza come assenza di correlazione tra qualcosa che non si osserva (l'errore del modello) e qualcosa che si osserva (le variabili esplicative). Se il modello è costruito senza rispettare le regole dell'economia, gli indicatori stimati sono sistematicamente distorti: ciò che si stima non è l'effetto della politica considerata, ma tale effetto sommato a un fattore di disturbo non eliminabile, e l'aumento del numero di osservazioni rende solo più precisa la stima sbagliata. Si finisce per interpretare come effetto di una politica la somma di più effetti collaterali, potenzialmente diversi da quello di interesse. Per lo stesso motivo non interessa che il modello approssimi bene i dati, ma che le relazioni logiche tra le variabili siano corrette.
+
+> [!lezione] Dalla lezione del 10 novembre 2026: esame, esercitazioni e materiali
+> **Esame.** La prova è scritta, tipicamente di una decina di domande, ma il numero non è fissato. Si chiede di interpretare risultati, analizzando grafici e tabelle, e di capire se un modello ha un problema oppure no; per la parte di serie storica si chiede inoltre di stabilire se un modello è corretto dal punto di vista metodologico e di interpretare gli effetti dinamici e statici di un modello dinamico. Non si chiede di eseguire le stime. I vecchi esami sono su Moodle e prima della prova si svolgeranno esercitazioni in stile esame (mock exam) con il docente, con il dottor Peruzzi o con il tutor. Conviene sciogliere i dubbi a ricevimento prima dell'esame, perché dopo il compito è ormai fatto; la visione del compito si fa solo di persona.
+>
+> **Esercitazioni e software.** Per il 2026/27 le esercitazioni sono tenute dal dottor Peruzzi (le slide di questa nota, dell'edizione precedente, indicano il dottor Bidoia). Si usa Gretl, scelto perché è semplice, gratuito, disponibile su ogni piattaforma e lascia concentrare sulla parte econometrica più che sui comandi. Le lezioni empiriche contengono anche una componente di interpretazione. La prima tratta il riscalamento delle variabili con trasformazioni come il logaritmo e l'interpretazione degli effetti marginali, e la diagnosi della quasi collinearità: la collinearità esatta blocca il software, mentre quella quasi esatta non è facile da riconoscere e, se non ci si accorge del problema, si crede che il modello dia risultati corretti. Lo strumento diagnostico citato è, presumibilmente, il *variance inflation factor* (VIF).
+>
+> **Percorso.** La prima parte riguarda ciò che non va guardato in un output di regressione e ciò che non va fatto quando i dati sono indipendenti. La seconda mostra che cosa cambia in un contesto di dipendenza temporale e quali modelli sfruttano l'inerzia delle serie. I modelli a correzione d'equilibrio sono l'ultimo argomento.
+>
+> **Materiali.** Tutto il materiale è sulla pagina Moodle del corso (lucidi, dataset, vecchi esami), caricato prima delle lezioni. Conviene iscriversi manualmente alla pagina, così il docente può contattare tutti insieme. Il libro non è obbligatorio ma è discorsivo, ricco di esempi nei capitoli sulle serie storiche e sulla regressione, e mette a disposizione i dati degli esempi (anche in formato Excel) per replicare i calcoli. I lucidi sono una scaletta per il docente, messa a punto in circa trent'anni di insegnamento: il libro spiega il perché delle cose.
+
 ## Cos'è l'econometria?
 
 > [!abstract] Definizione
@@ -51,6 +65,9 @@ generated: 2026-07-10
 > - fare previsioni.
 
 *(slide 5)*
+
+> [!lezione] Dalla lezione del 10 novembre 2026: previsione e spiegazione
+> Se lo scopo del modello è fare previsioni, la relazione logica tra le variabili non è rilevante: la previsione è un gioco statistico, per cui se $x$ assume un certo livello $y$ ne assumerà un altro. Per rifornire la catena di produzione della Nutella interessa sapere che in un certo periodo dell'anno bisogna acquistare 7 tonnellate di nocciole, non perché la gente la mangi. Se invece si vuole capire perché la gente compra la Nutella, per esempio per decidere di cambiare la ricetta o il packaging, bisogna individuare i driver della variabile, e la sola associazione statistica non basta. Il corso riguarda soprattutto questo secondo scopo, perché il primo, con un modello banale, si ottiene in modo quasi automatico.
 
 ## Causalità: definizione e criteri
 
@@ -63,6 +80,9 @@ generated: 2026-07-10
 > 3. **L'esclusione di spiegazioni alternative.**
 
 *(slide 6)*
+
+> [!lezione] Dalla lezione del 10 novembre 2026: associazione e direzione del legame
+> Il primo criterio è statistico perché, senza una relazione statistica, una variazione di $x$ non avrebbe alcun impatto su $y$ e il problema non si porrebbe. Ma la correlazione è simmetrica: quella tra $x$ e $y$ e quella tra $y$ e $x$ sono lo stesso numero, quindi non dice nulla sulla direzione e indica solo un legame di qualche natura, non necessariamente logico. Per parlare di causalità servono ipotesi aggiuntive: un legame logico, e non solo statistico, con una variabile che anticipa l'altra non soltanto nel tempo ma nella logica, e una storia che spieghi perché esiste quel legame statistico. Non basta che la storia sia plausibile: deve essere unica.
 
 ## Esempio: consumo di caffè e probabilità d'infarto
 
@@ -97,6 +117,9 @@ generated: 2026-07-10
 
 *(slide 9–10)*
 
+> [!lezione] Dalla lezione del 10 novembre 2026: causalità inversa
+> Chi sostiene $S \to D$ osserva che chi ha fatto il boy scout è stato educato al rispetto di regole e principi ed è quindi meno incline a delinquere. Chi sostiene $D \to S$ osserva che chi è avverso alle regole difficilmente si iscrive a un ambiente che ne impone molte. Il legame statistico, essendo simmetrico, non permette di scegliere tra le due letture. Questa situazione si chiama *reverse causality* (causalità inversa) e rende problematica la stima di una relazione di causa ed effetto: per questo, prima ancora di costruire il modello, bisogna ragionare sui possibili legami logici tra le variabili. I dati della tabella non sono reali: il docente li ha ricopiati da un libro di statistica.
+
 ## Causalità: l'impossibilità di dimostrarla e il ruolo della confutazione
 
 In generale **non è possibile dimostrare l'esistenza di una relazione causale**, perché quasi mai è possibile escludere tutte le altre possibili spiegazioni di un fenomeno. Spesso non si riescono a controllare tutte le spiegazioni alternative (sono troppe) rispetto a un certo livello di associazione misurato.
@@ -104,6 +127,11 @@ In generale **non è possibile dimostrare l'esistenza di una relazione causale**
 Possiamo però **confutare** ipotesi di causalità: se riusciamo a confutare tutte le ipotesi tranne una, possiamo essere abbastanza certi nel definire il legame come nesso causale.
 
 *(slide 11)*
+
+> [!lezione] Dalla lezione del 10 novembre 2026: come si lavora senza una risposta definitiva
+> Ogni volta che si costruisce un modello bisogna chiarire perché lo si costruisce e perché si scelgono certe variabili, e verificare poi se descrive le aspettative, per esempio se i coefficienti hanno il segno atteso: un segno sbagliato può indicare che le correlazioni attese non sono stimate in modo corretto. Il modello proposto non sarà quello definitivo, ma contribuisce al lavoro di altri che provano modelli alternativi, finché si arriva a un consenso in cui le spiegazioni concorrenti sono state escluse.
+>
+> Si procede sempre in questo ordine: prima si individuano i potenziali driver sulla base della teoria, poi si inseriscono nel modello. Il contrario, cioè mettere nel modello tutte le variabili e selezionarle finché si trova qualcosa di gradito in termini di segni, non è sufficiente: la teoria deve definire a priori i legami logici e non ci si può far raccontare la storia dalla correlazione. È difficilissimo trovare relazioni causali, ma con un po' di pazienza qualcosa si trova.
 
 ## Esempio: fumo e cancro ai polmoni
 
@@ -117,6 +145,9 @@ Possiamo però **confutare** ipotesi di causalità: se riusciamo a confutare tut
 
 *(slide 12)*
 
+> [!lezione] Dalla lezione del 10 novembre 2026: il caso del fumo
+> L'associazione tra fumo e gravi malattie ai polmoni non basta, da sola, a stabilire il nesso di causa. Nel corso di decenni, e non di settimane, sono state testate varie ipotesi e sono stati individuati meccanismi biologici per cui il consumo di sigarette può aumentare l'incidenza di certe malattie. Poiché potrebbero esistere altri meccanismi non ancora visti, il risultato non è definitivo in senso assoluto: oggi si ritiene che la relazione causale esista, ma se un biologo trovasse un'alternativa più convincente bisognerebbe ripensare tutto. La procedura avanza per affinamenti successivi, ed è praticamente impossibile trovare un modello che risolva tutti i problemi in modo definitivo.
+
 ## Associazione non implica causalità
 
 In generale, l'associazione tra variabili **non** è un criterio sufficiente per stabilire se un legame sia interpretabile come causale. Una raccolta (a scopo illustrativo) di associazioni spurie "divertenti" è disponibile su http://www.tylervigen.com/spurious-correlations.
@@ -126,6 +157,18 @@ Non è difficile trovare variabili fortemente associate ma non legate tra loro: 
 Una volta osservato un legame statistico, è indispensabile spiegarlo dal punto di vista teorico e verificare che sia credibile anche dal punto di vista logico.
 
 *(slide 13)*
+
+> [!lezione] Dalla lezione del 10 novembre 2026: correlazioni spurie, $R^2$ e intelligenza artificiale
+> Il sito citato nasce da uno statistico che, partendo da un database di circa 10.000 variabili, ha fatto cercare a un programma le coppie più correlate possibili, senza considerare di quali variabili si trattasse. Due esempi:
+>
+> - il numero di spettatori della serie televisiva *Big Bang Theory* e il numero di ricerche su Google che cominciano con «how to make»: le due serie sono quasi sovrapposte e l'$R^2$ della relazione è 96,5%;
+> - l'esito delle partite finali di lacrosse e i biglietti venduti al cinema negli Stati Uniti: la correlazione è elevata, dell'ordine del 74%.
+>
+> Tra le variabili non c'è alcun legame logico. Dal punto di vista puramente previsivo si potrebbe usare una serie per prevedere l'altra, ma la correlazione non spiega perché una delle due si muova e quindi non permette alcuna analisi di scenario: se si trovasse una correlazione simile tra due variabili economiche senza rapporto reciproco, qualsiasi risultato di uno scenario sarebbe casuale e non replicabile.
+>
+> L'$R^2$ è la misura peggiore per valutare un modello e nel corso non va usato come indicatore di bontà: dice che i dati sono ben approssimati, cioè che le due variabili si muovono insieme, non che il modello è logicamente corretto, che è ciò che si cerca. Anzi, i modelli buoni non hanno tipicamente un $R^2$ molto grande, e un $R^2$ troppo grande porta con sé problemi statistici non banali, noti come problemi di collinearità.
+>
+> Lo stesso vale per l'intelligenza artificiale: se le si chiede perché due variabili abbiano una correlazione del 95%, una spiegazione viene sempre prodotta, che abbia senso o no. Il docente riporta il caso di una serie storica con un picco, che un sistema di intelligenza artificiale attribuì alla rivoluzione industriale di quegli anni, avvenuta in realtà circa un secolo prima o dopo. L'intelligenza artificiale può affinare l'intuizione, ma il controllo deve restare allo studente.
 
 ## Tipi di dato
 
@@ -179,6 +222,38 @@ Una volta osservato un legame statistico, è indispensabile spiegarlo dal punto 
 
 *(slide 15–22)*
 
+> [!lezione] Dalla lezione del 12 novembre 2026: il problema della dimensione della classe e i tre ingredienti della causalità
+> Il docente considera l'intuizione la cosa più importante da capire in questa parte: una volta acquisita, formalizzarla con concetti statistico-matematici è abbastanza semplice.
+>
+> Il docente descrive i bambini come quelli della scuola prescolastica (asilo, scuola dell'infanzia); la nota riferisce la riduzione alle classi K-3. Che cosa significhi "utile" per un programma di questo tipo è una questione più filosofica che statistica e non spetta all'econometrico. Qui "vanno meglio" significa che i bambini ottengono risultati migliori nei test di fine anno. Che sia così è intuitivo: in classi più piccole l'insegnante dedica più tempo a ogni bambino, con miglioramenti nelle capacità pratiche e astratte.
+>
+> La policy costa molto, perché servono più docenti e una riorganizzazione delle classi: con 100 bambini, classi da 10 anziché da 20 richiedono più classi, più computer e più attrezzatura. Il docente quantifica l'investimento, a memoria, in circa 1,8 miliardi di dollari l'anno, e nel seguito parla di circa due miliardi. La spesa ha senso se la variabile su cui si interviene è in relazione causale con la performance dei bambini: serve un modello causale che dica se la dimensione della classe sia un driver, non statistico ma logico, di tale performance.
+>
+> I dati sono quelli dei distretti scolastici della California, circa 420, e ogni punto dello scatterplot è un distretto. Sull'asse delle ascisse c'è la dimensione media delle classi della scuola dell'infanzia del distretto, su quello delle ordinate il punteggio medio dei bambini del distretto in un test standardizzato, che valuta competenze di matematica, logica e lingua adatte all'età. La pendenza negativa della retta è il primo ingrediente della relazione causale: la correlazione tra le due variabili è minore di zero. Se la diminuzione sia piccola o grande non spetta a questa analisi. Il secondo ingrediente è una spiegazione logica, che il docente ritiene soddisfatta in termini generali: classi più piccole significano più attenzione a ciascun bambino e un lavoro più focalizzato. Non è detto che la spiegazione sia corretta, ma è plausibile.
+>
+> Il terzo ingrediente richiede di poter escludere spiegazioni alternative più convincenti. Per stabilirlo si fanno altri esperimenti e si provano modelli alternativi. Una spiegazione esaustiva non si troverà, perché non si possono costruire infiniti modelli che spieghino in modo alternativo la correlazione negativa: si considera una serie di alternative ragionevoli per vedere se la teoria resta la strategia migliore o se c'è qualcosa di meglio. Stimando la pendenza della retta si potrebbe poi valutare, per esempio, se la riduzione di un'unità della dimensione della classe produca un beneficio di 10 punti al test, che sono molti o pochi a seconda della scala del test. Il problema ora non è però quantificare gli effetti, ma capire se esistano modelli migliori, e questi possono passare per l'analisi congiunta di altre variabili.
+
+> [!lezione] Dalla lezione del 12 novembre 2026: perché il reddito può spiegare la relazione negativa
+> Il reddito ha impatto su fondamentalmente tutte le scelte, e i distretti ad alto reddito potrebbero avere performance migliori per due vie. In primo luogo le famiglie possono permettersi di comprare più libri ai bambini, e questo può riflettersi in una migliore performance scolastica. In secondo luogo i distretti ad alto reddito potrebbero avere scuole mediamente migliori. Nei dati americani il distretto di appartenenza conta: dove ci sono buone scuole pubbliche, la scuola privata costa moltissimo già dalle elementari, nell'ordine di decine di migliaia di dollari l'anno, e chi non può permettersela vorrebbe una scuola pubblica, ma il livello delle scuole pubbliche è abbastanza eterogeneo. Le scuole pubbliche molto buone si trovano in zone dove il prezzo delle case è estremamente più alto, per cui la scuola pubblica buona, che costa relativamente poco, è in un distretto ricco. Il reddito può dunque incidere sulla qualità della scuola, che a sua volta incide sui risultati dei bambini.
+>
+> Il reddito potrebbe così avere un effetto positivo sulla performance e un effetto negativo sulla dimensione della classe, perché le scuole migliori hanno già classi più piccole, magari perché hanno più insegnanti. Negli Stati Uniti il concetto di dimensione della classe è particolare: non ci sono necessariamente classi fisse, perché le classi si formano di volta in volta, e la dimensione viene calcolata come rapporto studenti-insegnanti. Una scuola migliore può avere più insegnanti e altre caratteristiche favorevoli. Se esistono una relazione negativa tra reddito e dimensione della classe e una relazione positiva tra reddito e performance, la relazione negativa osservata tra le due variabili iniziali potrebbe passare per l'effetto del reddito.
+
+> [!lezione] Dalla lezione del 12 novembre 2026: come si controlla per il reddito e che cosa si conclude
+> Si vuole evitare che il reddito sia il vero driver, e quindi si controlla per il reddito. Prendendo due distretti molto ricchi e calcolando tra loro la dipendenza tra dimensione della classe e performance, la correlazione non può dipendere dal reddito, perché le osservazioni provengono da un contesto molto omogeneo. Per questo il campione si divide in distretti ricchi e poveri e in ciascun sottocampione si calcola la correlazione tra le due variabili. Se le due correlazioni sono diverse, il reddito ha potere esplicativo: per spiegare la correlazione negativa bisogna passare per il reddito, il modello precedente va scartato perché non soddisfacente e si passa al modello esteso. Se restano uguali, la relazione è la stessa indipendentemente dal reddito, aggiungerlo non ha alcuna utilità pratica e tanto vale usare il modello precedente, quello senza reddito.
+>
+> L'analisi mostrata è molto grossolana: si calcola la mediana del reddito, e i distretti sotto la mediana sono classificati a basso reddito, quelli sopra ad alto reddito. Come funzioni il procedimento si vedrà meglio con il modello di regressione. Per i distretti a basso reddito la correlazione tra dimensione della classe e performance diventa piuttosto piccola e, secondo il docente, in un test di significatività non risulta statisticamente significativa; la nota riporta per questi distretti $-0.1464$, debolmente significativa. Il reddito sembra quindi il driver principale della correlazione negativa: condizionatamente al reddito basso, la correlazione condizionale tra dimensione della classe e performance è sostanzialmente zero. Secondo il docente, anche per i distretti ad alto reddito la correlazione è piuttosto bassa e il test la indica come non significativa, con un p-value leggermente più alto, comunque non sufficiente a giustificare un livello di significatività; la nota riporta per questi distretti $-0.1962$.
+>
+> Ricalcolando sul dataset del corso (`ECON_Dataset_caschool.csv`, 420 distretti) le correlazioni complessive coincidono con la nota ($-0.2264$ tra dimensione della classe e punteggio, $0.7124$ tra reddito e punteggio), ma quelle nei sottocampioni no. Dividendo alla mediana del reddito (13.73) si ottiene $-0.130$ per il basso reddito ($t=-1.89$, debolmente significativa) e $-0.336$ per l'alto reddito ($t=-5.14$, significativa); dividendo alla media (15.32), $-0.1464$ ($t=-2.41$) e $-0.385$ ($t=-5.10$). Il $-0.1464$ della nota si riproduce quindi con la divisione alla media e non alla mediana, mentre il $-0.1962$ per l'alto reddito non si riproduce con nessuna delle due. Per l'alto reddito la correlazione condizionale risulta significativa in entrambe le divisioni: l'affermazione che sia non significativa, che il docente riprende dalle slide, non trova riscontro in questo dataset. L'esempio resta valido come illustrazione del ragionamento sul controllo per una terza variabile, ma la conclusione numerica che il reddito spieghi da solo la correlazione negativa non è confermata dai dati.
+>
+> Secondo il docente, controllando per il reddito la correlazione tra la variabile su cui si vorrebbe investire e la performance è dunque non significativa. Il nuovo modello, che passa per il reddito, contiene più informazione, ha senso a parole e supera il precedente: le conclusioni inferenziali escludono il modello precedente, e la correlazione marginale non è così importante perché quella condizionale ai livelli di reddito non è statisticamente significativa.
+>
+> Per il responsabile politico della California (provveditore, ministro o equivalente) la questione è se i circa due miliardi di dollari l'anno da spendere servano a migliorare la performance. Se la correlazione negativa fosse un semplice effetto collaterale del reddito, assumere nuovi docenti probabilmente non sarebbe utile, perché si interverrebbe su una variabile solo apparentemente legata alla performance dei bambini, da cui questa non dipende direttamente. Sarebbe forse più opportuno dare sussidi alle famiglie meno ricche, se l'obiettivo è migliorare la performance, perché il reddito sembra la variabile chiave.
+>
+> L'analisi non è conclusa, perché potrebbero esserci altri fattori. Si ha però un meccanismo di scelta: si estende il modello, si verifica se migliora il precedente, si fanno valutazioni di natura logica e si traggono le conclusioni. La strategia è non fissarsi sul modello e sull'idea iniziali, ma estenderli per capire quale sia la spiegazione migliore della correlazione negativa osservata all'inizio, cioè perché esista.
+
+> [!lezione] Dalla lezione del 12 novembre 2026: estendere il modello con coerenza logica
+> Per capire se una relazione sia causale, uno dei problemi principali è incrementare il modello in modo logico e verificare se il nuovo modello migliora il precedente. Il modello più esteso deve mantenere sempre coerenza logica, con una spiegazione che valga la pena di usare. Non si possono inserire informazioni come il numero di persone che in California vanno a vedere il film di Nicolas Cage: potrebbero essere correlate, ma la correlazione potrebbe dipendere da qualunque cosa. Quando si inserisce una variabile nel modello serve una storia da raccontare, e non si lascia che siano i dati a dire che cosa si vuole spiegare. Il docente indica questo come il punto più importante.
+
 ## Serie storiche: il modello CAPM
 
 > [!tip] Teorema
@@ -207,6 +282,11 @@ Una volta osservato un legame statistico, è indispensabile spiegarlo dal punto 
 > - $\alpha$ è un'intercetta (costante).
 
 *(slide 23–25)*
+
+> [!lezione] Dalla lezione del 10 novembre 2026: perché il CAPM si valida con l'intercetta
+> Il CAPM non è un'equazione ma il risultato di due pagine di algebra che poggiano su molte ipotesi: che il mercato dei capitali e quello dei tassi di interesse siano in equilibrio, che gli investitori costruiscano i portafogli con l'algoritmo di Markowitz. Se il modello fosse vero, un investimento non dovrebbe garantire in media alcun premio oltre quello proporzionale al rischio di mercato, e in termini operativi la regressione non può avere intercetta. La validazione consiste allora nello stimare una regressione che include l'intercetta e nel verificare se è uguale a zero: si usa una metodologia econometrica per controllare se un modello economico è coerente con i dati, perché un modello incoerente con ciò che si osserva ha poca utilità.
+>
+> Se il test non supporta il modello, non si può semplicemente aggiungere un'intercetta: significherebbe cambiare tutte le equazioni e le ipotesi su cui poggia la derivazione. Bisogna rispecificare il modello economico in modo che il modello statistico accetti quelle variazioni. La validazione di una teoria rispetto ai dati è la terza funzione dell'econometria, e quella che al docente interessa di più.
 
 ## Serie storiche: verifica empirica del CAPM
 
@@ -260,3 +340,27 @@ Una volta osservato un legame statistico, è indispensabile spiegarlo dal punto 
 > $\hat{\delta}$ è statisticamente diverso da 0? Occorre calcolare opportuni errori standard. Per questo, risulta opportuno usare modelli di regressione specifici per l'analisi dei **dati panel**.
 
 *(slide 29–32)*
+
+## Tre cause di problemi nella stima
+
+*Integrazione dalla lezione del 10 novembre 2026.*
+
+Per riconoscere quando un modello non va bene bisogna conoscere le potenziali cause di problemi, che sono tipicamente di tre tipi.
+
+**Troppe poche informazioni nel modello (variabili omesse).** Nel caso più semplice, oltre alla variabile dipendente $y$ e al driver $x$, il modello contiene un termine d'errore $\varepsilon$. Dal punto di vista statistico è una variabile casuale a media zero e varianza qualsiasi; dal punto di vista economico raccoglie tutte le informazioni che non sono nel modello. Se queste informazioni sono rilevanti e hanno un effetto su $x$, una variazione di $x$ si associa sia a una variazione di $y$ sia a una variazione di $\varepsilon$: la variazione osservata di $y$ è una combinazione delle due componenti, di cui si misura solo il totale senza sapere quanto conti ciascuna. Poiché $\varepsilon$ non è osservabile, non si è più in grado di valutare che cosa stia facendo il modello. È il primo caso di endogeneità. La soluzione è portare nel modello le variabili omesse, scelte con ragionamenti logici e non con una procedura puramente statistica: il problema è economico e si tratta di capire quali variabili contano davvero.
+
+**Causalità non chiara.** Se non è chiaro se sia $x$ a influenzare $y$ o il contrario, si introduce di fatto un riferimento circolare: non si sa più se, muovendo una variabile, si muova l'altra. Il cortocircuito crea una correlazione tra $x$ e l'errore, e la stima dei coefficienti diventa problematica.
+
+**Errori di misura nei dati.** Anche se il modello è perfetto, dati approssimativi e poveri di informazione inducono una distorsione nella stima dei parametri, tanto maggiore quanto più grande è l'errore di misura. Si pensi a un'indagine sulle spese delle famiglie che chiede quanto si è speso al supermercato nell'ultima settimana. Chi ha speso 190 euro tende a ricordare e a riportare 200, e chi ne ha spesi 205 riporta ugualmente 200. L'errore di riporto non è sistematico e la spesa media del campione può risultare corretta, ma introduce rumore nella procedura di stima e distorce la stima del parametro. Il caso è diverso per l'evasione fiscale, dove tutti tenderebbero a sottostimare o a sovrastimare: lì la distorsione è sistematica e si controlla più facilmente. Qui si tratta invece di persone oneste ma imprecise perché non ricordano, tanto più quanto più lontano è l'evento a cui la domanda si riferisce, e questo può creare grossi problemi. Gli effetti saranno mostrati con dati simulati, quindi controllabili.
+
+## Dati dinamici e stabilità
+
+*Integrazione dalla lezione del 10 novembre 2026.*
+
+Nell'analisi di regressione con dati cross section si assume di solito che le osservazioni siano pescate in modo indipendente dalla popolazione. Nei sistemi dinamici, tipici della finanza e dell'economia, le variabili hanno invece una loro inerzia e non sono osservate in modo indipendente: se il tasso di interesse oggi è il 5%, domani sarà intorno al 5% e non allo 0% o al 10%. Ne nasce un problema di stabilità dei dati nel tempo, perché la statistica funziona bene se i dati sono stabili.
+
+**Il limite della media.** Si pensi ai prezzi giornalieri di un indice azionario come lo Standard & Poor's, che seguono un andamento con trend. Un software calcola senza difficoltà la media dei prezzi, ma la media è un indicatore di centralità che descrive il fenomeno solo in un intervallo temporale, per puro caso, e non negli intervalli che lo precedono e lo seguono. Una media che mette insieme i prezzi degli ultimi cinque anni e quelli di trent'anni fa non descrive né l'oggi né il passato: i dati provengono da popolazioni statistiche diverse, ciascuna con la propria media. Lo stesso accade in una popolazione in cui metà è alta due metri e metà un metro: le medie rappresentative sono due, quelle delle distribuzioni condizionali, mentre la media aritmetica campionaria, circa un metro e mezzo, non è un indicatore utile né per i bassi né per gli alti. Se i dati non sono sufficientemente regolari, le statistiche descrittive e i parametri stimati non hanno alcun significato logico: numericamente si calcola tutto, ma i numeri non significano nulla. Con le serie storiche bisogna perciò assumere che la serie sia stabile nel tempo, almeno nel senso di avere una media comune.
+
+**Trasformazioni che stabilizzano.** Esistono trasformazioni uno a uno delle serie originali, che quindi non fanno perdere informazione, e tendono a stabilizzarle. Tipicamente, anziché i prezzi si usano le variazioni di prezzo, cioè i rendimenti, che hanno di solito una media stabile, tipicamente zero. Ciò che cambia nel tempo è la variabilità, che si gestisce in modo più naturale con i modelli ARCH e GARCH, usati in finanza per capire perché la varianza, che è un indicatore di rischio, cambia nel tempo e in che modo. Su questa base si costruiscono le misure di rischio dei corsi di analisi del rischio e di risk management.
+
+**Dipendenza, regressione spuria e cointegrazione.** Quando i dati sono osservati nel tempo non sono indipendenti, e occorre controllare che la dipendenza sia sotto controllo. Se la dipendenza genera una componente di trend, la statistica descrittiva standard non funziona più: si può dimostrare che il teorema del limite centrale e la legge dei grandi numeri non valgono e che le proprietà statistiche degli indicatori vengono meno. Ne deriva la **regressione spuria**: prendendo due serie indipendenti per costruzione, il test di significatività del coefficiente che le lega risulta quasi sempre diverso da zero, con un p-value estremamente piccolo. Il test si basa su una distribuzione normale, mentre la distribuzione degli stimatori con questi dati non lo è; il software non lo sa e restituisce un numero privo di senso. Con dati non stabili non si può dunque usare facilmente la regressione, a meno che i dati non siano stabilizzati prima. Fa eccezione la **cointegrazione**, molto importante soprattutto in finanza: se le caratteristiche di regolarità sono più o meno stabili, si può sperare che sia stabile anche la relazione tra le variabili e che il parametro che le lega sia identificabile.

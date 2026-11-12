@@ -66,7 +66,10 @@ class Volume:
         subtitle: Subtitle of the edition.
         disclaimer: Last line of its title page.
         chapter_label: Each source becomes a chapter "<label> NN" (NN from the
-            source's file name) and its own headings move one level down.
+            source's file name) and its own headings move one level down. A
+            source whose front matter has a ``capitolo`` field is titled by it.
+        unit: Name of a source in the statistics line. When set, the line counts
+            the sources and the questions of the course instead of tests and answers.
     """
 
     stem: str
@@ -75,6 +78,7 @@ class Volume:
     subtitle: str
     disclaimer: str
     chapter_label: str
+    unit: str = ""
 
 
 @dataclass(frozen=True)
@@ -102,6 +106,8 @@ class Course:
             papers of a past sitting, which belong to no current year.
         volumes: Single-file editions of subsets of the sources, for a course
             whose papers and solutions each deserve one file.
+        macros: LaTeX preamble file, for a course whose macros live outside its
+            sources folder; by default ``macros.tex`` next to the sources.
     """
 
     slug: str
@@ -119,10 +125,16 @@ class Course:
     prepare: Callable[[str], tuple[dict[str, str], str]] | None = None
     dated: bool = True
     volumes: tuple[Volume, ...] = ()
+    macros: Path | None = None
 
     @property
     def sources_dir(self) -> Path:
         return LATEX / "esami" / self.slug
+
+    @property
+    def macros_file(self) -> Path:
+        """The LaTeX preamble file of the course; it may not exist."""
+        return self.macros or self.sources_dir / "macros.tex"
 
     @property
     def src_dir(self) -> Path:
@@ -341,6 +353,26 @@ COURSES = {c.slug: c for c in (
             ),
         ),
     ),
+    Course(
+        slug="econometria/esercitazioni",
+        # One PDF per source: esercitazioni.build writes, for each module and each
+        # appello, ECON_Esercizi_NN_<Descrizione>.md and ECON_Soluzioni_NN_<Descrizione>.md.
+        pattern="ECON_*.md",
+        coursecode="EM0004",
+        disclaimer=("Esercizi sintetici costruiti a fini di studio sul modello dei veri appelli e "
+                    "sulla teoria del corso (Econometria EM0004, prof. Davide Raggi). Non sono "
+                    "materiale ufficiale del docente."),
+        subtitle="Esercizi di preparazione",
+        volume=None,
+        volume_title="",
+        volume_subtitle="",
+        parts=False,
+        question_re=r"^> \[!question\]",
+        unit="parti",
+        src=LATEX / "build" / "esercitazioni-econometria" / "src",
+        dated=False,
+        macros=LATEX / "esami" / "econometria" / "macros.tex",
+    ),
 )}
 
 FENCE = ":" * 5
@@ -544,7 +576,7 @@ def render(course: Course, slug: str, body: str, meta: dict[str, str],
         "-V", f"toc-depth={max(toc_depth - 1, 0)}",
         "-o", str(tex),
     ]
-    macros = course.sources_dir / "macros.tex"
+    macros = course.macros_file
     if macros.is_file():
         cmd += ["--include-in-header", str(macros)]
     for key, value in doc_meta.items():
@@ -623,19 +655,24 @@ def edition_markdown(course: Course, spec: Volume) -> tuple[str, dict[str, str]]
         The Markdown body and its title-page fields. Headings of each source move
         one level down under a chapter named after the source.
     """
-    pieces, tests, answers = [], 0, 0
+    pieces, tests, answers, questions = [], 0, 0, 0
     paths = sorted(course.src_dir.glob(spec.pattern))
     for md in paths:
-        _meta, body = course.load(md)
+        meta, body = course.load(md)
         tests += len(re.findall(r'heading="\d+"', body))
         answers += len(re.findall(r"\*\*\d+\) [ABC]\.", body))
+        questions += count_questions(course, body)
         body = namespace_references(body, md.stem)
         body = re.sub(r"^(#{1,5}) ", r"\1# ", body, flags=re.M)
         number = re.search(r"_(\d+)$", md.stem)
-        title = f"{spec.chapter_label} {int(number.group(1)):02d}" if number else md.stem
+        title = meta.get("capitolo") or (
+            f"{spec.chapter_label} {int(number.group(1)):02d}" if number else md.stem)
         pieces.append(f"# {title}\n\n{body}")
-    stats = (f"{len(paths)} appelli \u00b7 {tests} domande a risposta multipla" if tests
-             else f"{len(paths)} appelli svolti \u00b7 {answers} risposte motivate")
+    if spec.unit:
+        stats = f"{len(paths)} {spec.unit} \u00b7 {questions} domande"
+    else:
+        stats = (f"{len(paths)} appelli \u00b7 {tests} domande a risposta multipla" if tests
+                 else f"{len(paths)} appelli svolti \u00b7 {answers} risposte motivate")
     meta = {"title": spec.title, "subtitle": spec.subtitle, "stats": stats, "disclaimer": spec.disclaimer}
     return "\n\n".join(pieces), meta
 
@@ -655,7 +692,7 @@ def list_course(course: Course) -> None:
               f"pdf:{'si' if pdf.exists() else 'no'}")
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--corso", action="append", choices=sorted(COURSES),
@@ -667,7 +704,7 @@ def main() -> int:
     ap.add_argument("--volume", action="store_true", help="compila anche il volume unico")
     ap.add_argument("--toc-depth", type=int, default=2)
     ap.add_argument("--keep", action="store_true", help="conserva i file .tex intermedi")
-    args = ap.parse_args()
+    args = ap.parse_args(argv)
 
     courses = [COURSES[c] for c in args.corso] if args.corso else list(COURSES.values())
     if args.list or not (args.all or args.exam or args.volume):
@@ -694,6 +731,10 @@ def main() -> int:
             print(f"    {out.relative_to(REPO)}")
             built += 1
         for spec in course.volumes if args.volume else ():
+            if not any(course.src_dir.glob(spec.pattern)):
+                print(f"nessun sorgente per {spec.stem}: genera prima i sorgenti del corso",
+                      file=sys.stderr)
+                continue
             print(f"==> {spec.stem}")
             body, meta = edition_markdown(course, spec)
             out = render(course, spec.stem, body, meta, max(args.toc_depth, 2), args.keep)

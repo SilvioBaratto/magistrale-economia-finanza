@@ -50,6 +50,13 @@ La Circolare 285 contiene le norme di recepimento della direttiva 2013/36/UE e r
 
 *(pagina 1–2)*
 
+> [!lezione] Dalla lezione del 12 novembre 2026: gli effetti della valutazione sull'attività di vigilanza
+> La valutazione orienta tutta la successiva attività di vigilanza. Il docente indica che una banca con punteggio 1 non richiede interventi (la nota indica, per i punteggi 1 o 2, atti di *moral suasion* o l'invio di lettere). Una banca con 3, con il punteggio concentrato sul rischio di credito, porta la vigilanza ad avviare in parallelo iniziative per orientarla a ridurre il rischio di credito: la Banca d'Italia può restringere i coefficienti prudenziali oppure rafforzare la vigilanza informativa. Rispetto a una posizione particolarmente grossa e problematica, può dire alla banca che quanto segnalato alla Centrale dei rischi non basta e chiedere un'informazione più puntuale, ogni mese o, per una posizione di grande rilievo, ogni dieci giorni.
+>
+> Dopo l'ispezione, oppure direttamente a seguito dello SREP, la Banca d'Italia può segnalare alla BCE che ci sono problemi su un profilo specifico, per esempio il rischio di credito, e dare un giro di vite alla singola banca su alcuni ratios prudenziali: per le altre banche il coefficiente è dell'8%, per quella banca può essere portato al 12%.
+>
+> Il docente osserva che occorre garantire la parità concorrenziale tra le banche, che questi provvedimenti devono essere motivati e che la vigilanza può adottare solo misure più restrittive, mai più blande rispetto allo standard. Un coefficiente dell'8% può essere portato al 12%, ma l'autorità non può dire a una banca particolarmente brava, con punteggio 1, che avrà un bonus e un coefficiente del 5%: questo non è assolutamente possibile.
+
 ## Art. 53-bis, comma 1: i poteri di intervento specifico di BI (lettere a-e)
 
 Il comma 1 dell'art. 53-bis TUB elenca i poteri che la Banca d'Italia può esercitare nei confronti delle banche vigilate.

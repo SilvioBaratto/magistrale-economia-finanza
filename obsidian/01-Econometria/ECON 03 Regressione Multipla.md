@@ -96,6 +96,15 @@ generated: 2026-07-10
 
 *(slide 8–11)*
 
+> [!lezione] Dalla lezione del 12 novembre 2026: la dimensione della classe con e senza il reddito
+> Nella regressione semplice del punteggio dei bambini sulla dimensione della classe, la pendenza stimata è indicata dal docente in $-2{,}27$ (la nota riporta $-2{,}28$). Il test di significatività sul coefficiente, per verificare se il parametro sia diverso da zero, dà un p-value pari a zero: esiste una pendenza negativa, quella della retta dello scatter plot che descrive i dati.
+>
+> Nel modello esteso l'aspettativa del punteggio dipende dalla dimensione della classe, $X_1$, e dal reddito, $X_2$. Stimandolo, il coefficiente che lega la performance alla dimensione della classe si più che dimezza, passando da circa $-2{,}2$ a $-0{,}64$, e il test di significatività dà un p-value maggiore del 5%, non esageratamente grande. Aggiungendo il reddito, l'impatto della dimensione della classe sulla performance si riduce di molto: in un'analisi stretta, condizionatamente al livello di reddito la dipendenza lineare tra performance e dimensione della classe è nulla. Il docente collega questo risultato al p-value dell'analisi per sottocampioni di ECON 01.
+>
+> Ricalcolando sul dataset del corso (`ECON_Dataset_caschool.csv`, 420 distretti): nella regressione semplice la pendenza è $-2.2798$ (errore standard $0.4798$, $t=-4.75$); aggiungendo il reddito il coefficiente della dimensione della classe diventa $-0.6487$ (errore standard $0.3544$, $t=-1.83$, p-value di circa $0.07$), quindi non significativo al 5% e debolmente significativo al 10%. Quanto detto dal docente sul modello esteso è confermato; il collegamento con l'analisi per sottocampioni no, perché sul dataset la correlazione nel gruppo ad alto reddito è significativa (vedi ECON 01).
+>
+> Il docente presenta la costruzione di un modello con due variabili come equivalente a dividere il campione in due pezzi, alto e basso reddito, e a calcolare il livello di dipendenza nei due sottoinsiemi. Il punto viene ripreso più avanti.
+
 ## Cause di endogeneità: distorsione da variabile omessa
 
 > [!tip] Teorema
@@ -139,6 +148,13 @@ generated: 2026-07-10
 > - Questa distorsione persiste anche se $n$ è grande (**non consistenza**).
 
 *(slide 12–16)*
+
+> [!lezione] Dalla lezione del 12 novembre 2026: l'endogeneità nell'esempio della dimensione della classe
+> Nell'esempio dei bambini a scuola c'è un problema di endogeneità. La prima regressione lega la performance dei bambini alla dimensione della classe più un termine d'errore, e nel termine d'errore c'è l'effetto del reddito, perché non è nel modello: $\varepsilon$ raccoglie tutto ciò che non è dimensione della classe, e qui lo si può identificare con il reddito. Poiché la correlazione tra reddito e dimensione della classe è significativamente diversa da zero, stimare quel modello significa ipotizzare di fatto che sia zero.
+>
+> Si toglie allora dal termine d'errore il reddito, che è la variabile problematica, e lo si inserisce nel modello. L'errore del modello con il regressore in più non è più caratterizzato dall'effetto del reddito, perché questo è ora parte della media condizionale e non della parte residuale. Ristimando il modello si elimina una delle possibili cause di endogeneità, cioè una delle cause che creano relazione tra $\varepsilon$ e la dimensione della classe, e il parametro passa da circa $-2{,}2$ a $-0{,}64$.
+>
+> Secondo il docente nel modello precedente c'era probabilmente un problema di endogeneità che si era fatto finta di non vedere. I parametri sono cambiati molto, quindi per stimare $\beta$ nella prima regressione si è probabilmente usata la formula sbagliata, supponendo nulla la correlazione tra reddito e dimensione della classe, che invece non lo è. La distorsione non è piccola e il parametro cambia molto: queste sono le conseguenze di stimare un modello facendo finta che $\Delta\varepsilon$ sia uguale a zero quando in realtà non lo è.
 
 ## Cause di endogeneità: errori di misura
 

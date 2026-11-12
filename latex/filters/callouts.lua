@@ -25,15 +25,17 @@ local DEFAULT_HEADING = {
 local NUMBERED = { cvdefinizione = true, cvteorema = true, cvesempio = true }
 local ITALIC_HEAD = { cvdimostrazione = true, cvnota = true }
 
+-- ASCII-only trim: Lua's %s matches byte 0xA0 on macOS, which is the second byte of "à"
+-- (C3 A0), so a trailing "à" was cut in half and rendered as U+FFFD.
 local function inline_latex(str)
   local doc = pandoc.read(str, "markdown")
   local tex = pandoc.write(doc, "latex")
-  return (tex:gsub("%s+$", ""))
+  return (tex:gsub("[ \t\r\n]+$", ""))
 end
 
 local function blocks_latex(blocks)
   local tex = pandoc.write(pandoc.Pandoc(blocks), "latex")
-  return (tex:gsub("%s+$", ""))
+  return (tex:gsub("[ \t\r\n]+$", ""))
 end
 
 local function is_paragraph(block)

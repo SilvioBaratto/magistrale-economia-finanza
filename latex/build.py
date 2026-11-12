@@ -291,8 +291,10 @@ def convert_callouts(lines: list[str]) -> list[str]:
         body: list[str] = []
         while i < len(lines) and (lines[i].startswith(">") or lines[i].strip() == ""):
             if lines[i].strip() == "":
-                # blank line ends the callout unless the quote continues after it
-                if i + 1 < len(lines) and lines[i + 1].startswith(">"):
+                # blank line ends the callout unless the quote continues after it; a quote that
+                # opens with its own `[!kind]` header is the next callout, not a continuation
+                if (i + 1 < len(lines) and lines[i + 1].startswith(">")
+                        and not CALLOUT_RE.match(lines[i + 1])):
                     body.append("")
                     i += 1
                     continue

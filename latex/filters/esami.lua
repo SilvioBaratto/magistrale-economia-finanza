@@ -35,15 +35,17 @@ local DEFAULT_HEADING = {
   note     = "Nota",
 }
 
+-- ASCII-only trim: Lua's %s matches byte 0xA0 on macOS, which is the second byte of "à"
+-- (C3 A0), so a trailing "à" was cut in half and rendered as U+FFFD.
 local function inline_latex(str)
   local doc = pandoc.read(str, "markdown")
   local tex = pandoc.write(doc, "latex")
-  return (tex:gsub("%s+$", ""))
+  return (tex:gsub("[ \t\r\n]+$", ""))
 end
 
 local function blocks_latex(blocks)
   local tex = pandoc.write(pandoc.Pandoc(blocks), "latex")
-  return (tex:gsub("%s+$", ""))
+  return (tex:gsub("[ \t\r\n]+$", ""))
 end
 
 -- The right option of a multiple-choice question (test-ingresso): a raw

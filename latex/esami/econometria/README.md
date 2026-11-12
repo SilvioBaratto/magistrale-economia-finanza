@@ -123,6 +123,16 @@ I documenti **non rimandano ad alcun file esterno**: la formula che serve a una 
 (effetto marginale, varianza di β̂ⱼ con il VIF, assorbimento dell'ECM) è scritta nella
 risposta stessa. Le derivazioni complete restano in `_teoria/`.
 
+## Esercitazioni
+
+Oltre alle soluzioni dei sette appelli veri, `esercitazioni/` contiene un banco di esercizi
+sintetici per prepararsi all'esame, dalle fondamenta di probabilità e statistica al livello
+delle domande d'appello: 8 moduli (00-07) e 4 appelli simulati, con **24 PDF** in
+`esami/econometria/esercitazioni/` (esercizi e soluzioni separati per ogni parte). Ogni
+numero esce da uno script e un risolutore indipendente lo ha ricalcolato dal solo testo. Il
+funzionamento, i comandi e la tassonomia dei tipi di domanda sono nel README di quella
+cartella.
+
 ## Avvertenza
 
 Svolgimento personale a fini di studio: non è una soluzione ufficiale e non è stato

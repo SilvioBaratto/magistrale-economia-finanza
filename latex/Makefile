@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: all list combined sections esami esami-volume verifica verifica-simulati figure figure-esami everything clean distclean
+.PHONY: all list combined sections appunti esami esami-volume esercitazioni verifica verifica-simulati figure figure-esami everything clean distclean
 all:            ## build one PDF per subject
 	$(PY) build.py --all
 
@@ -12,6 +12,9 @@ combined:       ## build every subject + the single-volume edition
 
 sections:       ## build with a two-level table of contents
 	$(PY) build.py --all --toc-depth 2
+
+appunti:        ## merge each course's lecture notes (obsidian/<corso>/appunti/) into ../dispense/appunti/<corso>.pdf
+	$(PY) build_appunti.py --all
 
 esami:          ## build the exam material of every course into ../esami/<corso>/
 	$(PY) build_esami.py --all
@@ -26,6 +29,10 @@ verifica-simulati: ## check the simulated Finanza Strategica exams (structure, a
 esami-volume:   ## build the single volume of every course
 	$(PY) build_esami.py --volume
 
+esercitazioni:  ## build the Econometria exercise sets: sources from the banks, then one exercises PDF and one solutions PDF per module and per appello in ../esami/econometria/esercitazioni/
+	cd esami/econometria && $(PY) -m esercitazioni.build --all
+	$(PY) build_esami.py --corso econometria/esercitazioni --all
+
 figure:         ## regenerate the figures of the dispense
 	for f in figure-src/01-econometria/econ-*.py; do $(PY) "$$f" || exit 1; done
 
@@ -35,7 +42,7 @@ figure-esami:   ## regenerate the figures of the exam solutions
 everything: combined esami esami-volume   ## every PDF of the repository
 
 clean:          ## remove LaTeX intermediates
-	rm -rf tex/.aux-* build/*.md build/esami-*
+	rm -rf tex/.aux-* build/*.md build/esami-* build/esercitazioni-*
 
 distclean: clean
 	rm -f tex/*.tex ../dispense/*.pdf ../esami/*/*.pdf

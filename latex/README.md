@@ -7,6 +7,7 @@ filtro condivisi:
 |---|---|---|
 | `build.py` | vault Obsidian (`../obsidian/`) | una dispensa per insegnamento in `../dispense/`, più un volume unico |
 | `build_esami.py` | materiale d'esame (`esami/<corso>/src/`) | un PDF per sorgente in `../esami/<corso>/`, più il volume unico di ogni corso |
+| `build_appunti.py` | appunti delle lezioni (`../obsidian/<Materia>/appunti/*.md`, scritti dalla skill `appunti-lezione`) | un PDF per insegnamento in `../dispense/appunti/`, una lezione per capitolo in ordine di data (`make appunti`) |
 
 Nulla viene scritto dentro `../obsidian/`. Il materiale d'esame di ogni corso ha il suo README:
 

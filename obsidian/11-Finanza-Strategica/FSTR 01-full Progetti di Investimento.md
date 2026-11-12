@@ -27,6 +27,16 @@ I casi di cronaca recente che seguono illustrano decisioni di investimento reali
 >
 > **Jysk.** La catena danese di articoli per la casa e il giardino raggiunge i 100 negozi in Italia. L'11 aprile 2025 apre in contemporanea tre punti vendita, Olbia (il negozio numero 100), L'Aquila e Nocera Superiore (Salerno), e porta il numero degli store a 102 in un solo giorno. La scelta di Olbia dipende dalla crescita del mercato sardo, dove Jysk ha già aperto altri quattro negozi (Sassari, Sestu, Oristano, Carbonia). L'apertura rientra in un piano di espansione che prevede nuovi store su tutto il territorio italiano entro la primavera 2025.
 
+> [!lezione] Dalla lezione del 10 novembre 2026: altri casi di crescita organica
+> A lezione sono stati mostrati altri esempi di investimenti e progetti di espansione, ritagliati da fonti esterne e riportati nel testo originale.
+>
+> - Un investimento da 100 milioni di euro, tra il 2028 e il 2030, per un mulino di nuova generazione in uno stabilimento produttivo già esistente a Foggia.
+> - Ferrero, che produce i Nutella Biscuits in Italia e da poco anche in Canada e in Nord America, con l'espansione dello stabilimento in Ontario e il potenziamento della capacità produttiva nello stabilimento in Francia, il più grande sito di produzione di Nutella al mondo.
+> - Il piano strategico 2026-2028 di Enel, tratto dalla relazione sulla gestione del bilancio, con 53 miliardi di euro di investimenti lordi e gli obiettivi di accelerare la crescita, massimizzare la produttività del capitale e garantire un profilo rischio-rendimento bilanciato.
+> - L'apertura di un nuovo punto vendita Conad, con pannelli sul tetto e area parcheggi, che è un progetto di investimento a sé stante rispetto al gruppo.
+>
+> Sono tutti casi di crescita organica, cioè non per acquisizioni ma interna, e quindi investimenti di espansione, la prima categoria di investimenti analizzata. Si vedrà quali conti fa un gruppo come Ferrero quando amplia la produzione in America: il ragionamento economico che la porta a produrre lì, quanto costa e quanto rende aprire uno stabilimento.
+
 ## Caso Famila (SELEX): costo e rendimento di una nuova apertura
 
 > [!example] Esempio
