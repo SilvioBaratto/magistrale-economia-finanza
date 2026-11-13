@@ -26,6 +26,48 @@ Un PDF per insegnamento, generato dalle note Obsidian.
 | Misurazione del Rischio | EM5012 | [PDF](dispense/10-misurazione-rischio.pdf) | 7 | [note](obsidian/10-Misurazione-Rischio/) |
 | Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 164 | [note](obsidian/11-Finanza-Strategica/) |
 | **Volume unico** (tutti gli insegnamenti) | | [PDF](dispense/00-dispense-complete.pdf) | 1296 | |
+| 04-legislazione-bancaria-2-sintesi | | [PDF](dispense/04-legislazione-bancaria-2-sintesi.pdf) | 100 | |
+
+## Appunti delle lezioni
+
+Le lezioni registrate in aula, in tre versioni della stessa lezione:
+
+- **Accademica**: la lezione riscritta in prosa accademica.
+- **Fedele**: la trascrizione ripulita, con le parole del docente, le parti sottolineate evidenziate e le figure delle slide.
+- **Sintetica**: una sintesi a punti della versione fedele, con gli stessi titoli.
+
+Ogni versione sintetica conserva i titoli di quella fedele, così si passa dal punto al testo
+completo cercando il titolo. Le note sono Markdown (si leggono in Obsidian); i PDF raccolgono
+tutte le lezioni di un insegnamento in ordine di data.
+
+| Insegnamento | Accademica | Fedele | Sintetica |
+|---|---|---|---|
+| Econometria | [PDF](dispense/appunti/01-econometria.pdf) · 49 pp | [PDF](dispense/appunti-fedeli/01-econometria.pdf) · 40 pp | [PDF](dispense/appunti-sintetici/01-econometria.pdf) · 24 pp |
+| Legislazione Bancaria — modulo 2 | [PDF](dispense/appunti/04-legislazione-bancaria-2.pdf) · 52 pp | [PDF](dispense/appunti-fedeli/04-legislazione-bancaria-2.pdf) · 36 pp | [PDF](dispense/appunti-sintetici/04-legislazione-bancaria-2.pdf) · 21 pp |
+| Finanza Strategica | [PDF](dispense/appunti/11-finanza-strategica.pdf) · 32 pp | [PDF](dispense/appunti-fedeli/11-finanza-strategica.pdf) · 19 pp | [PDF](dispense/appunti-sintetici/11-finanza-strategica.pdf) · 11 pp |
+
+### Econometria
+
+| Data | Lezione | Accademica | Fedele | Sintetica |
+|---|---|---|---|---|
+| 10/11/2026 | Introduzione al corso: esogeneità, causalità e correlazioni spurie | [nota](obsidian/01-Econometria/appunti/2026-11-10%20Introduzione%20al%20corso%20esogeneita%CC%80%2C%20causalita%CC%80%20e%20correlazioni%20spurie.md) | [nota](obsidian/01-Econometria/appunti-fedeli/2026-11-10%20Introduzione%20al%20corso%20causalita%CC%80%20e%20correlazioni%20spurie.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-10%20Introduzione%20al%20corso%20causalita%CC%80%20e%20correlazioni%20spurie.md) |
+| 12/11/2026 | Causalità, esogeneità e stima della regressione semplice | [nota](obsidian/01-Econometria/appunti/2026-11-12%20Causalita%CC%80%2C%20esogeneita%CC%80%20e%20stima%20della%20regressione%20semplice.md) | [nota](obsidian/01-Econometria/appunti-fedeli/2026-11-12%20Regressione%20semplice%20esogeneita%CC%80%20e%20relazione%20causale.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-12%20Regressione%20semplice%20esogeneita%CC%80%20e%20relazione%20causale.md) |
+| 13/11/2026 | Regressione semplice: esogeneità e proprietà dello stimatore OLS | [nota](obsidian/01-Econometria/appunti/2026-11-13%20Regressione%20semplice%20esogeneit%C3%A0%20e%20propriet%C3%A0%20dello%20stimatore%20OLS.md) | — | — |
+
+### Legislazione Bancaria — modulo 2
+
+| Data | Lezione | Accademica | Fedele | Sintetica |
+|---|---|---|---|---|
+| 10/11/2026 | Vigilanza bancaria, Basilea e vigilanza informativa | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-10%20Vigilanza%20bancaria%2C%20Basilea%20e%20vigilanza%20informativa.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-10%20Vigilanza%20sulle%20banche%2C%20Basilea%20e%20matrice%20dei%20conti.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-10%20Vigilanza%20sulle%20banche%2C%20Basilea%20e%20matrice%20dei%20conti.md) |
+| 12/11/2026 | Vigilanza informativa, SREP e art. 52 TUB | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-12%20Vigilanza%20informativa%2C%20SREP%20e%20art.%2052%20TUB.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-12%20Vigilanza%20informativa%2C%20SREP%20e%20articolo%2052%20TUB.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-12%20Vigilanza%20informativa%2C%20SREP%20e%20articolo%2052%20TUB.md) |
+| 13/11/2026 | Whistleblowing e art. 53 TUB: fondi propri e rischi | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-13%20Whistleblowing%20e%20art.%2053%20TUB%20fondi%20propri%20e%20rischi.md) | — | — |
+
+### Finanza Strategica
+
+| Data | Lezione | Accademica | Fedele | Sintetica |
+|---|---|---|---|---|
+| 10/11/2026 | Presentazione del corso e valore dei flussi di cassa | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-10%20Presentazione%20del%20corso%20e%20valore%20dei%20flussi%20di%20cassa.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-10%20Presentazione%20del%20corso%20e%20cash%20flow%20nella%20valutazione.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-10%20Presentazione%20del%20corso%20e%20cash%20flow%20nella%20valutazione.md) |
+| 13/11/2026 | Valutazione degli investimenti: rendiconto finanziario e metodi VAN, VAM, TIR | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-13%20Valutazione%20degli%20investimenti%20rendiconto%20finanziario%20e%20metodi%20VAN%2C%20VAM%2C%20TIR.md) | — | — |
 
 ## Esami svolti — Econometria
 
@@ -125,13 +167,14 @@ statistica), organizzate per materia e argomento.
 
 ```
 .
-├── dispense/              le dispense (solo PDF)
+├── dispense/              le dispense (solo PDF); appunti*/ = raccolte delle lezioni per versione
 ├── esami/                  materiale d'esame (solo PDF)
 │   ├── econometria/              soluzioni svolte; esercitazioni/ con esercizi e soluzioni
 │   ├── legislazione-bancaria-1/  tracce d'orale, modulo 1
 │   ├── legislazione-bancaria-2/  tracce d'orale, modulo 2
 │   └── test-ingresso/            test di ingresso EMR20, domande e soluzioni
-├── obsidian/              note Obsidian, una cartella per insegnamento (+ immagini in assets/)
+├── obsidian/              note Obsidian, una cartella per insegnamento (+ immagini in assets/);
+│                          appunti*/ = le note delle lezioni nelle tre versioni
 └── latex/                 l'unica soluzione LaTeX: template, filtri, script, figure
     ├── build.py           dispense  (obsidian/ -> dispense/)
     ├── build_esami.py     esami     (latex/esami/<corso>/ -> esami/<corso>/)
