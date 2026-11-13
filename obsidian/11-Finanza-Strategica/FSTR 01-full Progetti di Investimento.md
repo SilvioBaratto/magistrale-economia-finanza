@@ -58,6 +58,11 @@ I casi di cronaca recente che seguono illustrano decisioni di investimento reali
 >
 > Il tempo di recupero indica in quanti anni si ricostruisce la spesa sostenuta, ma non esprime un tasso di rendimento. Per misurare il rendimento in termini di tasso serve il tasso interno di rendimento (TIR), introdotto più avanti.
 
+> [!lezione] Dalla lezione del 13 novembre 2026: investimenti incrementali e KPI di settore
+> Un investimento non coincide sempre con una start up da zero: spesso è incrementale, come l'ampliamento di un punto vendita esistente. Nell'esempio presentato a lezione, che simula una situazione realmente accaduta, un'insegna come Conad amplia i metri quadri e l'organico per circa 10 milioni di euro. La direzione finanziaria chiede in quanto tempo l'investimento rientra.
+>
+> L'incremento di superficie e di dipendenti implica maggiori costi e maggiori ricavi, per cui occorre individuare KPI specifici. Nella grande distribuzione organizzata (GDO) il KPI abituale dei punti vendita è il fatturato per metro quadro, specifico del settore. Si stima il fatturato del nuovo negozio e quello aggiuntivo rispetto al vecchio, si ragiona in termini di redditività e poi di recupero dell'investimento. Le domande sono quanto può rendere l'apertura e, soprattutto per l'imprenditore, in quanti anni si recupera l'investimento.
+
 ## Decisioni di investimento nella cronaca: abbandono e rinvio
 
 Altri quattro casi riguardano progetti abbandonati o rinviati.
@@ -71,12 +76,31 @@ Altri quattro casi riguardano progetti abbandonati o rinviati.
 >
 > **Grand Theft Auto (rinvio).** La serie ha una storia di rinvii. L'uscita di GTA V per PlayStation 3 e Xbox 360, prevista inizialmente per la primavera del 2013, è stata posticipata al 17 settembre 2013 per consentire ulteriori rifiniture. Le versioni successive sono uscite in date diverse: PlayStation 4 e Xbox One il 18 novembre 2014, PC il 14 aprile 2015, PlayStation 5 e Xbox Series X/S il 15 marzo 2022. La tradizione è stata rispettata con GTA 6: annunciato a dicembre 2023 con uscita prevista nel 2025, è stato rinviato a fine maggio 2026 e poi, con un ennesimo rinvio, al 19 novembre 2026.
 
+> [!lezione] Dalla lezione del 13 novembre 2026: l'abbandono a investimento già avviato
+> Nei casi di espansione il business va bene e l'alternativa è incrementare. In altri casi il progetto parte, o non parte, e nei primissimi periodi viene abbandonato per motivi strategici o economici, o perché la scelta si ritiene sbagliata. Esempi citati sono la Maserati MC20 Folgore, totalmente elettrica, che non è mai uscita, e lo smartphone Fire di Amazon, per il quale, secondo il docente, sono stati spesi 170 milioni di dollari senza venderne nemmeno uno. Verifica sulle fonti giornalistiche: il Fire Phone è stato in realtà commercializzato (negli Stati Uniti, in esclusiva con AT&T, dal luglio 2014) e ritirato nel 2015; i 170 milioni di dollari sono la svalutazione di scorte invendute e impegni verso i fornitori contabilizzata da Amazon nel 2014, non la spesa di sviluppo. Resta valido come caso di progetto abbandonato.
+>
+> Esiste in questi casi una storia già iniziata, e ci si chiede se convenga andare avanti. Occorre valutare l'impatto in termini di valore dello stop al progetto, della dismissione delle attrezzature, dei costi di setup già sostenuti e del laboratorio di progettazione.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: il rinvio e il valore dell'attesa
+> Il rinvio introduce le opzioni reali. Se l'investimento è avviato e poi posticipato, c'è un periodo di attesa: il progetto è pronto a partire e i costi sono già stati sostenuti, ma produce ricavi solo in un periodo successivo. Non è indifferente avere il denaro nel periodo zero, uno o due, e ciò cambia la valutazione. Il termine inglese *postponed* indica questo concetto.
+>
+> Un primo esempio è Nice, azienda che produce automazioni per cancelli. L'estratto del verbale di assemblea, riferito al 2006 (l'anno è solo illustrativo), riporta la decisione di rinviare il lancio di nuovi prodotti della linea Screen per completare la brevettazione di ulteriori componenti tecnologici prima della commercializzazione. Strategicamente l'azienda sceglie di partire con una linea di componenti tutti brevettati. I costi sono già stati sostenuti e l'azienda ritiene che avrà più ricavi lanciando prodotti e servizi tra un anno anziché oggi. L'alternativa è quindi lanciare subito, con ricavi certi perché si è pronti, oppure attendere un anno per flussi di cassa prospettici probabilmente più alti.
+>
+> Un secondo esempio è Digital Bros, casa di sviluppo di videogiochi, che ha posticipato il lancio di un videogioco, evento frequente. Un progetto di investimento può essere un prodotto all'interno di una linea aziendale che genera già flussi di cassa. Dall'estratto della relazione sulla gestione del bilancio risulta che il lancio della versione PC di Assetto Corsa 2 è stato posticipato all'estate successiva per consentire il lancio, in primavera, della nuova stagione di Assetto Corsa Competizione: lanciare il nuovo titolo avrebbe cannibalizzato il precedente, trattandosi di prodotti simili. Non si tratta di abbandonare o meno il progetto: il videogioco è pronto e gli scenari sono due. Lanciarlo oggi insieme all'altro, con determinati flussi di cassa, oppure tra un anno, quando l'altro videogioco è già acquisito e Assetto Corsa 2 ha un effetto novità. Che i flussi siano maggiori attendendo non è certo, e nelle opzioni andrà ponderato con delle probabilità.
+>
+> Il modulo successivo a quello sulla valutazione dei progetti riguarda le opzioni, cioè il valore della flessibilità: nella vita reale le situazioni sono più articolate del semplice "ho un progetto e lo valuto", perché un progetto può andare bene, andare male, essere abbandonato o posticipato.
+
 ## La fattibilità dell'investimento
 
 I casi esaminati sono decisioni su un progetto di investimento e coprono le alternative possibili: effettuare o espandere il progetto (Eurospin, KFC, Jysk, Famila), rinviarlo (Volkswagen, Grand Theft Auto) o abbandonarlo (Stadia, Astro). La valutazione serve a stabilire quale di queste alternative sia conveniente.
 
 > [!abstract] Definizione
 > L'analisi di **fattibilità** di un investimento stabilisce se il progetto è conveniente. Si può effettuarlo oppure posticiparlo, abbandonarlo o espanderlo. Le variabili da considerare sono due: il tempo e il rischio.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: tempo e rischio nella finanza e nella ragioneria
+> Per decidere se fare, attendere, abbandonare o espandere occorre padroneggiare due grandezze, il tempo e il rischio. Nella ragioneria, a parità di ricavi, interessa relativamente in quale esercizio si verifichino: confrontare il conto economico di un anno con quello di tre anni dopo non comporta una valutazione della rischiosità dei risultati né della variabile temporale. Nella finanza, invece, tempo e rischio sono centrali.
+>
+> La valutazione finanziaria si fa analizzando i flussi di cassa, cioè il cash flow, inteso come il differenziale tra la situazione di liquidità prima e dopo le decisioni valutate. Il concetto accompagna tutto il corso, perché ogni argomento viene ricondotto al flusso di cassa, grande o piccolo, anticipato o posticipato.
 
 ## Flussi reddituali e flussi di cassa
 
@@ -96,6 +120,9 @@ La valutazione di convenienza di un progetto si fonda su due principi: il tempo 
 > $$100 \text{ euro tra un anno equivalgono a } \frac{100}{1+r} \text{ euro oggi}$$
 >
 > Un investimento che rende meno di $r$ **distrugge ricchezza**.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: capitalizzazione e attualizzazione
+> L'alternativa a un progetto non è lasciare il denaro fermo ma impiegarlo senza rischio, per esempio in BTP, titoli di Stato poliennali emessi dallo Stato italiano. Il passaggio da 100 euro di oggi a $100\,(1+r)$ tra un anno è la **capitalizzazione**, che porta i flussi avanti e li rende maggiori; l'operazione inversa è l'attualizzazione, e 100 euro tra un anno valgono meno di 100 euro oggi. Gli investimenti si confrontano sempre con il tasso privo di rischio.
 
 > [!example] Esempio
 > Un titolo di Stato con rendimento $r = 3{,}5\%$ trasforma 100 euro di oggi in 103,50 euro tra un anno. Un progetto di investimento da 100 euro che rende soltanto il 2% dà invece 102 euro tra un anno. Attualizzando al tasso di mercato $r = 3{,}5\%$:
@@ -147,6 +174,22 @@ Un confronto più recente riguarda il valore di un portafoglio investito in azio
 
 **Figura 3** — Valore di un portafoglio azionario e di uno obbligazionario dalla metà degli anni Ottanta al 2025: le azioni crescono di circa 24 volte, le obbligazioni di circa 5, con fasi in cui il portafoglio azionario scende sotto quello obbligazionario.
 
+> [!lezione] Dalla lezione del 13 novembre 2026: perché i rendimenti delle imprese superano quelli dei titoli di Stato
+> Le attività imprenditoriali hanno tecnicamente un rendimento più alto di obbligazioni e titoli di Stato: il tema è in che modo si remunera il capitale raccolto sul mercato. Il confronto si fa con il tasso privo di rischio perché non si è obbligati a fare l'investimento e si potrebbero comprare titoli di Stato. L'obiettivo delle imprese, che competono in un mercato rischioso, è finanziare investimenti che rendano più del mercato.
+>
+> A lezione è stato mostrato per il mercato americano il grafico di ciò che sarebbe diventato un dollaro investito nel 1926, con serie fino a un anno finale recente. L'area piena è l'inflazione, cioè la perdita di potere d'acquisto del denaro. Le serie con i rendimenti più bassi sono i Treasury bills e i government bond, ed è la prova del fatto che hanno i rischi più bassi: chi non rischia ha nel tempo un rendimento più basso. Sopra stanno le large cap stocks e, ancora più in alto, le piccole imprese americane, che comunque sono enormi rispetto alle italiane. Il grafico dà la percezione del prezzo del rischio, ma si tratta di medie.
+>
+> Dal grafico non traspare che l'ente che emette i titoli di Stato è sempre lo stesso, mentre le aziende che oggi performano nel paniere probabilmente non sono quelle del 1926, perché molte hanno chiuso o sono fallite. Il dollaro investito in azioni potrebbe quindi essere stato azzerato per sempre dalla chiusura dell'azienda. Riferito alla singola azienda, il dato mostra che progetti di investimento e aziende portano con sé un'elevata rischiosità.
+>
+> Per questo il tasso di attualizzazione dei flussi di cassa di un'azienda, che si ottiene con le formule che seguono e si vedrà anche nella valutazione d'azienda, risulta del 10, 11, 12 per cento, contro il 3% dei BTP. Tassi così alti non indicano rendimenti anomali: si sta attualizzando il rischio.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: rating, obbligazioni e azioni
+> Le società di rating analizzano quanto sono rischiose le aziende ed esprimono il giudizio con il rating. Nel grafico dello yield dei corporate bond per rating Standard & Poor's, la linea del rating più alto, lo Stato americano con rating AAA e rischio minimo, è mediamente la più bassa, come nel grafico precedente, e le obbligazioni di aziende AAA, AA e A le stanno immediatamente appoggiate. Come caso estremo il docente propone un'azienda che commercializza frutta secca in Congo durante una guerra civile, con rating degradato a BB+: il rendimento richiesto è molto più alto, in proporzione al rischio.
+>
+> La correlazione tra rischio e rendimento accompagna tutte le decisioni finanziarie. Nella valutazione delle aziende e dei tassi va tenuta come riferimento: davanti al tasso che risulta dai calcoli ci si chiede quanto sia rischioso il mercato in cui opera l'azienda e come quel rendimento si confronti con i titoli del governo americano.
+>
+> Lo stesso vale tra obbligazioni e azioni. L'obbligazione è un prestito e comporta un impegno forte alla restituzione da parte dell'azienda, con un valore giuridico forte. Se l'azienda fallisce, le azioni sono da buttare e i 100 euro investiti sono persi. Con le obbligazioni in genere si apre una procedura di liquidazione o di concordato, viene nominato un liquidatore e l'obbligazione diventa un credito: non è detto, ma esiste una probabilità che il capitale venga restituito.
+
 ## Il Corporate Finance Circuit
 
 > [!abstract] Definizione
@@ -157,6 +200,13 @@ Un confronto più recente riguarda il valore di un portafoglio investito in azio
 ![](assets/fstr-01/fig04.png)
 
 **Figura 4** — Corporate Finance Circuit: le risorse (frecce rosse, investimenti) vanno dal mercato dei capitali a creditori e azionisti e da questi al C.I.N.; i flussi di cassa generati (freccia blu) tornano al mercato come remunerazione.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: a chi vanno i flussi di cassa
+> Nello stato patrimoniale l'attivo è a sinistra e il passivo a destra. Il passivo comprende i debiti verso le banche, che finanziano l'attivo, i fornitori e i debiti verso i dipendenti; l'altro grande blocco è il patrimonio netto, che appartiene ai soci. Chi finanzia l'attivo sono dunque, fondamentalmente, i creditori terzi e i soci.
+>
+> Gli stakeholder sono i soggetti con interessi nell'azienda, ma i flussi di cassa remunerano le aspettative di due soli soggetti, i creditori e i soci. Se un'azienda come Diadora produce flussi di cassa per milioni di euro, a chi non è né creditore né azionista non interessa, perché non ne è toccato. Valutando un'azienda occorre calcolare l'ammontare dei flussi di cassa generati e stabilire quali vanno a una categoria e quali all'altra.
+>
+> Sul mercato del lavoro si valuteranno aziende per conto di chi le vuole comprare o di chi le vuole finanziare. In entrambi i casi questi soggetti si aspettano di avere indietro del denaro: con un finanziamento una certa remunerazione, da azionista un'altra, e per acquistare le azioni un certo prezzo. A sinistra c'è lo stato patrimoniale riclassificato, il capitale investito netto; a destra creditori e azionisti, che finanziano e ricevono i flussi generati dall'azienda.
 
 ## I flussi finanziari di riferimento: FCFO, FCFF e FCFE
 
@@ -278,9 +328,53 @@ Dal MOL si arriva quindi al FCFO, il flusso della gestione corrente al netto del
 >
 > Il totale della sezione D (75.587.570) sommato ai dividendi (101.017.542) dà 176.605.112: è l'insieme dei flussi di finanziamento al lordo dei dividendi e non il FCFE, perché non comprende il FCFF.
 
+> [!lezione] Dalla lezione del 13 novembre 2026: le aree del rendiconto e l'area operativa
+> Il rendiconto finanziario è lo schema più utile per capire come circolano i flussi di cassa, perché quantifica quelli che i due finanziatori si aspettano di ricevere. Conto economico e stato patrimoniale non servono a questo scopo. Nel metodo indiretto esistono più configurazioni del flusso di cassa, ma le aree fondamentali non cambiano.
+>
+> La prima area è quella operativa: l'azienda fa girare il capitale investito netto e genera un MOL, cioè un EBITDA. Per un calcolo rapido i valutatori prendono la differenza tra valore e costi della produzione (A meno B) e rimettono gli ammortamenti, ottenendo grossolanamente l'EBITDA da bilancio, che poi va normalizzato e aggiustato.
+>
+> L'EBITDA non può essere preso come flusso di cassa perché non diventa interamente denaro sul conto corrente. Se produrre un banco costa 100 euro e lo si vende a 300 a una scuola, il margine di 200 euro dà un EBITDA positivo; ma se si emette fattura a una pubblica amministrazione e questa non paga, l'EBITDA va rettificato con la variazione del capitale circolante. Esistono aziende che falliscono con l'EBITDA positivo: se i ricavi non diventano cassa e si pagano stipendi e materiali, si deve chiudere. Succede spesso a chi lavora con la pubblica amministrazione, per esempio fornendo a un ospedale consumabili e servizi che l'ospedale non paga. Altro esempio è l'impresa edile che costruisce City Life e non incassa gli appartamenti dall'agenzia che ne gestisce la vendita: ha anticipato cemento, operai, progettazione e autorizzazioni, e sulla carta il conto economico mostra ricavi enormi, ma si è "fuori coi soldi". Questa situazione non si vede dal conto economico ma solo dal rendiconto finanziario.
+>
+> Il rendiconto mostra se un'azienda si sta "mangiando" i soldi. Lo si vede in modo lampante quando il cash flow gestionale è quasi zero o negativo: l'azienda produce un EBITDA e lo assorbe tutto nel capitale circolante, cioè produce un reddito che diventa interamente crediti, e gli stipendi non si pagano con i crediti. L'azienda deve quindi produrre cassa e liquidità dall'area operativa.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: l'ordine di remunerazione dei soggetti nel rendiconto
+> La seconda area è quella degli investimenti: l'azienda non può vivere in eterno con macchinari, attrezzature e impianti che ha, e una parte del flusso viene sottratta per gli investimenti. Fornitori e personale si gestiscono con la variazione del capitale circolante ($\Delta$CCNO). Poi si calcolano le imposte, con segno meno, il cui effetto ricorre in tutti gli esercizi ed è mitigato dallo scudo fiscale sugli interessi sul debito.
+>
+> Dopo il FCFO restano da remunerare i soggetti del passivo, creditori e soci. Il docente chiede perché nel rendiconto l'area finanziaria venga prima dell'area degli azionisti, trattandosi in entrambi i casi di sottrazioni. Gli azionisti sono remunerati per ultimi: se avanza qualcosa lo ricevono, altrimenti no. I creditori hanno invece un debito da restituire, quindi l'area finanziaria è un'area di impegni obbligatori, quasi come lo Stato. Comprende gli oneri finanziari e i rimborsi in uscita, ma anche le accensioni di nuovi finanziamenti in entrata: un finanziamento di un milione concesso nell'anno e incassato va collocato in questa sezione.
+>
+> L'ultima voce è il free cash flow relativo all'equity, che residua dopo aver pagato tutti, ed è espresso in dividendi o in variazioni delle voci del capitale proprio. Questa posizione spiega perché chi investe per ottenere dividendi pretende un rendimento alto: viene dopo tutti gli altri e non ha un rimborso garantito per legge, a differenza di creditori e dipendenti. È l'assemblea a deliberare la distribuzione dei dividendi, che non è obbligatoria, e molte aziende non ne danno per anni perché capitalizzano gli utili e li mettono a riserva.
+>
+> Se Enel decide di investire sul fotovoltaico e di non distribuire dividendi, il socio di minoranza ottiene dall'investimento un rendimento nullo in dividendi e non ha altro da fare. Per una quotata la scelta influisce anche sul prezzo del titolo, e se una società così grande non distribuisce dividendi può nascere una reazione di protesta tra gli azionisti. In genere i flussi sono gestiti in modo da dedicarne una parte agli investimenti e una a chi ha creduto nella società. Questo non vale per le aziende non quotate.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: aziende non quotate, capitale di terzi e capitale di rischio
+> Le aziende non quotate sono circa il 95% di quelle che si incontreranno: in Italia le quotate sono poche centinaia, a fronte di circa 950.000 SRL e di un milione di imprese, per cui nel territorio italiano la probabilità di dover affrontare il rendiconto di un'azienda non quotata è circa cento volte superiore. Le cifre sono approssimazioni del docente: con poche centinaia di quotate su circa un milione di società, la quota delle non quotate supera di gran lunga il 95%. Le PMI italiane sono molto indebitate, quindi l'area finanziaria pesa molto: confrontando i bilanci di aziende americane e italiane dello stesso business, si nota che in Italia si tende a fare debito in banca. Una PMI del territorio non penserebbe di quotarsi per avere denaro, mentre negli Stati Uniti è molto più frequente, perché in borsa ci sono molte più aziende e quotarsi e restare quotati costa meno.
+>
+> Si consideri una SRL, una fonderia di Vicenza, che ha bisogno di mezzo milione di euro. L'imprenditore non chiama Borsa Italiana: chiama il direttore della banca, promette un business plan con la proiezione dei flussi di cassa entro un mese, spiega che deve ampliare la linea produttiva e chiede una linea di credito da mezzo milione, cioè capitale di terzi. Si fa così soprattutto nei business maturi. Nel mondo delle start-up e dei percorsi innovativi si cercano invece business angels, persone disposte a perdere il capitale messo come capitale di rischio, cioè equity. In generale le aziende italiane che hanno bisogno di denaro vanno in banca.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: come si leggono i rendiconti di Enel e De' Longhi
+> Il rendiconto mostrato di Enel, in milioni di euro, è ciò che si trova fuori dal libro di testo: non esiste uno schema riga per riga e nei bilanci i rendiconti sono costruiti in modo molto vario, con più o meno righe e dettaglio. Se sul libro la formula dell'FCFO è scritta in tre righe, nel bilancio ce ne sono una cinquantina, e bisogna ricondurre la realtà al libro, che è una semplificazione. Si vede che nomi e gerarchia sono quelli del metodo indiretto, che parte dal reddito generato.
+>
+> Il rendiconto parte dal risultato netto d'esercizio, ultima riga del conto economico, lo corregge degli ammortamenti e arriva a grandi linee al MOL; toglie poi la variazione del circolante e arriva al flusso di cassa della gestione operativa. Segue il cash flow da attività di investimento, dove Enel inserisce tutto, anche le partecipazioni (per esempio l'acquisto del 70% di una società che fa capo a un parco fotovoltaico) e il rifacimento del camino di una centrale. Le voci sono investimenti in attività materiali non correnti e in imprese o rami di impresa; sono anche possibili disinvestimenti, per cui se Enel vende la partecipazione in un parco eolico entra denaro, con segno più.
+>
+> Mancano poi creditori e azionisti, a volte in blocchi non separati. Tra le voci dei creditori ci sono il rimborso di debiti finanziari (le rate di mutuo o finanziamento), le altre variazioni di indebitamento finanziario e l'emissione e il rimborso di obbligazioni: emettendole entra denaro e si contrae un debito, quindi si creano nuovi creditori da remunerare. Per gli azionisti ci sono i dividendi e i coupon pagati su obbligazioni ibride, che possono avere diritti particolari.
+>
+> Nel rendiconto De' Longhi la struttura è identica: dal risultato netto e dalle imposte si ottiene una sorta di risultato operativo, poi le variazioni di crediti commerciali, debiti commerciali e altre voci del circolante, cioè nuovamente $\Delta$CCN, e si arriva a quello che si può chiamare free cash flow from operations, il flusso prima della gestione degli investimenti. Seguono CAPEX, investimenti in immobilizzazioni materiali e investimenti netti in partecipazioni. Questi sono i flussi da cui vanno presi quelli per la valutazione con il metodo dei flussi di cassa: i metodi di valutazione trattati più avanti sono i multipli dell'EBITDA, i flussi di cassa e i DCF, ed è necessario sapere quali flussi prendere.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: la quadratura del rendiconto
+> Le ultime righe del rendiconto sono le voci di quadratura: tutto quanto sta sopra deve corrispondere esattamente alla variazione delle disponibilità liquide. L'ultimo importo del cash flow, quello che residua dopo aver pagato tutti i soggetti, è la variazione delle disponibilità liquide da un anno all'altro, cioè la variazione del conto in banca dell'azienda, che si ritrova nello stato patrimoniale. Costruendo il rendiconto da soli la quadratura non torna quasi mai, per qualche voce, ma la quadratura perfetta è il modo per capire se è corretto.
+>
+> Le voci provengono da entrambi gli schemi. Dal conto economico si prendono il risultato d'esercizio, gli ammortamenti da rimontare e gli oneri finanziari. La variazione del capitale circolante è nello stato patrimoniale, in crediti e debiti; gli investimenti sono la variazione delle immobilizzazioni dello stato patrimoniale, ripulite dagli ammortamenti. Si incrociano quindi i due schemi, si calcolano le variazioni e se ne ricava un flusso di cassa, con la prova del nove che il denaro in azienda sia variato esattamente di quell'importo.
+
 ## I cinque metodi per valutare un investimento
 
 I cinque metodi principali per valutare un investimento sono il valore attuale netto (VAN), il tasso interno di rendimento (TIR), il tempo di recupero (TR), l'indice di redditività (IR) e il tempo di recupero attualizzato (TRA). Per ciascuno si indicano la formula, il criterio decisionale, i punti di forza e di debolezza e il campo di applicazione pratica. Subito dopo il VAN si presenta una sua variante, il valore attuale modificato (VAM).
+
+> [!lezione] Dalla lezione del 13 novembre 2026: valutare un singolo progetto con i flussi di cassa
+> Gli investimenti citati nei casi di cronaca sono singoli progetti e non aziende, quindi occorrono metodi appositi. Alcuni si prestano meglio ad alcuni investimenti, e il VAN e il TIR sono già noti dagli altri corsi.
+>
+> Si dimentica il conto economico e si lavora sui flussi di cassa: nel VAN compare al numeratore l'FCFO, che si ricava dal rendiconto finanziario. Senza saperlo ricavare non si riesce a valutare un investimento pur conoscendo la formula. Quando verrà chiesto di valutare un investimento nessuno fornirà il flusso di cassa: va calcolato, partendo da quanto può rendere, quanto costa e il risultato atteso. Oltre all'FCFO serve l'esborso al momento zero, $I_0$ con segno meno, che si contrappone ai flussi futuri.
+>
+> Il docente avverte che confondere i tempi è una causa frequente di errore negli esercizi e nelle prove d'esame: occorre restare lucidi sul fatto che ci si colloca nel momento zero, in $I_0$, e che un flusso tra un anno non equivale a un flusso di oggi. Se l'investimento parte oggi e nel 2027 produce un milione di euro, quello non è un FCFO di oggi ma un FCFO al momento uno, e vale meno di un milione, per esempio 900 o 800 mila euro. La regola è attualizzare i flussi a partire dal momento uno. Se il progetto parte tra un anno, tutti i flussi partono tra un anno e vanno riportati indietro di un anno, perché ci si colloca oggi, in $T_0$; lo si ritroverà negli esercizi sulle opzioni, dove la possibilità di aspettare un anno ha senso finanziario in questi termini.
 
 ## Il valore attuale netto (VAN)
 
@@ -292,6 +386,13 @@ I cinque metodi principali per valutare un investimento sono il valore attuale n
 > Il criterio decisionale è $VAN > 0$.
 
 Il VAN considera sia il fattore tempo sia il rischio, tiene conto dei flussi di medio-lungo periodo e della dimensione del progetto (in valore assoluto) e ha la proprietà additiva: il VAN di più progetti con lo stesso rischio si somma. Non considera invece il razionamento di capitale né le opportunità future, cioè che cosa accade nei periodi successivi. Trova applicazione nei progetti di grande dimensione, con cash flow poco volatili e stime affidabili del WACC.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: il VAN e la disponibilità del capitale
+> Tra i punti a favore, il VAN dà significato ai flussi distribuiti nel tempo e considera la dimensione del progetto: sono euro contro euro, un milione contro mezzo milione. Non considera il razionamento del capitale. Si supponga uno spazio libero nel campus dove aprire un bar, con un investimento di mezzo milione che restituisce 700 mila euro in tre anni: con un VAN maggiore di zero lo si farebbe, ma se non si dispone di mezzo milione di euro non lo si fa. Il VAN dice che il progetto è percorribile ma non tiene conto del fatto che la cifra potrebbe non essere disponibile.
+>
+> Questo conta perché i metodi si usano per confrontare più progetti. Tra il bar e un'app per gli studenti, realizzata da tre giovani con strumenti di intelligenza artificiale per 2.000 euro, a parità di VAN 2.000 euro si trovano, mezzo milione no. Anche se il bar avesse un VAN più alto, non si ha il capitale: nella realtà occorre sempre valutare investimenti alternativi.
+>
+> Un'ulteriore semplificazione è che il VAN si presta quando i flussi di cassa sono abbastanza stabili, perché si attualizza un flusso che si suppone sempre lo stesso negli anni, ma nulla garantisce che sia così.
 
 ### Esempio 1: progetto conveniente
 
@@ -319,6 +420,9 @@ Il VAN considera sia il fattore tempo sia il rischio, tiene conto dei flussi di 
 >
 > L'investimento di 12.000 euro che genera 3.000 euro l'anno per 4 anni non è sufficiente a coprire il costo del capitale dell'8%. Il progetto non è conveniente, perché il capitale investito non viene remunerato al tasso richiesto da azionisti e finanziatori.
 
+> [!lezione] Dalla lezione del 13 novembre 2026: perché non si usa il tasso privo di rischio
+> Nell'esempio si usa l'8% e non il tasso privo di rischio del 3,5%, perché aprire un bar o lanciare un'app comporta una rischiosità, a differenza di un BTP: i tassi usati per gli investimenti non sono quelli privi di rischio. Come calcolarlo e che significato attribuirgli si vedrà più avanti. Chi non dispone del capitale per aprire il bar potrebbe trovare finanziatori che credono nel progetto e lo finanziano con capitale di rischio, e in parte una banca a titolo di credito, e vanno tutti remunerati. Il WACC è mediamente il rendimento atteso dai due soggetti, gli azionisti e il capitale preso a prestito.
+
 ## Il valore attuale modificato (VAM)
 
 > [!abstract] Definizione
@@ -329,6 +433,13 @@ Il VAN considera sia il fattore tempo sia il rischio, tiene conto dei flussi di 
 > Il tasso $r_0$ è il tasso di attualizzazione riferito al solo investimento, indipendente dalla struttura finanziaria adottata (il costo del capitale *unlevered*, trattato nel [[FSTR 02-full Costo del Capitale|capitolo sul costo del capitale]]). Il criterio decisionale è $VAM > 0$.
 
 I punti di forza sono quelli del VAN, con in più la separazione tra il valore dell'investimento e quello del finanziamento: il VAM prescinde dal modo in cui il progetto è finanziato. Punti di debolezza e applicazione pratica coincidono con quelli del VAN. Il modello è ripreso per la valutazione d'impresa nel capitolo sul [[FSTR 04-full Modelli Valutazione Finanziaria Parte2|modello VAM]].
+
+> [!lezione] Dalla lezione del 13 novembre 2026: perché valutare l'investimento a prescindere dal finanziamento
+> Per un bar in cui investire mezzo milione di euro, la convenienza dell'investimento non dovrebbe dipendere da come lo si finanzia: che i soldi siano messi da azionisti o da creditori non dovrebbe fare la differenza. Un osservatore esterno direbbe che il bar o rende o non rende, e non che convenga aprirlo se il mezzo milione lo presta il presidente della banca e non convenga se è del proprietario. Questo ragionamento, presente nel libro di testo e nelle slide, secondo il docente è sensato e porta al valore attuale modificato: un calcolo del valore attuale con un tasso diverso dal WACC. Si immagina di fare l'investimento interamente con mezzi propri, e $r_0$ è il tasso di un progetto (e poi di un'azienda) non indebitato.
+>
+> La forza del metodo è separare il valore dell'investimento da quello del finanziamento. Il finanziamento non si trascura, ma concettualmente lo si separa. Porta con sé il vantaggio fiscale: se il bar è finanziato interamente con capitale di rischio si pagano imposte in base al conto economico, mentre con un mutuo si pagano interessi che sono costi deducibili nel bilancio e quindi meno imposte. Con soldi interamente propri questo vantaggio non c'è.
+>
+> Lo scudo fiscale ricorrerà in tutte le formule da qui alla fine del corso: dove c'è capitale di terzi c'è la possibilità di dedurre gli interessi. È l'impatto fondamentale dell'uso di denaro altrui, al di là dell'aspettativa di tasso dei finanziatori, ed è significativo in termini di flusso.
 
 ## L'effetto del razionamento di capitale
 

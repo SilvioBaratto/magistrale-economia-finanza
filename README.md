@@ -16,16 +16,16 @@ Un PDF per insegnamento, generato dalle note Obsidian.
 
 | Insegnamento | Codice | Dispensa | Pagine | Note Obsidian |
 |---|---|---|---|---|
-| Econometria | EM0004 | [PDF](dispense/01-econometria.pdf) | 133 | [note](obsidian/01-Econometria/) |
+| Econometria | EM0004 | [PDF](dispense/01-econometria.pdf) | 139 | [note](obsidian/01-Econometria/) |
 | Legislazione Bancaria — modulo 1 | EM2101 | [PDF](dispense/03-legislazione-bancaria-1.pdf) | 197 | [note](obsidian/03-Legislazione-Bancaria-1/) |
-| Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 160 | [note](obsidian/04-Legislazione-Bancaria-2/) |
+| Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 170 | [note](obsidian/04-Legislazione-Bancaria-2/) |
 | Economia dei Mercati e degli Investimenti Finanziari — modulo 1 | EM5002 | [PDF](dispense/05-economia-mercati-investimenti-1.pdf) | 269 | [note](obsidian/05-Economia-Mercati-Investimenti-1/) |
 | Gestione della Banca | EM2102 | [PDF](dispense/07-gestione-della-banca.pdf) | 89 | [note](obsidian/07-Gestione-della-Banca/) |
 | Diritto del Mercato Finanziario | EM0001 | [PDF](dispense/08-diritto-mercato-finanziario.pdf) | 107 | [note](obsidian/08-Diritto-Mercato-Finanziario/) |
-| Metodi per la Gestione dei Portafogli Personali | EM5011 | [PDF](dispense/09-metodi-portafogli.pdf) | 155 | [note](obsidian/09-Metodi-Portafogli/) |
+| Metodi per la Gestione dei Portafogli Personali | EM5011 | [PDF](dispense/09-metodi-portafogli.pdf) | 156 | [note](obsidian/09-Metodi-Portafogli/) |
 | Misurazione del Rischio | EM5012 | [PDF](dispense/10-misurazione-rischio.pdf) | 7 | [note](obsidian/10-Misurazione-Rischio/) |
-| Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 157 | [note](obsidian/11-Finanza-Strategica/) |
-| **Volume unico** (tutti gli insegnamenti) | | [PDF](dispense/00-dispense-complete.pdf) | 1272 | |
+| Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 164 | [note](obsidian/11-Finanza-Strategica/) |
+| **Volume unico** (tutti gli insegnamenti) | | [PDF](dispense/00-dispense-complete.pdf) | 1296 | |
 
 ## Esami svolti — Econometria
 
