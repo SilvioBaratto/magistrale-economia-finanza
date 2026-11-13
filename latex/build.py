@@ -359,7 +359,11 @@ def embed_images(note: Note) -> str:
         if not src.is_file():
             print(f"    ! immagine mancante in {note.path.name}: {src}", file=sys.stderr)
             return ""
-        dest = IMGDIR / note.subject_slug / f"{slugify(note.stem)}-{slugify(src.stem)}{src.suffix.lower()}"
+        # The source folder is part of the name: a lecture note may draw from several figure
+        # folders (assets/econ-01/fig02.png, assets/econ-02/fig02.png) and equal file names
+        # would overwrite each other's copy.
+        dest = (IMGDIR / note.subject_slug
+                / f"{slugify(note.stem)}-{slugify(src.parent.name)}-{slugify(src.stem)}{src.suffix.lower()}")
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dest)
         return f"![{alt}]({dest.relative_to(TEXDIR).as_posix()})"
