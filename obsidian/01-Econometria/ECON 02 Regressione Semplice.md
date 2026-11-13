@@ -199,6 +199,13 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 
 *(slide 17–21)*
 
+> [!lezione] Dalla lezione del 13 novembre 2026: valore predetto, residuo ed errore
+> Una volta stimati i parametri, il modello si usa per la previsione. Il valore predetto si ottiene approssimando il valore atteso condizionale con i parametri stimati al posto di quelli veri, $\hat\alpha + \hat\beta x$, dove $x$ è un valore prefissato scelto da chi fa la previsione. Per brevità lo si indica con $\hat y$ ed è la stima di un valore atteso condizionale. È una variabile casuale, perché $\alpha$ e $\beta$ sono incerti: si conoscono solo approssimazioni calcolate sul campione, non i veri parametri della popolazione. Dell'intercetta non ci si occupa in modo particolare: non è un parametro particolarmente interessante, salvo applicazioni specifiche, e in generale si include nel modello a meno di ragioni molto forti per escluderla.
+>
+> Il residuo misura quanto la previsione si discosta dal valore effettivamente osservato: è il termine d'errore valutato per l'individuo $i$ osservato, cioè la differenza tra il salario osservato e il salario previsto per un dato valore di $x$.
+>
+> Il residuo è diverso dal termine d'errore $\varepsilon$. Il residuo è la distanza tra un'osservazione e la sua previsione, un'evidenza campionaria riferita a una persona specifica, ed è un numero. Il termine d'errore è un concetto più astratto: è la distanza tra ogni individuo della popolazione, e non del campione, e il vero modello nella popolazione, ed è una variabile casuale. Il residuo non è un'approssimazione di $\varepsilon$; sono due concetti distinti, anche se il residuo ha una sua utilità.
+
 > [!lezione] Dalla lezione del 12 novembre 2026: il parametro $\beta$ ricavato con il metodo dei momenti
 > Tutti i libri indicano come modo corretto il metodo dei minimi quadrati: si prendono le osservazioni su $y$ e il modello e si trovano $\alpha$ e $\beta$ tali che la distanza media tra $y$ e la trasformazione lineare di $x$ sia la più piccola possibile. La distanza si calcola con il quadrato, per evitare che gli scarti positivi e negativi si compensino. Si derivano le espressioni rispetto ad $\alpha$ e $\beta$, si pongono le derivate uguali a zero e si risolve il sistema di due equazioni in due incognite: la soluzione per $\beta$ è un rapporto tra quantità, quella per $\alpha$ una differenza di medie. Il docente considera questa la via più noiosa e ne presenta una con un'algebra più breve e a suo parere più intuitiva.
 >
@@ -260,6 +267,39 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 
 *(slide 22–27)*
 
+> [!lezione] Dalla lezione del 13 novembre 2026: modello teorico e modello statistico
+> L'endogeneità nasce tipicamente perché il modello statistico stimato non corrisponde al modello che descrive i dati nella popolazione. In ogni analisi empirica si hanno in mente due concetti: ciò che si fa, cioè una scelta individuale, e il processo generatore dei dati, un concetto astratto per cui i dati sono legati ad altre variabili in modo predeterminato. C'è quindi un modello teorico che descrive la realtà e un modello empirico che è il modo in cui la si vede. Il modello teorico spiega la relazione tra le variabili nella popolazione e non è noto; il modello statistico è quello scelto da chi analizza, il comando da dare al software. Se i due modelli coincidono non c'è endogeneità; se il modello stimato è sbagliato rispetto al processo generatore dei dati si ricade nell'endogeneità, con problemi nella stima dei parametri di interesse. Il problema chiave dell'econometria è capire se le formule usate per approssimare i parametri vadano bene, e a questo scopo occorre conoscere le caratteristiche del termine d'errore, in particolare i suoi momenti condizionali rispetto a $X$.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: perché $E[\varepsilon \mid X]=0$ implica covarianza nulla
+> Si calcola il valore atteso condizionale di $Y$ dato $X$ sulla base del modello statistico $Y = \alpha + \beta X + \varepsilon$: fissato $X$, la media di $\alpha + \beta X + \varepsilon$ è $\alpha + \beta X + E[\varepsilon \mid X]$. Questa coincide con $\alpha + \beta X$ se il modello è correttamente specificato, quindi se il modello teorico coincide con quello statistico deve valere $E[\varepsilon \mid X] = 0$. Questa condizione sul momento condizionale è leggermente più forte della covarianza nulla tra $X$ ed errore.
+>
+> Si dimostra che implica la covarianza nulla. La covarianza si scrive come $\mathrm{Cov}(X,\varepsilon) = E[X\varepsilon] - E[X]E[\varepsilon]$. Si assume che la media di $\varepsilon$ sia zero: se non lo fosse, si può riscrivere il modello in modo che lo sia, riscalando e modificando l'intercetta, senza cambiare nulla. Il secondo termine sparisce allora per definizione e la covarianza è uguale a $E[X\varepsilon]$. Che questo termine sia nullo si dimostra con una proprietà della statistica di base: la media di una variabile si può scrivere come la media delle medie condizionali.
+>
+> Il docente lo illustra con il grafico dei salari di 526 lavoratori, divisi in sottogruppi disgiunti, ciascuno con la media rappresentata da un quadratino rosso. La media marginale dei salari si calcola in due modi: facendo la media aritmetica di tutti i salari, cioè $1/526$ per la somma dei salari, oppure facendo la media dei quadratini rossi pesata per il numero di osservazioni di ciascun gruppo (un quadratino con due persone vale due, uno con 60 persone vale 60). Si ottiene esattamente lo stesso numero. È un risultato generale della statistica, valido anche nella popolazione e non solo nel campione: la media marginale è il valore atteso iterato del valore atteso condizionato. Il docente ha detto che avrebbe messo nei lucidi la dimostrazione almeno per il caso discreto, e che il risultato è molto usato in econometria, anche in applicazioni più avanzate.
+>
+> Applicato al prodotto incrociato, si calcola prima la media rispetto a $\varepsilon$ di $X\varepsilon$ fissato $X$ (i quadratini rossi) e poi la media rispetto a tutti i valori di $X$:
+>
+> $$E[X\varepsilon] = E\big[\,E[X\varepsilon \mid X]\,\big].$$
+>
+> Fissato $X$, esso è una costante e si porta fuori dalla media condizionale:
+>
+> $$E\big[\,E[X\varepsilon \mid X]\,\big] = E\big[\,X \, E[\varepsilon \mid X]\,\big].$$
+>
+> Se il modello è corretto, $E[\varepsilon \mid X] = 0$ qualunque sia il valore di $X$: l'argomento della media è sempre zero e la media è zero. Quindi $E[\varepsilon \mid X]=0$, che è la definizione corretta di esogeneità, implica $\mathrm{Cov}(X,\varepsilon)=0$. Il viceversa non vale necessariamente, ma l'implicazione è appena stata dimostrata.
+>
+> Il docente osserva che la condizione sul momento condizionale è un concetto complesso da ricordare, mentre covarianza e correlazione sono più naturali. Nel corso i due concetti si possono considerare sostanzialmente equivalenti: dalla covarianza nulla non segue il viceversa, ma esistono controesempi solo in casi patologici. Chi preferisce può quindi pensare l'esogeneità come assenza di correlazione tra $X$ ed errore.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: varianza condizionale dell'errore, omoschedasticità ed eteroschedasticità
+> Porre la media condizionale a zero dice che il modello va bene, ma si possono fare ipotesi anche su altri momenti. Qualunque sia l'ipotesi sulla varianza di $\varepsilon$ per ogni valore fissato di $X$, le stime dei minimi quadrati restano valide: non è quello il problema. Tuttavia l'ipotesi sulla varianza condizionale ha conseguenze sulla capacità di fare test sui parametri, quindi sull'inferenza. L'omoschedasticità vale quando la varianza di $\varepsilon$ dato $X$ è costante; si parla di eteroschedasticità quando la varianza dell'errore varia in qualsiasi modo al variare di $X$.
+>
+> Parlare della varianza di $\varepsilon$ dato $X$ e della varianza di $Y$ dato $X$ è la stessa cosa. Si ha $\mathrm{Var}(Y \mid X) = \mathrm{Var}(\alpha + \beta X + \varepsilon \mid X)$, e fissato $X$ il termine $\alpha + \beta X$ è una costante: se il livello di istruzione è 5, $\alpha$ e $\beta$ sono numeri ignoti ma pur sempre numeri, quindi $\alpha + 5\beta$ è un valore esatto. La varianza di una variabile casuale a cui si somma una costante non dipende dalla costante. Per un dado, se a ogni faccia si aggiunge 3, il fenomeno si sposta di 3 unità ma la variabilità tra minimo e massimo non cambia: invece della differenza tra 6 e 1 si ha quella tra 9 e 4, sempre 5. Quindi $\mathrm{Var}(Y \mid X) = \mathrm{Var}(\varepsilon \mid X)$.
+>
+> L'eterogeneità dei salari corrisponde così all'eterogeneità della componente individuale del salario che non dipende dal livello di istruzione: la variabilità all'interno di ciascun sottogruppo è la variabilità di tutto ciò che non è nel modello, cioè del termine d'errore. La varianza condizionale di $\varepsilon$ è il coefficiente di eterogeneità dei lavoratori in ciascun sottogruppo.
+>
+> Sul grafico dei salari si è in presenza di eteroschedasticità: al variare di $X$ la dispersione tende ad aumentare, con un gruppo di lavoratori a varianza piccola e un altro, a livelli di istruzione maggiori, a varianza grande. L'ipotesi di omoschedasticità non sembra sensata, e in ogni caso non si può mai escludere una qualche forma di eteroschedasticità. La varianza non deve necessariamente crescere con $X$: può diminuire, o essere grande, piccola, piccola, grande. Basta che non sia costante. Per giudicare bisogna guardare le oscillazioni di $Y$ a ogni livello fissato di $X$. Nelle code ci sono meno osservazioni e la variabilità può essere qualsiasi, ma dove c'è il corpo della distribuzione la variabilità omoschedastica è sempre circa la stessa.
+>
+> Per il termine d'errore si fanno quindi due ipotesi. La prima, media condizionale zero, serve a definire un modello corretto dal punto di vista logico, legato a una relazione causale, a cui non manca nulla. La seconda riguarda la varianza condizionale, costante o no: è un'ipotesi di comodo, si gestisce in modo abbastanza semplice e non è così importante, anche se richiede qualche attenzione.
+
 ## Le ipotesi del modello di regressione OLS
 
 > [!abstract] Definizione
@@ -313,6 +353,18 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 
 *(slide 28–33)*
 
+> [!lezione] Dalla lezione del 13 novembre 2026: l'esempio con dati simulati
+> Con dati simulati si conoscono esattamente le variabili e la relazione tra esse. Si fissano $\alpha = 3$ e $\beta = 1{,}5$, si costruiscono $X$ e $Y$ al computer e si aggiunge un errore scelto di proposito in modo che sia correlato con $X$; le varianze sono poste uguali a 1, per cui la covarianza è anche la correlazione, pari a 0,6, molto alta. Il dataset ha 200 osservazioni. Si stima $\beta$ assumendo che la covarianza tra $X$ ed errore sia nulla, cioè come covarianza tra $X$ e $Y$ divisa per la varianza di $X$: in questo modello si sa che la formula standard è sbagliata. La tabella è prodotta con Gretl e ha la stessa struttura di tutte le tabelle di questo tipo.
+>
+> La costante è stimata a 2,96, contro il vero valore 3, con intervallo di confidenza da 2,83 a 3,08: il valore 3 vi è contenuto ed è plausibile come vero valore. Il coefficiente $\beta$, che nella realtà vale 1,5, è stimato con 2,1, e l'intervallo di confidenza indica che il vero valore dovrebbe cadere tra 2 e 2,25. Il valore 1,5 è fuori dall'intervallo: sulla base dei risultati è molto improbabile che sia il vero valore, ma a priori si sa che lo è. Dimenticare l'endogeneità nella procedura di stima produce quindi una stima abbastanza diversa da quella che dovrebbe essere.
+>
+> Inoltre 2,1 è esattamente 1,5 più 0,6. La distorsione non coincide in generale con la correlazione: qui il risultato è proprio quel numero perché la varianza di $X$ è uguale a 1, altrimenti si avrebbe un altro valore, ma sempre una distorsione. Ciò che si stima è $\beta$ più un termine aggiuntivo di cui in generale non si conosce l'entità (può essere 0,1 oppure 0,99), e non si sa quanto la stima disti da quella desiderata.
+>
+> Il secondo problema è che la distorsione non sparisce all'aumentare dei dati. Con più dati la stima è più precisa e l'inferenza più precisa, ma qui la parte di distorsione non è comprimibile: si converge sempre più a 2,1 e non a 1,5, perché ciò che si stima è 1,5 più 0,6. Si è molto precisi nello sbagliare. Né la legge dei grandi numeri né il teorema del limite centrale servono a rimediare.
+
+> [!tip] Esame
+> Il docente raccomanda di ricordare questa tabella dell'esempio con dati simulati, perché è più importante della derivazione teorica.
+
 > [!lezione] Dalla lezione del 12 novembre 2026: che cosa succede alla stima se l'esogeneità non vale
 > Si supponga che la covarianza tra $x$ ed $\varepsilon$ sia diversa da zero e la si indichi con $\rho_{x\varepsilon}$. Ripetendo il calcolo della covarianza descritto per il metodo dei momenti, si ottiene $\operatorname{Cov}(x, y) = \beta \operatorname{Var}(x) + \rho_{x\varepsilon}$. Se questa condizione valesse e il numero fosse noto, $\beta$ andrebbe calcolato come
 >
@@ -323,6 +375,18 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 > Uno studente chiede se l'endogeneità indichi l'assenza di esogeneità. Il docente conferma: si ha endogeneità quando la correlazione tra $x$ ed $\varepsilon$ è diversa da zero, cioè quando vale il contrario dell'esogeneità.
 >
 > Il docente chiude il discorso osservando che tutto il gioco dell'econometria, almeno a questo livello, consiste nel capire quando si può dire che la variazione di $\varepsilon$ è uguale a zero in corrispondenza della variazione di $x$. Tutto il resto è algebra banale: la difficoltà è economica più che tecnica. Nelle lezioni successive la parte tecnica viene introdotta gradualmente, per mostrare che quanto detto qualitativamente ha un corrispettivo formale.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: come ragionare sull'endogeneità
+> Nessuno dice se l'ipotesi di covarianza nulla sia valida: non si può dimostrare, ma occorre ragionare per capire se è ragionevole. Un modo è chiedersi quando si presenti l'endogeneità. Un caso è il modello con troppe poche variabili: la media condizionale dipende da una sola variabile, mentre tutte le altre stanno dentro $\varepsilon$ e potrebbero essere legate a $X$. Si può allora togliere informazione a $\varepsilon$ e inserirla nel modello, aggiungendo variabili alla media condizionale. Se il parametro associato alla variabile di interesse cambia di molto aggiungendo o no una variabile, nel modello con meno variabili c'è probabilmente un problema di variabile omessa, quindi di endogeneità. In una regressione si possono avere 100 parametri, ma si guardano solo i due o tre rilevanti per il problema economico; tutto il resto sono fattori di disturbo.
+>
+> Conviene individuare le potenziali cause di endogeneità e costruire una serie di modelli che verifichino se quei problemi sono presenti in quello usato. Se, aggiungendo variabili, il parametro di interesse non cambia più, probabilmente le variabili importanti sono state inserite tutte. Il docente avverte che sono regole del pollice e non un teorema: il teorema dice che, se il modello ha troppe poche variabili, le stime sono sistematicamente sbagliate, ma empiricamente non è facile validarlo. Si continuano ad aggiungere variabili finché si può; se a un certo punto le stime si stabilizzano, non necessariamente allo stesso numero ma con gli stessi risultati dal punto di vista qualitativo, probabilmente il problema delle variabili omesse non c'è più e si possono usare le formule standard di stima. Quando invece si ignora il problema, non si stima $\beta$ ma $\beta$ più un termine legato alla correlazione tra $X$ ed errore; la dimostrazione formale è rimandata.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: endogeneità come problema economico e non statistico
+> Dal punto di vista statistico la procedura è corretta: lo stimatore dei minimi quadrati, o del metodo dei momenti, è la covarianza tra $X$ e $Y$ divisa per la varianza di $X$. Con esogeneità la formula dà esattamente ciò che serve, cioè un effetto marginale, il parametro $\beta$; con endogeneità la qualità del risultato è bassissima. Se non ci fosse esogeneità, tutti i modelli stimati sarebbero da buttare. Esogeneità ed endogeneità sono quindi un'ipotesi da fare: il modello deve essere corretto dal punto di vista logico, cioè rappresentare una relazione causa-effetto, e occorre convincersi che non sia influenzato dall'endogeneità. Se lo è, le soluzioni sono due: specificare diversamente il modello, oppure usare stimatori non standard, come le variabili strumentali, che non saranno trattate nel corso per mancanza di tempo.
+>
+> Non si è mai sicuri della presenza o dell'assenza di endogeneità. Insieme al modello di interesse si stima una batteria di altri modelli e si fanno altri esercizi che permettano di escludere alcuni tipi di endogeneità: servono, per esempio, altre 50 regressioni per convincersi che non manchino variabili e che quelle usate siano misurate con una certa precisione. L'endogeneità non si può mai escludere, ma si lavora per ridurne la probabilità.
+>
+> Il docente ribadisce che l'endogeneità è un problema economico, non statistico. In un corso di statistica generalmente non interessa molto, perché se l'obiettivo è prevedere $Y$ qualsiasi modello che funzioni va bene. In ambito economico interessa invece la misura del parametro, che dice quanto vale la politica; altrimenti si rischia di prendere decisioni costose e sbagliate.
 
 ## Le proprietà degli stimatori OLS: non distorsione, consistenza e teorema di Gauss-Markov
 
@@ -371,6 +435,36 @@ Il valore atteso condizionale $E[Y|X=x]$ è la media di $Y$ per un dato livello 
 > allora OLS fornisce il **miglior stimatore lineare non distorto (BLUE)**, il più efficiente (con varianza minore) nella classe degli stimatori lineari e non distorti.
 
 *(slide 34–42)*
+
+> [!lezione] Dalla lezione del 13 novembre 2026: lo stimatore come $\beta$ più rumore
+> Lo stimatore è una strategia statistica che crea un legame tra dati e parametro, e ci si chiede se il rapporto covarianza su varianza sia legato al vero $\beta$ e che cosa succeda quando il campione cresce. Si assume che i dati siano campionati dalla popolazione in modo indipendente, ipotesi importante. Il numeratore di $\hat\beta$ si sviluppa come $\sum_i (x_i - \bar x)\,y_i - \sum_i (x_i - \bar x)\,\bar y$. Il secondo termine è nullo: $\bar y$ è una costante che si porta fuori dalla sommatoria, e la somma degli scarti di una variabile dalla propria media è zero. Uno studente chiede perché; il docente risponde che la proprietà fondamentale della media aritmetica è proprio questa: gli scostamenti delle osservazioni dalla media sommano a zero.
+>
+> Si sostituisce poi $y_i = \alpha + \beta x_i + \varepsilon_i$ e il numeratore si scompone in tre somme: $\sum_i (x_i - \bar x)\alpha + \sum_i (x_i - \bar x)\beta x_i + \sum_i (x_i - \bar x)\varepsilon_i$. La prima è nulla, per lo stesso motivo. Nella seconda $\beta$ si porta fuori e si sottrae zero nella forma $\beta \sum_i (x_i - \bar x)\bar x$, ottenendo $\beta \sum_i (x_i - \bar x)^2$, che diviso per il denominatore dà $\beta$. Resta il terzo termine:
+>
+> $$\hat\beta = \beta + \frac{\sum_i (x_i - \bar x)\,\varepsilon_i}{\sum_i (x_i - \bar x)^2}.$$
+>
+> Lo stimatore è quindi uguale al vero parametro più una componente di rumore che dipende dall'eterogeneità degli individui.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: non distorsione e distanza dal vero valore
+> Lo stimatore è una variabile casuale perché dipende dai dati: cambiando il campione cambia la stima. Se ne calcolano valore atteso e varianza condizionatamente ai valori di $x$ del campione, il che equivale a considerare campioni omogenei tra loro, che condividono gli stessi $x$ ma non le stesse persone, perché ciò che cambia sono gli $\varepsilon$. Il docente porta l'esempio dei colleghi che hanno fatto il dottorato con lui: persone con le stesse caratteristiche osservabili, ma che hanno fatto scelte diverse e hanno salari diversi, uguali nelle $x$ e diversi in $\varepsilon$.
+>
+> Fissati gli $x$, il denominatore e gli scarti $(x_i - \bar x)$ sono costanti e si portano fuori dalla media, che entra nella sommatoria perché la media di una somma è la somma delle medie. Se il modello è corretto $E[\varepsilon_i \mid x]=0$, quindi $E[\hat\beta \mid x] = \beta$. Prendendo campioni con caratteristiche simili e calcolando $\hat\beta$ moltissime volte, con un primo campione $\hat\beta_1$, con un secondo $\hat\beta_2$ e così via, la media di tutte queste stime è esattamente il vero valore, che per fortuna non è noto: se lo fosse, la statistica non servirebbe. Lo stimatore è non distorto: non devia sistematicamente dal vero valore.
+>
+> Finora si è guardata solo la media, non la distribuzione, che si può calcolare in modo esatto oppure asintotico, ma servono ipotesi più forti sulla distribuzione dell'errore. Il docente non la affronta, perché non serve realmente, e dichiara di essere contrario alla distribuzione per campioni infiniti. Il problema è che si ha un solo campione e non si sa se dia una stima vicina o lontana dalla media. La distanza dal vero valore dipende solo da $\varepsilon$, cioè dall'eterogeneità delle osservazioni in quel dataset, e non dal fatto che il modello sia sbagliato o che si usino formule sbagliate. Non si può valutare a monte, perché il vero valore non è noto: serve quindi la distanza media tra lo stimatore, inteso come tutti i valori che può assumere su campioni diversi, e il vero parametro, e la misura di distanza media in statistica è la varianza.
+
+> [!lezione] Dalla lezione del 13 novembre 2026: varianza e consistenza dello stimatore
+> Per la varianza di $\hat\beta$ conta solo il termine in $\varepsilon$, perché $\beta$ è una costante e la varianza è insensibile alla traslazione. Per semplificare si assume omoschedasticità, rimandando il caso generale. Fissato $x$, il denominatore esce dalla varianza elevato al quadrato; le osservazioni sono indipendenti, quindi la varianza della somma è la somma delle varianze, e anche gli scarti $(x_i - \bar x)$, portati fuori, vanno al quadrato. Se la varianza condizionale di $\varepsilon$ è costante, $\sigma^2$, si porta fuori dalla sommatoria e si ha
+>
+> $$\mathrm{Var}(\hat\beta \mid x) = \frac{\sigma^2}{\sum_i (x_i - \bar x)^2}.$$
+>
+> Dividendo numeratore e denominatore per $n$, il denominatore diventa la varianza campionaria di $X$, che per $n$ abbastanza grande converge alla varianza di $X$ nella popolazione, mentre il numeratore è $\sigma^2/n$ e tende a zero. All'aumentare delle osservazioni l'incertezza dello stimatore tende a zero, quindi lo stimatore è consistente: con molti dati la stima ottenuta da qualsiasi campione non si discosta dalla media, e il numero nella tabella di output, in un modello corretto e con abbastanza dati, collassa sul vero valore del parametro.
+>
+> Nelle simulazioni, con campioni simulati dalla stessa popolazione e istogramma delle stime, la distribuzione è più concentrata al crescere della numerosità: stime lontane, che con campioni piccoli compaiono, con campioni più grandi non capitano mai, e con 100 osservazioni una stima molto distante dal vero $\beta$ non capita praticamente mai. Se $n$ tende all'infinito si osserva l'intera popolazione, tutti i campioni coincidono e lo stimatore dà sempre lo stesso numero: una variabile con media $\beta$ e varianza zero. È un risultato teorico asintotico, ma l'intuizione è che più $n$ è grande, più i valori ottenibili dalla procedura di stima sono concentrati intorno al vero valore.
+>
+> Sotto l'ipotesi di esogeneità lo stimatore è non distorto; sotto indipendenza delle osservazioni e omoschedasticità tende a essere consistente.
+
+> [!tip] Esame
+> Per il modello di regressione semplice l'esogeneità è l'ipotesi cruciale: senza di essa non funziona niente. Le altre, come l'indipendenza delle osservazioni e l'omoschedasticità, sono tipicamente ipotesi di comodo e discutibili; saranno riprese più avanti.
 
 ## La distribuzione di β̂: campioni finiti e normalità asintotica
 
