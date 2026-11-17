@@ -105,6 +105,25 @@ generated: 2026-07-10
 >
 > Il docente presenta la costruzione di un modello con due variabili come equivalente a dividere il campione in due pezzi, alto e basso reddito, e a calcolare il livello di dipendenza nei due sottoinsiemi. Il punto viene ripreso più avanti.
 
+> [!lezione] Dalla lezione del 17 novembre 2026: dal modello semplice alla regressione multipla
+> Poiché il modello di regressione semplice è stato sviluppato in modo abbastanza dettagliato, la regressione multipla si affronta più velocemente, per differenze. Un modello con due variabili è troppo piccolo per ricavarne molto: lo ha mostrato l'esempio della prima lezione, i bambini che vanno a scuola, con la performance in funzione della dimensione della classe. Aggiungendo il reddito, le conclusioni, ragionando logicamente, risultavano completamente diverse. Si vuole quindi costruire un modello con più informazioni disponibili, cioè più variabili, il che aiuta anche a specificare meglio un potenziale nesso causale tra le variabili.
+>
+> Nell'esempio le variabili in gioco sono tre: il reddito, la dimensione della classe e la performance. Il modello di regressione semplice dà la stima per una variazione unitaria della dimensione della classe: se la classe diminuisce di un'unità, il punteggio al test attitudinale aumenta in media di circa due punti (la stima della nota è $-2{,}28$). Il numero è statisticamente significativo, perché il p-value del test di significatività è diverso da zero, quindi c'è un miglioramento sistematico. L'intervallo di confidenza non include lo zero, perciò il parametro è statisticamente diverso da zero, ed è sistematicamente negativo, perché l'intervallo assume solo valori negativi.
+>
+> Il problema è che non si è sicuri che la relazione sia causale. La storia raccontata può avere senso, ma si vorrebbe includere nel modello l'effetto del reddito che, per quanto detto nelle lezioni precedenti, è legato sia alla dimensione della classe sia alla performance, in senso diverso. Occorre quindi un modello di regressione che incorpori questa informazione.
+
+> [!lezione] Dalla lezione del 17 novembre 2026: il modello con due regressori e il termine d'errore
+> Nel caso con due regressori $Y$ è la performance, $X_1$ la dimensione della classe e $X_2$ il secondo regressore. Il valore atteso condizionale, cioè il vero modello nella popolazione, dipende da $\alpha$, $\beta_1$, $\beta_2$, $X_1$ e $X_2$: $\alpha$ è l'intercetta, mentre $\beta_1$ e $\beta_2$ misurano quanto conta $X_1$ e quanto conta $X_2$. Come nel modello semplice, per collegare l'osservazione del singolo distretto alla media condizionale si aggiunge un termine d'errore, che descrive come differiscono tra loro distretti con le stesse caratteristiche, cioè con caratteristiche diverse dalla dimensione della classe e dal livello di reddito.
+
+> [!lezione] Dalla lezione del 17 novembre 2026: $\beta_1$ e $\beta_2$ come correlazioni condizionali
+> Nel modello di regressione semplice $\beta_1$ è una correlazione marginale tra $x$ e $y$, cioè la covarianza tra $x$ e $y$ divisa per la varianza di $x$. Nel modello con più variabili $\beta_1$ e $\beta_2$ sono ancora correlazioni, ma non marginali: sono correlazioni condizionali (la nota chiama i $\beta_j$ effetti marginali).
+>
+> Il docente ripete l'esercizio già fatto: stabilire la performance attesa per due livelli della dimensione della classe, con il reddito fissato. Si prendono distretti con lo stesso reddito e si vede che cosa succede alla performance modificando una sola delle due variabili. Sostituendo nel modello i due valori e facendo la differenza, e ipotizzando che la componente residuale sia nulla, la variazione di performance è uguale a $\beta_1$ per la variazione della policy, cioè per la riduzione di un'unità della dimensione della classe.
+>
+> $\beta_1$ non dice quanto conti in generale ridurre di un'unità la dimensione della classe, ma quanto conti farlo in contesti in cui i distretti hanno lo stesso reddito. Non è più una correlazione tra $X$ e $Y$, ma una correlazione tra $X_1$ e $Y$ con $X_2$ fissato. Si confrontano distretti uguali, quindi la variazione di $Y$ non può dipendere dall'effetto reddito, perché quella quantità è fissa: l'esperimento consiste nel modificare la dimensione della classe solo tra distretti uguali. A parità di reddito, una variazione $dx$ della dimensione ha un impatto proporzionale a $\beta_1$.
+>
+> La formula è la stessa del modello semplice, ma il concetto è diverso. Nel modello semplice $X_2$ non compare e quindi non è fissato, e la correlazione è marginale; qui è condizionale, tra $Y$ e $X_1$ con $X_2$ fissato. È esattamente ciò che si faceva nelle lezioni precedenti dividendo un campione grande in due parti, distretti ricchi e distretti poveri, e calcolando la correlazione nelle due parti: è questo che si fa nel modello di regressione.
+
 ## Cause di endogeneità: distorsione da variabile omessa
 
 > [!tip] Teorema

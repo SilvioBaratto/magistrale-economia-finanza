@@ -16,16 +16,16 @@ Un PDF per insegnamento, generato dalle note Obsidian.
 
 | Insegnamento | Codice | Dispensa | Pagine | Note Obsidian |
 |---|---|---|---|---|
-| Econometria | EM0004 | [PDF](dispense/01-econometria.pdf) | 139 | [note](obsidian/01-Econometria/) |
+| Econometria | EM0004 | [PDF](dispense/01-econometria.pdf) | 151 | [note](obsidian/01-Econometria/) |
 | Legislazione Bancaria — modulo 1 | EM2101 | [PDF](dispense/03-legislazione-bancaria-1.pdf) | 197 | [note](obsidian/03-Legislazione-Bancaria-1/) |
-| Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 170 | [note](obsidian/04-Legislazione-Bancaria-2/) |
+| Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 181 | [note](obsidian/04-Legislazione-Bancaria-2/) |
 | Economia dei Mercati e degli Investimenti Finanziari — modulo 1 | EM5002 | [PDF](dispense/05-economia-mercati-investimenti-1.pdf) | 269 | [note](obsidian/05-Economia-Mercati-Investimenti-1/) |
 | Gestione della Banca | EM2102 | [PDF](dispense/07-gestione-della-banca.pdf) | 89 | [note](obsidian/07-Gestione-della-Banca/) |
 | Diritto del Mercato Finanziario | EM0001 | [PDF](dispense/08-diritto-mercato-finanziario.pdf) | 107 | [note](obsidian/08-Diritto-Mercato-Finanziario/) |
-| Metodi per la Gestione dei Portafogli Personali | EM5011 | [PDF](dispense/09-metodi-portafogli.pdf) | 156 | [note](obsidian/09-Metodi-Portafogli/) |
+| Metodi per la Gestione dei Portafogli Personali | EM5011 | [PDF](dispense/09-metodi-portafogli.pdf) | 155 | [note](obsidian/09-Metodi-Portafogli/) |
 | Misurazione del Rischio | EM5012 | [PDF](dispense/10-misurazione-rischio.pdf) | 7 | [note](obsidian/10-Misurazione-Rischio/) |
-| Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 164 | [note](obsidian/11-Finanza-Strategica/) |
-| **Volume unico** (tutti gli insegnamenti) | | [PDF](dispense/00-dispense-complete.pdf) | 1296 | |
+| Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 171 | [note](obsidian/11-Finanza-Strategica/) |
+| **Volume unico** (tutti gli insegnamenti) | | [PDF](dispense/00-dispense-complete.pdf) | 1325 | |
 | 04-legislazione-bancaria-2-sintesi | | [PDF](dispense/04-legislazione-bancaria-2-sintesi.pdf) | 100 | |
 
 ## Appunti delle lezioni
@@ -42,9 +42,9 @@ tutte le lezioni di un insegnamento in ordine di data.
 
 | Insegnamento | Accademica | Fedele | Sintetica |
 |---|---|---|---|
-| Econometria | [PDF](dispense/appunti/01-econometria.pdf) · 49 pp | [PDF](dispense/appunti-fedeli/01-econometria.pdf) · 40 pp | [PDF](dispense/appunti-sintetici/01-econometria.pdf) · 24 pp |
-| Legislazione Bancaria — modulo 2 | [PDF](dispense/appunti/04-legislazione-bancaria-2.pdf) · 52 pp | [PDF](dispense/appunti-fedeli/04-legislazione-bancaria-2.pdf) · 36 pp | [PDF](dispense/appunti-sintetici/04-legislazione-bancaria-2.pdf) · 21 pp |
-| Finanza Strategica | [PDF](dispense/appunti/11-finanza-strategica.pdf) · 32 pp | [PDF](dispense/appunti-fedeli/11-finanza-strategica.pdf) · 19 pp | [PDF](dispense/appunti-sintetici/11-finanza-strategica.pdf) · 11 pp |
+| Econometria | [PDF](dispense/appunti/01-econometria.pdf) · 69 pp | [PDF](dispense/appunti-fedeli/01-econometria.pdf) · 68 pp | [PDF](dispense/appunti-sintetici/01-econometria.pdf) · 40 pp |
+| Legislazione Bancaria — modulo 2 | [PDF](dispense/appunti/04-legislazione-bancaria-2.pdf) · 68 pp | [PDF](dispense/appunti-fedeli/04-legislazione-bancaria-2.pdf) · 56 pp | [PDF](dispense/appunti-sintetici/04-legislazione-bancaria-2.pdf) · 32 pp |
+| Finanza Strategica | [PDF](dispense/appunti/11-finanza-strategica.pdf) · 47 pp | [PDF](dispense/appunti-fedeli/11-finanza-strategica.pdf) · 38 pp | [PDF](dispense/appunti-sintetici/11-finanza-strategica.pdf) · 21 pp |
 
 ### Econometria
 
@@ -52,7 +52,8 @@ tutte le lezioni di un insegnamento in ordine di data.
 |---|---|---|---|---|
 | 10/11/2026 | Introduzione al corso: esogeneità, causalità e correlazioni spurie | [nota](obsidian/01-Econometria/appunti/2026-11-10%20Introduzione%20al%20corso%20esogeneita%CC%80%2C%20causalita%CC%80%20e%20correlazioni%20spurie.md) | [nota](obsidian/01-Econometria/appunti-fedeli/2026-11-10%20Introduzione%20al%20corso%20causalita%CC%80%20e%20correlazioni%20spurie.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-10%20Introduzione%20al%20corso%20causalita%CC%80%20e%20correlazioni%20spurie.md) |
 | 12/11/2026 | Causalità, esogeneità e stima della regressione semplice | [nota](obsidian/01-Econometria/appunti/2026-11-12%20Causalita%CC%80%2C%20esogeneita%CC%80%20e%20stima%20della%20regressione%20semplice.md) | [nota](obsidian/01-Econometria/appunti-fedeli/2026-11-12%20Regressione%20semplice%20esogeneita%CC%80%20e%20relazione%20causale.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-12%20Regressione%20semplice%20esogeneita%CC%80%20e%20relazione%20causale.md) |
-| 13/11/2026 | Regressione semplice: esogeneità e proprietà dello stimatore OLS | [nota](obsidian/01-Econometria/appunti/2026-11-13%20Regressione%20semplice%20esogeneit%C3%A0%20e%20propriet%C3%A0%20dello%20stimatore%20OLS.md) | — | — |
+| 13/11/2026 | Regressione semplice: esogeneità e proprietà dello stimatore OLS | [nota](obsidian/01-Econometria/appunti/2026-11-13%20Regressione%20semplice%20esogeneita%CC%80%20e%20proprieta%CC%80%20dello%20stimatore%20OLS.md) | — | — |
+| 17/11/2026 | Inferenza sullo stimatore OLS e regressione multipla | [nota](obsidian/01-Econometria/appunti/2026-11-17%20Inferenza%20sullo%20stimatore%20OLS%20e%20regressione%20multipla.md) | [nota](obsidian/01-Econometria/appunti-fedeli/2026-11-17%20Inferenza%20su%20beta%2C%20R%20quadrato%20e%20regressione%20multipla.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-17%20Inferenza%20su%20beta%2C%20R%20quadrato%20e%20regressione%20multipla.md) |
 
 ### Legislazione Bancaria — modulo 2
 
@@ -61,6 +62,7 @@ tutte le lezioni di un insegnamento in ordine di data.
 | 10/11/2026 | Vigilanza bancaria, Basilea e vigilanza informativa | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-10%20Vigilanza%20bancaria%2C%20Basilea%20e%20vigilanza%20informativa.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-10%20Vigilanza%20sulle%20banche%2C%20Basilea%20e%20matrice%20dei%20conti.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-10%20Vigilanza%20sulle%20banche%2C%20Basilea%20e%20matrice%20dei%20conti.md) |
 | 12/11/2026 | Vigilanza informativa, SREP e art. 52 TUB | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-12%20Vigilanza%20informativa%2C%20SREP%20e%20art.%2052%20TUB.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-12%20Vigilanza%20informativa%2C%20SREP%20e%20articolo%2052%20TUB.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-12%20Vigilanza%20informativa%2C%20SREP%20e%20articolo%2052%20TUB.md) |
 | 13/11/2026 | Whistleblowing e art. 53 TUB: fondi propri e rischi | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-13%20Whistleblowing%20e%20art.%2053%20TUB%20fondi%20propri%20e%20rischi.md) | — | — |
+| 17/11/2026 | Rischio di credito e centrale dei rischi | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-17%20Rischio%20di%20credito%20e%20centrale%20dei%20rischi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-17%20Rischio%20di%20credito%2C%20grandi%20esposizioni%20e%20centrale%20dei%20rischi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-17%20Rischio%20di%20credito%2C%20grandi%20esposizioni%20e%20centrale%20dei%20rischi.md) |
 
 ### Finanza Strategica
 
@@ -68,6 +70,7 @@ tutte le lezioni di un insegnamento in ordine di data.
 |---|---|---|---|---|
 | 10/11/2026 | Presentazione del corso e valore dei flussi di cassa | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-10%20Presentazione%20del%20corso%20e%20valore%20dei%20flussi%20di%20cassa.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-10%20Presentazione%20del%20corso%20e%20cash%20flow%20nella%20valutazione.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-10%20Presentazione%20del%20corso%20e%20cash%20flow%20nella%20valutazione.md) |
 | 13/11/2026 | Valutazione degli investimenti: rendiconto finanziario e metodi VAN, VAM, TIR | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-13%20Valutazione%20degli%20investimenti%20rendiconto%20finanziario%20e%20metodi%20VAN%2C%20VAM%2C%20TIR.md) | — | — |
+| 17/11/2026 | Metodi di valutazione degli investimenti e opzioni reali | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-17%20Metodi%20di%20valutazione%20degli%20investimenti%20e%20opzioni%20reali.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-17%20Esercizi%20sui%20metodi%20di%20valutazione%20e%20opzioni%20reali.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-17%20Esercizi%20sui%20metodi%20di%20valutazione%20e%20opzioni%20reali.md) |
 
 ## Esami svolti — Econometria
 
