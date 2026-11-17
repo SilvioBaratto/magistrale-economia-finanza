@@ -56,6 +56,11 @@ generated: 2026-07-10
 >
 > **Materiali.** Tutto il materiale è sulla pagina Moodle del corso (lucidi, dataset, vecchi esami), caricato prima delle lezioni. Conviene iscriversi manualmente alla pagina, così il docente può contattare tutti insieme. Il libro non è obbligatorio ma è discorsivo, ricco di esempi nei capitoli sulle serie storiche e sulla regressione, e mette a disposizione i dati degli esempi (anche in formato Excel) per replicare i calcoli. I lucidi sono una scaletta per il docente, messa a punto in circa trent'anni di insegnamento: il libro spiega il perché delle cose.
 
+> [!lezione] Dalla lezione del 17 novembre 2026: aggiornamenti dei materiali
+> Tra la sera precedente e la mattina del 17 novembre il docente ha messo online due aggiunte in fondo ai materiali: i risultati sulla legge delle aspettative iterate, da guardare solo se interessano, e una versione degli appunti con i grafici rifatti e alcune incoerenze di notazione sistemate. La versione è più definitiva e coerente; non cambia molto, ma alcuni punti sono spiegati in modo più chiaro.
+>
+> Anche i lucidi sulla regressione multipla sono stati modificati la mattina stessa: chi li ha scaricati il giorno prima può trovarli un po' diversi. Il docente ci sta ancora lavorando; la base è la stessa e alcuni punti sono migliorati. L'analisi della regressione multipla prosegue nella lezione successiva, fissata per mercoledì.
+
 ## Cos'è l'econometria?
 
 > [!abstract] Definizione

@@ -72,6 +72,13 @@ La valutazione si svolge con un'unica prova scritta in aula, della durata di due
 >
 > Slide ed esempi sono caricati periodicamente su Moodle. Nell'ultima settimana è ospite il team di advisory di KPMG, che tiene una lezione congiunta con il docente su deal e due diligence con un caso pratico, per collegare il corso alla realtà aziendale e alla consulenza. La lezione di giovedì 12 novembre non si tiene: sarà recuperata nei giorni di calendario alla fine del corso, mentre il resto del calendario resta invariato. Il docente invita a interromperlo in ogni momento per domande e dubbi, perché gli argomenti sono concatenati.
 
+> [!lezione] Dalla lezione del 17 novembre 2026: esercizi e studio autonomo
+> Gli esercizi di riferimento sono su Moodle: quelli svolti in aula vengono caricati e il docente ne aggiunge altri, da risolvere nelle lezioni successive per esercitarsi. Gli esercizi vengono risolti insieme in aula; il docente ne carica un paio da fare in autonomia, o da far svolgere a ChatGPT incollando il testo. Il limite di questo approccio è duplice. Durante il compito non si ha ChatGPT, quindi conviene padroneggiare la formula. Conviene inoltre capire il ragionamento in profondità, perché nel lavoro lo si userà e non soltanto per produrre la formula del VAN, che basta impostare su Excel o far fare a ChatGPT.
+>
+> Chi partecipa a una riunione con un private equity, dove si ragiona a voce sul fatto che a fronte di un investimento iniziale c'è una serie di flussi da attualizzare, deve poter seguire il discorso a orecchio e non ha il tempo di ricorrere all'AI. Non è un esame di matematica: la memoria e gli strumenti aiutano, ma su questi temi occorre appropriarsi del ragionamento, che spesso è buon senso applicato a logiche finanziarie. Nel lavoro ci si siede a tavoli in cui si parla di ritorno dell'investimento, di rendimenti alternativi, di confronto tra il tasso privo di rischio e un investimento rischioso.
+>
+> Delle parti già svolte devono essere chiari i metodi di valutazione e il ragionamento sui flussi di cassa. I vari flussi di cassa vanno tenuti a mente, perché diventano importanti soprattutto quando si guarda l'azienda nel suo complesso.
+
 ### Testi di riferimento
 
 Il testo di riferimento è F. Beltrame, G.S. Bertinetti, A. Sclip, *Analisi e valutazione finanziaria d'impresa*, G. Giappichelli Editore, 2021. Al manuale si affiancano i supporti didattici del corso e materiale supplementare, per esempio articoli scientifici.
