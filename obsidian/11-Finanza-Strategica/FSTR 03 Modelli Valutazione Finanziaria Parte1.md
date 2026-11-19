@@ -35,6 +35,9 @@ $$EV = MK\,CAP + PFN$$
 
 L'equity value è dunque la parte dell'EV di pertinenza degli azionisti: $MK\,CAP = EV - PFN$.
 
+> [!lezione] Dalla lezione del 19 novembre 2026: le grandezze reddituali normalizzate
+> Nella riga reddituale della tabella il reddito di bilancio dell'ottica equity è l'ultima riga del conto economico. In entrambe le ottiche la grandezza è normalizzata: la normalizzazione è il lavoro di aggiustamento svolto con la due diligence.
+
 ## Relazione tra enterprise value ed equity value: esempi numerici
 
 Gli esempi seguenti applicano la relazione $EV = MK\,CAP + PFN$ ai tre casi possibili per il segno della PFN. I valori sono in milioni di euro.
@@ -160,6 +163,13 @@ Il risultato è un insieme di **valori finanziari**, detti anche valori fondamen
 
 Per rischio operativo si intende il rischio di perdite derivanti da fallimenti o inadeguatezza dei processi interni, delle risorse umane e dei sistemi tecnologici, oppure da eventi esterni. Il rischio finanziario incide sulla liquidità aziendale ed è legato all'equilibrio tra flussi monetari in entrata e in uscita.
 
+> [!lezione] Dalla lezione del 19 novembre 2026: punti di forza e limiti del DCF
+> Nei DCF il valore dell'azienda dipende dalla sua capacità di generare flussi di cassa in futuro, attualizzati a un certo tasso. Per questo sono stati svolti tutti gli esercizi sul VAN: il principio è identico. Il VAN si usa per un investimento e lo stesso concetto si usa per un'azienda, immaginando che il progetto sia l'azienda stessa. I punti di forza sono due: il metodo permette di ragionare sulla capacità prospettica di generare risorse e di stimare sia i flussi di cassa attesi sia il rischio associato.
+>
+> Se il DCF fosse il metodo perfetto sarebbe l'unico usato per valutare le aziende. Ha invece controindicazioni, la prima delle quali è che occorre prevedere il futuro, una forte assunzione: il metodo valuta i flussi di cassa prospettici e li attualizza a oggi, ma nessuno garantisce che i flussi saranno quelli. I flussi sono inoltre specifici di quell'azienda, ed è un'altra caratteristica dei DCF: guardano l'azienda e non il settore.
+>
+> Se i flussi di cassa stimati non sono attendibili si costruisce un castello di carte. Se si sbaglia la previsione e si usano formule di matematica finanziaria come la rendita perpetua, la valutazione che ne risulta, portata a una trattativa con un dealer, non è credibile, perché proietta per milioni di euro flussi di cassa che non lo sono. Alla base dei DCF c'è quindi un ragionamento molto delicato: i flussi di cassa devono essere sostenibili e credibili.
+
 Un esempio di rendiconto finanziario di un'impresa reale è quello consolidato di Brembo, in migliaia di euro, per gli esercizi chiusi al 31 dicembre 2020 e 2019.
 
 | Voce | 31.12.2020 | 31.12.2019 |
@@ -266,6 +276,17 @@ Moltiplicando il multiplo (per esempio la media del gruppo) per l'EBITDA dell'im
 
 Sul piano professionale si ritiene oggi più corretto associare le valutazioni assolute e relative. Il ricorso ai multipli in senso **complementare** serve a individuare le **leve del valore** e le **leve di prezzo** (variabili di contesto) che guidano i prezzi del mercato finanziario, e a coprire meglio lo spettro delle informazioni rilevanti per la valutazione.
 
+> [!lezione] Dalla lezione del 19 novembre 2026: il patrimonio netto rettificato come terzo metodo
+> I metodi per valutare un'azienda trattati nel corso sono due: i DCF e i multipli dell'EBITDA. Un terzo metodo, che il libro non riporta e che nella prassi alcuni usano, talvolta come confronto, è il patrimonio netto rettificato; ne parlerà anche il team di KPMG. Può essere utile a chi lavora nella consulenza o si cimenta in un deal.
+>
+> I multipli dell'EBITDA e i DCF si basano sulle prospettive di guadagno e di reddito dell'azienda: o su dati esterni, cioè i multipli, o sui flussi di cassa generati dall'azienda. In entrambi i casi non si guarda il patrimonio, cioè non si guarda dentro il capannone. Non ci si accorge, per esempio, se un'azienda taglia la lamiera di acciaio con una taglierina azionata da un operaio oppure con un robot laser di ultima generazione, pagato un milione di euro e con intelligenza artificiale integrata, che taglia cento sagome al minuto. Nei DCF e nei multipli non ci si rende conto di questo aspetto e del valore di mercato di alcuni asset importanti. Il bilancio dice ancora meno: il braccio robotizzato viene probabilmente ammortizzato secondo le tabelle fiscali con un'aliquota del 25%, quindi in quattro anni il robot da un milione di euro arriva a zero, mentre può tagliare per altri dieci anni. Dire all'imprenditore che ha speso un milione per quel robot che dopo quattro anni gli si dà zero, perché a bilancio c'è scritto zero e tutto è ammortizzato, non è accettabile.
+>
+> Si tratta del disallineamento tra il valore netto contabile, calcolato con i principi contabili, e un valore di mercato, di recupero o di realizzo. Per questo un aspetto della valutazione d'azienda consiste nel rettificare il patrimonio, cioè ricondurlo a valori di mercato, soprattutto per le immobilizzazioni. Un fabbricato iscritto a bilancio al costo storico, cioè al costo di acquisto, vale poco ma potrebbe essersi apprezzato nel tempo. Lo stesso accade con le location dei negozi, con le aree rivalutate col tempo, con le città turistiche, con le zone dove c'è stata una riqualificazione residenziale o dove ora passa la metropolitana e prima non passava.
+>
+> Il docente porta l'esempio della zona di Milano intorno a Porta Garibaldi e a piazza Gae Aulenti, dove si trovano la Torre Unicredit e il Bosco Verticale. Di fianco ci sono le case ringhiera, casette milanesi di mattoni con il cortile interno e il ballatoio con la ringhiera, che prima della costruzione di quei palazzi, in una zona malfamata, non valevano niente. Oggi un appartamento in affitto al Bosco Verticale costa circa 15.000 euro al mese, e le case ringhiera accanto potrebbero essersi apprezzate un poco. Si supponga che la sede legale di un'azienda e i suoi uffici siano in una casa ringhiera di Milano: a bilancio quell'edificio oggi probabilmente non vale quasi niente: se è stato ammortizzato al 3%, in dieci anni si è ridotto del 30%. Chi compra da un'azienda che vende un fabbricato accanto al Bosco Verticale non se lo vedrà vendere al costo d'acquisto. Nei multipli dell'EBITDA e nei DCF non si considera quanto può valere la sede accanto al Bosco Verticale, in un edificio comprato vent'anni prima a 300.000 euro e che ora vale 3 milioni: nessuno lo venderebbe a 300.000 euro, al valore di libro del bilancio.
+>
+> Il terzo metodo consiste nel fare una ricognizione degli asset aziendali e nello stimare, tramite perizie giurate di periti, quanto valgono i beni dell'azienda a valore commerciale, soprattutto gli immobili.
+
 ## I metodi DCF: formule generali
 
 > [!abstract] Definizione
@@ -313,6 +334,13 @@ Il FCFF è il flusso disponibile per tutti i finanziatori, equity e debito. Il F
 > | Il valore degli assets o dell'equity si ottiene con **formule compatte**, che prevedono per esempio flussi costanti oppure flussi che crescono a un tasso costante. | Il valore degli assets o dell'equity si ottiene come somma di un **valore frutto di un piano esplicito** (3-7 anni) e di un **terminal value** attualizzato, calcolato con un metodo sintetico. |
 
 Di norma si utilizza il metodo analitico. Il suo vantaggio rispetto ai metodi sintetici emerge nei periodi di discontinuità, per esempio grandi investimenti pluriennali o abbattimento del debito: in queste fasi i flussi non sono né costanti né crescenti a tasso costante, e solo un piano esplicito può rappresentarli. Il terminal value del metodo analitico è a sua volta ottenuto con un modello sintetico, come quelli illustrati di seguito. Il metodo analitico è trattato in [[FSTR 04-full Modelli Valutazione Finanziaria Parte2|i metodi DCF analitici]] e il terminal value in [[FSTR 05 Annotazioni sul Terminal Value|le annotazioni sul terminal value]].
+
+> [!lezione] Dalla lezione del 19 novembre 2026: il business plan nei DCF e i due modi di applicarli
+> Come suggerisce la slide, per stimare i flussi ci si aiuta con un business plan: si incarica un esperto che guardi avanti, come minimo, per tre o quattro anni, cioè che navighi a vista per quel periodo. Chi applica i DCF attualizza a oggi tutti i flussi di cassa che l'azienda farà da qui alla fine dei tempi, per comprarla: almeno si verifichi quanta cassa farà nei prossimi quattro anni. In questo modo non serve forzare le formule, perché ci si arriva costruendo con un business plan uno sviluppo di crescita del business.
+>
+> Dove possibile si usa un business plan ottenuto con una simulazione informatica o chiedendo a tutte le aree aziendali di proiettare ricavi, costi e così via, per proiettare il business in modo abbastanza certo. Dal quinto anno in poi ci si deve affidare a conteggi che derivano dai bilanci, con tutte le incertezze del caso.
+>
+> Uno dei due modi di maneggiare il metodo dei DCF è spacchettare in due il valore futuro dell'azienda: fin dove si riesce a navigare a vista con un business plan si attualizzano quei flussi, poi si usa una formula perpetua. L'alternativa è partire da oggi e assumere che l'azienda faccia da oggi all'infinito lo stesso cash flow, attualizzare tutto a oggi e dire che l'azienda vale quella cifra.
 
 ## FCFF e FCFE in steady state e in steady growth
 

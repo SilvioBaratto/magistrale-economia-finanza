@@ -124,6 +124,47 @@ generated: 2026-07-10
 >
 > La formula è la stessa del modello semplice, ma il concetto è diverso. Nel modello semplice $X_2$ non compare e quindi non è fissato, e la correlazione è marginale; qui è condizionale, tra $Y$ e $X_1$ con $X_2$ fissato. È esattamente ciò che si faceva nelle lezioni precedenti dividendo un campione grande in due parti, distretti ricchi e distretti poveri, e calcolando la correlazione nelle due parti: è questo che si fa nel modello di regressione.
 
+> [!lezione] Dalla lezione del 19 novembre 2026: il confronto tra distretti ricchi e poveri scritto come due regressioni
+> Il confronto tra distretti ricchi e poveri si formalizza con due regressioni semplici. Per i distretti ad alto reddito, omogenei tra loro, si stima
+>
+> $$\text{punteggio}_i = \alpha_A + \beta_A \, \text{size}_i + \varepsilon_i,$$
+>
+> dove $\beta_A$ è il coefficiente dei distretti ad alto reddito; lo stesso esercizio per i distretti a basso reddito dà
+>
+> $$\text{punteggio}_i = \alpha_B + \beta_B \, \text{size}_i + \varepsilon_i.$$
+>
+> I termini d'errore sono diversi perché riguardano sottopopolazioni diverse. All'interno di ciascun sottogruppo le stime non dipendono dal reddito, perché il reddito è omogeneo. Per analogia: se tutti fossero alti due metri, la probabilità di schiacciare a basket non dipenderebbe dall'altezza, ma da altre caratteristiche, per esempio l'elasticità muscolare. Si elimina così l'effetto della variabile confondente, il reddito: essendo uguale per tutti, una variazione del punteggio non può dipenderne e deve dipendere da altro. Per semplificare si suppone inoltre che in queste regressioni $\varepsilon$ non abbia un effetto sistematico, cioè che non vi siano altre variabili rilevanti.
+>
+> Se la stima di $\beta$ nei due sottocampioni non è influenzata dal reddito, il reddito non ha impatto sulla stima della correlazione tra le variabili chiave; se la stima cambia, il reddito ha importanza. Interessa stimare $\beta$ perché è una misura di correlazione, data dalla covarianza divisa per la varianza, quindi esprime la relazione tra $X$ e $Y$. L'idea è quella mostrata nella prima lezione, scritta ora nella forma di un modello di regressione.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: variabili di interesse e variabili di controllo
+> Considerare più variabili insieme ha senso perché il mondo è complesso e considerare le variabili a coppie è troppo poco. In un problema economico, biologico o di altro genere interessa però di solito la relazione tra due variabili specifiche, non tra tutte. Le variabili che definiscono il valore atteso condizionale si dividono quindi in due sottogruppi: le **variabili di interesse**, o di policy, e le **variabili di controllo**.
+>
+> Il responsabile della didattica in California è interessato alla dimensione della classe, non al reddito, che non rientra nei suoi scopi. Se però il reddito non è nel modello, la previsione dell'impatto di una riduzione della classe sulla performance dei bambini può essere sbagliata. L'interesse riguarda dunque solo $\beta_1$: il valore di $\beta_2$ non conta, perché il reddito serve soltanto a stimare bene $\beta_1$, mentre l'effetto del reddito sulla performance è un altro problema, di chi si occupa eventualmente di servizi sociali. Le variabili di interesse sono quelle di cui si vuole l'effetto marginale in modo preciso; le altre servono a ripulire il termine d'errore dagli effetti collaterali, e lo si fa aggiungendo il loro termine alla media condizionale.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: che cosa contiene il termine d'errore
+> Il modello di regressione multipla è definito come quello semplice, con un numero maggiore di variabili. Lega le osservazioni $y_i$, $x_{1i}$ e $x_{2i}$ dell'unità statistica $i$-esima, per esempio il distretto 57, tramite il termine d'errore $\varepsilon_i$. L'errore rappresenta tutte le caratteristiche del distretto che non sono né la variabile 1 né la variabile 2, come la percentuale di non madrelingua o la qualità delle scuole.
+>
+> Nel modello di regressione semplice $y$ conteneva anche il fattore reddito, perché non figurava nella media condizionale e doveva stare da qualche altra parte, cioè nell'errore. L'errore va pensato come il bidone della spazzatura in cui finisce tutto ciò che non compare nella parte sistematica.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: $\beta_1$ come correlazione parziale
+> $\beta_1$ indica quanto una variazione di $X_1$ incide in media su $Y$, quindi è una misura di associazione. Non è però la correlazione stimata nel modello di regressione semplice, perché qui si controlla per il reddito, assunto costante: è la correlazione tra $y$ e $x_1$ una volta fissato $x_2$, cioè una correlazione condizionale, detta anche **correlazione parziale**. Dice di quanto aumenta la performance riducendo la dimensione della classe in distretti con lo stesso reddito. Il confronto non riguarda un distretto ricco e uno povero con la policy applicata a uno solo dei due: si prendono due distretti identici per reddito e si stanziano risorse per ridurre la classe in uno soltanto. Questi distretti possono essere eterogenei per le altre caratteristiche, ma se si ipotizza che la media di $\varepsilon$, fissate le $x$, sia uguale a zero, esse non hanno un effetto sistematico e dal punto di vista pragmatico si possono trascurare.
+>
+> Lo schema replica in forma di modello il ragionamento fatto in precedenza in forma grafica, quando il reddito si fissava in modo più grezzo prendendo i distretti sopra e sotto la mediana e calcolando la correlazione in ciascun gruppo. Nel modello di regressione la correlazione parziale viene calcolata per qualsiasi livello di $x_2$. Dal punto di vista intuitivo si fa esattamente la stessa cosa: il modello di regressione multipla ne è la formalizzazione statistica.
+>
+> Il modello permette di controllare per i fattori confondenti purché siano inclusi esplicitamente nel modello. Non devono restare in $\varepsilon$, che non è osservabile: non se ne conosce la struttura né come reagisce, ed è questo il problema. Lo scopo dell'analisi resta $\beta_1$.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: che cosa stima la regressione semplice e perché si passa al modello più complesso
+> Con il reddito nel modello il coefficiente della dimensione della classe passa da circa $-2{,}2$ a $-0{,}64$ (la nota riporta $-2{,}28$ e $-0{,}65$), meno di un terzo, ed è debolmente significativo: il p-value del test di significatività è 6,8%, quindi al livello del 5% non si rifiuta l'ipotesi nulla e non si può escludere che il parametro sia uguale a zero. L'intervallo di confidenza lo conferma, perché il limite inferiore è negativo e il superiore positivo, quindi lo zero è un valore possibile. L'effetto del reddito è $1{,}8$, statisticamente significativo, con un intervallo di confidenza che assume solo valori positivi; il segno atteso del coefficiente del reddito è positivo.
+>
+> Il modello di regressione semplice non stima l'effetto della classe, ma la combinazione dell'effetto della classe e dell'effetto del reddito. Chi usa quel modello non lo sa, perché il reddito non è nel modello: vedendo il coefficiente $-2{,}2$ gli si assegna mentalmente tutto il peso a una riduzione di un'unità della dimensione della classe, senza pensare al reddito. Aggiungere un regressore permette di scomporre gli effetti in modo esplicito.
+>
+> Una relazione logica che aumenta la complessità del modello esclude di fatto quella più semplice, per tre ragioni: lo schema a tre variabili ha senso dal punto di vista logico, si può scrivere come modello di regressione e il modello di regressione permette di valutarlo empiricamente sui dati. È quindi un modello sensato, stimabile e migliore del precedente dal punto di vista statistico e logico.
+>
+> Se il coefficiente del reddito fosse risultato non significativo, l'effetto reddito sarebbe irrilevante e si sarebbe potuti restare nel modello più semplice. Qui interviene il rasoio di Occam: tra due spiegazioni, una complicata e una semplice, entrambe valide e senza controindicazioni interne, si preferisce la semplice. Il docente precisa che si tratta di un'idea filosofica su cui non si pronuncia. In questo caso però il modello più complicato cambia completamente le conclusioni rispetto a quello semplice: i due modelli non sono equivalenti e si è obbligati a usare il più complicato, perché porta a rifiutare il modello precedente.
+>
+> Questo non significa che la relazione sia causale. Per arrivarci bisognerebbe continuare l'analisi, togliendo altri fattori dal termine d'errore e inserendoli nella media condizionale. In generale si continuano ad aggiungere informazioni sensate dal punto di vista logico, e il modello deve restare coerente con un'idea teorica, economica, sociologica o pedagogica, a seconda dell'oggetto di studio. Poiché interessa il parametro della dimensione della classe, su cui si investono i soldi, un'idea di lavoro è continuare a inserire variabili finché $\beta_1$ si stabilizza: quando diventa insensibile all'aggiunta di nuove variabili, ciò che non viene inserito non ha più molta importanza per spiegarlo. Ciò che accade agli altri coefficienti di controllo non interessa; interessa soltanto se vale la pena investire 2 miliardi di dollari l'anno (la nota indica inizialmente 1,8 miliardi) per attuare quell'idea pedagogica.
+
 ## Cause di endogeneità: distorsione da variabile omessa
 
 > [!tip] Teorema
@@ -174,6 +215,26 @@ generated: 2026-07-10
 > Si toglie allora dal termine d'errore il reddito, che è la variabile problematica, e lo si inserisce nel modello. L'errore del modello con il regressore in più non è più caratterizzato dall'effetto del reddito, perché questo è ora parte della media condizionale e non della parte residuale. Ristimando il modello si elimina una delle possibili cause di endogeneità, cioè una delle cause che creano relazione tra $\varepsilon$ e la dimensione della classe, e il parametro passa da circa $-2{,}2$ a $-0{,}64$.
 >
 > Secondo il docente nel modello precedente c'era probabilmente un problema di endogeneità che si era fatto finta di non vedere. I parametri sono cambiati molto, quindi per stimare $\beta$ nella prima regressione si è probabilmente usata la formula sbagliata, supponendo nulla la correlazione tra reddito e dimensione della classe, che invece non lo è. La distorsione non è piccola e il parametro cambia molto: queste sono le conseguenze di stimare un modello facendo finta che $\Delta\varepsilon$ sia uguale a zero quando in realtà non lo è.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: la distorsione da variabile omessa derivata con le covarianze
+> Si suppone che la vera relazione tra $X$ e $Y$ sia data dal modello con due variabili, $E(Y \mid X_1, X_2) = \alpha + \beta_1 X_1 + \beta_2 X_2$, eventualmente con altre variabili. In generale questo modello non è noto a priori e si può solo approssimare la realtà con qualcosa di statistico, cominciando dalla cosa più semplice, un modello di regressione semplice
+>
+> $$y_i = \tilde{\alpha} + \tilde{\beta} x_{1i} + \tilde{\varepsilon}_i,$$
+>
+> in cui la tilde indica parametri ed errore diversi da quelli del processo generatore dei dati (la nota usa invece $\tilde\epsilon$ per l'errore del modello vero). Il modello corretto da stimare sarebbe $y_i = \alpha + \beta_1 x_{1i} + \beta_2 x_{2i} + \varepsilon_i$. Si vuole stimare $\tilde{\beta} = \text{Cov}(y, x_1)/\text{Var}(x_1)$, ma lo stimatore è costruito sul modello sbagliato. Per trovare la relazione con il vero $\beta_1$ si sostituisce a $y$ il vero processo generatore:
+>
+> $$\tilde{\beta} = \frac{\text{Cov}(\alpha + \beta_1 x_1 + \beta_2 x_2 + \varepsilon,\; x_1)}{\text{Var}(x_1)}.$$
+>
+> Il numeratore si scompone in somma di covarianze con $x_1$. Quella di $\alpha$ è zero, perché $\alpha$ è una costante; quella di $\beta_1 x_1$ è $\beta_1 \text{Var}(x_1)$, perché la covarianza di una variabile con se stessa è la varianza; quella di $\beta_2 x_2$ è $\beta_2 \text{Cov}(x_1, x_2)$; resta quella di $\varepsilon$ con $x_1$. Si ottiene
+>
+> $$\tilde{\beta} = \beta_1 + \beta_2 \frac{\text{Cov}(x_1, x_2)}{\text{Var}(x_1)} + \frac{\text{Cov}(\varepsilon, x_1)}{\text{Var}(x_1)}.$$
+>
+> Nel vero modello l'errore $\varepsilon$ è incorrelato con $x_1$ e con $x_2$, perché si ipotizza che valga l'esogeneità, quindi l'ultimo termine è zero. Lo stimatore di $\beta$ non è però legato soltanto a $\beta_1$, ma anche alla struttura di correlazione tra $x_1$ e $x_2$. Il numero ottenuto è una combinazione di due fattori: il vero segnale $\beta_1$ e un effetto che dipende dalla correlazione tra le variabili, quella che si è tolta dal modello statistico ma che è presente nel modello teorico. Con troppo poche variabili si stima dunque una combinazione di effetti.
+>
+> Nel modello piccolo l'errore è $\tilde{\varepsilon}_i = \varepsilon_i + \beta_2 x_{2i}$: l'unica differenza tra modello vero e modello statistico è un termine tolto dalla parte sistematica, che resta quindi nell'errore. L'endogeneità nasce dal fatto che $x_2$ e $x_1$ possono essere correlati. Se la loro covarianza è zero l'effetto distorsivo si annulla, e lo stesso accade se $\beta_2 = 0$, perché il termine distorsivo è zero moltiplicato per qualcosa. Escludere una variabile inutile non produce nulla, e lo stesso vale per una variabile incorrelata con la variabile di interesse. Non serve che la covarianza o $\beta_2$ siano esattamente zero: se sono molto piccoli, l'eventuale problema è trascurabile.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: regressori in più rispetto al necessario
+> Un'osservazione non presente nelle slide riguarda il caso opposto. Se il vero modello ha due regressori e se ne stima uno con tre, i due importanti più un terzo, il problema non si pone: ci si aspetta che il terzo regressore abbia impatto nullo, quindi la sua stima sarà circa zero. In un modello sovraparametrizzato, cioè con più regressori del necessario, le stime di $\beta_1$ e $\beta_2$ non cambiano. Al più gli errori standard tendono a diventare un po' più grandi, perché nella procedura di stima si aggiunge qualcosa di inutile: invece di fissare il coefficiente a zero, come dovrebbe essere, lo si fissa alla covarianza campionaria, che non è numericamente zero. Mettere più regressori del necessario non è un problema serio, mentre metterne troppo pochi è un problema sostanziale.
 
 ## Cause di endogeneità: errori di misura
 
@@ -235,6 +296,66 @@ generated: 2026-07-10
 
 *(slide 17–21)*
 
+> [!lezione] Dalla lezione del 19 novembre 2026: il regressore impreciso e le ipotesi sull'errore di misura
+> La seconda causa di endogeneità è più sottile della prima, che riguardava un modello statistico con informazione insufficiente. Si suppone di avere studiato bene il problema, di avere isolato le variabili necessarie senza escluderne alcuna e che il modello sia quindi perfetto sulla carta, il problema essendo solo la stima: una variabile di interesse, il regressore, non si riesce però a osservare con precisione, e al posto del vero valore se ne ottiene una approssimazione.
+>
+> Un esempio tipico è il consumo delle famiglie italiane come regressore, con dati ottenuti da sondaggi ben fatti, dell'Istat o simili, ma pur sempre sondaggi. Una persona che ha speso 160 euro al supermercato la settimana scorsa, senza lo scontrino in mano, non se lo ricorda con esattezza: ricorda più o meno 150, un ordine di grandezza; se la volta dopo ha speso 140 riporta comunque 150, perché arrotonda. L'approssimazione è onesta, nel senso che non distorce sistematicamente: qualche volta sovrastima e qualche volta sottostima. È semplice distrazione.
+>
+> Il modello economico lega $y$ a $x$ ed è corretto, per cui $x$ ed $\varepsilon$ sono incorrelati. Si osserva però $x^*_i = x_i + u_i$, dove $u$ è un termine di distrazione, una variabile casuale con media zero e una certa varianza. Per semplicità si ipotizza che $u$ non dipenda da fattori estranei, in particolare da $\varepsilon$, e nemmeno da quanto si spende: chi è impreciso al 10% lo sarà sempre. Si ipotizza quindi che $\text{Cov}(x, u) = 0$ e $\text{Cov}(u, \varepsilon) = 0$. Dovrebbe bastare, e se emergono altre condizioni necessarie il docente le segnalerà.
+>
+> L'unica regressione calcolabile è quella in cui, al posto di $x$, compaiono i dati disponibili. Per distinguere nettamente i due modelli il docente scrive i parametri del processo che genera i dati come $\alpha$ e $\beta$ e quelli del modello calcolabile come $\gamma_0$ e $\gamma_1$ (la nota usa invece $\gamma$ per il parametro vero e $\beta$ per quello stimato):
+>
+> $$y_i = \gamma_0 + \gamma_1 x^*_i + \varepsilon_i.$$
+>
+> Ci si chiede se $\gamma_1$ sia legato a $\beta$, cioè se il parametro stimato da questa regressione con regressore impreciso fornisca informazioni su $\beta$.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: il coefficiente stimato con un regressore impreciso
+> Lo stimatore dei minimi quadrati di $\gamma_1$ è la covarianza tra $y$ e $x^*$ divisa per la varianza di $x^*$. Poiché $x^* = x + u$, per trovare la relazione con il vero $\beta$ si riscrive $y$ in funzione del vero $x$ e del vero $\beta$, cioè rispetto al processo che genera i dati:
+>
+> $$\gamma_1 = \frac{\text{Cov}(y, x + u)}{\text{Var}(x + u)} = \frac{\text{Cov}(y, x) + \text{Cov}(y, u)}{\text{Var}(x + u)} = \frac{\beta \,\text{Var}(x)}{\text{Var}(x + u)} + \frac{\text{Cov}(x, \varepsilon)}{\text{Var}(x + u)} + \frac{\text{Cov}(y, u)}{\text{Var}(x + u)}.$$
+>
+> Per ipotesi il modello con il vero $x$ è perfetto, quindi $\text{Cov}(x, \varepsilon) = 0$. Si ipotizza inoltre che il livello di imprecisione non dipenda da $y$, quindi anche $\text{Cov}(y, u) = 0$; è un'ipotesi semplificatrice, perché la covarianza potrebbe essere diversa da zero. Al denominatore, dato che $x$ e $u$ sono incorrelati, la varianza della somma è la somma delle varianze, perché il doppio prodotto della covarianza si annulla. Resta
+>
+> $$\gamma_1 = \beta \, \frac{\text{Var}(x)}{\text{Var}(x) + \text{Var}(u)}.$$
+>
+> Con l'errore di misura non si stima quindi $\beta$, ma $\beta$ moltiplicato per un rapporto minore di uno per costruzione, perché il denominatore è sempre maggiore del numeratore. Se la varianza di $u$ è piccola, cioè la precisione nel riportare i dati è alta e gli errori sono di pochi centesimi, il rapporto tende a uno e $\gamma_1$ e $\beta$ sono di fatto uguali. Se la variabilità di $u$ è grande si ha un problema. Se la varianza di $u$ è uguale alla varianza di $x$ il rapporto vale $1/2$ e si stima $\beta$ per un mezzo.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: attenuation bias e lettura della simulazione
+> Nella simulazione con 200 osservazioni la stima di $\beta$ con il regressore impreciso è $0{,}7$, contro il vero valore $1{,}5$. Un test di ipotesi sulla coerenza di $0{,}7$ con $1{,}5$ potrebbe non rifiutare se la precisione della stima fosse sufficientemente scarsa, cioè se i dati fossero molto dispersi e l'intervallo molto ampio, tale da contenere $1{,}5$. Qui invece l'intervallo di confidenza, che unisce stima e precisione, va da circa $0{,}55$ a $0{,}85$ e $1{,}5$ non vi cade neanche vicino; poiché nel modello con il vero regressore tutto aveva funzionato bene, il campione non è troppo piccolo. Si ottiene sistematicamente un risultato diverso dalla verità. Con $\text{Var}(x) = 1$ per costruzione e $\text{Var}(u) = 1$, il valore $0{,}7$ è $1{,}5$ per un mezzo.
+>
+> Il fatto che, con $\beta$ positivo, un modello di questo tipo dia stime sistematicamente più basse di quelle desiderate si chiama **attenuation bias**: il parametro di interesse viene sottostimato in modo regolare. La distorsione è la differenza tra $\beta$ e $\beta/2$, cioè la metà di $\beta$, circa $0{,}75$. Il docente osserva di avere scelto per caso un esempio in cui la distorsione e il coefficiente di attenuazione, un mezzo, coincidono, e rifarà gli esempi con una varianza di $u$ diversa da quella di $x$, in modo che il fattore di riduzione della stima non sia esattamente un mezzo. L'idea resta la stessa: anche con il modello perfetto in mente, se i dati sono imprecisi, per esempio perché ottenuti da un campionamento fatto male, la stima è inadeguata.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: errori di misura in finanza
+> In finanza il problema è frequente, perché molte procedure di stima si basano su stime ripetute: da una prima regressione si stimano dei coefficienti, poi si fa una regressione in cui i coefficienti stimati in precedenza sono usati come regressori. Si procede così, tipicamente, per validare dal punto di vista statistico modelli come il CAPM, cioè per verificare se sono credibili sui dati. I coefficienti stimati sono variabili approssimate: non sono il vero valore del parametro ma il vero valore al netto di un errore di stima, un errore campionario. Ciò può creare endogeneità e problemi collegati.
+>
+> Un altro esempio è l'inserimento della volatilità di un investimento in un modello di regressione che spieghi la performance. La volatilità non è osservabile direttamente e può solo essere stimata: nel modello entra la volatilità stimata, che non è un indicatore esatto della volatilità oggettiva ma la migliore approssimazione disponibile. Usarla come regressore crea endogeneità, e gli stimatori tendono a sottostimare il vero valore del parametro. Chi la inserisce deve sapere che è uno stimatore e quindi contiene un errore di misura, cioè lo standard error della stima, e interpretare i risultati con attenzione, perché le stime del modello potrebbero essere distorte.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: ridurre l'errore di misura con osservazioni ripetute
+> Gli istituti che fanno professionalmente questo lavoro, come l'Istat o la Banca d'Italia, o gli istituti di ricerca che lavorano bene, cercano di correggere il problema. Se i dati sono scadenti c'è poco da fare: si può pensare al modello migliore, ma la stima resta scadente. Uno schema possibile è osservare una famiglia non una sola volta ma per un periodo abbastanza lungo, per esempio dieci settimane. Per la famiglia $i$-esima si hanno allora dieci osservazioni, $x_{i1}, x_{i2}, \dots, x_{i,10}$, la spesa della settimana uno, due, fino a dieci, e la varianza di ciascuna è la varianza di $u$, l'imprecisione fisiologica.
+>
+> Se la varianza di $u$ è grande il modello di regressione ha un problema, ma si possono aggregare i dati. In generale, con $n$ osservazioni per la famiglia $i$ si calcola la media aritmetica
+>
+> $$\bar{x}_i = \frac{1}{n} \sum_{j=1}^{n} x_{ij}$$
+>
+> e la si usa come regressore per quella famiglia. La media è uno stimatore della media della popolazione e, se le osservazioni sono indipendenti, la sua varianza è $\text{Var}(u)/n$ (i passaggi sono nelle slide dei richiami di statistica). Con dieci osservazioni per famiglia la varianza della media è un decimo di quella di ogni singola osservazione, e il rapporto $\text{Var}(x) / (\text{Var}(x) + \text{Var}(u))$ diventa praticamente uno, perché al posto di $\text{Var}(u)$ compare la varianza della media. Più grande è $n$, cioè il numero di osservazioni per la stessa unità statistica, più piccolo è l'effetto dell'imprecisione. Un modo rapido di risolvere il problema è quindi chiedere la spesa quattro o cinque volte invece che una e farne la media, che è molto più precisa di ogni singola osservazione.
+>
+> Esistono metodi più sofisticati, anche perché chiedere la stessa informazione dieci volte per dieci settimane è costoso. Il punto è che il problema va risolto a monte: con regressioni su dati di una survey fatta su internet in modo rapido, gli errori di misura rischiano di non essere considerati seriamente, e le stime possono essere fortemente distorte anche se il modello è corretto.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: la covarianza con l'errore e la volatilità ad alta frequenza
+> Il docente dice che la formalizzazione dell'endogeneità da errore di misura, presente nelle slide, non è così importante. Mostra che, nella regressione stimata, la covarianza tra il regressore e il termine d'errore è proporzionale alla varianza dell'errore di misura. È la stessa cosa vista da un altro punto di vista: prima si è osservato che cosa accade allo stimatore con dati imprecisi, ora si vede che nella regressione stimata esiste una correlazione tra il regressore e il termine d'errore implicito del modello. Questo termine dipende dalla varianza di $u$ e non è comprimibile.
+>
+> Nelle applicazioni finanziarie più recenti il problema della volatilità si risolve tipicamente usando dati ad alta frequenza per calcolare la volatilità di un giorno. I dati ad alta frequenza sono osservati a intervalli di pochi secondi: le microvariazioni del prezzo, per esempio dello Standard & Poor's, servono a stimare la volatilità dell'intera giornata, e l'indicatore è molto preciso perché si mediano molte osservazioni nel corso della giornata. L'idea è dunque usare più dati per stimare un parametro. I dati intragiornalieri possono essere utili con alcuni accorgimenti: in quel contesto usare troppi dati potrebbe comunque essere problematico, e se ne parlerà più avanti.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: l'errore di misura sulla variabile dipendente
+> Un'osservazione non presente nelle slide: finora l'errore di misura riguardava $x$. Se riguardasse $y$ ci si potrebbe aspettare una situazione ancora peggiore, ma non è così. Gli errori standard di tutti i coefficienti diventano più grandi, perché l'errore di misura entra nel termine d'errore. Poiché però è incorrelato con $x$ e con qualsiasi altra variabile, non crea alcun problema di distorsione. Lo si verifica ripetendo il ragionamento precedente con $y + u$ al posto di $y$: $x$ non ha problemi e il $\gamma$ stimato risulta uguale a $\beta$. Cambia la varianza del termine d'errore, ma non c'è distorsione.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: i due casi di endogeneità visti finora
+> L'endogeneità è un concetto astratto, una covarianza, e il problema è capire quando quella covarianza è diversa da zero. Nel primo caso il modello ha troppo poche variabili: si provano ad aggiungerne altre, in modo sensato, perché bisogna preservare la logica del modello e non inserire variabili a caso, e si osserva se l'effetto distorsivo sul parametro persiste o sparisce. È l'unico modo per vedere se c'è endogeneità. Concettualmente è il caso più semplice: si aggiunge informazione al modello finché la stima del parametro di interesse si stabilizza.
+>
+> Il problema dell'errore di misura è più sottile perché non dipende da chi stima: anche con il modello migliore del mondo, se i dati sono poveri le stime sono sbagliate. Si può fare poco, ma chi sa a monte che i dati potrebbero avere un errore di misura deve pensare automaticamente all'endogeneità. Bisogna affidarsi a dataset sufficientemente affidabili e standardizzati, e sapere comunque che il problema esiste.
+>
+> Almeno un altro caso di endogeneità sarà visto prima della fine del corso, ma solo nell'ambito delle serie storiche. Esistono anche altri casi non trattabili con questi modelli, quando non si è in grado di stabilire se è $X$ a causare $Y$ o viceversa. Si presentano specificamente nei modelli macroeconomici, quindi chi non è interessato alla macroeconomia non li incontrerà.
+
 ## L'errore ε: momenti condizionali
 
 > [!abstract] Definizione
@@ -277,6 +398,13 @@ generated: 2026-07-10
 
 *(slide 25–26)*
 
+> [!lezione] Dalla lezione del 19 novembre 2026: linearità, indipendenza e momenti finiti nel modello multiplo
+> Il modello deve essere lineare nei parametri, cioè combinazione lineare di parametri per variabili, ma può essere non lineare nelle variabili: si possono usare, per esempio, variabili in scala logaritmica, che implicano una relazione non lineare tra $X$ e $Y$. L'ipotesi richiede soltanto che $\beta$ moltiplichi la variabile $X$, qualunque essa sia: un logaritmo, un polinomio o altro. Per l'indipendenza, almeno in questa parte del corso, ogni unità statistica è campionata indipendentemente, quindi le sue caratteristiche sono indipendenti dalle realizzazioni delle altre unità. L'omoschedasticità si ipotizza al momento perché è più comoda, e si vedrà poi che cosa accade con l'eteroschedasticità.
+>
+> L'esistenza dei momenti fino al quarto ordine è un'ipotesi tecnica, necessaria per applicare il teorema del limite centrale e la legge dei grandi numeri e fare inferenza asintotica. Averli finiti significa che la dispersione della distribuzione non può essere troppo grande: le code della distribuzione di probabilità di $X$ e $Y$, di cui qui non si ipotizza la forma, non possono essere troppo pesanti, e deve essere possibile calcolare la media teorica nella popolazione di quelle variabili casuali. Con una variabile Cauchy, o una t di Student con tre gradi di libertà, potrebbe esserci un problema, perché non si hanno i momenti (la t di Student con tre gradi di libertà ha media e varianza finite, ma non i momenti dal terzo ordine in poi, quindi nemmeno il quarto).
+>
+> Come esempio mentale, si supponga di dovere calcolare il reddito medio delle persone che vivono in Texas. Non si vuole che nel campione ci siano troppe persone troppo povere o troppo ricche, perché la probabilità di estrarre qualcuno come Elon Musk diventerebbe alta: se nel campione compare una persona con un reddito annuo o un patrimonio di miliardi di dollari, la media risulta distorta al rialzo, e si otterrebbe un reddito medio del Texas di 60 milioni di dollari, che non è un indicatore sensato. Intuitivamente si vuole evitare che nella popolazione ci siano troppi outlier, perché estrarre a caso unità con quelle caratteristiche sbilancia i calcoli e distorce tutte le stime. In termini tecnici, i momenti fino al quarto ordine sono finiti: non ci sono varianze troppo grandi né esplosive.
+
 ## Perfetta collinearità
 
 > [!example] Esempio
@@ -299,6 +427,35 @@ generated: 2026-07-10
 > La soluzione alla collinearità perfetta è semplice: **eliminare uno qualsiasi dei regressori che causano collinearità** al modello.
 
 *(slide 27–29)*
+
+> [!lezione] Dalla lezione del 19 novembre 2026: perfetta collinearità con due variabili etichetta
+> In un modello di regressione multipla le variabili $X$ sono correlate tra loro: come visto, il reddito è correlato con la dimensione della classe. Se la correlazione tra due variabili incluse nel modello è massima, cioè uguale a uno, conoscendone una si può prevedere esattamente l'altra.
+>
+> Come esempio, si consideri il modello del salario in funzione del livello di istruzione, a cui si aggiunge il genere, per capire se esistano distorsioni salariali, per esempio tra uomini e donne, a parità di istruzione. Si suppone che i generi siano soltanto due, maschio e femmina, e si costruisce il modello
+>
+> $$\text{salario}_i = \alpha + \beta_1 \,\text{istruzione}_i + \beta_2 M_i + \beta_3 F_i + \varepsilon_i,$$
+>
+> dove $M$ ed $F$ sono due variabili etichetta: $M$ vale uno se il lavoratore è maschio e zero se è femmina, $F$ vale uno per una lavoratrice e zero per un lavoratore maschio. Se $M$ è uno, $F$ è zero, e se $M$ è zero, $F$ è uno: dato $M$ si prevede esattamente $F$, quindi le due variabili sono perfettamente correlate: il docente dice che la correlazione è esattamente uno, ma poiché $M = 1 - F$ vale $-1$, cioè uno in valore assoluto.
+>
+> Il parametro $\beta_2$ rappresenta l'effetto di essere maschio sul salario al netto delle altre variabili. Nell'esempio delle scuole l'effetto marginale si calcolava modificando la variabile di interesse e tenendo fisse le altre: si fissava il reddito e si modificava la dimensione della classe. Qui non si può farlo: se si prendono due lavoratori del tutto equivalenti e si modifica la caratteristica $M$, automaticamente si modifica anche $F$. Non si può fissare una variabile e osservare l'effetto dell'altra, perché a una variazione di una corrisponde sempre una variazione dell'altra. Non è un problema di campione: è sistematico e deterministico. I regressori $M$ ed $F$ sono perfettamente collineari, e si dice che il modello statistico non è correttamente specificato: richiederebbe quattro parametri, $\alpha$, $\beta_1$, $\beta_2$ e $\beta_3$, ma non permette di identificare gli effetti marginali.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: riparametrizzazione e problema di identificazione
+> La relazione tra le due variabili è $M = 1 - F$. Imponendo questa identità, che ricostruisce semplicemente la natura dei dati, il modello si riscrive
+>
+> $$\text{salario}_i = \alpha + \beta_1 \,\text{istruzione}_i + \beta_2 (1 - F_i) + \beta_3 F_i + \varepsilon_i.$$
+>
+> I due modelli sono assolutamente equivalenti, perché si è soltanto imposta un'identità. Ordinando i termini, l'intercetta è $\alpha + \beta_2$, il coefficiente di istruzione è $\beta_1$ e il coefficiente di $F$ raccoglie $\beta_3$ e $-\beta_2$:
+>
+> $$\text{salario}_i = (\alpha + \beta_2) + \beta_1 \,\text{istruzione}_i + (\beta_3 - \beta_2) F_i + \varepsilon_i.$$
+>
+> Alla lavagna il docente indica prima il coefficiente di $F$ come $\beta_2 + \beta_3$. Uno studente osserva che dovrebbe essere diverso, e il docente riconosce di avere saltato un passaggio: da $\beta_2 (1 - F)$ resta $-\beta_2 F$, che si raccoglie con $\beta_3 F$ e dà $\beta_3 - \beta_2$. Nel seguito il docente continua a dire «beta due più beta tre».
+>
+> Il primo modello ha quattro parametri, il secondo tre: come già visto, il numero di parametri stimati è uguale al numero di regressori inseriti nel modello, cioè la costante, istruzione e $F$. Stimando il secondo modello si ottengono un'intercetta che è $\alpha + \beta_2$, un coefficiente di istruzione uguale a $\beta_1$ e un coefficiente della variabile femmina dato dalla combinazione di $\beta_2$ e $\beta_3$; il docente precisa che questa scrittura è un po' impropria e non formalmente corretta. Da queste tre stime si dovrebbero ricavare $\alpha$, $\beta_1$, $\beta_2$ e $\beta_3$ del modello originale, ma si ha un sistema di tre equazioni in quattro incognite, che ha infinite soluzioni: i parametri del modello originale non si possono ricostruire, cioè identificare. Si ha un **problema di identificazione**. Aggiungere $F$ o $M$ ha aggiunto un parametro al modello senza aggiungere informazione per la stima: il modello è più complicato, ma la statistica non è in grado di dare informazioni su tutti i parametri.
+
+> [!lezione] Dalla lezione del 19 novembre 2026: fissare un parametro a zero
+> Poiché le soluzioni sono infinite, dal punto di vista operativo ci si può ricondurre a un caso in cui il sistema sia stimabile, scegliendo la soluzione più semplice: fissare $\beta_3 = 0$. Il docente osserva che questo non significa togliere le donne dal campione, ma togliere il coefficiente del regressore femmina, cioè un regressore ridondante, e anticipa che non crea alcun problema di interpretabilità del modello. Come si interpreta il modello di regressione in questo contesto sarà spiegato nella lezione successiva.
+>
+> Quando i dati sono esattamente correlati non si riesce più a identificare. Il punto intuitivamente più importante è il problema logico: non si possono più fissare tutte le variabili e muoverne una per calcolare l'effetto marginale. Dal punto di vista matematico ci si riduce a risolvere un sistema di tre equazioni in quattro incognite, il che è impossibile. Si fissa quindi un parametro a un valore standard, zero: se il parametro è zero, si toglie il regressore corrispondente e si osserva che cosa accade alle altre variabili.
 
 ## Stima OLS della regressione multipla
 
