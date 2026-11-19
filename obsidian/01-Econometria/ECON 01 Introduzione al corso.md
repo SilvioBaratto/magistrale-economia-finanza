@@ -61,6 +61,9 @@ generated: 2026-07-10
 >
 > Anche i lucidi sulla regressione multipla sono stati modificati la mattina stessa: chi li ha scaricati il giorno prima può trovarli un po' diversi. Il docente ci sta ancora lavorando; la base è la stessa e alcuni punti sono migliorati. L'analisi della regressione multipla prosegue nella lezione successiva, fissata per mercoledì.
 
+> [!lezione] Dalla lezione del 19 novembre 2026: la statistica di base nell'esame
+> Il docente chiede se ci sono dubbi sui test trattati nella lezione precedente, che gli studenti hanno visto anche nelle esercitazioni; non vengono poste domande. La statistica di base verrà molto usata nel compito: senza una conoscenza almeno pratica di quegli argomenti tutto diventa più difficile, perché si accumulano le difficoltà di statistica e quelle di econometria. Chi ha dubbi può chiarirli subito, oppure andare a ricevimento, scrivere un'email o collegarsi su Zoom.
+
 ## Cos'è l'econometria?
 
 > [!abstract] Definizione
