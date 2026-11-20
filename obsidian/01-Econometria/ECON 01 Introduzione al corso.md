@@ -64,6 +64,9 @@ generated: 2026-07-10
 > [!lezione] Dalla lezione del 19 novembre 2026: la statistica di base nell'esame
 > Il docente chiede se ci sono dubbi sui test trattati nella lezione precedente, che gli studenti hanno visto anche nelle esercitazioni; non vengono poste domande. La statistica di base verrà molto usata nel compito: senza una conoscenza almeno pratica di quegli argomenti tutto diventa più difficile, perché si accumulano le difficoltà di statistica e quelle di econometria. Chi ha dubbi può chiarirli subito, oppure andare a ricevimento, scrivere un'email o collegarsi su Zoom.
 
+> [!lezione] Dalla lezione del 20 novembre 2026: calendario delle lezioni successive
+> La lezione del martedì successivo, al mattino, non sarà tenuta dal docente ma dal ricercatore, che la terrà anche nel pomeriggio: le ore del martedì mattina sono state scambiate. Si farà l'applicazione al modello di regressione multipla e, probabilmente, alcuni esercizi. Il test $F$ sulle restrizioni multiple sarà trattato nella lezione del giovedì successivo. Tutto è già nel calendario didattico online.
+
 ## Cos'è l'econometria?
 
 > [!abstract] Definizione

@@ -25,6 +25,16 @@ Il testo prevede la possibilità di **conflitti di interessi** legati a queste p
 
 *(pagina 1)*
 
+> [!lezione] Dalla lezione del 20 novembre 2026: il caso Cirio e il conflitto di interessi
+> Il principio per cui l'organizzazione deve prevenire i conflitti di interesse tra investimento partecipativo e attività creditizia richiama un caso che ha fatto storia in Italia, il crack della Cirio, di cui sono passati diversi anni. La società è nota soprattutto per i pomodori pelati e in generale per le conserve: fino a qualche anno fa il pomodoro Cirio era il pomodoro in scatola per antonomasia. A un certo punto, per varie ragioni, la Cirio va in crisi. Era molto esposta nei confronti del sistema bancario, soprattutto di un gruppo bancario, il vecchio gruppo Banca di Roma, poi confluito in UniCredit.
+>
+> Il sistema bancario vede che la società è in difficoltà e propone: poiché il credito non può più essere concesso, la società può finanziarsi sul mercato emettendo obbligazioni, e le banche aiutano come consorzio di collocamento. Il docente osserva che si trattava di un consorzio di collocamento e non di garanzia, altrimenti la banca si sarebbe trovata a dover adempiere; aggiunge però che se la banca si curava di collocare sul mercato poteva anche prestare la garanzia, e che non sa come sia andata in concreto e non lo ricorda.
+>
+> L'operazione finanziaria sottostante è questa. Se la società va sul mercato e trova due risparmiatori, ciascuno dei quali sottoscrive obbligazioni per 5.000 euro, la società incassa 10.000 euro e riduce di 10.000 euro l'esposizione verso la banca. È un modo per scaricare sulla clientela il rischio di credito, che è elevato: il docente suppone una posizione a sofferenza, senza esserne certo.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: le cautele organizzative contro i conflitti di interesse
+> Il caso Cirio si affronta in parte con le regole viste. Se è venuta meno la separatezza banca-industria, i rischi crescono. La frase letta prescrive di adottare gli accorgimenti organizzativi e il sistema di controlli interni atti a evitare potenziali conflitti di interesse tra l'attività di investimento, di cui la partecipazione a consorzi di collocamento è uno dei servizi, e la rimanente attività bancaria, in modo particolare quella creditizia. Un esempio sono le cautele organizzative che separano nettamente le competenze interne alla banca: è uno di quei casi in cui la mano destra non deve sapere che cosa fa la mano sinistra.
+
 ## Art. 53 TUB, lett. d): il governo societario — evoluzione storica e fonti normative
 
 ### Il testo della norma
@@ -45,6 +55,18 @@ Le due modifiche più importanti alle disposizioni di vigilanza sono avvenute:
 - in attuazione dell'**accordo di Basilea III**, con il quale sono state aggiunte una serie di norme relative alla governance che integrano quelle previste dal diritto comune.
 
 Le regole sui controlli interni sono presenti nelle disposizioni di vigilanza da quando le misure di supervisione prudenziale hanno sostituito quelle di carattere strutturale; le novità più recenti sono l'obbligo per gli organi di vertice di definire un quadro di riferimento per la determinazione della propensione al rischio e l'attenzione ai controlli di conformità alla legge. Un corpo ampio e dettagliato di norme sulla *corporate governance* è stato emanato per la prima volta nel 2008 (disposizioni della Banca d'Italia del 4 marzo 2008, n. 26410, più volte modificate), aggiornando le indicazioni già presenti alla luce della riforma del diritto societario del 2003, che ha consentito alle banche di adottare i modelli alternativi, monistico e dualistico. Il numero dei vincoli in materia di governo societario è molto cresciuto: le norme non si limitano a principi generali, ma stabiliscono regole prescrittive su aspetti di dettaglio, come il numero massimo dei membri del consiglio di amministrazione. L'indirizzo, che limita l'autonomia gestionale delle banche, è parte della risposta del legislatore alla crisi finanziaria e comporta un approccio della supervisione più intrusivo nelle scelte imprenditoriali.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: i controlli interni nel 1993 e il questionario della Banca d'Italia
+> Quando fu varato il TUB nel 1993 la lettera d) era molto più sintetica: diceva semplicemente "organizzazione amministrativa e contabile e controlli interni". Il resto è stato aggiunto nel corso del tempo in attuazione di direttive europee, soprattutto la CRD, nelle sue versioni successive.
+>
+> Nel 1993 non esisteva alcuna norma di vigilanza sui controlli interni delle banche. Nella prassi, le banche avevano un ispettorato interno, cioè colleghi che controllavano nel dettaglio il lavoro di altri colleghi da ogni punto di vista. Esisteva un nucleo ridottissimo di prescrizioni sull'organizzazione amministrativa, più che contabile, e di natura meramente formale. Nelle vecchie istruzioni di vigilanza successive al 1993 si troverebbe un capitolo che oggi farebbe sorridere.
+>
+> Sotto il profilo dell'organizzazione, la Banca d'Italia aveva predisposto un questionario, sostanzialmente a risposta multipla, con crocette: la banca ha fatto questo, sì o no, e così via. A volte c'era uno spazio per un commento, ma niente di più. Il questionario doveva essere compilato dalla singola banca con cadenza biennale, mentre le altre segnalazioni avevano cadenza semestrale e simili. Su questa base la Banca d'Italia attribuiva il suo punteggio. All'epoca non c'era lo SREP, ma l'analisi guidata sotto il profilo dell'organizzazione.
+>
+> Le banche non possono raccontare fandonie all'autorità di vigilanza, ma, di fronte alla domanda se si fosse istituito un sistema dei controlli interni, pur senza conoscere i criteri valutativi, rispondere di sì avrebbe reso la Banca d'Italia un po' più contenta di una risposta negativa. Il risultato fu che, quando il modello di analisi automatico attribuiva i punteggi, da 1 a 5, da 1 a 4 o da 1 a 6 a seconda dell'epoca, praticamente tutte le banche avevano 1 o, le più scalcinate, 2. L'organizzazione andava bene per tutte, al punto che l'analista della Banca d'Italia, se voleva incidere su qualche punteggio per modificarlo, interveniva prima di tutto sul profilo organizzazione.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: le istruzioni del 1998 e le integrazioni europee
+> Nel 1998 la Banca d'Italia ha diramato le prime disposizioni, all'epoca istruzioni di vigilanza, importantissime sul sistema dei controlli interni delle banche. Con qualche modifica sono ancora quelle di oggi e non sono molto diverse da quelle del 1998. In attuazione delle norme europee si sono poi inserite norme sulla remunerazione interna alla banca, sia per gli esponenti aziendali sia per i dipendenti, norme in tema di organizzazione contabile e il tema della governance di una banca, completamente tralasciato dalla vecchia disposizione.
 
 ### Fonti attuali
 

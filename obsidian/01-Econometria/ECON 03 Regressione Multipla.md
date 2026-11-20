@@ -457,6 +457,44 @@ generated: 2026-07-10
 >
 > Quando i dati sono esattamente correlati non si riesce più a identificare. Il punto intuitivamente più importante è il problema logico: non si possono più fissare tutte le variabili e muoverne una per calcolare l'effetto marginale. Dal punto di vista matematico ci si riduce a risolvere un sistema di tre equazioni in quattro incognite, il che è impossibile. Si fissa quindi un parametro a un valore standard, zero: se il parametro è zero, si toglie il regressore corrispondente e si osserva che cosa accade alle altre variabili.
 
+> [!lezione] Dalla lezione del 20 novembre 2026: il modello senza una delle due variabili
+> Il sistema ha infinite soluzioni, ma se si fissa uno dei quattro parametri gli altri si ottengono di conseguenza e la soluzione è unica. Non si può fissare $\beta_1$, il coefficiente dell'istruzione, perché serve e non è coinvolto nella relazione esatta: si fissa $\beta_2$ o $\beta_3$, e il valore più semplice è zero. I software eliminano in automatico una delle due variabili. Eliminare un regressore non significa togliere dal database quella categoria di persone: si elimina soltanto il parametro che la rappresenta, e il gruppo resta rappresentato in modo diverso.
+>
+> Nel caso svolto in questa lezione si pone $\beta_2 = 0$, cioè si toglie $M$ (nel passaggio precedente il parametro fissato a zero era $\beta_3$), e il modello diventa
+>
+> $$\text{salario}_i = \alpha + \beta_1 \,\text{istruzione}_i + \beta_3 F_i + \varepsilon_i.$$
+>
+> Il modello descrive il salario atteso per persone con certe caratteristiche. Per le lavoratrici ($F = 1$), con un livello di istruzione fissato e media dell'errore condizionata ai regressori nulla, la regressione è $\alpha + \beta_1 \,\text{istruzione} + \beta_3$: l'intercetta è $\alpha + \beta_3$, cioè la combinazione dei parametri che non moltiplicano alcun regressore, e il coefficiente angolare è $\beta_1$. Per i lavoratori ($F = 0$) il termine in $\beta_3$ sparisce e resta $\alpha + \beta_1 \,\text{istruzione}$. Si hanno così due valori attesi condizionali, uno per ciascun genere, anche se $M$ non compare nel modello.
+>
+> Nel grafico con l'istruzione in ascissa e il salario in ordinata, la retta degli uomini ha pendenza $\beta_1$, che ci si attende positiva, e intercetta $\alpha$: ora il sistema ha tre equazioni e tre incognite e il parametro si può stimare. La retta delle donne ha la stessa pendenza e intercetta $\alpha + \beta_3$. Il parametro $\beta_3$ può essere positivo o negativo; nelle analisi empiriche che si vedranno con il professor Peruzzi risulta tipicamente negativo e piuttosto grande, quindi la retta delle donne sta sotto quella degli uomini.
+>
+> Le due rette sono parallele: il differenziale tra i gruppi è la distanza tra le intercette e non dipende dal livello di istruzione, quindi il gap tra genere maschile e femminile è $\beta_3$. Se il gap fosse di 5 dollari all'ora, a qualsiasi livello di istruzione le donne guadagnerebbero 5 dollari in meno degli uomini; se fosse di 0,5, la differenza sarebbe di 50 centesimi. Il problema della collinearità è quindi apparente: si risolve a monte, oppure lo si lascia risolvere al software, ma il modello va poi interpretato di conseguenza. La variabile omessa individua il **gruppo di riferimento**, e il coefficiente dell'altra variabile di genere misura la deviazione dell'altro gruppo rispetto a quello di riferimento.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: la scelta del gruppo di riferimento è arbitraria
+> La soluzione del problema della collinearità non è unica: si sarebbe potuta togliere $F$ anziché $M$. I dati identificano comunque le stesse due intercette, una per genere, e cambia soltanto il modo di esprimerle in funzione dei parametri. Se si toglie $F$, l'intercetta del modello stimato identifica il punto del genere femminile, mentre il punto del genere maschile è dato da $\alpha$ più il coefficiente di $M$.
+>
+> Nell'output l'unica differenza è il segno del coefficiente di genere: se nel primo modello è $-0{,}3$, nel secondo è $+0{,}3$. Il coefficiente dell'istruzione resta uguale, così come l'$R^2$, gli standard error e ogni altra statistica descrittiva. La scelta è quindi arbitraria.
+>
+> Alla domanda se esista una differenza di salario tra i generi si risponde, in un modello di questo tipo, verificando con un test di significatività se $\beta_3$ è uguale a zero o diverso da zero. Se la domanda fosse se la differenza di genere implica una variazione di salario del 30%, si verificherebbe se il coefficiente corrisponde al 30% o è diverso. Qualsiasi batteria di test si può eseguire in modo abbastanza standard.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: mantenere entrambe le variabili e togliere la costante
+> Un altro modo di risolvere la collinearità è mantenere $M$ e $F$ e togliere un'altra cosa, in modo che il modello resti stimabile. La relazione lineare esatta tra le due variabili è $M + F = 1$, equivalente a $M = 1 - F$ e a $F = 1 - M$, e interviene quindi un terzo regressore, la costante. Anche la costante è un regressore: per stimare $\alpha$ serve un regressore associato e, poiché $\alpha \cdot x = \alpha$, questo regressore è $x = 1$. La relazione di collinearità coinvolge perciò $M$, $F$ e il regressore associato ad $\alpha$, e togliere $\alpha$ risolve il problema. Nel primo caso si era tolta $M$, nel secondo, descritto solo a voce, $F$; togliendo la costante si mantengono entrambe e il modello diventa
+>
+> $$\text{salario}_i = \beta_1 \,\text{istruzione}_i + \beta_2 M_i + \beta_3 F_i + \varepsilon_i.$$
+>
+> Per un lavoratore ($M = 1$, quindi $F = 0$) il salario atteso è $\beta_2 + \beta_1 \,\text{istruzione}$, perché il termine in $F$ sparisce; per una lavoratrice, calcolando il valore atteso dato $F = 1$, è $\beta_3 + \beta_1 \,\text{istruzione}$. Si hanno così due rette di regressione. Stimando questo modello dopo i due precedenti, la stima di $\beta_2$ coincide con l'intercetta del gruppo maschile calcolata prima, cioè con $\alpha$ del primo modello, e la stima di $\beta_3$ con l'intercetta del genere femminile. Qualunque sia la variabile tolta, i dati identificano gli stessi due punti e cambia soltanto il nome dei parametri con cui li si indica: nel modello senza $M$ sono $\alpha$ e $\alpha + \beta_3$ di quel modello, nell'ultimo sono $\beta_2$ e $\beta_3$ dell'ultimo. Il differenziale è sempre lo stesso numero. Questi casi si vedranno meglio durante le esercitazioni.
+>
+> Indipendentemente da come si risolve la collinearità, i risultati sono equivalenti e cambia soltanto l'interpretazione dei differenziali. Nell'ultima parametrizzazione, però, il test sulla differenza tra i generi non si riduce a un test su un solo parametro: per verificare se i due gruppi hanno lo stesso livello di salario occorre testare l'uguaglianza $\beta_2 - \beta_3 = 0$, cioè una combinazione lineare di parametri. Il test non è del tutto banale, ma si può calcolare una statistica $t$ su questa combinazione. Per campioni grandi lo stimatore di ciascun parametro è ben approssimato da una normale, risultato che il docente discute meglio più avanti, quindi lo è anche la differenza $\hat\beta_2 - \hat\beta_3$, con media zero sotto l'ipotesi nulla. La varianza della differenza è
+>
+> $$\operatorname{Var}(\hat\beta_2) + \operatorname{Var}(\hat\beta_3) - 2\operatorname{Cov}(\hat\beta_2, \hat\beta_3).$$
+>
+> La covarianza non compare nella tabella di output della regressione: il software la calcola, ma bisogna andarla a cercare, e si recupera da una parte particolare dell'output di Gretl, come si vedrà nelle esercitazioni. Il test è quindi più laborioso del test sull'uguaglianza a zero di $\beta_2$ o di $\beta_3$, che è standard e non richiede alcun ragionamento. Questa parametrizzazione ha però un vantaggio intuitivo: i due parametri sono già le intercette dei due gruppi, quindi numericamente non servono trasformazioni. Se la combinazione lineare coinvolgesse cinque parametri servirebbero tutte le covarianze possibili tra gli stimatori e i calcoli diventerebbero complicati: il docente osserva che in quel caso sbaglierebbe e ne sconsiglia l'uso. Il docente presenta tutte le alternative e lascia la scelta agli studenti.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: variabili etichetta e confronto tra gruppi all'esame
+> Variabili di questo tipo capitano spesso, e il docente chiederà spesso di stabilire se si appartiene a un gruppo o a un altro, cioè se c'è una differenza oppure no. Non conviene imparare a memoria le formule scritte alla lavagna: conviene dedicare 30 secondi del tempo d'esame a rifare i passaggi. Il valore atteso condizionato con la variabile etichetta (dummy) uguale a 1 è una certa espressione, con la variabile uguale a 0 un'altra, e facendo le differenze si ottengono le formule necessarie per costruire i test.
+>
+> Le formule dipendono dalla parametrizzazione usata alla lavagna, e all'esame il docente potrebbe usarne un'altra: bisogna essere abbastanza flessibili da passare da una parametrizzazione all'altra e fare il test in funzione di quella data. Il passaggio in più riduce drasticamente la probabilità di errore.
+
 ## Stima OLS della regressione multipla
 
 > [!note] Dimostrazione
@@ -497,6 +535,9 @@ generated: 2026-07-10
 > $$Y_i = \hat Y_i + \hat\epsilon_i = \underbrace{\hat\alpha + \hat\beta_1 X_{1,i} + \hat\beta_2 X_{2,i}}_{\text{previsione}} + \underbrace{\hat\epsilon_i}_{\text{Residuo}}$$
 
 *(slide 30–33)*
+
+> [!lezione] Dalla lezione del 20 novembre 2026: stima e stimatore con lo stesso simbolo
+> Il docente usa lo stesso simbolo per la stima e per lo stimatore e osserva di non averlo detto prima. La stima è il numero che compare nella tabella di output, lo stimatore è la formula che permette di ottenere quel numero. Si usa sempre il nome del parametro, e il contesto chiarisce il significato: nella formula della previsione i simboli indicano le stime, cioè numeri; in una relazione che coinvolge variabili indicano lo stimatore, che è una variabile casuale. Si usa lo stesso simbolo per evitare simboli ridondanti.
 
 ## Il teorema di Frisch-Waugh-Lovell (caso a due regressori) e verifica numerica
 
@@ -552,6 +593,19 @@ generated: 2026-07-10
 
 *(slide 34–36)*
 
+> [!lezione] Dalla lezione del 20 novembre 2026: il teorema di Frisch-Waugh-Lovell e la correlazione parziale
+> Già nel modello semplice la formula dello stimatore richiede una pagina di algebra, con due regressori due pagine, con un altro regressore quattro, e così via: trovare una formula che leghi il parametro ai dati è molto complesso, a meno di usare l'algebra lineare e le matrici. Il docente considera il teorema di Frisch-Waugh-Lovell uno dei risultati più curiosi incontrati in econometria: lo stimatore dei minimi quadrati del parametro $j$-esimo si ottiene da una regressione in cui la variabile dipendente è la stessa e al posto di $x_j$ compare $\hat u_j$, e il numero ottenuto è esattamente quello della minimizzazione standard, che è ciò che fa il computer. La dimostrazione è breve, ma richiede una settimana di notazione di algebra lineare e non è importante.
+>
+> La quantità $\hat u_j$ è il residuo della regressione del regressore associato a $\beta_j$ su tutti gli altri regressori del modello. Con due regressori, $\hat u_2$ è il residuo della regressione di $x_2$ su $x_1$ e $\hat u_1$ è il residuo della regressione di $x_1$ su $x_2$. Con dieci regressori, per $x_5$ si regredisce il quinto regressore sugli altri nove, dal primo al decimo escluso il quinto, e lo stesso si fa per ciascuno. Il residuo è la differenza tra il valore del regressore e la previsione di quel regressore ottenuta con gli altri.
+>
+> Il residuo è la parte non prevedibile. Ogni variabile si può scomporre in due segnali, quanto è prevedibile usando certe informazioni e quanto non lo è; nel modello $y = \alpha + \beta x + \varepsilon$ il residuo rappresenta l'informazione contenuta in $y$ non prevedibile da $x$. Nella regressione di $y$ su $\hat u_j$ l'informazione usata per prevedere $y$ è quella di $x_j$ che non dipende dagli altri regressori, cioè il contributo di $x_j$ indipendente dalle altre variabili del modello.
+>
+> Nel modello semplice $\beta$ è la covarianza divisa per la varianza, di fatto una correlazione marginale tra $x$ e $y$. Nella regressione di $y$ su $\hat u_j$ il parametro è la correlazione tra $y$ e la parte di $x_j$ non spiegabile con $x_i$, cioè la correlazione tra $y$ e $x_j$ una volta tolto l'effetto di $x_i$, con $i \neq j$. Si calcola come una correlazione marginale, ma su variabili già ripulite dall'effetto della terza, e il suo nome statistico è correlazione parziale. Il risultato è coerente con quanto detto sull'effetto marginale: fissare il reddito e osservare che cosa succede alla performance quando cambia la dimensione della classe significa misurare la correlazione tra due variabili tenendo fissa la terza. Ogni coefficiente della regressione multipla si può quindi ancora interpretare come una correlazione, ma non come una correlazione marginale indipendente da ciò che accade nel resto del mondo. Il docente indica in questo il legame concettuale tra statistica ed economia, reso possibile dal teorema: all'effetto marginale, concetto puramente economico, si dà un nome statistico.
+>
+> L'uguaglianza non è approssimata. Nell'esempio il coefficiente della dimensione della classe stimato con i minimi quadrati standard è $-0{,}6487401$, e la procedura di Frisch-Waugh-Lovell dà lo stesso numero a qualsiasi decimale: è lo stesso numero dal punto di vista matematico. Il risultato non cambia se, invece dei residui della regressione di $y$ sugli altri regressori, si usa direttamente $y$; cambiano eventualmente gli standard error, ma per stimare il parametro la procedura è quella.
+>
+> I software non applicano questa procedura, perché richiede più tempo di una stima in blocco di tutti i parametri. Il risultato è però utile in teoria: in una regressione semplice il coefficiente è la correlazione tra due variabili, e qui le variabili sono già ripulite dall'effetto di tutte le altre, quindi si ha una correlazione al netto di tutti gli effetti collaterali immaginabili. Per ora il risultato non ha utilità operativa, ma il docente anticipa che l'avrà a breve.
+
 ## Bontà di adattamento (R²)
 
 > [!abstract] Definizione
@@ -580,6 +634,13 @@ generated: 2026-07-10
 
 *(slide 37–38)*
 
+> [!lezione] Dalla lezione del 20 novembre 2026: l'$R^2$ aggiustato
+> Nell'output di una regressione compaiono due $R^2$: quello visto, cioè la correlazione al quadrato, e l'**$R^2$ aggiustato**. L'$R^2$ non è molto utile per stabilire se un modello è buono, perché aumenta sempre quando si aggiungono variabili: è un fatto matematico senza alternative. Per confrontare due modelli che differiscono per uno, due o tre regressori servirebbe un indicatore che dica, per esempio, che aggiungendo un regressore la bontà di adattamento aumenta del 5%, ma poiché l'$R^2$ cresce sempre con il numero di variabili non si sa se il 5% sia molto o poco.
+>
+> La soluzione è sottrarre all'$R^2$ una penalità, un numero negativo che dipende dal numero di parametri. Aggiungendo variabili migliora l'adattamento ma peggiora la penalità, quindi l'$R^2$ aggiustato non è sempre crescente e, con troppi parametri, può anche diminuire: il beneficio statistico dell'aggiunta di una variabile è in qualche modo compensato, o più che compensato, dall'aumento di complessità del modello. Il docente non ricorda la formula della penalizzazione, che è comunque una funzione del numero dei parametri.
+>
+> In generale si accetta di aggiungere una variabile al modello se l'$R^2$ aggiustato aumenta, perché al netto della penalizzazione è comunque un miglioramento. Dire che il miglioramento è significativo non è corretto, perché non si sta facendo un test e non è una procedura inferenziale, anche se ci si muove in quella direzione. Il docente dichiara di non guardare questo indicatore, ma sostiene che bisogna saperlo.
+
 ## Proprietà degli stimatori OLS: distribuzione e varianza
 
 > [!tip] Teorema
@@ -605,6 +666,40 @@ generated: 2026-07-10
 > - Alta correlazione tra regressori (quasi collinearità) implica un errore standard grande. Nel caso di perfetta collinearità, $R_j^2 = 1 \Rightarrow \hat\sigma_{\hat\beta} \to +\infty$.
 
 *(slide 39–40)*
+
+> [!lezione] Dalla lezione del 20 novembre 2026: la distribuzione dello stimatore nella regressione multipla
+> Valgono le solite ipotesi del modello di regressione: assenza di collinearità perfetta, dati osservati in modo indipendente dalla popolazione, esogeneità e condizioni sui momenti delle variabili, cioè code non troppo pesanti, che altrimenti potrebbero distorcere le stime e la precisione dell'OLS. Se $n$ è sufficientemente grande e vale l'esogeneità, lo stimatore di qualsiasi $\beta_j$ si distribuisce come una normale centrata sul vero valore del parametro, con uno standard error calcolabile. Sono gli stessi risultati ottenuti nel modello semplice, con formule un po' più complicate.
+>
+> La dimostrazione richiede un po' di algebra lineare e viene risparmiata. L'intuizione è quella del modello semplice: l'indipendenza dei dati e le condizioni sui momenti permettono di applicare la legge dei grandi numeri e il teorema del limite centrale, e l'esogeneità permette di affermare che la media dello stimatore è il vero valore del parametro. L'omoschedasticità è soltanto un'ipotesi di comodo.
+>
+> Per un test d'ipotesi su un parametro si può usare la distribuzione per campioni finiti, cioè la $t$ di Student, oppure quella asintotica, cioè la normale; per comodità il docente usa sempre la normale. Con meno di 30 osservazioni in un modello di regressione multipla l'interpretazione dei risultati è comunque un po' a caso, per l'eccessiva incertezza dovuta al campione troppo piccolo, e oltre 30 gradi di libertà la $t$ di Student e la normale sono sovrapponibili.
+>
+> Le ipotesi necessarie per la distribuzione asintotica si possono indebolire ulteriormente. Con dati in serie storica, che non sono indipendenti ma dipendenti tra loro, la distribuzione per campioni finiti non si può calcolare, mentre quella asintotica sì. Ci sono quindi molte ragioni per ragionare sempre come se il campione fosse abbastanza grande: non occorre l'ipotesi di indipendenza, molto spesso basta una forma di esogeneità più debole di quella stretta e non occorre ipotizzare che il termine d'errore sia gaussiano.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: lo standard error nella regressione multipla e $R_j^2$
+> Nel modello semplice lo standard error dipende da due ingredienti: la varianza dell'errore e la varianza di $x$. Quanto più le $x$ sono disperse, tanto più preciso è lo stimatore, e quanto più piccola è $\sigma^2$, tanto meglio. Nella regressione multipla la formula non vale più, perché intervengono gli effetti degli altri regressori, e con l'algebra standard si ottiene
+>
+> $$\hat\sigma_{\hat\beta_j} = \sqrt{\frac{\hat\sigma^2}{n\,\widehat{\operatorname{Var}}(x_j)\,(1 - R_j^2)}},$$
+>
+> dove $\widehat{\operatorname{Var}}(x_j)$ è la varianza di $x_j$ calcolata sul dataset. Il numeratore è la varianza del termine d'errore, stimata con la media dei quadrati dei residui; il denominatore contiene $n$ volte la varianza della variabile associata al coefficiente $j$-esimo, come nel modello semplice, a cui si aggiunge il fattore $1 - R_j^2$.
+>
+> L'$R_j^2$, con il pedice $j$, misura il grado di associazione tra la variabile $j$ e tutte le altre ed è l'$R^2$ che si otterrebbe stimando $x_j$ su tutti gli altri regressori, escluso $y$. Uno studente chiede quale regressione definisca $R_j^2$, e il docente risponde che è quella tra $x_j$ e tutte le altre variabili, qualunque ne sia il numero. Nell'esempio con la dimensione della classe come variabile 1, $R_j^2$ è l'$R^2$ della regressione in cui la dimensione della classe è la variabile dipendente e il reddito è il regressore; con dieci variabili, tra cui la percentuale di madrelingua nel distretto e altre informazioni, sarebbe l'$R^2$ tra la dimensione della classe e tutti gli altri regressori. Un $R_j^2$ alto significa che le altre variabili spiegano il regressore, cioè che si stanno aggiungendo al modello variabili ridondanti, o quasi.
+>
+> Con collinearità perfetta la regressione di $x_j$ sugli altri regressori ha componente d'errore nulla, quindi $R_j^2 = 1$: il denominatore dello standard error diventa zero e la varianza è infinita. L'imprecisione dello stimatore è infinita e qualsiasi numero va bene: in un test d'ipotesi non si potrebbe mai rifiutare nessuna ipotesi nulla e un intervallo di confidenza andrebbe da meno infinito a più infinito.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: quasi collinearità e variance inflation factor
+> Gli ingredienti che determinano la precisione dello stimatore sono tre: la varianza dell'errore, supponendo valida l'omoschedasticità; la variabilità del regressore di interesse; il legame tra quel regressore e tutti gli altri. Se il legame è troppo forte, $R_j^2$ tende a 1, il fattore $1 - R_j^2$ diventa molto piccolo e la varianza risulta artificialmente aumentata.
+>
+> Nel caso di collinearità esatta il problema è risolto a priori dal software, che segnala un problema matematico con infinite soluzioni: un'equazione delle condizioni del primo ordine dei minimi quadrati è un doppione di un'altra. La quasi collinearità è il caso in cui le variabili hanno una correlazione alta ma non tanto da diventare patologica, per esempio del 99%: $R_j^2$ è molto vicino a 1 ma non uguale, il denominatore è molto piccolo ma non nullo, il software calcola tutto e il "quasi" inganna. Gli standard error tendono a esplodere e gli intervalli di confidenza diventano enormi: non da meno infinito a più infinito, ma magari da $-100$ a $+100$ quando la scala del parametro è 10, con grande incertezza nell'inferenza e scarsa capacità di usare il modello. Anche con un campione molto grande lo zero potrebbe cadere nell'intervallo, e si potrebbe concludere che un parametro non è statisticamente significativo soltanto perché si sono inseriti regressori non perfettamente collineari, ma quasi: si sono aggiunte informazioni quasi inutili. Ce ne si accorge solo indirettamente, perché aggiungendo una variabile gli standard error aumentano di tre, quattro, cinque o sei volte e ciò che prima era significativo non lo è più.
+>
+> Per riconoscere il problema i software calcolano il rapporto $1/(1 - R_j^2)$, detto **variance inflation factor**. Il docente lo descrive come l'aumento dello standard error rispetto al caso ideale, peraltro non interessante, in cui i regressori $x_1, x_2, x_3$ sono indipendenti tra loro; nella formula della nota il fattore $1 - R_j^2$ compare nella varianza dello stimatore. Secondo il docente, se il valore supera 10 o 12 si ritiene che ci sia un problema di quasi collinearità e che l'aumento artificiale degli standard error cominci a essere problematico: è una regola empirica, non un teorema. Questi indicatori si calcolano con il software senza stimare le regressioni a mano: con il comando giusto compare una tabella con un numero per ogni regressore del modello, e basta leggerli. Il docente definisce questa la parte teorica più complessa, di cui importa cogliere l'intuizione, e un problema particolarmente sottile e di non facile soluzione, che si vedrà durante l'esercitazione.
+>
+> Il docente consiglia di venire alla lezione del martedì successivo, perché con esempi si vedrà che cosa succede quando $R_j^2$ è molto grande e come si calcola: è un problema utile da conoscere.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: un esempio di quasi collinearità nel differenziale salariale tra uomini e donne
+> L'esempio che si vedrà con il professor Peruzzi parte da un modello per il differenziale di salario tra uomini e donne. Secondo il docente, una serie di modelli più o meno standard mostra che, a meno di qualche variabilità, la differenza è di circa il 30% in termini di salari, ed è statisticamente significativa. Si aggiunge poi un regressore di interesse pratico, una specie di dummy che interagisce con una variabile continua (lo si vedrà). Il coefficiente della variabile $female$ risulta allora non significativo: la stima è più o meno la stessa, 27% anziché 30%, qualitativamente sempre un numero gigante, ma non è significativo, e non lo è nemmeno la variabile aggiunta. Si è quindi aggiunto qualcosa di inutile e un parametro di cui si era quasi certi non risulta più significativo.
+>
+> Passando dal modello senza problemi a quello con problemi, il docente indica che gli standard error aumentano di cinque o sei volte. Nel test $t$ il denominatore gigante comprime la statistica, quindi non si rifiuta l'ipotesi nulla. Il software non segnala nulla, fa solo i calcoli, e ce ne si deve accorgere da soli, in generale confrontando le tabelle dei due modelli. La diagnosi consiste nel riconoscere che lo standard error è una combinazione di tre ingredienti e non più di due: per la precisione dello stimatore contano la varianza della variabile e quella dell'errore, ma anche il modo in cui la variabile si rapporta a tutte le altre in termini di correlazione.
 
 ## Intervalli di confidenza per βj
 
@@ -734,6 +829,13 @@ generated: 2026-07-10
 > $$\hat\beta = (\mathbf{X}'\mathbf{X})^{-1}\mathbf{X}'\mathbf{Y}$$
 
 *(slide 51)*
+
+> [!lezione] Dalla lezione del 20 novembre 2026: perché conviene guardare la notazione matriciale
+> Il docente risparmia questa parte in aula, ma suggerisce di darci un'occhiata perché può essere utile. Nei libri di testo quanto visto è quasi sempre rappresentato in termini di algebra lineare, e qui tutto si scrive con matrici e vettori: un vettore $y$ di $n$ righe e una colonna, una matrice $X$ dei regressori, un vettore dei parametri e un vettore del termine d'errore. Derivando rispetto all'intero vettore dei parametri, lo stimatore dei minimi quadrati si scrive in forma matriciale qualunque sia il numero dei regressori, e $(X^\top X)^{-1}$ è il denominatore.
+>
+> Il prodotto $X^\top X$ è di fatto il quadrato di $X$. Nel modello semplice il denominatore è la somma degli $x$ al quadrato e il numeratore è la covarianza tra $x$ e $y$, cioè il prodotto incrociato; in generale, più come intuizione che come formalismo, al denominatore compaiono i momenti secondi empirici delle $x$ e al numeratore il prodotto incrociato tra $x$ e $y$. La formula è comoda perché permette di scrivere qualsiasi stimatore dei minimi quadrati indipendentemente dalla dimensione del modello: con un regressore o con duemila è sempre la stessa. Tutto ciò che serve per stimare con i minimi quadrati si scrive in cinque righe, ricordando che le derivate rispetto ai vettori seguono regole precise.
+>
+> Secondo il docente l'algebra lineare è un modo furbo di scrivere tutto ciò che è stato fatto finora, senza niente di più e niente di meno, ed è comoda negli sviluppi teorici: dimostrare il teorema di Frisch-Waugh-Lovell con le sommatorie è complicato, mentre con l'algebra matriciale il problema si risolve in tre righe. È solo una questione meccanica.
 
 ## Il teorema di Frisch-Waugh-Lovell (versione generale, matriciale)
 

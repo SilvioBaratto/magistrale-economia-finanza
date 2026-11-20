@@ -41,6 +41,11 @@ Le due lettere guidano il capitolo: la prima riguarda la dotazione di patrimonio
 >
 > Le novità sono confluite nella lettera d). In origine vi si leggevano l'organizzazione amministrativa e contabile e i controlli interni, e questo riferimento è rimasto. Nel tempo si sono aggiunti il governo societario, tema rilevantissimo con i problemi di legalità, e le prescrizioni in materia di sistemi di incentivazione e di remunerazione. Il docente definisce la lettera d) figlia di Basilea 3 e di ciò che ne è seguito in termini di CRD. La lettera d-bis) discende dall'affidamento anche sulle capacità di valutazione del mercato: il mercato deve essere informato, quindi vi rientra l'informativa da rendere al pubblico sulle materie delle lettere precedenti.
 
+> [!lezione] Dalla lezione del 20 novembre 2026: la lettera c) del comma 1 e la versione del testo unico
+> Il docente ammette un proprio errore: a seconda dell'aula in cui si trova accede a una versione del testo unico bancario che è l'ultima oppure a una anteriore all'ultima modifica significativa, in attuazione della CRD 6. Nel leggere insieme l'art. 53 ha letto le lettere dimenticando che la lettera c) è stata nel frattempo abrogata. Nella lettura erano state citate adeguatezza patrimoniale, contenimento del rischio nelle sue diverse configurazioni e partecipazioni detenibili; nel testo aggiornato le partecipazioni detenibili non sono più la lettera c) dell'art. 53.
+>
+> Il docente precisa che ciò non significa che la materia delle partecipazioni detenibili non sia più disciplinata dal testo unico bancario.
+
 > [!lezione] Dalla lezione del 13 novembre 2026: valutazioni esterne del rischio di credito, modelli interni e dati personali
 > Il docente riferisce alla CRD 5 l'ulteriore sviluppo dell'articolo, che è diventato molto lungo (nel testo del TUB il comma 2-bis, su rating esterni e modelli interni, è stato inserito dal d.l. 27 dicembre 2006, n. 297, convertito dalla l. 23 febbraio 2007, n. 15, e poi modificato). Le disposizioni emanate ai sensi del comma 1, lettera a) prevedono che le banche possano utilizzare la valutazione del rischio di credito rilasciata da società o enti esterni, e disciplinano i requisiti, anche di competenza tecnica e di indipendenza, che tali soggetti devono possedere e le relative modalità di accertamento. Prevedono inoltre i modelli interni di valutazione, cioè quali banche possono darsi da sole i modelli e a quali condizioni, e i sistemi interni di misurazione dei rischi per la determinazione dei requisiti patrimoniali, sempre previa autorizzazione della Banca d'Italia.
 >
@@ -573,6 +578,11 @@ Per evitare che un istituto trasferisse un titolo dal portafoglio immobilizzato 
 >
 > Il **rischio di posizione** è disciplinato dagli artt. 325 e seguenti del CRR, per chi vuole un riferimento quantitativo. Il docente legge la definizione: il rischio che deriva dall'oscillazione del prezzo del valore mobiliare per fattori attinenti all'andamento dei mercati e alla situazione dell'emittente. Ha dunque due componenti: l'andamento dei mercati in quanto tale, per esempio se il mercato azionario è sceso di una certa percentuale, oppure la situazione del singolo ente emittente. Un esempio è l'investimento in titoli Nvidia, che la scorsa settimana hanno avuto un crollo: il mercato non c'entra. Il rischio va misurato e fronteggiato, e lo strumento è sempre quello patrimoniale.
 
+> [!lezione] Dalla lezione del 20 novembre 2026: copertura patrimoniale, frazionamento e rischio di concentrazione
+> Per fronteggiare il rischio di posizione vale anzitutto la regola generale: i coefficienti prudenziali sono sempre di carattere patrimoniale, quindi i rischi di mercato trovano copertura complessiva nei fondi propri della banca, secondo percentuali e regole che qui non vengono considerate. Una modalità normale di copertura, come per il rischio di credito, è inoltre il frazionamento del rischio. Per questo il rischio di posizione va di pari passo con il rischio di concentrazione.
+>
+> In alcuni corpi normativi il rischio di concentrazione è evocato autonomamente rispetto al rischio di posizione, in altri è accorpato e integrato con esso. La tassonomia ha poca importanza ai fini del corso: i due rischi si passano in rassegna come rischio di posizione e rischio di concentrazione.
+
 ## Il rischio di regolamento
 
 Un'ulteriore tipologia di rischio è quella di **regolamento**, definita nella circolare 229 ("Istruzioni di vigilanza", nella formulazione riportata sotto) e, attualmente, disciplinata dall'**art. 378 del Regolamento 575/2013 UE** (Rischio di regolamento/consegna), che impone un requisito di fondi propri calcolato sulla differenza di prezzo delle operazioni su strumenti di debito, strumenti di capitale, valute e merci rimaste non regolate dopo la data di consegna.
@@ -582,6 +592,13 @@ Un'ulteriore tipologia di rischio è quella di **regolamento**, definita nella c
 Poiché non tutte le posizioni sui titoli vanno regolate subito, esiste per la banca il rischio che una controparte non adempia alle proprie obbligazioni entro il termine previsto. La disciplina impone quindi un requisito di fondi propri a copertura del rischio assunto.
 
 *(pagina 9)*
+
+> [!lezione] Dalla lezione del 20 novembre 2026: il rischio di regolamento e la durata dell'inadempimento
+> Il rischio di regolamento è l'altra grande tipologia di rischi di mercato riferita al comparto titoli ed è disciplinato dagli artt. 378 e seguenti del CRR. L'operazione in titoli ha normalmente una durata, come un contratto bancario è un contratto di durata. L'esempio è il contratto di borsa più tradizionale, il riporto: si acquista un titolo a una certa data e lo si rivende a un'altra data con l'impegno al riacquisto, scommettendo sull'andamento del titolo tra la data iniziale e quella finale.
+>
+> Il rischio consiste nel fatto che, alla scadenza, quando l'operazione dovrebbe chiudersi con l'operazione di segno inverso, l'altra parte non sia in grado di adempiere e quindi non sia possibile regolare l'operazione, nel linguaggio di borsa. Se la controparte si è impegnata a restituire un titolo a una certa data e non è in grado di farlo, come accade di frequente in borsa perché nel frattempo lo ha venduto a un altro, l'operazione non riesce a chiudersi e la controparte è inadempiente.
+>
+> Il rischio di regolamento è tanto più grave quanto più lungo è il ritardo nell'adempimento della controprestazione. L'inadempimento può essere un ritardo di breve durata o più lungo, e quanto maggiore è la durata, tanto più elevato è il rischio di inadempimento definitivo della controparte. Il rischio di regolamento è quindi rapportato alla durata dell'inadempimento nel regolamento dell'operazione in titoli.
 
 ## L'azione revocatoria e la segnalazione a sofferenza
 
@@ -622,3 +639,35 @@ Dal punto di vista dell'ordinamento, le autorità di vigilanza vogliono scongiur
 ### Le professionalità del credito in banca
 
 La gestione di queste situazioni è una delle professionalità che contano molto in banca. C'è chi segue il credito nella fase genetica del rapporto. Il credito va poi monitorato costantemente, con la cosiddetta revisione delle pratiche di fido. Ci sono infine gli esperti che curano il credito ad andamento anomalo, gli NPL, che vengono gestiti non soltanto per cartolarizzare, come si spiega magari in certi corsi, ma per recuperare il più possibile. L'obiettivo è farlo senza incorrere nel rischio di revocatorie, e occorre sempre interrogarsi sul momento più opportuno per segnalare che una posizione è ad andamento anomalo.
+
+## Le aspettative di vigilanza
+
+*Integrazione dalla lezione del 20 novembre 2026.*
+
+Fino a questo punto, quanto a normativa secondaria, si è parlato solo di istruzioni di vigilanza (una volta) e di disposizioni di vigilanza (oggi), cioè di regole di carattere secondario. A livello europeo, e a cascata oggi anche a livello nazionale, occorre fare i conti con un'ulteriore tipologia di prescrizioni: le **aspettative di vigilanza**, che sono una novità sia per la materia sia per la tecnica seguita dalle autorità. Non sono disposizioni e non hanno carattere immediatamente precettivo: le autorità dicono al sistema, e quindi anche ai singoli intermediari, "ci aspettiamo che". Sono orientamenti, e per alcuni versi si assiste a una rinascita della moral suasion.
+
+Le aspettative provengono non tanto dalla BCE quanto dall'EBA, che diffonde linee guida, come già detto. L'EBA ha affermato che le autorità chiedono al ceto bancario di attenersi alle aspettative per quanto possibile, ma che, essendo ancora in ambiti nuovi, non ritengono di poter dire che diventino disposizioni, almeno per il momento.
+
+### Le conseguenze del mancato rispetto di un'aspettativa
+
+Se si viola una prescrizione di vigilanza tassativa, come quelle sulla concentrazione dei rischi e sulle grandi esposizioni, si sa esattamente a quali sanzioni si va incontro, perché il TUB contiene la norma che prevede la sanzione per quelle violazioni. Per un'aspettativa il terreno è delicato dal punto di vista pratico per gli operatori. Dal punto di vista giuridico la questione è chiara: è un'aspettativa, e ci si chiede se, disattendendola, non succeda nulla.
+
+Oppure, trattandosi di un'aspettativa volta a garantire la sana e prudente gestione della banca, la Banca d'Italia o la BCE possono fare indirettamente ciò che non possono fare in modo diretto. Non possono dire "hai violato una norma", perché non è una norma, ma possono dire "hai disatteso una mia aspettativa" e penalizzare l'intermediario, per esempio nel punteggio dell'analisi già vista. Il docente usa volutamente un'espressione generica: non sanzionare, ma penalizzare. Sono terreni nuovi, pressoché inesplorati.
+
+### I rischi climatici e ambientali
+
+L'ambito nel quale si sta sperimentando questo approccio è quello dei rischi climatici e ambientali, nel mondo ESG, di cui questi rischi sono una parte. Non vi sono vere e proprie regole. Esiste un documento della Banca d'Italia dell'8 aprile 2022 dedicato alle aspettative di vigilanza sui rischi climatici e ambientali, nel quale non si trovano prescrizioni o norme. Vi si legge, per esempio, che gli intermediari devono iniziare a occuparsi seriamente del tema, e occuparsene seriamente significa anzitutto modificare, se necessario, la governance dell'intermediario: non si può proseguire come se nulla fosse a fronte dei cambiamenti climatici.
+
+Nel comparto bancario il tema è significativo, ma nel comparto assicurativo lo è molto di più. Il docente lo illustra in modo semplificato con il rischio di danni derivanti dalla grandine: non basta la risposta secondo cui le assicurazioni aumentano il premio della polizza, perché se il rischio diventa di grande portata ed è reiterato diventa un rischio di stabilità, per certi versi almeno per quel ramo di attività, per le imprese di assicurazione in quanto tali.
+
+Lo stesso vale in ambito bancario, per l'erogazione del credito. Si pensi alle banche che nel corso degli anni hanno assicurato plafond di finanziamento mirati, anche consistenti, per il settore fotovoltaico, perché vi erano agevolazioni fiscali su cui puntare. Se fenomeni come la grandinata sono ricorrenti e non limitati a una zona circoscritta, centinaia o migliaia di pannelli dei campi fotovoltaici finanziati risultano fortemente danneggiati, e il cliente rischia di non essere più in grado di rimborsare il finanziamento, non fosse altro perché il campo non produce più l'energia solare prevista. Dal punto di vista della governance e della strategia aziendale, il documento contiene su questo una serie di aspettative.
+
+Il documento indica impatti in termini di rischi di mercato, di rischi operativi e di rischi reputazionali. Per i rischi propriamente detti c'è l'accantonamento patrimoniale, ma qui non è così: le indicazioni sono date in termini generali, come aspettative. Il docente consiglia di leggere il documento, non lunghissimo e che si può anche solo scorrere, a chi fosse incuriosito da questo nuovo modo di procedere.
+
+### L'aspettativa numero 8
+
+Tra le aspettative, sfogliando il documento a campione, il docente si sofferma sulla numero 8: gli intermediari integrano i rischi climatici e ambientali in tutte le fasi del processo del credito. In sede di istruttoria di una pratica di finanziamento, nel valutare i vari fattori di rischio del cliente si deve tenere conto, se ci sono, anche del rischio ambientale e del rischio climatico. Gli esempi possono non essere banali, e non bisogna pensare soltanto alla grande banca.
+
+Fino a qualche tempo fa, se un cliente chiedeva un finanziamento per comprare o costruire una casa, la banca si limitava a stimare il valore dell'immobile, la capacità di restituzione dal punto di vista reddituale del richiedente e la presenza di eventuali garanzie. In base alle aspettative, la banca deve cominciare a chiedersi dove si trovi la casa: può essere sotto l'argine di un fiume o in una zona soggetta a inondazioni. Il docente cita un comune in provincia di Ferrara interamente sotto il livello del mare, di uno o due metri, e le moltissime alluvioni del Veneto, dove un immobile poco al di fuori dell'argine di un fiume è esposto all'esondazione. La banca deve chiedersi se ha misurato il rischio che l'immobile possa essere distrutto o fortemente danneggiato da un'alluvione, con quali modalità lo prezza, oppure se finanzia in massa beni immobili tutti soggetti allo stesso rischio climatico-ambientale. È un piccolo esempio, banale, di tema che oggi una banca deve affrontare per rispettare queste aspettative di vigilanza.
+
+Si sta discutendo di molte altre aspettative. Queste sono le prime uscite e sono significative per la modalità di interlocuzione tra vigilanza e intermediari vigilati, oltre che per i contenuti.
