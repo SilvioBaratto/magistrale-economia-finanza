@@ -22,6 +22,23 @@ I rischi di mercato sono i rischi di perdite che possono derivare dall'operativi
 
 *(pagina 1)*
 
+> [!lezione] Dalla lezione del 20 novembre 2026: il rischio di posizione su merci
+> Le altre due tipologie di rischio di mercato, quelle su merci e di cambio, non hanno a che vedere con la gestione del portafoglio titoli della banca, o comunque non incidono direttamente soltanto su di esso: sono rischi di mercato trasversali. Per il rischio di posizione su merci il docente ricorda, senza certezza, l'art. 355 del regolamento, precisando che non ha importanza. Esistono operazioni finanziarie ancorate a parametri di variazione del prezzo di merci, oppure in cui le merci sono la garanzia dell'operazione stessa.
+>
+> Un esempio è il finanziamento, da parte di una banca, dell'importazione in Italia di petrolio portato da una nave petroliera. Vi saranno polizze assicurative a copertura, ma la banca dovrebbe anche garantirsi, e normalmente lo fa, con un pegno su merci, iscrivendo il pegno sul petrolio trasportato. A volte il pegno si realizza in modo semplice e diretto, altre volte si ricorre all'emissione di veri e propri titoli di credito.
+>
+> Il docente richiama a questo proposito la cambiale tratta con cessione della provvista, istituto su cui il corso di diritto commerciale non si sofferma quasi mai. La cambiale, titolo di credito, circola secondo le leggi di circolazione che le sono proprie. Con la cessione della provvista si ha una garanzia data dall'indicazione, sul titolo stesso, del bene per il quale la cambiale è stata emessa. La cambiale, normalmente titolo astratto, diventa così per certi versi un titolo concreto e specifico, che fa riferimento anche all'operazione sottostante. Il riferimento è importante perché consente alla garanzia di circolare sfruttando le modalità di circolazione del titolo cambiario.
+>
+> La modalità tecnica non è ciò che conta, e non si è più solo nell'ambito dei titoli: la cambiale è certamente un titolo, ma si è nell'ambito degli strumenti finanziari e non dei titoli se si considerano contratti derivati che abbiano come riferimento l'andamento dei prezzi delle merci. Per il rischio di posizione su merci conta il fatto che si tratta di un rischio di mercato connesso alle oscillazioni del prezzo della merce, o della tipologia di merce, presa in considerazione. Lo stesso vale per il grano, di stretta attualità: si può pensare all'importazione in generale, per esempio dall'Ucraina, con i blocchi, gli ostacoli e le difficoltà che ci sono. Questa tipologia di rischio di mercato tiene conto, con le solite approssimazioni patrimoniali e le solite regole prudenziali, dell'oscillazione del valore della merce di riferimento.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: la cambiale tratta con cessione della provvista all'esame
+> Il docente dice che su questo dettaglio gli studenti sono legittimati a non ricordare nulla e che la modalità tecnica non importa. Aggiunge che non è vero che nella pratica non ricorra: ricorda un caso di una grande banca nazionale che ci ha rimesso qualche milione di euro perché l'impiegato non sapeva che cosa fosse una cambiale tratta con cessione della provvista.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: il rischio di cambio
+> Il rischio di cambio è l'ultima tipologia di rischio di mercato ed è la più facile da illustrare. Non è riferito soltanto ai titoli: se la banca ha comprato titoli di Stato statunitensi, denominati in dollari, oltre al rischio del titolo in sé quel titolo incorpora un rischio di cambio. Il rischio riguarda tutte le operazioni nelle quali la banca opera in cambi, quindi non ci si trova più soltanto nel comparto finanziario. Per questo gli ultimi due rischi di mercato, merci e cambio, sono trasversali.
+>
+> Per le altre tipologie di rischio il docente indica che la strada è in discesa, almeno per quanto riguarda le regole di carattere prudenziale: sono più semplici, anche se per alcuni aspetti insidiose, come si vedrà.
+
 ## Il rischio operativo
 
 Negli ultimi 20 anni le banche hanno iniziato a supportare un numero sempre crescente di rischi ascrivibili alla macro-categoria dei rischi operativi (categoria già di per sé difficilmente quantificabile). Il rischio operativo è stato definito per la prima volta nel 2006 all'interno della circolare 263 di Banca d'Italia (Titolo II, Capitolo 5); questa circolare è stata successivamente abrogata e la circolare 285 non ne riprende né la definizione né la disciplina del requisito patrimoniale (Parte Prima, Titolo IV, Capitolo 3, Allegato A, par. 8, rinvia alla Parte Tre, Titolo III del CRR), per cui il riferimento normativo resta oggi il Regolamento 575/2013 UE.
@@ -36,6 +53,25 @@ La definizione (art. 4, par. 1, punto 52, CRR, nel testo vigente dopo il Regolam
 Le regole concordate a Basilea nel 2017 hanno sostituito l'approccio al rischio operativo basato su modelli interni (*Advanced Measurement Approach*, AMA) con un unico approccio standardizzato, da applicare a tutte le banche. Secondo lo standard di Basilea, il requisito patrimoniale a fronte del rischio operativo è funzione della dimensione operativa delle singole banche e, per le sole banche di medie dimensioni, della storia pregressa delle perdite da rischio operativo.
 
 *(pagina 1)*
+
+> [!lezione] Dalla lezione del 20 novembre 2026: il perimetro del rischio operativo
+> Il rischio operativo è emerso nel corso degli anni come ulteriore tipologia di rischio. Il docente indica che la definizione si trova facilmente nel CRR e può essere copiata da lì. Anche qui la normativa nazionale dice sempre meno e bisogna andare al CRR per le prescrizioni di dettaglio.
+>
+> La definizione mostra abbastanza chiaramente la difficoltà di tracciare un perimetro preciso del rischio operativo. Alcuni aspetti sono chiari, per esempio l'inadeguatezza o la disfunzione dei processi. Il rischio informatico è riconducibile a questa categoria, o è quantomeno fortemente correlato al rischio operativo, come mostra l'attualità recentissima. Gli altri elementi della definizione sono le disfunzioni legate alle risorse umane, perché l'attività bancaria è svolta da persone, che possono sbagliare, e ai sistemi interni, oppure gli eventi esogeni.
+>
+> Il docente faceva agli studenti dei corsi precedenti l'esempio di una banca chiamata a risarcire danni perché per un tempo molto contenuto era caduto il collegamento ai mercati borsistici. La clientela aveva provato a comprare o a vendere titoli e aveva trovato la rete bloccata. Nel frattempo il titolo era sceso di valore, per chi voleva vendere, o era cresciuto, per chi voleva comprare. Il cliente chiede i danni perché, se il sistema avesse funzionato, non avrebbe pagato così tanto o non avrebbe ricavato così poco. È un classico caso di rischio operativo.
+>
+> Il rischio cambia nel corso degli anni. Un esempio è il cosiddetto millennium bug: nel 1998-99 vi fu un momento di terrore in tutto il mondo, perché sembrava che i sistemi informatici non fossero in grado di gestire il cambio di millennio nelle date. Anche in ambito bancario la Banca d'Italia diramò una serie di prescrizioni particolari, con la raccomandazione di fare backup e di adottare cautele, perché non si sapeva che cosa sarebbe successo il primo gennaio 2000. Anche questo è un rischio operativo.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: il rischio giuridico e i cambiamenti di orientamento
+> Il rischio giuridico compreso nella definizione si pone quando una banca tiene una prassi del tutto conforme alla disciplina in vigore e a un certo punto il legislatore cambia le norme di riferimento. Secondo il docente non si tratta qui del rischio che il cliente faccia causa alla banca e il giudice gli dia ragione, con obbligo di risarcimento. Gli esempi sono quelli dei corsi di diritto bancario.
+>
+> Il primo è l'anatocismo: secondo il docente la giurisprudenza ha tenuto per decenni un certo orientamento, finché nel 1999 lo ha cambiato completamente, stabilendo che l'anatocismo segue regole diverse. Il secondo è l'usura, con il tema dell'usurarietà sopravvenuta. Che cosa accade se cambia il tasso soglia di riferimento della legge antiusura? Che cosa accade se la banca ha finanziato un cliente con un mutuo a tasso fisso, con un interesse fisiologico al momento della stipula, che diventa usurario in un momento successivo? Anche qui, secondo il docente, la giurisprudenza a un certo punto ha cambiato orientamento, in senso generico più favorevole alla clientela.
+>
+> In entrambe le vicende le banche si sono trovate esposte, perché quando cambiano le regole sulla remunerazione della raccolta o degli impieghi il denaro è già stato dato o raccolto. Se cambia l'interpretazione normativa sulla remunerazione della raccolta, e quel dato era la base di calcolo della remunerazione dell'operazione di impiego, c'è il rischio di non starci più dentro. È un altro esempio di rischio operativo.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: il rischio operativo e gli accantonamenti patrimoniali
+> Il rischio operativo è, per così dire, magmatico, perché tiene conto di molte ipotesi. Quando fu prospettato in sede di Basilea si cercò di descriverlo nei limiti visti, ma inizialmente non erano previsti accantonamenti patrimoniali a fronte di esso. Da alcuni anni il CRR contiene invece modalità di calcolo del rischio operativo, per cui anche per questa tipologia di rischio occorre accantonare, idealmente come sempre, porzioni dei fondi propri della banca.
 
 ## Art. 53 TUB: l'evoluzione della disciplina sulle partecipazioni
 
@@ -55,6 +91,40 @@ Fino al 2024 le disposizioni di vigilanza della Banca d'Italia (circolare 285) r
 
 *(pagina 1–2)*
 
+> [!lezione] Dalla lezione del 20 novembre 2026: l'abrogazione della lettera c) e il nuovo art. 57-bis
+> Il docente usa l'imperfetto per la lettera c) perché era un esempio, forse il più significativo almeno in termini quantitativi, di delegificazione, come già sottolineato nella prima parte del corso parlando delle partecipazioni al capitale delle banche. Per queste ci sono cinque o sei articoli, dal 19 in avanti. Per l'aspetto speculare, le partecipazioni detenibili dalle banche, tutto era compendiato in una lettera, lasciando l'intervento all'autorità di vigilanza.
+>
+> In attuazione della CRD 6, con l'ultima modifica del 31 dicembre 2025, il legislatore italiano ha abrogato questa lettera ma ha inserito nel testo unico bancario due nuovi articoli interi. L'art. 57-bis, in vigore dal 9 gennaio 2026, si occupa delle partecipazioni rilevanti della banca; poco più avanti l'art. 61-bis contiene, secondo il docente, una norma corrispondente per le partecipazioni rilevanti a livello di gruppo bancario, e l'art. 61 si trova già tra le norme che riguardano i gruppi bancari. Il testo dell'art. 61-bis, intitolato «Ulteriori disposizioni applicabili alle società di partecipazione finanziaria e di partecipazione finanziaria mista capogruppo», dispone che a tali società si applichi l'art. 57-bis. Le modifiche sono quelle del d.lgs. 31 dicembre 2025, n. 208, che ha abrogato la lettera c) del comma 1 dell'art. 53 e introdotto l'art. 57-bis.
+>
+> La ragione della modifica è che gli Stati membri andavano per la propria strada, alcuni con una disciplina più severa, altri più blanda, in tema di partecipazioni delle banche (si pensi al tema della separatezza banca-industria). Ora si è deciso di armonizzare queste norme a livello europeo, e non è più sufficiente, dal punto di vista della tecnica legislativa, dire che delle partecipazioni detenibili si occupa la Banca d'Italia. Si potrebbe obiettare che esiste l'art. 6, il grande cappello secondo cui le norme attuative devono essere conformi alle disposizioni dell'Unione europea. È vero, ma l'art. 57-bis ha preferito essere preciso e scrivere direttamente, in una norma di carattere primario, molte prescrizioni che prima erano solo di carattere secondario.
+>
+> Con l'inserimento dell'art. 57-bis il legislatore ha previsto che serviranno, per quanto poche, norme attuative della Banca d'Italia. Fino a quando la Banca d'Italia non detterà le nuove norme in attuazione dell'art. 57-bis, continuano ad applicarsi le vecchie regole: occorre quindi ancora fare riferimento, per un tempo che il docente non sa indicare, alle norme emanate in attuazione della lettera c), pur abrogata, e il capitolo delle disposizioni di vigilanza resta in vigore. La norma transitoria del decreto (art. 4, comma 7, d.lgs. 208/2025) prevede in effetti che, fino all'entrata in vigore della disciplina attuativa della Banca d'Italia, continuino ad applicarsi l'art. 53 nella versione precedente e la relativa disciplina attuativa.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: il contenuto dell'art. 57-bis
+> Il comma 1 stabilisce che le banche che intendono acquisire direttamente o indirettamente una partecipazione rilevante richiedono l'autorizzazione preventiva alla Banca d'Italia e, se del caso, all'autorità dello Stato dell'Unione europea competente per la vigilanza consolidata. L'autorizzazione è rilasciata quando ricorrono condizioni atte a garantire la sana e prudente gestione della banca acquirente, tenuto conto di criteri indicati dalla norma: è il passaggio dalla delegificazione alla legificazione dei criteri, impensabile qualche anno fa.
+>
+> Il primo criterio è la capacità della banca acquirente di rispettare, a seguito dell'acquisizione, le disposizioni che regolano la sua attività. Qui non si distingue tra acquisizione di una partecipazione in un'altra banca e in un'impresa industriale. Se una banca acquisisce una partecipazione significativa nel capitale di un'altra banca, dando magari vita a un gruppo bancario, e la banca acquisita non ha parametri prudenziali particolarmente buoni, la Banca d'Italia autorizzerà l'operazione solo con molta attenzione, perché mettendo insieme le due banche a livello consolidato si potrebbe avere un gruppo bancario che non rispetta più i criteri prudenziali. In questo caso l'autorizzazione non verrebbe rilasciata.
+>
+> Un altro criterio è l'assenza di motivi ragionevoli per sospettare che, in relazione all'operazione proposta, sia in corso o abbia avuto luogo un'operazione o un tentativo di riciclaggio o di finanziamento del terrorismo, o che l'operazione proposta possa aumentarne il rischio. La disciplina antiriciclaggio, che fino a qualche tempo fa non veniva minimamente citata nel testo unico bancario, entra così progressivamente nel corpo normativo principale della materia e continua a ritornare.
+>
+> Un comma successivo prevede che l'autorizzazione all'acquisizione della partecipazione rilevante sia negata quando dalla verifica delle condizioni indicate dal comma 2 non risulti garantita la sana e prudente gestione della banca. Seguono le decisioni congiunte e le altre previsioni, che il docente non legge, essendo l'articolo lungo. Il comma 6 dispone che le banche che intendono cedere direttamente o indirettamente una partecipazione rilevante lo comunichino preventivamente alla Banca d'Italia e, se del caso, all'autorità dello Stato dell'Unione europea competente per la vigilanza consolidata.
+>
+> Seguono i commi che affrontano la patologia, come visto nell'art. 24. Il comma 7 vieta di esercitare i diritti di voto e gli altri diritti che consentono di influire sulla società, inerenti alle partecipazioni per le quali l'autorizzazione di cui al comma 1 non sia stata ottenuta, ovvero sia stata sospesa o revocata. Il comma 8 dispone che, in caso di inosservanza del divieto, la deliberazione o il diverso atto adottati con il voto o il contributo determinante di quelle partecipazioni sono impugnabili secondo le previsioni del codice civile, ove applicabile. Sono le regole dell'art. 24 per le partecipazioni a monte, con gli adattamenti formali del caso.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: i due profili delle partecipazioni e il tipo di banca
+> Il tema delle partecipazioni detenibili ha un duplice profilo. Il primo riguarda le partecipazioni che una banca può detenere in termini generali. Il secondo, che ne è un sottoinsieme, riguarda le partecipazioni che una banca può detenere nel capitale di un'impresa industriale: il tema della separatezza banca-industria.
+>
+> Sulla questione incide anche la tipologia di banca. La banca che nel linguaggio comune si definisce commerciale o generalista svolge prevalentemente l'attività dell'art. 10, comma 1, cioè raccolta e impieghi. Per questa il problema della separatezza banca-industria può assumere rilievo ed è la genesi principale della crisi del '29: la banca ha finanziato un cliente industriale che va male, non sa come fare ed entra nel suo capitale, sopportando a quel punto il rischio d'impresa. A volte anche accordi di ristrutturazione del debito prevedono accordi di questo tipo. Il caso si pone in modo completamente diverso se non si tratta di una banca commerciale ma di quella che ormai si è abituati a chiamare banca di investimenti. Mediobanca e una banca di credito cooperativo non si possono trattare allo stesso modo, e non per questioni dimensionali: nemmeno la BCC di Roma, grande come banca di credito cooperativo, è comparabile con Mediobanca, che fa un altro mestiere.
+>
+> Occorre tornare alla specializzazione della prima parte del corso. Vi era una specializzazione temporale, oltre che istituzionale, per cui le banche di investimento facevano le banche di investimento e le banche allora chiamate commerciali facevano le banche commerciali. Questi problemi non avevano ragione di porsi, e la separatezza banca-industria riguardava le aziende di credito. Con la despecializzazione del 1993 tutti possono fare tutto, e il problema è delle banche che non hanno il know-how per fare la banca di investimenti.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: le tre categorie di banche nella disciplina storica
+> Le autorità di vigilanza hanno adottato un approccio progressivo, camminando lungo un crinale molto stretto e insidioso: da un lato doveva esserci la despecializzazione, perché non si poteva dire di no, dall'altro occorreva tener conto delle specialità. All'inizio la Banca d'Italia distinse le banche in tre grandi categorie. Le prime erano le banche specializzate, che oggi si direbbero le ex istituti di credito, le investment banks: per queste non si potevano porre limiti in tema di partecipazioni detenibili. Le seconde erano le banche "normali", senza ulteriori aggettivi, per le quali si dettavano vincoli partecipativi in termini percentuali: un esempio è il vincolo del 15% a garanzia della separatezza banca-industria, poi abrogato. C'era inoltre l'obbligo di autorizzazione sopra il 10%, che secondo il docente si ritrova anche nel nuovo art. 57-bis; il testo dell'art. 57-bis non riporta però alcuna percentuale, e il comma 10 rimette alla Banca d'Italia di individuare i casi in cui la partecipazione è rilevante.
+>
+> La terza categoria, intermedia, era quella delle banche "abilitate": sostanzialmente le banche grosse, con una dotazione patrimoniale significativa, che potevano essere autorizzate dalla Banca d'Italia a compiere operazioni di questo tipo pur non essendo banche di investimento. Era anche un modo perché almeno le banche grosse maturassero a poco a poco il know-how necessario per prestare questi servizi alla clientela, per farle scivolare, in termini di despecializzazione, verso l'investment banking. Tutto questo oggi non esiste più.
+>
+> Per la vigilanza informativa la Banca d'Italia ha adottato l'archivio APE (assetto partecipativo enti), una delle banche dati viste qualche lezione fa, che tiene conto anche delle partecipazioni a valle. Dal punto di vista normativo, ciò che si può fare è quanto oggi dice l'art. 57-bis e che prima dicevano soltanto le disposizioni di vigilanza, le quali, con gli adattamenti del caso, hanno tendenzialmente anticipato l'art. 57-bis.
+
 ## Circolare 285, Parte III, Cap. 1 — Premessa: finalità della disciplina delle partecipazioni detenibili
 
 **Circolare 285 (Disposizioni di vigilanza), Parte III (Altre disposizioni di vigilanza prudenziale), Capitolo 1 (Partecipazioni detenibili dalle banche e dai gruppi bancari), Sezione I (Disposizioni di carattere generale), par. 1, Premessa:**
@@ -65,6 +135,13 @@ La premessa chiarisce che tutta la disciplina è volta a contenere il rischio di
 
 *(pagina 2–3)*
 
+> [!lezione] Dalla lezione del 20 novembre 2026: dalla separatezza banca-industria al rischio di liquidità
+> Il docente legge la premessa come richiamo a due finalità. La prima è contenere il rischio di un eccessivo immobilizzo dell'attivo derivante da investimenti partecipativi in imprese finanziarie e non finanziarie: la regola è analoga a quella studiata per gli investimenti immobiliari, per cui immobili più partecipazioni devono essere minori o uguali ai fondi propri. Il primo tema è un rischio di liquidità per la banca, che deriva da un eccessivo sbilanciamento nell'investimento. La seconda finalità, riferita alle partecipazioni in imprese non finanziarie, è promuovere una gestione dei rischi e dei conflitti di interesse conforme al criterio della sana e prudente gestione.
+>
+> Il docente osserva che non si parla più propriamente di separatezza banca-industria: i limiti quantitativi sono venuti meno. Il cambio di paradigma è evidente, anche se implicito. Prima lo spauracchio erano i rapporti cosiddetti patologici tra la banca e l'industria, mentre ora il problema non si pone più. Anche a livello europeo il tema non viene più affrontato, perché il rischio di liquidità è misurato e si fronteggia preventivamente con altri strumenti. Tendenzialmente non c'è più la separatezza banca-industria e, paradossalmente, interessa molto di più sapere quando la banca partecipa al capitale di un'impresa finanziaria.
+>
+> "Finanziaria" va inteso in senso lato, comprensivo di banche, finanziarie e assicurazioni: non solo SIM e SGR, ma tutte le imprese che svolgono attività di carattere finanziario, la cui definizione è precisata nel testo.
+
 ## La definizione di "partecipazione"
 
 **Circolare 285, Parte III, Capitolo 1, Sezione I, par. 3, Definizioni:**
@@ -74,6 +151,11 @@ La premessa chiarisce che tutta la disciplina è volta a contenere il rischio di
 Si parla di partecipazione soltanto se il possesso delle azioni (o delle quote) ha come finalità la creazione di un legame durevole con l'impresa di cui si vuole assumere una partecipazione. **Non** rientra nella definizione di partecipazione "il mero possesso di azioni a titolo di pegno, disgiunto dalla titolarità del diritto di voto".
 
 *(pagina 3)*
+
+> [!lezione] Dalla lezione del 20 novembre 2026: partecipazione e portafoglio titoli
+> Che cosa si intenda per partecipazione non è una domanda banale, alla luce di quanto detto sui rischi di mercato: il portafoglio titoli è immobilizzato o non immobilizzato, e per una banca non è la stessa cosa acquistare titoli perché vuole investire essa stessa in quei titoli o acquistarli per prestare servizi di investimento. Ciò ha riflessi anche sull'autorizzazione.
+>
+> L'elemento della definizione è il legame durevole. Se la banca acquista azioni solo per prestare servizi di investimento alla clientela, tecnicamente non è una partecipazione. Rileva la distinzione tra portafoglio titoli immobilizzato e non immobilizzato, ossia una scelta a monte: la banca dichiara a monte che cosa intende fare di quei titoli.
 
 ## Il limite generale agli investimenti in partecipazioni e immobili
 
@@ -127,6 +209,15 @@ Quando un'impresa opta per un aumento di capitale, in fase di collocamento si af
 
 *(pagina 5)*
 
+> [!lezione] Dalla lezione del 20 novembre 2026: i consorzi di collocamento e garanzia
+> Le partecipazioni acquisite nell'ambito dell'attività di collocamento e garanzia, in imprese in temporanea difficoltà finanziaria e per recupero crediti sono tre ipotesi diverse, trattate tutto sommato allo stesso modo. Quanto alla prima, si immagini un'impresa, normalmente non piccola, che chiede aiuto al sistema bancario per un'operazione straordinaria di importo particolarmente significativo: una grande società italiana, magari quotata, che delibera un cospicuo aumento di capitale. Oppure una delle imprese ex pubbliche, privatizzate e trasformate in S.p.A., per le quali si procede progressivamente a una cessione al mercato: il pubblico vende parte della sua partecipazione collocandola sul mercato. Sono operazioni frequenti, in genere collaterali o attuative della legge di bilancio. Il docente ragiona in astratto e ricorda che, quando la coperta è stretta, si può pensare di vendere l'1% di Trenitalia per ricavare qualcosa che serva a coprire le esigenze emergenti. Anche questa è privatizzazione.
+>
+> Come si procede? In astratto, soprattutto per società molto presenti sul mercato, si potrebbe dire agli investitori di rivolgersi agli sportelli per sottoscrivere l'aumento di capitale; non si fa quasi mai così, e ci si rivolge a una banca. Se però ci si rivolge a una sola banca per sottoscrivere le azioni di nuova emissione dell'Enel, c'è il rischio che le azioni siano sottoscritte in gran parte soltanto dai clienti di quella banca. Le banche si accordano allora tra loro e fanno un pool: danno vita a un consorzio, giuridicamente un consorzio, che si studia a diritto commerciale, un consorzio di collocamento. Tutte insieme, sulla base di un contratto, e con una banca come capofila, si impegnano ad aiutare l'Enel a piazzare sul mercato le azioni di nuova emissione.
+>
+> La fattispecie descritta è la più semplice, e nella prassi non si fa quasi mai così: le banche assumono in proprio il rischio della mancata sottoscrizione, nell'esempio di tutto l'aumento di capitale. L'Enel dice di aumentare il capitale di un miliardo di euro. Che succede se trova nuovi azionisti che sottoscrivono soltanto 350 milioni? La questione di diritto societario sull'operazione di aumento si studia a commerciale e qui non viene trattata. L'Enel potrebbe dire che quel miliardo o ce l'ha tutto o non le serve. Le banche rispondono che ci pensano loro e si impegnano a collocare le azioni sul mercato; se però, in ipotesi, non si trovassero i sottoscrittori per un miliardo, si impegnano a sottoscrivere loro tutta la parte che manca. In questo modo l'Enel ha la garanzia che l'operazione straordinaria andrà a buon fine.
+>
+> Una garanzia significa che la banca potrebbe trovarsi in portafoglio azioni di nuova emissione dell'Enel, impresa industriale. Le disposizioni di vigilanza si chiedono allora se queste operazioni non si possano fare, perché una volta si sarebbe detto che c'è il rischio di superare la separatezza banca-industria e che c'è un'eccessiva concentrazione. Si considerino tutte le ipotesi possibili: se quella banca aveva già in portafoglio azioni dell'Enel, non a fini di negoziazione ma propri, c'è un rischio di concentrazione eccessivo e un rischio di mercato. Le norme dicono che, entro certi limiti e a determinate condizioni, se la banca si impegna a rivendere, collocando progressivamente sul mercato quelle azioni, l'operazione si può fare. In caso contrario non potrebbero esserci nel Paese operazioni di investment banking, perché quasi mai queste operazioni straordinarie si realizzano senza una garanzia da parte del ceto bancario in senso lato.
+
 ## Partecipazioni in imprese in temporanea difficoltà finanziaria
 
 **Circolare 285, Parte III, Capitolo 1, Sezione IV, Partecipazioni in imprese in temporanea difficoltà finanziaria:**
@@ -139,6 +230,13 @@ In questo contesto è fatto divieto per la banca di acquisire azioni o altri str
 
 *(pagina 5–6)*
 
+> [!lezione] Dalla lezione del 20 novembre 2026: l'aggettivo "temporanea" e l'ingresso delle banche nel capitale
+> La seconda ipotesi si spiega da sé ed è lo spauracchio da cui si era partiti dopo il '29. La norma prudenziale è prudente nell'uso dell'aggettivo "temporanea": se la vigilanza accertasse in un secondo momento che la difficoltà non era temporanea e la banca fosse comunque intervenuta, le sanzioni sarebbero pesanti.
+>
+> Spesso le banche sono chiamate a intervenire per sostenere imprese in temporanea difficoltà. Possono farlo erogando nuove linee di credito, ma questo è fuori dal tema delle partecipazioni. Succede spesso che intervengano anche con partecipazioni, e per certi versi può essere opportuno. Il nuovo codice della crisi insiste molto sul ruolo dei creditori, e in particolare delle banche, nella gestione della crisi d'impresa. La banca sa per definizione come stia il cliente, basta pensare all'accesso ai dati della Centrale dei rischi, come detto in una lezione precedente.
+>
+> Le banche potrebbero dire, e spesso dicono negli accordi di ristrutturazione del debito, che ci stanno e che mettono qualche soldo in più, altrimenti l'impresa salta e non portano a casa niente, ma che non si fidano del management che ha creato la situazione di dissesto. Vogliono entrare anch'esse e assumere una partecipazione per poter contare qualcosa. La banca può farlo se si tratta di temporanea difficoltà, perché il suo interesse principale è ripristinare la fisiologia del cliente che ha affidato. Deve però essere una situazione di temporanea difficoltà, altrimenti la banca si assume un rischio che non deve assumere.
+
 ## Partecipazioni acquisite per recupero crediti
 
 **Circolare 285, Parte III, Capitolo 1, Sezione IV, Partecipazioni acquisite per recupero crediti:**
@@ -148,6 +246,11 @@ In questo contesto è fatto divieto per la banca di acquisire azioni o altri str
 Anche quando la finalità è il recupero crediti, restano applicabili i limiti di concentrazione, complessivo e generale, e l'operazione va giustificata.
 
 *(pagina 6)*
+
+> [!lezione] Dalla lezione del 20 novembre 2026: recupero crediti, cautele organizzative e piano di dismissioni
+> La terza ipotesi è il recupero crediti, simile a quanto detto nella lezione precedente sugli immobili. Non c'è nessun'altra strada: l'unico modo per recuperare qualcosa è prendere le azioni o le obbligazioni, i titoli che aveva il cliente che salta. La banca può obiettare che ne aveva già, perché altri clienti avevano azioni di quella società, per esempio l'Enel, e che prendendo anche queste supererebbe il limite consentito.
+>
+> La regola è generale: che si tratti di consorzi di collocamento e garanzia, di imprese in temporanea difficoltà o di assunzione di partecipazioni per recupero crediti, la banca può procedere con particolari cautele di carattere organizzativo, con delibera dell'organo amministrativo, e presentando all'autorità di vigilanza un piano di dismissioni credibile, come per gli immobili. Non si chiede di vendere subito tutte le azioni dell'Enel, ma un piano credibile che riporti nei parametri di vigilanza, tra cui i rischi di concentrazione, entro tempi considerati ragionevoli e compatibili con la sana e prudente gestione della banca.
 
 ## Partecipazioni in banche, imprese finanziarie, assicurative e strumentali: autorizzazioni
 
@@ -176,3 +279,8 @@ Nell'ambito delle partecipazioni a valle in imprese finanziarie, l'impostazione 
 Per evitare che i conflitti di interesse insiti nella concessione di finanziamenti a imprese partecipate dalla banca compromettano la corretta valutazione del merito creditizio, appaiono sufficienti, oltre alle regole di *governance* e sui controlli interni, procedure rigorose e limiti per gli affidamenti ai soggetti collegati. All'organo con funzione strategica è affidato il compito di approvare le politiche interne di gestione del rischio in materia di partecipazioni in imprese non finanziarie; le disposizioni dell'organo di vertice devono istituire e disciplinare i processi di controllo interni atti a garantire una corretta misurazione e gestione dei rischi sottostanti gli investimenti partecipativi.
 
 *(pagina 7)*
+
+> [!lezione] Dalla lezione del 20 novembre 2026: la sezione sulle regole organizzative di governo societario
+> Il passaggio è un ponte per l'argomento successivo. Le disposizioni di vigilanza contengono una sezione nuova, nuova per modo di dire, che fino a poco tempo fa non c'era: fino a qualche tempo fa ci si limitava alle regole quantitative e alle norme più discorsive riferite alle tre situazioni particolari descritte. L'ultima versione prevede invece questa ulteriore sezione sulle regole organizzative di governo societario. Una volta venuta meno la separatezza banca-industria, è responsabilità della banca fronteggiare i relativi rischi.
+>
+> Il docente non legge tutta la sezione e consiglia di leggerla a chi ne abbia voglia, interesse e tempo. Anche queste disposizioni sono destinate a essere abrogate, come detto. Le norme della sezione sono relativamente nuove: sono le ultime inserite prima della prossima abrogazione, di cui nessuno sa quando ci sarà. Il docente non ha visto avviata la procedura di consultazione per le norme attuative: passerà ancora del tempo e queste norme restano in vigore per un po'. Risulta però che a luglio 2026 la Banca d'Italia ha pubblicato un documento di consultazione sulle modifiche alle proprie disposizioni in materia di «Operazioni rilevanti», «Investimenti in immobili», «Banche di credito cooperativo», «Riserve di capitale» e «Assetti proprietari», per recepire la direttiva (UE) 2024/1619 (CRD VI), con 60 giorni di tempo per le osservazioni.

@@ -64,6 +64,17 @@ generated: 2026-07-10
 
 *(slide 2–5)*
 
+> [!lezione] Dalla lezione del 20 novembre 2026: il modello con stato civile ed etnia e la domanda di ricerca
+> Nel modello di regressione semplice e in quello multiplo l'inferenza è stata fatta finora su un solo parametro. In un modello di regressione si può però voler fare un test su più parametri contemporaneamente o su combinazioni lineari di parametri. L'esempio è una variante del modello con una sola dummy di genere: il campione si divide in quattro gruppi, per vedere se esiste una relazione congiunta tra più caratteristiche, essere sposati o non sposati e appartenere a una certa etnia, stilizzata come persona di colore o non di colore. Non è un esempio molto articolato e serve a dare l'idea.
+>
+> Nell'economia del lavoro il matrimonio è considerato un'approssimazione del livello di impegno di lungo periodo di una persona (commitment), che può avere un impatto sulla relazione tra salario e lavoro. Chi è sposato potrebbe avere una visione di più lungo periodo, perché fa più fatica a licenziarsi e a spostarsi altrove, magari in un'altra parte del mondo, dovendo ragionare in contesti più complessi. Lo stato civile entra quindi nel modello come proxy del commitment, ed è solo un'approssimazione.
+>
+> La variabile dipendente è il logaritmo del salario, che permette di interpretare le variazioni in termini percentuali. L'esperienza indica da quanti anni si lavora, la tenure da quanti anni si lavora nell'impiego attuale: si può lavorare da dieci anni ma solo da cinque in una certa banca, e allora la tenure è cinque e l'esperienza dieci. La variabile south indica se il lavoratore viene dal sud o dal nord degli Stati Uniti, e un'altra variabile se vive in una città oppure in campagna. Le quattro categorie coprono tutte le persone del campione, senza che nessuno rimanga fuori e senza sovrapposizioni: la somma delle quattro dummy è 1, perché per ogni persona una sola vale 1 e le altre valgono 0, e c'è quindi un problema di collinearità esatta.
+>
+> La domanda di ricerca è se, a parità di altre caratteristiche (stesso livello di istruzione, stessa esperienza, stessa tenure, stesso luogo di residenza), ci sia una differenza statisticamente significativa tra i lavoratori sposati di colore e quelli sposati non di colore, cioè, a parità di stato civile, tra persone di colore e non di colore. Non basta sapere che il differenziale stimato è negativo, perché l'errore di stima potrebbe essere abbastanza grande da rendere il valore stimato non rilevante, al netto dell'errore campionario: serve una statistica.
+>
+> Il test $t$ sul differenziale richiede un denominatore che non è immediato da calcolare, pur essendo possibile: lo standard error è la radice quadrata di $\operatorname{Var}(\hat\beta_6) + \operatorname{Var}(\hat\beta_8) - 2\operatorname{Cov}(\hat\beta_6, \hat\beta_8)$, e bisogna cercare i vari pezzi, in particolare la covarianza. I calcoli andrebbero fatti a mano e il docente non intende farli. Il problema economico richiede dunque una combinazione lineare di parametri su cui fare inferenza.
+
 ## Perché un test t ripetuto non è una soluzione valida per ipotesi congiunte
 
 > [!note] Dimostrazione
@@ -99,6 +110,13 @@ generated: 2026-07-10
 > ossia la probabilità di rigettare erroneamente l'ipotesi nulla è circa $3\times\alpha$. Con la strategia naïve, quindi, si perde il controllo sul vero livello di significatività del test.
 
 *(slide 6–8)*
+
+> [!lezione] Dalla lezione del 20 novembre 2026: perché guardare tre test uno dopo l'altro fa perdere il controllo dell'errore
+> Nel secondo esempio ci si chiede se tre regressori siano utili complessivamente per prevedere $y$: è un ragionamento puramente statistico, che richiede di verificare se i tre coefficienti sono tutti uguali a zero oppure se almeno uno è diverso da zero. È un'ipotesi composta, in cui tre ipotesi nulle su tre parametri si confrontano con l'alternativa che almeno un coefficiente sia diverso da zero. L'idea ingenua di calcolare tre test $t$ non funziona perché si perde il controllo sulla probabilità di errore.
+>
+> Un test su un unico parametro fissa la probabilità dell'errore del primo tipo, cioè di dichiarare vera l'alternativa quando non lo è, per esempio al 5%: nel 95% dei casi non si commette quell'errore. Nella sequenza di tre test si ipotizza, come semplificazione formale, che i test su $\beta_1$, $\beta_2$ e $\beta_3$ siano indipendenti. Non lo sono, perché per calcolare le tre statistiche si usa sempre la stessa $y$ negli stimatori, ma si finge che lo siano per rendere più chiara l'intuizione. La probabilità di non sbagliare in nessuno dei tre è il prodotto delle tre probabilità, $0{,}95 \cdot 0{,}95 \cdot 0{,}95$, circa 86%, quindi la probabilità di errore complessiva è circa 14% o più: in una sequenza di test, tutti con probabilità di errore tollerabile del 5%, l'errore complessivo diventa 14%, 16% o simili. Il calcolo esatto con tre test indipendenti, ciascuno al 5%, dà $1 - 0{,}95^3 \approx 14{,}3\%$: il 16% non discende da questo calcolo.
+>
+> Guardando tre test singolarmente quando si vorrebbe un test congiunto si perde completamente il controllo sulla probabilità di errore che si è disposti a tollerare per prendere una decisione. Quando si decide non si sa quanto si sbaglia: di fatto si decide a caso, senza alcun benchmark a cui aggrapparsi. Serve quindi una strategia diversa, che non guardi tre test in sequenza ma produca un test congiunto.
 
 ## Restrizioni lineari: definizione generale
 

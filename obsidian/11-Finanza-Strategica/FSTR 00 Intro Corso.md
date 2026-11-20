@@ -79,9 +79,25 @@ La valutazione si svolge con un'unica prova scritta in aula, della durata di due
 >
 > Delle parti già svolte devono essere chiari i metodi di valutazione e il ragionamento sui flussi di cassa. I vari flussi di cassa vanno tenuti a mente, perché diventano importanti soprattutto quando si guarda l'azienda nel suo complesso.
 
+> [!lezione] Dalla lezione del 20 novembre 2026: studio dal libro e prova d'esame
+> La lezione tratta una parte teorica; martedì si faranno esempi ed esercizi. Esempi ed esercizi sono comunque finalizzati a ciò che sarà chiesto nella prova d'esame, e si cerca di proporre esempi numerici.
+>
+> Il docente precisa che non c'è nulla di segreto: quanto verrà chiesto nella prova non riserva sorprese rispetto al programma d'esame, e lo scopo è capire se i concetti visti insieme sono stati acquisiti.
+>
+> Il docente raccomanda di non studiare solo dalle slide, nemmeno per la teoria. Il libro è di una semplicità notevole e, seguito insieme alle slide, risulta comprensibile. La parte teorica va letta e gli esercizi vanno fatti, perché a lezione i concetti (le logiche dell'equity value e dell'enterprise value, i progetti, i vantaggi di applicare un metodo di valutazione di un progetto di investimento invece di un altro) sono visti in modo sommario, mentre nel libro sono spiegati molto meglio. Leggerli serve a prepararsi all'esame, ma anche a capirli.
+>
+> Il libro propone, a quanto ricorda il docente, un esempio alla fine di ogni capitolo e offre quindi poco materiale per gli esercizi. Il docente ne mette a disposizione di più di quelli svolti in aula, altrimenti le lezioni si ridurrebbero a fare esercizi: in aula se ne svolge qualcuno per ogni tipo, poi ci si esercita da soli.
+
 ### Testi di riferimento
 
 Il testo di riferimento è F. Beltrame, G.S. Bertinetti, A. Sclip, *Analisi e valutazione finanziaria d'impresa*, G. Giappichelli Editore, 2021. Al manuale si affiancano i supporti didattici del corso e materiale supplementare, per esempio articoli scientifici.
+
+> [!lezione] Dalla lezione del 20 novembre 2026: i capitoli del libro e il seguito del corso
+> Uno studente chiede quali capitoli del libro approfondiscano il costo del capitale e gli argomenti collegati. Il docente indica il capitolo 7 come quello visto il giorno prima: tutto il CAPM e il premio per il rischio, con le alternative 1 e 2. Nel capitolo 8 si trova il DCF, e la lezione è arrivata fino al paragrafo 8.4.
+>
+> Del capitolo 8 non si svolge in aula la parte sul sovraindebitamento. Non occorre studiare il paragrafo 8.5, sugli effetti negativi dell'indebitamento, mentre il resto del capitolo va studiato. I sanity check, parte del capitolo 8, si vedranno più avanti.
+>
+> Il modulo sul DCF è ancora in corso. Il docente indica come seguito il capitolo 9, sulle sinergie, e il capitolo 10, e nell'ultima settimana il modulo su due diligence e deal. Quest'ultima parte non è nel libro: ci si basa sulle slide fornite dal docente e su quelle che proietterà KPMG, che dovrebbe intervenire dopo.
 
 ## Gli strumenti di analisi
 
