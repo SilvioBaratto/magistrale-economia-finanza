@@ -1,7 +1,7 @@
 ---
 corso: Econometria
 data: 2026-11-12
-fonte: Materiali/audio/econometria/econometria_2026-11-12.txt
+fonte: Audio/econometria/econometria_2026-11-12.txt
 tipo: appunti-sintetici
 tags: [appunti-sintetici, econometria]
 revisione: sintesi a punti della nota fedele della stessa lezione

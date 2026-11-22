@@ -1,7 +1,7 @@
 ---
 corso: Econometria
 data: 2026-11-19
-fonte: Materiali/audio/econometria/econometria_2026-11-19.txt
+fonte: Audio/econometria/econometria_2026-11-19.txt
 tipo: appunti-lezione
 tags: [appunti, econometria]
 revisione: trascrizione gpt-transcribe riscritta in stile accademico (humanizer)

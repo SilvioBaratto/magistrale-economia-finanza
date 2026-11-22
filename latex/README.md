@@ -5,9 +5,10 @@ filtro condivisi:
 
 | Script | Da | A |
 |---|---|---|
-| `build.py` | vault Obsidian (`../obsidian/`) | una dispensa per insegnamento in `../dispense/`, più un volume unico |
+| `build.py` | vault Obsidian (`../obsidian/`) | una dispensa per insegnamento in `../dispense/` |
 | `build_esami.py` | materiale d'esame (`esami/<corso>/src/`) | un PDF per sorgente in `../esami/<corso>/`, più il volume unico di ogni corso |
 | `build_appunti.py` | appunti delle lezioni (`../obsidian/<Materia>/appunti/*.md`, scritti dalla skill `appunti-lezione`) | un PDF per insegnamento in `../dispense/appunti/`, una lezione per capitolo in ordine di data (`make appunti`) |
+| `build_formulari.py` | formulari (`../Formulari/Formulario_<Corso>.md`) | un PDF accanto a ogni sorgente, nella stessa cartella (`make formulari`) |
 
 Nulla viene scritto dentro `../obsidian/`. Il materiale d'esame di ogni corso ha il suo README:
 
@@ -27,12 +28,11 @@ Nulla viene scritto dentro `../obsidian/`. Il materiale d'esame di ogni corso ha
 python3 build.py --list                    # insegnamenti e numero di capitoli
 python3 build.py --all                     # un PDF per insegnamento -> ../dispense/
 python3 build.py --subject 01-Econometria  # solo un insegnamento
-python3 build.py --all --combined          # aggiunge ../dispense/00-dispense-complete.pdf
 python3 build.py --all --toc-depth 2       # indice con capitoli + sezioni
 python3 build.py --all --keep              # conserva .md intermedi e file ausiliari LaTeX
 ```
 
-Oppure `make`, `make list`, `make combined`, `make sections`, `make clean`.
+Oppure `make`, `make list`, `make sections`, `make clean`.
 Per il materiale d'esame `make esami` e `make esami-volume` (`make verifica` per le tracce d'orale); `make everything`
 ricompila ogni PDF del repository, `make figure` e `make figure-esami`
 rigenerano le figure.
@@ -44,6 +44,7 @@ rigenerano le figure.
 | pandoc    | 3.8.2            | `brew install pandoc` |
 | XeLaTeX + latexmk | TeX Live 2025 | font Latin Modern (OpenType) + Latin Modern Math |
 | Python    | 3.12             | build: libreria standard; figure: numpy, scipy, matplotlib, pandas, statsmodels |
+| poppler   | 26.02            | `brew install poppler`: `pdftotext`, `pdftoppm`, `pdfimages`, `pdfinfo`, usati dalla skill `genera-dispensa` per leggere e controllare i PDF |
 
 ## Pipeline
 

@@ -1,7 +1,7 @@
 ---
 corso: Finanza Strategica
 data: 2026-11-10
-fonte: Materiali/audio/finanza_strategica/finanza_strategica_2026-11-10.txt
+fonte: Audio/finanza_strategica/finanza_strategica_2026-11-10.txt
 tipo: appunti-sintetici
 tags: [appunti-sintetici, finanza-strategica]
 revisione: sintesi a punti della nota fedele della stessa lezione

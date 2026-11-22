@@ -1,20 +1,20 @@
 PY ?= python3
 
-.PHONY: all list combined sections appunti esami esami-volume esercitazioni verifica verifica-simulati figure figure-esami everything clean distclean
+.PHONY: all list sections appunti formulari esami esami-volume esercitazioni verifica verifica-simulati figure figure-esami everything clean distclean
 all:            ## build one PDF per subject
 	$(PY) build.py --all
 
 list:           ## show subjects and chapter counts
 	$(PY) build.py --list
 
-combined:       ## build every subject + the single-volume edition
-	$(PY) build.py --all --combined
-
 sections:       ## build with a two-level table of contents
 	$(PY) build.py --all --toc-depth 2
 
 appunti:        ## merge each course's lecture notes (obsidian/<corso>/appunti/) into ../dispense/appunti/<corso>.pdf
 	$(PY) build_appunti.py --all
+
+formulari:      ## build the PDF of every formulary (../Formulari/Formulario_<corso>.md) next to its source
+	$(PY) build_formulari.py --all
 
 esami:          ## build the exam material of every course into ../esami/<corso>/
 	$(PY) build_esami.py --all
@@ -39,10 +39,10 @@ figure:         ## regenerate the figures of the dispense
 figure-esami:   ## regenerate the figures of the exam solutions
 	for f in esami/econometria/figure/*/plots.py; do $(PY) "$$f" || exit 1; done
 
-everything: combined esami esami-volume   ## every PDF of the repository
+everything: all esami esami-volume formulari   ## every PDF of the repository
 
 clean:          ## remove LaTeX intermediates
 	rm -rf tex/.aux-* build/*.md build/esami-* build/esercitazioni-*
 
 distclean: clean
-	rm -f tex/*.tex ../dispense/*.pdf ../esami/*/*.pdf
+	rm -f tex/*.tex ../dispense/*.pdf ../esami/*/*.pdf ../Formulari/*.pdf

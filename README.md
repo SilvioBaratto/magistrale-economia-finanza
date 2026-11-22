@@ -2,7 +2,8 @@
 
 Appunti di studio per la Laurea Magistrale in **Economia e Finanza**
 dell'Università Ca' Foscari Venezia, A.A. 2026/2027: le note di ogni
-insegnamento in formato Obsidian, le dispense PDF composte da quelle note e gli
+insegnamento in formato Obsidian, le dispense PDF composte da quelle note, i
+formulari di Econometria e Finanza Strategica e gli
 esami di Econometria svolti passo per passo, con tutte le figure, le
 esercitazioni di preparazione (esercizi e soluzioni), le tracce per l'orale di
 Legislazione Bancaria e la banca di domande del test di ingresso.
@@ -19,13 +20,8 @@ Un PDF per insegnamento, generato dalle note Obsidian.
 | Econometria | EM0004 | [PDF](dispense/01-econometria.pdf) | 169 | [note](obsidian/01-Econometria/) |
 | Legislazione Bancaria — modulo 1 | EM2101 | [PDF](dispense/03-legislazione-bancaria-1.pdf) | 197 | [note](obsidian/03-Legislazione-Bancaria-1/) |
 | Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 205 | [note](obsidian/04-Legislazione-Bancaria-2/) |
-| Economia dei Mercati e degli Investimenti Finanziari — modulo 1 | EM5002 | [PDF](dispense/05-economia-mercati-investimenti-1.pdf) | 269 | [note](obsidian/05-Economia-Mercati-Investimenti-1/) |
-| Gestione della Banca | EM2102 | [PDF](dispense/07-gestione-della-banca.pdf) | 89 | [note](obsidian/07-Gestione-della-Banca/) |
-| Diritto del Mercato Finanziario | EM0001 | [PDF](dispense/08-diritto-mercato-finanziario.pdf) | 107 | [note](obsidian/08-Diritto-Mercato-Finanziario/) |
-| Metodi per la Gestione dei Portafogli Personali | EM5011 | [PDF](dispense/09-metodi-portafogli.pdf) | 155 | [note](obsidian/09-Metodi-Portafogli/) |
-| Misurazione del Rischio | EM5012 | [PDF](dispense/10-misurazione-rischio.pdf) | 7 | [note](obsidian/10-Misurazione-Rischio/) |
 | Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 191 | [note](obsidian/11-Finanza-Strategica/) |
-| **Volume unico** (tutti gli insegnamenti) | | [PDF](dispense/00-dispense-complete.pdf) | 1387 | |
+| 14-Economia-Rischio-Assicurazioni |  | [PDF](dispense/14-economia-rischio-assicurazioni.pdf) | 114 | [note](obsidian/14-Economia-Rischio-Assicurazioni/) |
 | 04-legislazione-bancaria-2-sintesi | | [PDF](dispense/04-legislazione-bancaria-2-sintesi.pdf) | 100 | |
 
 ## Appunti delle lezioni
@@ -77,6 +73,16 @@ tutte le lezioni di un insegnamento in ordine di data.
 | 17/11/2026 | Metodi di valutazione degli investimenti e opzioni reali | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-17%20Metodi%20di%20valutazione%20degli%20investimenti%20e%20opzioni%20reali.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-17%20Esercizi%20sui%20metodi%20di%20valutazione%20e%20opzioni%20reali.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-17%20Esercizi%20sui%20metodi%20di%20valutazione%20e%20opzioni%20reali.md) |
 | 19/11/2026 | Costo del capitale proprio e introduzione ai DCF | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-19%20Costo%20del%20capitale%20proprio%20e%20introduzione%20ai%20DCF.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-19%20Costo%20del%20capitale%20proprio%2C%20rischio%20paese%20e%20beta.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-19%20Costo%20del%20capitale%20proprio%2C%20rischio%20paese%20e%20beta.md) |
 | 20/11/2026 | Enterprise value, PFN, NOPAT e modelli DCF | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-20%20Enterprise%20value%2C%20PFN%2C%20NOPAT%20e%20modelli%20DCF.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-20%20Enterprise%20value%2C%20PFN%20e%20NOPAT%20nei%20metodi%20DCF.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-20%20Enterprise%20value%2C%20PFN%20e%20NOPAT%20nei%20metodi%20DCF.md) |
+
+## Formulari
+
+Per ogni formula: quando si usa, come si decide e la trappola tipica. Il simbolo †
+segna le formule che le slide non scrivono. Appunti di studio, non materiale dei docenti.
+
+| Formulario | PDF | Pagine | Sorgente |
+|---|---|---|---|
+| Econometria — formulario | [PDF](Formulari/Formulario_Econometria.pdf) | 40 | [sorgente](Formulari/Formulario_Econometria.md) |
+| Finanza Strategica — formulario | [PDF](Formulari/Formulario_Finanza-Strategica.pdf) | 24 | [sorgente](Formulari/Formulario_Finanza-Strategica.md) |
 
 ## Esami svolti — Econometria
 
@@ -182,11 +188,13 @@ statistica), organizzate per materia e argomento.
 │   ├── legislazione-bancaria-1/  tracce d'orale, modulo 1
 │   ├── legislazione-bancaria-2/  tracce d'orale, modulo 2
 │   └── test-ingresso/            test di ingresso EMR20, domande e soluzioni
+├── Formulari/             formulari per corso (sorgente .md e PDF)
 ├── obsidian/              note Obsidian, una cartella per insegnamento (+ immagini in assets/);
 │                          appunti*/ = le note delle lezioni nelle tre versioni
 └── latex/                 l'unica soluzione LaTeX: template, filtri, script, figure
     ├── build.py           dispense  (obsidian/ -> dispense/)
     ├── build_esami.py     esami     (latex/esami/<corso>/ -> esami/<corso>/)
+    ├── build_formulari.py formulari (Formulari/*.md -> Formulari/*.pdf)
     ├── verifica_orale.py  controllo di formato delle tracce d'orale
     ├── esami/<corso>/     sorgenti (e figure) del materiale d'esame
     └── figure-src/        script e dati delle figure delle dispense
@@ -208,9 +216,10 @@ anche direttamente su GitHub.
 
 ```bash
 cd latex
-make everything        # tutte le dispense e tutto il materiale d'esame
-make combined          # solo le dispense (+ volume unico)
+make everything        # dispense, formulari e tutto il materiale d'esame
+make all               # solo le dispense
 make esami             # solo il materiale d'esame, tutti i corsi
+make formulari         # i formulari (PDF accanto ai sorgenti, in ../Formulari/)
 make esercitazioni     # le esercitazioni di Econometria (24 PDF)
 make figure            # rigenera le figure delle dispense
 ```
