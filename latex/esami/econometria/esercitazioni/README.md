@@ -1,7 +1,6 @@
 # Esercitazioni di Econometria
 
 Esercizi di preparazione all'esame, dalle fondamenta di probabilità e statistica al livello delle domande d'appello. In `esami/econometria/esercitazioni/` ci sono **24 PDF**: per ognuno degli 8 moduli e dei 4 appelli simulati, un PDF di soli **esercizi** e uno di sole **soluzioni** (con richiamo, svolgimento, errore tipico, risposta da scrivere in esame e un grafico per ogni esercizio). Ogni numero che compare è prodotto da codice Python (dati sintetici, tabelle in stile gretl) e ricalcolato da un risolutore indipendente.
-
 | Parte | Cartella | Esercizi | Nome dei PDF |
 |---|---|---|---|
 | 00 Fondamenta di probabilità e statistica | `moduli/00-*` | 14 | `ECON_Esercizi_00_Fondamenta-probabilita-statistica`, `ECON_Soluzioni_00_...` |

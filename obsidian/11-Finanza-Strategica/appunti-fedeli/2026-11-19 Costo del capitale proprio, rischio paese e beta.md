@@ -1,7 +1,7 @@
 ---
 corso: Finanza Strategica
 data: 2026-11-19
-fonte: Materiali/audio/finanza_strategica/finanza_strategica_2026-11-19.txt
+fonte: Audio/finanza_strategica/finanza_strategica_2026-11-19.txt
 tipo: appunti-fedeli
 tags: [appunti-fedeli, finanza-strategica]
 revisione: trascrizione gpt-transcribe ripulita, fedele al parlato

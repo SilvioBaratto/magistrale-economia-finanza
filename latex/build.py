@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """Build professional LaTeX/PDF dispense from the Obsidian vault.
 
-One PDF per subject (folder of ../obsidian), plus an optional combined volume.
+One PDF per subject (folder of ../obsidian).
 
     python3 build.py --list
     python3 build.py --all
     python3 build.py --subject 01-Econometria
-    python3 build.py --all --combined
 
 Pipeline: Obsidian markdown -> normalized markdown -> pandoc (+lua filter,
 custom template) -> XeLaTeX (latexmk) -> PDF.
@@ -509,7 +508,6 @@ def main() -> int:
     ap.add_argument("--vault", type=Path, default=VAULT, help="Obsidian vault root")
     ap.add_argument("--subject", action="append", default=[], help="folder name (repeatable)")
     ap.add_argument("--all", action="store_true", help="build every subject")
-    ap.add_argument("--combined", action="store_true", help="also build one volume with all subjects")
     ap.add_argument("--list", action="store_true", help="list subjects and chapter counts")
     ap.add_argument("--toc-depth", type=int, default=1,
                     help="1 = solo capitoli (default), 2 = anche le sezioni")
@@ -542,24 +540,6 @@ def main() -> int:
         print(f"==> {subject.title} ({len(subject.chapters)} capitoli)")
         pdf = render(subject.slug, subject_markdown(subject, anchors, with_source),
                      subject_meta(subject), args.toc_depth, args.keep)
-        print(f"    {pdf.relative_to(ROOT.parent)}")
-
-    if args.combined:
-        print("==> Volume unico")
-        chunks = []
-        for subject in subjects:
-            chunks.append(f"\\part{{{subject.title}}}\n")
-            chunks.append(subject_markdown(subject, anchors, with_source))
-        meta = {
-            "title": "Economia e Finanza",
-            "subtitle": "Dispense complete del corso di laurea magistrale",
-            "author": AUTHOR, "date": DATE,
-            "university": UNIVERSITY, "department": DEPARTMENT, "degree": DEGREE,
-            "stats": f"{len(subjects)} insegnamenti \u00b7 "
-                     f"{sum(len(s.chapters) for s in subjects)} capitoli",
-            "disclaimer": DISCLAIMER,
-        }
-        pdf = render("00-dispense-complete", "\n".join(chunks), meta, args.toc_depth, args.keep)
         print(f"    {pdf.relative_to(ROOT.parent)}")
 
     return 0
