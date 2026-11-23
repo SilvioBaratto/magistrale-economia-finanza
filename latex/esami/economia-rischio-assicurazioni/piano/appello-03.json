@@ -1,0 +1,573 @@
+{
+  "appello": 3,
+  "punti_totali": 100,
+  "angoli": {
+    "A": "Un agente CARA u(W) = −e^{−λW}/λ: misure, premio in forma chiusa, prudenza e DARA debole, direzione (3)⇒(2) dell'equivalenza fra le tre misure (un premio sempre ≥ per ogni lotteria a media nulla implica A₂ ≥ A₁, con Taylor del premio per kX in k = 0).",
+    "B": "Lotterie e utilità attesa (ERA 02) con u = √x su premi quadrati perfetti: lotteria composta, CE e premio con E[X] ≠ 0, urna di Ellsberg con utilità max-min, perché l'utilità attesa fallisce (manca il presupposto di probabilità oggettive e note).",
+    "C": "Condivisione del rischio (applicazioni di ERA 04) con B e p nuovi: un solo agente colpito (visto da chi è colpito e da chi entra), shock indipendenti N = 1 contro N = 2.",
+    "D": "Screening (ERA 07) al posto dell'azzardo morale: pendenza delle curve di indifferenza e single-crossing, copertura piena per l'alto rischio, separante contro fallimento del mercato.",
+    "E": "Portafoglio con CRRA e tasso privo di rischio r = 10% (w0 = 1,1 W, vincolo α ≤ W): α* in forma chiusa per ln e −1/c (ricchezza e avversione); concavità di h(y) = y u'(w0 + y) e condizioni per le CRRA. L'argomento di u è c, W indica solo la ricchezza iniziale."
+  },
+  "domande": [
+    {
+      "id": "A.1",
+      "unita": [
+        "U04"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Le funzioni CARA e CRRA"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Avversione assoluta e avversione relativa"
+        }
+      ],
+      "descrizione": "Facile. u(W) = −e^{−λW}/λ con λ nuovo (non 0,7): A(W) e RR(W); l'utilità è CARA? è CRRA? Dichiarare che λ è il parametro CARA (non il moltiplicatore di ERA 08). Non riusare i premi 0 e ln 3 del Mock.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "A(W) = 2",
+          "etichetta": "avversione assoluta A(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "RR(W) = 2W, crescente in W",
+          "etichetta": "avversione relativa RR(W)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "si",
+          "etichetta": "l'utilità è CARA (si o no)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "no",
+          "etichetta": "l'utilità è CRRA (si o no)"
+        }
+      ]
+    },
+    {
+      "id": "A.2",
+      "unita": [
+        "U05"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Equivalente certo e premio per il rischio"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Condizioni equivalenti per il DARA"
+        }
+      ],
+      "descrizione": "Media. Lotteria X a media nulla, anche non simmetrica, a ricchezza w1, con λ e valori scelti perché E[e^{−λX}] sia razionale: CE e premio in forma chiusa (il risultato può restare come logaritmo diviso per λ, come nel Mock: il testo dice che si accetta la forma chiusa). Dichiarare CE livello di ricchezza e R = w − CE; la ricchezza si chiama w, senza pedice.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 0.4325,
+          "tolleranza": 0.0001,
+          "etichetta": "premio per il rischio R, in euro"
+        },
+        {
+          "tipo": "numero",
+          "valore": 4.5675,
+          "tolleranza": 0.0001,
+          "etichetta": "equivalente certo CE, in euro (è una ricchezza)"
+        }
+      ]
+    },
+    {
+      "id": "A.3",
+      "unita": [
+        "U07"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Prudenza e avversione assoluta"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Classificare le tre utilità di riferimento"
+        }
+      ],
+      "descrizione": "Media. Calcola P(W) e A'(W), verifica A' = A(A − P) e di' se l'utilità è DARA; poi di', senza ricalcolarlo, come varia con w il premio di una lotteria qualunque. Dichiarare la convenzione su DARA (debole A' ≤ 0 con la CARA come caso di bordo, o stretta): la chiave dipende da questa scelta.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "P(W) = 2",
+          "etichetta": "prudenza assoluta P(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "A'(W) = 0, uguale ad A(A - P)",
+          "etichetta": "derivata A'(W)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "si",
+          "etichetta": "l'utilità è DARA nel senso debole definito nei Dati (si o no)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "no",
+          "etichetta": "il premio per il rischio può crescere con la ricchezza iniziale w (si o no)"
+        }
+      ]
+    },
+    {
+      "id": "A.4",
+      "unita": [
+        "U06"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Dal premio per il rischio all'avversione assoluta"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Il premio per lotterie piccole"
+        }
+      ],
+      "descrizione": "Difficile. Max 3 righe: direzione (3)⇒(2) dell'equivalenza fra le tre misure, non usata dagli altri appelli. Un secondo agente con u2' > 0 che a ogni w paga un premio ≥ R1 per ogni lotteria a media nulla: si può concludere A2(W) ≥ A1(W)? Perché? Consiglio di sola direzione: lo sviluppo di Taylor del premio per kX in k = 0.",
+      "chiave": [
+        {
+          "tipo": "esito",
+          "valore": "si",
+          "etichetta": "A2(W) >= A1(W) per ogni W (si o no)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "per la lotteria kX, con X non degenere a media nulla, R_i(k) = 1/2 A_i E[X^2] k^2 + o(k^2) e R_2(k) >= R_1(k); si divide per k^2 e si fa k -> 0: A_2(w) >= A_1(w), con E[X^2] > 0",
+          "etichetta": "perché: come si passa da R2 >= R1 a A2 >= A1"
+        }
+      ]
+    },
+    {
+      "id": "B.1",
+      "unita": [
+        "U01"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 02",
+          "sezione": "Lotterie semplici e composte"
+        }
+      ],
+      "descrizione": "Facile. Lotteria composta in due stadi su tre premi x1 < x2 < x3 quadrati perfetti (nuovi): riduci alla lotteria semplice e calcolane il valore atteso. Niente coordinate nel triangolo di Machina (tolte per alleggerire il carico).",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "(1/2, 1/4, 1/4)",
+          "etichetta": "lotteria semplice equivalente (pi1, pi2, pi3)"
+        },
+        {
+          "tipo": "numero",
+          "valore": 27,
+          "tolleranza": 0.01,
+          "etichetta": "valore atteso E[Q], in euro"
+        }
+      ]
+    },
+    {
+      "id": "B.2",
+      "unita": [
+        "U05"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Equivalente certo e premio per il rischio"
+        }
+      ],
+      "descrizione": "Media. Con u = √x: utilità attesa ed equivalente certo della lotteria ridotta, e premio per il rischio. Dichiarare la definizione usata: premio = valore atteso − CE (la lotteria non ha media nulla; in ERA 03 R = w − CE vale per E[X] = 0).",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 4,
+          "tolleranza": 0.01,
+          "etichetta": "utilità attesa E[u(Q)]"
+        },
+        {
+          "tipo": "numero",
+          "valore": 16,
+          "tolleranza": 0.01,
+          "etichetta": "equivalente certo CE, in euro"
+        },
+        {
+          "tipo": "numero",
+          "valore": 11,
+          "tolleranza": 0.01,
+          "etichetta": "premio per il rischio R = E[Q] - CE, in euro"
+        }
+      ]
+    },
+    {
+      "id": "B.3",
+      "unita": [
+        "U02"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 02",
+          "sezione": "Il paradosso di Ellsberg"
+        },
+        {
+          "nota": "ERA 02",
+          "sezione": "Avversione all'ambiguità"
+        }
+      ],
+      "descrizione": "Media. Urna di 10 palline (4 rosse note, 6 blu o verdi con almeno 2 blu), quattro scommesse T1-T4 che pagano x3 = 81 se l'evento e x1 = 1 altrimenti, u = radice: utilità max-min sull'insieme di modelli dato nel testo; le preferenze T1 > T2 e T4 > T3 del soggetto sono spiegate? Il minimo si prende sull'utilità attesa al variare del modello, non sui premi.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 4.2,
+          "tolleranza": 0.01,
+          "etichetta": "utilità max-min della scommessa T1, con u=√x non normalizzata"
+        },
+        {
+          "tipo": "numero",
+          "valore": 2.6,
+          "tolleranza": 0.01,
+          "etichetta": "utilità max-min della scommessa T2, con u=√x non normalizzata"
+        },
+        {
+          "tipo": "numero",
+          "valore": 4.2,
+          "tolleranza": 0.01,
+          "etichetta": "utilità max-min della scommessa T3, con u=√x non normalizzata"
+        },
+        {
+          "tipo": "numero",
+          "valore": 5.8,
+          "tolleranza": 0.01,
+          "etichetta": "utilità max-min della scommessa T4, con u=√x non normalizzata"
+        },
+        {
+          "tipo": "esito",
+          "valore": "si",
+          "etichetta": "le preferenze del soggetto sono spiegate da un agente max-min (si o no)"
+        }
+      ]
+    },
+    {
+      "id": "B.4",
+      "unita": [
+        "U02",
+        "U01"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 02",
+          "sezione": "Il paradosso di Ellsberg"
+        },
+        {
+          "nota": "ERA 02",
+          "sezione": "Il teorema dell'utilità attesa"
+        }
+      ],
+      "descrizione": "Difficile. Max 3 righe: perché nessuna probabilità soggettiva del colore ignoto rende le scelte tipiche di B.3 compatibili con l'utilità attesa, e quale presupposto sulle probabilità richiesto dal teorema viene a mancare (probabilità oggettive e note; non l'indipendenza, che il testo non nomina)? Consiglio di sola direzione. Primo appello che copre Ellsberg (l'01 copriva Allais).",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "con b = P(blu) e P(rossa) = 2/5: T1 > T2 richiede b < 2/5, T4 > T3 richiede b > 2/5, contraddizione per ogni b",
+          "etichetta": "perché nessuna probabilità soggettiva del blu rende compatibili le preferenze"
+        },
+        {
+          "tipo": "testo",
+          "valore": "probabilità oggettive e note: qui la composizione blu/verde è ignota (non l'indipendenza)",
+          "etichetta": "presupposto sulle probabilità richiesto dal teorema dell'utilità attesa che viene a mancare"
+        }
+      ]
+    },
+    {
+      "id": "C.1",
+      "unita": [
+        "U08"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Applicazione: condivisione del rischio con un solo agente colpito"
+        }
+      ],
+      "descrizione": "Facile. Agente esposto a una perdita B con probabilità p (nuovi, non B = 1, p = 0,3) che entra in una comunità di due in cui solo lui può essere colpito e la perdita si divide a metà: con u crescente si stabilisce senza ambiguità se preferisce stare solo o nella comunità? Perché? (max 2 righe). Valori = variazioni di reddito (≤ 0); il pedice non è N.",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "G",
+        "etichetta": "situazione preferita dall'agente 1 (S o G)"
+      }
+    },
+    {
+      "id": "C.2",
+      "unita": [
+        "U08"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Applicazione: condivisione del rischio con un solo agente colpito"
+        }
+      ],
+      "descrizione": "Media. Stessa comunità vista dal secondo membro, che da solo non ha rischi: la risposta di C.1 vale anche per lui? Perché? (max 2 righe).",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "S",
+        "etichetta": "situazione preferita dall'agente 2 (S o G)"
+      }
+    },
+    {
+      "id": "C.3",
+      "unita": [
+        "U08",
+        "U09"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Applicazione: condivisione del rischio con shock indipendenti"
+        },
+        {
+          "nota": "ERA 04",
+          "sezione": "Dominanza stocastica del primo ordine"
+        }
+      ],
+      "descrizione": "Media. Ora entrambi i membri subiscono shock indipendenti (perdita B con probabilità p ciascuno) e dividono le perdite: N = 1 contro N = 2. Con u solo crescente si stabilisce quale situazione è preferita? Perché? (max 2 righe). Non riusare N = 2 contro N = 3 della nota.",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "no",
+        "etichetta": "si può stabilire senza ambiguità quale situazione è preferita (si o no)"
+      }
+    },
+    {
+      "id": "C.4",
+      "unita": [
+        "U09"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Il *mean-preserving spread*"
+        },
+        {
+          "nota": "ERA 04",
+          "sezione": "Applicazione: condivisione del rischio con shock indipendenti"
+        }
+      ],
+      "descrizione": "Difficile. Stessa coppia, agente anche avverso al rischio: quale situazione preferisce e perché? (max 2 righe). La soluzione indica il rumore a media condizionata nulla che lega le due distribuzioni.",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "2",
+        "etichetta": "situazione preferita dall'agente avverso al rischio (N = 1 o N = 2: scrivi 1 o 2)"
+      }
+    },
+    {
+      "id": "D.1",
+      "unita": [
+        "U18"
+      ],
+      "tipo": "dimostrazione",
+      "punti": 6,
+      "fonti": [
+        {
+          "nota": "ERA 07",
+          "sezione": "Preferenze e single-crossing"
+        }
+      ],
+      "descrizione": "Media. Modello di screening scritto nel testo (tipi 0 < π_l < π_h < 1, contratto (B, p), EU(B, p; π) = π u(w − p − L + B) + (1 − π) u(w − p)): ricava la pendenza s = dp/dB della curva di indifferenza e mostra che ∂s/∂π > 0 a (B, p) fissato. Notazione: π probabilità, p premio, B in ascissa. Nessun limite di righe; non chiedere l'unicità dell'incrocio.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "s = dp/dB = pi a/(pi a + (1 - pi) b), con a = u'(w - p - L + B) e b = u'(w - p)",
+          "etichetta": "pendenza s della curva di indifferenza"
+        },
+        {
+          "tipo": "testo",
+          "valore": "ds/dpi = ab/(pi a + (1 - pi) b)^2 > 0: nello stesso contratto la curva dell'alto rischio è più ripida (single-crossing)",
+          "etichetta": "derivata di s rispetto a pi e conseguenza per i due tipi"
+        }
+      ]
+    },
+    {
+      "id": "D.2",
+      "unita": [
+        "U18"
+      ],
+      "tipo": "teoria",
+      "punti": 8,
+      "fonti": [
+        {
+          "nota": "ERA 07",
+          "sezione": "Il contratto per l'alto rischio prevede la copertura piena"
+        },
+        {
+          "nota": "ERA 07",
+          "sezione": "Ogni contratto sta sulla propria retta di profitto nullo"
+        }
+      ],
+      "descrizione": "Difficile. Max 3 righe: perché nell'equilibrio separante il contratto dell'alto rischio prevede la copertura piena? Il testo dà come noto che ogni contratto sta sulla retta di profitto nullo del proprio tipo. Consiglio di sola direzione (confronta la curva di indifferenza con quella retta). Diverso dall'appello 01 (copertura parziale del basso rischio).",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "solo con B = L la curva dell'alto rischio è tangente alla sua retta di profitto nullo (a = b, pendenza pi); se B != L la attraversa e da un lato ci sono contratti equivalenti con profitto positivo, che l'altra compagnia offre riducendo di poco il premio",
+        "etichetta": "perché il contratto dell'alto rischio prevede la copertura piena"
+      }
+    },
+    {
+      "id": "D.3",
+      "unita": [
+        "U18",
+        "U17"
+      ],
+      "tipo": "interpretazione",
+      "punti": 6,
+      "fonti": [
+        {
+          "nota": "ERA 07",
+          "sezione": "Esistenza e proprietà dell'equilibrio separante"
+        },
+        {
+          "nota": "ERA 07",
+          "sezione": "La selezione avversa"
+        },
+        {
+          "nota": "ERA 07",
+          "sezione": "Il modello di screening"
+        }
+      ],
+      "descrizione": "Media. Max 3 righe: rispetto all'esito in cui nessuno dei due tipi si assicura (con prezzo unico e pi uniforme su [0, 1], p* = L, nessuna transazione utile), perché l'equilibrio separante, supposto esistente e con indennizzo B_l > 0 per il basso rischio, è un miglioramento paretiano ((0,0) sempre disponibile; alto rischio: ricchezza certa e Jensen stretta; basso rischio: dEU/dB > 0 lungo p = π̲B perché a < b per B < L, con 0 < B_l < L), e perché non è efficiente rispetto alle allocazioni fattibili con informazione perfetta? Non chiedere l'esistenza del separante (la chiede l'appello 04).",
+      "chiave": [
+        {
+          "tipo": "esito",
+          "valore": "si",
+          "etichetta": "l'equilibrio separante è un miglioramento paretiano rispetto all'esito in cui nessuno dei due tipi si assicura (si o no)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "no",
+          "etichetta": "l'equilibrio separante è Pareto efficiente rispetto alle allocazioni fattibili con informazione perfetta (si o no)"
+        }
+      ]
+    },
+    {
+      "id": "E.1",
+      "unita": [
+        "U10",
+        "U11",
+        "U12"
+      ],
+      "tipo": "teoria",
+      "punti": 8,
+      "fonti": [
+        {
+          "nota": "ERA 05",
+          "sezione": "La condizione del primo ordine"
+        },
+        {
+          "nota": "ERA 05",
+          "sezione": "Ricchezza iniziale e investimento"
+        },
+        {
+          "nota": "ERA 05",
+          "sezione": "Avversione al rischio e investimento"
+        }
+      ],
+      "descrizione": "Media. Rendimento netto del titolo rischioso x0 ∈ {−30%, +100%} equiprobabile e r = 10% (quindi x = x0 − r ∈ {−0,4; 0,9} e w0 = 1,1 W): dalla FOC ricava α* in funzione di w0 per u(c) = ln c e per v(c) = −1/c (dati scelti perché la FOC con −1/c si risolva con una radice esatta); controlla α* ≤ W, che qui non è scontato (α*_ln ≈ 0,764 W); di' come variano con w0 ammontare e quota, e spiega con il teorema sull'agente più avverso perché l'ordine fra i due non dipende dai dati. Non riusare r = 0 con −50%/+100% (esempio di ERA 05, 05 E.1). Argomento di u = c, W solo la ricchezza iniziale; rendimenti netti.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "E[x u'(w0 + alpha x)] = 0, cioè 4 u'(w0 - 0,4 alpha) = 9 u'(w0 + 0,9 alpha)",
+          "etichetta": "condizione del primo ordine"
+        },
+        {
+          "tipo": "testo",
+          "valore": "alpha* = (25/36) w0 = (55/72) W, circa 0,764 W, minore di W",
+          "etichetta": "alpha* in funzione di w0 con u(c) = ln c, e controllo alpha* <= W"
+        },
+        {
+          "tipo": "testo",
+          "valore": "alpha* = w0/3 = (11/30) W, circa 0,367 W, minore di W",
+          "etichetta": "alpha* in funzione di w0 con v(c) = -1/c, e controllo alpha* <= W"
+        },
+        {
+          "tipo": "testo",
+          "valore": "l'ammontare cresce in proporzione a w0, la quota alpha*/w0 è costante",
+          "etichetta": "variazione con w0 di ammontare e quota"
+        },
+        {
+          "tipo": "testo",
+          "valore": "investe di più l'agente con ln: v(c) = phi(ln c) con phi(t) = -e^(-t) strettamente concava (A_v = 2/c > 1/c), quindi per il teorema alpha_v* < alpha_ln* per ogni w0 e ogni distribuzione con E[x] > 0 e ottimo interno",
+          "etichetta": "quale agente investe di più e perché l'ordine non dipende dai dati"
+        }
+      ]
+    },
+    {
+      "id": "E.2",
+      "unita": [
+        "U13"
+      ],
+      "tipo": "dimostrazione",
+      "punti": 12,
+      "fonti": [
+        {
+          "nota": "ERA 05",
+          "sezione": "Quando la funzione è concava"
+        },
+        {
+          "nota": "ERA 05",
+          "sezione": "Condizioni per un investimento minore"
+        }
+      ],
+      "descrizione": "Difficile. Dimostrazione guidata: con h(y) = y u'(w0 + y) ricava h''(y) in funzione di RP e P e mostra che RP < 2 e P > 0 bastano per la concavità; poi di' per quali γ una CRRA soddisfa RR < 1, P > 0, RP < 2 e perché col logaritmo la conclusione vale anche se non le soddisfa. Definire RP e P nel testo; il Consiglio non dà u''' = −P u'' né la scomposizione di y. Non ripetere la monotonia (01) né la formulazione del Mock E2.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "h''(y) = -u''(w0 + y) [RP(w0 + y) - 2 - w0 P(w0 + y)]",
+          "etichetta": "(i) h''(y) in funzione di u'', RP, P"
+        },
+        {
+          "tipo": "testo",
+          "valore": "con u'' < 0, h'' <= 0 equivale a 2 - RP + w0 P >= 0: se RP < 2 e P > 0 vale, quindi h è concava",
+          "etichetta": "(ii) concavità di h"
+        },
+        {
+          "tipo": "testo",
+          "valore": "0 < gamma < 1",
+          "etichetta": "(iii) valori di gamma per cui valgono RR < 1, P > 0, RP < 2"
+        },
+        {
+          "tipo": "testo",
+          "valore": "ln: h(y) = y/(w0 + y), h' = w0/(w0 + y)^2 > 0, h'' = -2 w0/(w0 + y)^3 < 0: crescente e concava",
+          "etichetta": "(iv) h per il logaritmo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "corso": "Economia del Rischio e delle Assicurazioni",
+  "sigla": "ERA",
+  "slug": "economia-rischio-assicurazioni",
+  "modalita": [
+    "scritto"
+  ],
+  "scritto": {
+    "durata_min": 90,
+    "punti_totali": 100,
+    "soglia": 55,
+    "n_appelli": 6,
+    "sezioni": [
+      {
+        "id": "A",
+        "tipo": "esercizio",
+        "punti": 20,
+        "righe_max": 3,
+        "descrizione": "Avversione al rischio con una funzione di utilità data: 4 voci da 5 punti, A.1-A.3 calcoli in forma chiusa senza limite di righe, A.4 interpretazione in max 3 righe con «Consiglio»."
+      },
+      {
+        "id": "B",
+        "tipo": "esercizio",
+        "punti": 20,
+        "righe_max": 3,
+        "descrizione": "Esercizio a catena con dati nuovi (nel Mock: equivalente certo e premio per il rischio): 4 voci da 5 punti, B.1-B.3 calcoli, B.4 interpretazione in max 3 righe."
+      },
+      {
+        "id": "C",
+        "tipo": "interpretazione",
+        "punti": 20,
+        "righe_max": 2,
+        "descrizione": "Due coppie di distribuzioni su tre valori; per ciascuna una voce con u crescente e una con u anche concava (o la loro variante): 4 voci da 5 punti, max 2 righe ciascuna, nessun calcolo di utilità attesa."
+      },
+      {
+        "id": "D",
+        "tipo": "teoria",
+        "punti": 20,
+        "righe_max": 3,
+        "descrizione": "Azzardo morale (ERA 08) con il problema della compagnia scritto nel testo: D.1 derivazione formale (6, senza limite), D.2 spiegazione (8, max 3 righe), D.3 implicazione o interpretazione (6, max 3 righe)."
+      },
+      {
+        "id": "E",
+        "tipo": "dimostrazione",
+        "punti": 20,
+        "righe_max": null,
+        "descrizione": "Portafoglio ottimale (ERA 05): E.1 derivazione formale (8), E.2 dimostrazione guidata da un «Consiglio» lungo (12); nessun limite di righe."
+      }
+    ]
+  },
+  "unita": [
+    {
+      "id": "U01",
+      "titolo": "Lotterie, assiomi e teorema dell'utilità attesa (con il triangolo di Machina)",
+      "note": [
+        "ERA 02"
+      ],
+      "peso": 1,
+      "min_appelli": 1
+    },
+    {
+      "id": "U02",
+      "titolo": "I paradossi di Allais ed Ellsberg",
+      "note": [
+        "ERA 02"
+      ],
+      "peso": 1,
+      "min_appelli": 1
+    },
+    {
+      "id": "U03",
+      "titolo": "La disuguaglianza di Jensen e l'avversione al rischio",
+      "note": [
+        "ERA 03"
+      ],
+      "peso": 1,
+      "min_appelli": 1
+    },
+    {
+      "id": "U04",
+      "titolo": "Trasformazione concava, avversione assoluta e relativa, CARA e CRRA",
+      "note": [
+        "ERA 03"
+      ],
+      "peso": 3,
+      "min_appelli": 5
+    },
+    {
+      "id": "U05",
+      "titolo": "Equivalente certo e premio per il rischio",
+      "note": [
+        "ERA 03"
+      ],
+      "peso": 3,
+      "min_appelli": 5
+    },
+    {
+      "id": "U06",
+      "titolo": "Equivalenza fra le tre misure",
+      "note": [
+        "ERA 03"
+      ],
+      "peso": 3,
+      "min_appelli": 5
+    },
+    {
+      "id": "U07",
+      "titolo": "L'effetto ricchezza: prudenza e DARA",
+      "note": [
+        "ERA 03"
+      ],
+      "peso": 3,
+      "min_appelli": 5
+    },
+    {
+      "id": "U08",
+      "titolo": "Dominanza stocastica del primo ordine",
+      "note": [
+        "ERA 04"
+      ],
+      "peso": 2,
+      "min_appelli": 3
+    },
+    {
+      "id": "U09",
+      "titolo": "Dominanza stocastica del secondo ordine e mean-preserving spread",
+      "note": [
+        "ERA 04"
+      ],
+      "peso": 2,
+      "min_appelli": 3
+    },
+    {
+      "id": "U10",
+      "titolo": "Problema di portafoglio: FOC, quando investire, tassazione",
+      "note": [
+        "ERA 05"
+      ],
+      "peso": 3,
+      "min_appelli": 5
+    },
+    {
+      "id": "U11",
+      "titolo": "Avversione al rischio e investimento",
+      "note": [
+        "ERA 05"
+      ],
+      "peso": 2,
+      "min_appelli": 3
+    },
+    {
+      "id": "U12",
+      "titolo": "Ricchezza iniziale e investimento",
+      "note": [
+        "ERA 05"
+      ],
+      "peso": 2,
+      "min_appelli": 3
+    },
+    {
+      "id": "U13",
+      "titolo": "Rischiosità del titolo e investimento",
+      "note": [
+        "ERA 05"
+      ],
+      "peso": 3,
+      "min_appelli": 5
+    },
+    {
+      "id": "U14",
+      "titolo": "Agente rappresentativo, pricing kernel, premio al rischio di mercato, equity premium puzzle",
+      "note": [
+        "ERA 06"
+      ],
+      "peso": 2,
+      "min_appelli": 3
+    },
+    {
+      "id": "U15",
+      "titolo": "Agenti eterogenei (partecipazione limitata) e mercato internazionale",
+      "note": [
+        "ERA 06"
+      ],
+      "peso": 2,
+      "min_appelli": 2
+    },
+    {
+      "id": "U16",
+      "titolo": "Titoli multipli",
+      "note": [
+        "ERA 06"
+      ],
+      "peso": 2,
+      "min_appelli": 3
+    },
+    {
+      "id": "U17",
+      "titolo": "Informazione perfetta e selezione avversa: prezzo di equilibrio",
+      "note": [
+        "ERA 07"
+      ],
+      "peso": 2,
+      "min_appelli": 3
+    },
+    {
+      "id": "U18",
+      "titolo": "Screening: single-crossing ed equilibrio separante",
+      "note": [
+        "ERA 07"
+      ],
+      "peso": 2,
+      "min_appelli": 3
+    },
+    {
+      "id": "U19",
+      "titolo": "Azzardo morale: modello, MLR, benchmark a informazione simmetrica",
+      "note": [
+        "ERA 08"
+      ],
+      "peso": 1,
+      "min_appelli": 1
+    },
+    {
+      "id": "U20",
+      "titolo": "Azzardo morale con informazione asimmetrica: polizza ottima, impegno basso/alto, efficienza",
+      "note": [
+        "ERA 08"
+      ],
+      "peso": 3,
+      "min_appelli": 5
+    }
+  ],
+  "orale": null
+}

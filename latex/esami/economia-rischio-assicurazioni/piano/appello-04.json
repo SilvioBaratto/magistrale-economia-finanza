@@ -1,0 +1,531 @@
+{
+  "appello": 4,
+  "punti_totali": 100,
+  "angoli": {
+    "A": "Utilità quadratica u(W) = W − W²/(2c) su W < c: misure, premio in forma chiusa che cresce con la ricchezza (verso opposto all'01), P = 0 < A, segno del premio per il rischio (Jensen).",
+    "B": "Selezione avversa e screening (ERA 07) con u = ln e dati nuovi: soglia h(p), p** non di equilibrio con π uniforme su un intervallo che non parte da 0, verifica del contratto separante, esistenza con molti bassi rischi.",
+    "C": "Lotteria a media più alta ma più rischiosa (nessun ordine); rendimenti in eccesso con MPS da costruire e investitore con u = √W (le condizioni su RR, P, RP si verificano, non sono date).",
+    "D": "Azzardo morale con numeri: premi e profitti del benchmark e scelta di e*, polizza del benchmark offerta con impegno non osservabile, incentivi nella pratica.",
+    "E": "Prezzo dei titoli (ERA 06) al posto del portafoglio: domanda dell'agente rappresentativo e segno della domanda in α = 0 (derivazione); premio di ciascun titolo con n titoli e rischio idiosincratico (dimostrazione guidata)."
+  },
+  "domande": [
+    {
+      "id": "A.1",
+      "unita": [
+        "U04"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Avversione assoluta e avversione relativa"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Le funzioni CARA e CRRA"
+        }
+      ],
+      "descrizione": "Facile. u(W) = W − W²/(2c) per W < c, con c nuovo: A(W) e RR(W); è CARA? è CRRA? Dichiarare il dominio W < c (u' > 0) e scegliere i dati in modo che tutte le ricchezze finali stiano sotto c. A'(W) non si chiede qui (lo chiede A.3).",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "A(W) = 1/(100 - W)",
+          "etichetta": "avversione assoluta A(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "RR(W) = W/(100 - W)",
+          "etichetta": "avversione relativa RR(W)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "no",
+          "etichetta": "l'utilità ha avversione assoluta costante, CARA (si o no)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "no",
+          "etichetta": "l'utilità ha avversione relativa costante, CRRA (si o no)"
+        }
+      ]
+    },
+    {
+      "id": "A.2",
+      "unita": [
+        "U05"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Equivalente certo e premio per il rischio"
+        }
+      ],
+      "descrizione": "Media. Lotteria ±σ equiprobabile a ricchezza w1: CE e premio in forma chiusa (scritta u come costante meno un quadrato, il calcolo si riduce a una radice; con c − w1 e σ cateti di una terna pitagorica il risultato è intero). Dichiarare R = w − CE (E[X] = 0).",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 63.0,
+          "tolleranza": 0.01,
+          "etichetta": "equivalente certo CE1 a ricchezza 65"
+        },
+        {
+          "tipo": "numero",
+          "valore": 2.0,
+          "tolleranza": 0.01,
+          "etichetta": "premio per il rischio R1 a ricchezza 65"
+        }
+      ]
+    },
+    {
+      "id": "A.3",
+      "unita": [
+        "U07"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Come varia il premio con la ricchezza"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Condizioni equivalenti per il DARA"
+        }
+      ],
+      "descrizione": "Media-difficile. Stessa lotteria a w2 > w1 (scelto con un'altra terna con lo stesso σ): nuovo premio; calcola P(W) e A'(W) e chiedi se R2 > R1 (sì), motivando con il teorema sul DARA: u non è DARA, quindi il teorema non impone che il premio cali e R2 > R1 è compatibile. Verso opposto all'appello 01. Non usare sigle assenti dalle note (IARA).",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 4.0,
+          "tolleranza": 0.01,
+          "etichetta": "premio per il rischio R2 a ricchezza 84"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.0,
+          "tolleranza": 0.01,
+          "etichetta": "prudenza assoluta P(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "A'(W) = 1/(100 - W)^2 > 0",
+          "etichetta": "derivata A'(W)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "si",
+          "etichetta": "il premio R2 è maggiore di R1 (si o no)"
+        }
+      ]
+    },
+    {
+      "id": "A.4",
+      "unita": [
+        "U03",
+        "U05"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Equivalente certo e premio per il rischio"
+        }
+      ],
+      "descrizione": "Media. Max 3 righe, Consiglio che ricorda solo la disuguaglianza di Jensen: perché un agente avverso al rischio ha un premio R ≥ 0 per ogni lotteria a media nulla (E[u(w+X)] ≤ u(w), quindi CE ≤ w).",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "per Jensen E[u(w+X)] <= u(E[w+X]) = u(w), quindi u(CE) <= u(w), CE <= w e R = w - CE >= 0"
+      }
+    },
+    {
+      "id": "B.1",
+      "unita": [
+        "U17"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 07",
+          "sezione": "La congettura sul prezzo e la regola di acquisto"
+        }
+      ],
+      "descrizione": "Facile. u = ln, w e L nuovi (non w = 10, L = 6; non w = 1), con w/(w − L) e w/(w − p) potenze della stessa base: soglia h(p) a un prezzo p dato e confronto con p/L (fra chi compra ci sono consumatori che pagano più della propria polizza equa?). Dichiarare nei Dati che a parità di utilità il consumatore compra e che π è uniforme su [0,4; 0,8].",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 0.5,
+          "tolleranza": 0.01,
+          "etichetta": "soglia h(6)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "si",
+          "etichetta": "comprano anche consumatori con pi L < p (si o no)"
+        }
+      ]
+    },
+    {
+      "id": "B.2",
+      "unita": [
+        "U17"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 07",
+          "sezione": "La congettura sul prezzo e la regola di acquisto"
+        },
+        {
+          "nota": "ERA 07",
+          "sezione": "La selezione avversa"
+        }
+      ],
+      "descrizione": "Media. π uniforme su [π_min, π_max] con π_min > 0 (non [0, 1], già nell'appello 01), dichiarata nei Dati di B: p** = E[π]L, media di π fra gli acquirenti (la soglia h(p**) = h(6) è già in B.1 e non si chiede) e profitto atteso per polizza; p** è un prezzo di equilibrio? Dati scelti perché h(p**) sia esatta; non chiedere il punto fisso p*.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 6.0,
+          "tolleranza": 0.01,
+          "etichetta": "prezzo p** = E[pi] L"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.65,
+          "tolleranza": 0.01,
+          "etichetta": "probabilità media di perdita fra gli acquirenti"
+        },
+        {
+          "tipo": "numero",
+          "valore": -0.5,
+          "tolleranza": 0.01,
+          "etichetta": "profitto atteso per polizza venduta a p**"
+        },
+        {
+          "tipo": "esito",
+          "valore": "no",
+          "etichetta": "p** è un prezzo di equilibrio (si o no)"
+        }
+      ]
+    },
+    {
+      "id": "B.3",
+      "unita": [
+        "U18"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 07",
+          "sezione": "L'equilibrio separante"
+        },
+        {
+          "nota": "ERA 07",
+          "sezione": "Il contratto per il basso rischio sta sulla curva $u_h^c$"
+        }
+      ],
+      "descrizione": "Difficile. Due tipi π_l < π_h con u = ln e ricchezza e perdita proprie di B.3 e B.4 (w = 27, L = 24, π_l = 1/4, π_h = 1/2: B.1-B.2 usano w = 18, L = 10 perché lì w/(w − L) e w/(w − p) siano potenze della stessa base, e con quei dati la verifica del basso rischio non è esatta): contratto dell'alto rischio e sua utilità u_h^c; verifica che il contratto del basso rischio dato nel testo, (8; 2), sta sulla retta p = π_l B e lascia l'alto rischio indifferente (ricchezze 9 e 25). Non chiedere di risolvere il sistema.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 24.0,
+          "tolleranza": 0.01,
+          "etichetta": "indennizzo del contratto psi_h^c"
+        },
+        {
+          "tipo": "numero",
+          "valore": 12.0,
+          "tolleranza": 0.01,
+          "etichetta": "premio del contratto psi_h^c"
+        },
+        {
+          "tipo": "testo",
+          "valore": "ln 15 (≈ 2,708)",
+          "etichetta": "utilità u_h^c che l'alto rischio ricava dal contratto psi_h^c"
+        },
+        {
+          "tipo": "testo",
+          "valore": "p = pi_l B perché 2 = (1/4)*8; l'alto rischio ha ricchezza 9 o 25 e (1/2) ln 9 + (1/2) ln 25 = ln 15 = u_h^c",
+          "etichetta": "verifica del contratto del basso rischio"
+        }
+      ]
+    },
+    {
+      "id": "B.4",
+      "unita": [
+        "U18"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 07",
+          "sezione": "Esistenza e proprietà dell'equilibrio separante"
+        }
+      ],
+      "descrizione": "Media. Max 3 righe: perché, se la quota α di consumatori a basso rischio è alta, l'equilibrio separante può non esistere? Consiglio di sola direzione; non chiedere la soglia numerica di α.",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "con alpha alta una compagnia può offrire un contratto unico appena sopra la retta di profitto nullo del gruppo, che attira entrambi i tipi con profitto positivo"
+      }
+    },
+    {
+      "id": "C.1",
+      "unita": [
+        "U08"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Dominanza stocastica del primo ordine"
+        }
+      ],
+      "descrizione": "Facile. Coppia 1 (p, q) su tre premi in euro nuovi, con q a media maggiore ma più dispersa (c.d.f. che si incrociano): con u crescente si stabilisce senza ambiguità quale si preferisce? Perché? (max 2 righe).",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "no",
+        "etichetta": "la scelta è determinata senza ambiguità dai dati (si o no)"
+      }
+    },
+    {
+      "id": "C.2",
+      "unita": [
+        "U09"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Dominanza stocastica del secondo ordine"
+        }
+      ],
+      "descrizione": "Difficile. Stessa coppia, agente anche avverso al rischio: cambia la risposta? Perché? (max 2 righe). Dati costruiti in modo che nessuna delle due domini l'altra al secondo ordine; la soluzione lo verifica con gli integrali delle c.d.f.",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "no",
+        "etichetta": "la scelta è determinata senza ambiguità dai dati (si o no)"
+      }
+    },
+    {
+      "id": "C.3",
+      "unita": [
+        "U09"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Il *mean-preserving spread*"
+        },
+        {
+          "nota": "ERA 04",
+          "sezione": "Il valore atteso condizionato"
+        }
+      ],
+      "descrizione": "Media. Coppia 2: rendimenti in eccesso di due titoli con la stessa media, F1 più dispersa: esibisci il rumore ε con media condizionata nulla tale che X1 = X2 + ε in distribuzione (max 2 righe o una piccola tabella). Dichiarare rendimenti netti in eccesso.",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "eps = 0 se x2 = -60% o 60%; se x2 = 20%, eps = -80, 0, +40 punti con probabilità 1/4, 1/4, 1/2"
+      }
+    },
+    {
+      "id": "C.4",
+      "unita": [
+        "U13"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 05",
+          "sezione": "Quando la funzione è concava"
+        },
+        {
+          "nota": "ERA 05",
+          "sezione": "Il risultato"
+        }
+      ],
+      "descrizione": "Difficile. Un investitore con u = √z investe almeno tanto nel titolo con F2 quanto in quello con F1? Perché? (max 2 righe). Il testo non dice se le condizioni su RR, P, RP valgono: con √z valgono (RR = 1/2, P > 0, RP = 3/2) e α*(F2) ≥ α*(F1), ottimi interni. Angolo opposto all'appello 02: conclusione per una u data, non il caso generale.",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "si",
+        "etichetta": "vale alpha2* >= alpha1* (si o no)"
+      }
+    },
+    {
+      "id": "D.1",
+      "unita": [
+        "U19"
+      ],
+      "tipo": "dimostrazione",
+      "punti": 6,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "La polizza ottima per un impegno fissato"
+        },
+        {
+          "nota": "ERA 08",
+          "sezione": "La scelta dell'impegno"
+        }
+      ],
+      "descrizione": "Media. Benchmark con impegno osservabile e copertura piena: mostra che p(0) > p(1) dal vincolo di partecipazione attivo; poi, con una tabella π_l(e) per l ∈ {0, 1, 2} e u, w, d(e), ū dati (u^{-1} esplicita), calcola p(0), p(1), Π^FB(0), Π^FB(1) ed e*. Dichiarare d(1) > d(0), π_l(e) > 0, massimo unico. La nota non ha esempi numerici: dati da inventare.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 1.0,
+          "tolleranza": 0.01,
+          "etichetta": "premio p(0)"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.5,
+          "tolleranza": 0.01,
+          "etichetta": "premio p(1)"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.1,
+          "tolleranza": 0.01,
+          "etichetta": "profitto Pi^FB(0)"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.2,
+          "tolleranza": 0.01,
+          "etichetta": "profitto Pi^FB(1)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "1",
+          "etichetta": "impegno e* scelto dalla compagnia (0 o 1)"
+        }
+      ]
+    },
+    {
+      "id": "D.2",
+      "unita": [
+        "U20"
+      ],
+      "tipo": "teoria",
+      "punti": 8,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "La polizza ottima per l'impegno basso"
+        },
+        {
+          "nota": "ERA 08",
+          "sezione": "Lagrangiana e condizioni del primo ordine"
+        },
+        {
+          "nota": "ERA 08",
+          "sezione": "Polizza ottima ed efficienza"
+        }
+      ],
+      "descrizione": "Difficile. Max 3 righe: con impegno non osservabile la compagnia offre la polizza del benchmark per e = 1 (copertura piena al premio p(1)): quale impegno sceglie il cliente, perché, e la compagnia ottiene Π^FB(1)? Il testo non dice quale sia e*. La preferenza è stretta (−0,4 contro −0,5): non serve dichiarare nessuna regola di parità.",
+      "chiave": [
+        {
+          "tipo": "esito",
+          "valore": "0",
+          "etichetta": "impegno scelto dal cliente (0 o 1)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "no",
+          "etichetta": "la compagnia ottiene il profitto Pi^FB(1) (si o no)"
+        }
+      ]
+    },
+    {
+      "id": "D.3",
+      "unita": [
+        "U20"
+      ],
+      "tipo": "interpretazione",
+      "punti": 6,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "Incentivi nella pratica"
+        }
+      ],
+      "descrizione": "Facile. Max 3 righe: uno sconto sul premio a chi accetta una scatola nera (o frequenta una palestra): perché avvicina la polizza al benchmark e perché solo in parte?",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "lo sconto lega il premio a un comportamento osservabile e rende in parte osservabile l'impegno; solo in parte perché il comportamento è un indizio dell'impegno, non l'impegno"
+      }
+    },
+    {
+      "id": "E.1",
+      "unita": [
+        "U14"
+      ],
+      "tipo": "teoria",
+      "punti": 8,
+      "fonti": [
+        {
+          "nota": "ERA 06",
+          "sezione": "La domanda dell'agente rappresentativo"
+        },
+        {
+          "nota": "ERA 06",
+          "sezione": "L'offerta e il prezzo di equilibrio"
+        }
+      ],
+      "descrizione": "Media. Scrivi V(α) dell'agente rappresentativo e la FOC; poi mostra che V'(0) = u'(R_f P) P (R − R_f), con R = E[ỹ]/P, e spiega perché la FOC basta (V'' < 0). Il prezzo di equilibrio con α = 1 non si chiede (è il caso n = 1 di E.2(a)). Dichiarare rendimenti lordi, α senza vincoli, P prezzo, R rendimento lordo atteso. Solo simboli (i numeri sono nell'appello 02).",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "V(alpha) = E[u(alpha y + (1 - alpha) Rf P)]; FOC E[(y - Rf P) u'(alpha y + (1 - alpha) Rf P)] = 0",
+          "etichetta": "funzione obiettivo e condizione del primo ordine"
+        },
+        {
+          "tipo": "testo",
+          "valore": "V'(0) = u'(Rf P) E[y - Rf P] = u'(Rf P) P (R - Rf), perché in alpha = 0 la ricchezza Rf P è certa e E[y] = R P",
+          "etichetta": "derivata V'(0) dell'agente che parte con una quota del titolo"
+        },
+        {
+          "tipo": "testo",
+          "valore": "V''(alpha) = E[(y - Rf P)^2 u''(W)] < 0: V è strettamente concava, quindi la FOC è necessaria e sufficiente",
+          "etichetta": "perché la condizione del primo ordine basta"
+        }
+      ]
+    },
+    {
+      "id": "E.2",
+      "unita": [
+        "U16",
+        "U14"
+      ],
+      "tipo": "dimostrazione",
+      "punti": 12,
+      "fonti": [
+        {
+          "nota": "ERA 06",
+          "sezione": "Il premio al rischio di mercato di ciascun titolo"
+        },
+        {
+          "nota": "ERA 06",
+          "sezione": "Il pricing kernel"
+        }
+      ],
+      "descrizione": "Difficile. Dimostrazione guidata: con n titoli e α_i = 1 in equilibrio, dalle FOC (u' calcolata su ỹ = Σ ỹ_i) ricava R_f = E[R̃_i M̃] e E[R̃_i] − R_f = −Cov(R̃_i, M̃); poi mostra che un titolo il cui payoff è indipendente dal payoff di mercato ỹ ha premio nullo. Il Consiglio ricorda E[M̃] = 1 e Cov(X, Y) = E[XY] − E[X]E[Y], non la divisione per P_i E[u'(ỹ)]. Il legame fra correlazione con ỹ e segno del premio è nell'appello 05.",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "(a) FOC in alpha_i con alpha_j = 1: E[y_i u'(y)] = Rf P_i E[u'(y)], quindi E[R_i M] = Rf; (b) Cov(R_i, M) = E[R_i M] - E[R_i] E[M] = Rf - E[R_i] con E[M] = 1; (c) M è funzione di y: se il payoff y_i è indipendente da y, Cov(R_i, M) = 0 e il premio è nullo"
+      }
+    }
+  ]
+}

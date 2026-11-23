@@ -354,6 +354,47 @@ COURSES = {c.slug: c for c in (
         ),
     ),
     Course(
+        slug="economia-rischio-assicurazioni",
+        pattern="ERA_*.md",
+        coursecode="EM2080",
+        disclaimer=(
+            "Traccia d’esame di Economia del Rischio e delle Assicurazioni (EM2080, prof. Valerio "
+            "Dotti) simulata a fini di studio, senza risposte. Non è una traccia ufficiale del docente."
+        ),
+        subtitle="Traccia d’esame simulata, senza risposte",
+        volume=None,
+        volume_title="",
+        volume_subtitle="",
+        parts=False,
+        question_re=r'kind="question"',
+        unit="appelli",
+        dated=False,
+        volumes=(
+            Volume(
+                stem="ERA_Esame_Simulato_Completo",
+                pattern="ERA_Esame_Simulato_*.md",
+                title="Economia del Rischio e delle Assicurazioni — appelli simulati",
+                subtitle="Tracce complete, senza risposte",
+                disclaimer=(
+                    "Appelli simulati costruiti a fini di studio sul modello dei veri appelli e sui "
+                    "contenuti del corso (EM2080, prof. Valerio Dotti). Non sono tracce ufficiali del docente."
+                ),
+                chapter_label="Appello simulato",
+            ),
+            Volume(
+                stem="ERA_Soluzioni_Simulato_Completo",
+                pattern="ERA_Soluzioni_Simulato_*.md",
+                title="Economia del Rischio e delle Assicurazioni — soluzioni degli appelli simulati",
+                subtitle="Risposte da scrivere in esame e svolgimenti",
+                disclaimer=(
+                    "Soluzioni degli appelli simulati, preparate a fini di studio. Non sono soluzioni "
+                    "ufficiali del docente."
+                ),
+                chapter_label="Appello simulato",
+            ),
+        ),
+    ),
+    Course(
         slug="econometria/esercitazioni",
         # One PDF per source: esercitazioni.build writes, for each module and each
         # appello, ECON_Esercizi_NN_<Descrizione>.md and ECON_Soluzioni_NN_<Descrizione>.md.

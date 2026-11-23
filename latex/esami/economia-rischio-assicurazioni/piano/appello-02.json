@@ -1,0 +1,561 @@
+{
+  "appello": 2,
+  "punti_totali": 100,
+  "angoli": {
+    "A": "Due agenti, u1 = √W e u2 = ln W: misure di Arrow-Pratt e prudenza, equivalente certo della stessa lotteria, trasformazione concava φ, passaggio da (1) a (3).",
+    "B": "Prezzo dei titoli (ERA 06) con u = ln, R_f = 1 lordo, ỹ a due stati equiprobabili diversi da {1; 2}: prezzo e premio, kernel e titoli multipli, partecipazione limitata, spiegazione del puzzle.",
+    "C": "Dominanza applicata al rendimento in eccesso di un titolo su tre valori: FOSD a parità di α, FOSD e medie, MPS e portafoglio ottimo preferito, ammontare non ordinato dalla SOSD.",
+    "D": "Azzardo morale con impegno alto, angoli diversi dal Mock: condizione (5) dalla Lagrangiana data, λ > 0, inefficienza se e* = 1.",
+    "E": "Portafoglio: V'(0) e quando investire (ordine ε contro ε²); l'agente più avverso investe meno (dimostrazione guidata)."
+  },
+  "domande": [
+    {
+      "id": "A.1",
+      "unita": [
+        "U04",
+        "U07"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Avversione assoluta e avversione relativa"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Prudenza e avversione assoluta"
+        }
+      ],
+      "descrizione": "Facile. Per u1 = √W e u2 = ln W calcola A, RR e la prudenza P; di' quale agente è più avverso e se ciascuno è DARA confrontando P con A. Dichiarare «più avverso» come A2(W) ≥ A1(W) per ogni W (confronto debole) e DARA come A'(W) ≤ 0.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "A1(W) = 1/(2W)",
+          "etichetta": "agente 1: avversione assoluta A(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "RR1(W) = 1/2, costante",
+          "etichetta": "agente 1: avversione relativa RR(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "P1(W) = 3/(2W)",
+          "etichetta": "agente 1: prudenza P(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "A2(W) = 1/W",
+          "etichetta": "agente 2: avversione assoluta A(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "RR2(W) = 1, costante",
+          "etichetta": "agente 2: avversione relativa RR(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "P2(W) = 2/W",
+          "etichetta": "agente 2: prudenza P(W)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "2",
+          "etichetta": "agente più avverso al rischio (1 o 2)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "si",
+          "etichetta": "l'agente 1 è DARA (si o no)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "si",
+          "etichetta": "l'agente 2 è DARA (si o no)"
+        }
+      ]
+    },
+    {
+      "id": "A.2",
+      "unita": [
+        "U05"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Equivalente certo e premio per il rischio"
+        }
+      ],
+      "descrizione": "Media. Lotteria X = ±b equiprobabile a ricchezza w, con w − b, w + b e il loro prodotto quadrati perfetti (dati nuovi: non w = 10, b = 6 né w = 26, b = 10): CE e premio dei due agenti. Dichiarare CE livello di ricchezza e R = w − CE (E[X] = 0); il rapporto fra i due premi non va presentato come regola generale.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 25.0,
+          "tolleranza": 0.01,
+          "etichetta": "equivalente certo CE1 dell'agente 1"
+        },
+        {
+          "tipo": "numero",
+          "valore": 4.0,
+          "tolleranza": 0.01,
+          "etichetta": "premio per il rischio R1 dell'agente 1"
+        },
+        {
+          "tipo": "numero",
+          "valore": 21.0,
+          "tolleranza": 0.01,
+          "etichetta": "equivalente certo CE2 dell'agente 2"
+        },
+        {
+          "tipo": "numero",
+          "valore": 8.0,
+          "tolleranza": 0.01,
+          "etichetta": "premio per il rischio R2 dell'agente 2"
+        }
+      ]
+    },
+    {
+      "id": "A.3",
+      "unita": [
+        "U04"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "La trasformazione concava"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Avversione assoluta e avversione relativa"
+        }
+      ],
+      "descrizione": "Media. Trova φ con u2 = φ∘u1, calcola φ'' e verifica la formula φ''(u1(W)) = u2'(W)/(u1'(W))²·[A1(W) − A2(W)] con le misure di A.1. Dichiarare che qui φ è la trasformazione concava (in B φ è il premio di mercato).",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "phi(x) = 2 ln x",
+          "etichetta": "funzione phi tale che u2 = phi(u1)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "phi''(x) = -2/x^2",
+          "etichetta": "derivata seconda phi''(x)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "phi''(u1(W)) = -2/W",
+          "etichetta": "valore comune dei due membri della formula, in funzione di W"
+        }
+      ]
+    },
+    {
+      "id": "A.4",
+      "unita": [
+        "U06",
+        "U03"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Dalla trasformazione concava al premio per il rischio"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "La disuguaglianza di Jensen"
+        }
+      ],
+      "descrizione": "Difficile. Max 3 righe: l'ordine fra i premi di A.2 vale a ogni ricchezza e per ogni lotteria a media nulla? Perché? Si chiede il passaggio chiave della catena (1) ⇒ (3), non la dimostrazione intera. Consiglio di sola direzione (che relazione lega u1 e u2?), senza nominare Jensen.",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "si"
+      }
+    },
+    {
+      "id": "B.1",
+      "unita": [
+        "U14"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 06",
+          "sezione": "L'offerta e il prezzo di equilibrio"
+        },
+        {
+          "nota": "ERA 06",
+          "sezione": "Il premio al rischio di mercato"
+        }
+      ],
+      "descrizione": "Facile. Agente rappresentativo con u = ln, R_f = 1 lordo, ỹ a due valori equiprobabili diversi da {1; 2}: prezzo di equilibrio P (α = 1), rendimento lordo atteso R e premio φ = R − R_f. Dichiarare la notazione di ERA 06: P prezzo (non prudenza), R rendimento lordo (non premio per il rischio), φ premio di mercato.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 2.4,
+          "tolleranza": 0.01,
+          "etichetta": "prezzo di equilibrio P"
+        },
+        {
+          "tipo": "numero",
+          "valore": 1.0417,
+          "tolleranza": 0.0001,
+          "etichetta": "rendimento lordo atteso R"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.0417,
+          "tolleranza": 0.0001,
+          "etichetta": "premio al rischio di mercato phi"
+        }
+      ]
+    },
+    {
+      "id": "B.2",
+      "unita": [
+        "U16",
+        "U14"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 06",
+          "sezione": "Il pricing kernel"
+        },
+        {
+          "nota": "ERA 06",
+          "sezione": "Il premio al rischio di mercato di ciascun titolo"
+        }
+      ],
+      "descrizione": "Media. ỹ = ỹ_a + ỹ_b con pagamenti per stato dati nel testo (a e b sono solo etichette): kernel M̃ nei due stati (E[M̃] = 1), prezzo P_b = E[ỹ_b M̃]/R_f, premio del titolo b, verifica di E[R̃_b] − R_f = −Cov(R̃_b, M̃). Usare la forma con M̃, non la correlazione con ỹ (la nota mostra che non è equivalente).",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 1.2,
+          "tolleranza": 0.01,
+          "etichetta": "pricing kernel M nello stato 1 (y = 2)"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.8,
+          "tolleranza": 0.01,
+          "etichetta": "pricing kernel M nello stato 2 (y = 3)"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.7,
+          "tolleranza": 0.01,
+          "etichetta": "prezzo P_b del titolo b"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.0714,
+          "tolleranza": 0.0001,
+          "etichetta": "premio al rischio di mercato E[R_b] - R_f del titolo b"
+        },
+        {
+          "tipo": "numero",
+          "valore": -0.0714,
+          "tolleranza": 0.0001,
+          "etichetta": "covarianza Cov(R_b, M)"
+        }
+      ]
+    },
+    {
+      "id": "B.3",
+      "unita": [
+        "U15"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 06",
+          "sezione": "Il modello con partecipazione $k$"
+        },
+        {
+          "nota": "ERA 06",
+          "sezione": "Il premio al rischio di mercato con partecipazione limitata"
+        }
+      ],
+      "descrizione": "Difficile. Solo una frazione k degli agenti detiene il titolo: scrivi W_k e la FOC con α = 1/k, risolvi l'equazione di secondo grado per P(k) e calcola φ(k). Dichiarare che si prende la radice minore (l'altra dà ricchezza negativa); scegliere ỹ e k con discriminante quadrato perfetto.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "W_k = 3 y - 2 P(k)",
+          "etichetta": "ricchezza finale W_k di un partecipante"
+        },
+        {
+          "tipo": "testo",
+          "valore": "FOC E[(y - P)/W_k] = 0, cioè 4 P^2 - 25 P + 36 = 0, radici 9/4 e 4",
+          "etichetta": "condizione del primo ordine ed equazione di secondo grado per P(k)"
+        },
+        {
+          "tipo": "numero",
+          "valore": 2.25,
+          "tolleranza": 0.01,
+          "etichetta": "prezzo di equilibrio P(k) (radice minore)"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.1111,
+          "tolleranza": 0.0001,
+          "etichetta": "premio al rischio di mercato phi(k)"
+        }
+      ]
+    },
+    {
+      "id": "B.4",
+      "unita": [
+        "U15",
+        "U14"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 06",
+          "sezione": "Il premio al rischio di mercato con partecipazione limitata"
+        },
+        {
+          "nota": "ERA 06",
+          "sezione": "Le spiegazioni proposte"
+        }
+      ],
+      "descrizione": "Media. Max 3 righe: perché φ(k) di B.3 supera φ di B.1, e perché la partecipazione limitata è proposta come spiegazione dell'equity premium puzzle. Non chiedere la monotonia di φ in k in generale (nella nota è solo numerica).",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "i partecipanti tengono 1/k = 3 quote: la loro ricchezza ha varianza Var(y)/k^2, nove volte quella di y, quindi chiedono un premio maggiore (1/9 contro 1/24); il rischio aggregato ricade su pochi agenti e il premio sale verso il valore osservato, per questo la partecipazione limitata è proposta come spiegazione del puzzle, con effetto apprezzabile per k sotto circa il 30%"
+      }
+    },
+    {
+      "id": "C.1",
+      "unita": [
+        "U08"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Dominanza stocastica del primo ordine"
+        },
+        {
+          "nota": "ERA 05",
+          "sezione": "Dominanza stocastica"
+        }
+      ],
+      "descrizione": "Facile. Rendimento in eccesso di un titolo su tre valori percentuali nuovi; coppia 1 (F1, F2) costruita con F2 che domina al primo ordine. Si può stabilire senza ambiguità quale delle due preferisce un agente con u crescente che investe lo stesso α > 0? Se sì, quale, e perché? (max 2 righe). Dichiarare rendimenti netti in eccesso e α ∈ [0, W].",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "F2"
+      }
+    },
+    {
+      "id": "C.2",
+      "unita": [
+        "U08"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Dominanza stocastica del primo ordine"
+        }
+      ],
+      "descrizione": "Media. Stessa coppia: si può dire quale distribuzione ha il rendimento atteso maggiore? E una media maggiore basterebbe per la FOSD? (max 2 righe). Angolo nuovo: FOSD e medie, non il passaggio FOSD ⇒ SOSD del Mock.",
+      "chiave": [
+        {
+          "tipo": "esito",
+          "valore": "F2",
+          "etichetta": "distribuzione con il rendimento atteso maggiore (F1 o F2)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "no",
+          "etichetta": "una media maggiore basta da sola per la dominanza del primo ordine (si o no)"
+        }
+      ]
+    },
+    {
+      "id": "C.3",
+      "unita": [
+        "U09",
+        "U13"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Il *mean-preserving spread*"
+        },
+        {
+          "nota": "ERA 05",
+          "sezione": "Il risultato"
+        }
+      ],
+      "descrizione": "Media. Coppia 2 (F3, F4) con la stessa media e F3 mean-preserving spread di F4 (rumore a media condizionata nulla leggibile dai dati): un agente avverso sceglie l'α ottimo con ciascuna; quale dei due portafogli ottimi preferisce, e perché? (max 2 righe). Dichiarare α ∈ [0, W], senza vendite allo scoperto.",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "F4"
+      }
+    },
+    {
+      "id": "C.4",
+      "unita": [
+        "U13"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 05",
+          "sezione": "Rischiosità del titolo e investimento"
+        },
+        {
+          "nota": "ERA 05",
+          "sezione": "Condizioni per un investimento minore"
+        }
+      ],
+      "descrizione": "Difficile. Domanda generale, non sui dati della coppia: se G domina H al secondo ordine, ogni agente con u crescente e strettamente concava investe in G almeno quanto in H? La SOSD ordina le utilità attese a parità di alpha, non gli ammontari ottimi (controesempio verificato nello script, con quattro valori). Non chiedere quali condizioni su RR, P, RP bastino né la loro necessità (l'appello 04 applica il risultato a una u data).",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "no"
+      }
+    },
+    {
+      "id": "D.1",
+      "unita": [
+        "U20"
+      ],
+      "tipo": "dimostrazione",
+      "punti": 6,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "Lagrangiana e condizioni del primo ordine"
+        }
+      ],
+      "descrizione": "Media. Problema della compagnia che vuole indurre e = 1, con la Lagrangiana data nel testo (λ per PC, β per IC; π_l(e), B_l, d(e), ū, z_l = w − p − l + B_l): dalla condizione del primo ordine in B_l ricava 1/u'(z_l) = λ + β(1 − r_l), r_l = π_l(0)/π_l(1). Dichiarare π_l(e) > 0 e che B_0 = 0 si impone dopo la derivazione (FOC per l = 0, …, L). Nessun limite di righe; la Lagrangiana non si chiede (era nel Mock).",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "dL/dB_l = -pi_l(1) + lambda pi_l(1) u'(z_l) + beta [pi_l(1) - pi_l(0)] u'(z_l) = 0; dividendo per pi_l(1) u'(z_l) si ha 1/u'(z_l) = lambda + beta (1 - r_l)"
+      }
+    },
+    {
+      "id": "D.2",
+      "unita": [
+        "U20",
+        "U19"
+      ],
+      "tipo": "teoria",
+      "punti": 8,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "La proprietà del rapporto di verosimiglianza monotono"
+        },
+        {
+          "nota": "ERA 08",
+          "sezione": "Lagrangiana e condizioni del primo ordine"
+        }
+      ],
+      "descrizione": "Difficile. Max 3 righe: perché λ > 0, cioè il vincolo di partecipazione è attivo. Il testo definisce la MLR stretta, dà β > 0 come noto e rimanda alla condizione di D.1. Consiglio di sola direzione (confronta il segno dei due membri); la conseguenza della MLR su r_0 e r_L la ricava il candidato.",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "se fosse lambda <= 0, per l = L il secondo membro della condizione, lambda + beta (1 - r_L), sarebbe negativo (beta > 0, r_L > 1 da sum pi_l(1)(r_l - 1) = 0 e MLR) mentre 1/u'(z_L) > 0; poiché per Kuhn-Tucker lambda >= 0, lambda > 0 e PC vale con uguaglianza"
+      }
+    },
+    {
+      "id": "D.3",
+      "unita": [
+        "U20"
+      ],
+      "tipo": "interpretazione",
+      "punti": 6,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "Polizza ottima ed efficienza"
+        }
+      ],
+      "descrizione": "Media. Max 3 righe: se nel benchmark l'impegno ottimo è e* = 1, l'esito con impegno non osservabile è Pareto efficiente rispetto alle allocazioni fattibili con impegno osservabile? Chi perde rispetto al first best? Dichiarare che e* è unico. Direzione opposta all'appello 01, che chiedeva il caso e* = 0.",
+      "chiave": [
+        {
+          "tipo": "esito",
+          "valore": "no",
+          "etichetta": "l'esito con impegno non osservabile è Pareto efficiente (si o no)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "compagnia",
+          "etichetta": "chi perde rispetto al first best (compagnia o cliente)"
+        }
+      ]
+    },
+    {
+      "id": "E.1",
+      "unita": [
+        "U10"
+      ],
+      "tipo": "teoria",
+      "punti": 8,
+      "fonti": [
+        {
+          "nota": "ERA 05",
+          "sezione": "La condizione del primo ordine"
+        },
+        {
+          "nota": "ERA 05",
+          "sezione": "Quando investire nel titolo rischioso"
+        }
+      ],
+      "descrizione": "Media. Problema ridotto max E[u(w0 + αx̃)] su α ∈ [0, W]: calcola V'(0), dimostra che α* > 0 se e solo se E[x̃] > 0 (cioè E[x̃0] > r) e spiega perché basta anche un piccolo rendimento atteso positivo (ordine di grandezza di guadagno e premio). Dichiarare u derivabile in w0, x̃ = x̃0 − r, w0 = W(1+r). Nessun limite di righe.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "V'(0) = u'(w0) E[x]",
+          "etichetta": "valore di V'(0)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "V strettamente concava, V' decrescente: E[x] > 0 implica V'(0) > 0 e alpha* > 0; E[x] <= 0 implica V'(alpha) < 0 per alpha > 0 e alpha* = 0; E[x] = E[x0] - r",
+          "etichetta": "dimostrazione di alpha* > 0 se e solo se E[x] > 0"
+        },
+        {
+          "tipo": "testo",
+          "valore": "per un piccolo importo eps il guadagno atteso eps E[x] è di ordine eps e il premio per il rischio è di ordine eps^2: per eps piccolo il guadagno prevale",
+          "etichetta": "perché basta un piccolo rendimento atteso positivo"
+        }
+      ]
+    },
+    {
+      "id": "E.2",
+      "unita": [
+        "U11"
+      ],
+      "tipo": "dimostrazione",
+      "punti": 12,
+      "fonti": [
+        {
+          "nota": "ERA 05",
+          "sezione": "Avversione al rischio e investimento"
+        }
+      ],
+      "descrizione": "Difficile. Dimostrazione guidata: u2 = φ∘u1 con φ strettamente concava e α2* interno; mostra α2* < α1*. Il Consiglio dà la scaletta al livello del Mock (riduzione a V1'(α2*) > 0, FOC dell'agente 2 con la regola della catena) ma non il confronto stato per stato fra φ'(u1(w0 + α2*x)) e φ'(u1(w0)). Dichiarare φ strettamente concava e α2* < W (con φ solo concava vale α2* ≤ α1*).",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "V1 strettamente concava, quindi basta V1'(alpha2*) > 0; la FOC dell'agente 2 con u2' = phi'(u1) u1' è 0 = E[x phi'(u1(w0 + alpha2* x)) u1'(w0 + alpha2* x)]; per ogni x != 0, con alpha2* > 0 e phi' strettamente decrescente, x phi'(u1(w0 + alpha2* x)) < x phi'(u1(w0)); moltiplicando per u1' > 0 e prendendo l'attesa 0 < phi'(u1(w0)) V1'(alpha2*), quindi V1'(alpha2*) > 0 e alpha2* < alpha1*"
+      }
+    }
+  ]
+}
