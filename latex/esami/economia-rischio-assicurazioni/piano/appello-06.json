@@ -1,0 +1,518 @@
+{
+  "appello": 6,
+  "punti_totali": 100,
+  "angoli": {
+    "A": "CRRA con γ intero nuovo: misure, CE esatto di una lotteria grande rispetto alla ricchezza, approssimazione di Arrow-Pratt contro valore esatto, premio che non diminuisce con la dimensione della lotteria.",
+    "B": "Scommessa con valore atteso positivo e u = ln (forma del Mock B, dati e domande nuovi): probabilità di indifferenza, premio con E[X] ≠ 0, stessa scommessa con ricchezza doppia, DARA contro CARA.",
+    "C": "Coppia con medie diverse e dominanza solo del secondo ordine (senza MPS); lotteria mescolata con il premio medio certo e linearità dell'utilità attesa.",
+    "D": "Azzardo morale con u = ln: polizza ottima esplicita dalla (5) e franchigia, lettura statistica di r_l, azzardo morale contro selezione avversa.",
+    "E": "Portafoglio: tassazione con sussidio delle perdite; rendimento che si annulla con probabilità 1 − q, dominanza al primo ordine e investimento invariato o minore (dimostrazione guidata)."
+  },
+  "domande": [
+    {
+      "id": "A.1",
+      "unita": [
+        "U04"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Tre funzioni di utilità di riferimento"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Le funzioni CARA e CRRA"
+        }
+      ],
+      "descrizione": "Facile. u(W) = W^{1−γ}/(1−γ) con γ intero nuovo (non 1/2, 1, 2, già negli appelli 01-05): A(W), RR(W) e P(W). Dichiarare W > 0 e che u è negativa ma crescente e concava.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "A(W) = 3/W",
+          "etichetta": "avversione assoluta A(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "RR(W) = 3, costante",
+          "etichetta": "avversione relativa RR(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "P(W) = 4/W",
+          "etichetta": "prudenza assoluta P(W)"
+        }
+      ]
+    },
+    {
+      "id": "A.2",
+      "unita": [
+        "U05"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Equivalente certo e premio per il rischio"
+        }
+      ],
+      "descrizione": "Media. Lotteria ±b equiprobabile a ricchezza w con w − b piccolo rispetto a w, dati scelti perché il CE sia razionale (verificarlo nello script): CE e premio. Dichiarare R = w − CE (E[X] = 0) e w − b > 0.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 7.0,
+          "tolleranza": 0.01,
+          "etichetta": "equivalente certo CE"
+        },
+        {
+          "tipo": "numero",
+          "valore": 13.0,
+          "tolleranza": 0.01,
+          "etichetta": "premio per il rischio R"
+        }
+      ]
+    },
+    {
+      "id": "A.3",
+      "unita": [
+        "U06"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Il premio per lotterie piccole"
+        }
+      ],
+      "descrizione": "Media. Approssimazione di Arrow-Pratt ½A(w)E[X²] per la stessa lotteria e confronto con il premio esatto di A.2: quale è maggiore, e perché lo scarto non è piccolo. Il testo dice che si chiede l'approssimazione e poi il confronto. Angolo diverso dall'appello 01 (raddoppio di k).",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 16.875,
+          "tolleranza": 0.001,
+          "etichetta": "approssimazione di Arrow-Pratt (1/2) A(w) E[X^2]"
+        },
+        {
+          "tipo": "esito",
+          "valore": "maggiore",
+          "etichetta": "l'approssimazione è maggiore o minore del premio esatto di A.2 (maggiore o minore)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "b/w = 3/4 non è piccolo: la formula è lo sviluppo per k -> 0 e trascura i termini di ordine superiore, che qui pesano; il verso dello scarto dipende da u",
+          "etichetta": "perché lo scarto non è piccolo"
+        }
+      ]
+    },
+    {
+      "id": "A.4",
+      "unita": [
+        "U06"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Il premio per lotterie piccole"
+        }
+      ],
+      "descrizione": "Difficile. Max 3 righe, Consiglio di sola direzione: per un agente avverso il premio R(k) della lotteria kX non diminuisce al crescere di k: perché? Si chiede l'argomento sul segno di R'(k), non il calcolo di A.3.",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "derivando E[u(w + kX)] = u(w - R(k)) si ha u'(w - R) R' = -E[X u'(w + kX)] = -E[X (u'(w + kX) - u'(w))] perché E[X] = 0; con u' non crescente X (u'(w + kX) - u'(w)) <= 0 in ogni stato, quindi il membro di destra è >= 0 e R'(k) >= 0 per ogni k"
+      }
+    },
+    {
+      "id": "B.1",
+      "unita": [
+        "U05"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Equivalente certo e premio per il rischio"
+        }
+      ],
+      "descrizione": "Facile. u = ln, ricchezza w, scommessa che fa guadagnare g con probabilità p e perdere ℓ con probabilità 1 − p, con w/(w − ℓ) e (w + g)/(w − ℓ) potenze della stessa base (dati nuovi): trova il p che rende l'agente indifferente fra accettare e rifiutare. Dichiarare CE livello di ricchezza.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 0.3333,
+          "tolleranza": 0.0001,
+          "etichetta": "probabilità theta di vincere per cui l'agente è indifferente"
+        }
+      ]
+    },
+    {
+      "id": "B.2",
+      "unita": [
+        "U05",
+        "U03"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Equivalente certo e premio per il rischio"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Avversione al rischio e concavità"
+        },
+        {
+          "nota": "ERA 07",
+          "sezione": "Il benchmark: informazione perfetta"
+        }
+      ],
+      "descrizione": "Media. Valore atteso della scommessa al p di B.1 e premio per il rischio; perché deve essere positivo per questo agente? Dichiarare la definizione: premio = ricchezza attesa − CE (E[X] ≠ 0; in ERA 03 R = w − CE vale per E[X] = 0).",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 20.0,
+          "tolleranza": 0.01,
+          "etichetta": "valore atteso E[X] della scommessa"
+        },
+        {
+          "tipo": "numero",
+          "valore": 30.0,
+          "tolleranza": 0.01,
+          "etichetta": "equivalente certo CE della ricchezza aleatoria w + X"
+        },
+        {
+          "tipo": "numero",
+          "valore": 20.0,
+          "tolleranza": 0.01,
+          "etichetta": "premio per il rischio R = E[w + X] - CE"
+        },
+        {
+          "tipo": "testo",
+          "valore": "l'agente è indifferente e strettamente avverso: per Jensen stretta u(w) = E[u(w + X)] < u(w + E[X]), e u crescente dà E[X] > 0",
+          "etichetta": "perché E[X] deve essere positivo"
+        }
+      ]
+    },
+    {
+      "id": "B.3",
+      "unita": [
+        "U07"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "L'effetto ricchezza"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Condizioni equivalenti per il DARA"
+        }
+      ],
+      "descrizione": "Difficile. Stessa scommessa e stesso p con ricchezza raddoppiata: l'agente accetta? Il confronto si fa con potenze intere, senza calcolatrice; non chiedere il CE numerico se richiede radici.",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "accetta",
+        "etichetta": "decisione con ricchezza 2w = 60 (accetta, rifiuta o indifferente)"
+      }
+    },
+    {
+      "id": "B.4",
+      "unita": [
+        "U07",
+        "U04"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Condizioni equivalenti per il DARA"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Classificare le tre utilità di riferimento"
+        }
+      ],
+      "descrizione": "Media. Max 3 righe: quale proprietà di u (una parola fra DARA, CARA e IARA) determina il confronto fra la decisione a ricchezza w e a 2w, e che decisione prenderebbe un agente CARA indifferente a w? Nessun Consiglio: con la definizione di DARA nei Dati darebbe la risposta di B.3. Dichiarare la convenzione su DARA (debole o stretta).",
+      "chiave": [
+        {
+          "tipo": "esito",
+          "valore": "DARA",
+          "etichetta": "proprietà di u che determina il confronto (una parola: DARA, CARA o IARA)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "indifferente",
+          "etichetta": "decisione di un agente CARA indifferente a w, con ricchezza 2w (accetta, rifiuta o indifferente)"
+        }
+      ]
+    },
+    {
+      "id": "C.1",
+      "unita": [
+        "U08"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Dominanza stocastica del primo ordine"
+        }
+      ],
+      "descrizione": "Facile. Coppia 1 (p, q) su tre premi nuovi, p a media maggiore e c.d.f. che si incrociano: con u crescente si stabilisce senza ambiguità quale si preferisce? Perché? (max 2 righe).",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "no"
+      }
+    },
+    {
+      "id": "C.2",
+      "unita": [
+        "U09"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Dominanza stocastica del secondo ordine"
+        }
+      ],
+      "descrizione": "Difficile. Stessa coppia, agente anche avverso: quale preferisce, e perché? (max 2 righe). Dati costruiti perché p domini q al secondo ordine con medie diverse (nessuna delle due è un MPS dell'altra); la soluzione mostra la tabella degli integrali delle c.d.f.",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "p"
+      }
+    },
+    {
+      "id": "C.3",
+      "unita": [
+        "U09"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Il *mean-preserving spread*"
+        }
+      ],
+      "descrizione": "Media. Coppia 2: p' su tre premi con media pari al premio intermedio x2, e q' = ½ p' + ½ (x2 certo): un agente avverso quale preferisce? Perché? (max 2 righe).",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "q'"
+      }
+    },
+    {
+      "id": "C.4",
+      "unita": [
+        "U01"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 02",
+          "sezione": "Preferenze e utilità attesa"
+        },
+        {
+          "nota": "ERA 02",
+          "sezione": "Gli assiomi"
+        }
+      ],
+      "descrizione": "Media. Un agente a utilità attesa con u crescente, non necessariamente concava, è indifferente fra p' e x2 certo: preferisce q', preferisce p' o è indifferente? Perché? (max 2 righe). La chiave usa solo la linearità dell'utilità attesa nelle probabilità.",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "indifferente"
+      }
+    },
+    {
+      "id": "D.1",
+      "unita": [
+        "U20"
+      ],
+      "tipo": "dimostrazione",
+      "punti": 6,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "Lagrangiana e condizioni del primo ordine"
+        },
+        {
+          "nota": "ERA 08",
+          "sezione": "Che cosa significa il risultato"
+        }
+      ],
+      "descrizione": "Media. Data nel testo la (5) con λ > 0, β > 0, u = ln (1/u'(z) = z) e B_0 = 0: ricava B_l − l in funzione di β e dei rapporti r_l; con una tabella π_l(e) per l ∈ {0, 1, 2} data, calcola r_l e la franchigia l − B_l in funzione di β. Dichiarare π_l(e) > 0, B_0 = 0 e z_l > 0.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "B_l - l = -beta (r_l - r_0)",
+          "etichetta": "indennizzo meno perdita B_l - l"
+        },
+        {
+          "tipo": "testo",
+          "valore": "r_0 = 1/2, r_1 = 1, r_2 = 4",
+          "etichetta": "rapporti r_0, r_1, r_2"
+        },
+        {
+          "tipo": "testo",
+          "valore": "l - B_l = beta/2 per l = 1 e 7 beta/2 per l = 2",
+          "etichetta": "franchigia l - B_l per l = 1 e l = 2"
+        }
+      ]
+    },
+    {
+      "id": "D.2",
+      "unita": [
+        "U20",
+        "U19"
+      ],
+      "tipo": "teoria",
+      "punti": 8,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "Che cosa significa il risultato"
+        },
+        {
+          "nota": "ERA 08",
+          "sezione": "La proprietà del rapporto di verosimiglianza monotono"
+        }
+      ],
+      "descrizione": "Difficile. Max 3 righe: perché la polizza ottima lascia al cliente una ricchezza più bassa nelle perdite con r_l più alto, se in equilibrio la compagnia sa già che il cliente sceglie e = 1? Consiglio di sola direzione (che cosa indica r_l sull'impegno?).",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "la compagnia osserva solo la perdita e r_l alto indica che l è più probabile con impegno basso; legare z_l a r_l rende l'impegno alto vantaggioso (IC): deviare a e = 0 sposta probabilità sulle perdite con ricchezza bassa; non è sfiducia, IC è attivo e il cliente è indifferente"
+      }
+    },
+    {
+      "id": "D.3",
+      "unita": [
+        "U19"
+      ],
+      "tipo": "interpretazione",
+      "punti": 6,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "L'azzardo morale"
+        },
+        {
+          "nota": "ERA 07",
+          "sezione": "Informazione imperfetta e asimmetrie informative"
+        }
+      ],
+      "descrizione": "Facile. Max 3 righe: in due esempi nuovi dati nel testo (una caratteristica nascosta già presente e non scelta, un'azione nascosta dopo la stipula) di' quale è azzardo morale e quale selezione avversa, e perché; per ciascun caso si risponde con la parola «selezione» o «azzardo».",
+      "chiave": [
+        {
+          "tipo": "esito",
+          "valore": "selezione",
+          "etichetta": "caso (i), il quartiere con molti furti di biciclette: rispondi selezione o azzardo"
+        },
+        {
+          "tipo": "esito",
+          "valore": "azzardo",
+          "etichetta": "caso (ii), i bruciatori antigelo: rispondi selezione o azzardo"
+        }
+      ]
+    },
+    {
+      "id": "E.1",
+      "unita": [
+        "U10"
+      ],
+      "tipo": "teoria",
+      "punti": 8,
+      "fonti": [
+        {
+          "nota": "ERA 05",
+          "sezione": "Tassazione e sussidi dei rendimenti"
+        },
+        {
+          "nota": "ERA 05",
+          "sezione": "La condizione del primo ordine"
+        }
+      ],
+      "descrizione": "Media. Imposta τ sui guadagni di capitale con sussidio delle perdite alla stessa aliquota, base imponibile = solo il rendimento in eccesso (w0 non cambia): scrivi il nuovo problema e la FOC, ricava l'ammontare α investito nel titolo rischioso (al lordo dell'imposta) in funzione di α* e τ con il vincolo α ≤ W, poi con α* = 56, W = 120 calcola quell'ammontare per τ = 1/8. Nessun limite di righe.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "max E[u(w0 + (1 - tau) alpha x)] su [0, W], FOC (1 - tau) E[x u'(w0 + (1 - tau) alpha x)] = 0, cioè V'((1 - tau) alpha) = 0, risolta da (1 - tau) alpha = alpha*",
+          "etichetta": "nuovo problema e condizione del primo ordine"
+        },
+        {
+          "tipo": "testo",
+          "valore": "min{alpha*/(1 - tau), W}",
+          "etichetta": "ammontare investito nel titolo rischioso, al lordo dell'imposta, dopo l'imposta"
+        },
+        {
+          "tipo": "numero",
+          "valore": 64.0,
+          "tolleranza": 0.01,
+          "etichetta": "ammontare investito nel titolo rischioso, al lordo dell'imposta, con alpha* = 56, W = 120, tau = 1/8"
+        }
+      ]
+    },
+    {
+      "id": "E.2",
+      "unita": [
+        "U13",
+        "U08"
+      ],
+      "tipo": "dimostrazione",
+      "punti": 12,
+      "fonti": [
+        {
+          "nota": "ERA 05",
+          "sezione": "Il risultato"
+        },
+        {
+          "nota": "ERA 04",
+          "sezione": "Dominanza stocastica del primo ordine"
+        }
+      ],
+      "descrizione": "Difficile. Dimostrazione guidata in tre parti: (a) se il rendimento in eccesso x̃ è sostituito da una variabile che vale x̃ con probabilità q e 0 con probabilità 1 − q, mostra che l'investimento ottimo non cambia; (b) con x̃ > 0, confronta le due distribuzioni al primo ordine (c.d.f.); (c) se ad annullarsi è il rendimento netto x̃0 con r > 0, che cosa accade in un α1* interno? Dichiarare le ipotesi parte per parte (con x̃ > 0 l'ottimo è α = W). Consiglio: scaletta, non le derivate.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "V_hat'(alpha) = s V'(alpha) ha il segno di V'(alpha) e V_hat è strettamente concava: stesso massimo, alpha_hat = alpha*",
+          "etichetta": "(a) perché l'investimento ottimo non cambia"
+        },
+        {
+          "tipo": "testo",
+          "valore": "G(x) = 0 per x < 0 e G(x) = (1 - s) + s F(x) per x >= 0",
+          "etichetta": "(b) c.d.f. G di y in funzione di F e s"
+        },
+        {
+          "tipo": "esito",
+          "valore": "F",
+          "etichetta": "(b) distribuzione che domina l'altra al primo ordine (F di x o G di y)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "W",
+          "etichetta": "(b) investimento ottimo con x > 0"
+        },
+        {
+          "tipo": "esito",
+          "valore": "negativo",
+          "etichetta": "(c) segno di V_hat'(alpha*) (positivo, nullo o negativo)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "diminuisce",
+          "etichetta": "(c) come cambia l'investimento (aumenta, diminuisce o non cambia)"
+        }
+      ]
+    }
+  ]
+}

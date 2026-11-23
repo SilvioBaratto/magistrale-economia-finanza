@@ -19,6 +19,7 @@ Nulla viene scritto dentro `../obsidian/`. Il materiale d'esame di ogni corso ha
 | `legislazione-bancaria-2` | tracce per la prova orale, punti 8-11 | [`esami/legislazione-bancaria-2/README.md`](esami/legislazione-bancaria-2/README.md) |
 | `test-ingresso` | 647 domande a risposta multipla del test EMR20, domande e soluzioni (solo PDF: i sorgenti non sono nell'export) | [`esami/test-ingresso/README.md`](esami/test-ingresso/README.md) |
 | `finanza-strategica` | l'appello completo del 23/12/2022 senza risposte e dieci appelli simulati con soluzioni; `verifica_simulati.py` ne controlla struttura e coerenza | [`esami/finanza-strategica/README.md`](esami/finanza-strategica/README.md) |
+| `economia-rischio-assicurazioni` | sei appelli simulati dello scritto con soluzioni e due volumi «Completo»; gli script in `calc/` danno i numeri citati nelle soluzioni | [`esami/economia-rischio-assicurazioni/README.md`](esami/economia-rischio-assicurazioni/README.md) |
 
 `verifica_orale.py` controlla formato e completezza delle tracce d'orale prima di compilarle.
 

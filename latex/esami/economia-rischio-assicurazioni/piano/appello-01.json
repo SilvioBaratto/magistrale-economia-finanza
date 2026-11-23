@@ -1,0 +1,515 @@
+{
+  "appello": 1,
+  "punti_totali": 100,
+  "angoli": {
+    "A": "Un solo agente con u(W) = -1/W: equivalente certo di una lotteria a media nulla non simmetrica, effetto ricchezza (due livelli di w), scala della lotteria.",
+    "B": "Assicurazione e selezione avversa (ERA 07), u diversa da -1/W: benchmark con un consumatore, prezzo unico con π uniforme su [0,1], screening a due tipi.",
+    "C": "Tre premi nuovi (non 1, 3, 5): coppia 1 a media uguale con mean-preserving spread; coppia 2 = coppia 1 mescolata con una stessa componente comune (indipendenza, struttura di Allais nel triangolo).",
+    "D": "Azzardo morale dal lato del benchmark: impegno osservabile, impegno basso con impegno non osservabile, efficienza se e* = 0.",
+    "E": "Portafoglio: FOC e derivata di α* rispetto a w0; rischiosità del titolo per la via della monotonia (RR < 1)."
+  },
+  "domande": [
+    {
+      "id": "A.1",
+      "unita": [
+        "U04"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Avversione assoluta e avversione relativa"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Le funzioni CARA e CRRA"
+        }
+      ],
+      "descrizione": "Per u(W) = -1/W (W > 0) calcola A(W) e RR(W) a una ricchezza generica e di' se l'utilità è CARA o CRRA.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "A(W) = 2/W",
+          "etichetta": "A(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "RR(W) = 2, costante",
+          "etichetta": "RR(W)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "CRRA",
+          "etichetta": "tipo di utilità (CARA o CRRA)"
+        }
+      ]
+    },
+    {
+      "id": "A.2",
+      "unita": [
+        "U05"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Equivalente certo e premio per il rischio"
+        }
+      ],
+      "descrizione": "Lotteria X a media nulla NON simmetrica (es. -a con prob. 2/3, +2a con prob. 1/3) a ricchezza w1 > a: equivalente certo e premio. Dichiarare che CE è un livello di ricchezza e che R = w - CE perché E[X] = 0. Dati nuovi (non X = ±1,5, non w = 3, 5, 20), risultato razionale (es. w1 = 4, a = 2 dà CE = 8/3).",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 2.67,
+          "tolleranza": 0.01,
+          "etichetta": "equivalente certo CE"
+        },
+        {
+          "tipo": "numero",
+          "valore": 1.33,
+          "tolleranza": 0.01,
+          "etichetta": "premio per il rischio R1"
+        }
+      ]
+    },
+    {
+      "id": "A.3",
+      "unita": [
+        "U05",
+        "U07"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Come varia il premio con la ricchezza"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Prudenza e avversione assoluta"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Condizioni equivalenti per il DARA"
+        }
+      ],
+      "descrizione": "Stessa lotteria a ricchezza w2 > w1: nuovo premio; calcola la prudenza P(W) = -u'''/u'' e verifica che la diminuzione del premio è coerente con P ≥ A. Dichiarare DARA come A'(W) ≤ 0 per ogni W.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 1.0,
+          "tolleranza": 0.01,
+          "etichetta": "premio per il rischio R2"
+        },
+        {
+          "tipo": "testo",
+          "valore": "P(W) = 3/W > A(W) = 2/W, quindi DARA",
+          "etichetta": "prudenza P(W) confrontata con A(W)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "minore",
+          "etichetta": "R2 rispetto a R1 (minore o maggiore)"
+        }
+      ]
+    },
+    {
+      "id": "A.4",
+      "unita": [
+        "U06"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Il premio per lotterie piccole"
+        }
+      ],
+      "descrizione": "Max 3 righe, con Consiglio (sviluppo di Taylor di R(k) in k = 0): per una lotteria piccola kX a ricchezza w1, di quanto cresce circa il premio se k raddoppia, e perché (circa ×4, la varianza quadruplica). Il testo dice che si chiede l'approssimazione, non il valore esatto.",
+      "chiave": {
+        "tipo": "numero",
+        "valore": 4.0,
+        "tolleranza": 0.5
+      }
+    },
+    {
+      "id": "B.1",
+      "unita": [
+        "U17",
+        "U03"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 07",
+          "sezione": "Il benchmark: informazione perfetta"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "La disuguaglianza di Jensen"
+        }
+      ],
+      "descrizione": "Consumatore con ricchezza w, perdita L con probabilità π (0 < π < 1), u = √W con w e w - L quadrati perfetti (oppure ln con w, w - L potenze della stessa base): premio equo, utilità attesa con e senza copertura piena al premio equo, quale preferisce e perché (Jensen stretta). Non riusare ln, w = 10, L = 6, π = 0,3.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 5.0,
+          "tolleranza": 0.01,
+          "etichetta": "premio equo"
+        },
+        {
+          "tipo": "numero",
+          "valore": 5.5,
+          "tolleranza": 0.01,
+          "etichetta": "utilità attesa senza copertura"
+        },
+        {
+          "tipo": "numero",
+          "valore": 5.57,
+          "tolleranza": 0.01,
+          "etichetta": "utilità attesa con copertura piena"
+        },
+        {
+          "tipo": "esito",
+          "valore": "copertura",
+          "etichetta": "situazione preferita (copertura o nessuna copertura)"
+        }
+      ]
+    },
+    {
+      "id": "B.2",
+      "unita": [
+        "U05",
+        "U17"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Equivalente certo e premio per il rischio"
+        },
+        {
+          "nota": "ERA 07",
+          "sezione": "Il benchmark: informazione perfetta"
+        }
+      ],
+      "descrizione": "Stesso consumatore: equivalente certo della posizione senza assicurazione, premio massimo che pagherebbe per la copertura piena, premio per il rischio. Dichiarare la definizione usata: premio per il rischio = ricchezza attesa - equivalente certo (qui E[X] ≠ 0).",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 30.25,
+          "tolleranza": 0.01,
+          "etichetta": "equivalente certo senza assicurazione"
+        },
+        {
+          "tipo": "numero",
+          "valore": 5.75,
+          "tolleranza": 0.01,
+          "etichetta": "premio massimo per la copertura piena"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.75,
+          "tolleranza": 0.01,
+          "etichetta": "premio per il rischio"
+        }
+      ]
+    },
+    {
+      "id": "B.3",
+      "unita": [
+        "U17"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 07",
+          "sezione": "La congettura sul prezzo e la regola di acquisto"
+        },
+        {
+          "nota": "ERA 07",
+          "sezione": "Un esempio con distribuzione uniforme"
+        }
+      ],
+      "descrizione": "Popolazione con π uniforme su [0,1] non osservata dalle compagnie, prezzo unico, stessi w, L, u di B.1: a un prezzo p dato (scelto con h(p) razionale, es. √W e w - p quadrato perfetto) soglia h(p), media di π fra gli acquirenti, profitto atteso per polizza; p è di equilibrio? Poi verifica che p = L lo è. Dichiarare che a parità di utilità il consumatore compra. Non chiedere il punto fisso numerico.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 0.5,
+          "tolleranza": 0.01,
+          "etichetta": "soglia h(11)"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.75,
+          "tolleranza": 0.01,
+          "etichetta": "probabilità media di perdita fra gli acquirenti"
+        },
+        {
+          "tipo": "numero",
+          "valore": -4.0,
+          "tolleranza": 0.01,
+          "etichetta": "profitto atteso per polizza venduta"
+        },
+        {
+          "tipo": "esito",
+          "valore": "no",
+          "etichetta": "p = 11 è di equilibrio (si o no)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "si",
+          "etichetta": "p = L è di equilibrio (si o no)"
+        }
+      ]
+    },
+    {
+      "id": "B.4",
+      "unita": [
+        "U18"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 07",
+          "sezione": "Preferenze e single-crossing"
+        },
+        {
+          "nota": "ERA 07",
+          "sezione": "Il contratto per il basso rischio non è imitabile"
+        }
+      ],
+      "descrizione": "Max 3 righe, con Consiglio sulle pendenze delle curve di indifferenza nel piano (B, p): con due soli tipi π_l < π_h e contratti (B, p), perché nell'equilibrio separante il basso rischio riceve copertura parziale (single-crossing, l'alto rischio non deve preferirlo al proprio contratto). Non chiedere l'esistenza dell'equilibrio separante.",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "con B = L al prezzo equo l'alto rischio sceglierebbe il contratto del basso rischio; per single-crossing riducendo B lungo p = pi_l B l'alto rischio smette di preferirlo, quindi B < L"
+      }
+    },
+    {
+      "id": "C.1",
+      "unita": [
+        "U08"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Dominanza stocastica del primo ordine"
+        }
+      ],
+      "descrizione": "Tre premi nuovi; coppia 1 (p, q) con la stessa media e q mean-preserving spread di p. Agente con u crescente: si possono ordinare senza ambiguità? Perché? (max 2 righe: medie uguali escludono la FOSD, le c.d.f. si incrociano).",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "no"
+      }
+    },
+    {
+      "id": "C.2",
+      "unita": [
+        "U09"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Dominanza stocastica del secondo ordine"
+        },
+        {
+          "nota": "ERA 04",
+          "sezione": "Il *mean-preserving spread*"
+        }
+      ],
+      "descrizione": "Stessa coppia, agente anche strettamente avverso al rischio: quale lotteria preferisce? (max 2 righe: q è un MPS di p, quindi p domina al secondo ordine e l'avverso preferisce p).",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "p"
+      }
+    },
+    {
+      "id": "C.3",
+      "unita": [
+        "U01"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 02",
+          "sezione": "Gli assiomi"
+        },
+        {
+          "nota": "ERA 02",
+          "sezione": "Lotterie semplici e composte"
+        }
+      ],
+      "descrizione": "Coppia 2 presentata come lotterie composte sugli stessi tre premi: p' = αp + (1-α)L_c e q' = αq + (1-α)L_c, con la stessa componente L_c. Un agente a utilità attesa, non necessariamente avverso al rischio, preferisce p a q: quale sceglie fra p' e q'? Perché? (max 2 righe: assioma di indipendenza; la SOSD non basta perché l'agente può non essere avverso).",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "p'"
+      }
+    },
+    {
+      "id": "C.4",
+      "unita": [
+        "U02",
+        "U01"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 02",
+          "sezione": "Lettura nel triangolo"
+        },
+        {
+          "nota": "ERA 02",
+          "sezione": "Le rette di indifferenza nel triangolo"
+        }
+      ],
+      "descrizione": "Un soggetto preferisce strettamente q a p nella coppia 1 e p' a q' nella coppia 2: perché, nel triangolo di Machina, queste preferenze sono incompatibili con l'utilità attesa? (max 2 righe: q' - p' = α(q - p), segmenti paralleli con lo stesso verso e rette di indifferenza parallele; è la struttura di Allais). Non riusare i premi e le probabilità di Allais della nota.",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "no"
+      }
+    },
+    {
+      "id": "D.1",
+      "unita": [
+        "U19"
+      ],
+      "tipo": "dimostrazione",
+      "punti": 6,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "Il problema della compagnia"
+        },
+        {
+          "nota": "ERA 08",
+          "sezione": "La polizza ottima per un impegno fissato"
+        }
+      ],
+      "descrizione": "Problema della compagnia con impegno osservabile ed e fissato, scritto per intero nel testo (PC con ū = utilità senza assicurazione): scrivi la Lagrangiana e le condizioni del primo ordine in p e B_l e mostra che implicano copertura piena. Dichiarare u strettamente concava e la normalizzazione B_0 = 0 (senza, la soluzione è unica solo a meno di traslazione). Nessun limite di righe.",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "lambda u'(z_l) = 1 per ogni l, quindi z_l costante, B_l - l costante, B_0 = 0 implica B_l = l (copertura piena)"
+      }
+    },
+    {
+      "id": "D.2",
+      "unita": [
+        "U20"
+      ],
+      "tipo": "teoria",
+      "punti": 8,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "La polizza ottima per l'impegno basso"
+        },
+        {
+          "nota": "ERA 08",
+          "sezione": "Informazione asimmetrica"
+        }
+      ],
+      "descrizione": "Max 3 righe, con Consiglio: con impegno non osservabile, perché la polizza ottima che induce e = 0 è quella di D.1 (con z_l costante il vincolo IC diventa d(0) ≤ d(1)). Dichiarare d(1) > d(0) e che, a parità di utilità, il cliente sceglie l'impegno voluto dalla compagnia.",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "con copertura piena IC diventa d(0) <= d(1), vera; un constraint in piu non fa salire il massimo"
+      }
+    },
+    {
+      "id": "D.3",
+      "unita": [
+        "U20",
+        "U19"
+      ],
+      "tipo": "interpretazione",
+      "punti": 6,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "Polizza ottima ed efficienza"
+        },
+        {
+          "nota": "ERA 08",
+          "sezione": "La scelta dell'impegno"
+        }
+      ],
+      "descrizione": "Max 3 righe: se nel benchmark l'impegno ottimo è e* = 0, l'impossibilità di osservare l'impegno crea inefficienza? (No: stessa polizza e stesso profitto del first best, allocazione Pareto efficiente.) Dichiarare che e* è unico.",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "no"
+      }
+    },
+    {
+      "id": "E.1",
+      "unita": [
+        "U10",
+        "U12"
+      ],
+      "tipo": "teoria",
+      "punti": 8,
+      "fonti": [
+        {
+          "nota": "ERA 05",
+          "sezione": "La condizione del primo ordine"
+        },
+        {
+          "nota": "ERA 05",
+          "sezione": "Ricchezza iniziale e investimento"
+        }
+      ],
+      "descrizione": "Problema ridotto max E[u(w0 + αx)] su α ∈ [0, W] (x rendimento in eccesso netto, w0 = W(1+r)): scrivi V'(α), V''(α) e la FOC; poi, per α* interno, deriva la FOC rispetto a w0 e scrivi dα*/dw0 con il teorema della funzione implicita, dicendo di quale valore atteso, scritto con u'', ha lo stesso segno. Nessun limite di righe.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "V'(a) = E[x u'(w0 + a x)], V''(a) = E[x^2 u''(w0 + a x)] < 0, FOC E[x u'(w0 + a* x)] = 0",
+          "etichetta": "V', V'' e condizione del primo ordine"
+        },
+        {
+          "tipo": "testo",
+          "valore": "d a*/d w0 = -E[x u''] / E[x^2 u''], segno di E[x u''(w0 + a* x)]",
+          "etichetta": "d alfa*/d w0 e valore atteso da cui dipende il segno"
+        }
+      ]
+    },
+    {
+      "id": "E.2",
+      "unita": [
+        "U13"
+      ],
+      "tipo": "dimostrazione",
+      "punti": 12,
+      "fonti": [
+        {
+          "nota": "ERA 05",
+          "sezione": "Che cosa si vuole dimostrare"
+        },
+        {
+          "nota": "ERA 05",
+          "sezione": "Quando la funzione è crescente"
+        },
+        {
+          "nota": "ERA 05",
+          "sezione": "Il risultato"
+        }
+      ],
+      "descrizione": "Dimostrazione guidata da un Consiglio lungo, sulla parte che il Mock non chiedeva (la monotonia): con g(x) = x u'(w0 + α1* x) e h(y) = y u'(w0 + y), mostra h'(y) = u'(w0+y)[1 - RR(w0+y) + w0 A(w0+y)] e che RR < 1 basta; poi, data nel testo la concavità di g, concludi α2* ≥ α1* se F2 domina F1 al secondo ordine (E_F2[g] ≥ E_F1[g] = 0, V2 concava). Dichiarare α1* interno e definire RR e A. Non chiedere la necessità delle condizioni (il logaritmo ha RR = 1).",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "g crescente se RR < 1 (h'(y) = u'[1 - RR + w0 A] > 0), g concava e F2 SOSD F1 danno E_F2[g] >= E_F1[g] = 0, V2'(a1*) >= 0, V2 concava, quindi a2* >= a1*"
+      }
+    }
+  ]
+}

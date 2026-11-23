@@ -1,0 +1,519 @@
+{
+  "appello": 5,
+  "punti_totali": 100,
+  "angoli": {
+    "A": "Due agenti non confrontabili, u1 = ln W e u2 CARA: misure, premio esatto del primo, derivata del premio rispetto alla ricchezza, chi paga di più per lotterie piccole a ricchezze diverse.",
+    "B": "Mercato dei titoli (ERA 06) dal lato dei dati: approssimazione del premio ed equity premium puzzle, due paesi con u = ln (autarchia e integrazione), tre stati e premio di un titolo correlato con ỹ, perché l'integrazione abbassa il premio.",
+    "C": "Distribuzioni continue: due uniformi (FOSD, anche per chi ama il rischio) e due normali con la stessa media (MPS; che cosa resta senza concavità).",
+    "D": "Azzardo morale dal lato della formulazione: scrivere PC e IC dalla descrizione, lettura economica dei vincoli attivi, effetto di r_1 = r_0 sulla (5).",
+    "E": "Portafoglio con CARA: α* in forma chiusa e confronto fra due λ; DARA e ricchezza (dimostrazione guidata del segno di ∂α*/∂w0)."
+  },
+  "domande": [
+    {
+      "id": "A.1",
+      "unita": [
+        "U04"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Le funzioni CARA e CRRA"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Avversione assoluta e avversione relativa"
+        }
+      ],
+      "descrizione": "Facile. Agente 1 con u1 = ln W, agente 2 con u2 = −e^{−λW}/λ (λ nuovo): A1, A2, RR1, RR2 e classificazione CARA/CRRA. Non chiedere qui dove le due avversioni si eguagliano (serve ad A.4).",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "A1(W) = 1/W",
+          "etichetta": "agente 1: avversione assoluta A(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "RR1(W) = 1, costante",
+          "etichetta": "agente 1: avversione relativa RR(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "A2(W) = 1/20, costante",
+          "etichetta": "agente 2: avversione assoluta A(W)"
+        },
+        {
+          "tipo": "testo",
+          "valore": "RR2(W) = W/20",
+          "etichetta": "agente 2: avversione relativa RR(W)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "CRRA",
+          "etichetta": "agente 1: CARA o CRRA"
+        },
+        {
+          "tipo": "esito",
+          "valore": "CARA",
+          "etichetta": "agente 2: CARA o CRRA"
+        }
+      ]
+    },
+    {
+      "id": "A.2",
+      "unita": [
+        "U05"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Equivalente certo e premio per il rischio"
+        }
+      ],
+      "descrizione": "Media. Lotteria ±b equiprobabile a ricchezza w per l'agente 1, con (w − b)(w + b) quadrato perfetto (dati nuovi, diversi dall'appello 02 e dalla nota): CE e premio. Dichiarare R = w − CE (E[X] = 0).",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 20.0,
+          "tolleranza": 0.01,
+          "etichetta": "equivalente certo CE dell'agente 1"
+        },
+        {
+          "tipo": "numero",
+          "valore": 5.0,
+          "tolleranza": 0.01,
+          "etichetta": "premio per il rischio R dell'agente 1"
+        }
+      ]
+    },
+    {
+      "id": "A.3",
+      "unita": [
+        "U07"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Come varia il premio con la ricchezza"
+        }
+      ],
+      "descrizione": "Media. Per l'agente 1, derivando E[u(w + X)] = u(w − R) rispetto a w, ricava ∂R/∂w e calcolala alla ricchezza e con la lotteria di A.2; interpretane il segno. Angolo nuovo: la formula della derivata, non il confronto fra due ricchezze (appello 01).",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "dR/dw = 1 - E[u'(w+X)]/u'(w-R)",
+          "etichetta": "formula di dR/dw per l'agente 1"
+        },
+        {
+          "tipo": "numero",
+          "valore": -0.25,
+          "tolleranza": 0.01,
+          "etichetta": "valore di dR/dw a w = 25 con X = +-15"
+        },
+        {
+          "tipo": "esito",
+          "valore": "decresce",
+          "etichetta": "il premio al crescere della ricchezza (cresce o decresce)"
+        }
+      ]
+    },
+    {
+      "id": "A.4",
+      "unita": [
+        "U06",
+        "U04"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 03",
+          "sezione": "Il premio per lotterie piccole"
+        },
+        {
+          "nota": "ERA 03",
+          "sezione": "Avversione assoluta e avversione relativa"
+        }
+      ],
+      "descrizione": "Difficile. Max 3 righe: uno dei due agenti è più avverso dell'altro? Per una lotteria piccola, chi paga il premio maggiore a una ricchezza bassa e a una alta (date nel testo, una per parte rispetto al punto in cui A1 = A2)? Consiglio di sola direzione.",
+      "chiave": [
+        {
+          "tipo": "esito",
+          "valore": "no",
+          "etichetta": "uno dei due agenti è più avverso dell'altro (si o no)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "1",
+          "etichetta": "agente che paga il premio maggiore a w = 10 (1 o 2)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "2",
+          "etichetta": "agente che paga il premio maggiore a w = 40 (1 o 2)"
+        }
+      ]
+    },
+    {
+      "id": "B.1",
+      "unita": [
+        "U14"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 06",
+          "sezione": "Dati osservati e calibrazione del modello"
+        }
+      ],
+      "descrizione": "Facile. Con l'approssimazione φ ≈ γ Var(ỹ)/E[ỹ]² (R_f = 1, ỹ poco disperso) e un coefficiente di variazione nuovo: premio del modello per un γ dato e γ necessario per un premio osservato dato. Dichiarare che è un'approssimazione; numeri diversi da quelli di Mehra e Prescott della nota.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 0.45,
+          "tolleranza": 0.01,
+          "etichetta": "premio al rischio di mercato del modello con gamma = 5, in punti percentuali"
+        },
+        {
+          "tipo": "numero",
+          "valore": 50.0,
+          "tolleranza": 1.0,
+          "etichetta": "gamma necessario per un premio osservato del 4,5%"
+        }
+      ]
+    },
+    {
+      "id": "B.2",
+      "unita": [
+        "U15"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 06",
+          "sezione": "Due paesi"
+        },
+        {
+          "nota": "ERA 06",
+          "sezione": "Il premio al rischio di mercato con integrazione"
+        }
+      ],
+      "descrizione": "Media. Due paesi con ỹ^A e ỹ^B i.i.d. a due valori equiprobabili (diversi da {1; 2}), u = ln, R_f = 1: premio al rischio di mercato in autarchia e con integrazione (W = (ỹ^A + ỹ^B)/2, quattro stati); il prezzo è solo un passaggio intermedio. Dichiarare indipendenza e α^A = α^B = 1/2; il rapporto fra i due premi non va presentato come regola generale.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 0.3333,
+          "tolleranza": 0.0001,
+          "etichetta": "premio al rischio di mercato phi in autarchia"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.1667,
+          "tolleranza": 0.0001,
+          "etichetta": "premio al rischio di mercato phi con integrazione"
+        }
+      ]
+    },
+    {
+      "id": "B.3",
+      "unita": [
+        "U16"
+      ],
+      "tipo": "calcolo",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 06",
+          "sezione": "Il premio al rischio di mercato di ciascun titolo"
+        }
+      ],
+      "descrizione": "Difficile. Tre stati equiprobabili, u = ln, due titoli a e b (ỹ = ỹ_a + ỹ_b con ỹ = (1; 3; 6) e ỹ_a = (1; 0; 1), non collineari): espressione del kernel, prezzo P_a e premio del titolo a. R̃_a è correlato positivamente con ỹ ma Cov(R̃_a, M̃) > 0: il premio è negativo (esito: positivo, nullo o negativo). Usare la forma con M̃; frazioni calcolabili a mano.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "M = 2/y",
+          "etichetta": "kernel M come espressione di y"
+        },
+        {
+          "tipo": "numero",
+          "valore": 0.7778,
+          "tolleranza": 0.0001,
+          "etichetta": "prezzo P_a del titolo a"
+        },
+        {
+          "tipo": "numero",
+          "valore": -0.1429,
+          "tolleranza": 0.0001,
+          "etichetta": "premio E[R_a] - R_f del titolo a"
+        },
+        {
+          "tipo": "esito",
+          "valore": "negativo",
+          "etichetta": "segno del premio del titolo a (positivo, nullo o negativo)"
+        }
+      ]
+    },
+    {
+      "id": "B.4",
+      "unita": [
+        "U15",
+        "U14"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 06",
+          "sezione": "Il premio al rischio di mercato con integrazione"
+        }
+      ],
+      "descrizione": "Media. Max 3 righe: perché l'integrazione dei mercati abbassa il premio del titolo domestico (che cosa cambia nel kernel e nella sua covarianza con ỹ^A)? Consiglio di sola direzione.",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "con l'integrazione il kernel dipende da W = (y_A + y_B)/2, con varianza Var(y)/2, e non da y_A: come mostrano la nota e B.2, la sua covarianza con y_A è minore in valore assoluto e, poiché phi = -Cov(y_A, M)/P, il premio scende e anche P sale (in B.2 phi da 1/3 a 1/6, P da 3/2 a 12/7)"
+      }
+    },
+    {
+      "id": "C.1",
+      "unita": [
+        "U08"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Due lotterie uniformi"
+        },
+        {
+          "nota": "ERA 04",
+          "sezione": "Dominanza stocastica del primo ordine"
+        }
+      ],
+      "descrizione": "Facile. Coppia 1: due uniformi con supporti nuovi (non [0, 1] e [−1, 1]) costruite in modo che una domini l'altra al primo ordine: con u crescente quale si preferisce? Perché? (max 2 righe).",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "X2"
+      }
+    },
+    {
+      "id": "C.2",
+      "unita": [
+        "U08"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Quale ordine per quale classe di utilità"
+        },
+        {
+          "nota": "ERA 04",
+          "sezione": "Dominanza stocastica del primo ordine"
+        }
+      ],
+      "descrizione": "Media. Stessa coppia, agente amante del rischio (u strettamente crescente e strettamente convessa): quale lotteria preferisce? Perché? (max 2 righe). La FOSD vale per ogni u crescente.",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "X2"
+      }
+    },
+    {
+      "id": "C.3",
+      "unita": [
+        "U09"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Il *mean-preserving spread*"
+        }
+      ],
+      "descrizione": "Media. Coppia 2: due normali con la stessa media e varianze diverse (nuove; il secondo parametro di N(μ, σ²) è la varianza, dichiararlo): un agente avverso al rischio quale preferisce? Perché? (max 2 righe).",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "Z1"
+      }
+    },
+    {
+      "id": "C.4",
+      "unita": [
+        "U09"
+      ],
+      "tipo": "interpretazione",
+      "punti": 5,
+      "fonti": [
+        {
+          "nota": "ERA 04",
+          "sezione": "Quale ordine per quale classe di utilità"
+        },
+        {
+          "nota": "ERA 04",
+          "sezione": "Dominanza stocastica del secondo ordine"
+        },
+        {
+          "nota": "ERA 04",
+          "sezione": "Il *mean-preserving spread*"
+        }
+      ],
+      "descrizione": "Difficile. Stessa coppia: per un agente con u crescente ma non concava si stabilisce senza ambiguità quale preferisce? Perché? (max 2 righe).",
+      "chiave": {
+        "tipo": "esito",
+        "valore": "no"
+      }
+    },
+    {
+      "id": "D.1",
+      "unita": [
+        "U20"
+      ],
+      "tipo": "dimostrazione",
+      "punti": 6,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "Informazione asimmetrica"
+        },
+        {
+          "nota": "ERA 08",
+          "sezione": "Lagrangiana e condizioni del primo ordine"
+        }
+      ],
+      "descrizione": "Media. Il testo descrive a parole il modello (perdite l ∈ {0, …, L}, impegno e ∈ {0, 1} non osservato, d(1) > d(0), ū, compagnia neutrale e monopolista): scrivi il problema della compagnia che vuole indurre e = 1, con obiettivo, PC e IC nella forma g ≥ 0. Dichiarare che a parità di utilità il cliente sceglie l'impegno voluto. Angolo: dalla descrizione alla formulazione.",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "max p - sum_l pi_l(1) B_l su p, B_0..B_L, con z_l = w - p - l + B_l; PC: sum_l pi_l(1) u(z_l) - d(1) - ubar >= 0; IC: sum_l pi_l(1) u(z_l) - d(1) - [sum_l pi_l(0) u(z_l) - d(0)] >= 0"
+      }
+    },
+    {
+      "id": "D.2",
+      "unita": [
+        "U20"
+      ],
+      "tipo": "teoria",
+      "punti": 8,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "Che cosa significa il risultato"
+        }
+      ],
+      "descrizione": "Media. Max 3 righe: il testo dà come noto che, per e = 1, PC e IC sono entrambi attivi; spiega economicamente perché la compagnia non lascia al cliente più di ū e perché non gli dà un incentivo più forte del necessario. D.2 e D.3 non riscrivono PC e IC (risolverebbero D.1).",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "PC: con più di ubar la compagnia potrebbe abbassare gli indennizzi riducendo u(z_l) della stessa quantità in ogni stato; IC non cambia (i pesi pi_l(1) - pi_l(0) sommano a 0) e il profitto sale. IC: un incentivo più forte del necessario espone il cliente a più rischio, che va compensato per garantirgli ubar: profitto minore"
+      }
+    },
+    {
+      "id": "D.3",
+      "unita": [
+        "U20",
+        "U19"
+      ],
+      "tipo": "interpretazione",
+      "punti": 6,
+      "fonti": [
+        {
+          "nota": "ERA 08",
+          "sezione": "La proprietà del rapporto di verosimiglianza monotono"
+        },
+        {
+          "nota": "ERA 08",
+          "sezione": "Lagrangiana e condizioni del primo ordine"
+        }
+      ],
+      "descrizione": "Difficile. Max 3 righe: data nel testo la (5) con β > 0 e λ > 0, che cosa implica per l'indennizzo della perdita 1 il caso r_1 = r_0 (MLR non stretta fra le perdite 0 e 1)? Dichiarare la normalizzazione B_0 = 0.",
+      "chiave": [
+        {
+          "tipo": "numero",
+          "valore": 1.0,
+          "tolleranza": 0.01,
+          "etichetta": "indennizzo B_1 con B_0 = 0"
+        },
+        {
+          "tipo": "esito",
+          "valore": "intero",
+          "etichetta": "la perdita 1 è coperta per intero o in parte (intero o parte)"
+        }
+      ]
+    },
+    {
+      "id": "E.1",
+      "unita": [
+        "U10",
+        "U11"
+      ],
+      "tipo": "teoria",
+      "punti": 8,
+      "fonti": [
+        {
+          "nota": "ERA 05",
+          "sezione": "La condizione del primo ordine"
+        },
+        {
+          "nota": "ERA 05",
+          "sezione": "Avversione al rischio e investimento"
+        }
+      ],
+      "descrizione": "Media. u = −e^{−λw}/λ, rendimento in eccesso a due valori nuovi, r dato: dalla FOC ricava α* in forma chiusa (con un logaritmo) e controlla che sia in (0, W); confronta due agenti con λ2 > λ1 e collega il risultato al teorema sull'agente più avverso (con quale φ vale u2 = φ∘u1?). Rendimenti netti; la dipendenza da w0 non si chiede qui.",
+      "chiave": [
+        {
+          "tipo": "testo",
+          "valore": "FOC E[x e^(-lambda (w0 + alpha x))] = 0, cioè e^(lambda alpha/2) = 3/2, alpha* = 2 ln(3/2)/lambda, indipendente da w0",
+          "etichetta": "condizione del primo ordine e alpha* in forma chiusa"
+        },
+        {
+          "tipo": "numero",
+          "valore": 40.55,
+          "tolleranza": 0.1,
+          "etichetta": "alpha_1* dell'agente con lambda = 0,02"
+        },
+        {
+          "tipo": "numero",
+          "valore": 20.27,
+          "tolleranza": 0.1,
+          "etichetta": "alpha_2* dell'agente con lambda = 0,04"
+        },
+        {
+          "tipo": "testo",
+          "valore": "phi(t) = -0,01 t^2 per t < 0, strettamente concava",
+          "etichetta": "funzione phi tale che u2 = phi(u1)"
+        },
+        {
+          "tipo": "esito",
+          "valore": "minore",
+          "etichetta": "alpha_2* rispetto ad alpha_1* secondo il teorema (maggiore o minore)"
+        }
+      ]
+    },
+    {
+      "id": "E.2",
+      "unita": [
+        "U12"
+      ],
+      "tipo": "dimostrazione",
+      "punti": 12,
+      "fonti": [
+        {
+          "nota": "ERA 05",
+          "sezione": "Ricchezza iniziale e investimento"
+        }
+      ],
+      "descrizione": "Difficile. Dimostrazione guidata: dato nel testo ∂α*/∂w0 = −E[x̃{−u''(w0 + α*x̃)}]/D con D > 0 (la derivazione era nell'appello 01), mostra che con DARA è ≥ 0 e con DARA stretta è > 0. Il Consiglio ricorda −u'' = A u' e la FOC, non il confronto stato per stato fra A(w0 + α*x) e A(w0). Dichiarare DARA debole (A' ≤ 0) e stretta (A' < 0), α* interno, E[x̃] > 0.",
+      "chiave": {
+        "tipo": "testo",
+        "valore": "D > 0, quindi basta N = E[x(-u'')] <= 0; con -u'' = A u' e alpha* > 0, per ogni x != 0 A(w0 + alpha* x) x u'(.) <= A(w0) x u'(.); prendendo l'attesa e usando la FOC N <= A(w0) * 0 = 0, quindi dalpha*/dw0 = -N/D >= 0; con A' < 0 le disuguaglianze sono strette, N < 0 e dalpha*/dw0 > 0"
+      }
+    }
+  ]
+}
