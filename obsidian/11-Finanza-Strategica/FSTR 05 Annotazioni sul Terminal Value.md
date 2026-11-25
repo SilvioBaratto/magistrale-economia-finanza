@@ -16,7 +16,7 @@ Il Terminal Value (TV) è il valore di una perpetuità, ma in molti casi ha un o
 
 ### L'attualizzazione riduce il peso dei flussi lontani
 
-Il fattore di sconto $(1+WACC)^t$ cresce in modo esponenziale con $t$. Con un WACC del 9–10% un flusso del ventesimo anno viene diviso per un fattore compreso tra 5,6 e 6,7 ($1{,}09^{20} \approx 5{,}6$; $1{,}10^{20} \approx 6{,}7$), e i flussi ancora più lontani per fattori maggiori. Pur avendo una vita teoricamente infinita, l'impresa genera quindi flussi molto distanti nel tempo che, scontati molte volte, contribuiscono in misura limitata al valore odierno.
+Il fattore di sconto $(1+WACC)^t$ cresce in modo esponenziale con $t$. Con un WACC del 9-10% un flusso del ventesimo anno viene diviso per un fattore compreso tra 5,6 e 6,7 ($1{,}09^{20} \approx 5{,}6$; $1{,}10^{20} \approx 6{,}7$), e i flussi ancora più lontani per fattori maggiori. Pur avendo una vita teoricamente infinita, l'impresa genera quindi flussi molto distanti nel tempo che, scontati molte volte, contribuiscono in misura limitata al valore odierno.
 
 ### La crescita di lungo periodo è molto bassa
 
@@ -24,7 +24,7 @@ Nel Terminal Value non si può assumere che l'impresa continui a crescere come n
 
 ### La fase esplicita è quella in cui l'impresa crea più valore
 
-Nel piano, di 3–5 anni, l'impresa cresce più del mercato, migliora i margini, effettua investimenti importanti e ottiene rendimenti superiori alla media. Nella perpetuità si trova invece già in regime stabile, con flussi regolari, margini normalizzati e crescita bassa. È dunque coerente che i primi anni, in cui si crea effettivamente valore economico, abbiano un peso rilevante nonostante la presenza della perpetuità.
+Nel piano, di 3-5 anni, l'impresa cresce più del mercato, migliora i margini, effettua investimenti importanti e ottiene rendimenti superiori alla media. Nella perpetuità si trova invece già in regime stabile, con flussi regolari, margini normalizzati e crescita bassa. È dunque coerente che i primi anni, in cui si crea effettivamente valore economico, abbiano un peso rilevante nonostante la presenza della perpetuità.
 
 Il TV copre molti anni, ma di flussi molto lontani e poco crescenti; il piano copre pochi anni, ma di flussi vicini e ad alta intensità di valore. Ne segue che la parte esplicita contribuisce in misura significativa al valore complessivo e che la perpetuità non domina automaticamente la valutazione. Il peso del TV dipende da WACC, da $g$ e dalla crescita del piano: nei due esempi seguenti è pari al 75% e all'88% del valore totale.
 
@@ -130,6 +130,6 @@ Se $ROIC = WACC$ il TV è pari a $NOPAT_{N+1}/WACC$ per qualunque $g$: la cresci
 >
 > $$V = 543 + 4.791 = 5.334, \qquad Peso_{TV} = \frac{4.791}{5.334} \approx 89{,}8\%$$
 
-Con un differenziale $WACC - g$ ridotto a 3 punti percentuali il TV pesa l'88% del valore totale. Un aumento di $g$ di mezzo punto, al 4,5%, porta il differenziale a 2,5 punti e il peso a circa l'89,8%, quasi il 90%, mentre il valore dell'impresa sale da 4.512 a 5.334 (+18%). La valutazione risulta quindi molto sensibile a $g$ e potenzialmente distorta quando lo spread tra WACC e crescita di lungo periodo si comprime. Il valore $g = 4\%$ supera inoltre l'intervallo 0–2% indicato come tipico per la crescita a regime.
+Con un differenziale $WACC - g$ ridotto a 3 punti percentuali il TV pesa l'88% del valore totale. Un aumento di $g$ di mezzo punto, al 4,5%, porta il differenziale a 2,5 punti e il peso a circa l'89,8%, quasi il 90%, mentre il valore dell'impresa sale da 4.512 a 5.334 (+18%). La valutazione risulta quindi molto sensibile a $g$ e potenzialmente distorta quando lo spread tra WACC e crescita di lungo periodo si comprime. Il valore $g = 4\%$ supera inoltre l'intervallo 0-2% indicato come tipico per la crescita a regime.
 
-Nel [[FSTR 04-full Modelli Valutazione Finanziaria Parte2|controllo del peso del terminal value]] un rapporto $TV/V$ superiore a circa l'85–90% è considerato un segnale di anomalia: possibili errori nei flussi espliciti, un orizzonte esplicito troppo breve, oppure l'inutilità di una stima analitica rispetto a un metodo sintetico. Entrambi gli scenari di questo esempio rientrano in quella fascia.
+Nel [[FSTR 04-full Modelli Valutazione Finanziaria Parte2|controllo del peso del terminal value]] un rapporto $TV/V$ superiore a circa l'85-90% è considerato un segnale di anomalia: possibili errori nei flussi espliciti, un orizzonte esplicito troppo breve, oppure l'inutilità di una stima analitica rispetto a un metodo sintetico. Entrambi gli scenari di questo esempio rientrano in quella fascia.

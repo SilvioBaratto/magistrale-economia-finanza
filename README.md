@@ -17,10 +17,10 @@ Un PDF per insegnamento, generato dalle note Obsidian.
 
 | Insegnamento | Codice | Dispensa | Pagine | Note Obsidian |
 |---|---|---|---|---|
-| Econometria | EM0004 | [PDF](dispense/01-econometria.pdf) | 169 | [note](obsidian/01-Econometria/) |
+| Econometria | EM0004 | [PDF](dispense/01-econometria.pdf) | 148 | [note](obsidian/01-Econometria/) |
 | Legislazione Bancaria — modulo 1 | EM2101 | [PDF](dispense/03-legislazione-bancaria-1.pdf) | 197 | [note](obsidian/03-Legislazione-Bancaria-1/) |
-| Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 205 | [note](obsidian/04-Legislazione-Bancaria-2/) |
-| Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 191 | [note](obsidian/11-Finanza-Strategica/) |
+| Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 182 | [note](obsidian/04-Legislazione-Bancaria-2/) |
+| Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 178 | [note](obsidian/11-Finanza-Strategica/) |
 | 14-Economia-Rischio-Assicurazioni |  | [PDF](dispense/14-economia-rischio-assicurazioni.pdf) | 114 | [note](obsidian/14-Economia-Rischio-Assicurazioni/) |
 | 04-legislazione-bancaria-2-sintesi | | [PDF](dispense/04-legislazione-bancaria-2-sintesi.pdf) | 100 | |
 
@@ -39,8 +39,8 @@ tutte le lezioni di un insegnamento in ordine di data.
 | Insegnamento | Accademica | Fedele | Sintetica |
 |---|---|---|---|
 | Econometria | [PDF](dispense/appunti/01-econometria.pdf) · 106 pp | [PDF](dispense/appunti-fedeli/01-econometria.pdf) · 139 pp | [PDF](dispense/appunti-sintetici/01-econometria.pdf) · 79 pp |
-| Legislazione Bancaria — modulo 2 | [PDF](dispense/appunti/04-legislazione-bancaria-2.pdf) · 104 pp | [PDF](dispense/appunti-fedeli/04-legislazione-bancaria-2.pdf) · 120 pp | [PDF](dispense/appunti-sintetici/04-legislazione-bancaria-2.pdf) · 66 pp |
-| Finanza Strategica | [PDF](dispense/appunti/11-finanza-strategica.pdf) · 76 pp | [PDF](dispense/appunti-fedeli/11-finanza-strategica.pdf) · 97 pp | [PDF](dispense/appunti-sintetici/11-finanza-strategica.pdf) · 55 pp |
+| Legislazione Bancaria — modulo 2 | [PDF](dispense/appunti/04-legislazione-bancaria-2.pdf) · 117 pp | [PDF](dispense/appunti-fedeli/04-legislazione-bancaria-2.pdf) · 137 pp | [PDF](dispense/appunti-sintetici/04-legislazione-bancaria-2.pdf) · 75 pp |
+| Finanza Strategica | [PDF](dispense/appunti/11-finanza-strategica.pdf) · 86 pp | [PDF](dispense/appunti-fedeli/11-finanza-strategica.pdf) · 110 pp | [PDF](dispense/appunti-sintetici/11-finanza-strategica.pdf) · 63 pp |
 
 ### Econometria
 
@@ -63,6 +63,7 @@ tutte le lezioni di un insegnamento in ordine di data.
 | 17/11/2026 | Rischio di credito e centrale dei rischi | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-17%20Rischio%20di%20credito%20e%20centrale%20dei%20rischi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-17%20Rischio%20di%20credito%2C%20grandi%20esposizioni%20e%20centrale%20dei%20rischi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-17%20Rischio%20di%20credito%2C%20grandi%20esposizioni%20e%20centrale%20dei%20rischi.md) |
 | 19/11/2026 | Centrale dei rischi, immobili, riserva obbligatoria | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-19%20Centrale%20dei%20rischi%2C%20immobili%2C%20riserva%20obbligatoria.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-19%20Centrale%20dei%20rischi%2C%20immobili%20e%20rischio%20di%20liquidita%CC%80.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-19%20Centrale%20dei%20rischi%2C%20immobili%20e%20rischio%20di%20liquidita%CC%80.md) |
 | 20/11/2026 | registrazione interrotta a metà, unita in ordine (prima parte sopra, seconda parte sotto) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-20%20Rischi%20di%20mercato%20e%20operativo%2C%20partecipazioni%20detenibili.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-20%20Rischi%20di%20mercato%2C%20operativo%20e%20partecipazioni%20detenibili.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-20%20Rischi%20di%20mercato%2C%20operativo%20e%20partecipazioni%20detenibili.md) |
+| 24/11/2026 | Governo societario delle banche: principi, progetto e organi | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-24%20Governo%20societario%20delle%20banche%20principi%2C%20progetto%20e%20organi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-24%20Governo%20societario%20delle%20banche%20organi%2C%20deleghe%20e%20non%20esecutivi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-24%20Governo%20societario%20delle%20banche%20organi%2C%20deleghe%20e%20non%20esecutivi.md) |
 
 ### Finanza Strategica
 
@@ -73,6 +74,7 @@ tutte le lezioni di un insegnamento in ordine di data.
 | 17/11/2026 | Metodi di valutazione degli investimenti e opzioni reali | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-17%20Metodi%20di%20valutazione%20degli%20investimenti%20e%20opzioni%20reali.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-17%20Esercizi%20sui%20metodi%20di%20valutazione%20e%20opzioni%20reali.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-17%20Esercizi%20sui%20metodi%20di%20valutazione%20e%20opzioni%20reali.md) |
 | 19/11/2026 | Costo del capitale proprio e introduzione ai DCF | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-19%20Costo%20del%20capitale%20proprio%20e%20introduzione%20ai%20DCF.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-19%20Costo%20del%20capitale%20proprio%2C%20rischio%20paese%20e%20beta.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-19%20Costo%20del%20capitale%20proprio%2C%20rischio%20paese%20e%20beta.md) |
 | 20/11/2026 | Enterprise value, PFN, NOPAT e modelli DCF | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-20%20Enterprise%20value%2C%20PFN%2C%20NOPAT%20e%20modelli%20DCF.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-20%20Enterprise%20value%2C%20PFN%20e%20NOPAT%20nei%20metodi%20DCF.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-20%20Enterprise%20value%2C%20PFN%20e%20NOPAT%20nei%20metodi%20DCF.md) |
+| 24/11/2026 | Metodi DCF sintetico e analitico: terminal value e sanity check | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-24%20Metodi%20DCF%20sintetico%20e%20analitico%20terminal%20value%20e%20sanity%20check.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-24%20Metodi%20DCF%2C%20terminal%20value%20e%20modelli%20multi-step.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-24%20Metodi%20DCF%2C%20terminal%20value%20e%20modelli%20multi-step.md) |
 
 ## Formulari
 

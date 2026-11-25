@@ -21,8 +21,6 @@ Le ispezioni sono controlli effettuati dall'autorità di vigilanza presso le sed
 
 Lo scambio di informazioni tra vigilanza informativa e vigilanza ispettiva è cruciale per controlli efficaci: sia le ispezioni generali a carattere periodico sia quelle effettuate quando la situazione della banca presenta squilibri rilevanti sono preparate dagli ispettori in collaborazione con gli uffici che svolgono in via ordinaria la vigilanza informativa. In alcuni casi è proprio la vigilanza informativa a evidenziare carenze gestionali che impongono una verifica presso la sede della banca.
 
-*(pagina 1)*
-
 ## Art. 54 TUB, comma 1: il potere ispettivo di Banca d'Italia
 
 **Art. 54 TUB, comma 1**: *"La Banca d'Italia può effettuare ispezioni presso le banche e i soggetti ai quali esse abbiano esternalizzato funzioni aziendali e richiedere l'esibizione di documenti e gli atti che ritenga necessari."* (Testo vigente dopo il d.lgs. 182/2021, in vigore dal 30 novembre 2021, che ha soppresso le parole «essenziali o importanti».)
@@ -31,7 +29,7 @@ Il primo comma è brevissimo, ma è l'unico a riferirsi all'attività di vigilan
 
 **Le differenze lessicali rispetto alla precedente legge bancaria sono significative:**
 
-- *"Disporre" vs "effettuare".* Nella precedente legge bancaria si utilizzava l'espressione "potrà **disporre** ispezioni" (art. 31, comma 2, r.d.l. 375/1936, riferito all'Ispettorato), lasciando intendere in qualche modo che questa attività fosse delegabile. Per fugare ogni dubbio, nella nuova formulazione dell'art. 54 si stabilisce che "Banca d'Italia può **effettuare** ispezioni": il legislatore ha quindi preferito mettere in chiaro che l'attività ispettiva non può essere delegata in alcun modo e può essere svolta soltanto da BI. *(Non si tratta di un cambiamento superfluo perché esistono Paesi come il Regno Unito in cui la Bank of England non realizza ispezioni perché stringe accordi con società di revisione a cui delega di svolgere anche l'attività ispettiva — a tutti gli effetti un outsourcing.)*
+- *"Disporre" vs "effettuare".* Nella precedente legge bancaria si utilizzava l'espressione "potrà **disporre** ispezioni" (art. 31, comma 2, r.d.l. 375/1936, riferito all'Ispettorato), lasciando intendere in qualche modo che questa attività fosse delegabile. Per fugare ogni dubbio, nella nuova formulazione dell'art. 54 si stabilisce che "Banca d'Italia può **effettuare** ispezioni": il legislatore ha quindi preferito mettere in chiaro che l'attività ispettiva non può essere delegata in alcun modo e può essere svolta soltanto da BI. *(Non si tratta di un cambiamento superfluo perché esistono Paesi come il Regno Unito in cui la Bank of England non realizza ispezioni perché stringe accordi con società di revisione a cui delega di svolgere anche l'attività ispettiva, a tutti gli effetti un outsourcing.)*
 
 - *"Funzionari" vs "dipendenti".* Nella precedente legge bancaria (stesso art. 31, comma 2: ispezioni "a mezzo di funzionari") si sanciva che l'attività di vigilanza poteva essere svolta dai **funzionari**; attualmente questa può essere affidata ai **dipendenti**. I funzionari sono caratterizzati da un certo grado (ad esempio quadro o dirigente), mentre con il termine dipendente si fa riferimento a una categoria molto più ampia di soggetti. *(Adesso, come in passato, si creano dentro BI dei gruppi ispettivi, con la differenza che in passato il capogruppo era almeno un funzionario, mentre adesso la legge non pone requisiti di grado; la Guida di vigilanza richiama il grado, ad esempio, per individuare, se la lettera di incarico tace, il sostituto del capo-gruppo.)*
 
@@ -40,8 +38,6 @@ Il primo comma è brevissimo, ma è l'unico a riferirsi all'attività di vigilan
 Per la determinazione delle modalità concrete attraverso cui svolgere l'attività ispettiva, BI si avvaleva (e si avvale tutt'ora) della **"Guida per l'attività ispettiva"**, cioè un documento riservato i cui contenuti non erano noti all'infuori di BI stessa; attualmente però tutta questa segretezza è venuta meno ed è aumentata la trasparenza verso l'esterno in merito ad alcuni aspetti (la parte ispettiva è oggi pubblica nella Guida per l'attività di vigilanza, Circolare 269 del 7 maggio 2008).
 
 Le ispezioni sono libere nel metodo, data l'assenza di riferimenti espliciti nella legge, ma devono avvenire nel rispetto dei principi che regolano l'azione amministrativa. Per uniformare l'azione di vigilanza, la Banca d'Italia ha stabilito nella Guida per l'attività di vigilanza (circ. 269 del 2008, parte III) «percorsi di analisi» (Pda) dettagliati, articolati per aree di indagine coerenti con l'approccio seguito dal sistema di analisi aziendale nella vigilanza cartolare e con le caratteristiche degli intermediari.
-
-*(pagina 1–2)*
 
 ## Tipologie di ispezioni: la classificazione tradizionale
 
@@ -54,8 +50,6 @@ Secondo i vecchi schemi le ispezioni venivano distinte in due macrocategorie (no
 Normalmente le ispezioni periodiche sono di tipo generale, quelle straordinarie invece sono settoriali.
 
 **Preavviso**: quando le ispezioni sono svolte da BI, questa non fornisce un preavviso su quando potrebbe avvenire; la BCE tende invece a informare preventivamente: le ispezioni *in loco* sono condotte previa notifica all'autorità di vigilanza nazionale, ma i suoi funzionari possono accedere ai locali della banca anche senza preavviso (art. 12 reg. (UE) n. 1024/2013). Si ricorda che, come disposto dall'art. 4, comma 3, TUB (e non dall'art. 7, che riguarda il segreto d'ufficio), le norme sulla trasparenza amministrativa (legge 241/1990) si applicano in quanto compatibili. Il motivo per cui BI preferisce l'effetto sorpresa ha perso un po' di significato nel tempo: prima ci si recava subito alla cassa per vedere se ci fossero cose anomale, e se una banca avesse saputo dell'ispezione in anticipo avrebbe agito per evitare di essere scoperta. Oggi si possono fare verifiche sul sistema informatico su cui sono registrate tutte le operazioni, e il contante in cassa è sempre meno: l'effetto sorpresa conta meno.
-
-*(pagina 2)*
 
 ## Art. 54 TUB, commi 2-4: la cooperazione con le autorità estere
 
@@ -70,8 +64,6 @@ In questo comma si esprime lo stesso concetto descritto nel comma precedente ma 
 **Comma 4**: *"A condizione di reciprocità, la Banca d'Italia può concordare con le autorità competenti degli Stati terzi modalità per l'ispezione di succursali di banche insediate nei rispettivi territori."*
 
 In questo caso si specifica che la collaborazione è facoltativa ("può concordare") e comunque possibile solo a condizioni di **reciprocità** con il Paese terzo in questione (cioè fuori dall'Unione Europea).
-
-*(pagina 2–3)*
 
 ## La prassi operativa: le nuove tipologie di ispezione (disposizioni di vigilanza)
 
@@ -88,8 +80,6 @@ In questo caso si specifica che la collaborazione è facoltativa ("può concorda
 *Ai fini della vigilanza su base consolidata, la Banca d'Italia può effettuare ispezioni presso le banche, i soggetti inclusi nell'ambito della vigilanza consolidata e i soggetti ai quali le une e gli altri abbiano esternalizzato funzioni aziendali essenziali o importanti."* (La Circolare 285 conserva l'espressione «essenziali o importanti», che il d.lgs. 182/2021 ha invece soppresso nell'art. 54, comma 1, TUB.)
 
 Cambia la **terminologia**: da ispezioni generali a "spettro esteso" e da settoriali a "mirate", con l'aggiunta delle ispezioni tematiche (categoria che nello schema tradizionale non esisteva). La Guida per l'attività di vigilanza, nel testo attuale, tratta le ispezioni "tematiche" come un tipo particolare di "mirate" e distingue invece per materia (prudenziale, di tutela, antiriciclaggio), senza la categoria "compliance" della Circolare 285.
-
-*(pagina 3)*
 
 ## Svolgimento degli accertamenti: soggetti, poteri e fasi dell'ispezione
 
@@ -114,8 +104,6 @@ Non avere pregiudizi non significa però essere poco informati sulla banca che s
 
 **5. Redazione del rapporto.** Quando l'ispezione è stata conclusa si può procedere alla redazione del rapporto ispettivo; per evitare però che le valutazioni delle banche differiscano in relazione a chi svolge l'ispezione, è necessario avere un confronto con il capo dell'amministrazione centrale di BI che si occupa della vigilanza ispettiva.
 
-*(pagina 4–5)*
-
 ## Struttura del rapporto ispettivo
 
 Nello schema tradizionale i rapporti ispettivi si dividono in due parti:
@@ -136,9 +124,7 @@ Nel rapporto ispettivo la **prima pagina** è dedicata ai dati identificativi de
 
 Di seguito si analizzano due rapporti ispettivi: uno un po' più datato e uno più recente.
 
-*(pagina 5)*
-
-## Rapporto Ispettivo N.1 — Parte Aperta: costatazioni
+## Rapporto Ispettivo N.1, Parte Aperta: costatazioni
 
 Il primo rapporto analizzato riguarda una banca in gravissima difficoltà, poi commissariata durante lo svolgimento stesso dell'ispezione. Di seguito i passaggi testuali della parte aperta (costatazioni), con il relativo commento esplicativo.
 
@@ -202,7 +188,7 @@ Questa frase indica il problema principale della banca: le **competenze merament
 
 > *"E invero, l'attività istruttoria appare incompleta e superficiale, sia nelle proposte promananti dalle ramificazioni periferiche, di rado suffragate da analisi consone, sia nello scrutinio affidato agli uffici centrali, sovente ripetitivo e acritico. In concreto, il prioritario metro di giudizio si è fondato sulla consistenza dei patrimoni apprezzati solo nel presunto valore commerciale e non in quello di realizzo."*
 
-Vengono espressi dei rilievi anche in merito alla modalità con cui erano gestite le pratiche di fido, con riferimento a una pratica particolarmente scorretta nel contesto bancario: utilizzare il **valore commerciale** nelle valutazioni piuttosto che il **valore di realizzo**. *(Quando un cliente offre in garanzia un certo bene, la banca necessita di far realizzare una perizia per poterne determinare il valore; la banca poi dovrà tener conto non del valore commerciale del bene in questione, ma di quanto riuscirà a ottenere in caso di vendita dello stesso — appunto il valore di possibile realizzo, sempre molto più basso del valore commerciale.)*
+Vengono espressi dei rilievi anche in merito alla modalità con cui erano gestite le pratiche di fido, con riferimento a una pratica particolarmente scorretta nel contesto bancario: utilizzare il **valore commerciale** nelle valutazioni piuttosto che il **valore di realizzo**. *(Quando un cliente offre in garanzia un certo bene, la banca necessita di far realizzare una perizia per poterne determinare il valore; la banca poi dovrà tener conto non del valore commerciale del bene in questione, ma di quanto riuscirà a ottenere in caso di vendita dello stesso, appunto il valore di possibile realizzo, sempre molto più basso del valore commerciale.)*
 
 **Precisazione sulla natura dell'ispezione**
 
@@ -216,9 +202,7 @@ Il rapporto precisa appositamente che l'azione di vigilanza ispettiva non è equ
 
 Normalmente il rapporto viene consegnato alla banca (in particolare al presidente del CdA e al presidente del Collegio Sindacale); in questo caso, a seguito della situazione disastrosa della banca, la banca è stata **commissariata mentre era ancora in atto l'ispezione**, e infatti il verbale è stato direttamente consegnato al commissario straordinario e al comitato di sorveglianza.
 
-*(pagina 5–8)*
-
-## Rapporto Ispettivo N.1 — Parte Chiusa
+## Rapporto Ispettivo N.1: Parte Chiusa
 
 Nella parte chiusa, come visto, si ha una riclassificazione di alcune voci di bilancio e di matrice, su cui viene assegnato un giudizio (nel caso di questa banca, tutti sfavorevoli) e una valutazione anche sugli esponenti (altrettanto sfavorevole).
 
@@ -226,9 +210,7 @@ In un'altra tabella sono definite, in colonna, le sofferenze, gli incagli e le p
 
 Nella parte finale, oltre a un riassunto conclusivo in cui si ribadisce lo stato pessimo della banca, si specifica che lo spettro degli strumenti a disposizione per poter intervenire è **"ampio e non preclusivo"**, cioè si può utilizzare qualunque strumento.
 
-*(pagina 8–9)*
-
-## Rapporto Ispettivo N.2 — Parte Aperta: la centralità della governance
+## Rapporto Ispettivo N.2, Parte Aperta: la centralità della governance
 
 Il secondo rapporto analizzato, più recente del primo, si apre con un giudizio complessivo netto:
 
@@ -242,9 +224,7 @@ Già questa introduzione non lascia presagire nulla di buono.
 
 A differenza del primo rapporto ispettivo analizzato (dove il primo argomento trattato era il contesto esterno), in questo la **governance** è il primissimo argomento. La situazione di questa banca è particolarmente grave a causa di un socio forte divenuto contemporaneamente amministratore delegato, presidente e direttore generale; gli altri organi (consiglio di amministrazione, collegio sindacale, internal auditor) non sono stati comunque molto d'aiuto, non fornendo gli opportuni contrappesi.
 
-All'epoca di questa ispezione (precedente al 2015) non esisteva ancora il **potere di removal**: l'unica strada perseguibile per BI era il **commissariamento**. Sapendo che il problema principale di questa banca era questo socio molto forte, sarebbe stata una soluzione molto più comoda la rimozione del singolo soggetto, piuttosto che la caduta di interi organi sociali a seguito del commissariamento — soluzione che, all'epoca, non era però disponibile.
-
-*(pagina 9)*
+All'epoca di questa ispezione (precedente al 2015) non esisteva ancora il **potere di removal**: l'unica strada perseguibile per BI era il **commissariamento**. Sapendo che il problema principale di questa banca era questo socio molto forte, sarebbe stata una soluzione molto più comoda la rimozione del singolo soggetto, piuttosto che la caduta di interi organi sociali a seguito del commissariamento, soluzione che, all'epoca, non era però disponibile.
 
 ## Le ispezioni nel Meccanismo di vigilanza unico
 

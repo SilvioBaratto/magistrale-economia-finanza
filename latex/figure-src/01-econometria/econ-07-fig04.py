@@ -9,13 +9,13 @@ OUT = str(style.REPO / "obsidian/01-Econometria/assets/econ-07/fig04.png")
 t = np.arange(0, 9)
 a05 = -1.0 * 0.5 ** t
 a1 = np.where(t == 0, -2.0, 0.0)
-a2 = -3.0 * (-0.5) ** t
+a15 = -3.0 * (-0.5) ** t
 
 fig, ax = style.figure(height_ratio=0.42)
 ax.axhline(0, color=style.GREY, lw=0.6, zorder=1)
 ax.plot(t, a05, color="#D62728", lw=1.6, label=r"$\alpha_y$=0.5", zorder=2)
 ax.plot(t, a1, color="#1F3FD0", lw=1.6, label=r"$\alpha_y$=1", zorder=3)
-ax.plot(t, a2, color="#1F8A8A", lw=1.6, label=r"$\alpha_y$=2", zorder=2)
+ax.plot(t, a15, color="#1F8A8A", lw=1.6, label=r"$\alpha_y$=1.5", zorder=2)
 ax.set_xlim(0, 10)
 ax.set_ylim(-3, 1.6)
 ax.set_xticks(range(0, 11))

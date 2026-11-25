@@ -22,15 +22,13 @@ Le sanzioni vengono erogate normalmente al termine dell'attività ispettiva, ma 
 - se BI è certa che nell'ambito della **vigilanza informativa** siano state commesse violazioni, procede **direttamente** all'erogazione della sanzione (cioè avvia il procedimento senza attendere l'ispezione: restano comunque la contestazione degli addebiti e il contraddittorio dell'art. 145 TUB);
 - negli altri casi preferisce **attendere l'esito dell'ispezione**, solo per avere maggiore certezza.
 
-*(pagina 1)*
-
 ## Il quadro sanzionatorio del TUB
 
-Il TUB punisce con sanzioni penali (artt. 130-140-bis) poche fattispecie: la violazione delle riserve di attività; l'assunzione di obbligazioni verso la propria banca da parte degli esponenti, in violazione delle procedure del TUB; le false indicazioni nelle domande di autorizzazione e nelle comunicazioni sulle partecipazioni rilevanti (artt. 139, comma 2, e 140, comma 2: arresto fino a tre anni), mentre la sola omissione o violazione degli obblighi è un illecito amministrativo (artt. 139, comma 1, e 140, comma 1: da 5.000 euro a 5 milioni, per le società da 30.000 euro fino al 10% del fatturato) (Testo vigente; gli appunti indicavano come reato, «nei casi gravi», anche l'omissione); il mendacio bancario (false informazioni per ottenere credito) e il falso interno (omissioni o dati falsi nell'istruttoria per far ottenere credito a terzi). Le altre violazioni danno luogo, in massima parte, a sanzioni amministrative pecuniarie, previste fin dalla legge bancaria del 1936.
+Il TUB punisce con sanzioni penali (artt. 130-140-bis) poche fattispecie: la violazione delle riserve di attività; l'assunzione di obbligazioni verso la propria banca da parte degli esponenti, in violazione delle procedure del TUB; le false indicazioni nelle domande di autorizzazione e nelle comunicazioni sulle partecipazioni rilevanti (artt. 139, comma 2, e 140, comma 2: arresto fino a tre anni), mentre la sola omissione o violazione degli obblighi è un illecito amministrativo (artt. 139, comma 1, e 140, comma 1: da 5.000 euro a 5 milioni, per le società da 30.000 euro fino al 10% del fatturato); il mendacio bancario (false informazioni per ottenere credito) e il falso interno (omissioni o dati falsi nell'istruttoria per far ottenere credito a terzi). Le altre violazioni danno luogo, in massima parte, a sanzioni amministrative pecuniarie, previste fin dalla legge bancaria del 1936.
 
 Le sanzioni amministrative rispettano il principio di tipicità e richiedono procedure speciali a tutela del sanzionato. Rilevano le violazioni, dolose o colpose, sia delle norme di legge sia delle disposizioni, generali o particolari, delle autorità di vigilanza: non vale la responsabilità oggettiva, ma l'autorità non deve dimostrare concretamente la colpa. Le sanzioni sono pecuniarie (per le società il massimo è rapportato al fatturato), alternative (art. 144-bis) e accessorie (art. 144-ter, comma 3).
 
-## Art. 144 TUB — Altre sanzioni amministrative alle società o enti
+## Art. 144 TUB: Altre sanzioni amministrative alle società o enti
 
 **Comma 1.** (Testo vigente dopo i d.lgs. 182/2021 e 116/2024.) Nei confronti delle banche, degli intermediari finanziari, delle società di partecipazione finanziaria, delle società di partecipazione finanziaria mista, delle rispettive capogruppo e dei soggetti ai quali sono state esternalizzate funzioni aziendali, nonché di quelli incaricati della revisione legale dei conti, si applica la sanzione amministrativa pecuniaria da euro 30.000 fino al 10 per cento del fatturato; nei confronti degli istituti di pagamento e degli istituti di moneta elettronica e dei soggetti ai quali sono state esternalizzate funzioni aziendali essenziali o importanti, dei gestori di crediti in sofferenza e dei soggetti ai quali sono state esternalizzate funzioni aziendali, nonché di quelli incaricati della revisione legale dei conti, si applica fino al massimale di euro 5 milioni ovvero fino al 10 per cento del fatturato, quando tale importo è superiore a euro 5 milioni e il fatturato è disponibile e determinabile, per le seguenti violazioni:
 
@@ -44,9 +42,7 @@ In questo caso si utilizza la **tecnica del richiamo**: nelle lettere successive
 
 **Comma 9.** Se il vantaggio ottenuto dall'autore della violazione come conseguenza della violazione stessa è superiore ai massimali indicati nel presente articolo, le sanzioni amministrative pecuniarie di cui al presente articolo sono elevate **fino al doppio** dell'ammontare del vantaggio ottenuto, purché tale ammontare sia determinabile. (Comma autoesplicativo.)
 
-*(pagina 1–2)*
-
-## Art. 144-bis TUB — Ordine di porre termine alle violazioni
+## Art. 144-bis TUB: Ordine di porre termine alle violazioni
 
 **Comma 1.** (Testo vigente dopo il d.lgs. 116/2024, che ha esteso l'ordine alla lettera e-ter; nella versione previgente era richiamata la sola lettera a.) Per le violazioni previste dall'articolo 144, comma 1, lettere a) ed e-ter), quando esse siano connotate da scarsa offensività o pericolosità, la Banca d'Italia può, in alternativa all'applicazione delle sanzioni amministrative pecuniarie, applicare nei confronti della società o dell'ente una sanzione consistente nell'**ordine di eliminare le infrazioni**, anche indicando le misure da adottare e il termine per l'adempimento.
 
@@ -54,9 +50,7 @@ In questo articolo si definisce una misura alternativa: a seguito di una violazi
 
 **Comma 2.** Per l'inosservanza dell'ordine entro il termine stabilito, la Banca d'Italia applica le sanzioni amministrative pecuniarie previste dall'articolo 144, comma 1; l'importo delle sanzioni è aumentato **sino a un terzo** rispetto a quello previsto per la violazione originaria, fermi restando i massimali stabiliti dall'articolo 144. (Comma autoesplicativo.)
 
-*(pagina 2)*
-
-## Art. 144-ter TUB — Altre sanzioni amministrative agli esponenti o al personale
+## Art. 144-ter TUB: Altre sanzioni amministrative agli esponenti o al personale
 
 **Comma 1.** (Testo vigente dopo i d.lgs. 182/2021 e 116/2024; nella versione previgente era richiamata la sola lettera a.) Fermo restando quanto previsto per le società e gli enti nei confronti dei quali sono accertate le violazioni, per l'inosservanza delle norme richiamate dall'articolo 144, comma 1, lettere a) ed e-ter), e comma 1-bis, si applica la sanzione amministrativa pecuniaria **da euro 5.000 fino a 5 milioni di euro** nei confronti dei soggetti che svolgono funzioni di amministrazione, di direzione o di controllo, nonché del personale, quando l'inosservanza è conseguenza della violazione di doveri propri o dell'organo di appartenenza e ricorrono una o più delle seguenti condizioni: (...)
 
@@ -68,9 +62,7 @@ Il regolamento sul MVU prevede come destinatarie delle sanzioni solo le persone 
 
 La sanzione accessoria si applica solo alle persone fisiche, in ragione della gravità della violazione, ed è l'interdizione dalle funzioni di amministrazione, direzione e controllo presso intermediari autorizzati ai sensi del TUB, del TUF, del codice delle assicurazioni o presso fondi pensione, per non meno di sei mesi e non più di tre anni (art. 144-ter, comma 3).
 
-*(pagina 2)*
-
-## Art. 144-quater TUB — Criteri per la determinazione delle sanzioni e delle penalità di mora
+## Art. 144-quater TUB: Criteri per la determinazione delle sanzioni e delle penalità di mora
 
 **Comma 1.** Nella determinazione dell'ammontare delle sanzioni amministrative pecuniarie e delle penalità di mora o della durata delle sanzioni accessorie previste nel presente titolo, la Banca d'Italia considera ogni circostanza rilevante e, in particolare, tenuto conto del fatto che il destinatario della sanzione sia persona fisica o giuridica, le seguenti, ove pertinenti:
 a) gravità e durata della violazione;
@@ -84,9 +76,7 @@ In questo comma si specificano i criteri che vengono tenuti in considerazione ne
 
 Il TUB indica come criteri anche le precedenti violazioni, il pregiudizio recato a terzi, il livello di cooperazione del responsabile e le potenziali conseguenze sistemiche della violazione (art. 70 dir. 2013/36/UE). La CRD VI (2024) aggiunge le sanzioni penali già irrogate per la stessa violazione, in applicazione del divieto di *bis in idem*, che la Corte di giustizia estende alle sanzioni amministrative a «colorazione penale».
 
-*(pagina 3)*
-
-## Art. 144-septies TUB — Applicazione delle sanzioni nell'ambito del MVU
+## Art. 144-septies TUB: Applicazione delle sanzioni nell'ambito del MVU
 
 **Comma 1.** Il presente articolo si applica in caso di violazioni commesse dai soggetti significativi o dai loro soci, esponenti o personale in materie inerenti l'esercizio dei compiti attribuiti alla BCE dalle disposizioni del **MVU** (Meccanismo di Vigilanza Unico).
 
@@ -100,9 +90,7 @@ La ripartizione segue la distinzione fra banche significative e meno significati
 - la Banca d'Italia sanziona le banche significative solo su richiesta della BCE, per le persone fisiche, per le violazioni di norme nazionali (comprese quelle di recepimento di direttive) e per le misure non pecuniarie, e le meno significative di propria iniziativa; se nel diritto dell'Unione manca una base adeguata, la BCE può chiedere alle autorità nazionali di avviare il procedimento (art. 18, par. 5);
 - la Banca d'Italia mantiene piena potestà sanzionatoria, su tutte le banche, nelle materie estranee ai compiti di vigilanza della BCE (correttezza e trasparenza, antiriciclaggio).
 
-*(pagina 3)*
-
-## Art. 145 TUB — Procedura sanzionatoria
+## Art. 145 TUB: Procedura sanzionatoria
 
 **Comma 1.** Per le violazioni previste nel presente titolo cui è applicabile una sanzione amministrativa, la Banca d'Italia, contestati gli addebiti ai soggetti interessati, tenuto conto del complesso delle informazioni raccolte, applica le sanzioni con provvedimento motivato. I soggetti interessati possono, entro trenta giorni dalla contestazione, presentare deduzioni e chiedere un'audizione personale in sede di istruttoria, cui possono partecipare anche con l'assistenza di un avvocato.
 
@@ -128,8 +116,6 @@ Le spiegazioni fornite a queste eccezioni sono:
 - alla terza eccezione: si è preferito evitare che gli addetti alla consulenza di BI viaggiassero in tutta Italia (è quindi una norma di favore).
 
 La competenza della corte d'appello di Roma, confermata nel 2014, deroga alla regola generale della competenza del Tribunale amministrativo del Lazio sui provvedimenti della Banca d'Italia; è una scelta del legislatore, che ha affidato il riesame a una corte da tempo specializzata, già competente secondo la legge bancaria del 1936. I provvedimenti sanzionatori della BCE sono impugnabili davanti al Tribunale dell'Unione europea e, in appello, alla Corte di giustizia.
-
-*(pagina 3–4)*
 
 ## Misure di enforcement (penalità di mora)
 

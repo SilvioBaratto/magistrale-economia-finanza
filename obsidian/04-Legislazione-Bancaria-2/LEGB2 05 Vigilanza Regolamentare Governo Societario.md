@@ -13,29 +13,19 @@ generated: 2026-09-24
 
 ## Premessa: conflitti di interesse nelle partecipazioni in imprese non finanziarie
 
-Chiusura del discorso sulle partecipazioni delle banche in imprese non finanziarie.
-
 Le partecipazioni in imprese non finanziarie devono essere orientate al criterio della **redditività al netto del rischio**. Deve inoltre essere individuata la propensione al rischio in termini di massimo grado di immobilizzo dei fondi propri ritenuto accettabile, sia con riferimento al complesso degli investimenti sia alle partecipazioni in singole imprese non finanziarie.
 
 I limiti operativi interni, il sistema dei controlli e le singole scelte di portafoglio devono essere coerenti con le strategie definite dalla banca. Le politiche interne individuano inoltre, in relazione all'attività svolta nel comparto e alle strategie della banca e del gruppo, le altre attività bancarie che possono determinare conflitti d'interesse, e definiscono soluzioni organizzative e di governo societario idonee a prevenire e gestire correttamente detti conflitti.
 
-Il testo prevede la possibilità di **conflitti di interessi** legati a queste partecipazioni: da qui si passa al governo societario.
+La disciplina è contenuta nella Circolare 285, Parte Terza, Cap. 1, Sez. VII, il cui testo è invariato al 52° aggiornamento del 28 luglio 2026. L'art. 53, comma 1, lett. c), TUB, base legale della disciplina sulle partecipazioni detenibili, è abrogato, dal 9 gennaio 2026, dal d.lgs. 31 dicembre 2025, n. 208; l'art. 4, comma 7, dello stesso decreto prevede però che, fino all'entrata in vigore delle disposizioni attuative del nuovo art. 57-bis TUB sulle partecipazioni rilevanti, continuino ad applicarsi la versione precedente dell'art. 53 e la relativa disciplina attuativa.
 
-(Fonte: Circolare 285, Parte Terza, Cap. 1, Sez. VII, testo invariato al 52° aggiornamento del 28 luglio 2026. L'art. 53, comma 1, lett. c), TUB, base legale della disciplina sulle partecipazioni detenibili, è abrogato, dal 9 gennaio 2026, dal d.lgs. 31 dicembre 2025, n. 208; l'art. 4, comma 7, dello stesso decreto prevede però che, fino all'entrata in vigore delle disposizioni attuative del nuovo art. 57-bis TUB sulle partecipazioni rilevanti, continuino ad applicarsi la versione precedente dell'art. 53 e la relativa disciplina attuativa.)
+Il rischio di **conflitti di interessi** tra investimento partecipativo e attività creditizia è illustrato dal caso Cirio. La società, nota per le conserve e in particolare per i pomodori pelati, entrò in crisi quando era fortemente esposta nei confronti del sistema bancario, in special modo di un gruppo bancario, il vecchio gruppo Banca di Roma, poi confluito in UniCredit. Poiché il credito non poteva più essere concesso, il sistema bancario propose che la società si finanziasse sul mercato emettendo obbligazioni.
 
-*(pagina 1)*
+L'operazione funziona così. Se la società si rivolge al mercato e trova due risparmiatori, ciascuno dei quali sottoscrive obbligazioni per 5.000 euro, incassa 10.000 euro e riduce di 10.000 euro l'esposizione verso la banca. Il rischio di credito, che è elevato, viene così scaricato sulla clientela.
 
-> [!lezione] Dalla lezione del 20 novembre 2026: il caso Cirio e il conflitto di interessi
-> Il principio per cui l'organizzazione deve prevenire i conflitti di interesse tra investimento partecipativo e attività creditizia richiama un caso che ha fatto storia in Italia, il crack della Cirio, di cui sono passati diversi anni. La società è nota soprattutto per i pomodori pelati e in generale per le conserve: fino a qualche anno fa il pomodoro Cirio era il pomodoro in scatola per antonomasia. A un certo punto, per varie ragioni, la Cirio va in crisi. Era molto esposta nei confronti del sistema bancario, soprattutto di un gruppo bancario, il vecchio gruppo Banca di Roma, poi confluito in UniCredit.
->
-> Il sistema bancario vede che la società è in difficoltà e propone: poiché il credito non può più essere concesso, la società può finanziarsi sul mercato emettendo obbligazioni, e le banche aiutano come consorzio di collocamento. Il docente osserva che si trattava di un consorzio di collocamento e non di garanzia, altrimenti la banca si sarebbe trovata a dover adempiere; aggiunge però che se la banca si curava di collocare sul mercato poteva anche prestare la garanzia, e che non sa come sia andata in concreto e non lo ricorda.
->
-> L'operazione finanziaria sottostante è questa. Se la società va sul mercato e trova due risparmiatori, ciascuno dei quali sottoscrive obbligazioni per 5.000 euro, la società incassa 10.000 euro e riduce di 10.000 euro l'esposizione verso la banca. È un modo per scaricare sulla clientela il rischio di credito, che è elevato: il docente suppone una posizione a sofferenza, senza esserne certo.
+Il caso si affronta in parte con le regole sulle partecipazioni: venuta meno la separatezza tra banca e industria, i rischi aumentano. La normativa prescrive di adottare gli accorgimenti organizzativi e il sistema di controlli interni atti a evitare potenziali conflitti di interesse tra l'attività di investimento, di cui la partecipazione a consorzi di collocamento è uno dei servizi, e la rimanente attività bancaria, in modo particolare quella creditizia. Ne sono un esempio le cautele organizzative che separano nettamente le competenze interne alla banca.
 
-> [!lezione] Dalla lezione del 20 novembre 2026: le cautele organizzative contro i conflitti di interesse
-> Il caso Cirio si affronta in parte con le regole viste. Se è venuta meno la separatezza banca-industria, i rischi crescono. La frase letta prescrive di adottare gli accorgimenti organizzativi e il sistema di controlli interni atti a evitare potenziali conflitti di interesse tra l'attività di investimento, di cui la partecipazione a consorzi di collocamento è uno dei servizi, e la rimanente attività bancaria, in modo particolare quella creditizia. Un esempio sono le cautele organizzative che separano nettamente le competenze interne alla banca: è uno di quei casi in cui la mano destra non deve sapere che cosa fa la mano sinistra.
-
-## Art. 53 TUB, lett. d): il governo societario — evoluzione storica e fonti normative
+## Art. 53 TUB, lett. d): governo societario, evoluzione storica e fonti normative
 
 ### Il testo della norma
 
@@ -43,61 +33,44 @@ L'art. 53 TUB, alla lettera d), oggi recita:
 
 > d) il governo societario, l'organizzazione amministrativa e contabile, nonché i controlli interni e i sistemi di remunerazione e di incentivazione
 
-La precedente formulazione della lettera d) si riferiva **esclusivamente** all'organizzazione amministrativa e contabile e ai controlli interni: il governo societario e i sistemi di remunerazione/incentivazione sono state aggiunte successivamente.
+Nel testo del TUB del 1993 la lettera d) era molto più sintetica e si riferiva **esclusivamente** all'«organizzazione amministrativa e contabile e controlli interni». Il governo societario e i sistemi di remunerazione e di incentivazione sono stati aggiunti nel tempo, in attuazione di direttive europee, soprattutto la CRD nelle sue versioni successive.
 
 ### Evoluzione storica della vigilanza sull'organizzazione interna
 
-Per valutare l'organizzazione interna di una banca, inizialmente le vecchie disposizioni di vigilanza prevedevano come unico strumento un **questionario**, con una serie di domande relative all'organizzazione della banca, che le banche dovevano compilare e inviare a Banca d'Italia (BI) una volta ogni due anni; successivamente BI avrebbe espresso una valutazione da 1 a 5.
+Nel 1993 il TUB attribuiva già alla Banca d'Italia il potere di emanare disposizioni di carattere generale sui «controlli interni» (art. 53, comma 1, lett. d), testo originario), ma le disposizioni di vigilanza non contenevano ancora una disciplina organica dei controlli interni delle banche. Nella prassi le banche avevano un ispettorato interno, cioè colleghi che controllavano nel dettaglio il lavoro di altri colleghi sotto ogni profilo. Esisteva soltanto un nucleo ridottissimo di prescrizioni sull'organizzazione amministrativa, più che contabile, di natura meramente formale.
+
+Per valutare l'organizzazione interna di una banca le vecchie disposizioni di vigilanza prevedevano come unico strumento un **questionario**, sostanzialmente a risposta multipla: a ciascuna domanda sull'organizzazione la banca rispondeva sì o no, con al più uno spazio per un commento. La singola banca lo compilava e lo inviava alla Banca d'Italia (BI) una volta ogni due anni, mentre le altre segnalazioni avevano cadenza semestrale o simile. Sulla base delle risposte BI esprimeva una valutazione da 1 a 5 (da 1 a 4 o da 1 a 6 a seconda dell'epoca). All'epoca non esisteva lo SREP: per il profilo dell'organizzazione l'analisi era guidata dal questionario.
+
+Le banche non possono fornire informazioni false all'autorità di vigilanza. Tuttavia, pur senza conoscere i criteri di valutazione, alla domanda se fosse stato istituito un sistema dei controlli interni rispondere di sì rendeva la valutazione di BI più favorevole che rispondere di no. Quando il modello di analisi automatico attribuiva i punteggi, praticamente tutte le banche ottenevano 1 o, le peggiori, 2. Il profilo dell'organizzazione risultava quindi adeguato per tutte, e l'analista di BI che volesse modificare un punteggio interveniva anzitutto su di esso.
 
 Le due modifiche più importanti alle disposizioni di vigilanza sono avvenute:
 
-- nel **1998**, con l'introduzione di un apposito capitolo dedicato ai controlli interni delle banche;
-- in attuazione dell'**accordo di Basilea III**, con il quale sono state aggiunte una serie di norme relative alla governance che integrano quelle previste dal diritto comune.
+- nel **1998**, con l'introduzione di un apposito capitolo dedicato ai controlli interni delle banche: le prime disposizioni (all'epoca istruzioni di vigilanza) sul sistema dei controlli interni, che con qualche modifica sono ancora quelle in vigore;
+- in attuazione dell'**accordo di Basilea III** e delle norme europee, con l'inserimento di norme sulla remunerazione, per gli esponenti aziendali e per i dipendenti, sull'organizzazione contabile e sulla governance, tema completamente trascurato dalle disposizioni precedenti; le norme sulla governance integrano quelle previste dal diritto comune.
 
-Le regole sui controlli interni sono presenti nelle disposizioni di vigilanza da quando le misure di supervisione prudenziale hanno sostituito quelle di carattere strutturale; le novità più recenti sono l'obbligo per gli organi di vertice di definire un quadro di riferimento per la determinazione della propensione al rischio e l'attenzione ai controlli di conformità alla legge. Un corpo ampio e dettagliato di norme sulla *corporate governance* è stato emanato per la prima volta nel 2008 (disposizioni della Banca d'Italia del 4 marzo 2008, n. 26410, più volte modificate), aggiornando le indicazioni già presenti alla luce della riforma del diritto societario del 2003, che ha consentito alle banche di adottare i modelli alternativi, monistico e dualistico. Il numero dei vincoli in materia di governo societario è molto cresciuto: le norme non si limitano a principi generali, ma stabiliscono regole prescrittive su aspetti di dettaglio, come il numero massimo dei membri del consiglio di amministrazione. L'indirizzo, che limita l'autonomia gestionale delle banche, è parte della risposta del legislatore alla crisi finanziaria e comporta un approccio della supervisione più intrusivo nelle scelte imprenditoriali.
-
-> [!lezione] Dalla lezione del 20 novembre 2026: i controlli interni nel 1993 e il questionario della Banca d'Italia
-> Quando fu varato il TUB nel 1993 la lettera d) era molto più sintetica: diceva semplicemente "organizzazione amministrativa e contabile e controlli interni". Il resto è stato aggiunto nel corso del tempo in attuazione di direttive europee, soprattutto la CRD, nelle sue versioni successive.
->
-> Nel 1993 non esisteva alcuna norma di vigilanza sui controlli interni delle banche. Nella prassi, le banche avevano un ispettorato interno, cioè colleghi che controllavano nel dettaglio il lavoro di altri colleghi da ogni punto di vista. Esisteva un nucleo ridottissimo di prescrizioni sull'organizzazione amministrativa, più che contabile, e di natura meramente formale. Nelle vecchie istruzioni di vigilanza successive al 1993 si troverebbe un capitolo che oggi farebbe sorridere.
->
-> Sotto il profilo dell'organizzazione, la Banca d'Italia aveva predisposto un questionario, sostanzialmente a risposta multipla, con crocette: la banca ha fatto questo, sì o no, e così via. A volte c'era uno spazio per un commento, ma niente di più. Il questionario doveva essere compilato dalla singola banca con cadenza biennale, mentre le altre segnalazioni avevano cadenza semestrale e simili. Su questa base la Banca d'Italia attribuiva il suo punteggio. All'epoca non c'era lo SREP, ma l'analisi guidata sotto il profilo dell'organizzazione.
->
-> Le banche non possono raccontare fandonie all'autorità di vigilanza, ma, di fronte alla domanda se si fosse istituito un sistema dei controlli interni, pur senza conoscere i criteri valutativi, rispondere di sì avrebbe reso la Banca d'Italia un po' più contenta di una risposta negativa. Il risultato fu che, quando il modello di analisi automatico attribuiva i punteggi, da 1 a 5, da 1 a 4 o da 1 a 6 a seconda dell'epoca, praticamente tutte le banche avevano 1 o, le più scalcinate, 2. L'organizzazione andava bene per tutte, al punto che l'analista della Banca d'Italia, se voleva incidere su qualche punteggio per modificarlo, interveniva prima di tutto sul profilo organizzazione.
-
-> [!lezione] Dalla lezione del 20 novembre 2026: le istruzioni del 1998 e le integrazioni europee
-> Nel 1998 la Banca d'Italia ha diramato le prime disposizioni, all'epoca istruzioni di vigilanza, importantissime sul sistema dei controlli interni delle banche. Con qualche modifica sono ancora quelle di oggi e non sono molto diverse da quelle del 1998. In attuazione delle norme europee si sono poi inserite norme sulla remunerazione interna alla banca, sia per gli esponenti aziendali sia per i dipendenti, norme in tema di organizzazione contabile e il tema della governance di una banca, completamente tralasciato dalla vecchia disposizione.
+Le regole sui controlli interni sono presenti nelle disposizioni di vigilanza da quando le misure di supervisione prudenziale hanno sostituito quelle di carattere strutturale; le novità più recenti sono l'obbligo per gli organi di vertice di definire un quadro di riferimento per la determinazione della propensione al rischio e l'attenzione ai controlli di conformità alla legge. Un corpo ampio e dettagliato di norme sulla *corporate governance* è stato emanato per la prima volta nel 2008 (disposizioni della Banca d'Italia del 4 marzo 2008, n. 26410, più volte modificate), aggiornando le indicazioni già presenti alla luce della riforma del diritto societario del 2003, che ha consentito alle banche di adottare i modelli alternativi, monistico e dualistico. Il numero dei vincoli in materia di governo societario è molto cresciuto: le norme comprendono, oltre ai principi generali, regole prescrittive su aspetti di dettaglio, come il numero massimo dei membri del consiglio di amministrazione. L'indirizzo, che limita l'autonomia gestionale delle banche, è parte della risposta del legislatore alla crisi finanziaria e comporta un approccio della supervisione più intrusivo nelle scelte imprenditoriali.
 
 ### Fonti attuali
 
-Attualmente le norme che disciplinano il governo societario sono prevalentemente di **matrice europea**, in particolare il Regolamento 575/2013 UE e le direttive **CRD4** e **CRD5** (a novembre 2026 si aggiunge la **CRD6**, direttiva (UE) 2024/1619, recepita con d.lgs. 31 dicembre 2025, n. 208, in vigore dal 9 gennaio 2026). Si è preferito il meccanismo delle direttive perché le banche, essendo società, restano pur sempre parzialmente disciplinate dal diritto commerciale, materia non ancora perfettamente armonizzata a livello europeo.
+Attualmente le norme che disciplinano il governo societario sono prevalentemente di **matrice europea**, in particolare il Regolamento 575/2013 UE e le direttive **CRD4** e **CRD5**; si aggiunge la **CRD6**, direttiva (UE) 2024/1619, recepita con d.lgs. 31 dicembre 2025, n. 208, in vigore dal 9 gennaio 2026. Si è preferito il meccanismo delle direttive perché le banche, essendo società, restano pur sempre parzialmente disciplinate dal diritto commerciale, materia non ancora perfettamente armonizzata a livello europeo.
 
-I controlli sull'organizzazione delle banche sono uno degli strumenti di vigilanza sanciti espressamente dal TUB all'art. 53; fonte importante sono gli artt. 91 ss. della direttiva 2013/36/UE. Una buona organizzazione dell'impresa bancaria è il perno principale del sistema di controllo dei rischi. Le norme di vigilanza non indicano quale sia l'assetto organizzativo migliore, ma impongono alle banche regole interne, procedure, funzioni dedicate, strutture e risorse per assicurare un adeguato controllo dei rischi. Le regole riguardano tre aspetti dell'organizzazione: il sistema dei controlli interni, la *corporate governance*, i sistemi di remunerazione dei *manager*.
+I controlli sull'organizzazione delle banche sono uno degli strumenti di vigilanza sanciti espressamente dal TUB all'art. 53; fonte importante sono gli artt. 91 ss. della direttiva 2013/36/UE. Una buona organizzazione dell'impresa bancaria è il perno principale del sistema di controllo dei rischi. Le norme di vigilanza impongono alle banche regole interne, procedure, funzioni dedicate, strutture e risorse per assicurare un adeguato controllo dei rischi, senza indicare quale sia l'assetto organizzativo migliore. Le regole riguardano tre aspetti dell'organizzazione: il sistema dei controlli interni, la *corporate governance*, i sistemi di remunerazione dei *manager*.
 
 ### Assenza di una disciplina differenziata per modello organizzativo
 
-Non esiste una disciplina differenziata sulla base del sistema organizzativo adottato dalla banca (**tradizionale, dualistico, monistico**), perché le norme si riferiscono direttamente alle **funzioni** e non al sistema prescelto. Inoltre, se in linea teorica per le discipline non specificate diversamente si applica il diritto comune, alcune previsioni del diritto europeo tendono a rendere gli assetti organizzativi molto diversi da quelli di una società "classica" — un aspetto che dovrebbero tenere bene a mente gli studiosi di diritto commerciale.
+Non esiste una disciplina differenziata sulla base del sistema organizzativo adottato dalla banca (**tradizionale, dualistico, monistico**), perché le norme si riferiscono direttamente alle **funzioni** e non al sistema prescelto. Inoltre, se in linea teorica per le discipline non specificate diversamente si applica il diritto comune, alcune previsioni del diritto europeo tendono a rendere gli assetti organizzativi molto diversi da quelli di una società "classica". La governance di una banca differisce da quella di qualunque altra società, e lo stesso vale per altri ambiti.
 
-La governance di una banca non è come la governance di una qualunque altra società, e lo stesso discorso vale anche per altri ambiti. Ad esempio, a seguito dell'emergenza covid sono state emanate disposizioni straordinarie che prevedevano, tra le altre cose, delle moratorie sui finanziamenti, e ci si chiedeva se gli interessi andassero pagati o meno. Gli studiosi di diritto commerciale affermavano che gli interessi non andassero pagati, appellandosi all'aspetto solidaristico, ma la banca, in quanto società, ha bisogno di quegli interessi.
+Un esempio sono le disposizioni straordinarie emanate a seguito dell'emergenza covid, che prevedevano, tra le altre cose, moratorie sui finanziamenti: ci si chiedeva se gli interessi andassero pagati o meno. Gli studiosi di diritto commerciale affermavano che non andassero pagati, appellandosi all'aspetto solidaristico, ma la banca, in quanto società, ha bisogno di quegli interessi.
 
-*(pagina 1–2)*
-
-## Circolare 285 — Premessa: finalità e struttura del Capitolo sul governo societario
+## Circolare 285, premessa: finalità e struttura del capitolo sul governo societario
 
 Riferimento normativo: **Circolare 285 (Disposizioni di vigilanza)**, Parte I (Recepimento in Italia della CRD4), Titolo IV (Governo societario, controlli interni, gestione dei rischi), **Capitolo 1** (governo societario), **Sezione I** (Disposizioni preliminari e principi generali), par. 1 (Premessa).
 
 > Efficaci assetti organizzativi e di governo societario costituiscono per tutte le imprese condizione essenziale per il perseguimento degli obiettivi aziendali; per le banche essi assumono particolare rilievo in ragione delle caratteristiche che connotano l'attività bancaria e degli interessi pubblici oggetto di specifica considerazione da parte dell'ordinamento. (...) Le disposizioni di questo capitolo, coerenti con l'evoluzione delle regole, dei principi e delle linee guida elaborati a livello internazionale ed europeo, disciplinano il ruolo e il funzionamento degli organi di amministrazione e controllo e il rapporto di questi con la struttura aziendale; esse formano parte integrante di un più ampio sistema normativo riguardante altri aspetti rilevanti dell'organizzazione e del governo societario, quali, ad esempio, i controlli sugli assetti proprietari e sulle modificazioni statutarie, il sistema dei controlli interni, la gestione dei rischi, i requisiti degli esponenti aziendali, le operazioni con parti correlate e più in generale i conflitti di interesse, la disciplina sulle politiche e prassi di remunerazione e incentivazione, il contrasto al riciclaggio e al finanziamento del terrorismo nonché gli obblighi di disclosure verso gli investitori e il mercato e la disciplina speciale prevista per le società quotate e per le attività e i servizi di investimento.
 
-La premessa afferma subito che assetti organizzativi efficaci sono essenziali per il perseguimento degli obiettivi aziendali e richiama gli interessi pubblici considerati dall'ordinamento. Rinvia poi alle regole e ai principi elaborati a livello internazionale (Basilea III) ed europeo (CRD4 e CRD5).
+Le regole e i principi richiamati sono quelli elaborati a livello internazionale (Basilea III) ed europeo (CRD4 e CRD5).
 
 > Le disposizioni di questo capitolo si articolano in principi generali e linee applicative. I primi, attraverso norme di carattere generale, fissano gli obiettivi della disciplina rimettendo all'autonomia degli intermediari la concreta individuazione delle soluzioni più idonee a realizzarli, secondo criteri di proporzionalità che tengono conto della dimensione o della complessità della banca (cfr. par. 4.1 della presente Sezione). Le linee applicative agevolano, su alcuni aspetti specifici della materia, l'attuazione delle norme generali, senza esaurirne il contenuto precettivo; esse sono calibrate sulle caratteristiche organizzative e operative delle diverse tipologie di banche.
-
-Le disposizioni del capitolo si dividono quindi in:
-
-- **principi generali**: fissano gli obiettivi rimettendo agli intermediari le modalità di attuazione, secondo un criterio di **proporzionalità**;
-- **linee applicative**: agevolano l'attuazione delle norme generali su aspetti specifici, senza esaurirne il contenuto precettivo.
-
-*(pagina 2–3)*
 
 ## Definizioni: organo di supervisione strategica, di gestione e di controllo
 
@@ -109,21 +82,15 @@ Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 1, Sezione I, Definizio
 >
 > **Organo con funzione di supervisione strategica**: l'organo nel quale si concentrano le funzioni di indirizzo e/o di supervisione della gestione sociale (ad esempio, mediante esame e delibera in ordine ai piani industriali o finanziari ovvero alle operazioni strategiche della società).
 
-Nelle definizioni emerge quanto già detto: si ragiona per **organo** (in base alla funzione svolta) e non per **sistema** adottato dalla banca (tradizionale, dualistico, monistico). Le tre funzioni — supervisione strategica, gestione, controllo — possono essere attribuite a organi diversi o coincidere a seconda del modello societario, ma la disciplina si applica sempre a quelle funzioni.
+Le definizioni ragionano per **organo**, in base alla funzione svolta, e non per **sistema** adottato dalla banca. Le tre funzioni (supervisione strategica, gestione, controllo) possono essere attribuite a organi diversi o coincidere a seconda del modello societario, ma la disciplina si applica sempre a quelle funzioni.
 
-*(pagina 3)*
-
-## Sezione II — Scelta del sistema di amministrazione e controllo e progetto di governo societario
+## Sezione II: scelta del sistema di amministrazione e controllo e progetto di governo societario
 
 Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 1, **Sezione II** (Sistemi di amministrazione e controllo e progetto di governo societario), Principi generali.
 
-> In linea teorica non sussiste un'univoca corrispondenza tra le caratteristiche di ciascun modello di amministrazione e controllo e quelle strutturali e operative di ciascuna impresa. Le banche esercitano la propria facoltà di scelta tra i tre sistemi di amministrazione e controllo sulla base di un'approfondita autovalutazione (...). I modelli monistico e dualistico possono anche rispondere alle esigenze di banche che operano in misura rilevante sui mercati internazionali in cui tali modelli sono maggiormente conosciuti ovvero facenti parte di gruppi in cui sono prevalenti tali forme organizzative. (...) Le motivazioni alla base della scelta del modello di amministrazione e controllo — di competenza dell'assemblea dei soci — devono essere rappresentate nell'ambito di un più generale **progetto di governo societario**, illustrativo degli assetti statutari e di organizzazione interna; il progetto è approvato dall'organo con funzione di supervisione strategica, con il parere favorevole dell'organo di controllo.
+> In linea teorica non sussiste un'univoca corrispondenza tra le caratteristiche di ciascun modello di amministrazione e controllo e quelle strutturali e operative di ciascuna impresa. Le banche esercitano la propria facoltà di scelta tra i tre sistemi di amministrazione e controllo sulla base di un'approfondita autovalutazione (...). I modelli monistico e dualistico possono anche rispondere alle esigenze di banche che operano in misura rilevante sui mercati internazionali in cui tali modelli sono maggiormente conosciuti ovvero facenti parte di gruppi in cui sono prevalenti tali forme organizzative. (...) Le motivazioni alla base della scelta del modello di amministrazione e controllo, di competenza dell'assemblea dei soci, devono essere rappresentate nell'ambito di un più generale **progetto di governo societario**, illustrativo degli assetti statutari e di organizzazione interna; il progetto è approvato dall'organo con funzione di supervisione strategica, con il parere favorevole dell'organo di controllo.
 
-Con la **riforma del diritto societario del 2003** è stata data alle banche la possibilità di adottare liberamente un sistema a scelta fra quello monistico, dualistico e tradizionale. Molte banche optarono per il sistema dualistico per "compiacere" la BCE, che ha sede a Francoforte. Un altro motivo per cui molte banche scelsero il modello dualistico fu che con il doppio consiglio (sorveglianza e gestione) potevano essere impiegate più persone.
-
-Attualmente si specifica che, per una banca, la scelta del modello di amministrazione e controllo si basa su un'approfondita autovalutazione e che le sue motivazioni vanno rappresentate in un **progetto di governo societario**.
-
-*(pagina 3–4)*
+Dopo la riforma del diritto societario del 2003 molte banche optarono per il sistema dualistico, in un periodo in cui la BCE non aveva funzioni di vigilanza, esercitate solo dal 4 novembre 2014 (Circolare 285, Premessa); tra i fattori che possono incidere sulla scelta la Circolare 285 (Parte I, Titolo IV, Cap. 1, Sez. II, par. 1) indica gli eventi straordinari, come aggregazioni e mutamenti nell'assetto di controllo. Un altro motivo della scelta fu che il doppio consiglio (di sorveglianza e di gestione) consentiva di impiegare più persone.
 
 ## Contenuto del progetto di governo societario e deroga per le BCC
 
@@ -131,17 +98,11 @@ Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 1, Sezione II, Linee ap
 
 > Il progetto di governo societario deve: a) illustrare le ragioni che rendono il modello prescelto il più idoneo ad assicurare l'efficienza della gestione e l'efficacia dei controlli; b) descrivere le specifiche scelte attinenti alla struttura organizzativa (...); c) fornire, nel caso della capogruppo (...); d) essere redatto e inviato alla Banca centrale europea o alla Banca d'Italia in fase di costituzione della banca, contestualmente alla relativa istanza di autorizzazione, nonché in occasione della modificazione del sistema di amministrazione e controllo adottato, unitamente alla richiesta di accertamento relativa alla modifica statutaria.
 
-Questa parte indica il contenuto del progetto di governo societario: motivazione della scelta del modello, struttura organizzativa, elementi specifici per la capogruppo, e modalità/tempi di trasmissione all'autorità di vigilanza.
-
 > Le banche di credito cooperativo non sono tenute alla predisposizione del progetto di governo societario qualora adottino lo statuto tipo predisposto dall'associazione di categoria o dalla capogruppo, nel caso di gruppi bancari cooperativi, vagliato dalla Banca d'Italia.
 
-La procedura è quindi **semplificata** nel caso delle BCC (banche di credito cooperativo).
+Il controllo sul governo societario non si esaurisce nel rilascio dell'autorizzazione all'esercizio dell'attività bancaria o nel provvedimento sulle modifiche statutarie: il progetto di governo societario, in cui le banche illustrano in dettaglio le motivazioni della scelta del modello di amministrazione e controllo, deve essere aggiornato e sottoposto all'autorità competente, ove richiesto.
 
-Il controllo sul governo societario non avviene più soltanto in occasione del rilascio dell'autorizzazione all'esercizio dell'attività bancaria o del provvedimento sulle modifiche statutarie: il progetto di governo societario, in cui le banche illustrano in dettaglio le motivazioni della scelta del modello di amministrazione e controllo, deve essere aggiornato e sottoposto all'autorità competente, ove richiesto.
-
-*(pagina 4)*
-
-## Sezione III — Compiti e poteri degli organi sociali
+## Sezione III: compiti e poteri degli organi sociali
 
 Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 1, **Sezione III** (Compiti e poteri degli organi sociali).
 
@@ -149,23 +110,21 @@ Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 1, **Sezione III** (Com
 
 > Compiti e poteri di amministrazione e di controllo devono essere ripartiti in modo chiaro ed equilibrato tra i diversi organi e all'interno di ciascuno di essi, evitando concentrazioni di potere che possano impedire una corretta dialettica interna.
 
-Il testo precisa che i compiti vanno ripartiti in modo chiaro ed equilibrato fra i diversi organi, evitando concentrazioni di poteri.
-
-### Organi con funzione di supervisione strategica e di gestione — principi generali
+### Organi con funzione di supervisione strategica e di gestione: principi generali
 
 > Un sistema di governo societario efficiente, basato sul principio del bilanciamento dei poteri, richiede che, nel caso in cui le funzioni di supervisione strategica e di gestione vengano attribuite a organi diversi, siano chiaramente individuati e distinti i compiti e le responsabilità dei due organi, il primo chiamato a deliberare sugli indirizzi di carattere strategico della banca e a verificarne nel continuo l'attuazione, il secondo responsabile dell'attuazione degli indirizzi strategici e della gestione aziendale.
 
-Si ha un richiamo al **modello dualistico**: il testo non lo nomina, ma l'ipotesi è quella in cui le funzioni siano attribuite a organi diversi, come tipicamente accade con consiglio di sorveglianza e consiglio di gestione. L'esigenza di distinguere i ruoli vale anche per i componenti dell'organo in cui le due funzioni coincidono.
+La norma richiama il modello dualistico senza nominarlo: l'ipotesi è quella in cui le funzioni siano attribuite a organi diversi, come tipicamente accade con consiglio di sorveglianza e consiglio di gestione. L'esigenza di distinguere i ruoli vale anche per i componenti dell'organo in cui le due funzioni coincidono.
 
-### Organi con funzione di supervisione strategica e di gestione — linee applicative
+### Organi con funzione di supervisione strategica e di gestione: linee applicative
 
 > a) Gli organi aziendali devono assicurare il governo dei rischi a cui la banca si espone, individuandone per tempo le fonti, le possibili dinamiche, i necessari presidi (...); b) L'organo con funzione di supervisione strategica definisce l'assetto complessivo di governo e approva l'assetto organizzativo della banca, ne verifica la corretta attuazione e promuove tempestivamente le misure correttive a fronte di eventuali lacune o inadeguatezze (...); d) Il contenuto delle deleghe nell'ambito dell'organo con funzione di gestione deve essere determinato in modo analitico ed essere caratterizzato da chiarezza e precisione, anche nell'indicazione dei limiti quantitativi o di valore e delle eventuali modalità di esercizio.
 
 ### Gli indirizzi della disciplina: dialettica interna e segregazione delle funzioni
 
-Le disposizioni di vigilanza sul governo societario, modificate dopo il recepimento del pacchetto *Capital Requirements* del 2013, seguono tre linee guida: la dialettica interna, ottenuta con la distinzione netta fra funzione di supervisione strategica e funzione di gestione; il rafforzamento dell'autonomia dell'organo preposto al controllo interno, referente dell'organo di vigilanza; l'aumento delle regole e dei presìdi che consentono ai membri degli organi di svolgere i compiti in modo efficace e sulla base di informazioni adeguate.
+Le disposizioni di vigilanza sul governo societario, modificate dopo il recepimento del pacchetto *Capital Requirements* del 2013, seguono tre linee guida: la dialettica interna, ottenuta con la distinzione netta fra funzione di supervisione strategica e funzione di gestione; il rafforzamento dell'autonomia dell'organo preposto al controllo interno; l'aumento delle regole e dei presìdi che consentono ai membri degli organi di svolgere i compiti in modo efficace e sulla base di informazioni adeguate.
 
-La distinzione fra le due funzioni in senso lato gestionali, «supervisione strategica» e «gestione», vale indipendentemente dal modello di amministrazione e controllo adottato: le funzioni possono essere attribuite a organi diversi, ma le disposizioni citate sopra considerano anche il caso in cui coincidano nello stesso organo. Diverse prescrizioni mirano a una separazione più netta di quella richiesta dal codice civile o dal codice di autodisciplina delle società quotate, per favorire la dialettica aziendale ed evitare la concentrazione di potere in poche mani o in un «capo azienda». La scelta risale alla prima direttiva di coordinamento in materia bancaria (dir. 77/780/CEE), che affermò, sulla base dell'esperienza tedesca del modello dualistico, il principio dei «quattro occhi» (*Vier-Augen-Prinzip*); tende ad accrescere la trasparenza dei processi decisionali e la responsabilizzazione dei componenti degli organi.
+La distinzione fra le due funzioni in senso lato gestionali, «supervisione strategica» e «gestione», vale indipendentemente dal modello di amministrazione e controllo adottato, anche quando le funzioni coincidono nello stesso organo. Diverse prescrizioni mirano a una separazione più netta di quella richiesta dal codice civile o dal codice di autodisciplina delle società quotate, per favorire la dialettica aziendale ed evitare la concentrazione di potere in poche mani o in un «capo azienda». La scelta risale alla prima direttiva di coordinamento in materia bancaria (dir. 77/780/CEE), che affermò, sulla base dell'esperienza tedesca del modello dualistico, il principio dei «quattro occhi» (*Vier-Augen-Prinzip*); tende ad accrescere la trasparenza dei processi decisionali e la responsabilizzazione dei componenti degli organi.
 
 Per dare attuazione alla *segregation of duties* la direttiva 2013/36/UE (art. 88) prevede due vincoli:
 
@@ -174,7 +133,9 @@ Per dare attuazione alla *segregation of duties* la direttiva 2013/36/UE (art. 8
 
 Il ruolo neutrale del presidente è una deroga incisiva ai modelli organizzativi diffusi in diversi ordinamenti europei; le disposizioni di vigilanza italiane lo prevedevano già prima del recepimento della direttiva.
 
-Per assicurare la dialettica interna le regole bancarie impongono inoltre che: alcune decisioni strategiche non siano delegabili e siano rimesse al consiglio di amministrazione collegialmente; sia preservato il potere di proposta dei singoli consiglieri, anche nelle materie oggetto di delega; il contenuto delle deleghe sia puntuale; l'attribuzione di compiti di supervisione strategica al consiglio di sorveglianza non comporti ingerenze di quest'ultimo nella gestione. Gli obiettivi strategici non possono essere affidati a scelte autonome dell'amministratore delegato, ma sono discussi e approvati collegialmente. All'organo di gestione la direttiva affida funzioni specifiche: garantire l'integrità dei sistemi di contabilità e di rendicontazione finanziaria, compresi i controlli finanziari e operativi e l'osservanza delle disposizioni legislative e delle norme pertinenti; sorvegliare il processo di informativa e comunicazione; assicurare un'efficace sorveglianza sull'alta dirigenza (art. 88, par. 1, lett. b, c e d). Il comitato nomine tiene conto, per quanto possibile e su base continuativa, della necessità che il processo decisionale dell'organo di gestione non sia dominato da un singolo o da un gruppo ristretto di persone in modo da pregiudicare gli interessi dell'ente nel suo insieme (art. 88, par. 2).
+Per assicurare la dialettica interna le regole bancarie impongono inoltre che: alcune decisioni strategiche non siano delegabili e siano discusse e approvate collegialmente dal consiglio di amministrazione, senza essere affidate a scelte autonome dell'amministratore delegato; sia preservato il potere di proposta dei singoli consiglieri, anche nelle materie oggetto di delega; il contenuto delle deleghe sia puntuale; l'attribuzione di compiti di supervisione strategica al consiglio di sorveglianza non comporti ingerenze di quest'ultimo nella gestione.
+
+All'organo di gestione la direttiva affida funzioni specifiche: garantire l'integrità dei sistemi di contabilità e di rendicontazione finanziaria, compresi i controlli finanziari e operativi e l'osservanza delle disposizioni legislative e delle norme pertinenti; sorvegliare il processo di informativa e comunicazione; assicurare un'efficace sorveglianza sull'alta dirigenza (art. 88, par. 1, lett. b, c e d). Il comitato nomine tiene conto, per quanto possibile e su base continuativa, della necessità che il processo decisionale dell'organo di gestione non sia dominato da un singolo o da un gruppo ristretto di persone in modo da pregiudicare gli interessi dell'ente nel suo insieme (art. 88, par. 2).
 
 ### L'autonomia dell'organo di controllo
 
@@ -182,9 +143,7 @@ Per rafforzare l'indipendenza della funzione di controllo interno le norme di vi
 
 L'organo di controllo interno, un tempo identificabile con il solo collegio sindacale, è il referente dell'autorità di vigilanza (art. 52 TUB, disposizione già presente nella legge bancaria del 1936).
 
-*(pagina 4–5)*
-
-## Sezione IV — Composizione e nomina degli organi sociali: principi generali
+## Sezione IV: composizione e nomina degli organi sociali, principi generali
 
 Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 1, **Sezione IV** (composizione e nomina degli organi sociali), Principi generali.
 
@@ -195,10 +154,6 @@ Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 1, **Sezione IV** (comp
 > - con competenze diffuse tra tutti i componenti e opportunamente diversificate, in modo da consentire che ciascuno dei componenti, sia all'interno dei comitati di cui sia parte che nelle decisioni collegiali, possa effettivamente contribuire, tra l'altro, a individuare e perseguire idonee strategie e ad assicurare un governo efficace dei rischi in tutte le aree della banca;
 > - che dedichino tempo e risorse adeguate alla complessità del loro incarico, fermo il rispetto dei limiti al cumulo degli incarichi previsti dal decreto ministeriale 23 novembre 2020, n. 169;
 > - che indirizzino la loro azione al perseguimento dell'interesse complessivo della banca, indipendentemente dalla compagine societaria che li ha votati o dalla lista da cui sono tratti; essi operano con autonomia di giudizio.
-
-I componenti devono quindi essere pienamente consapevoli dei poteri e degli obblighi delle funzioni che sono chiamati a svolgere, dotati di professionalità adeguata al ruolo, con competenze diffuse e diversificate, e dedicare tempo e risorse adeguate (nel rispetto dei limiti al cumulo degli incarichi); devono inoltre operare con autonomia di giudizio nell'interesse complessivo della banca.
-
-*(pagina 5)*
 
 ## Comitati endo-consiliari: nomine, rischi, remunerazioni
 
@@ -226,11 +181,7 @@ Si tratta del comitato con le maggiori responsabilità; svolge diverse funzioni 
 
 > Per i compiti del comitato remunerazioni si rinvia a quanto previsto dalle disposizioni di vigilanza in materia di sistemi di remunerazione e incentivazione delle banche.
 
-Questo comitato si occupa delle remunerazioni all'interno delle banche.
-
-*(pagina 6–7)*
-
-## Sezione V — Funzionamento degli organi, flussi informativi e ruolo del presidente
+## Sezione V: funzionamento degli organi, flussi informativi e ruolo del presidente
 
 Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 1, **Sezione V** (funzionamento degli organi, flussi informativi e ruolo del presidente).
 
@@ -238,13 +189,11 @@ Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 1, **Sezione V** (funzi
 
 > Il funzionamento corretto ed efficiente degli organi richiede non solo una composizione adeguata secondo quanto previsto ai precedenti paragrafi, ma anche la predisposizione di flussi informativi, procedure, metodi di lavoro, tempistiche delle riunioni, altrettanto adeguati. Assumono quindi particolare rilievo l'individuazione e la formalizzazione di prassi operative (procedure di convocazione, periodicità e durata delle riunioni, partecipazione) che assicurino effettività e tempestività all'azione degli organi e dei loro comitati.
 
-Oltre a una composizione adeguata degli organi, il testo richiede flussi informativi, procedure e metodi di lavoro altrettanto adeguati.
-
-### Ruolo del presidente — principi generali
+### Ruolo del presidente: principi generali
 
 > Il presidente del consiglio di amministrazione svolge una funzione cruciale per garantire il buon funzionamento del consiglio, favorire la dialettica interna e assicurare il bilanciamento dei poteri.
 
-### Ruolo del presidente — linee applicative
+### Ruolo del presidente: linee applicative
 
 > a) Il presidente del consiglio di amministrazione garantisce l'efficacia del dibattito consiliare e si adopera affinché le deliberazioni alle quali giunge il consiglio siano il risultato di un'adeguata dialettica e del contributo consapevole e ragionato di tutti i suoi componenti.
 
@@ -264,9 +213,7 @@ Il terzo indirizzo della disciplina è accrescere l'efficace funzionamento degli
 
 Appositi regolamenti interni definiscono tempi, forme e contenuti della documentazione da trasmettere ai singoli componenti degli organi: la circolazione delle informazioni consente ai consiglieri privi di deleghe di agire in modo «adeguatamente informato», come richiedono le disposizioni civilistiche. È una regola di buon governo societario, sottolineata anche dalla giurisprudenza in materia di responsabilità degli organi delle società.
 
-*(pagina 7–8)*
-
-## Capitolo 3, Sezione I — Il sistema dei controlli interni: definizione, finalità e principio di proporzionalità
+## Capitolo 3, Sezione I: il sistema dei controlli interni, definizione, finalità e principio di proporzionalità
 
 Riferimento: Circolare 285, Parte I, Titolo IV, **Capitolo 3** (il sistema dei controlli interni), **Sezione I** (Disposizioni preliminari e principi generali), Premessa.
 
@@ -280,19 +227,15 @@ La disciplina non è un elenco esaustivo ma fissa regole minime (il sistema dei 
 
 > I presidi relativi al sistema dei controlli interni devono coprire ogni tipologia di rischio aziendale. La responsabilità primaria è rimessa agli organi aziendali, ciascuno secondo le rispettive competenze. L'articolazione dei compiti e delle responsabilità degli organi e delle funzioni aziendali deve essere chiaramente definita e formalizzata.
 
-Si specificano quindi tre elementi: (i) tutti i rischi devono essere adeguatamente coperti; (ii) le responsabilità sono rimesse agli organi competenti; (iii) la divisione dei compiti e delle responsabilità deve essere definita chiaramente.
-
-*(pagina 8–9)*
-
 ## Le finalità del sistema dei controlli interni e il suo ruolo centrale nell'organizzazione
 
 Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 3, Sezione I, par. 6 (Principi generali).
 
 ### Finalità
 
-> Il sistema dei controlli interni è costituito dall'insieme delle regole, delle funzioni, delle strutture, delle risorse, dei processi e delle procedure che mirano ad assicurare, nel rispetto della sana e prudente gestione, il conseguimento delle seguenti finalità: verifica dell'attuazione delle strategie e delle politiche aziendali; contenimento del rischio entro i limiti indicati nel quadro di riferimento per la determinazione della propensione al rischio della banca (**Risk Appetite Framework – "RAF"**); salvaguardia del valore delle attività e protezione dalle perdite; efficacia ed efficienza dei processi aziendali; affidabilità e sicurezza delle informazioni aziendali; prevenzione del rischio che la banca sia coinvolta, anche involontariamente, in attività illecite (con particolare riferimento a quelle connesse con il riciclaggio, l'usura ed il finanziamento al terrorismo); conformità delle operazioni con la legge e la normativa di vigilanza, nonché con le politiche, i regolamenti e le procedure interne. Il sistema dei controlli interni comprende sistemi informatici e di rete istituiti e gestiti conformemente al DORA e al regolamento delegato sulla gestione dei rischi informatici.
+> Il sistema dei controlli interni è costituito dall'insieme delle regole, delle funzioni, delle strutture, delle risorse, dei processi e delle procedure che mirano ad assicurare, nel rispetto della sana e prudente gestione, il conseguimento delle seguenti finalità: verifica dell'attuazione delle strategie e delle politiche aziendali; contenimento del rischio entro i limiti indicati nel quadro di riferimento per la determinazione della propensione al rischio della banca (**Risk Appetite Framework, "RAF"**); salvaguardia del valore delle attività e protezione dalle perdite; efficacia ed efficienza dei processi aziendali; affidabilità e sicurezza delle informazioni aziendali; prevenzione del rischio che la banca sia coinvolta, anche involontariamente, in attività illecite (con particolare riferimento a quelle connesse con il riciclaggio, l'usura ed il finanziamento al terrorismo); conformità delle operazioni con la legge e la normativa di vigilanza, nonché con le politiche, i regolamenti e le procedure interne. Il sistema dei controlli interni comprende sistemi informatici e di rete istituiti e gestiti conformemente al DORA e al regolamento delegato sulla gestione dei rischi informatici.
 
-Da notare come fra le finalità esplicitamente richiamate ci sia il coinvolgimento, anche indiretto, in attività illecite (come ad esempio il riciclaggio — qui l'antiriciclaggio è richiamato espressamente tra le finalità dei controlli interni, ma la disciplina specifica è nel d.lgs. 231/2007 e nelle relative disposizioni attuative della Banca d'Italia, a cui rinvia la stessa Circolare 285, Cap. 1, Sez. III, par. 2) e il concetto di "**conformità**" (sostanzialmente la traduzione di "compliance") delle operazioni con la legge, che fa riferimento a una delle funzioni più importanti e innovative. Il testo riportato è quello vigente dopo gli aggiornamenti 2026 della Circolare 285 (51° e 52°, ultimo del 28 luglio 2026); nella versione previgente erano incluse anche "le procedure informatiche" tra le informazioni da rendere affidabili e sicure.
+Da notare come fra le finalità esplicitamente richiamate ci sia il coinvolgimento, anche indiretto, in attività illecite (come ad esempio il riciclaggio; l'antiriciclaggio è richiamato espressamente tra le finalità dei controlli interni, ma la disciplina specifica è nel d.lgs. 231/2007 e nelle relative disposizioni attuative della Banca d'Italia, a cui rinvia la stessa Circolare 285, Cap. 1, Sez. III, par. 2) e il concetto di "**conformità**" (sostanzialmente la traduzione di "compliance") delle operazioni con la legge, che fa riferimento a una delle funzioni più importanti e innovative. Il testo riportato è quello vigente dopo gli aggiornamenti 2026 della Circolare 285 (51° e 52°, ultimo del 28 luglio 2026); nella versione previgente erano incluse anche "le procedure informatiche" tra le informazioni da rendere affidabili e sicure.
 
 ### Ruolo centrale nell'organizzazione
 
@@ -301,8 +244,6 @@ Da notare come fra le finalità esplicitamente richiamate ci sia il coinvolgimen
 ### Requisiti generali per realizzare l'obiettivo
 
 > Per poter realizzare questo obiettivo, il sistema dei controlli interni deve in generale: assicurare la completezza, l'adeguatezza, la funzionalità (in termini di efficienza ed efficacia), l'affidabilità del processo di gestione dei rischi e la sua coerenza con il RAF; prevedere attività di controllo diffuse a ogni segmento operativo e livello gerarchico; garantire che le anomalie riscontrate siano tempestivamente portate a conoscenza di livelli appropriati dell'impresa (agli organi aziendali, se significative) in grado di attivare tempestivamente gli opportuni interventi correttivi; incorporare specifiche procedure per far fronte all'eventuale violazione di limiti operativi; assicurare che il personale sia portato a conoscenza delle componenti del sistema dei controlli interni e delle principali politiche (in particolare, la politica di compliance), nonché delle modifiche sostanziali a esse apportate.
-
-*(pagina 9–10)*
 
 ## Le tre tipologie di controllo: primo, secondo e terzo livello
 
@@ -318,15 +259,13 @@ I controlli di linea sono volti ad assicurare il corretto svolgimento delle oper
 
 > Controlli sui rischi e sulla conformità (c.d. "controlli di secondo livello"), che hanno l'obiettivo di assicurare, tra l'altro: a) la corretta attuazione del processo di gestione dei rischi; b) il rispetto dei limiti operativi assegnati alle varie funzioni; c) la conformità dell'operatività aziendale alle norme, incluse quelle di autoregolamentazione.
 
-Questi controlli non possono essere affidati agli stessi soggetti che svolgono i controlli di primo livello. I controlli sui rischi e sulla conformità si occupano del controllo sui rischi (attività di **risk management**) e dei controlli di conformità (**compliance** — dove si parla di autoregolamentazione ci si riferisce al rispetto anche delle circolari interne) su tutti i livelli (esempio: presentazione di un nuovo prodotto → chiedere alla compliance). Questi controlli sono eseguiti da strutture dedicate, distinte e autonome rispetto a quelle produttive.
+Questi controlli non possono essere affidati agli stessi soggetti che svolgono i controlli di primo livello. I controlli sui rischi e sulla conformità si occupano del controllo sui rischi (attività di **risk management**) e dei controlli di conformità (**compliance**; il riferimento all'autoregolamentazione comprende anche il rispetto delle circolari interne) su tutti i livelli: per esempio, la presentazione di un nuovo prodotto richiede il coinvolgimento della compliance. Questi controlli sono eseguiti da strutture dedicate, distinte e autonome rispetto a quelle produttive.
 
 ### Revisione interna (controlli di terzo livello)
 
 > Revisione interna (c.d. "controlli di terzo livello"), volta a individuare violazioni delle procedure e della regolamentazione nonché a valutare periodicamente la completezza, l'adeguatezza, la funzionalità (in termini di efficienza ed efficacia) e l'affidabilità del sistema dei controlli interni e dei sistemi informatici e di rete conformemente al DORA e al regolamento delegato sulla gestione dei rischi informatici, con cadenza prefissata in relazione alla natura e all'intensità dei rischi.
 
-L'attività di revisione interna (in inglese, **internal audit** — questa funzione inizialmente veniva definita di "ispettorato interno") è volta a identificare eventuali violazioni delle procedure e della regolamentazione a tutti i livelli, nonché a valutare periodicamente l'affidabilità dell'intero sistema dei controlli interni (funzione di carattere preventivo). Il testo del terzo livello è quello vigente dopo gli aggiornamenti 2026 (51° e 52°); nella versione previgente il testo riportava "e del sistema informativo (ICT audit)", formula sostituita dal rinvio al DORA.
-
-*(pagina 10–11)*
+L'attività di revisione interna (in inglese **internal audit**; in origine la funzione era denominata "ispettorato interno") è volta a identificare eventuali violazioni delle procedure e della regolamentazione a tutti i livelli, nonché a valutare periodicamente l'affidabilità dell'intero sistema dei controlli interni (funzione di carattere preventivo). Il testo del terzo livello è quello vigente dopo gli aggiornamenti 2026 (51° e 52°); nella versione previgente il testo riportava "e del sistema informativo (ICT audit)", formula sostituita dal rinvio al DORA.
 
 ## Principi generali di organizzazione: separatezza delle funzioni e gestione delle risorse umane
 
@@ -334,15 +273,13 @@ Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 3, Sezione I, par. 6 (P
 
 > Inoltre, le banche rispettano i seguenti principi generali di organizzazione: i processi decisionali e l'affidamento di funzioni al personale sono formalizzati e consentono l'univoca individuazione di compiti e responsabilità e sono idonei a prevenire i conflitti di interessi. In tale ambito, deve essere assicurata la necessaria **separatezza** tra le funzioni operative e quelle di controllo; le politiche e le procedure di gestione delle risorse umane assicurano che il personale sia provvisto delle competenze e della professionalità necessarie per l'esercizio delle responsabilità a esso attribuite.
 
-*(pagina 11)*
-
-## Sezione II — Il ruolo degli organi aziendali nel sistema dei controlli interni (RAF)
+## Sezione II: il ruolo degli organi aziendali nel sistema dei controlli interni (RAF)
 
 Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 3, **Sezione II** (Il ruolo degli organi aziendali).
 
 ### Premessa: il Risk Appetite Framework (RAF)
 
-> Le banche assicurano la completezza, l'adeguatezza, la funzionalità e l'affidabilità del sistema dei controlli interni. In tale ambito, formalizzano il quadro di riferimento per la determinazione della propensione al rischio (**Risk Appetite Framework – "RAF"**), le politiche di governo dei rischi, il processo di gestione dei rischi, ne assicurano l'applicazione e procedono al loro riesame periodico per garantirne l'efficacia nel tempo. La responsabilità primaria è rimessa agli organi aziendali, ciascuno secondo le rispettive competenze.
+> Le banche assicurano la completezza, l'adeguatezza, la funzionalità e l'affidabilità del sistema dei controlli interni. In tale ambito, formalizzano il quadro di riferimento per la determinazione della propensione al rischio (**Risk Appetite Framework, "RAF"**), le politiche di governo dei rischi, il processo di gestione dei rischi, ne assicurano l'applicazione e procedono al loro riesame periodico per garantirne l'efficacia nel tempo. La responsabilità primaria è rimessa agli organi aziendali, ciascuno secondo le rispettive competenze.
 
 Si specifica che le banche debbano formalizzare il **Risk Appetite Framework (RAF)**, ovvero il quadro di riferimento per la determinazione della propensione al rischio, che fissa ex ante gli obiettivi di rischio/rendimento e i conseguenti limiti operativi (Allegato C); a esso si affiancano le politiche di governo dei rischi e il processo di gestione dei rischi.
 
@@ -353,6 +290,7 @@ Il RAF risponde all'esigenza di evitare politiche incontrollate di crescita dei 
 > L'organo con funzione di supervisione strategica: **definisce e approva**: a. il modello di business avendo consapevolezza dei rischi cui tale modello espone la banca e comprensione delle modalità attraverso le quali i rischi sono rilevati e valutati; b. gli indirizzi strategici e provvede al loro riesame periodico, in relazione all'evoluzione dell'attività aziendale e del contesto esterno, al fine di assicurarne l'efficacia nel tempo; c. gli obiettivi di rischio, la soglia di tolleranza (ove identificata) e le politiche di governo dei rischi; (...) **approva**: a. la costituzione delle funzioni aziendali di controllo, i relativi compiti e responsabilità, le modalità di coordinamento e collaborazione, i flussi informativi tra tali funzioni e tra queste e gli organi aziendali; b. il processo di gestione del rischio e ne valuta la compatibilità con gli indirizzi strategici e le politiche di governo dei rischi; (...) **assicura che**: a. la struttura della banca sia coerente con l'attività svolta e con il modello di business adottato, evitando la creazione di strutture complesse non giustificate da finalità operative; b. il sistema dei controlli interni e l'organizzazione aziendale siano costantemente uniformati ai principi indicati nella Sezione I e che le funzioni aziendali di controllo possiedano i requisiti e rispettino le previsioni della Sezione III; (...).
 
 I verbi cambiano in relazione a cosa fa l'organo con funzione di supervisione strategica: "**definisce e approva**", "**approva**", "**assicura**".
+
 ### Organo con funzione di gestione
 
 > L'organo con funzione di gestione ha la comprensione di tutti i rischi aziendali, inclusi i possibili rischi di malfunzionamento dei sistemi interni di misurazione (c.d. "**rischio di modello**"), e, nell'ambito di una gestione integrata, delle loro interrelazioni reciproche e con l'evoluzione del contesto esterno. In tale ambito, è in grado di individuare e valutare i fattori, inclusa la complessità della struttura organizzativa, da cui possono scaturire rischi per la banca.
@@ -365,9 +303,7 @@ I verbi cambiano in relazione a cosa fa l'organo con funzione di supervisione st
 
 > Il corretto funzionamento del sistema dei controlli interni si basa sulla proficua interazione nell'esercizio dei compiti (d'indirizzo, di attuazione, di verifica, di valutazione) fra gli organi aziendali, gli eventuali comitati costituiti all'interno di questi ultimi, i soggetti incaricati della revisione legale dei conti, le funzioni di controllo.
 
-*(pagina 11–13)*
-
-## Sezione III — Istituzione delle funzioni aziendali di controllo ed esternalizzazione
+## Sezione III: istituzione delle funzioni aziendali di controllo ed esternalizzazione
 
 Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 3, **Sezione III** (Funzioni aziendali di controllo), Istituzione delle funzioni aziendali di controllo.
 
@@ -378,11 +314,9 @@ Viene usato l'indicativo ("istituiscono") perché non si tratta di una facoltà 
 Sono tuttavia **esternalizzabili** i compiti operativi delle funzioni aziendali di controllo, all'interno o all'esterno del gruppo e nel rispetto del principio di proporzionalità (Cap. 3, Sez. IV, par. 1); restano ferme la responsabilità degli organi aziendali e quella del responsabile della funzione esternalizzata. Le banche più piccole di solito non hanno abbastanza personale da poter dedicare allo svolgimento di queste funzioni (e non potrebbero neanche permetterselo in termini di costi da sostenere), per cui le affidano a soggetti esterni. Ci sono aspetti positivi e negativi derivanti dall'esternalizzazione:
 
 - **aspetti positivi**: i soggetti a cui vengono affidati questi compiti sono probabilmente molto esperti in materia e sarebbero più efficienti del personale di una banca;
-- **aspetti negativi**: un soggetto esterno non tiene conto della singola realtà aziendale; per lui ogni banca è solo "numeri".
+- **aspetti negativi**: un soggetto esterno non tiene conto della singola realtà aziendale e valuta ogni banca soltanto sulla base dei numeri.
 
 Nelle BCC i controlli di terzo livello sono quasi sempre esternalizzati e affidati alla capogruppo.
-
-*(pagina 13)*
 
 ## Requisiti specifici delle funzioni aziendali di controllo: compliance, risk management, internal audit
 
@@ -392,6 +326,8 @@ Riferimento: Circolare 285, Parte I, Titolo IV, Capitolo 3, Sezione III, Requisi
 
 > Il **rischio di non conformità alle norme** è il rischio di incorrere in sanzioni giudiziarie o amministrative, perdite finanziarie rilevanti o danni di reputazione in conseguenza di violazioni di norme imperative (leggi, regolamenti) ovvero di autoregolamentazione (ad es., statuti, codici di condotta, codici di autodisciplina). Poiché il rischio di non conformità alle norme è diffuso a tutti livelli dell'organizzazione aziendale, soprattutto nell'ambito delle linee operative, l'attività di prevenzione deve svolgersi in primo luogo dove il rischio viene generato: è pertanto necessaria un'adeguata responsabilizzazione di tutto il personale.
 
+Questa è la definizione di **rischio di compliance**.
+
 I principali adempimenti che la funzione di conformità alle norme è chiamata a svolgere sono:
 
 - l'ausilio alle strutture aziendali per la definizione delle metodologie di valutazione dei rischi di non conformità alle norme;
@@ -400,8 +336,6 @@ I principali adempimenti che la funzione di conformità alle norme è chiamata a
 - l'identificazione nel continuo delle norme applicabili alla banca e la misurazione/valutazione del loro impatto su processi e procedure aziendali; (...).
 
 > Ferme restando le responsabilità della funzione di compliance per l'espletamento dei compiti previsti da normative specifiche (quali, ad es., le discipline in materia di politiche e prassi di remunerazione e incentivazione, di trasparenza delle operazioni e correttezza delle relazioni tra intermediari e clienti e di attività di rischio e conflitti di interesse nei confronti di soggetti collegati), altre aree di intervento sono: il coinvolgimento nella valutazione ex ante della conformità alla regolamentazione applicabile di tutti i progetti innovativi (inclusa l'operatività in nuovi prodotti o servizi nell'ambito del relativo processo di approvazione, secondo quanto previsto nella Sezione II, paragrafo 3) che la banca intenda intraprendere, nonché nella prevenzione e nella gestione dei conflitti di interesse sia tra le diverse attività svolte dalla banca, sia con riferimento ai dipendenti e agli esponenti aziendali.
-
-Questa è la definizione di **rischio di compliance**.
 
 La crescita dei controlli di conformità alla legge e ai regolamenti deriva dall'attenzione che le autorità attribuiscono non solo al corretto adempimento degli obblighi della disciplina prudenziale, ma anche al rischio operativo e al rischio di reputazione. Il **rischio operativo** è il rischio di subire perdite derivanti da inadeguatezza o disfunzione di procedure, risorse umane e sistemi interni, oppure da eventi esogeni; ne fa parte il **rischio giuridico**, cioè il rischio di perdite derivanti da violazioni di leggi o regolamenti. Il **rischio di reputazione** è il rischio, attuale o prospettico, di flessione degli utili o del capitale derivante da una percezione negativa dell'immagine della banca da parte di clienti, controparti, azionisti, investitori o autorità di vigilanza. La violazione delle regole, anche non specifiche dell'attività bancaria, può accrescere sia il rischio operativo sia quello di reputazione.
 
@@ -415,9 +349,7 @@ La compliance si occupa dei profili giuridici e aziendalistici, mentre il risk m
 
 > In tale ambito, coerentemente con il piano di audit, la funzione di revisione interna: verifica, anche attraverso accertamenti di natura ispettiva: a. la regolarità delle diverse attività aziendali, incluse quelle esternalizzate, e l'evoluzione dei rischi sia nella direzione generale della banca, sia nelle filiali. La frequenza delle ispezioni è coerente con l'attività svolta e la propensione al rischio; tuttavia sono condotti anche accertamenti ispettivi casuali e non preannunciati; b. il monitoraggio della conformità alle norme dell'attività di tutti i livelli aziendali; c. il rispetto, nei diversi settori operativi, dei limiti previsti dai meccanismi di delega, e il pieno e corretto utilizzo delle informazioni disponibili nelle diverse attività; (...).
 
-*(pagina 13–14)*
-
-## Capitolo 2 — Politiche e prassi di remunerazione e incentivazione
+## Capitolo 2: politiche e prassi di remunerazione e incentivazione
 
 Riferimento: Circolare 285, Parte I, Titolo IV, **Capitolo 2** (Politiche e prassi di remunerazione e incentivazione), Sezione I (Disposizioni di carattere generale).
 
@@ -425,21 +357,21 @@ Riferimento: Circolare 285, Parte I, Titolo IV, **Capitolo 2** (Politiche e pras
 
 > Le presenti disposizioni sono adottate sulla base degli articoli 53 e 67 del Testo Unico Bancario (TUB). Esse danno attuazione alla direttiva 2013/36/UE del 26 giugno 2013 (di seguito, CRD, come modificata dalla direttiva (UE) 2019/878, c.d. **CRD V**) relativamente alle previsioni in essa contenute in materia di politiche e prassi di remunerazione e incentivazione nelle banche e nei gruppi bancari, e tengono conto degli indirizzi e dei criteri concordati in sede internazionale, tra cui quelli dell'**EBA** e dell'**FSB**. I sistemi di remunerazione e incentivazione devono essere in linea con i valori, le strategie e gli obiettivi aziendali di lungo periodo, collegati con i risultati aziendali, opportunamente corretti per tener conto di tutti i rischi, coerenti con i livelli di capitale e di liquidità necessari a fronteggiare le attività intraprese e, in ogni caso, tali da evitare incentivi distorti che possano indurre a violazioni normative o ad un'eccessiva assunzione di rischi per la banca e il sistema finanziario nel suo complesso. Nel loro insieme, le best practices e gli orientamenti espressi in ambito internazionale costituiscono indirizzi e criteri interpretativi utili per il corretto recepimento delle disposizioni da parte delle banche (...).
 
-La disciplina dei sistemi di remunerazione e incentivazione rinvia prevalentemente al diritto europeo: il Regolamento 575/2013, la CRD4 e le linee guida emanate dall'EBA. Contano anche le best practices e gli orientamenti espressi in ambito internazionale.
+La disciplina dei sistemi di remunerazione e incentivazione rinvia prevalentemente al diritto europeo: il Regolamento 575/2013, la CRD4, i *Regulatory Technical Standards* emanati dalla Commissione europea su proposta dell'EBA e le linee guida dell'EBA.
 
 ### Principi e criteri generali
 
 > Adeguati meccanismi di remunerazione e di incentivazione dei consiglieri e del management della banca possono favorire la competitività e il buon governo delle imprese bancarie. La remunerazione, in particolare di coloro che rivestono ruoli rilevanti all'interno dell'organizzazione aziendale, tende ad attrarre e mantenere nell'azienda soggetti aventi professionalità e capacità adeguate alle esigenze dell'impresa. Al contempo, i sistemi retributivi sono definiti in coerenza con gli obiettivi e i valori aziendali, ivi inclusi gli obiettivi di finanza sostenibile che tengono conto, tra l'altro, dei fattori ambientali, sociali e di governance (**ESG**), e con le strategie di lungo periodo e le politiche di prudente gestione del rischio della banca, ivi comprese le strategie di monitoraggio e gestione dei crediti deteriorati, coerentemente con quanto definito nell'ambito delle disposizioni sul processo di controllo prudenziale.
 >
-> In particolare, le forme di retribuzione incentivante, basate su strumenti finanziari (es. **stock option**) o collegate alla performance aziendale, devono essere coerenti con il quadro di riferimento per la determinazione della propensione al rischio (ad es., Risk Appetite Framework – "RAF") e con le politiche di governo e di gestione dei rischi; esse devono tenere inoltre conto del costo e del livello del capitale e della liquidità necessari a fronteggiare le attività intraprese ed essere strutturate in modo da evitare il prodursi di incentivi in conflitto con l'interesse della società in un'ottica di lungo periodo.
+> In particolare, le forme di retribuzione incentivante, basate su strumenti finanziari (es. **stock option**) o collegate alla performance aziendale, devono essere coerenti con il quadro di riferimento per la determinazione della propensione al rischio (ad es., Risk Appetite Framework, "RAF") e con le politiche di governo e di gestione dei rischi; esse devono tenere inoltre conto del costo e del livello del capitale e della liquidità necessari a fronteggiare le attività intraprese ed essere strutturate in modo da evitare il prodursi di incentivi in conflitto con l'interesse della società in un'ottica di lungo periodo.
 >
 > Nella prospettiva di evitare possibili aggiramenti delle presenti disposizioni, le banche assicurano che il proprio personale non sia remunerato o non riceva pagamenti o altri benefici tramite veicoli, strumenti o modalità comunque elusive delle presenti disposizioni, con riguardo, in caso di gruppo, anche alle succursali e filiazioni estere (ovunque insediate). Le banche richiedono al proprio personale, attraverso specifiche pattuizioni, di non avvalersi di strategie di copertura personale o di assicurazioni sulla retribuzione o su altri aspetti che possano alterare (...)
 
 ### Fonti, finalità e vincolatività della disciplina
 
-Le politiche di remunerazione del personale più rilevante sono il terzo aspetto degli assetti organizzativi oggetto di particolare attenzione della vigilanza. Le fonti sono la direttiva 2013/36/UE e i *Regulatory Technical Standards* emanati dalla Commissione europea su proposta dell'EBA. La direttiva (UE) 2019/878 ha introdotto la possibilità per gli Stati di stabilire norme meno rigorose per le banche di piccole dimensioni, per le quali le misure risultano eccessivamente onerose.
+Le politiche di remunerazione del personale più rilevante sono il terzo aspetto degli assetti organizzativi oggetto di particolare attenzione della vigilanza. La direttiva (UE) 2019/878 ha introdotto la possibilità per gli Stati di stabilire norme meno rigorose per le banche di piccole dimensioni, per le quali le misure risultano eccessivamente onerose.
 
-Le politiche di retribuzione incentivanti adottate prima della crisi finanziaria avevano contribuito alla crescita non controllata dei rischi: gli amministratori puntavano ad aumentare i profitti di breve termine per beneficiare di meccanismi incentivanti, basati su strumenti finanziari (ad esempio *stock options*) o collegati alla performance aziendale, in conflitto con l'interesse a una sana e prudente gestione nel lungo periodo. Per evitare il conflitto di interessi la normativa europea ha fissato limiti precisi alle remunerazioni incentivanti e regole di governance perché la remunerazione dei *top manager* sia oggetto di una valutazione approfondita e trasparente da parte degli organi competenti, con modalità di calcolo e di corresponsione correlate ai risultati della gestione di lungo periodo.
+Le politiche di retribuzione incentivanti adottate prima della crisi finanziaria avevano contribuito alla crescita non controllata dei rischi: gli amministratori puntavano ad aumentare i profitti di breve termine per beneficiare di meccanismi incentivanti basati su strumenti finanziari, come le *stock options*, o collegati alla performance aziendale, in conflitto con l'interesse a una sana e prudente gestione nel lungo periodo. Per evitare il conflitto di interessi la normativa europea ha fissato limiti precisi alle remunerazioni incentivanti e regole di governance perché la remunerazione dei *top manager* sia oggetto di una valutazione approfondita e trasparente da parte degli organi competenti, con modalità di calcolo e di corresponsione correlate ai risultati della gestione di lungo periodo.
 
 La vincolatività delle regole è rafforzata dall'art. 53, comma 4-*sexies*, TUB, che prevede la nullità di qualunque patto o clausola non conforme. Per favorire la trasparenza le banche hanno obblighi informativi puntuali verso le autorità e il mercato; i compensi dei membri degli organi e delle altre figure apicali sono pubblicati sul sito web della banca.
 
@@ -447,7 +379,7 @@ La vincolatività delle regole è rafforzata dall'art. 53, comma 4-*sexies*, TUB
 
 Il personale più rilevante comprende le figure aziendali in grado di incidere sul profilo di rischio della banca: sicuramente i membri degli organi societari e gli altri soggetti dell'alta amministrazione, come il direttore generale. L'EBA ha emanato norme puntuali per l'individuazione dei *risk-takers*.
 
-All'assemblea è attribuito un ruolo cruciale, per favorire la consapevolezza e il controllo degli azionisti in funzione complementare al controllo pubblico esterno. Oltre a stabilire i compensi spettanti agli organi da essa nominati, l'assemblea approva:
+L'assemblea ha il compito di favorire la consapevolezza e il controllo degli azionisti, in funzione complementare al controllo pubblico esterno. Oltre a stabilire i compensi spettanti agli organi da essa nominati, approva:
 
 - le politiche di remunerazione e incentivazione degli organi e del restante personale;
 - i piani di remunerazione basati su strumenti finanziari (*stock options*);
@@ -468,34 +400,26 @@ Per allineare gli incentivi agli interessi di lungo termine della banca la parte
 
 Analoghi principi valgono per i trattamenti pensionistici e per i compensi pattuiti in vista o in occasione della conclusione anticipata del rapporto di lavoro o della cessazione anticipata dalla carica (*golden parachutes*), che devono essere collegati alla performance realizzata e ai rischi assunti dalla persona e dalla banca. L'EBA chiede inoltre alle banche di adottare *gender neutral remuneration policies*, per limitare le discriminazioni nelle politiche di remunerazione delle donne.
 
-*(pagina 14–15)*
-
 ## Attività di rischio e conflitti di interesse nei confronti di soggetti collegati
 
-Fra le disposizioni prudenziali rientrano le regole sulle operazioni con i «soggetti collegati», volte a evitare il rischio che questi ultimi influenzino le scelte gestionali. Potrebbero essere compromesse l'oggettività e l'imparzialità delle decisioni sulla concessione di finanziamenti, con possibili distorsioni nel processo di allocazione delle risorse.
+Fra le disposizioni prudenziali rientrano le regole sulle operazioni con i «soggetti collegati», volte a evitare che la vicinanza di taluni soggetti ai centri decisionali della banca ne influenzi le scelte gestionali e comprometta l'oggettività e l'imparzialità delle decisioni sulla concessione di finanziamenti e su altre transazioni nei confronti dei medesimi soggetti. Ne possono derivare distorsioni nel processo di allocazione delle risorse, l'esposizione della banca a rischi non adeguatamente misurati o presidiati e potenziali danni per depositanti e azionisti.
 
 ### Soggetti collegati e parti correlate
 
-I «soggetti collegati» sono una «parte correlata» e i soggetti a essa connessi in virtù di legami societari o familiari. Le «parti correlate» sono, in primo luogo, gli esponenti aziendali, i principali azionisti e gli altri soggetti capaci di condizionare la gestione della banca, in quanto in grado di esercitare il controllo, anche congiuntamente ad altri, o un'influenza notevole. Sono parti correlate anche le società o imprese controllate o sottoposte a influenza notevole da parte della banca o di una società del gruppo bancario. Le regole attribuiscono un peso particolare ai conflitti di interesse che possono emergere nei confronti di imprese collegate, specie di natura industriale, verso le quali la banca abbia significative esposizioni in forma di finanziamenti e di interessenze partecipative.
+I «soggetti collegati» sono una «parte correlata» e i soggetti a essa connessi in virtù di legami societari o familiari. La categoria delle «parti correlate» si affianca a quella degli esponenti aziendali, alla quale continua a riferirsi l'art. 136 TUB, ed è più ampia (Circolare 285, Parte Terza, Cap. 11, Sez. I, par. 3): le «parti correlate» sono, in primo luogo, gli esponenti aziendali, i principali azionisti e gli altri soggetti capaci di condizionare la gestione della banca, in quanto in grado di esercitare il controllo, anche congiuntamente ad altri, o un'influenza notevole. Sono parti correlate anche le società o imprese controllate o sottoposte a influenza notevole da parte della banca o di una società del gruppo bancario. Le regole attribuiscono un peso particolare ai conflitti di interesse che possono emergere nei confronti di imprese collegate, specie di natura industriale, verso le quali la banca abbia significative esposizioni in forma di finanziamenti e di interessenze partecipative.
 
-> [!lezione] Dalla lezione del 17 novembre 2026: la dicitura «parti correlate», la finalità della disciplina e la separatezza banca-industria
-> La dicitura «parti correlate» è nuova e sostituisce quella di esponenti aziendali, indicando una categoria più ampia. La disciplina mira a presidiare il rischio che la vicinanza di taluni soggetti ai centri decisionali della banca possa compromettere l'oggettività e l'imparzialità delle decisioni sulla concessione di finanziamenti e su altre transazioni nei confronti dei medesimi soggetti. Ne possono derivare distorsioni nel processo di allocazione delle risorse, esposizione della banca a rischi non adeguatamente misurati o presidiati e potenziali danni per depositanti e azionisti. Secondo il docente la premessa delle disposizioni dà una sintesi di tutto ciò che c'è da sapere; la definizione vera e propria di parti correlate si trova nel testo del capitolo, e ci si accontenta della premessa.
->
-> Si ricollega qui la separatezza banca-industria vista nella prima parte del corso. Essa è venuta meno: le industrie possono partecipare al capitale della banca, ma ciò fa emergere nuove tipologie di rischio, che si riflettono in questa disciplina. La partecipazione è consentita, ma occorre tener conto che potrebbe trattarsi di parti correlate.
+La disciplina si collega alla separatezza banca-industria, venuta meno: le imprese industriali possono partecipare al capitale della banca, e ciò fa emergere nuove tipologie di rischio, che questa disciplina riflette. La partecipazione è consentita, ma il partecipante può essere una parte correlata.
 
 ### Presidi
 
-Contro questi rischi sono previsti limiti quantitativi agli affidamenti, nonché regole procedurali e organizzative:
+Contro questi rischi la disciplina prevede tre presidi: **limiti quantitativi** agli affidamenti, **regole procedurali** e **regole sui controlli interni**.
 
-- **limiti quantitativi**, rapportati al patrimonio, alle attività di rischio della banca o del gruppo bancario verso i soggetti collegati; sono differenziati per tipologia di soggetti collegati, in modo proporzionato all'intensità delle relazioni e alla rilevanza dei rischi, e i crediti e le altre attività di rischio verso i soggetti collegati non possono comunque superare il 20% del patrimonio individuale della banca; per i maggiori rischi di conflitto nelle relazioni banca-industria, i limiti sono più stringenti per le parti correlate qualificabili come imprese non finanziarie;
-- **regole procedurali** per l'assunzione di attività di rischio, anche per ottemperare all'art. 136 TUB, che impone speciali cautele per le obbligazioni assunte dalla banca o da altra società del gruppo verso gli esponenti della banca e delle società del gruppo; le banche quotate sono soggette anche alle regole Consob in attuazione dell'art. 2391-*bis* c.c. su interessi degli amministratori e operazioni con parti correlate, per cui le disposizioni di vigilanza prevedono criteri omogenei a quelli Consob, così che le due normative si possano rispettare con un solo procedimento deliberativo; in entrambe le discipline gli amministratori indipendenti hanno un ruolo rilevante nel processo decisionale;
-- **regole sui controlli interni** che attribuiscono compiti e responsabilità agli organi aziendali per prevenire e gestire i conflitti di interesse, con obblighi di censimento dei soggetti collegati e di controllo dell'andamento delle esposizioni.
+I limiti quantitativi, come quelli sulle grandi esposizioni, sono posti alle attività di rischio della banca o del gruppo bancario verso i soggetti collegati e sono rapportati ai fondi propri. Sono differenziati per tipologia di soggetti collegati, in modo proporzionato all'intensità delle relazioni e alla rilevanza dei rischi: a livello consolidato vanno dal 5% al 20% secondo la categoria, mentre per le banche appartenenti a un gruppo, a livello individuale, le attività di rischio verso ciascun insieme di soggetti collegati non possono superare il 20% dei fondi propri individuali (circolare 285, Parte terza, capitolo 11, Sezione II). Per i maggiori rischi di conflitto nelle relazioni banca-industria, i limiti sono più stringenti per le parti correlate qualificabili come imprese non finanziarie.
 
-> [!lezione] Dalla lezione del 17 novembre 2026: i tre presidi nel dettaglio
-> Il primo presidio, i limiti prudenziali, è di natura quantitativa come per le grandi esposizioni. La sezione del capitolo dedicata ai limiti alle attività di rischio li misura entro soglie diverse a seconda dei casi; il docente non prende in considerazione le varie ipotesi. Ai fini della disciplina le attività di rischio sono ponderate, secondo fattori che tengono conto della rischiosità connessa alla natura della controparte e delle eventuali forme di protezione del credito: un socio rilevante può essere considerato forse meno rischioso di un esponente aziendale, e se un esponente aziendale offre un'ipoteca che protegge sicuramente la banca, perché vale dieci volte il credito richiesto, il livello di rischio si riduce notevolmente. Se il limite viene superato, la banca deve darsi un piano di rientro, secondo una scadenza indicata dalla normativa. Per le banche di credito cooperativo e per le banche di garanzia collettiva, che possono assumere varie forme, vale una disciplina specifica con modalità di calcolo particolari: sono banche che assumono il rischio di credito in blocco, utilizzando l'intero fondo rischi per garantire il monte della propria clientela.
->
-> Il secondo presidio, di tipo procedurale come già nel vecchio art. 136, è costituito da procedure deliberative che integrano i limiti prudenziali per preservare la corretta allocazione delle risorse e tutelare adeguatamente i terzi da condotte espropriative. Come per le grandi esposizioni, sono la parte più importante della disciplina, e non è sempre facile individuare le situazioni rilevanti: nelle grandi esposizioni chi conosce il mercato di riferimento e il diritto societario riesce a capire il perimetro della connessione, mentre qui il conflitto di interesse può essere piuttosto subdolo. Il capitolo contiene le prescrizioni di dettaglio, che il docente non esamina, tra cui l'iter per identificare queste operazioni, con la fase predeliberativa e la fase deliberativa; in alcuni casi la pratica deve essere portata addirittura all'attenzione dell'assemblea.
->
-> Uno dei casi più frequenti di conflitto di interesse è quello dell'esponente aziendale che ha come cliente un soggetto che chiede un finanziamento alla banca, e non esistono banche dati che lo dicano. Si pensi a un collegio sindacale in cui siede il dottore commercialista di un'impresa che chiede il finanziamento: tendenzialmente l'unico modo che la banca ha per saperlo è fare affidamento sul rispetto di queste norme da parte del sindaco, che deve dichiarare che quell'impresa è un suo cliente, che quindi scatta la disciplina e che si tratta di una parte correlata. Se il sindaco non lo dichiara, e purtroppo più di qualche volta non lo dichiara, scattano le conseguenze del caso: in primo luogo per l'esponente aziendale, ma anche per la banca che non ha monitorato adeguatamente, almeno nei limiti in cui poteva farlo.
->
-> Il terzo presidio riguarda gli assetti organizzativi e i sistemi di controlli interni. Si pensi all'addetto ai fidi che si trova sulla scrivania la pratica del proprio direttore generale. Come per il whistleblowing, anche se qui non vi è la segretezza propria di quello, occorre attenzione, perché il momento deliberativo è solo il momento finale: se la pratica è di competenza del consiglio di amministrazione, il consiglio si trova davanti un dossier, e occorre sapere che cosa vi è stato scritto e da chi. A monte devono esistere presidi organizzativi, e le norme interne della banca devono affrontare questo caso in modo specifico, perché è più delicato degli altri. Una parte successiva del capitolo riguarda i controlli interni e la responsabilità degli organi aziendali.
+Ai fini della disciplina le attività di rischio sono ponderate secondo fattori che tengono conto della rischiosità connessa alla natura della controparte e delle eventuali forme di protezione del credito. Un socio rilevante può essere considerato meno rischioso di un esponente aziendale; se quest'ultimo offre un'ipoteca che vale dieci volte il credito richiesto e protegge quindi sicuramente la banca, il livello di rischio si riduce notevolmente. Se il limite viene superato, la banca deve darsi un piano di rientro, secondo una scadenza indicata dalla normativa. Per le banche di credito cooperativo e per le banche di garanzia collettiva vale una disciplina specifica con modalità di calcolo particolari (Circolare 285, Parte Terza, Cap. 11, Sez. II, par. 4): le prime non computano nei limiti le attività di rischio verso gli esponenti aziendali soci, nella misura del fido massimo concedibile a un singolo socio; le seconde computano le attività di rischio connesse al rilascio di garanzie collettive solo per l'ammontare nominale eccedente la misura massima del fido concedibile al socio.
+
+Le regole procedurali per l'assunzione di attività di rischio rispondono anche all'art. 136 TUB, che impone speciali cautele per le obbligazioni assunte dalla banca o da altra società del gruppo verso gli esponenti della banca e delle società del gruppo. Consistono in procedure deliberative che integrano i limiti quantitativi, per preservare la corretta allocazione delle risorse e tutelare i terzi da condotte espropriative. Le prescrizioni di dettaglio disciplinano l'iter per identificare queste operazioni, con una fase predeliberativa e una fase deliberativa; in alcuni casi la pratica deve essere portata all'attenzione dell'assemblea. Le banche quotate sono soggette anche alle regole Consob in attuazione dell'art. 2391-*bis* c.c. su interessi degli amministratori e operazioni con parti correlate. Le disposizioni di vigilanza prevedono criteri omogenei a quelli Consob, così che le due normative si possano rispettare con un solo procedimento deliberativo; in entrambe le discipline gli amministratori indipendenti hanno un ruolo rilevante nel processo decisionale.
+
+Individuare le situazioni rilevanti non è sempre agevole: nelle grandi esposizioni la conoscenza del mercato di riferimento e del diritto societario permette di individuare il perimetro della connessione, mentre in questa disciplina il conflitto di interesse può essere difficile da rilevare. Uno dei casi più frequenti è quello dell'esponente aziendale che ha come cliente un soggetto che chiede un finanziamento alla banca, e nessuna banca dati lo segnala. Se nel collegio sindacale siede il dottore commercialista di un'impresa che chiede il finanziamento, di regola la banca può saperlo solo confidando nel rispetto di queste norme da parte del sindaco, che deve dichiarare che l'impresa è un suo cliente, che scatta la disciplina e che si tratta di una parte correlata. Se il sindaco omette la dichiarazione, evenienza non rara, scattano le conseguenze del caso: in primo luogo per l'esponente aziendale, ma anche per la banca che non ha monitorato adeguatamente, almeno nei limiti in cui poteva farlo.
+
+Le regole sui controlli interni e sugli assetti organizzativi attribuiscono compiti e responsabilità agli organi aziendali per prevenire e gestire i conflitti di interesse, con obblighi di censimento dei soggetti collegati e di controllo dell'andamento delle esposizioni. Si pensi all'addetto ai fidi che ha sulla scrivania la pratica del proprio direttore generale. Come nel whistleblowing, anche se qui non vi è la segretezza propria di quello, occorre attenzione, perché il momento deliberativo è solo il momento finale: se la pratica è di competenza del consiglio di amministrazione, il consiglio si trova davanti un fascicolo e occorre sapere che cosa vi è stato scritto e da chi. A monte devono esistere presidi organizzativi, e le norme interne della banca devono affrontare questo caso in modo specifico, perché è più delicato degli altri.
