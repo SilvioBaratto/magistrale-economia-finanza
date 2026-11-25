@@ -4,7 +4,7 @@ data: 2026-11-24
 fonte: Audio/finanza_strategica/finanza_strategica_2026-11-24.txt
 tipo: appunti-sintetici
 tags: [appunti-sintetici, finanza-strategica]
-revisione: sintesi a punti della nota fedele della stessa lezione
+revisione: sintesi a punti degli appunti della stessa lezione
 ---
 
 # Metodi DCF, terminal value e modelli multi-step
@@ -179,7 +179,7 @@ revisione: sintesi a punti della nota fedele della stessa lezione
 - I sanity checks del libro mettono in relazione il valore a sinistra del più, la previsione esplicita, con quello a destra, la proiezione all'infinito.
 - Se l'enterprise value è 10 milioni e quattro anni di business plan danno un milione e il terminal value attualizzato 9 milioni, tanto valeva fare una rendita perpetua: il business plan pesa pochissimo, o il grosso dei flussi è dal 2031 in poi, nella zona arancione.
 
-![Figura ricostruita dall'audio, non è la slide](../appunti-fedeli/figure/2026-11-24-fig01.png)
+![Figura ricostruita dall'audio, non è la slide](../appunti/figure/2026-11-24-fig01.png)
 
 - Nei primi tre, quattro, cinque anni gli FCFF sono miseri perché il business è appena partito; il grosso arriva quando l'app raggiunge un milione di utenti.
 

@@ -4,7 +4,7 @@ data: 2026-11-17
 fonte: Audio/finanza_strategica/finanza_strategica_2026-11-17.txt
 tipo: appunti-sintetici
 tags: [appunti-sintetici, finanza-strategica]
-revisione: sintesi a punti della nota fedele della stessa lezione
+revisione: sintesi a punti degli appunti della stessa lezione
 ---
 
 # Esercizi sui metodi di valutazione e opzioni reali
@@ -106,7 +106,7 @@ revisione: sintesi a punti della nota fedele della stessa lezione
 - Si acquisiscono risorse chiave che non si hanno altrimenti, per lanciare la scarpa da running più bella del mondo anche se quelli sviluppavano scarponi da sci. Però ==se non è per strategia, di marketing o di sviluppo prodotto, solitamente il VAN guida le decisioni==.
 - Nel grafico la riga blu è il tempo di recupero, la gialla o arancio l'attualizzato, il tratteggio l'investimento iniziale: con la riga arancione il break even si sposta molto più a destra.
 
-![Figura ricostruita dall'audio, non è la slide](../appunti-fedeli/figure/2026-11-17-fig01.png)
+![Figura ricostruita dall'audio, non è la slide](../appunti/figure/2026-11-17-fig01.png)
 
 ### Secondo caso: una nuova linea di snack
 

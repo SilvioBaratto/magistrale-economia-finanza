@@ -4,7 +4,7 @@ data: 2026-11-17
 fonte: Audio/legislazione_bancaria_2/legislazione_bancaria_2_2026-11-17.txt
 tipo: appunti-sintetici
 tags: [appunti-sintetici, legislazione-bancaria-2]
-revisione: sintesi a punti della nota fedele della stessa lezione
+revisione: sintesi a punti degli appunti della stessa lezione
 ---
 
 # Rischio di credito, grandi esposizioni e centrale dei rischi

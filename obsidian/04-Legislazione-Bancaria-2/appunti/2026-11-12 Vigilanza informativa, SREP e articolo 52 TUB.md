@@ -2,8 +2,8 @@
 corso: Legislazione Bancaria 2
 data: 2026-11-12
 fonte: Audio/legislazione_bancaria_2/legislazione_bancaria_2_2026-11-12.txt
-tipo: appunti-fedeli
-tags: [appunti-fedeli, legislazione-bancaria-2]
+tipo: appunti-lezione
+tags: [appunti, legislazione-bancaria-2]
 revisione: trascrizione gpt-transcribe ripulita, fedele al parlato
 ---
 

@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import numpy as np
 import style
 
-OUT = str(style.REPO / "obsidian/01-Econometria/appunti-fedeli/figure/2026-11-20-fig01.png")
+OUT = str(style.REPO / "obsidian/01-Econometria/appunti/figure/2026-11-20-fig01.png")
 
 # Schematic geometry: only the ordering (F below M) and the shared slope come from the audio.
 SLOPE = 0.8

@@ -4,7 +4,7 @@ data: 2026-11-17
 fonte: Audio/econometria/econometria_2026-11-17.txt
 tipo: appunti-sintetici
 tags: [appunti-sintetici, econometria]
-revisione: sintesi a punti della nota fedele della stessa lezione
+revisione: sintesi a punti degli appunti della stessa lezione
 ---
 
 # Inferenza su beta, R quadrato e regressione multipla
@@ -173,7 +173,7 @@ revisione: sintesi a punti della nota fedele della stessa lezione
 - L'area gialla è la probabilità di sbagliare: oltre la soglia rifiuto la nulla (più probabile la curva nera), ma la rossa potrebbe essere corretta. È l'errore del primo tipo.
 - Con la soglia la probabilità di sbagliare non è mai maggiore di alfa; se alfa è piccola, quell'errore non lo faccio praticamente. Con alfa 2,5 per cento la soglia è 1,96 (tavola della normale): t inferiore a 1,96, nulla; sennò alternativa. Con il 5% la soglia è 1,64: inferiore a 1,64, nulla, alternativa altrimenti. È un test unilaterale a destra.
 
-![Figura ricostruita dall'audio, non è la slide](../appunti-fedeli/figure/2026-11-17-fig01.png)
+![Figura ricostruita dall'audio, non è la slide](../appunti/figure/2026-11-17-fig01.png)
 
 ### L'errore del secondo tipo
 
@@ -216,7 +216,7 @@ revisione: sintesi a punti della nota fedele della stessa lezione
 - Due soglie, con alfa diviso a metà: alfa mezzi percento su ogni coda, la somma fa alfa. Con alfa al 5% le soglie sono, più o meno, meno 1,96 e più 1,96 dalle tavole della normale.
 - Se la t sta dentro, i dati non rifiutano la nulla; sulle code non sono coerenti con la nulla e la rifiuto.
 
-![Figura ricostruita dall'audio, non è la slide](../appunti-fedeli/figure/2026-11-17-fig02.png)
+![Figura ricostruita dall'audio, non è la slide](../appunti/figure/2026-11-17-fig02.png)
 
 ### Il p-value sulle due code
 

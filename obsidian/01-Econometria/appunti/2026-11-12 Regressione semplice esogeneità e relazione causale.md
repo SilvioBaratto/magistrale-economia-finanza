@@ -2,8 +2,8 @@
 corso: Econometria
 data: 2026-11-12
 fonte: Audio/econometria/econometria_2026-11-12.txt
-tipo: appunti-fedeli
-tags: [appunti-fedeli, econometria]
+tipo: appunti-lezione
+tags: [appunti, econometria]
 revisione: trascrizione gpt-transcribe ripulita, fedele al parlato
 ---
 

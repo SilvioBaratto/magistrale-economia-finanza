@@ -10,7 +10,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import style
 
-OUT = str(style.REPO / "obsidian/11-Finanza-Strategica/appunti-fedeli/figure/2026-11-24-fig01.png")
+OUT = str(style.REPO / "obsidian/11-Finanza-Strategica/appunti/figure/2026-11-24-fig01.png")
 
 BUSINESS_PLAN_MILLIONS = 1
 TERMINAL_VALUE_MILLIONS = 9

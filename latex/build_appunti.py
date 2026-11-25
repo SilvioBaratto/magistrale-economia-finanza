@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
 """Merge the lecture notes of each course into one PDF, in chronological order.
 
-Reads ``../obsidian/<NN-Corso>/appunti/*.md`` (written by the ``appunti-lezione`` skill) and
-writes ``../dispense/appunti/<NN-corso>.pdf``: one chapter per lecture, titled with the
-lecture date, set with the same template and filter as the dispense. Nothing is written back
+Reads ``../obsidian/<NN-Corso>/appunti/*.md`` (the near-verbatim notes written by the
+``appunti-lezione`` skill) and writes ``../dispense/appunti/<NN-corso>.pdf``: one chapter per
+lecture, titled with the lecture date, set with the same template and filter as the dispense,
+with the ``==highlights==`` in yellow and the figures the notes embed. Nothing is written back
 into ``../obsidian/``.
 
-With ``--variant fedele`` it reads ``appunti-fedeli/`` instead and writes
-``../dispense/appunti-fedeli/<NN-corso>.pdf``: the near-verbatim notes, with their
-``==highlights==`` in yellow and the figures they embed. ``--variant sintetico`` does the same
-for the bullet-point summaries in ``appunti-sintetici/``.
+``--variant sintetico`` does the same for the bullet-point summaries in ``appunti-sintetici/``,
+written to ``../dispense/appunti-sintetici/``.
 
     python3 build_appunti.py --list
     python3 build_appunti.py --all
     python3 build_appunti.py --subject 01-Econometria
-    python3 build_appunti.py --variant fedele --subject 11-Finanza-Strategica
     python3 build_appunti.py --variant sintetico --subject 11-Finanza-Strategica
 """
 
@@ -77,32 +75,23 @@ VARIANTS: Dict[str, Variant] = {
     "appunti": Variant(
         folder="appunti",
         out_name="appunti",
-        subtitle="Appunti delle lezioni, in ordine cronologico",
-        disclaimer=("Appunti ricavati dalla registrazione delle lezioni: la trascrizione automatica è "
-                    "stata riscritta in forma scritta senza alterarne il contenuto. I passaggi che il "
-                    "riconoscimento vocale non permette di stabilire sono segnalati come «Da verificare». "
-                    "Documento a uso personale di studio."),
-    ),
-    "sintetico": Variant(
-        folder="appunti-sintetici",
-        out_name="appunti-sintetici",
-        subtitle="Sintesi a punti delle lezioni, in ordine cronologico",
-        disclaimer=("Sintesi a punti delle lezioni, ricavata dalla trascrizione fedele della stessa "
-                    "lezione: dice solo ciò che dice quel testo, con meno parole, e ne conserva i "
-                    "titoli per ritrovare il passaggio completo. Le parti evidenziate sono ciò che il "
-                    "docente sottolinea. I passaggi che il riconoscimento vocale non permette di "
-                    "stabilire sono segnalati come «Da verificare». Documento a uso personale di studio."),
-        highlights=True,
-        extra_pandoc=("-V", f"header-includes={HIGHLIGHT_PREAMBLE}"),
-    ),
-    "fedele": Variant(
-        folder="appunti-fedeli",
-        out_name="appunti-fedeli",
         subtitle="Trascrizione fedele delle lezioni, in ordine cronologico",
         disclaimer=("Trascrizione delle lezioni ripulita da intercalari, false partenze e ripetizioni, "
                     "con le parole del docente. Le parti evidenziate sono ciò che il docente sottolinea "
                     "o che il testo mostra ripetuto. Le figure indicate come ricostruite dall'audio "
                     "non sono le slide. I passaggi che il riconoscimento vocale non permette di "
+                    "stabilire sono segnalati come «Da verificare». Documento a uso personale di studio."),
+        highlights=True,
+        extra_pandoc=("-V", f"header-includes={HIGHLIGHT_PREAMBLE}"),
+    ),
+    "sintetico": Variant(
+        folder="appunti-sintetici",
+        out_name="appunti-sintetici",
+        subtitle="Sintesi a punti delle lezioni, in ordine cronologico",
+        disclaimer=("Sintesi a punti delle lezioni, ricavata dagli appunti della stessa lezione: "
+                    "dice solo ciò che dicono quegli appunti, con meno parole, e ne conserva i "
+                    "titoli per ritrovare il passaggio completo. Le parti evidenziate sono ciò che il "
+                    "docente sottolinea. I passaggi che il riconoscimento vocale non permette di "
                     "stabilire sono segnalati come «Da verificare». Documento a uso personale di studio."),
         highlights=True,
         extra_pandoc=("-V", f"header-includes={HIGHLIGHT_PREAMBLE}"),
