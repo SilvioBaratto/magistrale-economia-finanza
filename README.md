@@ -22,7 +22,6 @@ Un PDF per insegnamento, generato dalle note Obsidian.
 | Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 182 | [note](obsidian/04-Legislazione-Bancaria-2/) |
 | Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 178 | [note](obsidian/11-Finanza-Strategica/) |
 | 14-Economia-Rischio-Assicurazioni |  | [PDF](dispense/14-economia-rischio-assicurazioni.pdf) | 114 | [note](obsidian/14-Economia-Rischio-Assicurazioni/) |
-| 04-legislazione-bancaria-2-sintesi | | [PDF](dispense/04-legislazione-bancaria-2-sintesi.pdf) | 100 | |
 
 ## Appunti delle lezioni
 
