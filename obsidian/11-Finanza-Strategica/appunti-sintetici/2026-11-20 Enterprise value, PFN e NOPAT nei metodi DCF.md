@@ -4,7 +4,7 @@ data: 2026-11-20
 fonte: Audio/finanza_strategica/finanza_strategica_2026-11-20.txt
 tipo: appunti-sintetici
 tags: [appunti-sintetici, finanza-strategica]
-revisione: sintesi a punti della nota fedele della stessa lezione
+revisione: sintesi a punti degli appunti della stessa lezione
 ---
 
 # Enterprise value, PFN e NOPAT nei metodi DCF
@@ -56,7 +56,7 @@ revisione: sintesi a punti della nota fedele della stessa lezione
 - Aziende come la GDO (Aliper, PAM, Esselunga) hanno una PFN negativa per il ciclo inverso del circolante: Esselunga incassa subito e paga Danone a 60 giorni.
 - Caso C: Esselunga ha un sacco di soldi da 10 milioni dentro e vale sempre 100; chi dà le chiavi dice: "tu mi dai 100 e poi mi paghi i soldi che ci sono dentro, oppure li scorporiamo".
 
-![Figura ricostruita dall'audio, non è la slide](../appunti-fedeli/figure/2026-11-20-fig01.png)
+![Figura ricostruita dall'audio, non è la slide](../appunti/figure/2026-11-20-fig01.png)
 
 - Una casa che vale 100 con un forziere da 10 milioni dentro porta un bonifico da 110; entrando nel 100% quei soldi diventano tuoi, a meno che la Srl dica che li tira fuori.
 - Quando la PFN è parte esclusa dal deal sei nel caso B, con una piccola provvista lasciata il giorno prima del notaio.

@@ -4,8 +4,8 @@ data: 2026-11-20
 fonte: Audio/legislazione_bancaria_2/legislazione_bancaria_2_2026-11-20.txt
 # registrazione interrotta a metà, unita in ordine (prima parte sopra, seconda parte sotto)
 # fonte: Audio/legislazione_bancaria_2/legislazione_bancaria_2_2026-11-20-2.txt
-tipo: appunti-fedeli
-tags: [appunti-fedeli, legislazione-bancaria-2]
+tipo: appunti-lezione
+tags: [appunti, legislazione-bancaria-2]
 revisione: trascrizione gpt-transcribe ripulita, fedele al parlato
 ---
 

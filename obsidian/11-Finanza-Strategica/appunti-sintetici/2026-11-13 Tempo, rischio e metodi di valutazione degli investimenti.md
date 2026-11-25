@@ -4,7 +4,7 @@ data: 2026-11-13
 fonte: Audio/finanza_strategica/finanza_strategica_2026-11-13.txt
 tipo: appunti-sintetici
 tags: [appunti-sintetici, finanza-strategica]
-revisione: sintesi a punti della nota fedele della stessa lezione
+revisione: sintesi a punti degli appunti della stessa lezione
 ---
 
 # Tempo, rischio e metodi di valutazione degli investimenti

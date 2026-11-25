@@ -4,7 +4,7 @@ data: 2026-11-19
 fonte: Audio/finanza_strategica/finanza_strategica_2026-11-19.txt
 tipo: appunti-sintetici
 tags: [appunti-sintetici, finanza-strategica]
-revisione: sintesi a punti della nota fedele della stessa lezione
+revisione: sintesi a punti degli appunti della stessa lezione
 ---
 
 # Costo del capitale proprio, rischio paese e beta

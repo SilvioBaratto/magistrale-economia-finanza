@@ -4,7 +4,7 @@ data: 2026-11-20
 fonte: Audio/econometria/econometria_2026-11-20.txt
 tipo: appunti-sintetici
 tags: [appunti-sintetici, econometria]
-revisione: sintesi a punti della nota fedele della stessa lezione
+revisione: sintesi a punti degli appunti della stessa lezione
 ---
 
 # Collinearità, Frisch-Waugh-Lovell e introduzione al test F
@@ -38,7 +38,7 @@ revisione: sintesi a punti della nota fedele della stessa lezione
 - Nel grafico il gruppo M ha pendenza $\beta_1$, attesa positiva, e intercetta $\alpha$, stimabile con tre equazioni e tre incognite; le donne hanno pendenza $\beta_1$ e intercetta $\alpha + \beta_3$.
 - $\beta_3$ può essere positivo o negativo: nelle analisi empiriche col professor Peruzzi è tipicamente negativo e piuttosto grande, quindi la retta delle donne sta un po' sotto quella del genere M.
 
-![Figura ricostruita dall'audio, non è la slide](../appunti-fedeli/figure/2026-11-20-fig01.png)
+![Figura ricostruita dall'audio, non è la slide](../appunti/figure/2026-11-20-fig01.png)
 
 - Essendo rette parallele, il gap tra genere maschile e femminile a qualsiasi livello di istruzione è la distanza delle intercette, $\beta_3$: con $\beta_3$ pari a 5 dollari all'ora il genere femminile guadagna 5 dollari in meno, con 0,5 sono 50 centesimi.
 

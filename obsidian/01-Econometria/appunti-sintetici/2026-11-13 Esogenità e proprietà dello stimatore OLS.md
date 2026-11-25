@@ -4,7 +4,7 @@ data: 2026-11-13
 fonte: Audio/econometria/econometria_2026-11-13.txt
 tipo: appunti-sintetici
 tags: [appunti-sintetici, econometria]
-revisione: sintesi a punti della nota fedele della stessa lezione
+revisione: sintesi a punti degli appunti della stessa lezione
 ---
 
 # Esogenità e proprietà dello stimatore OLS

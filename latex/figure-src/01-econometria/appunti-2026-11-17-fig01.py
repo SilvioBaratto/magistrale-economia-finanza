@@ -13,7 +13,7 @@ import numpy as np
 from scipy.stats import norm
 import style
 
-OUT = str(style.REPO / "obsidian/01-Econometria/appunti-fedeli/figure/2026-11-17-fig01.png")
+OUT = str(style.REPO / "obsidian/01-Econometria/appunti/figure/2026-11-17-fig01.png")
 
 ALPHA = 0.05
 ALPHA_SECOND = 0.025

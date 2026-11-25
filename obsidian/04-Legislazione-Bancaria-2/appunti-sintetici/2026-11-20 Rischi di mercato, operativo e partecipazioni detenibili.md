@@ -6,7 +6,7 @@ fonte: Audio/legislazione_bancaria_2/legislazione_bancaria_2_2026-11-20.txt
 # fonte: Audio/legislazione_bancaria_2/legislazione_bancaria_2_2026-11-20-2.txt
 tipo: appunti-sintetici
 tags: [appunti-sintetici, legislazione-bancaria-2]
-revisione: sintesi a punti della nota fedele della stessa lezione
+revisione: sintesi a punti degli appunti della stessa lezione
 ---
 
 # Rischi di mercato, operativo e partecipazioni detenibili

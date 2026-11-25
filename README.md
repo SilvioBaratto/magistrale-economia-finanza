@@ -25,55 +25,54 @@ Un PDF per insegnamento, generato dalle note Obsidian.
 
 ## Appunti delle lezioni
 
-Le lezioni registrate in aula, in tre versioni della stessa lezione:
+Le lezioni registrate in aula, in due versioni della stessa lezione:
 
-- **Accademica**: la lezione riscritta in prosa accademica.
-- **Fedele**: la trascrizione ripulita, con le parole del docente, le parti sottolineate evidenziate e le figure delle slide.
-- **Sintetica**: una sintesi a punti della versione fedele, con gli stessi titoli.
+- **Appunti**: la trascrizione ripulita, con le parole del docente, le parti sottolineate evidenziate e le figure delle slide.
+- **Sintesi**: una sintesi a punti degli appunti, con gli stessi titoli.
 
-Ogni versione sintetica conserva i titoli di quella fedele, così si passa dal punto al testo
+Ogni sintesi conserva i titoli degli appunti, così si passa dal punto al testo
 completo cercando il titolo. Le note sono Markdown (si leggono in Obsidian); i PDF raccolgono
 tutte le lezioni di un insegnamento in ordine di data.
 
-| Insegnamento | Accademica | Fedele | Sintetica |
-|---|---|---|---|
-| Econometria | [PDF](dispense/appunti/01-econometria.pdf) · 106 pp | [PDF](dispense/appunti-fedeli/01-econometria.pdf) · 139 pp | [PDF](dispense/appunti-sintetici/01-econometria.pdf) · 79 pp |
-| Legislazione Bancaria — modulo 2 | [PDF](dispense/appunti/04-legislazione-bancaria-2.pdf) · 117 pp | [PDF](dispense/appunti-fedeli/04-legislazione-bancaria-2.pdf) · 137 pp | [PDF](dispense/appunti-sintetici/04-legislazione-bancaria-2.pdf) · 75 pp |
-| Finanza Strategica | [PDF](dispense/appunti/11-finanza-strategica.pdf) · 86 pp | [PDF](dispense/appunti-fedeli/11-finanza-strategica.pdf) · 110 pp | [PDF](dispense/appunti-sintetici/11-finanza-strategica.pdf) · 63 pp |
+| Insegnamento | Appunti | Sintesi |
+|---|---|---|
+| Econometria | [PDF](dispense/appunti/01-econometria.pdf) · 139 pp | [PDF](dispense/appunti-sintetici/01-econometria.pdf) · 79 pp |
+| Legislazione Bancaria — modulo 2 | [PDF](dispense/appunti/04-legislazione-bancaria-2.pdf) · 137 pp | [PDF](dispense/appunti-sintetici/04-legislazione-bancaria-2.pdf) · 75 pp |
+| Finanza Strategica | [PDF](dispense/appunti/11-finanza-strategica.pdf) · 110 pp | [PDF](dispense/appunti-sintetici/11-finanza-strategica.pdf) · 63 pp |
 
 ### Econometria
 
-| Data | Lezione | Accademica | Fedele | Sintetica |
-|---|---|---|---|---|
-| 10/11/2026 | Introduzione al corso: esogeneità, causalità e correlazioni spurie | [nota](obsidian/01-Econometria/appunti/2026-11-10%20Introduzione%20al%20corso%20esogeneita%CC%80%2C%20causalita%CC%80%20e%20correlazioni%20spurie.md) | [nota](obsidian/01-Econometria/appunti-fedeli/2026-11-10%20Introduzione%20al%20corso%20causalita%CC%80%20e%20correlazioni%20spurie.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-10%20Introduzione%20al%20corso%20causalita%CC%80%20e%20correlazioni%20spurie.md) |
-| 12/11/2026 | Causalità, esogeneità e stima della regressione semplice | [nota](obsidian/01-Econometria/appunti/2026-11-12%20Causalita%CC%80%2C%20esogeneita%CC%80%20e%20stima%20della%20regressione%20semplice.md) | [nota](obsidian/01-Econometria/appunti-fedeli/2026-11-12%20Regressione%20semplice%20esogeneita%CC%80%20e%20relazione%20causale.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-12%20Regressione%20semplice%20esogeneita%CC%80%20e%20relazione%20causale.md) |
-| 13/11/2026 | Regressione semplice: esogeneità e proprietà dello stimatore OLS | [nota](obsidian/01-Econometria/appunti/2026-11-13%20Regressione%20semplice%20esogeneita%CC%80%20e%20proprieta%CC%80%20dello%20stimatore%20OLS.md) | [nota](obsidian/01-Econometria/appunti-fedeli/2026-11-13%20Esogenita%CC%80%20e%20proprieta%CC%80%20dello%20stimatore%20OLS.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-13%20Esogenita%CC%80%20e%20proprieta%CC%80%20dello%20stimatore%20OLS.md) |
-| 17/11/2026 | Inferenza sullo stimatore OLS e regressione multipla | [nota](obsidian/01-Econometria/appunti/2026-11-17%20Inferenza%20sullo%20stimatore%20OLS%20e%20regressione%20multipla.md) | [nota](obsidian/01-Econometria/appunti-fedeli/2026-11-17%20Inferenza%20su%20beta%2C%20R%20quadrato%20e%20regressione%20multipla.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-17%20Inferenza%20su%20beta%2C%20R%20quadrato%20e%20regressione%20multipla.md) |
-| 19/11/2026 | Endogeneità, errori di misura e collinearità perfetta | [nota](obsidian/01-Econometria/appunti/2026-11-19%20Endogeneita%CC%80%2C%20errori%20di%20misura%20e%20collinearita%CC%80%20perfetta.md) | [nota](obsidian/01-Econometria/appunti-fedeli/2026-11-19%20Variabili%20omesse%2C%20errori%20di%20misura%20e%20collinearita%CC%80%20perfetta.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-19%20Variabili%20omesse%2C%20errori%20di%20misura%20e%20collinearita%CC%80%20perfetta.md) |
-| 20/11/2026 | Collinearità, quasi collinearità e test su più parametri | [nota](obsidian/01-Econometria/appunti/2026-11-20%20Collinearita%CC%80%2C%20quasi%20collinearita%CC%80%20e%20test%20su%20piu%CC%80%20parametri.md) | [nota](obsidian/01-Econometria/appunti-fedeli/2026-11-20%20Collinearita%CC%80%2C%20Frisch-Waugh-Lovell%20e%20introduzione%20al%20test%20F.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-20%20Collinearita%CC%80%2C%20Frisch-Waugh-Lovell%20e%20introduzione%20al%20test%20F.md) |
+| Data | Lezione | Appunti | Sintesi |
+|---|---|---|---|
+| 10/11/2026 | Introduzione al corso: causalità e correlazioni spurie | [nota](obsidian/01-Econometria/appunti/2026-11-10%20Introduzione%20al%20corso%20causalita%CC%80%20e%20correlazioni%20spurie.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-10%20Introduzione%20al%20corso%20causalita%CC%80%20e%20correlazioni%20spurie.md) |
+| 12/11/2026 | Regressione semplice: esogeneità e relazione causale | [nota](obsidian/01-Econometria/appunti/2026-11-12%20Regressione%20semplice%20esogeneita%CC%80%20e%20relazione%20causale.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-12%20Regressione%20semplice%20esogeneita%CC%80%20e%20relazione%20causale.md) |
+| 13/11/2026 | Esogenità e proprietà dello stimatore OLS | [nota](obsidian/01-Econometria/appunti/2026-11-13%20Esogenita%CC%80%20e%20proprieta%CC%80%20dello%20stimatore%20OLS.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-13%20Esogenita%CC%80%20e%20proprieta%CC%80%20dello%20stimatore%20OLS.md) |
+| 17/11/2026 | Inferenza su beta, R quadrato e regressione multipla | [nota](obsidian/01-Econometria/appunti/2026-11-17%20Inferenza%20su%20beta%2C%20R%20quadrato%20e%20regressione%20multipla.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-17%20Inferenza%20su%20beta%2C%20R%20quadrato%20e%20regressione%20multipla.md) |
+| 19/11/2026 | Variabili omesse, errori di misura e collinearità perfetta | [nota](obsidian/01-Econometria/appunti/2026-11-19%20Variabili%20omesse%2C%20errori%20di%20misura%20e%20collinearita%CC%80%20perfetta.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-19%20Variabili%20omesse%2C%20errori%20di%20misura%20e%20collinearita%CC%80%20perfetta.md) |
+| 20/11/2026 | Collinearità, Frisch-Waugh-Lovell e introduzione al test F | [nota](obsidian/01-Econometria/appunti/2026-11-20%20Collinearita%CC%80%2C%20Frisch-Waugh-Lovell%20e%20introduzione%20al%20test%20F.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-20%20Collinearita%CC%80%2C%20Frisch-Waugh-Lovell%20e%20introduzione%20al%20test%20F.md) |
 
 ### Legislazione Bancaria — modulo 2
 
-| Data | Lezione | Accademica | Fedele | Sintetica |
-|---|---|---|---|---|
-| 10/11/2026 | Vigilanza bancaria, Basilea e vigilanza informativa | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-10%20Vigilanza%20bancaria%2C%20Basilea%20e%20vigilanza%20informativa.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-10%20Vigilanza%20sulle%20banche%2C%20Basilea%20e%20matrice%20dei%20conti.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-10%20Vigilanza%20sulle%20banche%2C%20Basilea%20e%20matrice%20dei%20conti.md) |
-| 12/11/2026 | Vigilanza informativa, SREP e art. 52 TUB | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-12%20Vigilanza%20informativa%2C%20SREP%20e%20art.%2052%20TUB.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-12%20Vigilanza%20informativa%2C%20SREP%20e%20articolo%2052%20TUB.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-12%20Vigilanza%20informativa%2C%20SREP%20e%20articolo%2052%20TUB.md) |
-| 13/11/2026 | Whistleblowing e art. 53 TUB: fondi propri e rischi | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-13%20Whistleblowing%20e%20art.%2053%20TUB%20fondi%20propri%20e%20rischi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-13%20Whistleblowing%2C%20vigilanza%20regolamentare%20e%20adeguatezza%20patrimoniale.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-13%20Whistleblowing%2C%20vigilanza%20regolamentare%20e%20adeguatezza%20patrimoniale.md) |
-| 17/11/2026 | Rischio di credito e centrale dei rischi | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-17%20Rischio%20di%20credito%20e%20centrale%20dei%20rischi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-17%20Rischio%20di%20credito%2C%20grandi%20esposizioni%20e%20centrale%20dei%20rischi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-17%20Rischio%20di%20credito%2C%20grandi%20esposizioni%20e%20centrale%20dei%20rischi.md) |
-| 19/11/2026 | Centrale dei rischi, immobili, riserva obbligatoria | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-19%20Centrale%20dei%20rischi%2C%20immobili%2C%20riserva%20obbligatoria.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-19%20Centrale%20dei%20rischi%2C%20immobili%20e%20rischio%20di%20liquidita%CC%80.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-19%20Centrale%20dei%20rischi%2C%20immobili%20e%20rischio%20di%20liquidita%CC%80.md) |
-| 20/11/2026 | registrazione interrotta a metà, unita in ordine (prima parte sopra, seconda parte sotto) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-20%20Rischi%20di%20mercato%20e%20operativo%2C%20partecipazioni%20detenibili.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-20%20Rischi%20di%20mercato%2C%20operativo%20e%20partecipazioni%20detenibili.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-20%20Rischi%20di%20mercato%2C%20operativo%20e%20partecipazioni%20detenibili.md) |
-| 24/11/2026 | Governo societario delle banche: principi, progetto e organi | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-24%20Governo%20societario%20delle%20banche%20principi%2C%20progetto%20e%20organi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-fedeli/2026-11-24%20Governo%20societario%20delle%20banche%20organi%2C%20deleghe%20e%20non%20esecutivi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-24%20Governo%20societario%20delle%20banche%20organi%2C%20deleghe%20e%20non%20esecutivi.md) |
+| Data | Lezione | Appunti | Sintesi |
+|---|---|---|---|
+| 10/11/2026 | Vigilanza sulle banche, Basilea e matrice dei conti | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-10%20Vigilanza%20sulle%20banche%2C%20Basilea%20e%20matrice%20dei%20conti.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-10%20Vigilanza%20sulle%20banche%2C%20Basilea%20e%20matrice%20dei%20conti.md) |
+| 12/11/2026 | Vigilanza informativa, SREP e articolo 52 TUB | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-12%20Vigilanza%20informativa%2C%20SREP%20e%20articolo%2052%20TUB.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-12%20Vigilanza%20informativa%2C%20SREP%20e%20articolo%2052%20TUB.md) |
+| 13/11/2026 | Whistleblowing, vigilanza regolamentare e adeguatezza patrimoniale | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-13%20Whistleblowing%2C%20vigilanza%20regolamentare%20e%20adeguatezza%20patrimoniale.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-13%20Whistleblowing%2C%20vigilanza%20regolamentare%20e%20adeguatezza%20patrimoniale.md) |
+| 17/11/2026 | Rischio di credito, grandi esposizioni e centrale dei rischi | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-17%20Rischio%20di%20credito%2C%20grandi%20esposizioni%20e%20centrale%20dei%20rischi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-17%20Rischio%20di%20credito%2C%20grandi%20esposizioni%20e%20centrale%20dei%20rischi.md) |
+| 19/11/2026 | Centrale dei rischi, immobili e rischio di liquidità | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-19%20Centrale%20dei%20rischi%2C%20immobili%20e%20rischio%20di%20liquidita%CC%80.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-19%20Centrale%20dei%20rischi%2C%20immobili%20e%20rischio%20di%20liquidita%CC%80.md) |
+| 20/11/2026 | registrazione interrotta a metà, unita in ordine (prima parte sopra, seconda parte sotto) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-20%20Rischi%20di%20mercato%2C%20operativo%20e%20partecipazioni%20detenibili.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-20%20Rischi%20di%20mercato%2C%20operativo%20e%20partecipazioni%20detenibili.md) |
+| 24/11/2026 | Governo societario delle banche: organi, deleghe e non esecutivi | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-24%20Governo%20societario%20delle%20banche%20organi%2C%20deleghe%20e%20non%20esecutivi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-24%20Governo%20societario%20delle%20banche%20organi%2C%20deleghe%20e%20non%20esecutivi.md) |
 
 ### Finanza Strategica
 
-| Data | Lezione | Accademica | Fedele | Sintetica |
-|---|---|---|---|---|
-| 10/11/2026 | Presentazione del corso e valore dei flussi di cassa | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-10%20Presentazione%20del%20corso%20e%20valore%20dei%20flussi%20di%20cassa.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-10%20Presentazione%20del%20corso%20e%20cash%20flow%20nella%20valutazione.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-10%20Presentazione%20del%20corso%20e%20cash%20flow%20nella%20valutazione.md) |
-| 13/11/2026 | Valutazione degli investimenti: rendiconto finanziario e metodi VAN, VAM, TIR | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-13%20Valutazione%20degli%20investimenti%20rendiconto%20finanziario%20e%20metodi%20VAN%2C%20VAM%2C%20TIR.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-13%20Tempo%2C%20rischio%20e%20metodi%20di%20valutazione%20degli%20investimenti.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-13%20Tempo%2C%20rischio%20e%20metodi%20di%20valutazione%20degli%20investimenti.md) |
-| 17/11/2026 | Metodi di valutazione degli investimenti e opzioni reali | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-17%20Metodi%20di%20valutazione%20degli%20investimenti%20e%20opzioni%20reali.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-17%20Esercizi%20sui%20metodi%20di%20valutazione%20e%20opzioni%20reali.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-17%20Esercizi%20sui%20metodi%20di%20valutazione%20e%20opzioni%20reali.md) |
-| 19/11/2026 | Costo del capitale proprio e introduzione ai DCF | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-19%20Costo%20del%20capitale%20proprio%20e%20introduzione%20ai%20DCF.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-19%20Costo%20del%20capitale%20proprio%2C%20rischio%20paese%20e%20beta.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-19%20Costo%20del%20capitale%20proprio%2C%20rischio%20paese%20e%20beta.md) |
-| 20/11/2026 | Enterprise value, PFN, NOPAT e modelli DCF | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-20%20Enterprise%20value%2C%20PFN%2C%20NOPAT%20e%20modelli%20DCF.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-20%20Enterprise%20value%2C%20PFN%20e%20NOPAT%20nei%20metodi%20DCF.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-20%20Enterprise%20value%2C%20PFN%20e%20NOPAT%20nei%20metodi%20DCF.md) |
-| 24/11/2026 | Metodi DCF sintetico e analitico: terminal value e sanity check | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-24%20Metodi%20DCF%20sintetico%20e%20analitico%20terminal%20value%20e%20sanity%20check.md) | [nota](obsidian/11-Finanza-Strategica/appunti-fedeli/2026-11-24%20Metodi%20DCF%2C%20terminal%20value%20e%20modelli%20multi-step.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-24%20Metodi%20DCF%2C%20terminal%20value%20e%20modelli%20multi-step.md) |
+| Data | Lezione | Appunti | Sintesi |
+|---|---|---|---|
+| 10/11/2026 | Presentazione del corso e cash flow nella valutazione | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-10%20Presentazione%20del%20corso%20e%20cash%20flow%20nella%20valutazione.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-10%20Presentazione%20del%20corso%20e%20cash%20flow%20nella%20valutazione.md) |
+| 13/11/2026 | Tempo, rischio e metodi di valutazione degli investimenti | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-13%20Tempo%2C%20rischio%20e%20metodi%20di%20valutazione%20degli%20investimenti.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-13%20Tempo%2C%20rischio%20e%20metodi%20di%20valutazione%20degli%20investimenti.md) |
+| 17/11/2026 | Esercizi sui metodi di valutazione e opzioni reali | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-17%20Esercizi%20sui%20metodi%20di%20valutazione%20e%20opzioni%20reali.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-17%20Esercizi%20sui%20metodi%20di%20valutazione%20e%20opzioni%20reali.md) |
+| 19/11/2026 | Costo del capitale proprio, rischio paese e beta | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-19%20Costo%20del%20capitale%20proprio%2C%20rischio%20paese%20e%20beta.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-19%20Costo%20del%20capitale%20proprio%2C%20rischio%20paese%20e%20beta.md) |
+| 20/11/2026 | Enterprise value, PFN e NOPAT nei metodi DCF | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-20%20Enterprise%20value%2C%20PFN%20e%20NOPAT%20nei%20metodi%20DCF.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-20%20Enterprise%20value%2C%20PFN%20e%20NOPAT%20nei%20metodi%20DCF.md) |
+| 24/11/2026 | Metodi DCF, terminal value e modelli multi-step | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-24%20Metodi%20DCF%2C%20terminal%20value%20e%20modelli%20multi-step.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-24%20Metodi%20DCF%2C%20terminal%20value%20e%20modelli%20multi-step.md) |
 
 ## Formulari
 
@@ -191,7 +190,7 @@ statistica), organizzate per materia e argomento.
 │   └── test-ingresso/            test di ingresso EMR20, domande e soluzioni
 ├── Formulari/             formulari per corso (sorgente .md e PDF)
 ├── obsidian/              note Obsidian, una cartella per insegnamento (+ immagini in assets/);
-│                          appunti*/ = le note delle lezioni nelle tre versioni
+│                          appunti*/ = le note delle lezioni nelle due versioni
 └── latex/                 l'unica soluzione LaTeX: template, filtri, script, figure
     ├── build.py           dispense  (obsidian/ -> dispense/)
     ├── build_esami.py     esami     (latex/esami/<corso>/ -> esami/<corso>/)
