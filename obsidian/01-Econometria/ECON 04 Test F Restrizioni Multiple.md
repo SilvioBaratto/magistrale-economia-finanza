@@ -13,14 +13,18 @@ generated: 2026-07-10
 
 ## Esempio introduttivo: differenze salariali tra gruppi
 
+Il test $t$ della regressione semplice e multipla riguarda un singolo parametro alla volta. Si può però voler verificare ipotesi su più parametri contemporaneamente o su combinazioni lineari di parametri. L'esempio seguente è una variante del modello con una sola dummy di genere: il campione è diviso in quattro gruppi, per verificare se esiste una relazione congiunta tra stato civile (sposato o non sposato) ed etnia, stilizzata come persona di colore o non di colore.
+
 > [!example] Esempio
-> Consideriamo il seguente modello di regressione:
+> Si consideri il seguente modello di regressione:
 >
 > $$\log(wage) = \alpha + \beta_1 educ + \beta_2 exper + \beta_3 tenure + \beta_4 south + \beta_5 urban + \beta_6 marr\_black + \beta_7 single\_black + \beta_8 marr\_nonblack + \beta_9 single\_nonblack + \epsilon$$
 >
-> Ci sono 4 variabili dummy che suddividono il campione in 4 gruppi diversi e non sovrapposti. In particolare, definiamo *married_black*, *single_black*, *married_nonblack* e *single_nonblack* per distinguere lo stato civile insieme alla razza.
+> La variabile dipendente è il logaritmo del salario, che permette di interpretare le variazioni in termini percentuali. La variabile *exper* indica da quanti anni si lavora e *tenure* da quanti anni si lavora nell'impiego attuale: chi lavora da dieci anni, ma da cinque nella banca attuale, ha *exper* pari a 10 e *tenure* pari a 5. La variabile *south* indica se il lavoratore proviene dal sud o dal nord degli Stati Uniti e *urban* se vive in una città o in campagna.
 >
-> Siamo interessati a valutare se i lavoratori sposati e di colore e sposati non di colore ricevono, in media, la stessa quantità di denaro.
+> Quattro variabili dummy suddividono il campione in 4 gruppi diversi e non sovrapposti, che coprono tutti i lavoratori: per ciascuno una sola dummy vale 1 e le altre valgono 0. In particolare, *married_black*, *single_black*, *married_nonblack* e *single_nonblack* distinguono lo stato civile insieme all'etnia. Nell'economia del lavoro lo stato civile è considerato un'approssimazione (proxy) dell'impegno di lungo periodo (commitment) di una persona, che può incidere sulla relazione tra salario e lavoro: chi è sposato può avere un orizzonte più lungo, perché lascia il lavoro o si trasferisce con maggiore difficoltà.
+>
+> Si vuole valutare se, a parità di istruzione, esperienza, tenure e luogo di residenza, i lavoratori sposati di colore e quelli sposati non di colore ricevono in media lo stesso salario, cioè se, a parità di stato civile, la differenza tra persone di colore e non di colore è statisticamente significativa.
 >
 > Le stime OLS (comando: `reg lwage educ exper tenure south urban marr_black single_black marr_nonblack single_nonblack`) sono:
 >
@@ -52,37 +56,24 @@ generated: 2026-07-10
 >
 > (Le espressioni precedenti pongono $\beta_7=0$: *single_black* è la dummy esclusa, quindi per questo gruppo non compare alcun termine dummy.)
 >
-> Sulla base del modello, tra le persone sposate, la differenza salariale causata dalla razza è rappresentata da:
+> Sulla base del modello, tra le persone sposate, la differenza salariale associata all'etnia è data da:
 >
 > $$E[lwage|married\_black=1] - E[lwage|married\_nonblack=1] = \beta_6 - \beta_8 = .2502685 - .4297348$$
 >
-> È possibile verificare se questa differenza è statisticamente significativa? Una possibile soluzione è calcolare la seguente statistica $t$:
+> Il differenziale stimato è negativo, ma l'errore di stima potrebbe essere abbastanza grande da renderlo statisticamente non significativo: serve un test. Una possibile soluzione è calcolare la seguente statistica $t$:
 >
 > $$t = \frac{\hat\beta_6 - \hat\beta_8 - 0}{\text{st.err.}\left(\hat\beta_6 - \hat\beta_8\right)}$$
 >
-> Sfortunatamente non è sempre immediato valutare il denominatore, cioè lo standard error di una combinazione lineare di stimatori correlati. Serve quindi una strategia più generale per questo tipo di test: il test F, sviluppato nelle sezioni seguenti.
-
-*(slide 2–5)*
-
-> [!lezione] Dalla lezione del 20 novembre 2026: il modello con stato civile ed etnia e la domanda di ricerca
-> Nel modello di regressione semplice e in quello multiplo l'inferenza è stata fatta finora su un solo parametro. In un modello di regressione si può però voler fare un test su più parametri contemporaneamente o su combinazioni lineari di parametri. L'esempio è una variante del modello con una sola dummy di genere: il campione si divide in quattro gruppi, per vedere se esiste una relazione congiunta tra più caratteristiche, essere sposati o non sposati e appartenere a una certa etnia, stilizzata come persona di colore o non di colore. Non è un esempio molto articolato e serve a dare l'idea.
->
-> Nell'economia del lavoro il matrimonio è considerato un'approssimazione del livello di impegno di lungo periodo di una persona (commitment), che può avere un impatto sulla relazione tra salario e lavoro. Chi è sposato potrebbe avere una visione di più lungo periodo, perché fa più fatica a licenziarsi e a spostarsi altrove, magari in un'altra parte del mondo, dovendo ragionare in contesti più complessi. Lo stato civile entra quindi nel modello come proxy del commitment, ed è solo un'approssimazione.
->
-> La variabile dipendente è il logaritmo del salario, che permette di interpretare le variazioni in termini percentuali. L'esperienza indica da quanti anni si lavora, la tenure da quanti anni si lavora nell'impiego attuale: si può lavorare da dieci anni ma solo da cinque in una certa banca, e allora la tenure è cinque e l'esperienza dieci. La variabile south indica se il lavoratore viene dal sud o dal nord degli Stati Uniti, e un'altra variabile se vive in una città oppure in campagna. Le quattro categorie coprono tutte le persone del campione, senza che nessuno rimanga fuori e senza sovrapposizioni: la somma delle quattro dummy è 1, perché per ogni persona una sola vale 1 e le altre valgono 0, e c'è quindi un problema di collinearità esatta.
->
-> La domanda di ricerca è se, a parità di altre caratteristiche (stesso livello di istruzione, stessa esperienza, stessa tenure, stesso luogo di residenza), ci sia una differenza statisticamente significativa tra i lavoratori sposati di colore e quelli sposati non di colore, cioè, a parità di stato civile, tra persone di colore e non di colore. Non basta sapere che il differenziale stimato è negativo, perché l'errore di stima potrebbe essere abbastanza grande da rendere il valore stimato non rilevante, al netto dell'errore campionario: serve una statistica.
->
-> Il test $t$ sul differenziale richiede un denominatore che non è immediato da calcolare, pur essendo possibile: lo standard error è la radice quadrata di $\operatorname{Var}(\hat\beta_6) + \operatorname{Var}(\hat\beta_8) - 2\operatorname{Cov}(\hat\beta_6, \hat\beta_8)$, e bisogna cercare i vari pezzi, in particolare la covarianza. I calcoli andrebbero fatti a mano e il docente non intende farli. Il problema economico richiede dunque una combinazione lineare di parametri su cui fare inferenza.
+> Il denominatore, cioè lo standard error di una combinazione lineare di stimatori correlati, non è immediato da calcolare, pur essendo possibile: è la radice quadrata di $\operatorname{Var}(\hat\beta_6) + \operatorname{Var}(\hat\beta_8) - 2\operatorname{Cov}(\hat\beta_6, \hat\beta_8)$, e occorre ricavare i singoli termini, in particolare la covarianza. Il problema economico richiede dunque inferenza su una combinazione lineare di parametri: serve una strategia più generale per questo tipo di test, il test F, sviluppato nelle sezioni seguenti.
 
 ## Perché un test t ripetuto non è una soluzione valida per ipotesi congiunte
 
 > [!note] Dimostrazione
-> **Esempio motivante: test di significatività congiunta.** Consideriamo un modello di regressione multipla
+> Si consideri un modello di regressione multipla
 >
 > $$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \epsilon$$
 >
-> e vogliamo testare se $X_1$, $X_2$ e $X_3$, congiuntamente, sono predittori utili per $Y$. Vogliamo cioè valutare l'ipotesi congiunta
+> e si voglia testare se $X_1$, $X_2$ e $X_3$, congiuntamente, sono predittori utili per $Y$. Si tratta di un'ipotesi congiunta (composta), in cui tre ipotesi nulle sui tre parametri sono confrontate con l'alternativa che almeno un coefficiente sia diverso da zero:
 >
 > $$H_0: \beta_1=\beta_2=\beta_3=0 \quad \text{contro} \quad H_1: \text{almeno un } \beta_j \neq 0,\ j=1,2,3.$$
 >
@@ -92,65 +83,47 @@ generated: 2026-07-10
 >
 > (il *modello ristretto*). Serve una strategia che permetta di confrontare questo modello ristretto con il *modello completo*.
 >
-> **Un primo tentativo (naïve): ripetere il test t tre volte.** La strategia consiste nel:
+> Un primo tentativo (naïve) consiste nel ripetere il test t tre volte:
 >
-> 1. Calcolare tre statistiche $t$, cioè $t_1$, $t_2$ e $t_3$, per le ipotesi $H_0^{(1)}: \beta_1=0$, $H_0^{(2)}: \beta_2=0$ e $H_0^{(3)}: \beta_3=0$, contro l'alternativa bilaterale.
-> 2. Decidere secondo lo schema seguente:
->    - Se non rigettiamo tutte e tre le ipotesi nulle, non rigettiamo neanche l'ipotesi congiunta $H_0:\beta_1=\beta_2=\beta_3=0$.
->    - Se rigettiamo almeno una delle tre ipotesi, rigettiamo anche $H_0:\beta_1=\beta_2=\beta_3=0$.
+> 1. Si calcolano tre statistiche $t$, cioè $t_1$, $t_2$ e $t_3$, per le ipotesi $H_0^{(1)}: \beta_1=0$, $H_0^{(2)}: \beta_2=0$ e $H_0^{(3)}: \beta_3=0$, contro l'alternativa bilaterale.
+> 2. Si decide secondo lo schema seguente:
+>    - se nessuna delle tre ipotesi nulle viene rigettata, non si rigetta nemmeno l'ipotesi congiunta $H_0:\beta_1=\beta_2=\beta_3=0$;
+>    - se almeno una delle tre ipotesi viene rigettata, si rigetta anche $H_0:\beta_1=\beta_2=\beta_3=0$.
 >
-> **Questa strategia può portare a risultati errati.** Se l'ipotesi nulla è vera, la probabilità di non rigettarla in un singolo test è $1-0.05$ quando $\alpha=0.05$. Supponendo (per semplicità algebrica, anche se non è un'ipotesi credibile) che $t_1$, $t_2$ e $t_3$ siano test indipendenti, e ricordando che per tre eventi indipendenti $A,B,C$ vale $P(A,B,C)=P(A)P(B)P(C)$, la probabilità di non rigettare congiuntamente le tre ipotesi nulle è
+> Questa strategia può portare a risultati errati. Un test su un singolo parametro fissa la probabilità dell'errore di Tipo I, cioè di rigettare l'ipotesi nulla quando è corretta: se $H_0$ è vera, la probabilità di non rigettarla è $1-0.05$ quando $\alpha=0.05$. Si supponga che $t_1$, $t_2$ e $t_3$ siano test indipendenti, per semplicità algebrica (non è un'ipotesi credibile, perché le tre statistiche sono calcolate con la stessa $y$ negli stimatori). Poiché per tre eventi indipendenti $A,B,C$ vale $P(A,B,C)=P(A)P(B)P(C)$, la probabilità di non rigettare congiuntamente le tre ipotesi nulle è
 >
 > $$0.95 \times 0.95 \times 0.95 = 0.8574$$
 >
-> L'errore di Tipo I del test congiunto, cioè la probabilità di rigettare l'ipotesi nulla quando è corretta, è quindi
+> L'errore di Tipo I del test congiunto è quindi
 >
 > $$1 - 0.8574 = 0.1426 \neq 0.05$$
 >
-> ossia la probabilità di rigettare erroneamente l'ipotesi nulla è circa $3\times\alpha$. Con la strategia naïve, quindi, si perde il controllo sul vero livello di significatività del test.
-
-*(slide 6–8)*
-
-> [!lezione] Dalla lezione del 20 novembre 2026: perché guardare tre test uno dopo l'altro fa perdere il controllo dell'errore
-> Nel secondo esempio ci si chiede se tre regressori siano utili complessivamente per prevedere $y$: è un ragionamento puramente statistico, che richiede di verificare se i tre coefficienti sono tutti uguali a zero oppure se almeno uno è diverso da zero. È un'ipotesi composta, in cui tre ipotesi nulle su tre parametri si confrontano con l'alternativa che almeno un coefficiente sia diverso da zero. L'idea ingenua di calcolare tre test $t$ non funziona perché si perde il controllo sulla probabilità di errore.
->
-> Un test su un unico parametro fissa la probabilità dell'errore del primo tipo, cioè di dichiarare vera l'alternativa quando non lo è, per esempio al 5%: nel 95% dei casi non si commette quell'errore. Nella sequenza di tre test si ipotizza, come semplificazione formale, che i test su $\beta_1$, $\beta_2$ e $\beta_3$ siano indipendenti. Non lo sono, perché per calcolare le tre statistiche si usa sempre la stessa $y$ negli stimatori, ma si finge che lo siano per rendere più chiara l'intuizione. La probabilità di non sbagliare in nessuno dei tre è il prodotto delle tre probabilità, $0{,}95 \cdot 0{,}95 \cdot 0{,}95$, circa 86%, quindi la probabilità di errore complessiva è circa 14% o più: in una sequenza di test, tutti con probabilità di errore tollerabile del 5%, l'errore complessivo diventa 14%, 16% o simili. Il calcolo esatto con tre test indipendenti, ciascuno al 5%, dà $1 - 0{,}95^3 \approx 14{,}3\%$: il 16% non discende da questo calcolo.
->
-> Guardando tre test singolarmente quando si vorrebbe un test congiunto si perde completamente il controllo sulla probabilità di errore che si è disposti a tollerare per prendere una decisione. Quando si decide non si sa quanto si sbaglia: di fatto si decide a caso, senza alcun benchmark a cui aggrapparsi. Serve quindi una strategia diversa, che non guardi tre test in sequenza ma produca un test congiunto.
+> ossia circa il 14%: la probabilità di rigettare erroneamente l'ipotesi nulla è circa $3\times\alpha$. Con la strategia naïve si perde quindi il controllo sul vero livello di significatività del test, cioè sulla probabilità di errore che si accetta effettivamente nel decidere.
 
 ## Restrizioni lineari: definizione generale
 
 > [!abstract] Definizione
-> I due esempi precedenti coinvolgono entrambi **restrizioni lineari** sui parametri, cioè vincoli del tipo
+> Entrambi gli esempi precedenti coinvolgono **restrizioni lineari** sui parametri, cioè vincoli del tipo
 >
 > $$r_1\beta_1 + r_2\beta_2 + \dots + r_{k-1}\beta_{k-1} + r_k\beta_k = q$$
 >
 > dove $r_1,\dots,r_k$ e $q$ sono costanti note.
 >
-> - Nel primo esempio (differenze salariali) questo è immediato: consideriamo $\beta_6 - \beta_8 = 0$, con $r_6=1$, $r_8=-1$, tutti gli altri $r_i=0$ e $q=0$. Si tratta di un'unica combinazione lineare, cioè **1 restrizione**.
-> - Anche il secondo esempio (test di significatività congiunta) coinvolge restrizioni lineari particolari: ogni $\beta_j=0$ è una combinazione lineare in cui tutti i pesi $r_i=0$ per $i\neq j$, mentre $r_j=1$ e $q=0$. In questo caso ci sono **3 diverse combinazioni lineari** che devono essere soddisfatte congiuntamente (3 restrizioni).
+> - Nel primo esempio (differenze salariali) si considera $\beta_6 - \beta_8 = 0$, con $r_6=1$, $r_8=-1$, tutti gli altri $r_i=0$ e $q=0$. Si tratta di un'unica combinazione lineare, cioè 1 restrizione.
+> - Nel secondo esempio (significatività congiunta) ogni $\beta_j=0$ è una combinazione lineare in cui tutti i pesi $r_i=0$ per $i\neq j$, mentre $r_j=1$ e $q=0$. Ci sono quindi 3 diverse combinazioni lineari che devono essere soddisfatte congiuntamente (3 restrizioni).
 >
 > Il **test F** consente di valutare in un unico passo se una o più restrizioni lineari sono coerenti con le evidenze empiriche.
 
-*(slide 9)*
-
 ## Costruzione del test F: modello completo vs modello ristretto
 
-Un test su parametri multipli si può implementare con la **statistica F**.
+Un test su parametri multipli si può implementare con la **statistica F**. Il **modello completo** è il modello di regressione originale, non vincolato; il **modello ristretto** è quello stimato imponendo che l'ipotesi nulla sui parametri sia valida. Siano $R_c^2$ e $R_r^2$ gli indicatori di bontà di adattamento ($R^2$) rispettivamente del modello completo e del modello ristretto.
 
-Siano $R_c^2$ e $R_r^2$ gli indicatori di bontà di adattamento ($R^2$) rispettivamente del modello *completo* e del modello *ristretto*:
-
-- il **modello ristretto** è quello in cui si ipotizza che l'ipotesi nulla sui parametri sia valida;
-- il **modello completo** è il modello di regressione originale (non vincolato).
-
-Se l'ipotesi alternativa fosse corretta, ci si aspetta che la capacità predittiva del modello completo sia superiore a quella del modello ristretto (che è vincolato). In particolare, la differenza tra i due $R^2$ sarà grande. Il test F studia quindi il comportamento della quantità $(R_c^2 - R_r^2)$.
-
-*(slide 10)*
+Se l'ipotesi alternativa fosse corretta, ci si aspetta che la capacità predittiva del modello completo sia superiore a quella del modello ristretto, vincolato. In particolare, la differenza tra i due $R^2$ sarà grande. Il test F studia quindi il comportamento della quantità $(R_c^2 - R_r^2)$.
 
 ## La statistica F: definizione
 
 > [!abstract] Definizione
-> Il test F è definito come
+> La statistica F è definita come
 >
 > $$F_{s;\,n-k-1} = \frac{(R_c^2 - R_r^2)/s}{(1-R_c^2)/(n-k-1)}$$
 >
@@ -160,58 +133,47 @@ Se l'ipotesi alternativa fosse corretta, ci si aspetta che la capacità preditti
 > - $k$ è il numero totale di regressori nel modello completo (nell'esempio è 3);
 > - $n$ è la dimensione del campione.
 >
-> La forma in termini di $R^2$ è valida solo se modello completo e modello ristretto hanno la stessa variabile dipendente, come negli esempi di questa nota; altrimenti si usano le somme dei quadrati dei residui dei due modelli.
-
-*(slide 11)*
+> La forma in termini di $R^2$ è valida solo se modello completo e modello ristretto hanno la stessa variabile dipendente, come negli esempi considerati; altrimenti si usano le somme dei quadrati dei residui dei due modelli.
 
 ## Proprietà del test F, regola di decisione e p-value
 
 > [!tip] Teorema
 > Si può dimostrare che la statistica $F$ ha le seguenti proprietà:
 >
-> - **È sempre positiva.** Infatti si può dimostrare che $R^2$ è sempre non decrescente quando si aggiungono regressori (quindi $R_c^2 \geq R_r^2$).
-> - **I valori di $F$ vicini a 0 sono più favorevoli a $H_0$ che a $H_1$.** Ciò implica che si respinge l'ipotesi nulla solo quando $F$ è grande: si tratta di un **test unilaterale**. In pratica si calcola la statistica $F$ osservata, $F^{oss}$, e il p-value viene calcolato come $P(F>F^{oss})$. Se il p-value è più piccolo del livello $\alpha$, si respinge l'ipotesi nulla; altrimenti non c'è sufficiente evidenza per respingerla.
-> - **Se l'ipotesi nulla è corretta**, allora la distribuzione di $F$ è ben approssimata da una variabile casuale $F$ con $s$ e $n-k-1$ gradi di libertà (parametri). Per questa distribuzione sono disponibili tabelle.
+> - Non è mai negativa: $R^2$ non decresce mai quando si aggiungono regressori, quindi $R_c^2 \geq R_r^2$.
+> - I valori di $F$ vicini a 0 sono più favorevoli a $H_0$ che a $H_1$. Si respinge quindi l'ipotesi nulla solo quando $F$ è grande: si tratta di un **test unilaterale**.
+> - Se l'ipotesi nulla è corretta, la distribuzione di $F$ è ben approssimata da una variabile casuale $F$ con $s$ e $n-k-1$ gradi di libertà (parametri). Per questa distribuzione sono disponibili tabelle.
 >
 > ![](assets/econ-04/fig01.png)
 >
-> **Figura 1** — Rappresentazione grafica della variabile casuale F. Il grafico (*"The 5% critical value and rejection region in an $F_{3,60}$ distribution"*) mostra la densità di una distribuzione F asimmetrica a destra: l'area fino al valore critico 2.76 è il 95% della probabilità ("area = .95"), l'area a destra di 2.76 ("area = .05", la *rejection region*) è il livello di significatività del 5%. Se la statistica F osservata cade in questa regione, si respinge l'ipotesi nulla.
+> **Figura 1** — Rappresentazione grafica della variabile casuale F. Il grafico (*"The 5% critical value and rejection region in an $F_{3,60}$ distribution"*) mostra la densità di una distribuzione F asimmetrica a destra: l'area fino al valore critico 2.76 è il 95% della probabilità ("area = .95"), l'area a destra di 2.76 ("area = .05", la *rejection region*) è il livello di significatività del 5%.
 >
-> **Regola di decisione con il valore critico.** Come al solito si può definire il livello $\alpha$ e calcolare il valore critico utilizzando tabelle F adeguate:
->
-> - se $F^{oss}$ è più grande del livello critico, si respinge l'ipotesi nulla;
-> - se $F^{oss}$ è più piccolo del livello critico, non c'è sufficiente evidenza per respingere l'ipotesi nulla.
->
-> **Regola di decisione con il p-value.** Si può calcolare anche il p-value, cioè $P_{H_0}(F>F^{oss})$: se il p-value è più piccolo di $\alpha$ (in percentuale), si respinge l'ipotesi nulla, altrimenti non la si può respingere.
-
-*(slide 12–14)*
+> La decisione si prende con il valore critico o con il p-value. Fissato il livello $\alpha$, il valore critico si ricava da tabelle F adeguate: se la statistica osservata $F^{oss}$ è più grande del valore critico, si respinge l'ipotesi nulla; se è più piccola, non c'è sufficiente evidenza per respingerla. Il p-value, cioè $P_{H_0}(F>F^{oss})$, porta alla stessa decisione: se è più piccolo di $\alpha$ si respinge l'ipotesi nulla, altrimenti non la si può respingere.
 
 ## Relazione tra la distribuzione F e la distribuzione chi-quadro
 
-Si noti che $k_1 F(k_1,k_2)$ è ben approssimata da una variabile $\chi^2_{k_1}$, cioè $F(k_1,k_2)\approx\chi^2_{k_1}/k_1$, se $k_2$ è sufficientemente grande (le slide scrivono $F(k_1,k_2)\approx\chi^2_{k_1}$, omettendo la divisione per $k_1$, che vale 1 solo per $k_1=1$). Questo accade quando $n$ è grande, visto che $F \sim F_{s;\,n-k-1}$ (e quindi $k_2 = n-k-1$ cresce con la numerosità campionaria).
+Per $k_2$ sufficientemente grande, $k_1 F(k_1,k_2)$ è ben approssimata da una variabile $\chi^2_{k_1}$, cioè $F(k_1,k_2)\approx\chi^2_{k_1}/k_1$. Questo accade quando $n$ è grande, visto che $F \sim F_{s;\,n-k-1}$ e quindi $k_2 = n-k-1$ cresce con la numerosità campionaria.
 
 ![](assets/econ-04/fig02.png)
 
 **Figura 2** — $\chi^2_{df}$ con diversi gradi di libertà, cioè $df=1,2,5,10$. Il pannello mostra quattro istogrammi di variabili casuali chi-quadro simulate con 1, 2, 5 e 10 gradi di libertà: per $df=1$ la densità è concentrata vicino allo zero e decrescente; al crescere dei gradi di libertà la distribuzione si sposta a destra, si allarga e diventa più simmetrica e campanulare. È la forma della $\chi^2_{df}$, cioè della distribuzione limite di $s\,F$ con $df=s$ quando i gradi di libertà al denominatore sono grandi.
 
-*(slide 15)*
-
 ## Esempio: dimensione della classe e reddito rispetto al punteggio del test
 
 > [!example] Esempio
-> Supponiamo di voler testare se `str` (dimensione della classe) e `avginc` (reddito medio) sono predittori utili per il punteggio del test. Il modello completo è
+> Si voglia testare se `str` (dimensione della classe) e `avginc` (reddito medio) sono predittori utili per il punteggio del test. Il modello completo è
 >
 > $$avg\_score = \alpha + \beta_1\, str + \beta_2\, avginc + \epsilon$$
 >
 > L'ipotesi nulla è quindi $H_0: \beta_1=\beta_2=0$ contro l'alternativa che almeno uno di questi due parametri sia diverso da 0.
 >
-> Non è banale calcolare a mano la statistica F osservata, perché servono vari passaggi: stimare i due modelli (completo e ristretto), calcolare i loro indicatori di bontà di adattamento $R^2$, e valutare la statistica $F$ osservata, cioè $F^{oss}$. Di solito i test F vengono calcolati tramite software statistici/econometrici.
+> Il calcolo a mano della statistica F osservata non è banale, perché richiede vari passaggi: stimare i due modelli (completo e ristretto), calcolare i loro indicatori di bontà di adattamento $R^2$ e valutare $F^{oss}$. Di solito i test F vengono quindi calcolati tramite software statistici o econometrici.
 >
-> **Procedura con Gretl:**
+> Procedura con Gretl:
 >
-> a. Si stimi la regressione completa.
-> b. Dall'output della regressione si utilizzi il menu *Test -> Vincoli lineari*.
-> c. Si definisca il test come segue:
+> 1. Si stimi la regressione completa.
+> 2. Dall'output della regressione si utilizzi il menu *Test -> Vincoli lineari*.
+> 3. Si definisca il test come segue:
 >
 > ```
 > b[str] = 0
@@ -230,20 +192,17 @@ Si noti che $k_1 F(k_1,k_2)$ è ben approssimata da una variabile $\chi^2_{k_1}$
 >
 > In questo caso si respinge l'ipotesi nulla poiché il p-value è prossimo a 0. Ciò significa che almeno uno dei due regressori è un predittore utile per il punteggio medio.
 
-*(slide 16–17)*
-
 ## Esempio: verifica della differenza salariale tra gruppi con il test F
 
 > [!example] Esempio
-> Riprendendo l'esempio delle differenze salariali, per verificare se $\beta_6 - \beta_8 \neq 0$, cioè se la differenza tra lavoratori sposati di colore e sposati non di colore è statisticamente significativa, si implementa il test
+> Per verificare se $\beta_6 - \beta_8 \neq 0$ nell'esempio delle differenze salariali, cioè se la differenza tra lavoratori sposati di colore e sposati non di colore è statisticamente significativa, si implementa il test
 >
 > $$H_0: \beta_6-\beta_8=0 \quad \text{vs.} \quad H_1: \beta_6-\beta_8\neq 0$$
 >
 > In Gretl si procede così:
 >
 > 1. Si stimi la regressione completa (`reg lwage` su `educ exper tenure south urban marr_black single_black marr_nonblack single_nonblack`; `reg` è la sintassi di Stata usata per la tabella, in Gretl il comando è `ols`).
-> 2. Dall'output della regressione si utilizzi il menu *Test -> Vincoli lineari*.
-> 3. Si definisca il test come segue:
+> 2. Con la stessa procedura dell'esempio precedente (menu *Test -> Vincoli lineari*) si definisca il test come segue:
 >
 > ```
 > b[marr_black] - b[marr_nonblack] = 0
@@ -258,6 +217,4 @@ Si noti che $k_1 F(k_1,k_2)$ è ben approssimata da una variabile $\chi^2_{k_1}$
 > Statistica test: F(1, 926) = 19,60, con p-value = 0.000
 > ```
 >
-> Il p-value è praticamente nullo (circa 0,00001, riportato come 0.000). In altre parole, la differenza tra i due gruppi (lavoratori sposati di colore vs. sposati non di colore) è significativamente diversa da 0. Il test F risponde così, con uno strumento generale, alla domanda dell'esempio introduttivo, senza passare dal calcolo diretto della statistica t per la combinazione $\hat\beta_6-\hat\beta_8$.
-
-*(slide 18)*
+> Il p-value è praticamente nullo (circa 0,00001, riportato come 0.000): la differenza tra i due gruppi (lavoratori sposati di colore vs. sposati non di colore) è significativamente diversa da 0. Il test F risponde così alla domanda dell'esempio introduttivo senza il calcolo diretto della statistica t per la combinazione $\hat\beta_6-\hat\beta_8$.

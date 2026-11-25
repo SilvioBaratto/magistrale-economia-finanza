@@ -12,7 +12,7 @@ generated: 2026-08-30
 
 ## Introduzione e collocazione nel corso
 
-Il capitolo apre il blocco dedicato ai multipli di borsa, il secondo dei due approcci con cui il corso passa dal valore dei singoli investimenti al valore d'impresa. Il primo approccio, basato sui flussi di cassa attualizzati, è trattato nei capitoli sui modelli di valutazione finanziaria, [[FSTR 03 Modelli Valutazione Finanziaria Parte1|prima parte]] e [[FSTR 04-full Modelli Valutazione Finanziaria Parte2|seconda parte]]. L'argomento dei multipli prosegue nella [[FSTR 07 Multipli di Borsa lez02|lezione successiva]].
+Il capitolo apre il blocco dedicato ai multipli di borsa, il secondo dei due approcci con cui il corso passa dal valore dei singoli investimenti al valore d'impresa. Il primo approccio, basato sui flussi di cassa attualizzati, è trattato nei capitoli sui modelli di valutazione finanziaria, [[FSTR 03 Modelli Valutazione Finanziaria Parte1|prima parte]] e [[FSTR 04-full Modelli Valutazione Finanziaria Parte2|seconda parte]]. L'argomento dei multipli prosegue nel [[FSTR 07 Multipli di Borsa lez02|capitolo successivo]].
 
 Il corso si articola in cinque argomenti: le decisioni di investimento per l'impresa indebitata; il valore d'impresa con i metodi DCF; il valore d'impresa con i multipli di borsa, oggetto di questo capitolo; la crescita esterna e il valore delle operazioni di integrazione ([[FSTR 12 Valutazione Operazioni di Integrazione|valutazione delle operazioni di integrazione]]); la due diligence come supporto alle acquisizioni ([[FSTR 09 La Due Diligence|due diligence]]).
 
@@ -23,8 +23,6 @@ Si parte da quattro operazioni recenti di acquisizione prezzate con il multiplo 
 Nelle operazioni di M&A il prezzo viene spesso letto attraverso un multiplo dell'EBITDA. Il valore d'impresa (Enterprise Value, EV) è il prodotto dell'EBITDA per il multiplo:
 
 $$EV = EBITDA \times \text{Multiplo}$$
-
-Le quattro operazioni seguenti sono tratte dagli articoli di stampa che le hanno annunciate.
 
 ### Carrefour Italia ceduta a NewPrinces
 
@@ -37,7 +35,7 @@ Le quattro operazioni seguenti sono tratte dagli articoli di stampa che le hanno
 
 NewPrinces acquisisce il 100% delle azioni di Carrefour Italia sulla base di un EV di circa 1 miliardo di euro. Tenuto conto degli aggiustamenti contabili, tra cui quelli legati all'IFRS 16, e di un contributo straordinario di 237,5 milioni di euro da parte di Carrefour, l'equity value è pari a 1 euro. L'EV misura il valore dell'attività operativa, l'equity value quello del solo capitale proprio: il passaggio dall'uno all'altro avviene attraverso la posizione finanziaria netta e gli aggiustamenti citati. Nel 2024 Carrefour Italia ha registrato un fatturato di circa 3,7 miliardi di euro e un EBITDA di 115 milioni; il rapporto tra EV ed EBITDA è di circa 8,7x.
 
-L'articolo ricostruisce anche la storia dell'acquirente. NewPrinces discende da Newlat Food, nata nel 2004 nel gruppo Parmalat. Nel 2008 l'Antitrust impose la cessione della società, venduta simbolicamente a 1 euro più i debiti alla svizzera TMT Finance SA, fondata dall'imprenditore salernitano Angelo Mastrolia, oggi presidente del gruppo. Da allora Newlat ha assorbito diversi marchi storici del food italiano: Buitoni (acquistata da Nestlé nel 2008), Delverde (rilevata nel 2019 dalla multinazionale argentina Molinos Río de la Plata) e il Centrale del Latte d'Italia (acquisito nel 2020, con i marchi locali Mukki, Tigullio, Vicenza e Torino). Dal 2024 Newlat ha acquisito la britannica Princes, gruppo alimentare con forte presenza in Regno Unito, Europa e Asia, e nell'aprile 2025 gli azionisti hanno approvato il cambio di denominazione in NewPrinces.
+NewPrinces discende da Newlat Food, nata nel 2004 nel gruppo Parmalat. Nel 2008 l'Antitrust impose la cessione della società, venduta simbolicamente a 1 euro più i debiti alla svizzera TMT Finance SA, fondata dall'imprenditore salernitano Angelo Mastrolia, oggi presidente del gruppo. Da allora Newlat ha assorbito diversi marchi storici del food italiano: Buitoni (acquistata da Nestlé nel 2008), Delverde (rilevata nel 2019 dalla multinazionale argentina Molinos Río de la Plata) e il Centrale del Latte d'Italia (acquisito nel 2020, con i marchi locali Mukki, Tigullio, Vicenza e Torino). Dal 2024 Newlat ha acquisito la britannica Princes, gruppo alimentare con forte presenza in Regno Unito, Europa e Asia, e nell'aprile 2025 gli azionisti hanno approvato il cambio di denominazione in NewPrinces.
 
 ### Prysmian e Channell Commercial Corporation
 
@@ -48,11 +46,11 @@ L'articolo ricostruisce anche la storia dell'acquirente. NewPrinces discende da 
 > | Multiplo | 8x EBITDA |
 > | EBITDA | 119 milioni di USD (stima) |
 
-L'articolo del 25 marzo 2025 riferisce che Prysmian ha raggiunto un accordo per acquisire Channell Commercial Corporation, fornitore di soluzioni integrate nel settore della connettività negli Stati Uniti. Il corrispettivo è di 950 milioni di dollari, salvo aggiustamenti, a cui si può aggiungere un corrispettivo potenziale fino a 200 milioni di dollari, legato al raggiungimento di determinati obiettivi di EBITDA di Channell per il 2025. Il corrispettivo di 950 milioni riflette un multiplo inferiore a 8,0x l'EBITDA 2024A.
+Il 25 marzo 2025 è stato annunciato l'accordo con cui Prysmian acquisisce Channell Commercial Corporation, fornitore di soluzioni integrate nel settore della connettività negli Stati Uniti. Il corrispettivo è di 950 milioni di dollari, salvo aggiustamenti, a cui si può aggiungere un corrispettivo potenziale fino a 200 milioni di dollari, legato al raggiungimento di determinati obiettivi di EBITDA di Channell per il 2025. Il corrispettivo di 950 milioni riflette un multiplo inferiore a 8,0x l'EBITDA 2024A.
 
 La transazione è subordinata alle usuali condizioni sospensive, tra cui quelle di natura regolamentare, e se ne prevede la chiusura nel secondo trimestre del 2025. Prysmian la finanzierà con un mix equilibrato di debito ed equity, che comprende obbligazioni ibride e la cessione di azioni proprie.
 
-Poiché 950/8 = 118,75, un multiplo inferiore a 8,0x implica un EBITDA 2024A superiore a 118,75 milioni. La stima di 119 milioni è quindi espressa in dollari, la stessa valuta del prezzo, e non in euro.
+Poiché 950/8 = 118,75, un multiplo inferiore a 8,0x implica un EBITDA 2024A superiore a 118,75 milioni. La stima di 119 milioni è quindi espressa in dollari, la stessa valuta del prezzo.
 
 ### Bormioli Pharma e Gerresheimer
 
@@ -62,7 +60,7 @@ Poiché 950/8 = 118,75, un multiplo inferiore a 8,0x implica un EBITDA 2024A sup
 > | EV | circa 800 milioni di euro |
 > | Multiplo | circa 10x EBITDA rettificato |
 
-Secondo l'articolo, Gerresheimer, società tedesca quotata alla Borsa di Francoforte, rileva Bormioli Pharma dal fondo Triton, che la possedeva dal 2017. Il prezzo si basa su un valore aziendale di circa 800 milioni di euro, pari a un multiplo dell'EBITDA rettificato di circa 10 volte. Il titolo Gerresheimer ha registrato un forte rimbalzo dopo l'annuncio. Bormioli Pharma impiega circa 1.500 dipendenti e ha quattro stabilimenti di produzione in Italia, Francia e Germania, per sistemi e soluzioni di plastica destinati al settore farmaceutico, e quattro siti in Italia e Germania nel settore del vetro.
+Gerresheimer, società tedesca quotata alla Borsa di Francoforte, rileva Bormioli Pharma dal fondo Triton, che la possedeva dal 2017. Il prezzo si basa su un valore aziendale di circa 800 milioni di euro, pari a un multiplo dell'EBITDA rettificato di circa 10 volte. Il titolo Gerresheimer ha registrato un forte rimbalzo dopo l'annuncio. Bormioli Pharma impiega circa 1.500 dipendenti e ha quattro stabilimenti di produzione in Italia, Francia e Germania, per sistemi e soluzioni di plastica destinati al settore farmaceutico, e quattro siti in Italia e Germania nel settore del vetro.
 
 I dati economici di Bormioli Pharma sono i seguenti.
 
@@ -96,7 +94,7 @@ Un estratto di database societario conferma queste grandezze. Riguarda Bormioli 
 > | Debt/EBITDA ratio | 0,20 |
 > | Rotazione del capitale investito (volte) | 0,52 |
 
-Rapportato all'EBITDA di 71,14 milioni, l'EV di 800 milioni dà un multiplo di circa 11,2x. Il multiplo di circa 10x citato dall'articolo è riferito all'EBITDA rettificato, che risulta quindi di circa 80 milioni (800/10), pari a circa il 24% del fatturato. Il 21,7% della scheda coincide invece con il rapporto tra l'EBITDA di 71,14 milioni e il fatturato di 328,285 milioni (21,67%); l'indicatore EBITDA/Vendite dell'estratto, 21,34%, differisce di poco da questo valore.
+Rapportato all'EBITDA di 71,14 milioni, l'EV di 800 milioni dà un multiplo di circa 11,2x. Il multiplo di circa 10x dichiarato è riferito all'EBITDA rettificato, che risulta quindi di circa 80 milioni (800/10), pari a circa il 24% del fatturato. Il 21,7% indicato come margine EBITDA adjusted coincide invece con il rapporto tra l'EBITDA di 71,14 milioni e il fatturato di 328,285 milioni (21,67%); l'indicatore EBITDA/Vendite dell'estratto, 21,34%, differisce di poco da questo valore.
 
 ### Brembo e Öhlins Racing
 
@@ -120,13 +118,13 @@ Brembo, gruppo bergamasco dei sistemi frenanti, ha firmato un accordo con Tennec
 
 Öhlins dovrebbe chiudere il 2024 con un fatturato di circa 144 milioni di dollari e un margine EBITDA rettificato tra il 21% e il 22%, cioè 30-32 milioni di dollari. Secondo Equita rappresenta il 3% del fatturato stimato per Brembo nel 2024 e il 4% dell'EBITDA adjusted, con margini migliori della media del gruppo, circa il 17%.
 
-Un secondo articolo, intitolato «La più grande acquisizione nella storia di Brembo a un multiplo caro», riporta i giudizi di tre intermediari.
+Sull'operazione si sono espressi tre intermediari.
 
 - Equita osserva che il multiplo pagato è di circa 13 volte l'EV/EBITDA, contro circa 5,5 volte a cui tratta Brembo, e lo definisce «un po' caro». Giudica però l'operazione positiva perché accrescitiva a livello di utile per azione (stima circa mid single digit), essendo finanziata principalmente con la liquidità della vendita di azioni Pirelli. Aggiunge che il brand è riconosciuto in tutto il mondo, con una forte tradizione nel racing, e che l'acquisizione è un passo avanti per diventare un solution provider, anche se per componenti diversi da quelli che si erano immaginati.
-- Banca Akros descrive un'acquisizione di tipo «bolt-on» avvenuta a un multiplo EV/EBITDA 2024 di 13,4/12,8 volte, con una media di 13,1 volte, mentre Brembo scambia a 5,5 volte. La giudica «controdiluitiva dal punto di vista del margine ebitda», poiché Brembo ha un margine ebitda del 18% circa.
-- Intermonte ritiene elevato il multiplo di 13 volte l'EV/EBITDA rispetto alle valutazioni del settore di riferimento, che l'articolo indica in circa 3,7 volte.
+- Banca Akros descrive un'acquisizione di tipo «bolt-on» avvenuta a un multiplo EV/EBITDA 2024 di 13,4/12,8 volte, con una media di 13,1 volte, mentre Brembo scambia a 5,5 volte. La giudica «controdiluitiva dal punto di vista del margine ebitda», poiché il margine EBITDA di Brembo (17,3% nel 2023, 17,5% nel primo semestre 2024) è inferiore a quello di Öhlins.
+- Intermonte ritiene elevato il multiplo di 13 volte l'EV/EBITDA rispetto alle valutazioni del settore di riferimento, pari a circa 3,7 volte.
 
-Con un EBITDA di 30-32 milioni di dollari, il rapporto 405/EBITDA è compreso tra 12,7x e 13,5x e vale circa 13,1x al punto medio di 31 milioni, in linea con il 13x dichiarato. Come termine di paragone settoriale per Öhlins si considera la riga Auto Parts della tabella dei multipli di Damodaran, riportata più avanti: 39 imprese, EV/EBITDAR&D 5,08 ed EV/EBITDA 7,06.
+Con un EBITDA di 30-32 milioni di dollari, il rapporto 405/EBITDA è compreso tra 12,7x e 13,5x e vale circa 13,1x al punto medio di 31 milioni, in linea con il 13x dichiarato. Come termine di paragone settoriale per Öhlins si considera la riga Auto Parts della tabella dei multipli di Damodaran, riportata più avanti, che riguarda le imprese statunitensi al gennaio 2024 ed è quindi un riferimento distinto da quello citato da Intermonte: 39 imprese, EV/EBITDAR&D 5,08 ed EV/EBITDA 7,06.
 
 ### Verifica dei multipli dichiarati
 
@@ -342,7 +340,7 @@ Il metodo incontra due ordini di problemi: la comparabilità tra l'impresa da va
 
 ## Fonti dei dati per i comparabili di borsa: il sito di Damodaran
 
-Le fonti professionali standard dei dati sui comparabili sono Bloomberg, Datastream e FactSet, oltre ai siti finanziari. Il prof. Damodaran (Stern School of Business, NYU) mette invece gratuitamente a disposizione i multipli medi di settore e fornisce indicazioni sulla composizione delle imprese di ciascun settore, in modo che il valutatore possa analizzare le singole imprese: https://pages.stern.nyu.edu/~adamodar/
+Le fonti professionali standard dei dati sui comparabili sono Bloomberg, Datastream e FactSet, oltre ai siti finanziari. Damodaran (Stern School of Business, NYU) mette invece gratuitamente a disposizione i multipli medi di settore e fornisce indicazioni sulla composizione delle imprese di ciascun settore, in modo che il valutatore possa analizzare le singole imprese: https://pages.stern.nyu.edu/~adamodar/
 
 Il file *Enterprise Value Multiples by Sector (US)*, con dati al gennaio 2024, ha il seguente aspetto (estratto).
 
@@ -374,7 +372,7 @@ Il file *Enterprise Value Multiples by Sector (US)*, con dati al gennaio 2024, h
 
 \* Le colonne EV/EBITDA ed EV/EBIT si riferiscono solo alle imprese con EBITDA positivo («Only positive EBITDA firms»). La tabella originale prosegue con altri settori, non riportati qui.
 
-Come prima valutazione si consiglia il multiplo dell'intero settore. Poiché spesso si tratta di valori sovrastimati, conviene passare poi a una valutazione basata sui singoli concorrenti. I dati per ogni settore sono disponibili sul sito http://pages.stern.nyu.edu/~adamodar/
+Come prima valutazione si consiglia il multiplo dell'intero settore. Poiché spesso si tratta di valori sovrastimati, conviene passare poi a una valutazione basata sui singoli concorrenti.
 
 ## Multipli di borsa: le criticità
 
@@ -487,12 +485,12 @@ I 12 casi con TEV/EBITDA disponibile vanno da 10,3x a 52,9x, con mediana di 16,3
 
 ### Operazioni nella moda in Italia
 
-Il quarto esempio è un articolo sulle operazioni di M&A nel settore moda in Italia: otto operazioni nei primi sei mesi per 296 milioni di euro complessivi. L'articolo non riporta multipli. Le operazioni principali sono le seguenti.
+Il quarto esempio riguarda le operazioni di M&A nel settore moda in Italia: otto operazioni nei primi sei mesi del 2024 per 296 milioni di euro complessivi, senza indicazione dei multipli. Le operazioni principali sono le seguenti.
 
 - Il delisting del gruppo Tod's, concluso il 7 giugno 2024 dopo 24 anni di quotazione del marchio del lusso marchigiano su Piazza Affari.
 - L'acquisizione al 100% del marchio di alta gioielleria Vhernier, eccellenza del distretto italiano di Valenza, da parte del gruppo svizzero Richemont (già proprietario di Cartier e Van Cleef & Arpels, che ha appena ceduto Ynap a Mytheresa).
 - L'acquisto della casa del levriero Trussardi da parte del gruppo Miroglio, finalizzato a marzo «nel contesto di un'operazione di ristrutturazione avviata dalla società milanese, con l'obiettivo di valorizzare il marchio e garantire la continuità industriale».
-- L'accordo di aprile tra l'imprenditrice bolognese Elisabetta Franchi, la cui Betty Blue chiuderà il 2023 con 170 milioni di euro di fatturato e un EBIT del 31,8%, e l'ex amministratore delegato di Gucci Marco Bizzarri. Bizzarri ha costituito la holding di investimenti Nessifashion, attraverso la quale ha investito una quota che potrà salire fino al 23% dell'azienda. La stessa holding avrebbe acquisito anche una quota di minoranza del marchio Maccapani di Margherita Missoni.
+- L'accordo di aprile tra l'imprenditrice bolognese Elisabetta Franchi, la cui Betty Blue ha indicato per il 2023 un fatturato di 170 milioni di euro e un EBIT del 31,8%, e l'ex amministratore delegato di Gucci Marco Bizzarri. Bizzarri ha costituito la holding di investimenti Nessifashion, attraverso la quale ha investito una quota che potrà salire fino al 23% dell'azienda. La stessa holding avrebbe acquisito anche una quota di minoranza del marchio Maccapani di Margherita Missoni.
 
 ## Multipli delle transazioni concluse: criticità
 

@@ -21,8 +21,6 @@ Bisogna tenere a mente l'assenza di identità fra la **vigilanza su base consoli
 - la **Sezione II** è dedicata alla vigilanza consolidata;
 - la **Sezione III** (art. 69.3, impresa madre intermedia) è stata aggiunta dal d.lgs. 182/2021.
 
-*(pagina 1)*
-
 ### Fondamento della vigilanza consolidata
 
 - Il gruppo è un insieme di società giuridicamente distinte, unite da legami di controllo e gestite come un'unica impresa; di norma ha struttura piramidale, con la capogruppo al vertice che esercita direzione e coordinamento su tutte le società.
@@ -38,8 +36,6 @@ Bisogna tenere a mente l'assenza di identità fra la **vigilanza su base consoli
 (Testo vigente dal 30 novembre 2021, dopo il d.lgs. 182/2021; nella versione previgente le società finanziarie erano definite in base all'attività esercitata in via esclusiva o prevalente, fra cui l'assunzione di partecipazioni «aventi le caratteristiche indicate dalla Banca d'Italia».)
 
 L'articolo contiene alcune definizioni, delle quali interessano solo le prime due. La definizione di **controllo** rinvia direttamente all'art. 23 TUB. Il controllo dell'art. 23 persegue finalità diverse da quello dell'art. 2359 c.c., pur richiamato fra le ipotesi incluse: il codice civile individua il potere di influenzare la volontà dell'assemblea, la norma bancaria il potere di influenzare in modo stabile la gestione dell'impresa, con presunzioni ulteriori.
-
-*(pagina 1)*
 
 ## Art. 60 TUB: Composizione del gruppo bancario
 
@@ -61,8 +57,6 @@ La lettera a e la lettera b del comma 2, se confrontate, presentano due possibil
 - la **lettera b** stabilisce invece che si può avere un gruppo bancario anche quando la capogruppo non è una banca italiana ma una società di partecipazione finanziaria (o finanziaria mista), con sede in Italia o in un altro Stato dell'Unione europea; in tal caso la società deve controllare in via esclusiva o principale[^45] società bancarie e finanziarie e rispettare una delle tre condizioni elencate nella lettera (solo banche italiane fra le controllate; attivo delle banche italiane maggiore di quello delle banche controllate in ciascun altro Stato dell'Unione; Banca d'Italia altrimenti nominata autorità di vigilanza consolidata). Nella versione previgente, al posto di questo requisito, si richiedevano almeno una banca italiana controllata e partecipazioni rilevanti in società bancarie e finanziarie (inizialmente ci furono dei problemi per far quadrare questa disciplina delle partecipazioni con quella dell'art. 61 TUB comma 2; per evitare tanti problemi quest'ultimo è stato direttamente abrogato).
 
 [^45]: Il controllo "in via esclusiva o principale" discende dalla definizione europea di società di partecipazione finanziaria (art. 4, par. 1, punto 20, CRR) ed è precisato nelle disposizioni di vigilanza (Circ. 285, Parte Prima, Titolo I, Cap. 2, Sez. II, par. 1.2): la condizione risulta soddisfatta al superamento di uno degli indicatori fra attivo di bilancio, patrimonio netto, ricavi e personale, quando il rapporto tra il valore riferito alle banche e alle società finanziarie controllate e il valore riferito alla società e a tutte le società ed enti da essa controllati è superiore al 50 per cento. Questo è il regime in vigore dal 14 luglio 2022 (39° aggiornamento della Circolare 285); il criterio previgente della "rilevanza determinante" era soddisfatto se il rapporto tra l'attivo delle banche, delle società finanziarie e strumentali partecipate e l'attivo della capogruppo e di tutte le società partecipate era superiore al 40 per cento, con le imprese di assicurazione assimilate a quelle finanziarie.
-
-*(pagina 1–2)*
 
 ### Capogruppo e società di partecipazione finanziaria
 
@@ -88,8 +82,6 @@ In questo comma si specifica che, laddove una banca sia una capogruppo, nei suoi
 
 In questo comma si specifica che, oltre alla classica attività di direzione e coordinamento (presente anche nel diritto comune), la capogruppo ha altri compiti: quando si costituisce un gruppo bancario, infatti, la capogruppo diventa un anello di congiunzione fra le autorità di vigilanza e i soggetti appartenenti al gruppo (in caso di inadempimenti della capogruppo, questa ne risponde).
 
-*(pagina 2)*
-
 ### Natura della direzione e coordinamento
 
 - La capogruppo è il referente dell'autorità di vigilanza per tutto ciò che attiene alla vigilanza consolidata, nell'ordinamento nazionale e in quello europeo. Se al vertice vi è una società diversa da una banca, questa è sottoposta a un regime equivalente a quello delle banche (richieste di informazioni, provvedimenti particolari, compresa la rimozione di esponenti aziendali, ispezioni): nell'ordinamento italiano dal 1990 (legge Amato), nel diritto UE dal 2019.
@@ -107,8 +99,6 @@ In questo comma si specifica che, oltre alla classica attività di direzione e c
 (Testo vigente dal 9 gennaio 2026, dopo il d.lgs. 208/2025, che ha anche sostituito la rubrica con «Ambito della vigilanza su base consolidata»; nella versione previgente la Banca d'Italia «esercita la vigilanza» e le società erano «bancarie, finanziarie e strumentali». Il comma prosegue con le lettere h, i, i-bis e i-ter.)
 
 Da questo comma si evince che la vigilanza consolidata si riferisce non solo ai gruppi bancari (lettera a) ma anche ad altri soggetti (lettere b e c); ai sensi degli articoli successivi si riprendono gli istituti della vigilanza informativa, regolamentare ed ispettiva.
-
-*(pagina 2–3)*
 
 ### Ulteriori soggetti e poteri
 

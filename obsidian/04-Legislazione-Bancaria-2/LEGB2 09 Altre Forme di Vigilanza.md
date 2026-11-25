@@ -17,8 +17,6 @@ Oltre ai tre poteri "classici" di vigilanza (informativa, regolamentare, ispetti
 
 > *Nota: esisteva in più, in linea teorica, anche un potere relativo alla concorrenza attribuito a Banca d'Italia (BI), ma non è mai stato inserito effettivamente all'interno del TUB (era nell'art. 20, comma 2, della l. 287/1990, poi abrogato: vedi la sezione finale).*
 
-*(pagina 1)*
-
 ## Art. 56 TUB: modificazioni statutarie
 
 **Comma 1**: *La Banca d'Italia accerta che le modificazioni degli statuti delle banche non contrastino con una sana e prudente gestione.*
@@ -40,8 +38,6 @@ Con il provvedimento del 21 marzo 2007, lo stesso che ha facilitato l'apertura d
 
 Nella pratica la richiesta di modifica si invia con un documento a due colonne (statuto vecchio e nuovo), con segnalazioni grafiche delle differenze.
 
-*(pagina 1–2)*
-
 ### Competenza della BCE, aumenti di capitale e BCC
 
 Il potere di accertamento sulle modifiche statutarie non è previsto dal diritto dell'Unione, neppure dopo la modifica della dir. 2013/36/UE del 2024: sul piano formale il provvedimento spetta quindi a BI. Poiché la valutazione attiene alla vigilanza prudenziale, per una banca «significativa» BI deve chiedere il parere della BCE e attenersi al suo giudizio; fra gli oggetti principali della valutazione ci sono gli assetti organizzativi, materia rimessa alla BCE per le banche «significative» dal reg. (UE) n. 1024/2013.
@@ -59,8 +55,6 @@ Costituisce modificazione dello statuto di una società per azioni ogni mutament
 Le modifiche statutarie rientrano nella competenza dell'assemblea dei soci in sede straordinaria (anche se, in alcuni casi, lo statuto può attribuire la facoltà di modifica anche all'organo amministrativo). La delibera di modificazione viene adottata con le maggioranze previste in via generale per l'assemblea straordinaria. Le delibere modificative, per quanto non siano più pedissequamente sotto il controllo giudiziario, lo sono in via eventuale e facoltativa.
 
 Ai sensi dell'art. 2436 c.c., il notaio verbalizza la delibera dell'assemblea e, chiuso il verbale, verifica l'adempimento delle condizioni stabilite dalla legge; entro trenta giorni ne richiede l'iscrizione nel registro delle imprese, contestualmente al deposito.
-
-*(pagina 2)*
 
 ## Art. 57 TUB: fusioni e scissioni
 
@@ -80,8 +74,6 @@ Comma identico, nella logica, a quello dell'articolo precedente (art. 56).
 
 Si tratta di una deroga al diritto comune, che dimezza (e oltre) il termine di opposizione previsto per i creditori alla fusione: un altro esempio del *favor* legislativo già citato in apertura.
 
-*(pagina 2–3)*
-
 ## Ripasso: la disciplina dell'opposizione dei creditori alla fusione
 
 L'art. 2503 c.c. stabilisce che l'attuazione della fusione non può avere luogo prima che siano decorsi **60 giorni** dalla data in cui risulta essere stata iscritta, presso l'ufficio del Registro delle Imprese territorialmente competente, la decisione di fusione dell'ultima società partecipante. Tale termine è, tuttavia, ridotto alla metà, e quindi a **30 giorni**, nel caso in cui alla fusione non partecipino società il cui capitale è rappresentato da azioni (art. 2505-quater c.c.).
@@ -96,8 +88,6 @@ L'obbligo dell'attesa dei predetti termini (60 o 30 giorni, a seconda del capita
 - depositando presso un istituto di credito una somma di denaro corrispondente all'ammontare dei crediti vantati verso la società dai creditori che non hanno manifestato il loro consenso alla fusione.
 
 L'art. 2503 c.c. prevede, inoltre, che l'attesa non sia necessaria quando la relazione degli esperti di cui all'art. 2501-sexies c.c. è redatta, per tutte le società partecipanti alla fusione, da un'unica società di revisione, la quale asseveri sotto la propria responsabilità che la situazione patrimoniale e finanziaria delle società rende non necessarie garanzie a tutela dei creditori (la garanzia è rappresentata dal deposito presso un istituto di credito o da un'adeguata fideiussione bancaria).
-
-*(pagina 3–4)*
 
 ## Approfondimenti sull'art. 57 TUB: accertamento vs autorizzazione, fusioni miste e caso applicativo
 
@@ -114,8 +104,6 @@ L'art. 2503 c.c. prevede, inoltre, che l'attesa non sia necessaria quando la rel
 **Procedimento e concorrenza.** L'autorizzazione è condizione per l'iscrizione del progetto di fusione o scissione nel registro delle imprese: precede quindi la pubblicazione del progetto e l'approvazione da parte delle società partecipanti. Resta ferma la disciplina civilistica delle fusioni, con la sola eccezione della riduzione a 15 giorni del termine per l'opposizione dei creditori (art. 2503, comma 1, c.c.). Le concentrazioni fra banche sono soggette anche a un distinto vaglio sui profili di concorrenza.
 
 **Esempio: la cessione di azienda SPA a una BCC (2004).** Nel 2004 un'azienda bancaria costituita in forma di SPA fu ceduta a una BCC. Non sarebbe stato possibile realizzare una fusione per incorporazione perché, nonostante l'art. 36 TUB consenta le fusioni "miste" (fra BCC e SPA), la risultante della fusione deve comunque essere una SPA (testo vigente; in passato poteva risultare anche una banca popolare). Anche laddove fosse stato possibile perseguire questa strada, la BCC difficilmente avrebbe accettato: in caso di incorporazione sarebbero stati "presi" anche i soci della SPA, e per una BCC (in cui il voto è capitario) questo avrebbe potuto significare alterare gli equilibri interni.
-
-*(pagina 4)*
 
 ## Art. 58 TUB: cessione dei rapporti giuridici
 
@@ -144,8 +132,6 @@ In questo caso non si parla di autorizzazione (né di accertamento), ma si affer
 **Comma 3**: *I privilegi e le garanzie di qualsiasi tipo, da chiunque prestati o comunque esistenti a favore del cedente, nonché le trascrizioni nei pubblici registri degli atti di acquisto dei beni oggetto di locazione finanziaria compresi nella cessione conservano la loro validità e il loro grado a favore del cessionario, senza bisogno di alcuna formalità o annotazione. Restano altresì applicabili le discipline speciali, anche di carattere processuale, previste per i crediti ceduti.*
 
 In caso di cessione di rapporti bancari si ha quindi anche la cessione di tutte le garanzie connesse (ad esempio, la cessione di un mutuo ipotecario porta con sé anche l'ipoteca).
-
-*(pagina 5–6)*
 
 ### Pubblicità ed effetti della cessione
 
@@ -189,5 +175,3 @@ Nel 1994 BI affermò che le NUB non creano in alcun modo un'intesa anticoncorren
 > *Nota: ciò vale ovviamente per banche di maggiori dimensioni, per cui si rischia una concentrazione delle quote di mercato, non per qualunque operazione di fusione.*
 
 L'art. 19 sanciva che, per le operazioni soggette sia all'autorizzazione di BI (art. 19 TUB) sia a quella antitrust (art. 6 l. 287/1990), in particolare le acquisizioni di controllo di banche, le due autorità si accordassero per il rilascio di un unico atto (cioè un provvedimento congiunto). Il problema sorgeva nel momento in cui una delle due autorità non era favorevole all'operazione: l'inesistenza dell'atto (in quanto mai "pubblicato") implicava anche l'inoppugnabilità dello stesso. Per questo motivo, il legislatore ha successivamente optato per l'abrogazione dei commi 12-14 dell'art. 19, prevedendo il rilascio di due provvedimenti distinti (nuovo art. 20, comma 5, l. 287/1990).
-
-*(pagina 6–7)*

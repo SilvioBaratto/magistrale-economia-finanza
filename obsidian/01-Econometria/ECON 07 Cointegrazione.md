@@ -13,11 +13,9 @@ generated: 2026-07-10
 
 ## Motivazione: serie non stazionarie che si muovono insieme
 
-**Corso**: Econometria — *Introduzione alla Cointegrazione*, Davide Raggi, 10 dicembre 2025.
+Una variabile economica osservata come serie storica può avere un comportamento non stazionario, ma può evolvere in maniera simile ad altre variabili (a loro volta non stazionarie): pur essendo erratica, può non discostarsi mai, in maniera sistematica, da altre.
 
-Una variabile economica osservata come serie storica può avere un comportamento **non stazionario**, ma può evolvere in maniera simile ad altre variabili (a loro volta non stazionarie): pur essendo erratica, può **non discostarsi mai, in maniera sistematica, da altre**.
-
-Questa evenienza può verificarsi quando più variabili tendono a muoversi attorno ad un **unico trend stocastico**. In questo caso, calcolando le differenze a coppie, queste tenderebbero ad essere stazionarie.
+Questa evenienza può verificarsi quando più variabili tendono a muoversi attorno ad un unico trend stocastico. In questo caso, calcolando le differenze a coppie, queste tenderebbero ad essere stazionarie.
 
 ![](assets/econ-07/fig01.png)
 
@@ -27,12 +25,10 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 
 **Figura 2** — La differenza tra tassi d'interesse, o spread $= (R1yr - R90)$, potrebbe sembrare un processo stazionario. Le serie di livello vagano senza un livello medio fisso; lo spread invece oscilla attorno a un valore vicino allo zero, senza trend persistente: la combinazione lineare delle due serie sembra stazionaria anche se le serie singole non lo sono.
 
-*(slide 1–4)*
-
 ## Definizione di cointegrazione: combinazione lineare stazionaria
 
 > [!abstract] Definizione
-> Dall'esempio precedente sembrerebbe che la differenza tra due serie $X$ ed $Y$, definita come $\epsilon_t = Y_t - X_t$, risulti essere stazionaria. In generale si può considerare una **generica combinazione lineare stazionaria** di $X$ ed $Y$:
+> Dall'esempio precedente sembrerebbe che la differenza tra due serie $X$ ed $Y$, definita come $\epsilon_t = Y_t - X_t$, risulti essere stazionaria. In generale si può considerare una generica combinazione lineare stazionaria di $X$ ed $Y$:
 >
 > $$\epsilon_t = \beta_1 Y_t - \beta_2 X_t \propto Y_t - \underbrace{\frac{\beta_2}{\beta_1}}_{=\beta} X_t = Y_t - \beta X_t$$
 >
@@ -42,9 +38,7 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > $$\Delta Y_t = \beta_0 + \beta_1 \Delta X_t + \epsilon_t$$
 >
-> Tuttavia questo modo di procedere può non essere soddisfacente, perché si perdono tutte le informazioni sul comportamento dei **livelli** delle variabili nel lungo periodo, che rappresentano spesso uno degli obiettivi dell'analisi econometrica. La cointegrazione si presta bene all'analisi economica, in quanto permette di formalizzare opportune relazioni tra variabili di lungo periodo, nel contesto di un modello economico teorico.
-
-*(slide 5–6)*
+> Tuttavia questo modo di procedere può non essere soddisfacente, perché si perdono tutte le informazioni sul comportamento dei livelli delle variabili nel lungo periodo, che sono spesso uno degli obiettivi dell'analisi econometrica. La cointegrazione si presta bene all'analisi economica, in quanto permette di formalizzare opportune relazioni tra variabili di lungo periodo, nel contesto di un modello economico teorico.
 
 ## Esempio: due random walk con trend stocastico comune
 
@@ -55,25 +49,23 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > $$X_t = X_{t-1} + \epsilon_{x,t} = \sum_{j=1}^{t} \epsilon_{x,j}$$
 >
-> Di solito, una combinazione lineare di due variabili non stazionarie $X$ ed $Y$ risulta **non stazionaria**, e quindi problematica dal punto di vista inferenziale.
+> Di solito, una combinazione lineare di due variabili non stazionarie $X$ ed $Y$ risulta non stazionaria, e quindi problematica dal punto di vista inferenziale.
 >
 > Tuttavia, si ipotizzi la situazione in cui $\epsilon_{y,j} = \theta \epsilon_{x,j}$. Come conseguenza si avrà che $Y_t = \theta X_t$. In questo caso si dice che $Y_t$ ed $X_t$ condividono lo stesso trend stocastico, in quanto
 >
 > $$Y_t = \theta \sum_{j=1}^{t} \epsilon_{x,j} \qquad \text{ed} \qquad X_t = \sum_{j=1}^{t} \epsilon_{x,j}$$
 >
-> Ne segue che $Y_t - \theta X_t = 0$, relazione che rappresenta, dal punto di vista economico, una situazione di **equilibrio** tra le due variabili, per qualsiasi valore di $t$.
+> Ne segue che $Y_t - \theta X_t = 0$, relazione che descrive, dal punto di vista economico, una situazione di **equilibrio** tra le due variabili, per qualsiasi valore di $t$.
 >
-> Più in generale, se si mantiene l'ipotesi che $\epsilon_{x,t}$ ed $\epsilon_{y,t}$ siano proporzionali, ma non IID (ad esempio autocorrelate), la sequenza di deviazioni dall'equilibrio potrebbe essere espressa da
+> Più in generale, se $\epsilon_{x,t}$ ed $\epsilon_{y,t}$ non sono esattamente proporzionali, la sequenza di deviazioni dall'equilibrio può essere espressa da
 >
 > $$\epsilon_t = Y_t - \theta X_t$$
 >
-> in cui $\epsilon_t$ non è sistematicamente nulla ma risulta **stazionaria**.
+> in cui $\epsilon_t$ non è identicamente nulla ma può risultare stazionaria.
 >
-> **Definizione.** Si dice che $X$ ed $Y$ sono **cointegrate** se esiste una loro opportuna combinazione lineare che è stazionaria. Tale definizione può essere generalizzata ad una $n$-pla di variabili $(Y, X_1, \ldots, X_{n-1})$.
+> Si dice che $X$ ed $Y$ sono **cointegrate** se esiste una loro opportuna combinazione lineare che è stazionaria. Tale definizione può essere generalizzata ad una $n$-pla di variabili $(Y, X_1, \ldots, X_{n-1})$.
 >
-> Dal punto di vista statistico ha quindi senso pensare di stimare il parametro $\theta$, che rappresenta il legame stabile nel tempo tra oggetti che individualmente sono instabili, ma congiuntamente stabili (le slide scrivono «ma congiuntamente lo sono», che letteralmente direbbe «instabili»).
-
-*(slide 7–9)*
+> Dal punto di vista statistico ha quindi senso pensare di stimare il parametro $\theta$, che misura il legame stabile nel tempo tra oggetti che individualmente sono instabili, ma congiuntamente stabili.
 
 ## Stima OLS in presenza di cointegrazione: superconsistenza
 
@@ -88,16 +80,14 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > più velocemente rispetto allo stimatore OLS calcolato nelle ipotesi del modello di regressione con variabili stazionarie.
 >
-> La distribuzione asintotica di $\hat\beta_1$ tuttavia **non è Gaussiana**. Tale distribuzione dipende dalle ipotesi che vengono fatte sul termine di errore $\epsilon_t$, che comunque deve rimanere stazionario. In generale, si dimostra che la statistica $t$ **non si distribuisce come una normale standard**. Un caso particolare, in cui vale l'approssimazione alla Normale, si ha quando $\epsilon_t$ ed $\epsilon_{x,t}$ sono serialmente e mutualmente incorrelati.
-
-*(slide 10)*
+> La distribuzione asintotica di $\hat\beta_1$ tuttavia non è Gaussiana. Tale distribuzione dipende dalle ipotesi che vengono fatte sul termine di errore $\epsilon_t$, che comunque deve rimanere stazionario. In generale, si dimostra che la statistica $t$ non si distribuisce come una normale standard. Un caso particolare, in cui vale l'approssimazione alla Normale, si ha quando $\epsilon_t$ ed $\epsilon_{x,t}$ sono serialmente e mutualmente incorrelati.
 
 ## Lo stimatore DOLS (Dynamic OLS)
 
 > [!abstract] Definizione
 > In termini pratici, con variabili cointegrate si ottengono stime puntuali molto accurate grazie alla superconsistenza. Non si possono però costruire statistiche test opportune, a causa della distribuzione asintotica non standard della statistica $t$.
 >
-> Una soluzione è stata proposta da **Stock e Watson (1993)** con lo stimatore **DOLS (Dynamic Ordinary Least Squares)** per $\beta_1$. Tale stimatore si basa sulla stima OLS della regressione aumentata:
+> Una soluzione è stata proposta da Stock e Watson (1993) con lo stimatore **DOLS (Dynamic Ordinary Least Squares)** per $\beta_1$. Tale stimatore si basa sulla stima OLS della regressione aumentata:
 >
 > $$Y_t = \beta_0 + \beta_1 X_t + \underbrace{\gamma_0 \Delta X_t + \gamma_{-1}\Delta X_{t-1} + \ldots + \gamma_{-\ell_T}\Delta X_{t-\ell_T}}_{\text{lags}} + \underbrace{\gamma_1 \Delta X_{t+1} + \ldots + \gamma_{\ell_T}\Delta X_{t+\ell_T}}_{\text{leads}} + \epsilon_t^*$$
 >
@@ -105,11 +95,9 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > Si noti che i parametri di interesse nel modello aumentato sono solamente $\beta_0$ e $\beta_1$. Gli altri regressori hanno uno scopo puramente tecnico: servono ad eliminare l'effetto dovuto all'eventuale autocorrelazione di $\epsilon_{x,t}$.
 >
-> Anche in questo caso la distribuzione asintotica dello stimatore DOLS $\hat\beta_1$ risulta **non Gaussiana**. In generale i residui del modello rimangono autocorrelati. Occorre quindi utilizzare uno stimatore consistente per gli errori standard che tenga conto dell'autocorrelazione e dell'eteroschedasticità (ad es. **Newey-West** o **HAC**).
+> Anche in questo caso la distribuzione asintotica dello stimatore DOLS $\hat\beta_1$ risulta non Gaussiana. In generale i residui del modello rimangono autocorrelati. Occorre quindi utilizzare uno stimatore consistente per gli errori standard che tenga conto dell'autocorrelazione e dell'eteroschedasticità (ad es. Newey-West o HAC).
 >
 > La statistica $t$ si distribuisce come una variabile casuale Normale standard sotto l'ipotesi nulla, con la conseguenza che l'inferenza può essere condotta come al solito.
-
-*(slide 11–12)*
 
 ## Test di cointegrazione di Engle-Granger (CDF)
 
@@ -124,16 +112,14 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > Il processo $\epsilon_t$ risulta tuttavia non osservabile. Si ricordi però che gli stimatori OLS e DOLS $\hat\theta$ sono superconsistenti per $\theta$, e quindi $\hat\epsilon_t = Y_t - \hat\theta X_t$ è consistente per $\epsilon_t$.
 >
-> L'idea di **Engle e Granger (1987)** per verificare la presenza di cointegrazione è dunque quella di calcolare un test di radice unitaria per la serie dei residui $\hat\epsilon_t$, ad esempio il test **Dickey-Fuller per la Cointegrazione (CDF)**.
+> L'idea di Engle e Granger (1987) per verificare la presenza di cointegrazione è dunque quella di calcolare un test di radice unitaria per la serie dei residui $\hat\epsilon_t$, ad esempio il test **Dickey-Fuller per la Cointegrazione (CDF)**.
 >
-> **NOTA**: la distribuzione asintotica della statistica CDF cambia a seconda che nella relazione di lungo periodo sia inserita l'intercetta oppure no, e differisce da quella dei test di radice unitaria classici. I principali software econometrici gestiscono automaticamente tali differenze.
-
-*(slide 13–14)*
+> La distribuzione asintotica della statistica CDF cambia a seconda che nella relazione di lungo periodo sia inserita l'intercetta oppure no, e differisce da quella dei test di radice unitaria classici. I principali software econometrici gestiscono automaticamente tali differenze.
 
 ## Esempio applicato: cointegrazione tra tassi di interesse USA (r3 e r60)
 
 > [!example] Esempio
-> Si vuole verificare se le due serie storiche dei tassi di interesse USA, cioé $r3$ (tasso a 3 mesi) ed $r60$ (tasso a 5 anni), sono cointegrate. Occorre:
+> Si vuole verificare se le due serie storiche dei tassi di interesse USA, cioè $r3$ (tasso a 3 mesi) ed $r60$ (tasso a 5 anni), sono cointegrate. Occorre:
 >
 > 1. Verificare se $r3$ e $r60$ sono non stazionarie (integrate);
 > 2. Stimare l'eventuale relazione di cointegrazione tramite OLS: $r60_t = a + b\, r3_t + \epsilon_t$;
@@ -141,16 +127,16 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > ![](assets/econ-07/fig03.png)
 >
-> **Figura 3** — Tassi USA a 3 mesi ed a 5 anni osservati da Dicembre 1946 a Febbraio 1991 (le slide riportano 1992, ma il campione è 1946:12-1991:02, $T = 531$ osservazioni mensili, tante quante ne contiene il dataset). Le due serie ($r3$ e $r60$) hanno andamenti simili, con picchi comuni (in particolare attorno al 1980): la cointegrazione è plausibile.
+> **Figura 3** — Tassi USA a 3 mesi ed a 5 anni osservati da Dicembre 1946 a Febbraio 1991 (campione 1946:12-1991:02, $T = 531$ osservazioni mensili). Le due serie ($r3$ e $r60$) hanno andamenti simili, con picchi comuni (in particolare attorno al 1980): la cointegrazione è plausibile.
 >
-> **Passo 1 — Test ADF sulle singole serie.** I test ADF evidenziano che entrambe le serie sono non stazionarie:
+> Nel primo passo, i test ADF sulle singole serie evidenziano che entrambe sono non stazionarie:
 >
 > | Serie | Ritardi di (1-L) inclusi | Specificazione | p-value asintotico |
 > |---|---|---|---|
 > | r3 | 8 | Test con costante | 0.3643 |
 > | r60 | 7 | Test con costante | 0.5203 |
 >
-> **Passo 2 — Stima della relazione di cointegrazione.** OLS, usando le osservazioni 1946:12-1991:02 ($T = 531$), variabile dipendente $r60$:
+> Nel secondo passo si stima la relazione di cointegrazione con OLS, usando le osservazioni 1946:12-1991:02 ($T = 531$), variabile dipendente $r60$:
 >
 > | | coefficiente | errore std. | rapporto t | p-value |
 > |---|---|---|---|---|
@@ -161,11 +147,11 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > Si stimano quindi i residui del modello $\hat\epsilon_t$.
 >
-> **Passo 3 — Test CDF sui residui.** Si calcola da: Modello ⇒ Serie Storiche Multivariate ⇒ Test di Cointegrazione (Engle-Granger). Vengono riportati i test di stazionarietà delle serie storiche individuali, la relazione di cointegrazione eventuale e l'opportuno test ADF sui residui (di seguito solo l'ultimo passo, poiché i risultati dei passi precedenti coincidono con quelli già mostrati).
+> Nel terzo passo il test CDF sui residui si calcola dal menu Modello ⇒ Serie Storiche Multivariate ⇒ Test di Cointegrazione (Engle-Granger). Vengono riportati i test di stazionarietà delle serie storiche individuali, la relazione di cointegrazione eventuale e l'opportuno test ADF sui residui (di seguito solo l'ultimo passo, poiché i risultati dei passi precedenti coincidono con quelli già mostrati).
 >
-> **Passo 4 — Test per una radice unitaria in uhat.** Test Dickey-Fuller aumentato per uhat, inclusi 12 ritardi di (1-L)uhat, ampiezza campionaria 518. Ipotesi nulla di radice unitaria: $a = 1$.
+> L'output riporta il test per una radice unitaria in uhat: test Dickey-Fuller aumentato per uhat, inclusi 12 ritardi di (1-L)uhat, ampiezza campionaria 518. Ipotesi nulla di radice unitaria: $a = 1$.
 >
-> Modello: $(1-L)y = b_0 + (a-1)y_{(-1)} + \ldots + e$
+> Modello: $(1-L)y = (a-1)y_{(-1)} + \ldots + e$
 >
 > - Coefficiente di autocorrelazione del prim'ordine per $e$: -0.000
 > - Differenze ritardate: $F(12, 505) = 1.793\ [0.0464]$
@@ -173,9 +159,7 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 > - Statistica test: $\tau_c(2) = -3.44665$
 > - p-value asintotico: 0.03747
 >
-> Il p-value del test CDF sui residui è basso (0.03747, sotto il 5% ma non sotto l'1%), per cui si rifiuta l'ipotesi nulla di radice unitaria nei residui: $r3$ ed $r60$ risultano **cointegrate**.
-
-*(slide 15–20)*
+> Il p-value del test CDF sui residui è basso (0.03747, sotto il 5% ma non sotto l'1%), per cui si rifiuta l'ipotesi nulla di radice unitaria nei residui: $r3$ ed $r60$ risultano cointegrate.
 
 ## Dal modello ADL(1,1) al Modello a Correzione dell'Errore (ECM)
 
@@ -196,11 +180,9 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > $$\Delta Y_t = \beta_0 \Delta X_t + (\alpha_1 - 1)\underbrace{(Y_{t-1} - a - bX_{t-1})}_{\text{disequilibrio a } t-1} + \epsilon_t$$
 >
-> Il modello così definito evidenzia un **meccanismo a correzione dell'errore**. In particolare una variazione della variabile dipendente viene spiegata da una variazione del regressore $X_t$ e dall'eventuale scostamento dall'equilibrio (disequilibrio) realizzatosi nel periodo precedente. Anche ipotizzando che $\Delta X_t = 0$ e che $\epsilon_t = 0$, la variazione di $Y_t$ risulta diversa da $0$ in virtù del fatto che $Y_{t-1} \neq a + bX_{t-1}$ (le slide scrivono $cX_{t-1}$, simbolo mai definito: la relazione di lungo periodo è $Y = a + bX$).
+> Il modello così definito evidenzia un **meccanismo a correzione dell'errore**. In particolare una variazione della variabile dipendente viene spiegata da una variazione del regressore $X_t$ e dall'eventuale scostamento dall'equilibrio (disequilibrio) realizzatosi nel periodo precedente. Anche ipotizzando che $\Delta X_t = 0$ e che $\epsilon_t = 0$, la variazione di $Y_t$ risulta diversa da $0$ in virtù del fatto che $Y_{t-1} \neq a + bX_{t-1}$, essendo $Y = a + bX$ la relazione di lungo periodo.
 >
 > La velocità del ritorno all'equilibrio statico dipende dal valore del coefficiente $(\alpha_1 - 1)$.
-
-*(slide 21–22)*
 
 ## Interpretazione del coefficiente di aggiustamento e dinamica di ritorno all'equilibrio
 
@@ -221,11 +203,7 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > $$\Delta Y_{t+j} = \alpha_y(1+\alpha_y)^j (Y_{t-1} - bX_{t-1})$$
 >
-> (Le slide scrivono $Y_{t+j-1} - bX_{t+j-1}$ e $\Delta Y_{t+h}$: incoerente con i passaggi precedenti, dove il fattore $(1+\alpha_y)^j$ moltiplica il disequilibrio iniziale a $t-1$; con il disequilibrio a $t+j-1$ non comparirebbe alcuna potenza.)
->
 > Quando $\Delta Y_{t+j} = 0$, il disequilibrio passato è stato riassorbito completamente dal sistema (non essendoci altre variabili che possono aver influenzato la dipendente, in particolare shock e regressori esogeni, che sono fissati).
-
-*(slide 23–24)*
 
 ## Esempio applicato: ECM per i tassi di interesse USA
 
@@ -236,12 +214,12 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > Per stimare questo modello occorre conoscere $r60_{t-1} - a - br3_{t-1}$. Ma questi non sono altro che i residui della relazione di cointegrazione calcolati ad un ritardo. Quindi per stimare il modello a correzione dell'errore è sufficiente definire $\Delta r3_t$, $\Delta r60_t$ ed $\hat\epsilon_{t-1}$.
 >
-> **Procedura operativa (gretl)**:
+> In gretl la procedura è la seguente:
 > - Le variabili $\Delta r3_t$ e $\Delta r60_t$ si calcolano dal menu Aggiungi ⇒ Differenze delle Variabili Selezionate.
 > - I residui $\hat\epsilon_t$ si stimano a partire dall'output standard del modello di regressione $r60_t = a + br3_t + \epsilon_t$, usando il menu Salva ⇒ Residui ⇒ Nome dei residui.
 > - Il modello ECM si stima dal menu Modello ⇒ OLS, definendo i regressori e la variabile dipendente. Per includere il ritardo di $\hat\epsilon_t$ basta usare l'opzione Ritardi e definire 1 sia come ritardo minimo che come ritardo massimo.
 >
-> **Risultato.** OLS, usando le osservazioni 1947:01-1991:02 ($T = 530$), variabile dipendente $d\_r60$:
+> La stima OLS, usando le osservazioni 1947:01-1991:02 ($T = 530$), con variabile dipendente $d\_r60$, dà:
 >
 > | | coefficiente | errore std. | rapporto t | p-value |
 > |---|---|---|---|---|
@@ -251,14 +229,12 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > E.S. della regressione: 0.268831.
 >
-> Il coefficiente di $uhat\_1$ suggerisce che un disequilibrio osservato a $t-1$ viene assorbito nella misura di circa 0.066 punti percentuali al periodo $t$ per ogni punto percentuale di scostamento, cioè circa il 6.6% del disequilibrio per mese (le slide riportano 0.065, ma il coefficiente è $-0.0658423$).
-
-*(slide 25–27)*
+> Il coefficiente di $uhat\_1$ suggerisce che un disequilibrio osservato a $t-1$ viene assorbito nella misura di circa 0.066 punti percentuali al periodo $t$ per ogni punto percentuale di scostamento, cioè circa il 6.6% del disequilibrio per mese.
 
 ## La rappresentazione VECM (Vector Error Correction Mechanism)
 
 > [!note] Dimostrazione
-> Le relazioni di cointegrazione si prestano bene ad analizzare modelli di equilibrio economico nel contesto di modelli dinamici. Si consideri ad esempio un modello **multivariato**, che descrive congiuntamente la dinamica di due variabili non stazionarie $X$ ed $Y$:
+> Le relazioni di cointegrazione si prestano bene ad analizzare modelli di equilibrio economico nel contesto di modelli dinamici. Si consideri ad esempio un modello multivariato, che descrive congiuntamente la dinamica di due variabili non stazionarie $X$ ed $Y$:
 >
 > $$X_t = \delta_x + \phi_{11}X_{t-1} + \phi_{12}Y_{t-1} + \epsilon_{x,t}$$
 >
@@ -270,19 +246,17 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > $$\Delta Y_t = \delta_y - (1-\phi_{22})(Y_{t-1} - \beta_y X_{t-1}) + \epsilon_{y,t}$$
 >
-> (Le slide riportano $-\phi_{12}$ nella prima equazione; dal modello per $X_t$ scritto sopra il segno risulta $+\phi_{12}$, con $\beta_x = (1-\phi_{11})/\phi_{12}$, e $\beta_y = \phi_{21}/(1-\phi_{22})$. Di conseguenza nella forma finale $\alpha_x = -\phi_{12}$.)
+> Si ha $\beta_x = (1-\phi_{11})/\phi_{12}$ e $\beta_y = \phi_{21}/(1-\phi_{22})$; di conseguenza nella forma finale $\alpha_x = -\phi_{12}$ e $\alpha_y = 1-\phi_{22}$. Nel VECM $\alpha_y$ compare con il segno meno, mentre nell'ECM a equazione singola $\alpha_y = \alpha_1 - 1$ compare con il segno più: lo stesso aggiustamento verso l'equilibrio corrisponde ad $\alpha_y > 0$ nel VECM semplificato e ad $\alpha_y < 0$ nell'ECM.
 >
 > $\Delta X_t$, $\Delta Y_t$, $\epsilon_{x,t}$ ed $\epsilon_{y,t}$ sono stazionari per costruzione. Il modello risulta ben definito solo se $(Y_{t-1} - \beta_x X_{t-1})$ e $(Y_{t-1} - \beta_y X_{t-1})$ sono stazionarie. Di conseguenza deve esistere una relazione di cointegrazione tra $X$ ed $Y$.
 >
-> È possibile dimostrare che, nel caso di soli due processi cointegrati, tutti i possibili coefficienti di cointegrazione sono **proporzionali**. Questo consente di ottenere $\beta_x = \beta_y = \beta$ e quindi:
+> È possibile dimostrare che, nel caso di soli due processi cointegrati, tutti i possibili coefficienti di cointegrazione sono proporzionali. Questo consente di ottenere $\beta_x = \beta_y = \beta$ e quindi:
 >
 > $$\Delta X_t = \delta_x - \alpha_x(Y_{t-1} - \beta X_{t-1}) + \epsilon_{x,t}$$
 >
 > $$\Delta Y_t = \delta_y - \alpha_y(Y_{t-1} - \beta X_{t-1}) + \epsilon_{y,t}$$
 >
 > Questo modello è definito **Meccanismo a Correzione dell'Errore Vettoriale**, o **VECM** (Vector Error Correction Mechanism).
-
-*(slide 28–29)*
 
 ## VECM semplificato e interpretazione economica dell'aggiustamento
 
@@ -301,15 +275,13 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > Sulla base del modello precedente si possono verificare 3 possibili situazioni:
 >
-> (a) **Nessun disequilibrio a $t-1$**, cioé $Y_{t-1} = \beta X_{t-1}$, per cui $E[Y_t\,|\,\text{passato}] = Y_{t-1}$. Se a $t-1$ si osserva equilibrio, ci si aspetta che le variabili rimangano in tale situazione.
+> (a) Nessun disequilibrio a $t-1$, cioè $Y_{t-1} = \beta X_{t-1}$, per cui $E[Y_t\,|\,\text{passato}] = Y_{t-1}$. Se a $t-1$ si osserva equilibrio, ci si aspetta che le variabili rimangano in tale situazione.
 >
-> (b) **$Y_{t-1} > \beta X_{t-1}$**: ci si attende una variazione negativa di $Y$. Per compensare un disequilibrio positivo occorre che $Y_t$ decresca per tornare in equilibrio.
+> (b) $Y_{t-1} > \beta X_{t-1}$: ci si attende una variazione negativa di $Y$. Per compensare un disequilibrio positivo occorre che $Y_t$ decresca per tornare in equilibrio.
 >
-> (c) **$Y_{t-1} < \beta X_{t-1}$**: ci si trova in una situazione sotto il livello di equilibrio; per compensare a tale situazione ci si aspetta che $Y$ cresca.
+> (c) $Y_{t-1} < \beta X_{t-1}$: ci si trova in una situazione sotto il livello di equilibrio; per compensare a tale situazione ci si aspetta che $Y$ cresca.
 >
 > La velocità con cui si ritorna ad un livello di equilibrio è determinata dal coefficiente $\alpha_y > 0$.
-
-*(slide 30–31)*
 
 ## Esempio: ritorno all'equilibrio nel VECM semplificato
 
@@ -335,10 +307,6 @@ Questa evenienza può verificarsi quando più variabili tendono a muoversi attor
 >
 > $$\Rightarrow \Delta Y_{t+j+1} = -\alpha_y(1-\alpha_y)(Y_{t+j-1}-\beta X_{t+j-1}), \quad \forall j \ge 0$$
 >
-> (Le slide scrivono la ricorsione al contrario, $Y_{t+j-1} - \beta X_{t+j-1} = (1-\alpha_y)(Y_{t+j} - \beta X_{t+j})$, e $\Delta Y_{t+j}$ al primo membro: le forme sopra coincidono con i passaggi già visti per $j = 0$ e $j = 1$.)
->
 > ![](assets/econ-07/fig04.png)
 >
-> **Figura** — *Andamento di $E[\Delta Y_t\,|\,\text{passato}]$ per diversi valori di $\alpha_y$* ($\alpha_y = 0.5$, $\alpha_y = 1$, $\alpha_y = 2$), sull'orizzonte temporale $t = 0, \ldots, 10$, partendo da un disequilibrio iniziale pari a 2. Con $\alpha_y = 1$ il disequilibrio viene riassorbito immediatamente (un solo periodo), con $\alpha_y = 0.5$ il ritorno all'equilibrio è più lento e monotono, mentre la curva etichettata $\alpha_y = 2$ oscilla attorno allo zero con ampiezza decrescente prima di stabilizzarsi (il rapporto tra due valori successivi è $1-\alpha_y = -0.5$, che corrisponde a $\alpha_y = 1.5$: l'etichetta delle slide non è coerente con il modello, perché con $\alpha_y = 2$ il rapporto sarebbe $-1$ e l'oscillazione resterebbe di ampiezza costante). In generale valori di $\alpha_y$ tra 1 e 2 generano un aggiustamento oscillante con ampiezza decrescente (overshooting), $\alpha_y = 2$ un'oscillazione di ampiezza costante, $\alpha_y > 2$ un'oscillazione esplosiva, mentre valori tra 0 e 1 generano un aggiustamento monotono verso l'equilibrio.
-
-*(slide 32–33)*
+> **Figura** — *Andamento di $E[\Delta Y_t\,|\,\text{passato}]$ per diversi valori di $\alpha_y$* ($\alpha_y = 0.5$, $\alpha_y = 1$, $\alpha_y = 1.5$), sull'orizzonte temporale $t = 0, \ldots, 10$, partendo da un disequilibrio iniziale pari a 2. Con $\alpha_y = 1$ il disequilibrio viene riassorbito immediatamente (un solo periodo), con $\alpha_y = 0.5$ il ritorno all'equilibrio è più lento e monotono, mentre con $\alpha_y = 1.5$ la curva oscilla attorno allo zero con ampiezza decrescente prima di stabilizzarsi (il rapporto tra due valori successivi è $1-\alpha_y = -0.5$). In generale valori di $\alpha_y$ tra 1 e 2 generano un aggiustamento oscillante con ampiezza decrescente (overshooting), $\alpha_y = 2$ un'oscillazione di ampiezza costante, $\alpha_y > 2$ un'oscillazione esplosiva, mentre valori tra 0 e 1 generano un aggiustamento monotono verso l'equilibrio.

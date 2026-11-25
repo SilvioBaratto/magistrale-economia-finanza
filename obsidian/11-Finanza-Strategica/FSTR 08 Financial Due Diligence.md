@@ -50,9 +50,7 @@ Nel metodo dei multipli l'Enterprise Value si ottiene moltiplicando l'EBITDA per
 
 ![](assets/fstr-08/fig01.png)
 
-**Figura 1** — Dall'EBITDA all'Equity Value: l'Enterprise Value, ottenuto come EBITDA per multiplo, si scompone in Equity Value (blocco superiore) e debito misurato dalla PFN (blocco inferiore). EBITDA e PFN sono le due grandezze evidenziate perché la prima determina l'Enterprise Value e la seconda è la quota da sottrarre per ottenere il prezzo.
-
-L'attenzione della due diligence si concentra perciò sulla corretta determinazione dell'EBITDA, da cui l'Enterprise Value discende tramite il multiplo, e della PFN, che viene sottratta per ottenere il prezzo.
+**Figura 1** — Dall'EBITDA all'Equity Value: l'Enterprise Value, ottenuto come EBITDA per multiplo, si scompone in Equity Value (blocco superiore) e debito misurato dalla PFN (blocco inferiore). EBITDA e PFN sono le due grandezze evidenziate.
 
 ## I tre indicatori: EBITDA, PFN e CCN
 
@@ -62,18 +60,15 @@ L'EBITDA è la grandezza a cui si applica il multiplo per valutare l'azienda e d
 
 ### PFN
 
-Poiché l'Equity Value è pari all'Enterprise Value meno la PFN, un debito sottostimato fa salire il prezzo. La PFN va quindi normalizzata, in modo che rappresenti il reale valore dell'indebitamento aziendale. Si vuole così evitare che una PFN anomalamente bassa costringa l'acquirente a pagare un prezzo immotivatamente elevato.
+Poiché l'Equity Value è pari all'Enterprise Value meno la PFN, un debito sottostimato fa salire il prezzo. La PFN va quindi normalizzata, in modo che esprima il reale valore dell'indebitamento aziendale e che una PFN anomalamente bassa non costringa l'acquirente a pagare un prezzo immotivatamente elevato.
 
 ### CCN
 
-Il capitale circolante netto (CCN) varia in base a tre grandezze principali: i crediti commerciali e le rimanenze di magazzino, che lo aumentano, e i debiti commerciali, che lo riducono. La stagionalità del business può influire sul suo livello. La verifica serve a evitare che un CCN anomalamente basso costringa l'acquirente a esborsi finanziari subito dopo l'acquisizione.
+Il capitale circolante netto (CCN) varia in base a tre grandezze principali: i crediti commerciali e le rimanenze di magazzino, che lo aumentano, e i debiti commerciali, che lo riducono. La stagionalità del business può influire sul suo livello. Il controllo del livello serve a evitare che un CCN anomalamente basso costringa l'acquirente a esborsi finanziari subito dopo l'acquisizione.
 
-> [!lezione] Dalla lezione del 20 novembre 2026: CCN e PFN come vasi comunicanti
-> CCN e PFN sono due vasi comunicanti: pagare o non pagare i fornitori, per esempio, ha un riflesso sulla liquidità, e il denaro scorre dall'uno all'altra. Il tema sarà ripreso con KPMG, quando spiegherà questi concetti.
->
-> Nella due diligence si guarda l'andamento del CCN mensilizzato, cioè crediti, debiti e rimanenze mese per mese nei due anni precedenti il deal. Se a parità di ricavi i debiti verso fornitori si dilatano o le scadenze aumentano, vuol dire che il venditore, in vista della vendita, sta rimandando i pagamenti per trattenere la cassa, che poi gli viene riconosciuta nel prezzo.
->
-> Queste grandezze sono contabili, ma sono la base per ragionare sui numeri, quindi è importante valorizzarle e sapere come funzionano. Lo stesso vale per le rimanenze, che apparentemente non hanno impatto sulla cassa: si potrebbe pensare di guardare solo il flusso, la PFN e il debito, ma questi dati provengono dal bilancio. Rimanenze particolarmente sgonfie, gonfie o valutate in modo anomalo hanno impatto sulla liquidità e sul circolante.
+CCN e PFN sono vasi comunicanti: pagare o non pagare i fornitori, per esempio, ha un riflesso sulla liquidità, e la liquidità si sposta dal CCN alla PFN e viceversa. Per questo la due diligence esamina l'andamento mensilizzato del CCN, cioè crediti, debiti e rimanenze mese per mese nei due anni precedenti l'operazione. Se a parità di ricavi i debiti verso fornitori si dilatano o le scadenze aumentano, il venditore sta rimandando i pagamenti in vista della vendita per trattenere cassa, con l'effetto sul prezzo descritto più avanti a proposito della PFN.
+
+Anche le rimanenze, che apparentemente non hanno impatto sulla cassa, incidono su liquidità e circolante quando sono anomale per livello (troppo basse o troppo alte) o per valutazione, perché i dati su flussi, PFN e debito provengono dal bilancio.
 
 ## EBITDA: definizione e normalizzazione
 
@@ -172,7 +167,7 @@ L'EBITDA civilistico si ottiene aggiungendo alla differenza tra valore e costi d
 
 ### Normalizzazione dell'EBITDA 2020
 
-Ogni rettifica (*adjustment*) positiva aumenta l'EBITDA, ogni rettifica negativa lo riduce. L'ultima riga della tabella è l'EBITDA rettificato.
+Ogni rettifica (*adjustment*) positiva aumenta l'EBITDA, ogni rettifica negativa lo riduce.
 
 > [!example] Esempio
 >
@@ -193,7 +188,7 @@ Le rettifiche, numerate come nella tabella, si giustificano come segue.
 
 1. La buonuscita di 100.000 euro all'amministratore, registrata tra i costi per servizi, è un costo non ricorrente. Si somma all'EBITDA, eliminando il suo effetto negativo.
 2. Il rilascio del fondo di 161.000 euro, accantonato negli esercizi precedenti per la causa poi vinta con il cliente, è un provento che non appartiene alla competenza del 2020. Si sottrae.
-3. La plusvalenza sulla cessione dell'immobile non più operativo è un ricavo non inerente all'attività caratteristica e si sottrae. La tabella rettifica 5.000 euro, ma i dati forniti (prezzo di cessione 300.000 euro, valore netto contabile 205.000 euro) indicano una plusvalenza di 95.000 euro. Il totale di 169.917 euro è calcolato con la rettifica di 5.000; con 95.000 euro l'EBITDA rettificato sarebbe 79.917 euro.
+3. La plusvalenza sulla cessione dell'immobile non più operativo è un ricavo non inerente all'attività caratteristica e si sottrae. Dal prezzo di cessione (300.000 euro) e dal valore netto contabile (205.000 euro) la plusvalenza risulta di 95.000 euro, mentre la rettifica applicata nella tabella è di 5.000 euro. Il totale di 169.917 euro è calcolato con la rettifica di 5.000 euro; con 95.000 euro l'EBITDA rettificato sarebbe 79.917 euro.
 4. Le spese bancarie di 1.500 euro sono state contabilizzate tra gli oneri finanziari, quindi sotto l'EBITDA. Poiché sono costi operativi, vanno incluse nell'EBITDA, che si riduce di 1.500 euro.
 5. Le manutenzioni ordinarie hanno un'incidenza del 12-13% sul costo storico degli impianti nel 2016-2018 e solo del 3% e del 2% nel 2019 e nel 2020. Il livello congruo è la media del triennio 2016-2018, anteriore al calo: (90.292 + 95.821 + 92.108) / 3 = 92.740 euro. Le manutenzioni 2020 sono 15.487 euro e la differenza, 92.740 − 15.487 = 77.253 euro, si sottrae per riportare la spesa a un livello sostenibile nel tempo.
 6. La possibile perdita di 32.000 euro sul contenzioso con il cliente, emersa a maggio 2020, è di competenza del 2020 anche se non è ancora recepita in bilancio. Si sottrae.
@@ -215,16 +210,15 @@ Le rettifiche riducono l'EBITDA di 269.795 euro. A parità di multiplo, l'Enterp
 >
 > La PFN è positiva se i debiti finanziari superano le disponibilità liquide e negativa se sono inferiori a esse.
 
-La PFN rappresenta il debito che serve a finanziare il business. Può variare alla data di *closing* dell'operazione, per cui si procede a un *price adjustment* (aggiustamento del prezzo). Ai fini della transazione la sua definizione è spesso fissata per contratto e può comprendere, per esempio, i debiti, i fornitori scaduti e il TFR (trattamento di fine rapporto).
+La PFN è il debito che serve a finanziare il business. Può variare alla data di *closing* dell'operazione, per cui si procede a un *price adjustment* (aggiustamento del prezzo). Il prezzo pagato ne tiene conto già nelle lettere di intenti e nelle manifestazioni di interesse, e ai fini della transazione la sua definizione è spesso fissata nel dettaglio per contratto e può comprendere, per esempio, i debiti, i fornitori scaduti e il TFR (trattamento di fine rapporto).
 
-> [!lezione] Dalla lezione del 20 novembre 2026: CCN o PFN, il fornitore scaduto e il TFR
-> Un punto discusso in termini di valutazione, che si ritrova per esempio nelle lettere di intenti o nelle manifestazioni di interesse, è che il prezzo pagato tiene conto della posizione finanziaria netta, e nei contratti la PFN è spesso dettagliata. Un fornitore scaduto da sei mesi va nel CCN o nella PFN? Si consideri un'azienda come MSC che deve pagare le lamiere di una nave e ha 5-6 milioni di euro di debito verso un fornitore come Ilva o Arvedi, non pagato da sei mesi. È un debito verso fornitori, quindi si può metterlo nel CCN, perché i fornitori vanno nel CCN; ma è scaduto da sei o otto mesi, perché Arvedi viene pagato a otto mesi.
->
-> Alcune poste non sono quindi così liquide e trasparenti. Lo stesso vale per il TFR: il debito per trattamento di fine rapporto è la quantità di accantonamento che l'azienda fa ogni anno in previsione del momento in cui i dipendenti lasceranno l'azienda, per dimissioni o per pensionamento. È un impegno dell'azienda e sembrerebbe qualcosa di operativo, perché riguarda il personale: come i debiti verso il personale vanno nel CCN, dovrebbe andarci anche il debito per TFR. È anche vero che è un debito con scadenza lunghissima, dura quanto l'azienda e il fondo TFR non si chiude mai, a meno che l'azienda non lasci a casa tutti. Diventa quasi una forma di finanziamento e prende le caratteristiche di un debito finanziario, come i debiti verso fornitori scaduti da moltissimo tempo.
->
-> Chi paga mediamente i fornitori a 60 giorni vede uscire la cassa e sparire il debito, che poi si rigenera. Chi vuole vendere e mostrare molta cassa può avere l'idea di smettere di pagare i fornitori. L'acquirente chiede allora quanta cassa ci sia, e questa cassa va riconosciuta nel prezzo, come il sacco di denaro dentro la casa. Ma da dove deriva quel denaro? Dal fatto che l'azienda è brava a fare business o dal fatto che ha smesso di pagare le persone? Per questo occorre quantificare la PFN: i venditori ci giocano, e l'acquirente cerca di avere la PFN completa e di capire che nessun aspetto del CCN si annidi come elemento di PFN.
->
-> Se si smette di pagare un fornitore, o ci si accorda per pagarlo a dieci mesi, al 31 dicembre si ha cassa che l'acquirente deve riconoscere, mentre il debito verso il fornitore non viene valorizzato nel prezzo perché sta nel CCN. Se il venditore riesce a infilare nei debiti verso fornitori una forma celata di finanziamento, si porta a casa quei soldi: chi compra paga la cassa e poi si trova un debito da pagare. L'acquirente risponde che quello non è un normale ciclo di fornitura, ma un modo di finanziarsi, perché quel fornitore è come una banca. Se il fornitore è disposto ad aspettare otto mesi per avere i soldi, tanto vale andare da un istituto di credito e farsi concedere una linea di debito a un anno: non cambia niente. Un fornitore non pagato per dieci mesi è nella sostanza una banca, e quindi quel debito è un debito finanziario, rientra nella PFN e si scala dal prezzo. Il tentativo non funziona.
+Alcune poste non sono né liquide né trasparenti e la loro collocazione tra CCN e PFN è dubbia. È il caso di un debito verso fornitori scaduto da molto tempo. Si consideri un'impresa cantieristica con un debito di 5-6 milioni di euro verso il fornitore delle lamiere per le navi. Il debito è verso fornitori e come tale può essere collocato nel CCN, ma è scaduto da sei-otto mesi.
+
+Un caso analogo è il TFR. Il debito per trattamento di fine rapporto è l'accantonamento che l'azienda effettua ogni anno in previsione dell'uscita dei dipendenti, per dimissioni o per pensionamento. È un impegno dell'azienda e, riguardando il personale, sembra una posta operativa: come i debiti verso il personale rientrano nel CCN, vi dovrebbe rientrare anche il debito per TFR. Ha però scadenza lunghissima: dura quanto l'azienda e il fondo TFR non si chiude mai, salvo il caso di cessazione di tutti i rapporti di lavoro. Assume così le caratteristiche di un debito finanziario, come i debiti verso fornitori scaduti da moltissimo tempo.
+
+Il venditore che vuole mostrare molta cassa può smettere di pagare i fornitori. Un'impresa che li paga mediamente a 60 giorni vede uscire la cassa e sparire il debito, che poi si rigenera. Se invece interrompe i pagamenti o concorda con il fornitore un pagamento a dieci mesi, al 31 dicembre dispone di una cassa che l'acquirente deve riconoscere nel prezzo, mentre il debito verso il fornitore, collocato nel CCN, non viene valorizzato nel prezzo. Occorre allora chiedersi da dove derivi quel denaro: dalla capacità dell'azienda di fare business o dal fatto di aver smesso di pagare i fornitori. Se il venditore riesce a inserire tra i debiti verso fornitori una forma celata di finanziamento, trattiene quel denaro: chi compra paga la cassa e si trova poi un debito da pagare.
+
+L'acquirente può replicare che quella dilazione è un modo di finanziarsi e non un normale ciclo di fornitura, perché il fornitore svolge la funzione di una banca: se è disposto ad aspettare otto mesi per essere pagato, tanto varrebbe ottenere da un istituto di credito una linea di debito a un anno, senza alcuna differenza. Un debito verso fornitori non pagato da dieci mesi è quindi un debito finanziario, rientra nella PFN e si scala dal prezzo, e il tentativo del venditore non produce l'effetto voluto. La PFN va perciò quantificata in modo completo, perché è una grandezza su cui i venditori intervengono, e l'acquirente verifica che nessun elemento del CCN si annidi tra le componenti della PFN.
 
 Per normalizzare la PFN occorre stabilire quali voci rientrano nei debiti finanziari. L'analisi riguarda:
 
@@ -332,6 +326,6 @@ Ogni rettifica della tabella aumenta la PFN.
 
 La PFN rettificata è 9.448.664 + 360.000 + 55.000 + 77.000 + 155.000 = 10.095.664 euro, cioè 647.000 euro in più di quella civilistica. A parità di Enterprise Value l'Equity Value si riduce dello stesso importo.
 
-I debiti verso fornitori di impianti per 55.000 euro, in scadenza il 31 gennaio 2021, non sono rettificati nella tabella.
+I debiti verso fornitori di impianti per 55.000 euro, in scadenza il 31 gennaio 2021, non danno luogo a rettifica.
 
 Dalla lettura dei documenti della dataroom emergono altri elementi il cui impatto resta da quantificare e che non sono inclusi nella tabella: gli adempimenti ambientali (amianto), la messa a norma antincendio delle uscite del capannone e il fatto che uno dei primi dieci fornitori sia una parte correlata.

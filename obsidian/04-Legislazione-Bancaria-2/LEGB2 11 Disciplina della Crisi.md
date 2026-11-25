@@ -20,7 +20,7 @@ La **vecchia legge bancaria** prevedeva due istituti:
 - l'**amministrazione straordinaria**, utilizzata in situazioni ritenute *gravi*;
 - la **liquidazione coatta amministrativa**, utilizzata in casi ritenuti di *eccezionale gravità*.
 
-A seguito della seconda direttiva banche, il TUB — non essendo ancora all'epoca armonizzata a livello europeo la disciplina sulla crisi — aveva ripreso esattamente gli stessi istituti della precedente legge bancaria (restavano comunque evidenti problematiche di carattere interpretativo e applicativo).
+A seguito della seconda direttiva banche, il TUB, non essendo ancora all'epoca armonizzata a livello europeo la disciplina sulla crisi, aveva ripreso esattamente gli stessi istituti della precedente legge bancaria (restavano comunque evidenti problematiche di carattere interpretativo e applicativo).
 
 I cambiamenti più rilevanti sono avvenuti a seguito della ricezione della **direttiva 2014/59/UE**, rubricata come **BRRD** (*Banking Recovery and Resolution Directive*), che ha permesso di armonizzare la disciplina europea in merito alla gestione delle crisi; il legislatore ha aggiunto numerosi articoli ed è stato creato un apposito corpo normativo.
 
@@ -38,7 +38,7 @@ Le misure concretamente adottate per evitare il fallimento del Banco di Napoli f
 2. "alleggerimento" dell'istituto delle posizioni a sofferenza, gestite da una società costituita appositamente, la **SGA**[^46];
 3. emissione di obbligazioni.
 
-Per rendere appetibili le obbligazioni — dal momento che le banche concorrenti non avrebbero voluto sottoscrivere obbligazioni di un loro competitor — il governo utilizzò anche il Decreto Sindona. A seguito di questi interventi la crisi venne superata con successo.
+Per rendere appetibili le obbligazioni, dal momento che le banche concorrenti non avrebbero voluto sottoscrivere obbligazioni di un loro competitor, il governo utilizzò anche il Decreto Sindona. A seguito di questi interventi la crisi venne superata con successo.
 
 Quello del 1996 è l'ultimo salvataggio importante in Italia: la ricapitalizzazione del Tesoro fu preceduta da un piano di ristrutturazione, la SGA (Società per la gestione delle attività) operò come *bad bank* e la Banca d'Italia intervenne ai sensi del decreto Sindona per coprire le perdite sugli attivi ceduti alla SGA; nel 1997 la banca fu acquisita da un altro gruppo bancario.
 
@@ -48,13 +48,11 @@ Fino alla crisi del 2007-2009 l'Italia aveva regole speciali per la crisi delle 
 
 [^46]: Questa società, per aggirare un limite sull'emissione di obbligazioni, venne costituita come società di diritto inglese (che non prevede tale limite) invece che italiano (dove il limite corrisponde al doppio del capitale sociale).
 
-*(pagina 1)*
-
 ## La BRRD e la riforma del Titolo IV del TUB
 
-La BRRD ha preso posizione sulle modalità di gestione di una crisi bancaria. Durante la crisi del 2008 moltissimi Paesi, tra cui Germania e Regno Unito, avevano utilizzato strumenti volti ad aiutare le proprie banche in difficoltà — l'Italia soltanto con l'art. 12 del d.l. 185/2008, che autorizzava il MEF a sottoscrivere strumenti finanziari emessi dalle banche, dal momento che quella crisi era partita da un uso scorretto di strumenti derivati — sostanzialmente aiuti di Stato.
+La BRRD ha preso posizione sulle modalità di gestione di una crisi bancaria. Durante la crisi del 2008 moltissimi Paesi, tra cui Germania e Regno Unito, avevano utilizzato strumenti volti ad aiutare le proprie banche in difficoltà, l'Italia soltanto con l'art. 12 del d.l. 185/2008, che autorizzava il MEF a sottoscrivere strumenti finanziari emessi dalle banche, dal momento che quella crisi era partita da un uso scorretto di strumenti derivati, sostanzialmente aiuti di Stato.
 
-A seguito di quella crisi si è deciso che, se la banca è un'impresa a tutti gli effetti, non può essere lo Stato a supportare i rischi di un'eventuale crisi (anche perché ciò spingerebbe verso comportamenti di *moral hazard*), ma devono essere i creditori ad assumersi il rischio (tranne casi molto particolari) — il principio del **bail-in**.
+A seguito di quella crisi si è deciso che, se la banca è un'impresa a tutti gli effetti, non può essere lo Stato a supportare i rischi di un'eventuale crisi (anche perché ciò spingerebbe verso comportamenti di *moral hazard*), ma devono essere i creditori ad assumersi il rischio (tranne casi molto particolari), il principio del **bail-in**.
 
 La BRRD è stata recepita il **16 novembre 2015** con l'adozione di due decreti legislativi:
 
@@ -96,8 +94,6 @@ La scelta di attivare le misure di risanamento o di intervento precoce spetta al
 
 In Italia la Banca d'Italia è insieme autorità di vigilanza, di risoluzione e di liquidazione; la funzione di risoluzione è affidata a un'Unità di risoluzione e gestione delle crisi, istituita per assicurarne l'autonomia (la direttiva richiede di separare vigilanza e risoluzione con accorgimenti strutturali, senza precludere alla risoluzione l'accesso alle informazioni della vigilanza). Il ministro dell'Economia e delle Finanze approva il provvedimento della Banca d'Italia che dispone l'avvio della risoluzione ed emana il decreto di liquidazione coatta amministrativa; non emana più il decreto di amministrazione straordinaria, che spetta alla sola autorità di vigilanza competente.
 
-*(pagina 2)*
-
 ## I piani di risanamento (artt. 69-quater, 69-sexies, 69-octies TUB)
 
 Questi articoli si collocano nel **Capo 01-I**, relativo ai piani di risanamento: siamo in una parte del TUB dedicata alle **banche sane**, in un momento in cui non vi è ancora alcuna crisi in atto.
@@ -132,8 +128,6 @@ Questi articoli si collocano nel **Capo 01-I**, relativo ai piani di risanamento
 
 I piani sono una novità della direttiva: non si redigono quando la banca è già in difficoltà, ma devono essere pronti anche per banche in ottimo stato di salute. Sono aggiornati ogni anno e in ogni caso di riorganizzazione dell'attività e sono predisposti anche dai gruppi. I piani di risanamento sono redatti dalle singole banche, sono dettagliati, basati su ipotesi realistiche e applicabili in una serie di scenari validi e rigorosi, e tengono conto dell'importanza sistemica della banca o del gruppo e della possibilità di ricorrere al sostegno di altre componenti del gruppo. I piani di risoluzione sono invece predisposti dalle autorità di risoluzione, sulla base delle informazioni delle banche e con la collaborazione delle autorità di vigilanza.
 
-*(pagina 2–3)*
-
 ## Il sostegno finanziario di gruppo (artt. 69-terdecies, 69-quaterdecies, 69-sexiesdecies TUB)
 
 Il **Capo 02-I** è relativo al sostegno finanziario di gruppo: disciplina la possibilità per cui, in caso di necessità, si possa attivare un sostegno finanziario da parte dell'intero gruppo bancario.
@@ -151,8 +145,6 @@ Il **Capo 02-I** è relativo al sostegno finanziario di gruppo: disciplina la po
 ### Art. 69-sexiesdecies TUB: Opposizione della Banca d'Italia e comunicazioni
 
 **Comma 1.** La delibera di concessione del sostegno è trasmessa alla Banca d'Italia, che può vietare o limitarne l'esecuzione se le condizioni per il sostegno finanziario di gruppo di cui all'articolo 69-quinquiesdecies non sono soddisfatte.
-
-*(pagina 4)*
 
 ## I presupposti dell'intervento precoce (artt. 69-octiesdecies e 69-vicies-semel TUB)
 
@@ -185,9 +177,7 @@ Le misure più gravi, *extrema ratio* per evitare la crisi, sono la rimozione de
 
 *Commento.* Si specifica che la nomina dei nuovi componenti deve essere effettuata dall'organo competente, ma deve essere approvata da BI.
 
-*(pagina 4–6)*
-
-## Amministrazione straordinaria — versione originaria (art. 70 TUB, vecchio testo)
+## Amministrazione straordinaria: versione originaria (art. 70 TUB, vecchio testo)
 
 **Comma 1.** Il Ministro del tesoro, su proposta della Banca d'Italia, può disporre con decreto lo scioglimento degli organi con funzioni di amministrazione e di controllo delle banche quando:
 
@@ -212,8 +202,6 @@ Le misure più gravi, *extrema ratio* per evitare la crisi, sono la rimozione de
 **Comma 6.** La Banca d'Italia può disporre proroghe non superiori a due mesi del termine della procedura, anche se prorogato ai sensi del comma 5, per gli adempimenti connessi alla chiusura della procedura quando le relative modalità di esecuzione siano state già approvate dalla medesima Banca d'Italia.
 
 *Commento.* Questo comma lascia a BI quasi carta bianca: si parla di proroghe al plurale, quindi possono essere anche più di una, ma possono essere disposte solo per adempimenti connessi alla chiusura della procedura, le cui modalità di esecuzione BI abbia già approvato.
-
-*(pagina 5–7)*
 
 ## Organi e poteri della procedura di amministrazione straordinaria (artt. 71, 72, 76 TUB)
 
@@ -246,9 +234,7 @@ La procedura di amministrazione straordinaria può concludersi in due modi:
 
 *Commento.* Questo articolo, attualmente abrogato, prevedeva la possibilità per BI di disporre, in casi di assoluta urgenza, che uno o più commissari assumessero i poteri di amministrazione della banca. Il potere risultava sensato perché in precedenza tali misure erano disposte dal MEF, per cui in caso di urgenza BI aveva comunque facoltà di intervenire; visto che attualmente i poteri sono completamente affidati a BI, questo articolo non trova più ragion d'essere.
 
-*(pagina 6–7)*
-
-## Liquidazione coatta amministrativa — versione originaria e organi della procedura (artt. 80, 81, 86, 87, 90 TUB)
+## Liquidazione coatta amministrativa: versione originaria e organi della procedura (artt. 80, 81, 86, 87, 90 TUB)
 
 ### Art. 80 TUB: Liquidazione coatta amministrativa (vecchia versione)
 
@@ -287,13 +273,11 @@ A livello di legislazione italiana si sono verificati cambiamenti che riguardano
 
 La liquidazione coatta amministrativa è lo strumento, alternativo alla risoluzione, per le crisi irreversibili. Rientra fra le procedure ordinarie d'insolvenza ai sensi della direttiva (procedure collettive che comportano lo spossessamento parziale o totale del debitore e la nomina di un liquidatore o amministratore), ha presupposti più ampi della sola insolvenza e mira all'uscita ordinata della banca dal mercato e alla sua cancellazione dall'albo e dal registro delle imprese. Resta nel TUB perché il legislatore italiano ha dedicato un nuovo testo alle sole disposizioni sulla risoluzione.
 
-Dalla data del decreto del ministro dell'Economia, su proposta della Banca d'Italia, cessano le funzioni degli organi amministrativi, di controllo e assembleari. Dall'insediamento degli organi della procedura o, al più tardi, dal sesto giorno lavorativo successivo alla data del decreto (Testo vigente: art. 83, comma 1; gli appunti riportano il terzo giorno) sono sospesi il pagamento delle passività di qualsiasi genere e le restituzioni di beni di terzi, e non possono essere promosse o proseguite azioni, neppure di cognizione, né atti di esecuzione forzata o cautelare, salvo quelle previste dalla procedura, come le opposizioni allo stato passivo. I commissari liquidatori hanno la rappresentanza legale della banca ed esercitano le azioni a essa spettanti; il comitato di sorveglianza li assiste, ne controlla l'operato e fornisce pareri nei casi previsti dalla legge.
+Dalla data del decreto del ministro dell'Economia, su proposta della Banca d'Italia, cessano le funzioni degli organi amministrativi, di controllo e assembleari. Dall'insediamento degli organi della procedura o, al più tardi, dal sesto giorno lavorativo successivo alla data del decreto (art. 83, comma 1) sono sospesi il pagamento delle passività di qualsiasi genere e le restituzioni di beni di terzi, e non possono essere promosse o proseguite azioni, neppure di cognizione, né atti di esecuzione forzata o cautelare, salvo quelle previste dalla procedura, come le opposizioni allo stato passivo. I commissari liquidatori hanno la rappresentanza legale della banca ed esercitano le azioni a essa spettanti; il comitato di sorveglianza li assiste, ne controlla l'operato e fornisce pareri nei casi previsti dalla legge.
 
 L'accertamento del passivo e la liquidazione dell'attivo seguono regole sostanzialmente assimilabili a quelle della legge fallimentare, cui il TUB in molti casi rinvia. Le opposizioni allo stato passivo si propongono con ricorso al presidente del tribunale della sede legale; contro la sentenza sono ammessi appello e ricorso per Cassazione, anche da parte dei commissari. La liquidazione dell'attivo può avvenire con la vendita dei singoli beni o in modo aggregato, con la cessione in blocco di attività e passività, di rami d'azienda e di rapporti giuridici individuabili in blocco, che è l'ipotesi più utilizzata per una banca. La procedura si chiude per riparto integrale dell'attivo ai creditori (l'eventuale residuo attivo è attribuito ai soci prima della cancellazione dal registro delle imprese) oppure con un concordato con i creditori, istituto mai applicato finora. La Banca d'Italia, come Unità di risoluzione, promuove l'avvio del procedimento, può emanare direttive ai commissari liquidatori, autorizza l'azione di responsabilità contro i membri dei cessati organi amministrativi e di controllo e supervisiona la procedura e la cessione in blocco.
 
-*(pagina 7–9)*
-
-## Amministrazione straordinaria — versione riformata dalla BRRD (art. 70 TUB, nuovo testo)
+## Amministrazione straordinaria: versione riformata dalla BRRD (art. 70 TUB, nuovo testo)
 
 L'articolo non è stato stravolto rispetto alla versione precedente, ma alcuni cambiamenti sono significativi.
 
@@ -317,8 +301,6 @@ L'amministrazione straordinaria comporta lo scioglimento degli organi con funzio
 
 L'autorità di vigilanza può attribuire ai commissari solo determinati poteri e stabilire speciali limitazioni al mandato. I commissari possono promuovere, se ne ricorrono i presupposti, l'azione di responsabilità contro i disciolti organi amministrativi e di controllo, il direttore generale e il soggetto incaricato del controllo contabile o della revisione. In circostanze eccezionali possono sospendere il pagamento delle passività di qualsiasi genere e la restituzione degli strumenti finanziari ai clienti: misura molto grave per i depositanti, assunta in casi rari. Se non è possibile tornare alla normalità, la procedura è una fase di vaglio delle soluzioni al dissesto. L'autorità di vigilanza decide discrezionalmente sulla procedura, può revocare o sostituire gli organi straordinari e dare loro istruzioni; autorizza la sospensione dei pagamenti, l'azione di responsabilità contro gli ex amministratori e le azioni civili contro gli organi straordinari.
 
-*(pagina 9–10)*
-
 ## Il commissariamento leggero: art. 75-bis TUB (Commissari in temporaneo affiancamento)
 
 **Comma 1.** La Banca d'Italia, ricorrendo i presupposti indicati all'articolo 70, può nominare uno o più commissari in temporaneo affiancamento all'organo di amministrazione. La Banca d'Italia, nel provvedimento di nomina, individua funzioni, doveri e poteri dei commissari, specificandone i rapporti con l'organo amministrativo, ivi compreso, eventualmente, l'obbligo degli amministratori di consultare o di richiedere la previa autorizzazione dei commissari per l'assunzione di determinati atti o decisioni.
@@ -326,8 +308,6 @@ L'autorità di vigilanza può attribuire ai commissari solo determinati poteri e
 *Commento.* Questo articolo è una novità rispetto all'impianto originario: se sussistono gli stessi presupposti dell'art. 70 (quelli per l'amministrazione straordinaria), BI ha la facoltà di nominare uno o più commissari in temporaneo affiancamento all'organo di amministrazione, anziché sospendere quest'ultimo. L'articolo è stato inserito prevedendo che possano esistere situazioni di difficoltà non direttamente attribuibili alla banca, per cui l'affiancamento dei commissari agli organi rappresenta una soluzione meno "traumatica" rispetto alla sospensione.
 
 Per la direttiva, all'atto della nomina l'autorità specifica ruolo, doveri e poteri dell'amministratore temporaneo, con gli eventuali obblighi dell'organo di amministrazione di consultarlo o di ottenerne il consenso prima di specifiche decisioni; la nomina dura al massimo un anno e lascia impregiudicati i diritti degli azionisti.
-
-*(pagina 10)*
 
 ## I provvedimenti straordinari verso banche italiane e comunitarie (artt. 78 e 79 TUB)
 
@@ -354,5 +334,3 @@ Fra gli articoli relativi all'amministrazione straordinaria e quelli relativi al
 *Commento.* Laddove lo ritenga necessario, BI può rivolgersi direttamente all'EBA che, fra le altre cose, si occupa anche di dirimere le controversie fra le autorità dei diversi paesi.
 
 **Comma 4.** In caso di violazione o di rilevante rischio di violazione da parte di banche comunitarie delle disposizioni relative alle succursali o alla prestazione di servizi nel territorio della Repubblica il cui controllo spetta alla Banca d'Italia, questa adotta le misure necessarie a prevenire o reprimere tali irregolarità, compresa l'imposizione del divieto di intraprendere nuove operazioni, la sospensione dei pagamenti e la chiusura della succursale, dandone comunicazione all'autorità competente dello Stato d'origine.
-
-*(pagina 10–12)*

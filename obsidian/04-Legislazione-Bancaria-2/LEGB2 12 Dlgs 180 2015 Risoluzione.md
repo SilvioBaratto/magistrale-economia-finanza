@@ -15,9 +15,7 @@ generated: 2026-09-24
 
 Il Decreto Legislativo 180/2015 disciplina la **risoluzione** delle banche. L'analisi riguarda i **piani di risoluzione**, da non confondere con i **piani di risanamento**. L'analisi del testo parte dal **Titolo III**, rubricato come **misure preparatorie** (da non confondere con le **misure di intervento precoce**). Le citazioni dei commi seguono il testo vigente al 6 novembre 2026, cioè dopo le modifiche del d.lgs. 8 novembre 2021, n. 193 (attuazione della BRRD II, in vigore dal 1° dicembre 2021).
 
-*(pagina 1)*
-
-## Art. 7 — Piani di risoluzione individuali
+## Art. 7: Piani di risoluzione individuali
 
 **Comma 1**: La Banca d'Italia predispone, sentita l'autorità competente, un piano di risoluzione per ciascuna banca non sottoposta a vigilanza su base consolidata. Se la banca ha una o più succursali significative in altri Stati membri, sono sentite anche le autorità di risoluzione di quegli Stati. (Testo vigente; nella versione previgente: «sentita la Banca Centrale Europea se questa è l'autorità competente».)
 
@@ -33,9 +31,7 @@ Il Decreto Legislativo 180/2015 disciplina la **risoluzione** delle banche. L'an
 
 I piani di risoluzione sono predisposti sulla base delle informazioni fornite dalle banche e con la collaborazione delle autorità di vigilanza; riguardano anche i gruppi e devono essere pronti anche per banche in ottimo stato di salute, perché l'iter rapido di approvazione del programma di risoluzione non sarebbe possibile senza un piano già predisposto. I piani di risanamento sono invece redatti e approvati dagli organi amministrativi delle singole banche e valutati dalle autorità di vigilanza.
 
-*(pagina 1)*
-
-## Art. 12 — Valutazione della risolvibilità
+## Art. 12: Valutazione della risolvibilità
 
 **Comma 1**: La Banca d'Italia valuta, sentita l'autorità competente, se una banca non facente parte di un gruppo è risolvibile. Se la banca ha una o più succursali significative in altri Stati membri, sono sentite anche le autorità di risoluzione di quegli Stati.
 
@@ -58,9 +54,7 @@ L'**Emergency Liquidity Assistance** (credito di ultima istanza), richiamata dal
 
 L'erogazione spetta alle Banche centrali nazionali, che ne sopportano costi e rischi; il Consiglio direttivo della BCE può limitarla se interferisce con la politica monetaria. La mera necessità di Ela non prova di per sé il dissesto. Una banca in risoluzione difficilmente può beneficiarne, perché è difficile ritenerla solvibile e dotata di adeguate garanzie; il credito assistito da garanzia dello Stato (l. 190/2008) si distingue dalla nozione classica di Ela ed è un aiuto di Stato.
 
-*(pagina 1–2)*
-
-## Art. 17-19 — Presupposti per l'attivazione delle procedure di crisi
+## Art. 17-19: Presupposti per l'attivazione delle procedure di crisi
 
 ### Art. 17 (Presupposti comuni alla risoluzione e alle altre procedure di gestione delle crisi)
 
@@ -100,9 +94,7 @@ Il caso tipico in cui l'intervento pubblico non determina l'avvio della risoluzi
 
 La dichiarazione di dissesto o rischio di dissesto spetta all'autorità di vigilanza competente: le autorità nazionali per le banche meno significative, la BCE per le banche significative, che consulta il Comitato di risoluzione unico. Il Comitato può effettuarla di propria iniziativa solo se, avvisata preventivamente la BCE, questa non vi provvede; la valutazione della BCE è comunicata senza indugio al Comitato e alla Commissione europea. La verifica degli altri presupposti spetta alle autorità di risoluzione: il Comitato per le banche significative, per i gruppi transfrontalieri e per le banche per le quali sia richiesto l'intervento del Fondo di risoluzione unico, la Banca d'Italia per le restanti banche.
 
-*(pagina 2–3)*
-
-## Art. 20-21 — Individuazione della procedura di crisi e obiettivi della risoluzione
+## Art. 20-21: Individuazione della procedura di crisi e obiettivi della risoluzione
 
 ### Art. 20 (Individuazione della procedura di crisi)
 
@@ -136,9 +128,7 @@ Nel giugno 2017 il Comitato di risoluzione unico ha ritenuto insussistente l'int
 
 La risoluzione non mira a liquidare la banca distribuendo l'attivo ai creditori, ma a trovare una soluzione alla crisi garantendo la continuità aziendale, anche cedendo l'azienda a pezzi o per intero a intermediari *in bonis*. Il contenimento degli oneri per le finanze pubbliche è in apparente contraddizione con l'obiettivo di evitare il contagio; l'elenco crea un ordine di priorità negli strumenti, con preferenza per quelli che fanno pagare il costo della crisi ai privati (prima gli azionisti, poi i creditori, esclusi i piccoli depositanti) e l'intervento pubblico all'ultimo posto.
 
-*(pagina 3)*
-
-## Art. 22 — Principi della risoluzione
+## Art. 22: Principi della risoluzione
 
 **Comma 1**: La risoluzione si conforma ai seguenti principi:
 a) le perdite sono subite dagli azionisti e dai creditori, nell'ordine e nei modi stabiliti dal presente decreto;
@@ -151,9 +141,7 @@ e)-h) (...).
 
 Per garantire il rispetto del principio *no creditor worse off*, dopo l'avvio dell'azione di risoluzione un esperto indipendente incaricato dall'autorità valuta la differenza di trattamento ricevuta da azionisti e creditori rispetto a quanto avrebbero ricevuto se, al momento dell'accertamento dei presupposti, la banca fosse stata sottoposta a liquidazione coatta amministrativa; è dovuto un indennizzo a chi ha subito una perdita maggiore. Le norme europee prevedono solo questa limitata forma di compensazione.
 
-*(pagina 4)*
-
-## Art. 23, 25, 26 — Valutazione e tutela giurisdizionale relativa alla valutazione
+## Art. 23, 25, 26: Valutazione e tutela giurisdizionale relativa alla valutazione
 
 ### Art. 23 (Valutazione)
 
@@ -173,9 +161,7 @@ Per garantire il rispetto del principio *no creditor worse off*, dopo l'avvio de
 
 La valutazione «equa, prudente e realistica» è affidata a un esperto indipendente dall'autorità di risoluzione (anche il commissario nominato nell'amministrazione straordinaria) e serve per il *write down* risolutivo, per verificare i presupposti della risoluzione e per determinare l'importo del bail-in; prima era affidata ai funzionari della Banca d'Italia. La direttiva prevede una correzione *ex post* della valutazione provvisoria fatta *ex ante*.
 
-*(pagina 4)*
-
-## Art. 28 — Strumenti soggetti a riduzione o conversione
+## Art. 28: Strumenti soggetti a riduzione o conversione
 
 **Comma 1**: Per i soggetti di cui all'articolo 2 la riduzione o la conversione è disposta con riferimento alle riserve, alle azioni, alle altre partecipazioni, agli strumenti di capitale computabili nei fondi propri su base individuale e alle passività computabili di cui all'articolo 16-octies, comma 6, lettera a), anche con durata residua inferiore a un anno, quando si realizzano per detti soggetti i presupposti indicati nell'articolo 20, comma 1, lettera a). (Testo vigente dopo il d.lgs. 193/2021; nella versione previgente: le sole riserve, azioni, altre partecipazioni e strumenti di capitale emessi da una banca avente sede legale in Italia.)
 
@@ -185,9 +171,7 @@ b) le riserve, le azioni, le altre partecipazioni, gli strumenti di capitale eme
 
 **Comma 3**: La riduzione o la conversione è disposta nell'ordine indicato dall'articolo 52, limitatamente alle passività indicate nel presente articolo. Si applica inoltre l'articolo 52, commi 2, 3, 5 e 6. (Testo vigente; nella versione previgente: «nell'ordine indicato dall'articolo 52, comma 1, lettera a)».)
 
-*(pagina 4–5)*
-
-## Art. 32, 34, 35, 38 — Avvio, attuazione, effetti e chiusura della risoluzione
+## Art. 32, 34, 35, 38: Avvio, attuazione, effetti e chiusura della risoluzione
 
 ### Art. 32 (Avvio della risoluzione)
 
@@ -218,9 +202,7 @@ Nel Meccanismo di risoluzione unico il Comitato, se ritiene che vi sia un rischi
 
 Per una banca meno significativa l'avvio della risoluzione spetta alla Banca d'Italia, previa approvazione del Ministro dell'economia e delle finanze. Per attuare il programma la Banca d'Italia può nominare commissari speciali, ma può anche agire con atti che tengono luogo di quelli degli organi sociali o con provvedimenti di carattere particolare rivolti agli organi sociali, che quindi non sono sostituiti in ogni caso. Con la nomina dei commissari o con gli atti in sostituzione sono sospesi i diritti di voto degli azionisti; i commissari assumono i poteri degli azionisti e degli organi di amministrazione, e con loro è nominato un comitato di sorveglianza con compiti di controllo interno.
 
-*(pagina 5–6)*
-
-## Art. 39-40 — Misure di risoluzione e cessione a soggetto terzo
+## Art. 39-40: Misure di risoluzione e cessione a soggetto terzo
 
 ### Art. 39 (Misure di risoluzione)
 
@@ -244,9 +226,7 @@ b) tutti i diritti, le attività o le passività, anche individuabili in blocco,
 
 La vendita consente di cedere la banca per intero, o una parte delle sue attività, a condizioni di mercato, senza richiedere il consenso degli azionisti né soddisfare i requisiti procedurali altrimenti applicabili.
 
-*(pagina 6)*
-
-## Art. 42 e 45 — Ente-ponte e società veicolo per la gestione delle attività
+## Art. 42 e 45: Ente-ponte e società veicolo per la gestione delle attività
 
 ### Art. 42 (Costituzione e funzionamento dell'ente-ponte)
 
@@ -266,9 +246,7 @@ L'ente-ponte è posseduto o controllato, interamente o in parte, da una o più a
 
 La società veicolo è una *bad bank* priva di licenza bancaria: vi sono trasferite le attività deteriorate o in sofferenza della banca in dissesto, gestite per massimizzarne il valore con la vendita finale o la liquidazione ordinata. Per ridurre al minimo le distorsioni della concorrenza e l'azzardo morale a favore della banca in dissesto, può essere utilizzata solo congiuntamente a un altro strumento di risoluzione.
 
-*(pagina 6–7)*
-
-## Art. 48-49 — Finalità del bail-in e passività escluse
+## Art. 48-49: Finalità del bail-in e passività escluse
 
 ### Art. 48 (Finalità del bail-in)
 
@@ -297,9 +275,7 @@ Nel caso dei depositi protetti bisogna specificare che il fondo a tutela dei dep
 
 Tra le esclusioni rientrano anche le passività verso i dipendenti per stipendi e verso l'amministrazione finanziaria. In ragione della *depositor preference*, i depositi oltre 100.000 euro di persone fisiche, microimprese e piccole e medie imprese sono anteposti agli altri creditori chirografari; il testo della riforma Cmdi approvato dal Consiglio nel giugno 2024 lascia ferma questa disciplina. Le autorità possono inoltre escludere, in tutto o in parte, altre passività per preservare le funzioni aziendali o evitare contagio e gravi perturbazioni del sistema finanziario.
 
-*(pagina 7–8)*
-
-## Art. 50-52 — Requisito minimo (art. 50 abrogato), importo del bail-in e trattamento di azionisti e creditori
+## Art. 50-52: Requisito minimo (art. 50 abrogato), importo del bail-in e trattamento di azionisti e creditori
 
 ### Art. 50 (Requisito minimo di passività soggette a bail-in)
 
@@ -318,15 +294,11 @@ c) del contributo del fondo di risoluzione erogato ai sensi dell'articolo 49, co
 
 **Comma 1**: (...)
 
-*(pagina 8)*
-
-## Art. 95 — Tutela giurisdizionale contro le misure di gestione della crisi
+## Art. 95: Tutela giurisdizionale contro le misure di gestione della crisi
 
 **Comma 2**: Nei giudizi avverso le misure di gestione della crisi si presume fino a prova contraria che la sospensione dei provvedimenti della Banca d'Italia o del Ministro dell'economia e delle finanze sarebbe contraria all'interesse pubblico; nei medesimi giudizi non si applicano gli articoli 19 e 63, comma 4, del Codice del processo amministrativo.
 
 **Nota**: il giudizio davanti al giudice amministrativo resta ammesso (art. 95, comma 1: si applicano gli articoli 119, 128, 133 e 135 del Codice del processo amministrativo), ma si presume fino a prova contraria che la sospensione dei provvedimenti sia contraria all'interesse pubblico, per cui la tutela cautelare è possibile solo superando questa presunzione. Se il giudice lo ritiene necessario per tutelare i terzi in buona fede, l'annullamento lascia impregiudicati gli atti e i negozi posti in essere sulla base del provvedimento annullato (comma 3); resta il diritto al risarcimento del danno.
-
-*(pagina 8)*
 
 ## Fondo di risoluzione unico e sistemi di garanzia dei depositi
 
@@ -342,4 +314,4 @@ I sistemi di garanzia dei depositi (Sgd) limitano le conseguenze della crisi di 
 
 Gli interventi obbligatori degli Sgd sono il rimborso dei depositanti in caso di liquidazione (*paybox*) e, nella risoluzione, i casi in cui questa comporta perdite per i depositanti protetti. Gli interventi volontari (misure alternative per prevenire il fallimento o per finanziare cessioni di attività e passività nella liquidazione) richiedono il rispetto del principio del minor costo; poiché gli Sgd subentrano ai depositanti rimborsati con lo stesso grado (*super-preference*), il costo dell'intervento obbligatorio si riduce e quello volontario diventa difficile. La Commissione considera aiuti di Stato gli interventi diversi dal rimborso (comunicazione 2013); sul caso Tercas il Tribunale (2019, confermato in appello, C-425/19 P) ha annullato la decisione della Commissione perché non era dimostrato che le risorse del Fondo interbancario fossero controllate dallo Stato.
 
-In Italia esistono due Sgd, consorzi privati: il Fondo interbancario di tutela dei depositi (Fitd), cui aderiscono tutte le banche italiane (con l'eccezione delle Bcc) e le filiali di banche extra-UE, a meno che la Banca d'Italia riconosca equivalente il sistema di garanzia del paese d'origine, e il Fondo di garanzia dei depositanti del credito cooperativo, cui aderiscono le Bcc. La Banca d'Italia riconosce i sistemi approvandone lo statuto (art. 96-ter), ne vigila il rispetto della disciplina e può emanare disposizioni attuative; l'esclusione di una banca gravemente inadempiente la dispone il sistema, previo assenso della Banca d'Italia, e comporta la revoca dell'autorizzazione (art. 96-quater) (Testo vigente; gli appunti attribuivano alla Banca d'Italia l'autorizzazione degli interventi e l'esclusione).
+In Italia esistono due Sgd, consorzi privati: il Fondo interbancario di tutela dei depositi (Fitd), cui aderiscono tutte le banche italiane (con l'eccezione delle Bcc) e le filiali di banche extra-UE, a meno che la Banca d'Italia riconosca equivalente il sistema di garanzia del paese d'origine, e il Fondo di garanzia dei depositanti del credito cooperativo, cui aderiscono le Bcc. La Banca d'Italia riconosce i sistemi approvandone lo statuto (art. 96-ter), ne vigila il rispetto della disciplina e può emanare disposizioni attuative; l'esclusione di una banca gravemente inadempiente la dispone il sistema, previo assenso della Banca d'Italia, e comporta la revoca dell'autorizzazione (art. 96-quater).

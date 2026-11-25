@@ -53,7 +53,8 @@ fig.text(0.02, 0.985, "Distribuzione asintotica della statistica $t$ al variare 
 for i, s in enumerate([
         "$Se\\ |\\beta_1|\\!<\\!1\\ \\Rightarrow\\ t\\!\\sim\\!N(0,1)$",
         "$Se\\ \\beta_1\\!=\\!1\\ e\\ \\beta_0\\!=\\!0$ la distribuzione è non standard",
-        "$Se\\ \\beta_1\\!=\\!1\\ e\\ \\beta_0\\!\\neq\\!0$ la distribuzione è non standard"]):
+        "$Se\\ \\beta_1\\!=\\!1\\ e\\ \\beta_0\\!\\neq\\!0$ (vero drift) "
+        "$\\Rightarrow\\ t\\!\\sim\\!N(0,1)$"]):
     fig.text(0.03, 0.865 - i * 0.07, s, fontsize=9.5, style="italic", va="center")
 for i, (c, s) in enumerate([
         (TEAL, "$t_{|\\beta_1|<1}$"),
