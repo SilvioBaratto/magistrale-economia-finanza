@@ -82,6 +82,7 @@ segna le formule che le slide non scrivono. Appunti di studio, non materiale dei
 | Formulario | PDF | Pagine | Sorgente |
 |---|---|---|---|
 | Econometria — formulario | [PDF](Formulari/Formulario_Econometria.pdf) | 40 | [sorgente](Formulari/Formulario_Econometria.md) |
+| Economia del Rischio e delle Assicurazioni — formulario | [PDF](Formulari/Formulario_Economia-Rischio-Assicurazioni.pdf) | 37 | [sorgente](Formulari/Formulario_Economia-Rischio-Assicurazioni.md) |
 | Finanza Strategica — formulario | [PDF](Formulari/Formulario_Finanza-Strategica.pdf) | 24 | [sorgente](Formulari/Formulario_Finanza-Strategica.md) |
 
 ## Esami svolti — Econometria
