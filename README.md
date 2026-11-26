@@ -36,9 +36,9 @@ tutte le lezioni di un insegnamento in ordine di data.
 
 | Insegnamento | Appunti | Sintesi |
 |---|---|---|
-| Econometria | [PDF](dispense/appunti/01-econometria.pdf) · 139 pp | [PDF](dispense/appunti-sintetici/01-econometria.pdf) · 79 pp |
-| Legislazione Bancaria — modulo 2 | [PDF](dispense/appunti/04-legislazione-bancaria-2.pdf) · 137 pp | [PDF](dispense/appunti-sintetici/04-legislazione-bancaria-2.pdf) · 75 pp |
-| Finanza Strategica | [PDF](dispense/appunti/11-finanza-strategica.pdf) · 110 pp | [PDF](dispense/appunti-sintetici/11-finanza-strategica.pdf) · 63 pp |
+| Econometria | [PDF](dispense/appunti/01-econometria.pdf) · 160 pp | [PDF](dispense/appunti-sintetici/01-econometria.pdf) · 90 pp |
+| Legislazione Bancaria — modulo 2 | [PDF](dispense/appunti/04-legislazione-bancaria-2.pdf) · 160 pp | [PDF](dispense/appunti-sintetici/04-legislazione-bancaria-2.pdf) · 87 pp |
+| Finanza Strategica | [PDF](dispense/appunti/11-finanza-strategica.pdf) · 126 pp | [PDF](dispense/appunti-sintetici/11-finanza-strategica.pdf) · 72 pp |
 
 ### Econometria
 
@@ -50,6 +50,7 @@ tutte le lezioni di un insegnamento in ordine di data.
 | 17/11/2026 | Inferenza su beta, R quadrato e regressione multipla | [nota](obsidian/01-Econometria/appunti/2026-11-17%20Inferenza%20su%20beta%2C%20R%20quadrato%20e%20regressione%20multipla.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-17%20Inferenza%20su%20beta%2C%20R%20quadrato%20e%20regressione%20multipla.md) |
 | 19/11/2026 | Variabili omesse, errori di misura e collinearità perfetta | [nota](obsidian/01-Econometria/appunti/2026-11-19%20Variabili%20omesse%2C%20errori%20di%20misura%20e%20collinearita%CC%80%20perfetta.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-19%20Variabili%20omesse%2C%20errori%20di%20misura%20e%20collinearita%CC%80%20perfetta.md) |
 | 20/11/2026 | Collinearità, Frisch-Waugh-Lovell e introduzione al test F | [nota](obsidian/01-Econometria/appunti/2026-11-20%20Collinearita%CC%80%2C%20Frisch-Waugh-Lovell%20e%20introduzione%20al%20test%20F.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-20%20Collinearita%CC%80%2C%20Frisch-Waugh-Lovell%20e%20introduzione%20al%20test%20F.md) |
+| 26/11/2026 | registrazione interrotta dall'allarme antincendio, unita in ordine (prima parte sopra, seconda parte sotto) | [nota](obsidian/01-Econometria/appunti/2026-11-26%20Test%20F%20e%20standard%20error%20robusti%20di%20White.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-26%20Test%20F%20e%20standard%20error%20robusti%20di%20White.md) |
 
 ### Legislazione Bancaria — modulo 2
 
@@ -62,6 +63,7 @@ tutte le lezioni di un insegnamento in ordine di data.
 | 19/11/2026 | Centrale dei rischi, immobili e rischio di liquidità | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-19%20Centrale%20dei%20rischi%2C%20immobili%20e%20rischio%20di%20liquidita%CC%80.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-19%20Centrale%20dei%20rischi%2C%20immobili%20e%20rischio%20di%20liquidita%CC%80.md) |
 | 20/11/2026 | registrazione interrotta a metà, unita in ordine (prima parte sopra, seconda parte sotto) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-20%20Rischi%20di%20mercato%2C%20operativo%20e%20partecipazioni%20detenibili.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-20%20Rischi%20di%20mercato%2C%20operativo%20e%20partecipazioni%20detenibili.md) |
 | 24/11/2026 | Governo societario delle banche: organi, deleghe e non esecutivi | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-24%20Governo%20societario%20delle%20banche%20organi%2C%20deleghe%20e%20non%20esecutivi.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-24%20Governo%20societario%20delle%20banche%20organi%2C%20deleghe%20e%20non%20esecutivi.md) |
+| 26/11/2026 | Comitati endoconsiliari, controlli interni e remunerazioni | [nota](obsidian/04-Legislazione-Bancaria-2/appunti/2026-11-26%20Comitati%20endoconsiliari%2C%20controlli%20interni%20e%20remunerazioni.md) | [nota](obsidian/04-Legislazione-Bancaria-2/appunti-sintetici/2026-11-26%20Comitati%20endoconsiliari%2C%20controlli%20interni%20e%20remunerazioni.md) |
 
 ### Finanza Strategica
 
@@ -73,6 +75,7 @@ tutte le lezioni di un insegnamento in ordine di data.
 | 19/11/2026 | Costo del capitale proprio, rischio paese e beta | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-19%20Costo%20del%20capitale%20proprio%2C%20rischio%20paese%20e%20beta.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-19%20Costo%20del%20capitale%20proprio%2C%20rischio%20paese%20e%20beta.md) |
 | 20/11/2026 | Enterprise value, PFN e NOPAT nei metodi DCF | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-20%20Enterprise%20value%2C%20PFN%20e%20NOPAT%20nei%20metodi%20DCF.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-20%20Enterprise%20value%2C%20PFN%20e%20NOPAT%20nei%20metodi%20DCF.md) |
 | 24/11/2026 | Metodi DCF, terminal value e modelli multi-step | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-24%20Metodi%20DCF%2C%20terminal%20value%20e%20modelli%20multi-step.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-24%20Metodi%20DCF%2C%20terminal%20value%20e%20modelli%20multi-step.md) |
+| 26/11/2026 | Terminal value, VAM e domande di teoria | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-26%20Terminal%20value%2C%20VAM%20e%20domande%20di%20teoria.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-26%20Terminal%20value%2C%20VAM%20e%20domande%20di%20teoria.md) |
 
 ## Formulari
 
