@@ -187,13 +187,17 @@ MATH_GLYPHS = {
     "\u25cf": r"\bullet",
     "\u03b1": r"\alpha", "\u03b2": r"\beta", "\u03b5": r"\varepsilon",
     "\u03bb": r"\lambda", "\u03bc": r"\mu", "\u03c1": r"\rho", "\u03c3": r"\sigma",
-    "\u0394": r"\Delta", "\u03a0": r"\Pi",
+    "\u03c9": r"\omega", "\u0394": r"\Delta", "\u03a0": r"\Pi",
 }
 TEXT_GLYPHS = {
+    # Replacements run in dict order, so the hatted pair must come before the bare
+    # beta: once beta is a math atom the following combining circumflex is dropped.
+    "β̂": r"\ensuremath{\hat{\beta}}",
     **{src: rf"\ensuremath{{{dst}}}" for src, dst in MATH_GLYPHS.items()},
     "\u2713": r"\ding{51}", "\u2717": r"\ding{55}",
     "\u25a0": r"\ding{110}", "\u25b2": r"\ding{115}",
     "\u2080": r"\textsubscript{0}", "\u2081": r"\textsubscript{1}", "\u2082": r"\textsubscript{2}",
+    "\u1d62": r"\textsubscript{i}",
 }
 
 # A currency dollar opens a math span that pandoc closes at the next dollar on
