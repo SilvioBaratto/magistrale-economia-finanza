@@ -7,6 +7,7 @@ fonte: Audio/econometria/econometria_2026-11-26.txt
 tipo: appunti-lezione
 tags: [appunti, econometria]
 revisione: trascrizione gpt-transcribe ripulita, fedele al parlato
+integrato: 2026-11-27
 ---
 
 # Test F e standard error robusti di White

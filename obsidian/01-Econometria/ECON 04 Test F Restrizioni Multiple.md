@@ -112,6 +112,12 @@ Il test $t$ della regressione semplice e multipla riguarda un singolo parametro 
 > - Nel primo esempio (differenze salariali) si considera $\beta_6 - \beta_8 = 0$, con $r_6=1$, $r_8=-1$, tutti gli altri $r_i=0$ e $q=0$. Si tratta di un'unica combinazione lineare, cioè 1 restrizione.
 > - Nel secondo esempio (significatività congiunta) ogni $\beta_j=0$ è una combinazione lineare in cui tutti i pesi $r_i=0$ per $i\neq j$, mentre $r_j=1$ e $q=0$. Ci sono quindi 3 diverse combinazioni lineari che devono essere soddisfatte congiuntamente (3 restrizioni).
 >
+> In forma matriciale un sistema di $s$ restrizioni lineari si scrive $\mathbf{R}\beta=q$, dove $\beta$ è il vettore dei $k+1$ parametri, intercetta compresa, $\mathbf{R}$ è la matrice $s\times(k+1)$ dei pesi noti, con una riga per ciascuna restrizione e una colonna per ciascun parametro (la colonna dell'intercetta ha pesi nulli quando i vincoli non la coinvolgono), e $q$ è il vettore degli $s$ termini noti. Per l'ipotesi $H_0:\beta_1=\beta_2=\beta_3=0$ del secondo esempio, con $\beta=(\alpha,\beta_1,\beta_2,\beta_3)'$, si ha
+>
+> $$\mathbf{R}=\begin{pmatrix} 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}, \qquad q=\begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix},$$
+>
+> e $\mathbf{R}\beta=q$ riproduce le tre restrizioni $\beta_1=0$, $\beta_2=0$, $\beta_3=0$.
+>
 > Il **test F** consente di valutare in un unico passo se una o più restrizioni lineari sono coerenti con le evidenze empiriche.
 
 ## Costruzione del test F: modello completo vs modello ristretto
@@ -143,12 +149,13 @@ Se l'ipotesi alternativa fosse corretta, ci si aspetta che la capacità preditti
 > - Non è mai negativa: $R^2$ non decresce mai quando si aggiungono regressori, quindi $R_c^2 \geq R_r^2$.
 > - I valori di $F$ vicini a 0 sono più favorevoli a $H_0$ che a $H_1$. Si respinge quindi l'ipotesi nulla solo quando $F$ è grande: si tratta di un **test unilaterale**.
 > - Se l'ipotesi nulla è corretta, la distribuzione di $F$ è ben approssimata da una variabile casuale $F$ con $s$ e $n-k-1$ gradi di libertà (parametri). Per questa distribuzione sono disponibili tabelle.
+> - Con un'unica restrizione ($s=1$), la statistica $F$ con $1$ e $n-k-1$ gradi di libertà è il quadrato della statistica $t$ del test bilaterale sulla stessa restrizione, con $n-k-1$ gradi di libertà: $F=t^2$. Il test $F$ e il test $t$ bilaterale conducono quindi allo stesso p-value, benché si riferiscano a distribuzioni diverse.
 >
 > ![](assets/econ-04/fig01.png)
 >
 > **Figura 1** — Rappresentazione grafica della variabile casuale F. Il grafico (*"The 5% critical value and rejection region in an $F_{3,60}$ distribution"*) mostra la densità di una distribuzione F asimmetrica a destra: l'area fino al valore critico 2.76 è il 95% della probabilità ("area = .95"), l'area a destra di 2.76 ("area = .05", la *rejection region*) è il livello di significatività del 5%.
 >
-> La decisione si prende con il valore critico o con il p-value. Fissato il livello $\alpha$, il valore critico si ricava da tabelle F adeguate: se la statistica osservata $F^{oss}$ è più grande del valore critico, si respinge l'ipotesi nulla; se è più piccola, non c'è sufficiente evidenza per respingerla. Il p-value, cioè $P_{H_0}(F>F^{oss})$, porta alla stessa decisione: se è più piccolo di $\alpha$ si respinge l'ipotesi nulla, altrimenti non la si può respingere.
+> La decisione si prende con il valore critico o con il p-value. Fissato il livello $\alpha$, il valore critico si ricava da tabelle F adeguate: se la statistica osservata $F^{oss}$ è più grande del valore critico, si respinge l'ipotesi nulla; se è più piccola, non c'è sufficiente evidenza per respingerla. Il p-value, cioè $P_{H_0}(F>F^{oss})$, porta alla stessa decisione: se è più piccolo di $\alpha$ si respinge l'ipotesi nulla, altrimenti non la si può respingere. Poiché le $s$ restrizioni sono verificate in blocco con un'unica statistica, il livello del test resta $\alpha$ qualunque sia $s$.
 
 ## Relazione tra la distribuzione F e la distribuzione chi-quadro
 

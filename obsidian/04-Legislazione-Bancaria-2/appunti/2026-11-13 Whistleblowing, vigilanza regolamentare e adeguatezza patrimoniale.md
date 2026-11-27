@@ -5,6 +5,7 @@ fonte: Audio/legislazione_bancaria_2/legislazione_bancaria_2_2026-11-13.txt
 tipo: appunti-lezione
 tags: [appunti, legislazione-bancaria-2]
 revisione: trascrizione gpt-transcribe ripulita, fedele al parlato
+integrato: 2026-11-27
 ---
 
 # Whistleblowing, vigilanza regolamentare e adeguatezza patrimoniale

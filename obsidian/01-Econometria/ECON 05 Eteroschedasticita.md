@@ -163,6 +163,8 @@ Le conseguenze della violazione sono le seguenti.
 > Nella pratica, questo risultato serve per trovare uno stimatore consistente di $\mathrm{Var}(\hat\beta|X)$: se le due quantità sono equivalenti, lo saranno anche calcolando il limite per $n\to\infty$. Per la legge dei grandi numeri vale che
 > $$\frac{1}{n}\sum_{i=1}^n \epsilon_i^2(X_i-\bar X)^2 \to E\left[\frac{1}{n}\sum_{i=1}^n \epsilon_i^2(X_i-\bar X)^2\right] = \frac{1}{n}\sum_{i=1}^n \sigma_i^2(X_i-\bar X)^2$$
 > $$\Rightarrow \frac{1}{n}\sum_{i=1}^n \hat\epsilon_i^2(X_i-\bar X)^2 \to \frac{1}{n}\sum_{i=1}^n \sigma_i^2(X_i-\bar X)^2$$
+>
+> Se i quadrati dei residui sono approssimativamente uguali, $\hat\epsilon_i^2\approx\hat\sigma^2$, il fattore comune esce dalla somma al numeratore della formula di White, che si riduce approssimativamente a $\hat\sigma^2/\sum_{i=1}^n (X_i-\bar X)^2$, la varianza stimata valida sotto omoschedasticità.
 
 ## Stimatori robusti: caso di regressione multipla e sintesi
 

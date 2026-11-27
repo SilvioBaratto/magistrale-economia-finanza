@@ -65,7 +65,7 @@ La funzione cercata deve dunque riflettere un andamento di lungo periodo ed esse
 
 ![](assets/econ-02/fig04.png)
 
-**Figura 4** — Scatterplot di educ vs. wage con $E[wage|educ]$ (quadrati rossi) e la linea di regressione. Alla figura precedente si aggiunge la retta di regressione stimata (fitted values), che approssima in modo semplice l'andamento delle medie condizionate.
+**Figura 4** — Scatterplot di educ vs. wage con le stime di $E[wage|educ]$ (quadrati rossi) e la linea di regressione. Alla figura precedente si aggiunge la retta di regressione stimata (fitted values), che approssima in modo semplice l'andamento delle medie condizionate.
 
 Esistono modelli che considerano altri indicatori, come quantili e mediane. La regressione quantilica, qui non trattata, permette di studiare come reagiscono le code della distribuzione oltre alla media. In finanza interessano le code, cioè perdere o guadagnare molto: a chi investe interessa coprirsi dagli eventi estremi, per esempio capire come una variazione della situazione geopolitica incida sulle code del rendimento di un portafoglio e non sulla sua media. Qui si considerano le medie condizionali, un indicatore di centralità semplice, ma l'impostazione si può generalizzare.
 
@@ -76,7 +76,7 @@ Esistono modelli che considerano altri indicatori, come quantili e mediane. La r
 >
 > $$E[Y|X] = \alpha + \beta X$$
 >
-> Questa retta è un'approssimazione della vera media condizionale (i quadrati rossi delle figure precedenti), poiché in generale non è possibile trovare un modello semplice che corrisponda esattamente a tutte le medie condizionate.
+> Questa retta è un'approssimazione della vera media condizionale (quella della popolazione, stimata dai quadrati rossi delle figure precedenti), poiché in generale non è possibile trovare un modello semplice che corrisponda esattamente a tutte le medie condizionate.
 >
 > Data questa ipotesi per la media condizionale, ogni osservazione $(X_i, Y_i)$ nel campione, dove $i$ indica l'unità statistica (un lavoratore nell'esempio), può essere rappresentata come
 >

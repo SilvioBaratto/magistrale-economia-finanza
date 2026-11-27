@@ -43,7 +43,7 @@ I metodi DCF si applicano in due modi, che valgono sia nell'ottica assets sia ne
 
 | Modello sintetico | Modello analitico |
 |---|---|
-| Il valore si ottiene con formule compatte, che ipotizzano flussi costanti (steady state) o crescenti a un tasso costante $g$ (steady growth). | Il valore è la somma di un valore ricavato da un piano esplicito di 3-7 anni e di un terminal value attualizzato, calcolato con un metodo sintetico. |
+| Il valore si ottiene con formule compatte, che ipotizzano flussi costanti (steady state) o crescenti a un tasso costante $g$ (steady growth). | Il valore è la somma di un valore ricavato da un piano esplicito di 3-5 anni e di un terminal value attualizzato, calcolato con un metodo sintetico. |
 
 Di norma si utilizza il modello analitico, che mostra il suo vantaggio nei periodi di discontinuità, per esempio grandi investimenti pluriennali o riduzione del debito, in cui i flussi non sono né costanti né crescenti a tasso costante.
 
