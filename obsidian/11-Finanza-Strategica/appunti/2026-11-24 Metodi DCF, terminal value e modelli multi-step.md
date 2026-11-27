@@ -5,6 +5,7 @@ fonte: Audio/finanza_strategica/finanza_strategica_2026-11-24.txt
 tipo: appunti-lezione
 tags: [appunti, finanza-strategica]
 revisione: trascrizione gpt-transcribe ripulita, fedele al parlato
+integrato: 2026-11-27
 ---
 
 # Metodi DCF, terminal value e modelli multi-step

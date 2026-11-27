@@ -24,7 +24,7 @@ I flussi di riferimento (FCFF, FCFE, NOPAT) e le formule sintetiche sono definit
 > | Modello | Come si ottiene il valore degli assets o dell'equity |
 > |---------|------------------------------------------------------|
 > | **Sintetico** | Con formule compatte, che prevedono per esempio flussi costanti oppure flussi con tasso di crescita costante. |
-> | **Analitico** | Come somma di un valore frutto di un piano esplicito di 3-7 anni e del *terminal value* attualizzato, a sua volta frutto di un metodo sintetico. |
+> | **Analitico** | Come somma di un valore frutto di un piano esplicito di 3-5 anni e del *terminal value* attualizzato, a sua volta frutto di un metodo sintetico. |
 
 Di norma si utilizza il metodo analitico. Il suo vantaggio sui metodi sintetici emerge nei periodi di discontinuità, per esempio grossi investimenti pluriennali o abbattimento del debito: in queste fasi i flussi non sono né costanti né crescenti a tasso costante, e solo un piano esplicito può rappresentarli.
 
@@ -150,7 +150,7 @@ Valori elevati, superiori all'85-90%, possono indicare tre situazioni:
 - un periodo di previsione esplicita troppo breve, che per esempio non coglie l'intero fenomeno di rientro dall'investimento;
 - l'inutilità di una stima analitica: il periodo esplicito non coglie discontinuità o fenomeni rilevanti, come investimenti importanti, e conviene allora un metodo sintetico.
 
-Altri sanity check utili nella valutazione sono la coerenza tra l'evoluzione del fatturato e quella del capitale fisso e l'evoluzione del rapporto MOL / ricavi di gestione. Due esempi numerici di peso del TV, pari al 75% e all'88% del valore, sono svolti in [[FSTR 05 Annotazioni sul Terminal Value|il calcolo del peso del terminal value]].
+Altri sanity check utili nella valutazione sono la coerenza tra l'evoluzione del fatturato e quella del capitale fisso, l'evoluzione del rapporto MOL / ricavi di gestione e il confronto del valore con il corrispondente valore contabile, per esempio dell'enterprise value con il capitale investito netto: un plusvalore molto ampio richiede di accertare se rifletta effettivamente la crescita dell'impresa. Due esempi numerici di peso del TV, pari al 75% e all'88% del valore, sono svolti in [[FSTR 05 Annotazioni sul Terminal Value|il calcolo del peso del terminal value]].
 
 ## Modelli multi-step per il terminal value
 

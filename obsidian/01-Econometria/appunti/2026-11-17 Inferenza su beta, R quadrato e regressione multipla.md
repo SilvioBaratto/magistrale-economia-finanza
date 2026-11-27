@@ -5,6 +5,7 @@ fonte: Audio/econometria/econometria_2026-11-17.txt
 tipo: appunti-lezione
 tags: [appunti, econometria]
 revisione: trascrizione gpt-transcribe ripulita, fedele al parlato
+integrato: 2026-11-27
 ---
 
 # Inferenza su beta, R quadrato e regressione multipla

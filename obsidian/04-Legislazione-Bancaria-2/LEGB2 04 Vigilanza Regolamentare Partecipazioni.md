@@ -163,7 +163,7 @@ Circolare 285, Parte III, Capitolo 1, Sezione IV, Partecipazioni acquisite per r
 
 Il caso è analogo a quello degli immobili: quando non vi sono altre vie, la banca recupera qualcosa dal cliente insolvente acquisendo i titoli che questi deteneva, azioni o obbligazioni. La banca può già detenere azioni della stessa società (per esempio l'Enel), perché altri clienti ne erano titolari, e l'acquisizione di ulteriori titoli le farebbe superare il limite consentito.
 
-Per le tre ipotesi della Sezione IV, cioè consorzi di collocamento e garanzia, imprese in temporanea difficoltà e recupero crediti, vale una regola comune: la banca può procedere con particolari cautele di carattere organizzativo.
+Per le partecipazioni in imprese in temporanea difficoltà finanziaria e per quelle acquisite per recupero crediti la Circolare prevede specifiche cautele, in considerazione dell'elevata rischiosità di tali investimenti e a presidio dell'obiettività delle relative decisioni (Parte III, Capitolo 1, Sezione IV, par. 1).
 
 ## Partecipazioni in banche, imprese finanziarie, assicurative e strumentali: autorizzazioni
 

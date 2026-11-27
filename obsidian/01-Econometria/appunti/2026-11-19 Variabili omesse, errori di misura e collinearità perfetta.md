@@ -5,6 +5,7 @@ fonte: Audio/econometria/econometria_2026-11-19.txt
 tipo: appunti-lezione
 tags: [appunti, econometria]
 revisione: trascrizione gpt-transcribe ripulita, fedele al parlato
+integrato: 2026-11-27
 ---
 
 # Variabili omesse, errori di misura e collinearità perfetta

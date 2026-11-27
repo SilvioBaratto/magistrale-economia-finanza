@@ -5,6 +5,7 @@ fonte: Audio/finanza_strategica/finanza_strategica_2026-11-17.txt
 tipo: appunti-lezione
 tags: [appunti, finanza-strategica]
 revisione: trascrizione gpt-transcribe ripulita, fedele al parlato
+integrato: 2026-11-27
 ---
 
 # Esercizi sui metodi di valutazione e opzioni reali
