@@ -19,8 +19,8 @@ Un PDF per insegnamento, generato dalle note Obsidian.
 |---|---|---|---|---|
 | Econometria | EM0004 | [PDF](dispense/01-econometria.pdf) | 148 | [note](obsidian/01-Econometria/) |
 | Legislazione Bancaria — modulo 1 | EM2101 | [PDF](dispense/03-legislazione-bancaria-1.pdf) | 197 | [note](obsidian/03-Legislazione-Bancaria-1/) |
-| Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 185 | [note](obsidian/04-Legislazione-Bancaria-2/) |
-| Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 177 | [note](obsidian/11-Finanza-Strategica/) |
+| Legislazione Bancaria — modulo 2 | EM2101 | [PDF](dispense/04-legislazione-bancaria-2.pdf) | 187 | [note](obsidian/04-Legislazione-Bancaria-2/) |
+| Finanza Strategica | EM5005 | [PDF](dispense/11-finanza-strategica.pdf) | 178 | [note](obsidian/11-Finanza-Strategica/) |
 | 14-Economia-Rischio-Assicurazioni |  | [PDF](dispense/14-economia-rischio-assicurazioni.pdf) | 114 | [note](obsidian/14-Economia-Rischio-Assicurazioni/) |
 
 ## Appunti delle lezioni
@@ -51,7 +51,7 @@ tutte le lezioni di un insegnamento in ordine di data.
 | 19/11/2026 | Variabili omesse, errori di misura e collinearità perfetta | [nota](obsidian/01-Econometria/appunti/2026-11-19%20Variabili%20omesse%2C%20errori%20di%20misura%20e%20collinearita%CC%80%20perfetta.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-19%20Variabili%20omesse%2C%20errori%20di%20misura%20e%20collinearita%CC%80%20perfetta.md) |
 | 20/11/2026 | Collinearità, Frisch-Waugh-Lovell e introduzione al test F | [nota](obsidian/01-Econometria/appunti/2026-11-20%20Collinearita%CC%80%2C%20Frisch-Waugh-Lovell%20e%20introduzione%20al%20test%20F.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-20%20Collinearita%CC%80%2C%20Frisch-Waugh-Lovell%20e%20introduzione%20al%20test%20F.md) |
 | 26/11/2026 | registrazione interrotta dall'allarme antincendio, unita in ordine (prima parte sopra, seconda parte sotto) | [nota](obsidian/01-Econometria/appunti/2026-11-26%20Test%20F%20e%20standard%20error%20robusti%20di%20White.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-26%20Test%20F%20e%20standard%20error%20robusti%20di%20White.md) |
-| 27/11/2026 | Test di eteroschedasticità: Breusch-Pagan e White | [nota](obsidian/01-Econometria/appunti/2026-11-27%20Test%20di%20eteroschedasticita%CC%80%20Breusch-Pagan%20e%20White.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-27%20Test%20di%20eteroschedasticit%C3%A0%20Breusch-Pagan%20e%20White.md) |
+| 27/11/2026 | Test di eteroschedasticità: Breusch-Pagan e White | [nota](obsidian/01-Econometria/appunti/2026-11-27%20Test%20di%20eteroschedasticita%CC%80%20Breusch-Pagan%20e%20White.md) | [nota](obsidian/01-Econometria/appunti-sintetici/2026-11-27%20Test%20di%20eteroschedasticita%CC%80%20Breusch-Pagan%20e%20White.md) |
 
 ### Legislazione Bancaria — modulo 2
 
@@ -78,7 +78,7 @@ tutte le lezioni di un insegnamento in ordine di data.
 | 20/11/2026 | Enterprise value, PFN e NOPAT nei metodi DCF | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-20%20Enterprise%20value%2C%20PFN%20e%20NOPAT%20nei%20metodi%20DCF.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-20%20Enterprise%20value%2C%20PFN%20e%20NOPAT%20nei%20metodi%20DCF.md) |
 | 24/11/2026 | Metodi DCF, terminal value e modelli multi-step | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-24%20Metodi%20DCF%2C%20terminal%20value%20e%20modelli%20multi-step.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-24%20Metodi%20DCF%2C%20terminal%20value%20e%20modelli%20multi-step.md) |
 | 26/11/2026 | Terminal value, VAM e domande di teoria | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-26%20Terminal%20value%2C%20VAM%20e%20domande%20di%20teoria.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-26%20Terminal%20value%2C%20VAM%20e%20domande%20di%20teoria.md) |
-| 27/11/2026 | Multipli di borsa, criticità e mappe del valore | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-27%20Multipli%20di%20borsa%2C%20criticit%C3%A0%20e%20mappe%20del%20valore.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-27%20Multipli%20di%20borsa%2C%20criticit%C3%A0%20e%20mappe%20del%20valore.md) |
+| 27/11/2026 | Multipli di borsa, criticità e mappe del valore | [nota](obsidian/11-Finanza-Strategica/appunti/2026-11-27%20Multipli%20di%20borsa%2C%20criticita%CC%80%20e%20mappe%20del%20valore.md) | [nota](obsidian/11-Finanza-Strategica/appunti-sintetici/2026-11-27%20Multipli%20di%20borsa%2C%20criticita%CC%80%20e%20mappe%20del%20valore.md) |
 
 ## Formulari
 

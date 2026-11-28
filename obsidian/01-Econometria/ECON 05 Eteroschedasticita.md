@@ -189,7 +189,7 @@ Le conseguenze della violazione sono le seguenti.
 > - Nessuna ipotesi viene fatta sulla varianza condizionale: il metodo funziona in caso di omoschedasticità o di qualsiasi tipo di eteroschedasticità (flessibilità);
 > - OLS è ancora valido (semplicità d'uso).
 >
-> D'altra parte, $\hat\beta_j$ non è più BLUE.
+> D'altra parte, $\hat\beta_j$ non è più BLUE. Inoltre la validità degli errori standard robusti è asintotica: con pochi dati l'approssimazione può essere imprecisa.
 
 ## Test robusti all'eteroschedasticità: t e F
 
@@ -202,9 +202,9 @@ Le conseguenze della violazione sono le seguenti.
 ## Test per l'eteroschedasticità: principi generali e Test di Breusch-Pagan
 
 > [!tip] Teorema
-> In generale, le procedure robuste sono preferibili, poiché consentono di calcolare i test $t$ ed $F$ senza dover fare alcuna ipotesi su $\mathrm{Var}(Y|X)$. Tuttavia, l'utilizzo degli errori standard robusti in caso di omoschedasticità è inefficiente: lo standard error non è più il minimo. Talvolta può essere utile costruire test per validare l'ipotesi di omoschedasticità: se si rifiutasse questa ipotesi converrebbe implementare procedure robuste, altrimenti può essere utilizzato OLS classico.
+> In generale, le procedure robuste sono preferibili, poiché consentono di calcolare i test $t$ ed $F$ senza dover fare alcuna ipotesi su $\mathrm{Var}(Y|X)$. Tuttavia, l'utilizzo degli errori standard robusti in caso di omoschedasticità è inefficiente: lo standard error non è più il minimo. Talvolta può essere utile costruire test per validare l'ipotesi di omoschedasticità: se si rifiutasse questa ipotesi converrebbe implementare procedure robuste, altrimenti può essere utilizzato OLS classico. I test servono anche a capire se e come la varianza condizionale dipende dai regressori: una dipendenza può segnalare caratteristiche non osservate che il modello non include, e conoscerla può aiutare a specificare meglio il modello per la media condizionale.
 >
-> Tutti i test per verificare l'ipotesi di omoschedasticità (ipotesi nulla) rispetto all'eteroschedasticità (ipotesi alternativa) non accettano l'ipotesi nulla, ma al più permettono di rifiutarla. In generale, questi test si basano su una definizione della forma funzionale per l'eteroschedasticità, che viene confrontata con l'ipotesi di omoschedasticità.
+> Tutti i test per verificare l'ipotesi di omoschedasticità (ipotesi nulla) rispetto all'eteroschedasticità (ipotesi alternativa) non accettano l'ipotesi nulla, ma al più permettono di rifiutarla. In generale, questi test si basano su una definizione della forma funzionale per l'eteroschedasticità, che viene confrontata con l'ipotesi di omoschedasticità. L'ipotesi nulla riguarda quindi l'assenza di quella specifica forma di eteroschedasticità, che è ciò che l'output del software intende con «eteroschedasticità non presente». Se il test rifiuta, almeno quella forma è presente. Se non rifiuta, non si può concludere che la varianza sia costante: può esistere un'altra forma di eteroschedasticità che la forma funzionale assunta non contiene, oppure il test può non essere abbastanza potente. Escludere ogni forma di eteroschedasticità richiederebbe infiniti test, uno per ciascuna forma possibile.
 >
 > Si consideri il solito modello di regressione multipla
 > $$Y = \alpha + \beta_1 X_1 + \dots + \beta_k X_k + \epsilon$$
@@ -226,7 +226,7 @@ Le conseguenze della violazione sono le seguenti.
 > $$T_{BP} = n R_{\hat\epsilon^2}^2$$
 > Rispetto alla statistica $F$, $T_{BP}$ è approssimativamente distribuito come una $\chi_k^2$.
 >
-> Il test di Breusch-Pagan può essere implementato tramite Gretl come segue: si stima la regressione di interesse, poi dalla finestra di output si sceglie il menu `Test -> LMTEST - Eteroschedasticità -> Breusch-Pagan`. L'output finale è:
+> Il test di Breusch-Pagan può essere implementato tramite Gretl come segue: si stima la regressione di interesse, poi dalla finestra di output si sceglie il menu `Test -> LMTEST - Eteroschedasticità -> Breusch-Pagan`. La sigla LM sta per moltiplicatore di Lagrange, il principio su cui si basa il calcolo della statistica. L'output finale è:
 >
 > ```
 > Test di Breusch-Pagan per l'eteroschedasticità -
@@ -246,7 +246,7 @@ Le conseguenze della violazione sono le seguenti.
 >
 > Come per il test di Breusch-Pagan, il test di White può essere calcolato come segue:
 > $$T_W = n R_{\hat\epsilon^2}^2 \sim \chi^2_{\#\text{vincoli}}$$
-> in cui $R_{\hat\epsilon^2}^2$ è la bontà di adattamento della regressione ausiliaria completa in eq. (1).
+> in cui $R_{\hat\epsilon^2}^2$ è la bontà di adattamento della regressione ausiliaria completa in eq. (1). Il numero dei regressori ausiliari cresce rapidamente con $k$: per $k=10$ sono 65 (10 regressori, 10 quadrati e 45 prodotti incrociati). Quando la maggior parte non spiega la varianza, la probabilità dell'errore del primo tipo resta circa quella fissata, ma aumenta la probabilità di non rifiutare $H_0$ quando è falsa (errore del secondo tipo), cioè il test perde potenza. Il test di Breusch-Pagan, con meno regressori ausiliari, ne risente meno ma può non descrivere la forma vera della varianza; il test di White descrive più forme di eteroschedasticità, a costo di una potenza minore.
 >
 > Si consideri l'esempio sul pricing delle case. Il test di White si ottiene stimando la regressione di interesse e scegliendo, dalla finestra di output, il menu `Test -> LMTEST - Eteroschedasticità -> Test di White`. L'output fornito da Gretl è:
 >
