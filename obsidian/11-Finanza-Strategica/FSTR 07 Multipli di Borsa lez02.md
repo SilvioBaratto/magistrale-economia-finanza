@@ -99,7 +99,7 @@ Si parte dalla comparabilità, con la relazione teorica tra il P/E e le grandezz
 >
 > | Termine | Fonte di difformità |
 > |---|---|
-> | $EPS$, al denominatore del multiplo | regole contabili, che determinano l'utile |
+> | $EPS$, al denominatore del multiplo | regole contabili, che determinano l'utile (per esempio il modo di contabilizzare i leasing, il ricorso al *fair value* per le immobilizzazioni, la misura della svalutazione dei crediti) |
 > | $r_0$ e il differenziale $(r_0 - r_D)$ | rischio operativo |
 > | $(1-t_c)$ | profili fiscali |
 > | $D/E$ | rischio finanziario (leva finanziaria) |
@@ -113,7 +113,7 @@ Si parte dalla comparabilità, con la relazione teorica tra il P/E e le grandezz
 
 Per le difformità dovute ai regimi contabili e ai regimi fiscali si privilegiano comparable dello stesso paese, soggette alle stesse regole contabili e allo stesso sistema fiscale.
 
-Per la leva operativa si rettifica il livello di leva delle comparable in base al rapporto tra costi fissi e costi variabili dell'impresa da valutare. Il rimedio ha un limite pratico: la suddivisione tra costi fissi e variabili spesso non è disponibile, e la rettifica risulta troppo laboriosa rispetto ai vantaggi che offre.
+La scelta di comparable dello stesso paese non elimina la difformità di leva operativa, che sussiste anche tra imprese dello stesso settore con gli stessi regimi contabili e fiscali. Un'impresa commerciale che vende profili di acciaio, con capannone in affitto, dipendenti e automezzi in leasing, ha costi fissi molto più contenuti di un produttore siderurgico con altoforno, e imprese con modelli di business così diversi non sono comparabili. Per la leva operativa si rettifica il livello di leva delle comparable in base al rapporto tra costi fissi e costi variabili dell'impresa da valutare. Il rimedio ha un limite pratico: la suddivisione tra costi fissi e variabili spesso non è disponibile, e la rettifica risulta troppo laboriosa rispetto ai vantaggi che offre.
 
 ## Rimedi alle difformità di crescita e redditività
 

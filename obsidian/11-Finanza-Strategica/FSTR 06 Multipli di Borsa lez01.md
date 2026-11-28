@@ -16,13 +16,15 @@ Il capitolo apre il blocco dedicato ai multipli di borsa, il secondo dei due app
 
 Il corso si articola in cinque argomenti: le decisioni di investimento per l'impresa indebitata; il valore d'impresa con i metodi DCF; il valore d'impresa con i multipli di borsa, oggetto di questo capitolo; la crescita esterna e il valore delle operazioni di integrazione ([[FSTR 12 Valutazione Operazioni di Integrazione|valutazione delle operazioni di integrazione]]); la due diligence come supporto alle acquisizioni ([[FSTR 09 La Due Diligence|due diligence]]).
 
-Si parte da quattro operazioni recenti di acquisizione prezzate con il multiplo EV/EBITDA e da alcune fonti pubbliche di multipli di settore. Seguono la definizione del multiplo, la distinzione tra ottica assets e ottica equity, quella tra multipli di borsa e multipli delle transazioni concluse e l'elenco delle rispettive criticità.
+Si parte da cinque operazioni recenti di acquisizione prezzate con il multiplo EV/EBITDA e da alcune fonti pubbliche di multipli di settore. Seguono la definizione del multiplo, la distinzione tra ottica assets e ottica equity, quella tra multipli di borsa e multipli delle transazioni concluse e l'elenco delle rispettive criticità.
 
 ## Esempi reali di operazioni valutate con il multiplo EV/EBITDA
 
 Nelle operazioni di M&A il prezzo viene spesso letto attraverso un multiplo dell'EBITDA. Il valore d'impresa (Enterprise Value, EV) è il prodotto dell'EBITDA per il multiplo:
 
 $$EV = EBITDA \times \text{Multiplo}$$
+
+Un multiplo pari a $n$ equivale a pagare $n$ volte l'EBITDA corrente, come se si riconoscesse all'impresa la capacità di ripetere quell'EBITDA per $n$ anni. L'EBITDA rettificato su cui si applica il multiplo è proposto dall'acquirente con gli aggiustamenti emersi dalla due diligence e discusso con il venditore fino a concordarne l'ammontare. Anche il multiplo è oggetto di negoziazione, perché il prezzo richiede il consenso di entrambe le parti.
 
 ### Carrefour Italia ceduta a NewPrinces
 
@@ -125,6 +127,19 @@ Sull'operazione si sono espressi tre intermediari.
 - Intermonte ritiene elevato il multiplo di 13 volte l'EV/EBITDA rispetto alle valutazioni del settore di riferimento, pari a circa 3,7 volte.
 
 Con un EBITDA di 30-32 milioni di dollari, il rapporto 405/EBITDA è compreso tra 12,7x e 13,5x e vale circa 13,1x al punto medio di 31 milioni, in linea con il 13x dichiarato. Come termine di paragone settoriale per Öhlins si considera la riga Auto Parts della tabella dei multipli di Damodaran, riportata più avanti, che riguarda le imprese statunitensi al gennaio 2024 ed è quindi un riferimento distinto da quello citato da Intermonte: 39 imprese, EV/EBITDAR&D 5,08 ed EV/EBITDA 7,06.
+
+### Prysmian e Atkore
+
+> [!example] Esempio
+> | Dato | Valore |
+> |---|---|
+> | EV | 3,8 miliardi di USD |
+> | Multiplo | 9,8x EBITDA |
+> | EBITDA | circa 388 milioni di USD (implicito) |
+
+Prysmian, gruppo leader nei cavi, acquisisce Atkore, attiva nelle infrastrutture elettriche (sistemi di protezione e canalizzazione dei cavi, prodotti per la distribuzione elettrica), sulla base di un EV di 3,8 miliardi di dollari. Il multiplo pagato è di 9,8x: dividendo l'EV per il multiplo si ricava un EBITDA implicito di circa 388 milioni di dollari.
+
+Come termine di paragone settoriale per Atkore la categoria più vicina sembra Electrical Equipment, eventualmente affiancata da una categoria dei prodotti per l'edilizia. Nella tavola di Damodaran con dati al gennaio 2026 (imprese con EBITDA positivo) il multiplo EV/EBITDA di Electrical Equipment è 24,59x, per cui Prysmian ha pagato meno della metà del multiplo di settore. Nel caso di Öhlins vale l'opposto, perché Brembo ha pagato un multiplo molto superiore a quello del proprio settore: il prezzo di un'acquisizione può scostarsi dal multiplo di mercato in entrambe le direzioni.
 
 ### Verifica dei multipli dichiarati
 
@@ -288,7 +303,7 @@ Il valore d'impresa e il valore del capitale proprio sono legati dalla posizione
 
 La scelta del denominatore segue quella del numeratore. Un multiplo di ottica assets si calcola su grandezze riferite all'intera attività: ricavi di vendita (Sales), EBITDA, EBIT, capitale investito netto (CIN). Le prime tre sono definite prima degli oneri finanziari e delle imposte. Un multiplo di ottica equity si calcola su grandezze riferite al capitale proprio: utile netto, cash flow reddituale (utile netto al lordo dei costi non monetari, in primo luogo gli ammortamenti), utile netto rettificato (P/E adjusted), patrimonio netto contabile (book value, BV). Il CIN è una grandezza contabile mentre l'EV è un valore di mercato, e i due possono differire in misura sensibile; il rapporto EV/CIN confronta quindi un valore di mercato con un valore contabile.
 
-Le imprese non quotate sono spesso sottocapitalizzate e presentano utili poco significativi. Per questo si preferisce l'ottica assets, applicando multipli di settore o di imprese simili.
+Le imprese non quotate sono spesso sottocapitalizzate e presentano utili poco significativi: non dovendo, a differenza delle quotate, mostrare utili al mercato, tendono, soprattutto in Italia, a redigere il bilancio in modo da contenere l'utile e quindi le imposte, e un multiplo calcolato sull'utile le penalizza. Per questo si preferisce l'ottica assets, applicando multipli di settore o di imprese simili.
 
 ## Focus sul rapporto P/E
 
@@ -372,7 +387,7 @@ Il file *Enterprise Value Multiples by Sector (US)*, con dati al gennaio 2024, h
 
 \* Le colonne EV/EBITDA ed EV/EBIT si riferiscono solo alle imprese con EBITDA positivo («Only positive EBITDA firms»). La tabella originale prosegue con altri settori, non riportati qui.
 
-Come prima valutazione si consiglia il multiplo dell'intero settore. Poiché spesso si tratta di valori sovrastimati, conviene passare poi a una valutazione basata sui singoli concorrenti.
+Le tavole di settore non offrono una categoria per ogni attività economica: occorre ricondurre il business della target alla categoria più vicina e, se una sola non basta, può essere opportuno considerare congiuntamente più categorie affini. Come prima valutazione si consiglia il multiplo dell'intero settore. Poiché spesso si tratta di valori sovrastimati, conviene passare poi a una valutazione basata sui singoli concorrenti.
 
 ## Multipli di borsa: le criticità
 
@@ -401,7 +416,7 @@ I dati sulle transazioni sono spesso incompleti, perché riguardano operazioni p
 
 ## Multipli delle transazioni concluse: esempi di database
 
-La prassi si appoggia a database di transazioni comparabili (precedent transactions). Se ne riportano quattro esempi.
+La prassi si appoggia a database di transazioni comparabili (precedent transactions), che possono descrivere il settore della target con più dettaglio delle tavole di multipli di settore: un retailer di abbigliamento femminile, per esempio, è più specifico del settore moda nel suo complesso. Se ne riportano quattro esempi.
 
 ### Retailer a prevalente attività online
 
